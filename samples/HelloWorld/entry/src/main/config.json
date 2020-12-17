@@ -14,10 +14,7 @@
   "deviceConfig": {},
   "module": {
     "package": "com.waylau.hmos.helloworld",
-    "name": ".HelloWorld",
-    "reqCapabilities": [
-      "video_support"
-    ],
+    "name": ".MyApplication",
     "deviceType": [
       "car"
     ],
@@ -39,7 +36,6 @@
           }
         ],
         "orientation": "landscape",
-        "formEnabled": false,
         "name": "com.waylau.hmos.helloworld.MainAbility",
         "icon": "$media:icon",
         "description": "$string:mainability_description",

@@ -2,7 +2,7 @@ package com.waylau.hmos.helloworld;
 
 import org.junit.Test;
 
-public class MainAbilityTest {
+public class ExampleTest {
     @Test
     public void onStart() {
     }
