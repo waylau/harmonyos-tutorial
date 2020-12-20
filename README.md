@@ -19,6 +19,7 @@ There is also a GitBook version of this book: <http://waylau.gitbooks.io/harmony
 * [HarmonyOS初探04——使用DevEco Studio时设置Gradle仓库镜像](https://developer.huawei.com/consumer/cn/forum/topic/0201428885863380011?fid=0101303901040230869)
 * [HarmonyOS初探05——内网环境下使用DevEco Studio模拟器](https://developer.huawei.com/consumer/cn/forum/topic/0201428886771250012?fid=0101303901040230869)
 * [HarmonyOS初探06——使用DevEco Studio模拟器端口被占用无法启动](https://developer.huawei.com/consumer/cn/forum/topic/0204428887502690016?fid=0101303901040230869)
+* [DevEco Studio 2.0.12.201使用报错“This device type does not match the module profile.”](https://developer.huawei.com/consumer/cn/forum/topic/0201435470610010153?fid=26)
 * 未完待续...
 
 
