@@ -22,6 +22,12 @@ There is also a GitBook version of this book: <http://waylau.gitbooks.io/harmony
 * [DevEco Studio 2.0.12.201使用报错“This device type does not match the module profile.”](https://developer.huawei.com/consumer/cn/forum/topic/0201435470610010153?fid=26)
 * 未完待续...
 
+## Samples 示例
+
+* [Hello World](samples/HelloWorld)
+* [AbilitySlice路由配置的例子](samples/AbilitySliceAddActionRoute)
+* 未完待续...
+
 
 ## Get start 如何开始阅读
 
