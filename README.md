@@ -25,7 +25,7 @@ There is also a GitBook version of this book: <http://waylau.gitbooks.io/harmony
 ## Samples 示例
 
 * [Hello World](samples/HelloWorld)
-* [AbilitySlice路由配置的例子](samples/AbilitySliceAddActionRoute)
+* [多个AbilitySlice之间的路由与导航](samples/AbilitySliceNavigation)
 * 未完待续...
 
 

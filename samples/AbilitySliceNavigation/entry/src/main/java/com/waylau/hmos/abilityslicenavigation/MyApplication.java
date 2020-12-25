@@ -1,4 +1,4 @@
-package com.waylau.hmos.abilitysliceaddactionroute;
+package com.waylau.hmos.abilityslicenavigation;
 
 import ohos.aafwk.ability.AbilityPackage;
 

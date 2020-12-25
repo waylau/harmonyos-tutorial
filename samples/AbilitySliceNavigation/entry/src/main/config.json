@@ -1,6 +1,6 @@
 {
   "app": {
-    "bundleName": "com.waylau.hmos.abilitysliceaddactionroute",
+    "bundleName": "com.waylau.hmos.abilityslicenavigation",
     "vendor": "waylau",
     "version": {
       "code": 1,
@@ -13,7 +13,7 @@
   },
   "deviceConfig": {},
   "module": {
-    "package": "com.waylau.hmos.abilitysliceaddactionroute",
+    "package": "com.waylau.hmos.abilityslicenavigation",
     "name": ".MyApplication",
     "deviceType": [
       "car"
@@ -36,10 +36,10 @@
           }
         ],
         "orientation": "landscape",
-        "name": "com.waylau.hmos.abilitysliceaddactionroute.MainAbility",
+        "name": "com.waylau.hmos.abilityslicenavigation.MainAbility",
         "icon": "$media:icon",
         "description": "$string:mainability_description",
-        "label": "AbilitySliceAddActionRoute",
+        "label": "AbilitySliceNavigation",
         "type": "page",
         "launchType": "standard"
       }

@@ -1,4 +1,4 @@
-package com.waylau.hmos.abilitysliceaddactionroute;
+package com.waylau.hmos.abilityslicenavigation;
 
 import org.junit.Test;
 
