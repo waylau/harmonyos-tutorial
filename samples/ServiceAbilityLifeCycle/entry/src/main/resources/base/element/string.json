@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "ServiceAbilityLifeCycle"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_Car_Empty Feature Ability"
+    },
+    {
+      "name": "timeserviceability_description",
+      "value": "hap sample empty service"
+    }
+  ]
+}
