@@ -29,6 +29,8 @@ There is also a GitBook version of this book: <http://waylau.gitbooks.io/harmony
 * [Hello World](samples/HelloWorld)
 * [多个AbilitySlice之间的路由与导航](samples/AbilitySliceNavigation)
 * [Page与AbilitySlice生命周期的例子](samples/PageAndAbilitySliceLifeCycle)
+* [Service Ability生命周期的例子](samples/ServiceAbilityLifeCycle)
+* [DataAbilityHelper访问文件](samples/DataAbilityHelperAccessFile)
 * 未完待续...
 
 
