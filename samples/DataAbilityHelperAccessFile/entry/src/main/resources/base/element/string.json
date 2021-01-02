@@ -7,6 +7,18 @@
     {
       "name": "mainability_description",
       "value": "Java_Car_Empty Feature Ability"
+    },
+    {
+      "name": "dataability_description",
+      "value": "hap sample empty provider"
+    },
+    {
+      "name": "dataability_description",
+      "value": "hap sample empty provider"
+    },
+    {
+      "name": "userdataability_description",
+      "value": "hap sample empty provider"
     }
   ]
 }

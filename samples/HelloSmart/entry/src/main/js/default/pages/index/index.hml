@@ -1,0 +1,5 @@
+<div class="container" style="width: {{width}}; height: {{height}};">
+    <text class="title">
+        Hello {{title}}
+    </text>
+</div>

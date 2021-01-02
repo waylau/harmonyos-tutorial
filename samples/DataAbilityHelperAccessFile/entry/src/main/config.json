@@ -42,6 +42,16 @@
         "label": "DataAbilityHelperAccessFile",
         "type": "page",
         "launchType": "standard"
+      },
+      {
+        "permissions": [
+          "com.waylau.hmos.dataabilityhelperaccessfile.DataAbilityShellProvider.PROVIDER"
+        ],
+        "name": "com.waylau.hmos.dataabilityhelperaccessfile.UserDataAbility",
+        "icon": "$media:icon",
+        "description": "$string:userdataability_description",
+        "type": "data",
+        "uri": "dataability://com.waylau.hmos.dataabilityhelperaccessfile.UserDataAbility"
       }
     ]
   }

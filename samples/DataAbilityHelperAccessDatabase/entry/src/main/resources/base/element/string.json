@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "DataAbilityHelperAccessDatabase"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_Car_Empty Feature Ability"
+    },
+    {
+      "name": "userdataability_description",
+      "value": "hap sample empty provider"
+    }
+  ]
+}
