@@ -32,6 +32,7 @@ There is also a GitBook version of this book: <http://waylau.gitbooks.io/harmony
 * [Service Ability生命周期的例子](samples/ServiceAbilityLifeCycle)
 * [DataAbilityHelper访问文件](samples/DataAbilityHelperAccessFile)
 * [DataAbilityHelper访问数据库](samples/DataAbilityHelperAccessDatabase)
+* [多个Page之间的路由与导航](samples/IntentOperationWithAction)
 * 未完待续...
 
 
