@@ -1,6 +1,6 @@
 {
   "app": {
-    "bundleName": "com.waylau.hmos.distributedschedulingstartremotefa",
+    "bundleName": "com.waylau.hmos.remotefa",
     "vendor": "waylau",
     "version": {
       "code": 1,
@@ -13,7 +13,7 @@
   },
   "deviceConfig": {},
   "module": {
-    "package": "com.waylau.hmos.distributedschedulingstartremotefa",
+    "package": "com.waylau.hmos.remotefa",
     "name": ".MyApplication",
     "deviceType": [
       "car"
@@ -36,17 +36,12 @@
           }
         ],
         "orientation": "landscape",
-        "name": "com.waylau.hmos.distributedschedulingstartremotefa.MainAbility",
+        "name": "com.waylau.hmos.remotefa.MainAbility",
         "icon": "$media:icon",
         "description": "$string:mainability_description",
-        "label": "DistributedSchedulingStartRemoteFA",
+        "label": "RemoteFA",
         "type": "page",
-        "launchType": "standard",
-        "reqPermissions": [
-          {
-            "name": "ohos.permission.DISTRIBUTED_DATASYNC"
-          }
-        ]
+        "launchType": "standard"
       }
     ]
   }

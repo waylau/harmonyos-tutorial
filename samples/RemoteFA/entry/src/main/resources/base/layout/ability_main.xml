@@ -11,7 +11,7 @@
         ohos:width="match_content"
         ohos:background_element="$graphic:background_ability_main"
         ohos:layout_alignment="horizontal_center"
-        ohos:text="Start Remote FA"
+        ohos:text="Hello World"
         ohos:text_size="50"
     />
 
