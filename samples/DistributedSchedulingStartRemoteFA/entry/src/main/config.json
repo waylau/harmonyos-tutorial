@@ -41,12 +41,21 @@
         "description": "$string:mainability_description",
         "label": "DistributedSchedulingStartRemoteFA",
         "type": "page",
-        "launchType": "standard",
-        "reqPermissions": [
-          {
-            "name": "ohos.permission.DISTRIBUTED_DATASYNC"
-          }
-        ]
+        "launchType": "standard"
+      }
+    ],
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.DISTRIBUTED_DATASYNC"
+      },
+      {
+        "name": "ohos.permission.DISTRIBUTED_DEVICE_STATE_CHANGE"
+      },
+      {
+        "name": "ohos.permission.GET_DISTRIBUTED_DEVICE_INFO"
+      },
+      {
+        "name": "ohos.permission.GET_BUNDLE_INFO"
       }
     ]
   }
