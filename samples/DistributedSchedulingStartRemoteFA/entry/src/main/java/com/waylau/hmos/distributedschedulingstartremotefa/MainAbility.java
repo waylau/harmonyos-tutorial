@@ -16,10 +16,12 @@ public class MainAbility extends Ability {
     }
 
     //获取权限
-    //获取权限
     private void requestPermission() {
         String[] permission = {
-                "ohos.permission.DISTRIBUTED_DATASYNC"};
+                "ohos.permission.DISTRIBUTED_DATASYNC",
+                "ohos.permission.DISTRIBUTED_DEVICE_STATE_CHANGE",
+                "ohos.permission.GET_DISTRIBUTED_DEVICE_INFO",
+                "ohos.permission.GET_BUNDLE_INFO"};
         List<String> applyPermissions = new ArrayList<>();
         for (String element : permission) {
             if (verifySelfPermission(element) != 0) {

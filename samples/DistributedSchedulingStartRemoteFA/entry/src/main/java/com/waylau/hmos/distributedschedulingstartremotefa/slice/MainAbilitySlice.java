@@ -8,13 +8,9 @@ import ohos.aafwk.content.Intent;
 import ohos.aafwk.content.IntentParams;
 import ohos.aafwk.content.Operation;
 import ohos.agp.components.Text;
-import ohos.distributedschedule.interwork.DeviceInfo;
-import ohos.distributedschedule.interwork.DeviceManager;
 import ohos.hiviewdfx.HiLog;
 import ohos.hiviewdfx.HiLogLabel;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class MainAbilitySlice extends AbilitySlice implements IAbilityContinuation {
     private static final String TAG = MainAbilitySlice.class.getSimpleName();
@@ -22,7 +18,8 @@ public class MainAbilitySlice extends AbilitySlice implements IAbilityContinuati
             new HiLogLabel(HiLog.LOG_APP, 0x00001, TAG);
 
     private static final String BUNDLE_NAME = "com.waylau.hmos.remotefa";
-    private static final String ABILITY_NAME = "com.waylau.hmos.remotefa.MainAbility";
+    private static final String ABILITY_NAME = BUNDLE_NAME + ".MainAbility";
+
     @Override
     public void onStart(Intent intent) {
         super.onStart(intent);
@@ -42,15 +39,27 @@ public class MainAbilitySlice extends AbilitySlice implements IAbilityContinuati
         HiLog.info(LABEL_LOG, "get deviceId: %{public}s", deviceId);
 
         Intent intent = new Intent();
+        Operation operation;
 
         // 指定待启动FA的bundleName和abilityName
-        // 设置分布式标记，表明当前涉及分布式能力
-        Operation operation = new Intent.OperationBuilder()
-                .withDeviceId(deviceId)
-                .withBundleName(BUNDLE_NAME)
-                .withAbilityName(ABILITY_NAME)
-                .withFlags(Intent.FLAG_ABILITYSLICE_MULTI_DEVICE)
-                .build();
+        if (deviceId.isEmpty()) {
+            // 不涉及分布式
+            operation = new Intent.OperationBuilder()
+                    .withDeviceId(deviceId)
+                    .withBundleName(BUNDLE_NAME)
+                    .withAbilityName(ABILITY_NAME)
+                    .build();
+            intent.setOperation(operation);
+        } else {
+            // 设置分布式标记，表明当前涉及分布式能力
+            operation = new Intent.OperationBuilder()
+                    .withDeviceId(deviceId)
+                    .withBundleName(BUNDLE_NAME)
+                    .withAbilityName(ABILITY_NAME)
+                    .withFlags(Intent.FLAG_ABILITYSLICE_MULTI_DEVICE) // 设置分布式标记
+                    .build();
+        }
+
         intent.setOperation(operation);
 
         // 通过AbilitySlice包含的startAbility接口实现跨设备启动FA

@@ -42,19 +42,12 @@
         "label": "RemoteFA",
         "type": "page",
         "launchType": "standard",
-        "reqPermissions": [
-          {
-            "name": "ohos.permission.DISTRIBUTED_DATASYNC"
-          },{
-            "name": "ohos.permission.DISTRIBUTED_DEVICE_STATE_CHANGE"
-          },
-          {
-            "name": "ohos.permission.GET_DISTRIBUTED_DEVICE_INFO"
-          },
-          {
-            "name": "ohos.permission.GET_BUNDLE_INFO"
-          }
-        ]
+        "visible":true
+      }
+    ],
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.DISTRIBUTED_DATASYNC"
       }
     ]
   }
