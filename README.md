@@ -34,6 +34,9 @@ There is also a GitBook version of this book: <http://waylau.gitbooks.io/harmony
 * [DataAbilityHelper访问数据库](samples/DataAbilityHelperAccessDatabase)
 * [多个Page之间的路由与导航](samples/IntentOperationWithAction)
 * [分布式任务调度启动远程FA](samples/DistributedSchedulingStartRemoteFA)
+* [分布式任务调度启动和关闭远程PA](samples/DistributedSchedulingStartStopRemotePA)
+* [公共事件服务发布事件](samples/CommonEventPublisher)
+* [公共事件服务订阅事件](samples/CommonEventSubscriber)
 * 未完待续...
 
 

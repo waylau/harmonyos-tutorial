@@ -1,0 +1,60 @@
+{
+  "app": {
+    "bundleName": "com.waylau.hmos.remotepa",
+    "vendor": "waylau",
+    "version": {
+      "code": 1,
+      "name": "1.0"
+    },
+    "apiVersion": {
+      "compatible": 3,
+      "target": 3
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.waylau.hmos.remotepa",
+    "name": ".MyApplication",
+    "deviceType": [
+      "car"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry"
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "landscape",
+        "name": "com.waylau.hmos.remotepa.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "RemotePA",
+        "type": "page",
+        "launchType": "standard",
+        "visible": true
+      },
+      {
+        "name": "com.waylau.hmos.remotepa.TimeServiceAbility",
+        "icon": "$media:icon",
+        "description": "$string:timeserviceability_description",
+        "type": "service"
+      }
+    ],
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.DISTRIBUTED_DATASYNC"
+      }
+    ]
+  }
+}

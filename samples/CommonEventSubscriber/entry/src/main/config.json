@@ -1,0 +1,58 @@
+{
+  "app": {
+    "bundleName": "com.waylau.hmos.commoneventsubscriber",
+    "vendor": "waylau",
+    "version": {
+      "code": 1,
+      "name": "1.0"
+    },
+    "apiVersion": {
+      "compatible": 3,
+      "target": 3
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.waylau.hmos.commoneventsubscriber",
+    "name": ".MyApplication",
+    "deviceType": [
+      "car"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry"
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "landscape",
+        "name": "com.waylau.hmos.commoneventsubscriber.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "CommonEventSubscriber",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ],
+    "reqPermissions": [{
+      "name": "com.waylau.hmos.commoneventpublisher.PERMISSION",
+      "reason": "get right",
+      "usedScene": {
+        "ability": [
+          "com.waylau.hmos.commoneventsubscriber.MainAbility"
+        ],
+        "when": "always"
+      }
+    }]
+  }
+}
