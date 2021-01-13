@@ -1,0 +1,19 @@
+{
+  "setting": {
+
+  },
+  "frontend": {
+    "1.0.0": {
+      "Resolution": {
+        "args": {
+          "Resolution": "560*210"
+        }
+      },
+      "DeviceType": {
+        "args": {
+          "DeviceType": "car"
+        }
+      }
+    }
+  }
+}

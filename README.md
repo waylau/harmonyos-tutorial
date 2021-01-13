@@ -37,6 +37,7 @@ There is also a GitBook version of this book: <http://waylau.gitbooks.io/harmony
 * [分布式任务调度启动和关闭远程PA](samples/DistributedSchedulingStartStopRemotePA)
 * [公共事件服务发布事件](samples/CommonEventPublisher)
 * [公共事件服务订阅事件](samples/CommonEventSubscriber)
+* [公共事件服务订阅事件](samples/Notification)
 * 未完待续...
 
 
