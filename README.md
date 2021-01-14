@@ -47,9 +47,9 @@ There is also a GitBook version of this book: <http://waylau.gitbooks.io/harmony
 
 选择下面入口之一：
 
-* <https://github.com/waylau/harmonyos-tutorial> 的 [SUMMARY.md](https://github.com/waylau/harmonyos-tutorial/blob/master/SUMMARY.md)
-* <https://gitee.com/waylau/harmonyos-tutorial> 的 [SUMMARY.md](https://gitee.com/waylau/harmonyos-tutorial/blob/master/SUMMARY.md)
-* <http://waylau.gitbooks.io/harmonyos-tutorial> 的 Read 按钮
+* <https://github.com/waylau/harmonyos-tutorial> 的 [README.md](https://github.com/waylau/harmonyos-tutorial/blob/master/README.md)
+* <https://gitee.com/waylau/harmonyos-tutorial> 的 [README.md](https://gitee.com/waylau/harmonyos-tutorial/blob/master/README.md)
+
 
 ## Code 源码
 
