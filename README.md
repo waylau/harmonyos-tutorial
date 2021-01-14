@@ -37,7 +37,9 @@ There is also a GitBook version of this book: <http://waylau.gitbooks.io/harmony
 * [分布式任务调度启动和关闭远程PA](samples/DistributedSchedulingStartStopRemotePA)
 * [公共事件服务发布事件](samples/CommonEventPublisher)
 * [公共事件服务订阅事件](samples/CommonEventSubscriber)
-* [公共事件服务订阅事件](samples/Notification)
+* [高级通知服务](samples/Notification)
+* [剪切板数据的写入](samples/SystemPasteboardSetter)
+* [剪切板数据的读取](samples/SystemPasteboardGetter)
 * 未完待续...
 
 
