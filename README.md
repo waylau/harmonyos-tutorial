@@ -22,6 +22,8 @@ There is also a GitBook version of this book: <http://waylau.gitbooks.io/harmony
 * [HarmonyOS初探07——使用DevEco Studio预览器](https://developer.huawei.com/consumer/cn/forum/topic/0201442998449480482?fid=0101303901040230869)
 * [DevEco Studio 2.0.12.201使用报错“This device type does not match the module profile.”](https://developer.huawei.com/consumer/cn/forum/topic/0201435470610010153?fid=26)
 * [HarmonyOS之Ability01——AbilitySlice间导航](https://developer.huawei.com/consumer/cn/forum/topic/0202443001580950502?fid=0101303901040230869)
+* [HarmonyOS之线程01——ParallelTaskDispatcher派发任务](https://developer.huawei.com/consumer/cn/forum/topic/0204460939630370009?fid=0101303901040230869)
+* [HarmonyOS之线程02——EventHandler处理线程间通信](https://developer.huawei.com/consumer/cn/forum/topic/0204461048552100015?fid=0101303901040230869)
 * 未完待续...
 
 ## Samples 示例
@@ -40,6 +42,7 @@ There is also a GitBook version of this book: <http://waylau.gitbooks.io/harmony
 * [高级通知服务](samples/Notification)
 * [剪切板数据的写入](samples/SystemPasteboardSetter)
 * [剪切板数据的读取](samples/SystemPasteboardGetter)
+* [Java创建布局](samples/DirectionalLayoutWithJava)
 * 未完待续...
 
 

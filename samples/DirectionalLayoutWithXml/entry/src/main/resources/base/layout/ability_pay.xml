@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <Text
+        ohos:id="$+id:text_pay"
+        ohos:width="match_content"
+        ohos:height="match_content"
+        ohos:layout_alignment="horizontal_center"
+        ohos:text="Show me the money"
+        ohos:text_size="25vp"/>
+    />
+
+</DirectionalLayout>
