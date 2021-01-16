@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <ProgressBar
+        ohos:id="$+id:progressbar_element"
+        ohos:progress_width="20vp"
+        ohos:height="60vp"
+        ohos:width="560vp"
+        ohos:max="100"
+        ohos:min="0"
+        ohos:progress="60"
+        ohos:progress_element="#FF9900"
+        ohos:background_instruct_element="#009900" />
+
+</DirectionalLayout>

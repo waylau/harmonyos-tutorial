@@ -1,0 +1,24 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "Image"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_Car_Empty Feature Ability"
+    },
+    {
+      "name": "alphaability_description",
+      "value": "Java_Car_Empty Feature Ability"
+    },
+    {
+      "name": "scaleability_description",
+      "value": "Java_Car_Empty Feature Ability"
+    },
+    {
+      "name": "clipalignmentability_description",
+      "value": "Java_Car_Empty Feature Ability"
+    }
+  ]
+}

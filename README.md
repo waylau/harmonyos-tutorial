@@ -42,7 +42,12 @@ There is also a GitBook version of this book: <http://waylau.gitbooks.io/harmony
 * [高级通知服务](samples/Notification)
 * [剪切板数据的写入](samples/SystemPasteboardSetter)
 * [剪切板数据的读取](samples/SystemPasteboardGetter)
+* [XML创建布局](samples/DirectionalLayoutWithXml)
 * [Java创建布局](samples/DirectionalLayoutWithJava)
+* [常用显示类组件——Text](samples/Text)
+* [常用显示类组件——Image](samples/Image)
+* [常用显示类组件——ProgressBar](samples/ProgressBar)
+* [常用交互类组件——Button](samples/Button)
 * 未完待续...
 
 
