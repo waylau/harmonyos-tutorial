@@ -1,0 +1,24 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "ProgressBar"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_Car_Empty Feature Ability"
+    },
+    {
+      "name": "orientationability_description",
+      "value": "Java_Car_Empty Feature Ability"
+    },
+    {
+      "name": "elementability_description",
+      "value": "Java_Car_Empty Feature Ability"
+    },
+    {
+      "name": "hintability_description",
+      "value": "Java_Car_Empty Feature Ability"
+    }
+  ]
+}

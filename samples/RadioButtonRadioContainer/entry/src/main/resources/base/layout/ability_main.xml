@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical"
+    ohos:background_element="#FFFCCCCC">
+
+    <Text
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:text="最喜欢老卫哪部作品？"
+        ohos:text_size="20fp"
+        ohos:layout_alignment="left"
+        ohos:multiple_lines="true"/>
+
+    <RadioContainer
+        ohos:id="$+id:radio_container"
+        ohos:height="match_content"
+        ohos:width="match_content">
+        <RadioButton
+            ohos:id="$+id:radio_button_1"
+            ohos:height="30vp"
+            ohos:width="match_content"
+            ohos:text="1.《Spring Boot 企业级应用开发实战》"
+            ohos:text_size="14fp"/>
+        <RadioButton
+            ohos:id="$+id:radio_button_2"
+            ohos:height="30vp"
+            ohos:width="match_content"
+            ohos:text="2.《Spring Cloud 微服务架构开发实战》"
+            ohos:text_size="14fp"/>
+        <RadioButton
+            ohos:id="$+id:radio_button_3"
+            ohos:height="30vp"
+            ohos:width="match_content"
+            ohos:text="3.《Spring 5 开发大全》"
+            ohos:text_size="14fp"/>
+        <RadioButton
+            ohos:id="$+id:radio_button_4"
+            ohos:height="30vp"
+            ohos:width="match_content"
+            ohos:text="4.《Cloud Native 分布式架构原理与实践》"
+            ohos:text_size="14fp"/>
+        <RadioButton
+            ohos:id="$+id:radio_button_4"
+            ohos:height="30vp"
+            ohos:width="match_content"
+            ohos:text="5.《大型互联网应用轻量级架构实战》"
+            ohos:text_size="14fp"/>
+        <RadioButton
+            ohos:id="$+id:radio_button_6"
+            ohos:height="30vp"
+            ohos:width="match_content"
+            ohos:text="6.《Node.js企业级应用开发实战》"
+            ohos:text_size="14fp"/>
+    </RadioContainer>
+</DirectionalLayout>

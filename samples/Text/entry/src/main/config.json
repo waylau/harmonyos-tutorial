@@ -1,0 +1,111 @@
+{
+  "app": {
+    "bundleName": "com.waylau.hmos.text",
+    "vendor": "waylau",
+    "version": {
+      "code": 1,
+      "name": "1.0"
+    },
+    "apiVersion": {
+      "compatible": 3,
+      "target": 3
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.waylau.hmos.text",
+    "name": ".MyApplication",
+    "deviceType": [
+      "car"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry"
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "landscape",
+        "name": "com.waylau.hmos.text.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "Text",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "orientation": "landscape",
+        "name": "com.waylau.hmos.text.ColorSizeAbility",
+        "icon": "$media:icon",
+        "description": "$string:colorsizeability_description",
+        "label": "entry",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "orientation": "landscape",
+        "name": "com.waylau.hmos.text.ItalicWeightAbility",
+        "icon": "$media:icon",
+        "description": "$string:italicweightability_description",
+        "label": "entry",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "orientation": "landscape",
+        "name": "com.waylau.hmos.text.AlignmentAbility",
+        "icon": "$media:icon",
+        "description": "$string:alignmentability_description",
+        "label": "entry",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "orientation": "landscape",
+        "name": "com.waylau.hmos.text.LinesAbility",
+        "icon": "$media:icon",
+        "description": "$string:linesability_description",
+        "label": "entry",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "orientation": "landscape",
+        "name": "com.waylau.hmos.text.AutoFontSizeAbility",
+        "icon": "$media:icon",
+        "description": "$string:autofontsizeability_description",
+        "label": "entry",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "orientation": "landscape",
+        "name": "com.waylau.hmos.text.AutoScrollingAbility",
+        "icon": "$media:icon",
+        "description": "$string:autoscrollingability_description",
+        "label": "entry",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "orientation": "landscape",
+        "name": "com.waylau.hmos.text.TitleDetailAbility",
+        "icon": "$media:icon",
+        "description": "$string:titledetailability_description",
+        "label": "entry",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ]
+  }
+}

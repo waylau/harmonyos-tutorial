@@ -1,0 +1,20 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "TextField"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_Car_Empty Feature Ability"
+    },
+    {
+      "name": "multiplelinesability_description",
+      "value": "Java_Car_Empty Feature Ability"
+    },
+    {
+      "name": "loginability_description",
+      "value": "Java_Car_Empty Feature Ability"
+    }
+  ]
+}

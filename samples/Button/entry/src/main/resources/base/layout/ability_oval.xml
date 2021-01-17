@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <Button
+        ohos:id="$+id:button_oval"
+        ohos:width="match_content"
+        ohos:height="match_content"
+        ohos:text_size="27fp"
+        ohos:text="I am Button"
+        ohos:left_margin="15vp"
+        ohos:bottom_margin="15vp"
+        ohos:right_padding="8vp"
+        ohos:left_padding="8vp"
+        ohos:background_element="$graphic:background_ability_oval"
+        />
+
+</DirectionalLayout>

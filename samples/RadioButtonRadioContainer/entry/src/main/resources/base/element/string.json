@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "RadioButtonRadioContainer"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_Car_Empty Feature Ability"
+    },
+    {
+      "name": "markchangedability_description",
+      "value": "Java_Car_Empty Feature Ability"
+    }
+  ]
+}

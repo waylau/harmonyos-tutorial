@@ -1,0 +1,57 @@
+{
+  "app": {
+    "bundleName": "com.waylau.hmos.checkbox",
+    "vendor": "waylau",
+    "version": {
+      "code": 1,
+      "name": "1.0"
+    },
+    "apiVersion": {
+      "compatible": 3,
+      "target": 3
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.waylau.hmos.checkbox",
+    "name": ".MyApplication",
+    "deviceType": [
+      "car"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry"
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "landscape",
+        "name": "com.waylau.hmos.checkbox.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "Checkbox",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "orientation": "landscape",
+        "name": "com.waylau.hmos.checkbox.OnOffAbility",
+        "icon": "$media:icon",
+        "description": "$string:onoffability_description",
+        "label": "entry",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ]
+  }
+}

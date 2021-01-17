@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical"
+    ohos:background_element="#FFFCCCCC">
+
+    <Checkbox
+        ohos:id="$+id:checkbox"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:text="I am Checkbox"
+        ohos:text_size="28fp"/>
+
+</DirectionalLayout>

@@ -1,0 +1,28 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "Button"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_Car_Empty Feature Ability"
+    },
+    {
+      "name": "clickedlistenerability_description",
+      "value": "Java_Car_Empty Feature Ability"
+    },
+    {
+      "name": "ovalability_description",
+      "value": "Java_Car_Empty Feature Ability"
+    },
+    {
+      "name": "circleability_description",
+      "value": "Java_Car_Empty Feature Ability"
+    },
+    {
+      "name": "dailability_description",
+      "value": "Java_Car_Empty Feature Ability"
+    }
+  ]
+}

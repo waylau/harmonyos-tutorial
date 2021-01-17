@@ -1,0 +1,84 @@
+{
+  "app": {
+    "bundleName": "com.waylau.hmos.button",
+    "vendor": "waylau",
+    "version": {
+      "code": 1,
+      "name": "1.0"
+    },
+    "apiVersion": {
+      "compatible": 3,
+      "target": 3
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.waylau.hmos.button",
+    "name": ".MyApplication",
+    "deviceType": [
+      "car"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry"
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "landscape",
+        "name": "com.waylau.hmos.button.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "Button",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "orientation": "landscape",
+        "name": "com.waylau.hmos.button.ClickedListenerAbility",
+        "icon": "$media:icon",
+        "description": "$string:clickedlistenerability_description",
+        "label": "entry",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "orientation": "landscape",
+        "name": "com.waylau.hmos.button.OvalAbility",
+        "icon": "$media:icon",
+        "description": "$string:ovalability_description",
+        "label": "entry",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "orientation": "landscape",
+        "name": "com.waylau.hmos.button.CircleAbility",
+        "icon": "$media:icon",
+        "description": "$string:circleability_description",
+        "label": "entry",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "orientation": "landscape",
+        "name": "com.waylau.hmos.button.DailAbility",
+        "icon": "$media:icon",
+        "description": "$string:dailability_description",
+        "label": "entry",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "Text"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_Car_Empty Feature Ability"
+    },
+    {
+      "name": "colorsizeability_description",
+      "value": "Java_Car_Empty Feature Ability"
+    },
+    {
+      "name": "italicweightability_description",
+      "value": "Java_Car_Empty Feature Ability"
+    },
+    {
+      "name": "alignmentability_description",
+      "value": "Java_Car_Empty Feature Ability"
+    },
+    {
+      "name": "linesability_description",
+      "value": "Java_Car_Empty Feature Ability"
+    },
+    {
+      "name": "autofontsizeability_description",
+      "value": "Java_Car_Empty Feature Ability"
+    },
+    {
+      "name": "autoscrollingability_description",
+      "value": "Java_Car_Empty Feature Ability"
+    },
+    {
+      "name": "titledetailability_description",
+      "value": "Java_Car_Empty Feature Ability"
+    }
+  ]
+}
