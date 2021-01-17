@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent">
+
+    <Text
+        ohos:id="$+id:text_lines"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:italic="true"
+        ohos:multiple_lines="true"
+        ohos:text="$string:text_lines_content"
+        ohos:text_color="#0000FF"
+        ohos:text_font="serif"
+        ohos:text_size="28fp"
+        ohos:text_weight="700"/>
+</ScrollView>

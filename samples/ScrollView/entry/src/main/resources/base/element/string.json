@@ -1,0 +1,20 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "ScrollView"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_Car_Empty Feature Ability"
+    },
+    {
+      "name": "text_lines_content",
+      "value": "华为开源的HarmonyOS（鸿蒙系统）是一款“面向未来”、面向全场景（移动办公、运动健康、社交通信、媒体娱乐等）的分布式操作系统。借助 HarmonyOS 全场景分布式系统和设备生态，定义全新的硬件、交互和服务体验。本书采用最新的HarmonyOS 2.0版本作为基石，详细介绍了如何基于HarmonyOS来进行应用的开发。本书辅以大量的实战案例，图文并茂，令读者易于理解掌握。同时，案例的选型偏重于解决实际问题，具有很强的前瞻性、应用性、趣味性。加入HarmonyOS生态，让我们一起构建万物互联的新时代！"
+    },
+    {
+      "name": "orientationability_description",
+      "value": "Java_Car_Empty Feature Ability"
+    }
+  ]
+}

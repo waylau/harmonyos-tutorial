@@ -48,6 +48,11 @@ There is also a GitBook version of this book: <http://waylau.gitbooks.io/harmony
 * [常用显示类组件——Image](samples/Image)
 * [常用显示类组件——ProgressBar](samples/ProgressBar)
 * [常用交互类组件——Button](samples/Button)
+* [常用交互类组件——TextField](samples/TextField)
+* [常用交互类组件——Checkbox](samples/Checkbox)
+* [常用交互类组件——RadioButton/RadioContaine](samples/RadioButtonRadioContaine)
+* [常用交互类组件——Switch](samples/Switch)
+* [常用交互类组件——ScrollView](samples/ScrollView)
 * 未完待续...
 
 
