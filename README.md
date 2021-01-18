@@ -53,6 +53,9 @@ There is also a GitBook version of this book: <http://waylau.gitbooks.io/harmony
 * [常用交互类组件——RadioButton/RadioContaine](samples/RadioButtonRadioContaine)
 * [常用交互类组件——Switch](samples/Switch)
 * [常用交互类组件——ScrollView](samples/ScrollView)
+* [常用交互类组件——Tab/TabList](samples/TabList)
+* [常用交互类组件——Picker](samples/Picker)
+* [常用交互类组件——ListContainer](samples/ListContainer)
 * 未完待续...
 
 

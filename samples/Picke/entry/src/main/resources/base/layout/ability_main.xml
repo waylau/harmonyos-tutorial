@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <Picker
+        ohos:id="$+id:test_picker"
+        ohos:height="match_content"
+        ohos:width="300vp"
+        ohos:background_element="#E1FFFF"
+        ohos:layout_alignment="horizontal_center"
+        ohos:normal_text_size="16fp"
+        ohos:selected_text_size="16fp"/>
+
+</DirectionalLayout>
