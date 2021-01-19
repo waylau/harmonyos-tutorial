@@ -56,6 +56,11 @@ There is also a GitBook version of this book: <http://waylau.gitbooks.io/harmony
 * [常用交互类组件——Tab/TabList](samples/TabList)
 * [常用交互类组件——Picker](samples/Picker)
 * [常用交互类组件——ListContainer](samples/ListContainer)
+* [常用交互类组件——RoundProgressBar](samples/RoundProgressBar)
+* [常用布局——DirectionalLayout](samples/DirectionalLayout)
+* [常用布局——DependentLayout](samples/DependentLayout)
+* [常用布局——StackLayout](samples/StackLayout)
+* [常用布局——TableLayout](samples/TableLayout)
 * 未完待续...
 
 

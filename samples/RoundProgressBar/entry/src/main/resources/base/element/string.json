@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "RoundProgressBar"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_Car_Empty Feature Ability"
+    },
+    {
+      "name": "startmaxangleability_description",
+      "value": "Java_Car_Empty Feature Ability"
+    }
+  ]
+}
