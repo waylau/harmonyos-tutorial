@@ -1,0 +1,7 @@
+<!-- 点赞按钮 -->
+<div>
+    <div class="like" onclick="likeClick">
+        <image class="like-img" src="{{likeImage}}" focusable="true"></image>
+        <text class="like-num" focusable="true">{{total}}</text>
+    </div>
+</div>

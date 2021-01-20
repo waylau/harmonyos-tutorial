@@ -1,0 +1,19 @@
+.like {
+    width: 104px;
+    height: 54px;
+    border: 2px solid #bcbcbc;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 72px;
+    border-radius: 8px;
+}
+.like-img {
+    width: 33px;
+    height: 33px;
+    margin-left: 14px;
+}
+.like-num {
+    color: #bcbcbc;
+    font-size: 20px;
+    margin-right: 17px;
+}

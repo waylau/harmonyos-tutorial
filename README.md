@@ -61,6 +61,8 @@ There is also a GitBook version of this book: <http://waylau.gitbooks.io/harmony
 * [常用布局——DependentLayout](samples/DependentLayout)
 * [常用布局——StackLayout](samples/StackLayout)
 * [常用布局——TableLayout](samples/TableLayout)
+* [创建JS FA应用](samples/JsFa)
+* [点赞按钮](samples/GiveLike)
 * 未完待续...
 
 
