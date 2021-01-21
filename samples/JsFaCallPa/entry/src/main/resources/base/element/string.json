@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "JsFaCallPa"
+    },
+    {
+      "name": "mainability_description",
+      "value": "JS_Tablet_Empty Feature Ability"
+    },
+    {
+      "name": "playability_description",
+      "value": "hap sample empty service"
+    }
+  ]
+}

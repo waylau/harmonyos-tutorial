@@ -1,0 +1,12 @@
+<div class="container">
+    <div>
+        <text class="title">
+            {{title}}
+        </text>
+    </div>
+    <div>
+        <text class="title" onclick="play">
+            Play
+        </text>
+    </div>
+</div>

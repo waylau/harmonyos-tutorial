@@ -63,6 +63,7 @@ There is also a GitBook version of this book: <http://waylau.gitbooks.io/harmony
 * [常用布局——TableLayout](samples/TableLayout)
 * [创建JS FA应用](samples/JsFa)
 * [点赞按钮](samples/GiveLike)
+* [JS FA调用PA](samples/JsFaCallPa)
 * 未完待续...
 
 
