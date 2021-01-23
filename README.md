@@ -64,6 +64,9 @@ There is also a GitBook version of this book: <http://waylau.gitbooks.io/harmony
 * [创建JS FA应用](samples/JsFa)
 * [点赞按钮](samples/GiveLike)
 * [JS FA调用PA](samples/JsFaCallPa)
+* [多模输入事件](samples/MultimodalEvent)
+* [线程管理示例](samples/ParallelTaskDispatcher)
+* [线程间通信示例](samples/EventHandler)
 * 未完待续...
 
 
