@@ -67,6 +67,10 @@ There is also a GitBook version of this book: <http://waylau.gitbooks.io/harmony
 * [多模输入事件](samples/MultimodalEvent)
 * [线程管理示例](samples/ParallelTaskDispatcher)
 * [线程间通信示例](samples/EventHandler)
+* [媒体编解码能力查询](samples/CodecDescriptionList)
+* [视频编解码](samples/Codec)
+* [视频播放](samples/Player)
+* [视频录制](samples/Recorder)
 * 未完待续...
 
 

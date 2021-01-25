@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <DirectionalLayout
+        ohos:height="30vp"
+        ohos:width="match_content"
+        ohos:orientation="horizontal">
+
+        <Button
+            ohos:id="$+id:button_play"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:background_element="#F76543"
+            ohos:left_padding="10vp"
+            ohos:text="Play"
+            ohos:text_size="27fp"
+            />
+
+        <Button
+            ohos:id="$+id:button_pause"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:background_element="#F76543"
+            ohos:left_padding="10vp"
+            ohos:text="Pause"
+            ohos:text_size="27fp"
+            />
+
+        <Button
+            ohos:id="$+id:button_stop"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:background_element="#F76543"
+            ohos:left_padding="10vp"
+            ohos:text="Stop"
+            ohos:text_size="27fp"
+            />
+    </DirectionalLayout>
+
+    <DependentLayout
+        ohos:id="$+id:layout_surface_provider"
+        ohos:height="match_content"
+        ohos:width="660vp"
+        ohos:orientation="horizontal"></DependentLayout>
+</DirectionalLayout>
