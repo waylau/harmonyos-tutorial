@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DependentLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="$float:singleCardViewHeight"
+    ohos:width="match_parent"
+    ohos:background_element="$color:colorAppBackground">
+
+    <Text
+        ohos:id="$+id:header_item_content_text"
+        ohos:height="$float:singleCardViewTextHeight"
+        ohos:width="match_content"
+        ohos:align_parent_left="true"
+        ohos:center_in_parent="true"
+        ohos:left_margin="$float:singleCardViewLeftMargin"
+        ohos:text_color="$color:textColorPrimary"
+        ohos:text_size="$float:textSizeBody1"/>
+</DependentLayout>

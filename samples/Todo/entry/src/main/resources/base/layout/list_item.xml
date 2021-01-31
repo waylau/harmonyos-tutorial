@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_content"
+    ohos:width="match_parent"
+    ohos:background_element="$color:colorCardViewBg"
+    ohos:orientation="vertical">
+
+    <DependentLayout
+        xmlns:ohos="http://schemas.huawei.com/res/ohos"
+        ohos:height="$float:singleCardViewHeight"
+        ohos:width="match_parent">
+
+        <Text
+            ohos:id="$+id:item_content_text"
+            ohos:height="$float:singleCardViewTextHeight"
+            ohos:width="match_content"
+            ohos:align_parent_left="true"
+            ohos:center_in_parent="true"
+            ohos:left_margin="$float:singleCardViewLeftMargin"
+            ohos:text_color="$color:textColorPrimary"
+            ohos:text_size="$float:textSizeBody1"/>
+
+        <Image
+            ohos:id="$+id:item_right_icon"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:align_parent_right="true"
+            ohos:center_in_parent="true"
+            ohos:image_src="$graphic:icon_right_grey"
+            ohos:right_margin="$float:singleCardViewRightMargin"/>
+
+        <Text
+            ohos:id="$+id:item_right_content_text"
+            ohos:height="$float:singleCardViewRightTextHeight"
+            ohos:width="match_content"
+            ohos:center_in_parent="true"
+            ohos:left_of="$id:item_right_icon"
+            ohos:right_margin="$float:singleCardViewRightTextRightMargin"
+            ohos:text_color="$color:textColorSecondary"
+            ohos:text_size="$float:textSizeBody2"/>
+        <Button
+            ohos:height="20vp"
+            ohos:width="20vp"
+            ohos:background_element="#FFDF21"/>
+    </DependentLayout>
+
+    <Component
+        ohos:id="$+id:item_divider"
+        ohos:height="$float:listDividerHeight"
+        ohos:width="match_parent"
+        ohos:background_element="$color:colorListDivider"
+        ohos:left_margin="$float:singleCardViewLeftMargin"
+        ohos:right_margin="$float:singleCardViewRightMargin"/>
+</DirectionalLayout>

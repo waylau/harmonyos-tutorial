@@ -1,0 +1,48 @@
+{
+  "color": [
+    {
+      "name": "colorPrimary",
+      "value": "#E6000000"
+    },
+    {
+      "name": "colorSecondary",
+      "value": "#99000000"
+    },
+    {
+      "name": "colorAppbarTitle",
+      "value": "#000000"
+    },
+    {
+      "name": "colorAppbarBg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "colorAppbarSubBg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "textColorPrimary",
+      "value": "#E6000000"
+    },
+    {
+      "name": "textColorSecondary",
+      "value": "#99000000"
+    },
+    {
+      "name": "colorCardViewBg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "colorAppBackground",
+      "value": "#f1f3f5"
+    },
+    {
+      "name": "colorSearchBarBackground",
+      "value": "#0C000000"
+    },
+    {
+      "name": "colorListDivider",
+      "value": "#33000000"
+    }
+  ]
+}

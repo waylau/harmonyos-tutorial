@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:background_element="$color:colorAppBackground"
+    ohos:orientation="vertical">
+
+    <!-- Title part-->
+    <DirectionalLayout
+        xmlns:ohos="http://schemas.huawei.com/res/ohos"
+        ohos:height="$float:titlePartHeight"
+        ohos:width="match_parent"
+        ohos:background_element="$color:colorAppBackground"
+        ohos:orientation="vertical">
+
+        <DependentLayout
+            xmlns:ohos="http://schemas.huawei.com/res/ohos"
+            ohos:height="$float:titlePartIconDivHeight"
+            ohos:width="match_parent">
+
+            <DependentLayout
+                xmlns:ohos="http://schemas.huawei.com/res/ohos"
+                ohos:id="$+id:title_area_menu"
+                ohos:height="$float:titlePartIconHotAreaHeight"
+                ohos:width="$float:titlePartIconHotAreaWidth"
+                ohos:align_parent_right="true"
+                ohos:center_in_parent="true"
+                ohos:right_margin="$float:titlePartIconHotAreaRightMargin">
+
+                <Image
+                    ohos:id="$+id:title_area_menu_icon"
+                    ohos:height="$float:titlePartIconHeight"
+                    ohos:width="$float:titlePartIconWidth"
+                    ohos:center_in_parent="true"
+                    ohos:image_src="$graphic:icon_more"/>
+            </DependentLayout>
+
+            <DependentLayout
+                xmlns:ohos="http://schemas.huawei.com/res/ohos"
+                ohos:id="$+id:title_area_add"
+                ohos:height="$float:titlePartIconHotAreaHeight"
+                ohos:width="$float:titlePartIconHotAreaWidth"
+                ohos:center_in_parent="true"
+                ohos:left_of="$id:title_area_menu">
+
+                <Image
+                    ohos:id="$+id:title_area_add_icon"
+                    ohos:height="$float:titlePartIconHeight"
+                    ohos:width="$float:titlePartIconWidth"
+                    ohos:center_in_parent="true"
+                    ohos:image_src="$graphic:icon_add"/>
+            </DependentLayout>
+        </DependentLayout>
+
+        <Text
+            ohos:id="$+id:title_text"
+            ohos:height="$float:titlePartTextAreaHeight"
+            ohos:width="match_parent"
+            ohos:bottom_margin="$float:titlePartTextAreaBottomMargin"
+            ohos:left_margin="$float:titlePartTextAreaLeftMargin"
+            ohos:right_margin="$float:titlePartTextAreaRightMargin"
+            ohos:text="$string:title_text"
+            ohos:text_alignment="vertical_center"
+            ohos:text_color="$color:colorAppbarTitle"
+            ohos:text_font="medium"
+            ohos:text_size="$float:textSizeHeadline6"
+            ohos:top_margin="$float:titlePartTextAreaTopMargin"/>
+    </DirectionalLayout>
+
+    <ListContainer
+        ohos:id="$+id:list_view"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:bottom_padding="$float:listContainerBottomPadding"
+        ohos:left_margin="$float:singleCardViewLeftMargin"
+        ohos:right_margin="$float:singleCardViewRightMargin"/>
+</DirectionalLayout>

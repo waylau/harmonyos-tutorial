@@ -72,6 +72,7 @@ There is also a GitBook version of this book: <http://waylau.gitbooks.io/harmony
 * [视频播放](samples/Player)
 * [视频录制](samples/Recorder)
 * [图像编解码](samples/ImageCodec)
+* [Todo](samples/Todo)
 * 未完待续...
 
 

@@ -1,0 +1,144 @@
+{
+  "float": [
+    {
+      "name": "textSizeHeadline6",
+      "value": "30fp"
+    },
+    {
+      "name": "maxPaddingStart",
+      "value": "24vp"
+    },
+    {
+      "name": "maxPaddingEnd",
+      "value": "24vp"
+    },
+    {
+      "name": "searchBarDivHeight",
+      "value": "56vp"
+    },
+    {
+      "name": "searchBarHeight",
+      "value": "40vp"
+    },
+    {
+      "name": "searchIconHeight",
+      "value": "16vp"
+    },
+    {
+      "name": "searchIconWidth",
+      "value": "16vp"
+    },
+    {
+      "name": "searchIconLeftMargin",
+      "value": "12vp"
+    },
+    {
+      "name": "searchIconRightMargin",
+      "value": "8vp"
+    },
+    {
+      "name": "searchBarHintTextRightMargin",
+      "value": "12vp"
+    },
+    {
+      "name": "singleCardViewHeight",
+      "value": "64vp"
+    },
+    {
+      "name": "singleCardViewLeftMargin",
+      "value": "12vp"
+    },
+    {
+      "name": "singleCardViewRightMargin",
+      "value": "12vp"
+    },
+    {
+      "name": "singleCardViewTextHeight",
+      "value": "48vp"
+    },
+    {
+      "name": "textSizeBody1",
+      "value": "16fp"
+    },
+    {
+      "name": "textSizeBody2",
+      "value": "14fp"
+    },
+    {
+      "name": "singleCardViewRightIconHeight",
+      "value": "48vp"
+    },
+    {
+      "name": "singleCardViewRightTextHeight",
+      "value": "48vp"
+    },
+    {
+      "name": "singleCardViewRightTextRightMargin",
+      "value": "4vp"
+    },
+    {
+      "name": "singleCardViewRightTextFontSize",
+      "value": "14fp"
+    },
+    {
+      "name": "titlePartHeight",
+      "value": "112vp"
+    },
+    {
+      "name": "titlePartIconDivHeight",
+      "value": "56vp"
+    },
+    {
+      "name": "titlePartIconHotAreaHeight",
+      "value": "48vp"
+    },
+    {
+      "name": "titlePartIconHotAreaWidth",
+      "value": "48vp"
+    },
+    {
+      "name": "titlePartIconHotAreaRightMargin",
+      "value": "12vp"
+    },
+    {
+      "name": "titlePartIconHeight",
+      "value": "24vp"
+    },
+    {
+      "name": "titlePartIconWidth",
+      "value": "24vp"
+    },
+    {
+      "name": "titlePartTextAreaHeight",
+      "value": "41vp"
+    },
+    {
+      "name": "titlePartTextAreaLeftMargin",
+      "value": "24vp"
+    },
+    {
+      "name": "titlePartTextAreaRightMargin",
+      "value": "24vp"
+    },
+    {
+      "name": "titlePartTextAreaTopMargin",
+      "value": "7vp"
+    },
+    {
+      "name": "titlePartTextAreaBottomMargin",
+      "value": "8vp"
+    },
+    {
+      "name": "searchBarCornerRadius",
+      "value": "100"
+    },
+    {
+      "name": "listDividerHeight",
+      "value": "1px"
+    },
+    {
+      "name": "listContainerBottomPadding",
+      "value": "14vp"
+    }
+  ]
+}
