@@ -39,8 +39,8 @@ public class SingleListItem implements CategoryItemBase {
         contentText.setText(leftText);
 
         // item right context
-        Text rightContentText = (Text) component.findComponentById(ResourceTable.Id_item_right_content_text);
-        rightContentText.setText(rightText);
+        //Text rightContentText = (Text) component.findComponentById(ResourceTable.Id_item_right_content_text);
+        //rightContentText.setText(rightText);
     }
 
     /**

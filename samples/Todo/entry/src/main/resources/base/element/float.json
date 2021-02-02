@@ -82,7 +82,7 @@
     },
     {
       "name": "titlePartHeight",
-      "value": "112vp"
+      "value": "38vp"
     },
     {
       "name": "titlePartIconDivHeight",
@@ -90,11 +90,11 @@
     },
     {
       "name": "titlePartIconHotAreaHeight",
-      "value": "48vp"
+      "value": "24vp"
     },
     {
       "name": "titlePartIconHotAreaWidth",
-      "value": "48vp"
+      "value": "24vp"
     },
     {
       "name": "titlePartIconHotAreaRightMargin",

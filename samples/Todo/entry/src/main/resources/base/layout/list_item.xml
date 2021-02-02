@@ -20,7 +20,7 @@
             ohos:left_margin="$float:singleCardViewLeftMargin"
             ohos:text_color="$color:textColorPrimary"
             ohos:text_size="$float:textSizeBody1"/>
-
+        <!--刪除
         <Image
             ohos:id="$+id:item_right_icon"
             ohos:height="match_content"
@@ -39,6 +39,15 @@
             ohos:right_margin="$float:singleCardViewRightTextRightMargin"
             ohos:text_color="$color:textColorSecondary"
             ohos:text_size="$float:textSizeBody2"/>
+            -->
+        <Switch
+            ohos:id="$+id:btn_switch"
+            ohos:height="20vp"
+            ohos:width="30vp"
+            ohos:align_parent_right="true"
+            ohos:center_in_parent="true"
+            ohos:right_margin="$float:singleCardViewRightTextRightMargin"
+            ohos:text_color="$color:textColorSecondary"/>
         <Button
             ohos:height="20vp"
             ohos:width="20vp"

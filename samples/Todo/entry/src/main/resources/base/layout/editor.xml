@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DependentLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_content"
+    ohos:width="match_parent"
+    >
+
+    <DirectionalLayout
+        ohos:id="$+id:dl_event"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+
+        ohos:orientation="horizontal">
+
+        <Text
+            ohos:id="$+id:key_event"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text="事项:"
+            />
+
+        <TextField
+            ohos:id="$+id:event"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:hint="请输入事项内容"
+
+      />
+
+    </DirectionalLayout>
+
+    <DirectionalLayout
+        ohos:id="$+id:dl_time"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:below="$id:dl_event"
+
+        ohos:orientation="horizontal"
+        >
+
+        <Text
+            ohos:id="$+id:key_time"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text="时间:"/>
+
+        <Text
+            ohos:id="$+id:time"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:clickable="true"
+
+            ohos:hint="选择时间"
+            />
+    </DirectionalLayout>
+
+    <DirectionalLayout
+        ohos:id="$+id:dl_priority"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:below="$id:dl_time"
+
+        ohos:orientation="horizontal">
+
+        <Text
+            ohos:id="$+id:key_priority"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text="优先级:"
+          />
+
+        <Image
+            ohos:id="$+id:priority"
+            ohos:height="10vp"
+            ohos:width="10vp"
+            ohos:layout_alignment="vertical_center"
+            ohos:margin="5vp"
+            ohos:clickable="true"/>
+
+    </DirectionalLayout>
+
+    <Picker
+        ohos:id="$+id:picker_priority"
+        ohos:height="match_content"
+        ohos:width="100vp"
+        ohos:visibility="hide"
+        ohos:left_padding="15vp"
+        ohos:right_padding="5vp"
+        ohos:background_element="#E1FFFF"
+        ohos:center_in_parent="true"
+        ohos:normal_text_size="16fp"
+        ohos:selected_text_size="16fp"
+        ohos:layout_alignment="horizontal_center"/>
+
+</DependentLayout>
+
+
+

@@ -7,7 +7,7 @@
       "name": "1.0"
     },
     "apiVersion": {
-      "compatible": 4,
+      "compatible": 3,
       "target": 4,
       "releaseType": "Beta1"
     }
@@ -18,7 +18,8 @@
     "name": ".MyApplication",
     "deviceType": [
       "phone",
-      "tv"
+      "tv",
+      "wearable"
     ],
     "distro": {
       "deliveryWithInstall": true,
@@ -33,7 +34,8 @@
               "entity.system.home"
             ],
             "actions": [
-              "action.system.home"
+              "action.system.home",
+              "action.editor"
             ]
           }
         ],

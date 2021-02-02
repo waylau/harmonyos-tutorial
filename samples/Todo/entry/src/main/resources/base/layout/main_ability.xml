@@ -18,13 +18,29 @@
             xmlns:ohos="http://schemas.huawei.com/res/ohos"
             ohos:height="$float:titlePartIconDivHeight"
             ohos:width="match_parent">
+            <DependentLayout
+                xmlns:ohos="http://schemas.huawei.com/res/ohos"
+                ohos:id="$+id:title_area_add"
+                ohos:height="$float:titlePartIconHotAreaHeight"
+                ohos:width="$float:titlePartIconHotAreaWidth"
+                ohos:center_in_parent="true"
+                    >
+
+                <Image
+                    ohos:id="$+id:title_area_add_icon"
+                    ohos:height="$float:titlePartIconHeight"
+                    ohos:width="$float:titlePartIconWidth"
+                    ohos:center_in_parent="true"
+                    ohos:image_src="$graphic:icon_add"/>
+            </DependentLayout>
+
+            <!-- 删除
 
             <DependentLayout
                 xmlns:ohos="http://schemas.huawei.com/res/ohos"
                 ohos:id="$+id:title_area_menu"
                 ohos:height="$float:titlePartIconHotAreaHeight"
                 ohos:width="$float:titlePartIconHotAreaWidth"
-                ohos:align_parent_right="true"
                 ohos:center_in_parent="true"
                 ohos:right_margin="$float:titlePartIconHotAreaRightMargin">
 
@@ -35,24 +51,9 @@
                     ohos:center_in_parent="true"
                     ohos:image_src="$graphic:icon_more"/>
             </DependentLayout>
-
-            <DependentLayout
-                xmlns:ohos="http://schemas.huawei.com/res/ohos"
-                ohos:id="$+id:title_area_add"
-                ohos:height="$float:titlePartIconHotAreaHeight"
-                ohos:width="$float:titlePartIconHotAreaWidth"
-                ohos:center_in_parent="true"
-                ohos:left_of="$id:title_area_menu">
-
-                <Image
-                    ohos:id="$+id:title_area_add_icon"
-                    ohos:height="$float:titlePartIconHeight"
-                    ohos:width="$float:titlePartIconWidth"
-                    ohos:center_in_parent="true"
-                    ohos:image_src="$graphic:icon_add"/>
-            </DependentLayout>
+            -->
         </DependentLayout>
-
+        <!-- 删除
         <Text
             ohos:id="$+id:title_text"
             ohos:height="$float:titlePartTextAreaHeight"
@@ -66,6 +67,7 @@
             ohos:text_font="medium"
             ohos:text_size="$float:textSizeHeadline6"
             ohos:top_margin="$float:titlePartTextAreaTopMargin"/>
+            -->
     </DirectionalLayout>
 
     <ListContainer
