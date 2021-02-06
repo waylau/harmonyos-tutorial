@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="horizontal">
+
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="0vp"
+        ohos:orientation="vertical"
+        ohos:weight="1">
+
+        <Button
+            ohos:id="$+id:button_create"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:background_element="#F76543"
+            ohos:left_padding="10vp"
+            ohos:text="Create"
+            ohos:text_size="24fp"
+            />
+
+        <Image
+            ohos:id="$+id:image_create"
+            ohos:height="100vp"
+            ohos:width="100vp"/>
+    </DirectionalLayout>
+
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="0vp"
+        ohos:orientation="vertical"
+        ohos:weight="1">
+
+        <Button
+            ohos:id="$+id:button_get"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:background_element="#F76543"
+            ohos:left_padding="10vp"
+            ohos:text="Get Info"
+            ohos:text_size="24fp"
+            />
+
+        <Image
+            ohos:id="$+id:image_get"
+            ohos:height="100vp"
+            ohos:width="100vp"/>
+    </DirectionalLayout>
+
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="0vp"
+        ohos:orientation="vertical"
+        ohos:weight="1">
+
+        <Button
+            ohos:id="$+id:button_read_write"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:background_element="#F76543"
+            ohos:left_padding="10vp"
+            ohos:text="Read and write"
+            ohos:text_size="24fp"
+            />
+
+        <Image
+            ohos:id="$+id:image_read_write"
+            ohos:height="100vp"
+            ohos:width="100vp"/>
+    </DirectionalLayout>
+</DirectionalLayout>

@@ -53,21 +53,6 @@
             </DependentLayout>
             -->
         </DependentLayout>
-        <!-- 删除
-        <Text
-            ohos:id="$+id:title_text"
-            ohos:height="$float:titlePartTextAreaHeight"
-            ohos:width="match_parent"
-            ohos:bottom_margin="$float:titlePartTextAreaBottomMargin"
-            ohos:left_margin="$float:titlePartTextAreaLeftMargin"
-            ohos:right_margin="$float:titlePartTextAreaRightMargin"
-            ohos:text="$string:title_text"
-            ohos:text_alignment="vertical_center"
-            ohos:text_color="$color:colorAppbarTitle"
-            ohos:text_font="medium"
-            ohos:text_size="$float:textSizeHeadline6"
-            ohos:top_margin="$float:titlePartTextAreaTopMargin"/>
-            -->
     </DirectionalLayout>
 
     <ListContainer

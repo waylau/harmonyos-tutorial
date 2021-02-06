@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DependentLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:background_element="$color:colorAppBackground"
+    ohos:orientation="vertical">
+
+    <DependentLayout
+        ohos:id="$+id:dl_content"
+        ohos:height="match_content"
+        ohos:width="match_parent">
+
+        <DirectionalLayout
+            ohos:id="$+id:dl_event"
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:bottom_margin="$float:item_bottom_margin"
+            ohos:orientation="horizontal">
+
+            <Text
+                ohos:id="$+id:key_event"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text="事件:"
+                ohos:text_color="$color:text_color"
+                ohos:text_size="$float:text_size_1"/>
+
+            <TextField
+                ohos:id="$+id:event"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:hint="请输入事件内容"
+                ohos:left_padding="$float:text_left_padding"
+                ohos:text_color="$color:text_color"
+                ohos:text_size="$float:text_size_2"/>
+
+        </DirectionalLayout>
+
+        <DirectionalLayout
+            ohos:id="$+id:dl_time"
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:below="$id:dl_event"
+            ohos:bottom_margin="$float:item_bottom_margin"
+            ohos:orientation="horizontal"
+            >
+
+            <Text
+                ohos:id="$+id:key_time"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text="时间:"
+                ohos:text_color="$color:text_color"
+                ohos:text_size="$float:text_size_1"/>
+
+            <Text
+                ohos:id="$+id:time"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:clickable="true"
+                ohos:hint="选择时间"
+                ohos:left_padding="$float:text_left_padding"
+                ohos:text_color="$color:text_color"
+                ohos:text_size="$float:text_size_2"/>
+        </DirectionalLayout>
+
+        <DirectionalLayout
+            ohos:id="$+id:dl_priority"
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:below="$id:dl_time"
+            ohos:bottom_margin="$float:item_bottom_margin">
+
+            <Text
+                ohos:id="$+id:key_priority"
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:text="优先级:"
+                ohos:text_color="$color:text_color"
+                ohos:text_size="$float:text_size_1"/>
+
+            <RadioContainer
+                ohos:id="$+id:radio_container"
+                ohos:height="200vp"
+                ohos:width="200vp">
+
+                <RadioButton
+                    ohos:id="$+id:radio_button_1"
+                    ohos:height="40vp"
+                    ohos:width="match_content"
+                    ohos:text="紧急且重要"
+                    ohos:text_color="#f15b6c"
+                    ohos:text_color_off="#f15b6c"
+                    ohos:text_color_on="#f15b6c"
+                    ohos:text_size="14fp"/>
+
+                <RadioButton
+                    ohos:id="$+id:radio_button_2"
+                    ohos:height="40vp"
+                    ohos:width="match_content"
+                    ohos:text="紧急不重要"
+                    ohos:text_color="#f47920"
+                    ohos:text_color_off="#f47920"
+                    ohos:text_color_on="#f47920"
+                    ohos:text_size="14fp"/>
+
+                <RadioButton
+                    ohos:id="$+id:radio_button_3"
+                    ohos:height="40vp"
+                    ohos:width="match_content"
+                    ohos:text="重要不紧急"
+                    ohos:text_color="#1d953f"
+                    ohos:text_color_off="#1d953f"
+                    ohos:text_color_on="#1d953f"
+                    ohos:text_size="14fp"/>
+
+                <RadioButton
+                    ohos:id="$+id:radio_button_4"
+                    ohos:height="40vp"
+                    ohos:width="match_content"
+                    ohos:text="既不重要又不紧急"
+                    ohos:text_color="#d9d6c3"
+                    ohos:text_color_off="#d9d6c3"
+                    ohos:text_color_on="#d9d6c3"
+                    ohos:text_size="14fp"/>
+            </RadioContainer>
+
+        </DirectionalLayout>
+
+        <DatePicker
+            ohos:id="$+id:date_pick"
+            ohos:height="match_content"
+            ohos:width="300vp"
+            ohos:background_element="#45224a"
+            ohos:center_in_parent="true"
+            ohos:normal_text_size="16fp"
+            ohos:selected_text_size="16fp"
+            ohos:visibility="hide">
+        </DatePicker>
+
+    </DependentLayout>
+    <Button
+        ohos:height="20vp"
+        ohos:width="match_content"
+        ohos:text="删除"
+        ohos:left_padding="$float:text_left_padding"
+        ohos:text_size="$float:text_size_1"
+        ohos:below="$id:dl_content"/>
+</DependentLayout>
+
+
+

@@ -39,8 +39,8 @@ public class MainAbilitySlice extends AbilitySlice {
         setUIContent(createComponent());
 
         // 点击事件
-        Image imageAdd = (Image)findComponentById(ResourceTable.Id_title_area_add);
-        //imageAdd.setClickedListener(listener -> present(new EditAbilitySlice(), new Intent()));
+        Image imageAdd = (Image)findComponentById(ResourceTable.Id_title_area_add_icon);
+        imageAdd.setClickedListener(listener -> present(new EditAbilitySlice(), new Intent()));
     }
 
     @Override

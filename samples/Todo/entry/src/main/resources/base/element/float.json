@@ -139,6 +139,30 @@
     {
       "name": "listContainerBottomPadding",
       "value": "14vp"
+    },
+    {
+      "name" : "margin_to_parent",
+      "value" : "15fp"
+    },
+    {
+      "name" : "text_bottom_margin",
+      "value" : "10fp"
+    },
+    {
+      "name" : "item_bottom_margin",
+      "value" : "20fp"
+    },
+    {
+      "name" : "text_size_1",
+      "value" : "20sp"
+    },
+    {
+      "name" : "text_size_2",
+      "value" : "18sp"
+    },
+    {
+      "name" : "text_left_padding",
+      "value" : "10fp"
     }
   ]
 }

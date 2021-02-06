@@ -43,6 +43,10 @@
     {
       "name": "colorListDivider",
       "value": "#33000000"
+    },
+    {
+      "name" : "text_color",
+      "value" : "#C0C0C0"
     }
   ]
 }
