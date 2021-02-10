@@ -73,6 +73,8 @@ There is also a GitBook version of this book: <http://waylau.gitbooks.io/harmony
 * [视频录制](samples/Recorder)
 * [图像编解码](samples/ImageCodec)
 * [位图操作](samples/PixelMap)
+* [图像属性解码](samples/ImageSourceExifUtils)（TODO）
+* [相机设备创建、配置、帧捕获](samples/CameraKit)
 * [Todo](samples/Todo)
 * 未完待续...
 
