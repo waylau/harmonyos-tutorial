@@ -6,7 +6,7 @@
     ohos:orientation="vertical">
 
     <DirectionalLayout
-        ohos:height="30vp"
+        ohos:height="60vp"
         ohos:width="match_content"
         ohos:orientation="horizontal">
 
@@ -15,9 +15,10 @@
             ohos:height="match_content"
             ohos:width="match_content"
             ohos:background_element="#F76543"
-            ohos:left_padding="10vp"
+            ohos:margin="10vp"
+            ohos:padding="10vp"
             ohos:text="Play"
-            ohos:text_size="27fp"
+            ohos:text_size="20vp"
             />
 
         <Button
@@ -25,9 +26,10 @@
             ohos:height="match_content"
             ohos:width="match_content"
             ohos:background_element="#F76543"
-            ohos:left_padding="10vp"
+            ohos:margin="10vp"
+            ohos:padding="10vp"
             ohos:text="Pause"
-            ohos:text_size="27fp"
+            ohos:text_size="20vp"
             />
 
         <Button
@@ -35,15 +37,16 @@
             ohos:height="match_content"
             ohos:width="match_content"
             ohos:background_element="#F76543"
-            ohos:left_padding="10vp"
+            ohos:margin="10vp"
+            ohos:padding="10vp"
             ohos:text="Stop"
-            ohos:text_size="27fp"
+            ohos:text_size="20vp"
             />
     </DirectionalLayout>
 
     <DependentLayout
         ohos:id="$+id:layout_surface_provider"
-        ohos:height="match_content"
-        ohos:width="660vp"
-        ohos:orientation="horizontal"></DependentLayout>
+        ohos:height="match_parent"
+        ohos:width="match_content"
+        ohos:orientation="horizontal"/>
 </DirectionalLayout>

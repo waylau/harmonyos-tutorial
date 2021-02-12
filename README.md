@@ -4,7 +4,6 @@
 
 *Harmonyos Tutorial*, is a book about how to develop Harmonyos applications.
 
-There is also a GitBook version of this book: <http://waylau.gitbooks.io/harmonyos-tutorial>.
 
 
 《跟老卫学HarmonyOS开发》是一本 HarmonyOS 应用开发的开源学习教程，主要介绍如何从0开始开发 HarmonyOS 应用。本书包括最新版本 HarmonyOS 2.0 中的新特性。图文并茂，并通过大量实例带你走近 HarmonyOS 的世界！
@@ -37,9 +36,9 @@ There is also a GitBook version of this book: <http://waylau.gitbooks.io/harmony
 * [多个Page之间的路由与导航](samples/IntentOperationWithAction)
 * [分布式任务调度启动远程FA](samples/DistributedSchedulingStartRemoteFA)
 * [分布式任务调度启动和关闭远程PA](samples/DistributedSchedulingStartStopRemotePA)
-* [公共事件服务发布事件](samples/CommonEventPublisher)
-* [公共事件服务订阅事件](samples/CommonEventSubscriber)
-* [高级通知服务](samples/Notification)
+* [公共事件服务发布事件](samples/CommonEventPublisher)（test）
+* [公共事件服务订阅事件](samples/CommonEventSubscriber)（test）
+* [高级通知服务](samples/Notification)（test）
 * [剪切板数据的写入](samples/SystemPasteboardSetter)
 * [剪切板数据的读取](samples/SystemPasteboardGetter)
 * [XML创建布局](samples/DirectionalLayoutWithXml)
@@ -73,8 +72,15 @@ There is also a GitBook version of this book: <http://waylau.gitbooks.io/harmony
 * [视频录制](samples/Recorder)
 * [图像编解码](samples/ImageCodec)
 * [位图操作](samples/PixelMap)
-* [图像属性解码](samples/ImageSourceExifUtils)（TODO）
+* [图像属性解码](samples/ImageSourceExifUtils)（test）
 * [相机设备创建、配置、帧捕获](samples/CameraKit)
+* [音频播放](samples/AudioRenderer)（test）
+* [音频采集](samples/AudioCapturer)（test）
+* [短音播放](samples/SoundPlayer)（test）
+* [AVSession媒体框架客户端、服务端](samples/AVSession)
+* [媒体元数据获取](samples/AVMetadataHelper)
+* [媒体存储数据](samples/AVStorage)
+* [视频与图像缩略图获取](samples/AVThumbnailUtils)
 * [Todo](samples/Todo)
 * 未完待续...
 

@@ -1,0 +1,55 @@
+{
+  "app": {
+    "bundleName": "com.waylau.hmos.avsession",
+    "vendor": "waylau",
+    "version": {
+      "code": 1,
+      "name": "1.0"
+    },
+    "apiVersion": {
+      "compatible": 4,
+      "target": 4,
+      "releaseType": "Beta1"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.waylau.hmos.avsession",
+    "name": ".MyApplication",
+    "deviceType": [
+      "tv"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry"
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "landscape",
+        "name": "com.waylau.hmos.avsession.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "AVSession",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "name": "com.waylau.hmos.avsession.AVService",
+        "icon": "$media:icon",
+        "description": "$string:avservice_description",
+        "type": "service"
+      }
+    ]
+  }
+}

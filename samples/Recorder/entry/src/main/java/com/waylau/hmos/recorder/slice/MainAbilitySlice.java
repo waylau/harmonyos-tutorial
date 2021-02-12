@@ -58,7 +58,7 @@ public class MainAbilitySlice extends AbilitySlice {
         RawFileDescriptor filDescriptor = null;
         try {
             filDescriptor = getResourceManager()
-                    .getRawFileEntry("resources/rawfile/video.mp4")
+                    .getRawFileEntry("resources/rawfile/big_buck_bunny.mp4")
                     .openRawFileDescriptor();
         } catch (IOException e) {
             e.printStackTrace();

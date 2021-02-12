@@ -10,10 +10,16 @@ import ohos.agp.components.surfaceprovider.SurfaceProvider;
 import ohos.agp.graphics.Surface;
 import ohos.agp.graphics.SurfaceOps;
 import ohos.global.resource.RawFileDescriptor;
+import ohos.hiviewdfx.HiLog;
+import ohos.hiviewdfx.HiLogLabel;
 import ohos.media.common.Source;
 import ohos.media.player.Player;
 
 public class MainAbilitySlice extends AbilitySlice {
+    private static final String TAG = MainAbilitySlice.class.getSimpleName();
+    private static final HiLogLabel LABEL_LOG =
+            new HiLogLabel(HiLog.LOG_APP, 0x00001, TAG);
+
     private static Player player;
 
     private SurfaceProvider surfaceProvider;
@@ -55,6 +61,8 @@ public class MainAbilitySlice extends AbilitySlice {
     }
 
     private void initSurfaceProvider() {
+        HiLog.info(LABEL_LOG, "before initSurfaceProvider");
+
         player = new Player(this);
 
         surfaceProvider = new SurfaceProvider(this);
@@ -66,6 +74,8 @@ public class MainAbilitySlice extends AbilitySlice {
         DependentLayout layout
                 = (DependentLayout) findComponentById(ResourceTable.Id_layout_surface_provider);
         layout.addComponent(surfaceProvider);
+
+        HiLog.info(LABEL_LOG, "end initSurfaceProvider");
     }
 
     class VideoSurfaceCallback implements SurfaceOps.Callback {
@@ -75,21 +85,30 @@ public class MainAbilitySlice extends AbilitySlice {
                 Surface surface = surfaceProvider.getSurfaceOps().get().getSurface();
                 playLocalFile(surface);
             }
+
+            HiLog.info(LABEL_LOG, "surfaceCreated");
         }
 
         @Override
         public void surfaceChanged(SurfaceOps surfaceOps, int i, int i1, int i2) {
+            HiLog.info(LABEL_LOG, "surfaceChanged, %{public}s, %{public}s, %{public}s",
+                    i, i1, i2);
         }
 
         @Override
         public void surfaceDestroyed(SurfaceOps surfaceOps) {
+            HiLog.info(LABEL_LOG, "surfaceDestroyed");
         }
     }
 
     private void playLocalFile(Surface surface) {
+        HiLog.info(LABEL_LOG, "before playLocalFile");
+
         try {
             RawFileDescriptor filDescriptor =
-                    getResourceManager().getRawFileEntry("resources/rawfile/video.mp4").openRawFileDescriptor();
+                    getResourceManager()
+                            .getRawFileEntry("resources/rawfile/big_buck_bunny.mp4")
+                            .openRawFileDescriptor();
 
             Source source = new Source(filDescriptor.getFileDescriptor(),
                     filDescriptor.getStartPosition(), filDescriptor.getFileSize());
@@ -103,6 +122,7 @@ public class MainAbilitySlice extends AbilitySlice {
             e.printStackTrace();
         }
 
+        HiLog.info(LABEL_LOG, "before playLocalFile");
     }
 
     @Override
@@ -117,38 +137,47 @@ public class MainAbilitySlice extends AbilitySlice {
     private class VideoPlayerCallback implements Player.IPlayerCallback {
         @Override
         public void onPrepared() {
+            HiLog.info(LABEL_LOG, "onPrepared");
         }
 
         @Override
         public void onMessage(int i, int i1) {
+            HiLog.info(LABEL_LOG, "onMessage, %{public}s, %{public}s", i, i1);
         }
 
         @Override
         public void onError(int i, int i1) {
+            HiLog.info(LABEL_LOG, "onError, %{public}s, %{public}s", i, i1);
         }
 
         @Override
         public void onResolutionChanged(int i, int i1) {
+            HiLog.info(LABEL_LOG, "onResolutionChanged, %{public}s, %{public}s", i, i1);
         }
 
         @Override
         public void onPlayBackComplete() {
+            HiLog.info(LABEL_LOG, "onPlayBackComplete");
         }
 
         @Override
         public void onRewindToComplete() {
+            HiLog.info(LABEL_LOG, "onRewindToComplete");
         }
 
         @Override
         public void onBufferingChange(int i) {
+            HiLog.info(LABEL_LOG, "onBufferingChange, %{public}s", i);
         }
 
         @Override
         public void onNewTimedMetaData(Player.MediaTimedMetaData mediaTimedMetaData) {
+            HiLog.info(LABEL_LOG, "onNewTimedMetaData");
         }
 
         @Override
         public void onMediaTimeIncontinuity(Player.MediaTimeInfo mediaTimeInfo) {
+            HiLog.info(LABEL_LOG, "onMediaTimeIncontinuity");
         }
     }
 }

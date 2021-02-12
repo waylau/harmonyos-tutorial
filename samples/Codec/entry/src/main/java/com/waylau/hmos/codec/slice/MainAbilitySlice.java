@@ -58,7 +58,8 @@ public class MainAbilitySlice extends AbilitySlice {
         final Codec decoder = Codec.createDecoder();
 
         //2、调用setSource()设置数据源，支持设定文件路径或者文件File Descriptor
-        RawFileEntry rawFileEntry = this.getResourceManager().getRawFileEntry("resources/rawfile/video.mp4");
+        RawFileEntry rawFileEntry =
+                this.getResourceManager().getRawFileEntry("resources/rawfile/big_buck_bunny.mp4");
         FileDescriptor fd = rawFileEntry.openRawFileDescriptor().getFileDescriptor();
         decoder.setSource(new Source(fd), new TrackInfo());
 
@@ -95,7 +96,8 @@ public class MainAbilitySlice extends AbilitySlice {
 
         //2、调用setSource()设置数据源，支持设定文件路径或者文件File Descriptor
         // 获取源文件
-        RawFileEntry rawFileEntry = this.getResourceManager().getRawFileEntry("resources/rawfile/video.mp4");
+        RawFileEntry rawFileEntry =
+                this.getResourceManager().getRawFileEntry("resources/rawfile/big_buck_bunny.mp4");
         FileDescriptor fd = rawFileEntry.openRawFileDescriptor().getFileDescriptor();
         encoder.setSource(new Source(fd), new TrackInfo());
 

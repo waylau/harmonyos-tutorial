@@ -1,0 +1,20 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "AVSession"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_TV_Empty Feature Ability"
+    },
+    {
+      "name": "HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "avservice_description",
+      "value": "hap sample empty service"
+    }
+  ]
+}

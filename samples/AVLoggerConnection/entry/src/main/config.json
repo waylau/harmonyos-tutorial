@@ -1,0 +1,49 @@
+{
+  "app": {
+    "bundleName": "com.waylau.hmos.avloggerconnection",
+    "vendor": "waylau",
+    "version": {
+      "code": 1,
+      "name": "1.0"
+    },
+    "apiVersion": {
+      "compatible": 4,
+      "target": 4,
+      "releaseType": "Beta2"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.waylau.hmos.avloggerconnection",
+    "name": ".MyApplication",
+    "deviceType": [
+      "phone"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry"
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "unspecified",
+        "name": "com.waylau.hmos.avloggerconnection.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "AVLoggerConnection",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ]
+  }
+}
