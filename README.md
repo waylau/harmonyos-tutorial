@@ -84,6 +84,12 @@
 * [生成二维码](samples/QuickResponseCode)
 * [通用文字识别](samples/TextDetector)
 * [NfcController](samples/NfcController)（test）
+* [传统蓝牙本机管理](samples/BluetoothHost)
+* [传统蓝牙远端设备操作](samples/BluetoothRemoteDevice)
+* [BLE扫描和广播](samples/BleCentralManager)（test）
+* [WLAN基础功能](samples/WifiDevice)
+* [不信任热点配置](samples/WifiDeviceUntrustedConfig)
+* [WLAN消息通知](samples/WifiEventSubscriber)
 * [Todo](samples/Todo)
 * 未完待续...
 
