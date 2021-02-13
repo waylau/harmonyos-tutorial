@@ -81,6 +81,9 @@
 * [媒体元数据获取](samples/AVMetadataHelper)
 * [媒体存储数据](samples/AVStorage)
 * [视频与图像缩略图获取](samples/AVThumbnailUtils)
+* [生成二维码](samples/QuickResponseCode)
+* [通用文字识别](samples/TextDetector)
+* [NfcController](samples/NfcController)（test）
 * [Todo](samples/Todo)
 * 未完待续...
 

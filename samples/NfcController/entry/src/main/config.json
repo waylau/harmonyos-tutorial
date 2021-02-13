@@ -1,0 +1,59 @@
+{
+  "app": {
+    "bundleName": "com.waylau.hmos.nfccontroller",
+    "vendor": "waylau",
+    "version": {
+      "code": 1,
+      "name": "1.0"
+    },
+    "apiVersion": {
+      "compatible": 4,
+      "target": 4,
+      "releaseType": "Beta2"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.waylau.hmos.nfccontroller",
+    "name": ".MyApplication",
+    "deviceType": [
+      "phone",
+      "tablet",
+      "wearable"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry"
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "unspecified",
+        "name": "com.waylau.hmos.nfccontroller.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "NfcController",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ],
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.NFC_TAG"
+      },
+      {
+        "name": "ohos.permission.NFC_CARD_EMULATION"
+      }
+    ]
+  }
+}
