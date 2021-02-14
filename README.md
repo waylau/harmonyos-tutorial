@@ -90,6 +90,15 @@
 * [WLAN基础功能](samples/WifiDevice)
 * [不信任热点配置](samples/WifiDeviceUntrustedConfig)
 * [WLAN消息通知](samples/WifiEventSubscriber)
+* [使用当前网络打开一个URL链接](samples/NetManagerHandleURL)
+* [使用当前网络进行Socket数据传输](samples/NetManagerHandleSocket)
+* [流量统计](samples/DataFlowStatistics)
+* [获取当前蜂窝网络信号信息](samples/RadioInfoManager)
+* [观察蜂窝网络状态变化](samples/RadioStateObserver)
+* [传感器示例](samples/CategoryOrientationAgent)
+* [Light示例](samples/LightAgent)
+* [获取设备的位置](samples/Locator)
+* [（逆）地理编码转化](samples/GeoConvert)
 * [Todo](samples/Todo)
 * 未完待续...
 
