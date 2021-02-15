@@ -99,6 +99,9 @@
 * [Light示例](samples/LightAgent)
 * [获取设备的位置](samples/Locator)
 * [（逆）地理编码转化](samples/GeoConvert)
+* [使用对象关系映射数据库](samples/DataAbilityHelperAccessORM)
+* [使用轻量级偏好数据库](samples/Preferences)
+* [使用数据存储管理](samples/DataUsage)
 * [Todo](samples/Todo)
 * 未完待续...
 

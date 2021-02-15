@@ -1,0 +1,17 @@
+apply plugin: 'com.huawei.ohos.hap'
+ohos {
+    compileSdkVersion 3
+    defaultConfig {
+        compatibleSdkVersion 3
+    }
+
+    // 添加compileOptions相关的配置
+    compileOptions{
+        annotationEnabled true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.har'])
+    testCompile 'junit:junit:4.12'
+}
