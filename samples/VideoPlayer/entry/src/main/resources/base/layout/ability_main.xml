@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:background_element="#000">
+
+    <DirectionalLayout
+        ohos:id="$+id:layout_player"
+        ohos:height="400vp"
+        ohos:width="match_parent"
+        ohos:layout_alignment="top">
+    </DirectionalLayout>
+
+    <DirectionalLayout
+        ohos:id="$+id:layout_menu"
+        ohos:height="140vp"
+        ohos:width="match_parent"
+        ohos:layout_alignment="bottom"
+        ohos:orientation="vertical">
+
+        <Text
+            ohos:id="$+id:text_current_name"
+            ohos:height="24vp"
+            ohos:width="match_parent"
+            ohos:text="Big BuckBunny"
+            ohos:text_color="#FFFFFF"
+            ohos:text_size="24vp"/>
+
+        <Slider
+            ohos:id="$+id:player_progress"
+            ohos:height="50vp"
+            ohos:width="match_parent"
+            ohos:max="100"
+            ohos:min="0"
+            ohos:padding="10vp"
+            ohos:progress_element="#f00"/>
+
+        <DirectionalLayout
+            ohos:height="60vp"
+            ohos:width="match_parent"
+            ohos:orientation="horizontal"
+            >
+
+            <Button
+                ohos:id="$+id:button_previous"
+                ohos:height="40vp"
+                ohos:width="0vp"
+                ohos:background_element="#F76543"
+                ohos:layout_alignment="horizontal_center"
+                ohos:margin="10vp"
+                ohos:padding="10vp"
+                ohos:text="Previous"
+                ohos:text_size="44"
+                ohos:weight="1"
+                />
+
+            <Button
+                ohos:id="$+id:button_play_pause"
+                ohos:height="40vp"
+                ohos:width="0vp"
+                ohos:background_element="#F76543"
+                ohos:layout_alignment="horizontal_center"
+                ohos:margin="10vp"
+                ohos:padding="10vp"
+                ohos:text="Play"
+                ohos:text_size="44"
+                ohos:weight="1"
+                />
+
+            <Button
+                ohos:id="$+id:button_next"
+                ohos:height="40vp"
+                ohos:width="0vp"
+                ohos:background_element="#F76543"
+                ohos:layout_alignment="horizontal_center"
+                ohos:margin="10vp"
+                ohos:padding="10vp"
+                ohos:text="Next"
+                ohos:text_size="44"
+                ohos:weight="1"
+                />
+        </DirectionalLayout>
+    </DirectionalLayout>
+</DirectionalLayout>

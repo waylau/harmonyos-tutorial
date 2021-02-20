@@ -33,13 +33,22 @@ public class MainAbilitySlice extends AbilitySlice {
                 (Button) findComponentById(ResourceTable.Id_button_play);
 
         // 为按钮设置点击事件回调
-        buttonPlay.setClickedListener(listener -> player.play());
+        buttonPlay.setClickedListener(listener -> {
+            player.play();
+
+            HiLog.info(LABEL_LOG, "getCurrentTime: %{public}s", player.getCurrentTime() );
+            HiLog.info(LABEL_LOG, "getDuration: %{public}s", player.getDuration() );
+        });
 
         Button buttonPause =
                 (Button) findComponentById(ResourceTable.Id_button_pause);
 
         // 为按钮设置点击事件回调
-        buttonPause.setClickedListener(listener -> player.pause());
+        buttonPause.setClickedListener(listener -> {
+            player.pause();
+            HiLog.info(LABEL_LOG, "getCurrentTime: %{public}s", player.getCurrentTime() );
+            HiLog.info(LABEL_LOG, "getDuration: %{public}s", player.getDuration() );
+        });
 
         Button buttonStop =
                 (Button) findComponentById(ResourceTable.Id_button_stop);

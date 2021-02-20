@@ -102,7 +102,13 @@
 * [使用对象关系映射数据库](samples/DataAbilityHelperAccessORM)
 * [使用轻量级偏好数据库](samples/Preferences)
 * [使用数据存储管理](samples/DataUsage)
-* [Todo](samples/Todo)
+* [ElectronicAlbum](samples/ElectronicAlbum)
+* [KlotskiJs](samples/KlotskiJs)
+* [AudioPlayer](samples/AudioPlayer)（TODO）
+* [MusicPlayer](samples/MusicPlayer)（TODO）
+* [VideoPlayer](samples/VideoPlayer)
+* [Tetris](samples/Tetris)
+* [Todo](samples/Todo)（TODO）
 * 未完待续...
 
 

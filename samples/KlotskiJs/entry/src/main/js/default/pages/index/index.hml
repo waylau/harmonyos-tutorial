@@ -1,0 +1,16 @@
+<div class="container">
+    <stack class="stack">
+        <!--canvas为游戏主界面-->
+        <canvas class="canvas" ref="canvas" onswipe="swipeGrids"></canvas>
+        <!--tip-container为提示界面-->
+        <div class="tip-container" show="{{isShowTip}}">
+            <text class="success-text">
+                Success!
+            </text>
+            <text class="cost-time">
+                Cost：{{timeSeconds}}
+            </text>
+        </div>
+    </stack>
+    <input type="button" value="Restart" class="button" onclick="restart"/>
+</div>

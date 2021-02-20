@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <DirectionalLayout
+        ohos:height="150vp"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal">
+
+        <DirectionalLayout
+            ohos:height="150vp"
+            ohos:width="match_content"
+            ohos:orientation="vertical">
+
+            <DirectionalLayout
+                ohos:height="75vp"
+                ohos:width="420vp"
+                ohos:orientation="horizontal">
+
+                <Text
+                    ohos:id="$+id:text_total_label"
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:background_element="$graphic:background_ability_main"
+                    ohos:padding="10vp"
+                    ohos:text="歌曲总数："
+                    ohos:text_size="88"
+                    />
+
+                <Text
+                    ohos:id="$+id:text_total_num"
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:background_element="$graphic:background_ability_main"
+                    ohos:padding="10vp"
+                    ohos:text="150"
+                    ohos:text_size="88"
+                    />
+            </DirectionalLayout>
+
+            <DirectionalLayout
+                ohos:height="75vp"
+                ohos:width="match_parent"
+                ohos:orientation="horizontal">
+
+                <Text
+                    ohos:id="$+id:text_current_label"
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:background_element="$graphic:background_ability_main"
+                    ohos:padding="10vp"
+                    ohos:text="当前歌曲："
+                    ohos:text_size="88"
+                    />
+
+                <Text
+                    ohos:id="$+id:text_current_name"
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:background_element="$graphic:background_ability_main"
+                    ohos:padding="10vp"
+                    ohos:text="偏偏喜欢你,偏偏喜欢你,偏偏喜欢你,偏偏喜欢你,偏偏喜欢你,"
+                    ohos:text_size="88"
+                    />
+            </DirectionalLayout>
+
+        </DirectionalLayout>
+
+        <RoundProgressBar
+            ohos:id="$+id:round_progress_bar"
+            ohos:height="140vp"
+            ohos:width="140vp"
+            ohos:max_angle="270"
+            ohos:padding="10vp"
+            ohos:progress="20"
+            ohos:progress_color="#47CC47"
+            ohos:progress_hint_text="20%"
+            ohos:progress_hint_text_color="#007DFF"
+            ohos:progress_width="10vp"
+            ohos:start_angle="45"
+            />
+    </DirectionalLayout>
+
+    <DirectionalLayout
+        ohos:height="60vp"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal">
+
+        <Button
+            ohos:id="$+id:button_previous"
+            ohos:height="40vp"
+            ohos:width="0vp"
+            ohos:background_element="#F76543"
+            ohos:layout_alignment="horizontal_center"
+            ohos:margin="10vp"
+            ohos:padding="10vp"
+            ohos:text="Previous"
+            ohos:text_size="44"
+            ohos:weight="1"
+            />
+
+        <Button
+            ohos:id="$+id:button_play_pause"
+            ohos:height="40vp"
+            ohos:width="0vp"
+            ohos:background_element="#F76543"
+            ohos:layout_alignment="horizontal_center"
+            ohos:margin="10vp"
+            ohos:padding="10vp"
+            ohos:text="Play"
+            ohos:text_size="44"
+            ohos:weight="1"
+            />
+
+        <Button
+            ohos:id="$+id:button_next"
+            ohos:height="40vp"
+            ohos:width="0vp"
+            ohos:background_element="#F76543"
+            ohos:layout_alignment="horizontal_center"
+            ohos:margin="10vp"
+            ohos:padding="10vp"
+            ohos:text="Next"
+            ohos:text_size="44"
+            ohos:weight="1"
+            />
+    </DirectionalLayout>
+
+</DirectionalLayout>

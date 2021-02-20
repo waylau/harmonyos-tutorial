@@ -17,7 +17,8 @@
     "package": "com.waylau.hmos.player",
     "name": ".MyApplication",
     "deviceType": [
-      "tablet"
+      "tablet",
+      "phone"
     ],
     "distro": {
       "deliveryWithInstall": true,

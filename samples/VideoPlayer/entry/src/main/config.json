@@ -1,0 +1,58 @@
+{
+  "app": {
+    "bundleName": "com.waylau.hmos.videoplayer",
+    "vendor": "waylau",
+    "version": {
+      "code": 1,
+      "name": "1.0"
+    },
+    "apiVersion": {
+      "compatible": 4,
+      "target": 4,
+      "releaseType": "Beta1"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.waylau.hmos.videoplayer",
+    "name": ".MyApplication",
+    "deviceType": [
+      "tv"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry"
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "landscape",
+        "name": "com.waylau.hmos.videoplayer.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "VideoPlayer",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ],
+    "metaData":{
+      "customizeData":[
+        {
+          "name": "hwc-theme",
+          "value": "androidhwext:style/Theme.Emui.NoTitleBar",
+          "extra":""
+        }
+      ]
+    }
+  }
+}

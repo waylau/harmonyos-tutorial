@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:background_element="#000"
+    ohos:orientation="vertical">
+
+    <DirectionalLayout
+        ohos:id="$+id:layout_tip"
+        ohos:height="60vp"
+        ohos:width="match_parent"
+        ohos:layout_alignment="top"
+        ohos:orientation="horizontal"
+        ohos:margin="10vp"
+        ohos:padding="10vp"
+        >
+
+        <Text
+            ohos:id="$+id:text_score_label"
+            ohos:height="match_parent"
+            ohos:width="80vp"
+            ohos:text_color="#FFFFFF"
+            ohos:text_size="24vp"
+            ohos:text="Score:"/>
+
+        <Text
+            ohos:id="$+id:text_score_value"
+            ohos:height="match_parent"
+            ohos:width="100vp"
+            ohos:text_color="#FFFFFF"
+            ohos:text_size="24vp"
+            ohos:text="0"/>
+        <Text
+            ohos:id="$+id:text_gameover"
+            ohos:height="match_parent"
+            ohos:width="match_content"
+            ohos:text_color="#FFFFFF"
+            ohos:text_size="24vp"
+            ohos:text="Start!"/>
+    </DirectionalLayout>
+
+    <DirectionalLayout
+        ohos:id="$+id:layout_game"
+        ohos:height="534vp"
+        ohos:width="match_parent"
+        ohos:orientation="vertical"
+        ohos:background_element="#696969"
+        >
+
+    </DirectionalLayout>
+
+    <DirectionalLayout
+        ohos:id="$+id:layout_menu"
+        ohos:height="60vp"
+        ohos:width="match_parent"
+        ohos:layout_alignment="bottom"
+        ohos:orientation="horizontal"
+        >
+
+        <Button
+            ohos:id="$+id:button_left"
+            ohos:height="40vp"
+            ohos:width="0vp"
+            ohos:background_element="#87CEFA"
+            ohos:layout_alignment="horizontal_center"
+            ohos:margin="10vp"
+            ohos:padding="10vp"
+            ohos:text="←"
+            ohos:text_size="44"
+            ohos:weight="1"
+            />
+
+        <Button
+            ohos:id="$+id:button_right"
+            ohos:height="40vp"
+            ohos:width="0vp"
+            ohos:background_element="#87CEFA"
+            ohos:layout_alignment="horizontal_center"
+            ohos:margin="10vp"
+            ohos:padding="10vp"
+            ohos:text="→"
+            ohos:text_size="44"
+            ohos:weight="1"
+            />
+
+        <Button
+            ohos:id="$+id:button_shift"
+            ohos:height="40vp"
+            ohos:width="0vp"
+            ohos:background_element="#87CEFA"
+            ohos:layout_alignment="horizontal_center"
+            ohos:margin="10vp"
+            ohos:padding="10vp"
+            ohos:text="∽"
+            ohos:text_size="44"
+            ohos:weight="1"
+            />
+        <Button
+            ohos:id="$+id:button_restart"
+            ohos:height="40vp"
+            ohos:width="0vp"
+            ohos:background_element="#87CEFA"
+            ohos:layout_alignment="horizontal_center"
+            ohos:margin="10vp"
+            ohos:padding="10vp"
+            ohos:text="R"
+            ohos:text_size="44"
+            ohos:weight="1"
+            />
+    </DirectionalLayout>
+
+
+</DirectionalLayout>

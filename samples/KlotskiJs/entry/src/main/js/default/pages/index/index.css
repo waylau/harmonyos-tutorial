@@ -1,0 +1,50 @@
+.container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 450px;
+}
+
+.stack {
+    width: 305px;
+    height: 305px;
+    margin-top: 40px;
+}
+
+.canvas {
+    width: 305px;
+    height: 305px;
+    background-color: #FFFFFF;
+}
+
+.tip-container {
+    width: 305px;
+    height: 305px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #008000;
+}
+
+.success-text {
+    font-size: 38px;
+    color: black;
+}
+
+.cost-time {
+    font-size: 30px;
+    text-align: center;
+    width: 300px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.button {
+    width: 150px;
+    height: 40px;
+    background-color: blue;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
