@@ -4,7 +4,7 @@ import com.waylau.hmos.imagesourceexifutils.ResourceTable;
 import ohos.aafwk.ability.AbilitySlice;
 import ohos.aafwk.content.Intent;
 import ohos.agp.components.Button;
-import ohos.global.resource.NotExistException;
+import ohos.global.resource.RawFileEntry;
 import ohos.hiviewdfx.HiLog;
 import ohos.hiviewdfx.HiLogLabel;
 import ohos.media.image.ExifUtils;
@@ -14,7 +14,6 @@ import ohos.media.image.common.ImageInfo;
 import ohos.utils.Pair;
 
 import java.io.*;
-import java.nio.file.Paths;
 
 public class MainAbilitySlice extends AbilitySlice {
     private static final String TAG = MainAbilitySlice.class.getSimpleName();
@@ -38,22 +37,25 @@ public class MainAbilitySlice extends AbilitySlice {
                 getInfo();
             } catch (IOException e) {
                 e.printStackTrace();
-            } catch (NotExistException e) {
-                e.printStackTrace();
             }
         });
     }
 
-    private void getInfo() throws IOException, NotExistException {
-        // 获取图片流
-         InputStream drawableInputStream =  getResourceManager().getResource(ResourceTable.Media_waylau_616_616);
-
+    private void getInfo() throws IOException {
         // 获取图片
-        //FileDescriptor fd = getResourceManager().getRawFileEntry("resources/base/media/IMG_20200711_090331.jpg").openRawFileDescriptor().getFileDescriptor();
+        RawFileEntry fileEntry = getResourceManager().
+                getRawFileEntry("resources/base/media/IMG_20210219_175445.jpg");
 
-        // 创建图像数据源ImageSource对象
-        //imageSource = ImageSource.create(fd, this.getSourceOptions());
-        imageSource = ImageSource.create(drawableInputStream, this.getSourceOptions());
+        //获取文件大小
+        int fileSize = (int) fileEntry.openRawFileDescriptor().getFileSize();
+
+        //定义读取文件的字节
+        byte[] fileData = new byte[fileSize];
+
+        //读取文件字节
+        fileEntry.openRawFile().read(fileData);
+
+        imageSource = ImageSource.create(fileData, this.getSourceOptions());
 
         // 获取嵌入图像文件的缩略图的基本信息
         ImageInfo imageInfo = imageSource.getThumbnailInfo();
@@ -63,8 +65,11 @@ public class MainAbilitySlice extends AbilitySlice {
         byte[] imageThumbnailBytes = imageSource.getImageThumbnailBytes();
         HiLog.info(LABEL_LOG, "imageThumbnailBytes: %{public}s", imageThumbnailBytes);
 
-        // 获取嵌入图像文件的经纬度信息。
+        // 获取嵌入图像文件缩略图的格式
+        int thumbnailFormat = imageSource.getThumbnailFormat();
+        HiLog.info(LABEL_LOG, "thumbnailFormat: %{public}s", thumbnailFormat);
 
+        // 获取嵌入图像文件的经纬度信息。
         Pair<Float, Float> lat = ExifUtils.getLatLong(imageSource);
         HiLog.info(LABEL_LOG, "lat first: %{public}s", lat.f);
         HiLog.info(LABEL_LOG, "lat second: %{public}s", lat.s);

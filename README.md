@@ -23,6 +23,7 @@
 * [HarmonyOS之Ability01——AbilitySlice间导航](https://developer.huawei.com/consumer/cn/forum/topic/0202443001580950502?fid=0101303901040230869)
 * [HarmonyOS之线程01——ParallelTaskDispatcher派发任务](https://developer.huawei.com/consumer/cn/forum/topic/0204460939630370009?fid=0101303901040230869)
 * [HarmonyOS之线程02——EventHandler处理线程间通信](https://developer.huawei.com/consumer/cn/forum/topic/0204461048552100015?fid=0101303901040230869)
+* [获取图像属性失败！java.lang.IllegalStateException: image data source invalid 热门度2](https://developer.huawei.com/consumer/cn/forum/topic/0201481849198120096?fid=0101303901040230869&pid=0301492195334980932)
 * 未完待续...
 
 ## Samples 示例
@@ -72,7 +73,7 @@
 * [视频录制](samples/Recorder)
 * [图像编解码](samples/ImageCodec)
 * [位图操作](samples/PixelMap)
-* [图像属性解码](samples/ImageSourceExifUtils)（test）
+* [图像属性解码](samples/ImageSourceExifUtils)
 * [相机设备创建、配置、帧捕获](samples/CameraKit)
 * [音频播放](samples/AudioRenderer)（test）
 * [音频采集](samples/AudioCapturer)（test）
