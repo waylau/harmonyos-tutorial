@@ -1,0 +1,6 @@
+<div class="container" onswipe="touchMove">
+    <text id="title">
+        Hello {{title}}
+    </text>
+    <input type="button" value="View" style="width: 200px; height: 50px;" onclick="clickAction"></input>
+</div>

@@ -109,6 +109,7 @@
 * [MusicPlayer](samples/MusicPlayer)（TODO）
 * [VideoPlayer](samples/VideoPlayer)
 * [Tetris](samples/Tetris)
+* [Swipe](samples/SwipeJs)（test）
 * [Todo](samples/Todo)（TODO）
 * 未完待续...
 
