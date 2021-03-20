@@ -112,7 +112,7 @@ public class MainAbilitySlice extends AbilitySlice {
         eliminateGrids(grids);
 
         // 判断游戏是否完成：
-        // 完成时就停止定时器和并提示结束文本；
+        // 完成时就停止定时器，并提示结束文本；
         // 未完成时就生成新的颜色方块
         if (isGameOver(grids)) {
             tipValue = "Game Over!";
