@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <Text
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:layout_alignment="horizontal_center"
+        ohos:text="图库图片的四种常见操作"
+        ohos:text_size="80"
+        ohos:top_margin="40vp"
+        />
+
+    <DirectionalLayout
+        xmlns:ohos="http://schemas.huawei.com/res/ohos"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:layout_alignment="horizontal_center"
+        ohos:orientation="horizontal"
+        ohos:top_margin="20vp">
+
+        <Button
+            ohos:id="$+id:whirl_image"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:background_element="$graphic:background_button"
+            ohos:padding="12vp"
+            ohos:right_margin="5vp"
+            ohos:text="旋转"
+            ohos:text_size="20vp"
+            ohos:top_margin="10vp">
+        </Button>
+
+        <Button
+            ohos:id="$+id:crop_image"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:background_element="$graphic:background_button"
+            ohos:left_margin="5vp"
+            ohos:padding="12vp"
+            ohos:text="剪裁"
+            ohos:text_size="20vp"
+            ohos:top_margin="10vp">
+        </Button>
+
+        <Button
+            ohos:id="$+id:scale_image"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:background_element="$graphic:background_button"
+            ohos:left_margin="5vp"
+            ohos:padding="12vp"
+            ohos:text="缩放"
+            ohos:text_size="20vp"
+            ohos:top_margin="10vp">
+        </Button>
+
+        <Button
+            ohos:id="$+id:mirror_image"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:background_element="$graphic:background_button"
+            ohos:left_margin="5vp"
+            ohos:padding="12vp"
+            ohos:text="镜像"
+            ohos:text_size="20vp"
+            ohos:top_margin="10vp"/>
+    </DirectionalLayout>
+
+    <Image
+        ohos:id="$+id:image"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:image_src="$media:space"
+        ohos:layout_alignment="horizontal_center"
+        ohos:top_margin="20vp">
+    </Image>
+
+</DirectionalLayout>

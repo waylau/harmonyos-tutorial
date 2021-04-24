@@ -7,8 +7,12 @@
         <compositeConfiguration>
           <compositeBuild compositeDefinitionSource="SCRIPT" />
         </compositeConfiguration>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="testRunner" value="PLATFORM" />
+        <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="C:\Program Files\Huawei\DevEco Studio 2.1.0.301\tools\gradle" />
+        <option name="resolveModulePerSourceSet" value="false" />
+        <option name="useQualifiedModuleNames" value="false" />
       </GradleProjectSettings>
     </option>
   </component>

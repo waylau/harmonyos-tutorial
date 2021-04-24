@@ -4,13 +4,16 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <compositeConfiguration>
-          <compositeBuild compositeDefinitionSource="SCRIPT" />
-        </compositeConfiguration>
         <option name="testRunner" value="PLATFORM" />
         <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleHome" value="C:\Program Files\Huawei\DevEco Studio 2.1.0.301\tools\gradle" />
+        <option name="gradleHome" value="D:\dev\harmonyos\DevEco Studio\tools\gradle" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/entry" />
+          </set>
+        </option>
         <option name="resolveModulePerSourceSet" value="false" />
         <option name="useQualifiedModuleNames" value="false" />
       </GradleProjectSettings>

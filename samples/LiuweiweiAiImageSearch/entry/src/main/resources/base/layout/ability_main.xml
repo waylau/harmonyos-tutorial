@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical"
+    ohos:background_element="$graphic:background_ability_page"
+    >
+
+    <Text
+        ohos:id="$+id:picture_list"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:background_element="$graphic:background_ability_main"
+        ohos:layout_alignment="horizontal_center"
+        ohos:text="搜索图片列表"
+        ohos:text_size="20fp"
+        ohos:top_margin="15vp"
+        />
+
+    <ListContainer
+        ohos:id="$+id:picture_list_show"
+        ohos:height="200vp"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal"
+        ohos:left_margin="5vp"
+        ohos:right_margin="5vp"
+        />
+
+    <Text
+        ohos:id="$+id:word_seg_title"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:background_element="$graphic:background_ability_main"
+        ohos:left_margin="5vp"
+        ohos:text="请输入关键词："
+        ohos:text_size="25fp"
+        ohos:top_margin="10vp"
+        />
+
+    <TextField
+        ohos:id="$+id:word_seg_text"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:background_element="$graphic:background_ability_main"
+        ohos:hint="输入关键词."
+        ohos:text="太空"
+        ohos:left_padding="5vp"
+        ohos:right_padding="5vp"
+        ohos:text_alignment="vertical_center"
+        ohos:text_size="20fp"
+        ohos:top_margin="5vp"/>
+
+    <Button
+        ohos:id="$+id:button_search"
+        ohos:width="match_content"
+        ohos:height="match_content"
+        ohos:text_size="20fp"
+        ohos:text="进行文字识别"
+        ohos:layout_alignment="horizontal_center"
+        ohos:top_margin="10vp"
+        ohos:top_padding="1vp"
+        ohos:bottom_padding="1vp"
+        ohos:right_padding="20vp"
+        ohos:left_padding="20vp"
+        ohos:text_color="white"
+        ohos:background_element="$graphic:button_element"
+        ohos:center_in_parent="true"
+        ohos:align_parent_bottom="true"
+        ohos:bottom_margin="5vp"/>
+
+    <Text
+        ohos:id="$+id:picture_list_result"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:background_element="$graphic:background_ability_main"
+        ohos:layout_alignment="horizontal_center"
+        ohos:text="搜索结果"
+        ohos:text_size="20fp"
+        ohos:top_margin="5vp"
+        />
+
+    <ListContainer
+        ohos:id="$+id:picture_list_match"
+        ohos:height="200vp"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal"
+        ohos:left_margin="5vp"
+        ohos:right_margin="5vp"
+        />
+</DirectionalLayout>
