@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DependentLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:background_element="#FFFFFFFF"
+    ohos:remote="true">
+
+    <Image
+        ohos:height="match_parent"
+        ohos:width="126vp"
+        ohos:horizontal_center="true"
+        ohos:image_src="$media:dog"
+        ohos:scale_mode="zoom_start"
+        ohos:top_margin="17vp"/>
+
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="126vp"
+        ohos:align_parent_bottom="true"
+        ohos:bottom_margin="12vp"
+        ohos:horizontal_center="true"
+        ohos:orientation="vertical">
+
+        <Text
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:text="$string:photowidget_title"
+            ohos:text_color="#E5000000"
+            ohos:text_size="16fp"
+            ohos:text_weight="500"
+            ohos:truncation_mode="ellipsis_at_end"/>
+
+        <Text
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:text="$string:photowidget_introduction"
+            ohos:text_color="#99000000"
+            ohos:text_size="12fp"
+            ohos:text_weight="400"
+            ohos:top_margin="2vp"
+            ohos:truncation_mode="ellipsis_at_end"/>
+    </DirectionalLayout>
+</DependentLayout>

@@ -1,0 +1,24 @@
+{
+  "string": [
+    {
+      "name": "entry_MainAbility",
+      "value": "entry_MainAbility"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "mainability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "photowidget_title",
+      "value": "我的狗狗"
+    },
+    {
+      "name": "photowidget_introduction",
+      "value": "狗狗撒娇！"
+    }
+  ]
+}

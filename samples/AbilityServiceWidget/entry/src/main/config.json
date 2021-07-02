@@ -1,0 +1,69 @@
+{
+  "app": {
+    "bundleName": "com.waylau.hmos.abilityservicewidget",
+    "vendor": "waylau",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.waylau.hmos.abilityservicewidget",
+    "name": ".MyApplication",
+    "mainAbility": "com.waylau.hmos.abilityservicewidget.MainAbility",
+    "deviceType": [
+      "phone"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry",
+      "installationFree": false
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "unspecified",
+        "name": "com.waylau.hmos.abilityservicewidget.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "$string:entry_MainAbility",
+        "type": "page",
+        "launchType": "standard",
+        "formsEnabled": true,
+        "forms": [
+          {
+            "landscapeLayouts": [
+              "$layout:form_image_with_information_photowidget_2_2"
+            ],
+            "isDefault": true,
+            "scheduledUpdateTime": "10:30",
+            "defaultDimension": "2*2",
+            "name": "PhotoWidget",
+            "description": "This is a photo service widget",
+            "colorMode": "auto",
+            "type": "Java",
+            "supportDimensions": [
+              "2*2"
+            ],
+            "portraitLayouts": [
+              "$layout:form_image_with_information_photowidget_2_2"
+            ],
+            "updateEnabled": true,
+            "updateDuration": 1
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -23,7 +23,8 @@
 * [HarmonyOS之Ability01——AbilitySlice间导航](https://developer.huawei.com/consumer/cn/forum/topic/0202443001580950502?fid=0101303901040230869)
 * [HarmonyOS之线程01——ParallelTaskDispatcher派发任务](https://developer.huawei.com/consumer/cn/forum/topic/0204460939630370009?fid=0101303901040230869)
 * [HarmonyOS之线程02——EventHandler处理线程间通信](https://developer.huawei.com/consumer/cn/forum/topic/0204461048552100015?fid=0101303901040230869)
-* [获取图像属性失败！java.lang.IllegalStateException: image data source invalid 热门度2](https://developer.huawei.com/consumer/cn/forum/topic/0201481849198120096?fid=0101303901040230869&pid=0301492195334980932)
+* [获取图像属性失败！java.lang.IllegalStateException: image data source invalid](https://developer.huawei.com/consumer/cn/forum/topic/0201481849198120096?fid=0101303901040230869&pid=0301492195334980932)
+* [使用Java轻松实现一个HarmonyOS服务卡片](https://developer.huawei.com/consumer/cn/forum/topic/0201592758640690342?fid=0101303901040230869)
 * 未完待续...
 
 ## Samples 示例
@@ -42,6 +43,7 @@
 * [高级通知服务](samples/Notification)（test）
 * [剪切板数据的写入](samples/SystemPasteboardSetter)
 * [剪切板数据的读取](samples/SystemPasteboardGetter)
+* [创建服务卡片](samples/AbilityServiceWidget)
 * [XML创建布局](samples/DirectionalLayoutWithXml)
 * [Java创建布局](samples/DirectionalLayoutWithJava)
 * [常用显示类组件——Text](samples/Text)
