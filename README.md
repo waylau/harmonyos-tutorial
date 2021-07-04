@@ -24,6 +24,14 @@
 * [HarmonyOS之线程01——ParallelTaskDispatcher派发任务](https://developer.huawei.com/consumer/cn/forum/topic/0204460939630370009?fid=0101303901040230869)
 * [HarmonyOS之线程02——EventHandler处理线程间通信](https://developer.huawei.com/consumer/cn/forum/topic/0204461048552100015?fid=0101303901040230869)
 * [获取图像属性失败！java.lang.IllegalStateException: image data source invalid](https://developer.huawei.com/consumer/cn/forum/topic/0201481849198120096?fid=0101303901040230869&pid=0301492195334980932)
+* [只要5分钟开发一个HarmonyOS鸿蒙应用——HelloWorld](https://www.bilibili.com/video/BV1Qh411U7Go?share_source=copy_web)
+* [HarmonyOS Page与AbilitySlice生命周期](https://developer.huawei.com/consumer/cn/forum/topic/0202573163094170174?fid=0101303901040230869)
+* [理解HarmonyOS Service Ability](https://developer.huawei.com/consumer/cn/forum/topic/0202578737701770050?fid=0101303901040230869)
+* [一个HarmonyOS Service Ability生命周期的例子](https://developer.huawei.com/consumer/cn/forum/topic/0201578738626200065?fid=0101303901040230869)
+* [理解HarmonyOS Data Ability](https://developer.huawei.com/consumer/cn/forum/topic/0204578739122210072?fid=0101303901040230869)
+* [HarmonyOS DataAbilityHelper访问文件的例子](https://developer.huawei.com/consumer/cn/forum/topic/0202578740019440052?fid=0101303901040230869)
+* [HarmonyOS DataAbilityHelper访问数据库的例子](https://developer.huawei.com/consumer/cn/forum/topic/0202578740728040053?fid=0101303901040230869)
+* [理解HarmonyOS Intent ](https://developer.huawei.com/consumer/cn/forum/topic/0202578742549140054?fid=0101303901040230869)
 * [使用Java轻松实现一个HarmonyOS服务卡片](https://developer.huawei.com/consumer/cn/forum/topic/0201592758640690342?fid=0101303901040230869)
 * 未完待续...
 
