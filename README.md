@@ -1,8 +1,8 @@
-# Harmonyos Tutorial.《跟老卫学HarmonyOS开发》
+# HarmonyOS Tutorial.《跟老卫学HarmonyOS开发》
 
 ![](images/logo.jpg)
 
-*Harmonyos Tutorial*, is a book about how to develop Harmonyos applications.
+*HarmonyOS Tutorial*, is a book about how to develop HarmonyOS applications.
 
 
 
@@ -125,6 +125,17 @@
 * [LiuweiweiImageHandler](samples/LiuweiweiImageHandler)（TODO）
 * [LiuweiweiAiImageSearch](samples/LiuweiweiAiImageSearch)（TODO）
 * 未完待续...
+
+
+以下是部分示例运行界面。
+
+![服务卡片](images/AbilityServiceWidget.png)
+
+
+![视频播放器](images/VedioPlayer.png)
+
+
+![俄罗斯方块](images/Tetris.png)
 
 
 ## Get start 如何开始阅读
