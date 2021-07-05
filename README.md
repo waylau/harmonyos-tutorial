@@ -12,6 +12,7 @@
 
 ## Summary 目录
 
+* [什么是鸿蒙、OpenHarmony、HarmonyOS](https://developer.huawei.com/consumer/cn/forum/topic/0201608876378300239?fid=0101587865002800104)
 * [HarmonyOS初探01——下载安装DevEco Studio](https://developer.huawei.com/consumer/cn/forum/topic/0201427672244370691?fid=0101303901040230869)
 * [HarmonyOS初探02——开发第一个HarmonyOS应用](https://developer.huawei.com/consumer/cn/forum/topic/0201427689906950692?fid=0101303901040230869)
 * [HarmonyOS初探03——DevEco Studio创建应用问题ERROR Unable to tunnel through proxy. Proxy returns HTTP1.1 403](https://developer.huawei.com/consumer/cn/forum/topic/0201428884516950010?fid=0101303901040230869)
