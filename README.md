@@ -1,6 +1,6 @@
 # HarmonyOS Tutorial.《跟老卫学HarmonyOS开发》
 
-![](images/logo.jpg)
+![](images/harmonyOS_logo.png)
 
 *HarmonyOS Tutorial*, is a book about how to develop HarmonyOS applications.
 
