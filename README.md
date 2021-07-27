@@ -34,6 +34,8 @@
 * [HarmonyOS DataAbilityHelper访问数据库的例子](https://developer.huawei.com/consumer/cn/forum/topic/0202578740728040053?fid=0101303901040230869)
 * [理解HarmonyOS Intent ](https://developer.huawei.com/consumer/cn/forum/topic/0202578742549140054?fid=0101303901040230869)
 * [使用Java轻松实现一个HarmonyOS服务卡片](https://developer.huawei.com/consumer/cn/forum/topic/0201592758640690342?fid=0101303901040230869)
+* [HarmonyOS实现跨设备迁移与回迁](https://developer.huawei.com/consumer/cn/forum/topic/0201628139884080274?fid=0101303901040230869)
+* [HarmonyOS实现多设备协同](https://developer.huawei.com/consumer/cn/forum/topic/0201628168180890276?fid=0101303901040230869)
 * 未完待续...
 
 ## Samples 示例
@@ -47,7 +49,8 @@
 * [多个Page之间的路由与导航](samples/IntentOperationWithAction)
 * [分布式任务调度启动远程FA](samples/DistributedSchedulingStartRemoteFA)
 * [分布式任务调度启动和关闭远程PA](samples/DistributedSchedulingStartStopRemotePA)
-* [设备迁移及回迁](samples/ContinueRemoteFA)（test）
+* [设备迁移及回迁](samples/ContinueRemoteFA)
+* [多设备协同](samples/ContinueRemoteFACollaboration)
 * [公共事件服务发布事件](samples/CommonEventPublisher)（test）
 * [公共事件服务订阅事件](samples/CommonEventSubscriber)（test）
 * [高级通知服务](samples/Notification)（test）

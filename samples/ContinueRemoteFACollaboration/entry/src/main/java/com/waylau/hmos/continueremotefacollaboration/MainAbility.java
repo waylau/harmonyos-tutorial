@@ -1,11 +1,10 @@
-package com.waylau.hmos.continueremotefa;
+package com.waylau.hmos.continueremotefacollaboration;
 
-import com.waylau.hmos.continueremotefa.slice.MainAbilitySlice;
+import com.waylau.hmos.continueremotefacollaboration.slice.MainAbilitySlice;
 import ohos.aafwk.ability.Ability;
 import ohos.aafwk.ability.IAbilityContinuation;
 import ohos.aafwk.content.Intent;
 import ohos.aafwk.content.IntentParams;
-import ohos.bundle.IBundleManager;
 import ohos.security.SystemPermission;
 
 import java.util.ArrayList;

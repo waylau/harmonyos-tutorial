@@ -1,7 +1,7 @@
-package com.waylau.hmos.continueremotefa.slice;
+package com.waylau.hmos.continueremotefacollaboration.slice;
 
-import com.waylau.hmos.continueremotefa.DeviceUtils;
-import com.waylau.hmos.continueremotefa.ResourceTable;
+import com.waylau.hmos.continueremotefacollaboration.DeviceUtils;
+import com.waylau.hmos.continueremotefacollaboration.ResourceTable;
 import ohos.aafwk.ability.AbilitySlice;
 import ohos.aafwk.ability.IAbilityContinuation;
 import ohos.aafwk.content.Intent;
@@ -21,7 +21,14 @@ public class MainAbilitySlice extends AbilitySlice implements IAbilityContinuati
     private static final HiLogLabel LABEL_LOG =
             new HiLogLabel(HiLog.LOG_APP, 0x00001, TAG);
 
-    private static final String MESSAGE_KEY = "com.waylau.hmos.continueremotefa.slice.MESSAGE_KEY";
+    private static final String MESSAGE_KEY =
+            "com.waylau.hmos.continueremotefacollaboration.slice.MESSAGE_KEY";
+
+    private String message;
+
+    private boolean isContinued;
+
+    private TextField messageTextField;
 
     @Override
     public void onStart(Intent intent) {
@@ -33,10 +40,11 @@ public class MainAbilitySlice extends AbilitySlice implements IAbilityContinuati
                 Button) findComponentById(ResourceTable.Id_button_continue_remote_fa);
         buttonContinueRemoteFA.setClickedListener(listener -> continueRemoteFA());
 
-        // 监听拉回迁移FA的事件
-        Button buttonContinueEversibly =
-                (Button) findComponentById(ResourceTable.Id_button_continue_eversibly);
-        buttonContinueEversibly.setClickedListener(listener -> continueEversibly());
+        // 设置输入框内容
+        messageTextField = (TextField) findComponentById(ResourceTable.Id_message_textfield);
+        if (isContinued && message != null) {
+            messageTextField.setText(message);
+        }
     }
 
     private void continueRemoteFA() {
@@ -50,13 +58,8 @@ public class MainAbilitySlice extends AbilitySlice implements IAbilityContinuati
             // 发起迁移流程
             //  continueAbility()是不可回迁的
             //  continueAbilityReversibly() 是可以回迁的
-            continueAbilityReversibly(deviceId);
+            continueAbility(deviceId);
         }
-    }
-
-    private void continueEversibly() {
-        // 发起回迁流程
-        reverseContinueAbility();
     }
 
     @Override
@@ -78,18 +81,26 @@ public class MainAbilitySlice extends AbilitySlice implements IAbilityContinuati
     @Override
     public boolean onSaveData(IntentParams intentParams) {
         // 重写
+        // 保存回迁后恢复状态必须的数据
+        intentParams.setParam(MESSAGE_KEY, messageTextField.getText());
         return true;
     }
 
     @Override
     public boolean onRestoreData(IntentParams intentParams) {
         // 重写
+        // 传递此前保存的数据
+        if (intentParams.getParam(MESSAGE_KEY) instanceof String) {
+            message = (String) intentParams.getParam(MESSAGE_KEY);
+            isContinued = true;
+        }
         return true;
     }
 
     @Override
     public void onCompleteContinuation(int i) {
-
+        // 终止
+        terminate();
     }
 
 }

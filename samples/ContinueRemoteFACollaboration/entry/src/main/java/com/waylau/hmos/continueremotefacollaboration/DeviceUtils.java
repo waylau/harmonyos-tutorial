@@ -1,4 +1,4 @@
-package com.waylau.hmos.continueremotefa;
+package com.waylau.hmos.continueremotefacollaboration;
 
 import ohos.distributedschedule.interwork.DeviceInfo;
 import ohos.distributedschedule.interwork.DeviceManager;
