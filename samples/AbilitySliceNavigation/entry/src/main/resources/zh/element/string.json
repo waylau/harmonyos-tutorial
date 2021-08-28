@@ -10,19 +10,19 @@
     },
     {
       "name": "mainability_HelloWorld",
-      "value": "Hello World"
+      "value": "你好，世界"
+    },
+    {
+      "name": "entry_PayAbility",
+      "value": "entry_PayAbility"
     },
     {
       "name": "payability_description",
       "value": "Java_Empty Ability"
     },
     {
-      "name": "payability_HelloWorld",
-      "value": "Hello World"
-    },
-    {
-      "name": "entry_PayAbility",
-      "value": "entry_PayAbility"
+      "name": "payability_money",
+      "value": "你好，支付"
     }
   ]
 }

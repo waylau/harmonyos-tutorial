@@ -10,10 +10,10 @@ public class MainAbilitySlice extends AbilitySlice {
     public void onStart(Intent intent) {
         super.onStart(intent);
 
-        // 指定ability_main.xml定义的UI
+        // UI界面内容引用了布局文件ability_main.xml
         super.setUIContent(ResourceTable.Layout_ability_main);
 
-        // 添加点击事件来触发导航
+        // 添加点击事件来触发导航到PayAbilitySlice
         Text text = (Text) findComponentById(ResourceTable.Id_text_helloworld);
         text.setClickedListener(listener ->
                 present(new PayAbilitySlice(), new Intent()));

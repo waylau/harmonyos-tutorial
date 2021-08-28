@@ -13,16 +13,16 @@
       "value": "Hello World"
     },
     {
+      "name": "entry_PayAbility",
+      "value": "entry_PayAbility"
+    },
+    {
       "name": "payability_description",
       "value": "Java_Empty Ability"
     },
     {
-      "name": "payability_HelloWorld",
-      "value": "Hello World"
-    },
-    {
-      "name": "entry_PayAbility",
-      "value": "entry_PayAbility"
+      "name": "payability_money",
+      "value": "Pay me the money"
     }
   ]
 }
