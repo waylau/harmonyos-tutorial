@@ -8,47 +8,49 @@ import ohos.hiviewdfx.HiLog;
 import ohos.hiviewdfx.HiLogLabel;
 
 public class MainAbilitySlice extends AbilitySlice {
-
-    static final HiLogLabel logLabel = new HiLogLabel(HiLog.LOG_APP, 0x00001, "MainAbilitySlice");
+    private static final String TAG = MainAbilitySlice.class.getSimpleName();
+    private static final HiLogLabel LABEL_LOG =
+            new HiLogLabel(HiLog.LOG_APP, 0x00001, TAG);
 
     @Override
     public void onStart(Intent intent) {
         super.onStart(intent);
+
+        // UI界面内容引用了布局文件ability_main.xml
         super.setUIContent(ResourceTable.Layout_ability_main);
 
-        // 添加点击事件来触发导航
+        // 添加点击事件来触发导航到PayAbilitySlice
         Text text = (Text) findComponentById(ResourceTable.Id_text_helloworld);
         text.setClickedListener(listener ->
                 present(new PayAbilitySlice(), new Intent()));
 
-        HiLog.info(logLabel, "onStart");
+        HiLog.info(LABEL_LOG, "onStart");
     }
 
     @Override
     public void onActive() {
         super.onActive();
-        HiLog.info(logLabel, "onActive");
+        HiLog.info(LABEL_LOG, "onActive");
     }
 
     @Override
     public void onForeground(Intent intent) {
         super.onForeground(intent);
-        HiLog.info(logLabel, "onForeground");
+        HiLog.info(LABEL_LOG, "onForeground");
     }
 
     @Override
     public  void onInactive() {
-        HiLog.info(logLabel, "onInactive");
+        HiLog.info(LABEL_LOG, "onInactive");
     }
 
     @Override
     public  void onBackground() {
-        HiLog.info(logLabel, "onBackground");
+        HiLog.info(LABEL_LOG, "onBackground");
     }
 
     @Override
     public  void onStop() {
-        HiLog.info(logLabel, "onStop");
+        HiLog.info(LABEL_LOG, "onStop");
     }
-
 }

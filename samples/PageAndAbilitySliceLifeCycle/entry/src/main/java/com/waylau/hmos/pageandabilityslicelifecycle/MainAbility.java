@@ -9,6 +9,8 @@ public class MainAbility extends Ability {
     @Override
     public void onStart(Intent intent) {
         super.onStart(intent);
+
+        // 指定默认显示的AbilitySlice
         super.setMainRoute(MainAbilitySlice.class.getName());
 
         // 使用addActionRounte方法添加路由
