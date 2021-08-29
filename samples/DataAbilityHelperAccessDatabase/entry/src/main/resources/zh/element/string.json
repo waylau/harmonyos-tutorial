@@ -10,11 +10,7 @@
     },
     {
       "name": "mainability_HelloWorld",
-      "value": "Hello World"
-    },
-    {
-      "name": "userdataability_description",
-      "value": "hap sample empty provider"
+      "value": "你好，世界"
     }
   ]
 }

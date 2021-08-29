@@ -2,6 +2,7 @@ package com.waylau.hmos.serviceabilitylifecycle.slice;
 
 import com.waylau.hmos.serviceabilitylifecycle.ResourceTable;
 import com.waylau.hmos.serviceabilitylifecycle.TimeRemoteObject;
+import com.waylau.hmos.serviceabilitylifecycle.TimeServiceAbility;
 import ohos.aafwk.ability.AbilitySlice;
 import ohos.aafwk.ability.IAbilityConnection;
 import ohos.aafwk.content.Intent;
@@ -12,11 +13,11 @@ import ohos.hiviewdfx.HiLog;
 import ohos.hiviewdfx.HiLogLabel;
 import ohos.rpc.IRemoteObject;
 
-import java.time.LocalDateTime;
-
 public class MainAbilitySlice extends AbilitySlice {
-    private static final HiLogLabel LOG_LABEL =
-            new HiLogLabel(HiLog.LOG_APP, 0x00001, "MainAbilitySlice");
+    private static final String TAG = TimeServiceAbility.class.getSimpleName();
+    private static final HiLogLabel LABEL_LOG =
+            new HiLogLabel(HiLog.LOG_APP, 0x00001, TAG);
+
     private TimeRemoteObject timeRemoteObject;
 
     @Override
@@ -45,7 +46,7 @@ public class MainAbilitySlice extends AbilitySlice {
         });
 
 
-        HiLog.info(LOG_LABEL, "onStart");
+        HiLog.info(LABEL_LOG, "onStart");
     }
 
     @Override
@@ -76,7 +77,7 @@ public class MainAbilitySlice extends AbilitySlice {
         intent.setOperation(operation);
         startAbility(intent);
 
-        HiLog.info(LOG_LABEL, "startupLocalService");
+        HiLog.info(LABEL_LOG, "startupLocalService");
     }
 
     /**
@@ -85,25 +86,27 @@ public class MainAbilitySlice extends AbilitySlice {
     private void stopLocalService(Intent intent) {
         stopAbility(intent);
 
-        HiLog.info(LOG_LABEL, "stopLocalService");
+        HiLog.info(LABEL_LOG, "stopLocalService");
     }
 
     // 创建连接回调实例
     private IAbilityConnection connection = new IAbilityConnection() {
         // 连接到Service的回调
         @Override
-        public void onAbilityConnectDone(ElementName elementName, IRemoteObject iRemoteObject, int resultCode) {
+        public void onAbilityConnectDone(ElementName elementName,
+                                         IRemoteObject iRemoteObject, int resultCode) {
             // Client侧需要定义与Service侧相同的IRemoteObject实现类。
             // 开发者获取服务端传过来IRemoteObject对象，并从中解析出服务端传过来的信息。
             timeRemoteObject = (TimeRemoteObject) iRemoteObject;
 
-            HiLog.info(LOG_LABEL, "onAbilityConnectDone, time: %{public}s", timeRemoteObject.getTime());
+            HiLog.info(LABEL_LOG, "onAbilityConnectDone, time: %{public}s",
+                    timeRemoteObject.getTime());
         }
 
         // 断开与连接的回调
         @Override
         public void onAbilityDisconnectDone(ElementName elementName, int resultCode) {
-            HiLog.info(LOG_LABEL, "onAbilityDisconnectDone");
+            HiLog.info(LABEL_LOG, "onAbilityDisconnectDone");
         }
     };
 
@@ -114,7 +117,7 @@ public class MainAbilitySlice extends AbilitySlice {
         // 连接Service
         connectAbility(intent, connection);
 
-        HiLog.info(LOG_LABEL, "connectLocalService");
+        HiLog.info(LABEL_LOG, "connectLocalService");
     }
 
     /**
@@ -124,6 +127,6 @@ public class MainAbilitySlice extends AbilitySlice {
         // 断开连接Service
         disconnectAbility(connection);
 
-        HiLog.info(LOG_LABEL, "disconnectLocalService");
+        HiLog.info(LABEL_LOG, "disconnectLocalService");
     }
 }

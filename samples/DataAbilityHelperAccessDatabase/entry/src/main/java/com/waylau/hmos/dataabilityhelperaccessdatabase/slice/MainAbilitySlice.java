@@ -14,8 +14,9 @@ import ohos.hiviewdfx.HiLogLabel;
 import ohos.utils.net.Uri;
 
 public class MainAbilitySlice extends AbilitySlice {
-    private static final HiLogLabel LABEL_LOG = new HiLogLabel(HiLog.LOG_APP, 0x00001, "MainAbilitySlice");
-
+    private static final String TAG = MainAbilitySlice.class.getSimpleName();
+    private static final HiLogLabel LABEL_LOG =
+            new HiLogLabel(HiLog.LOG_APP, 0x00001, TAG);
     @Override
     public void onStart(Intent intent) {
         super.onStart(intent);

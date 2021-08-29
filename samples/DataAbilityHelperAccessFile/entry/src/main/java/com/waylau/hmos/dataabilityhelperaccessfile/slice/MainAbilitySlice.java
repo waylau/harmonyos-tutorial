@@ -14,7 +14,8 @@ import ohos.utils.net.Uri;
 import java.io.*;
 
 public class MainAbilitySlice extends AbilitySlice {
-    private static final HiLogLabel LABEL_LOG = new HiLogLabel(HiLog.LOG_APP, 0x00001, "MainAbilitySlice");
+    private static final String TAG = MainAbilitySlice.class.getSimpleName();
+    private static final HiLogLabel LABEL_LOG = new HiLogLabel(HiLog.LOG_APP, 0x00001, TAG);
 
     @Override
     public void onStart(Intent intent) {
@@ -26,21 +27,12 @@ public class MainAbilitySlice extends AbilitySlice {
         text.setClickedListener(listener -> this.getFile());
     }
 
-    @Override
-    public void onActive() {
-        super.onActive();
-    }
-
-    @Override
-    public void onForeground(Intent intent) {
-        super.onForeground(intent);
-    }
-
     private void getFile() {
         DataAbilityHelper helper = DataAbilityHelper.creator(this);
 
         // 访问数据用的URI，注意用三个斜杠
-        Uri uri = Uri.parse("dataability:///com.waylau.hmos.dataabilityhelperaccessfile.UserDataAbility");
+        Uri uri =
+                Uri.parse("dataability:///com.waylau.hmos.dataabilityhelperaccessfile.UserDataAbility");
 
         //  DataAbilityHelper的openFile方法来访问文件
         try {
@@ -51,5 +43,15 @@ public class MainAbilitySlice extends AbilitySlice {
         } catch (DataAbilityRemoteException | IOException e) {
             e.printStackTrace();
         }
+    }
+
+    @Override
+    public void onActive() {
+        super.onActive();
+    }
+
+    @Override
+    public void onForeground(Intent intent) {
+        super.onForeground(intent);
     }
 }

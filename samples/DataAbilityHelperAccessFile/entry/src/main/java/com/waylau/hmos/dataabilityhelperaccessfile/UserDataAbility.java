@@ -17,7 +17,8 @@ import java.io.*;
 import java.nio.file.Paths;
 
 public class UserDataAbility extends Ability {
-    private static final HiLogLabel LABEL_LOG = new HiLogLabel(HiLog.LOG_APP, 0x00001, "UserDataAbility");
+    private static final String TAG = UserDataAbility.class.getSimpleName();
+    private static final HiLogLabel LABEL_LOG = new HiLogLabel(HiLog.LOG_APP, 0x00001, TAG);
 
     private File targetFile;
 
@@ -64,27 +65,6 @@ public class UserDataAbility extends Ability {
     }
 
     @Override
-    public ResultSet query(Uri uri, String[] columns, DataAbilityPredicates predicates) {
-        return null;
-    }
-
-    @Override
-    public int insert(Uri uri, ValuesBucket value) {
-        HiLog.info(LABEL_LOG, "UserDataAbility insert");
-        return 999;
-    }
-
-    @Override
-    public int delete(Uri uri, DataAbilityPredicates predicates) {
-        return 0;
-    }
-
-    @Override
-    public int update(Uri uri, ValuesBucket value, DataAbilityPredicates predicates) {
-        return 0;
-    }
-
-    @Override
     public FileDescriptor openFile(Uri uri, String mode) {
         FileDescriptor fd = null;
 
@@ -104,6 +84,27 @@ public class UserDataAbility extends Ability {
         // 复制FileDescriptor
         fd = messageParcel.dupFileDescriptor(fd);
         return fd;
+    }
+
+    @Override
+    public ResultSet query(Uri uri, String[] columns, DataAbilityPredicates predicates) {
+        return null;
+    }
+
+    @Override
+    public int insert(Uri uri, ValuesBucket value) {
+        HiLog.info(LABEL_LOG, "UserDataAbility insert");
+        return 999;
+    }
+
+    @Override
+    public int delete(Uri uri, DataAbilityPredicates predicates) {
+        return 0;
+    }
+
+    @Override
+    public int update(Uri uri, ValuesBucket value, DataAbilityPredicates predicates) {
+        return 0;
     }
 
     @Override

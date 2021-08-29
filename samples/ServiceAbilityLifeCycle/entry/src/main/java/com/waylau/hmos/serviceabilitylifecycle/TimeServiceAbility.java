@@ -9,39 +9,40 @@ import ohos.hiviewdfx.HiLogLabel;
 import java.time.LocalDateTime;
 
 public class TimeServiceAbility extends Ability {
-    private static final HiLogLabel LOG_LABEL =
-            new HiLogLabel(HiLog.LOG_APP, 0x00001, "TimeServiceAbility");
+    private static final String TAG = TimeServiceAbility.class.getSimpleName();
+    private static final HiLogLabel LABEL_LOG =
+            new HiLogLabel(HiLog.LOG_APP, 0x00001, TAG);
 
     private TimeRemoteObject timeRemoteObject = new TimeRemoteObject();
 
     @Override
     public void onStart(Intent intent) {
-        HiLog.info(LOG_LABEL, "onStart");
+        HiLog.info(LABEL_LOG, "onStart");
         super.onStart(intent);
     }
 
     @Override
     public void onBackground() {
         super.onBackground();
-        HiLog.info(LOG_LABEL, "onBackground");
+        HiLog.info(LABEL_LOG, "onBackground");
     }
 
     @Override
     public void onStop() {
         super.onStop();
-        HiLog.info(LOG_LABEL, "onStop");
+        HiLog.info(LABEL_LOG, "onStop");
     }
 
     @Override
     public void onCommand(Intent intent, boolean restart, int startId) {
         super.onCommand(intent, restart, startId);
-        HiLog.info(LOG_LABEL, "onCommand");
+        HiLog.info(LABEL_LOG, "onCommand");
     }
 
     @Override
     public IRemoteObject onConnect(Intent intent) {
         super.onConnect(intent);
-        HiLog.info(LOG_LABEL, "onConnect");
+        HiLog.info(LABEL_LOG, "onConnect");
 
         LocalDateTime now = LocalDateTime.now();
         timeRemoteObject.setTime(now);
@@ -52,6 +53,6 @@ public class TimeServiceAbility extends Ability {
     @Override
     public void onDisconnect(Intent intent) {
         super.onDisconnect(intent);
-        HiLog.info(LOG_LABEL, "onDisconnect");
+        HiLog.info(LABEL_LOG, "onDisconnect");
     }
 }

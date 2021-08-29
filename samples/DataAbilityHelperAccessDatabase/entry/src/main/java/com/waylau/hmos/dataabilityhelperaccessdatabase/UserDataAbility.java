@@ -23,8 +23,9 @@ import java.io.IOException;
 import java.nio.file.Paths;
 
 public class UserDataAbility extends Ability {
+    private static final String TAG = UserDataAbility.class.getSimpleName();
     private static final HiLogLabel LABEL_LOG =
-            new HiLogLabel(HiLog.LOG_APP, 0x00001, "UserDataAbility");
+            new HiLogLabel(HiLog.LOG_APP, 0x00001, TAG);
     private static final String DATABASE_NAME = "RdbStoreTest.db";
     private static final String TABLE_NAME = "user_t";
     private RdbStore store = null;

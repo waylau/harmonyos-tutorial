@@ -11,10 +11,6 @@
     {
       "name": "mainability_HelloWorld",
       "value": "Hello World"
-    },
-    {
-      "name": "userdataability_description",
-      "value": "hap sample empty provider"
     }
   ]
 }
