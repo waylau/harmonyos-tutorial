@@ -13,16 +13,16 @@
       "value": "Hello World"
     },
     {
+      "name": "entry_WeatherAbility",
+      "value": "entry_WeatherAbility"
+    },
+    {
       "name": "weatherability_description",
       "value": "Java_Empty Ability"
     },
     {
       "name": "weatherability_HelloWorld",
       "value": "Hello World"
-    },
-    {
-      "name": "entry_WeatherAbility",
-      "value": "entry_WeatherAbility"
     }
   ]
 }

@@ -9,8 +9,9 @@ import ohos.hiviewdfx.HiLog;
 import ohos.hiviewdfx.HiLogLabel;
 
 public class MainAbilitySlice extends AbilitySlice {
+    private static final String TAG = MainAbilitySlice.class.getSimpleName();
     private static final HiLogLabel LABEL_LOG =
-            new HiLogLabel(HiLog.LOG_APP, 0x00001, "MainAbilitySlice");
+            new HiLogLabel(HiLog.LOG_APP, 0x00001, TAG);
     private final static int CODE = 1;
     private static final String TEMP_KEY = "temperature";
 

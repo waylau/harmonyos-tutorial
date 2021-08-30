@@ -3,25 +3,24 @@
     "bundleName": "com.waylau.hmos.intentoperationwithaction",
     "vendor": "waylau",
     "version": {
-      "code": 1,
-      "name": "1.0"
-    },
-    "apiVersion": {
-      "compatible": 3,
-      "target": 3
+      "code": 1000000,
+      "name": "1.0.0"
     }
   },
   "deviceConfig": {},
   "module": {
     "package": "com.waylau.hmos.intentoperationwithaction",
     "name": ".MyApplication",
+    "mainAbility": "com.waylau.hmos.intentoperationwithaction.MainAbility",
     "deviceType": [
+      "phone",
       "car"
     ],
     "distro": {
       "deliveryWithInstall": true,
       "moduleName": "entry",
-      "moduleType": "entry"
+      "moduleType": "entry",
+      "installationFree": false
     },
     "abilities": [
       {
@@ -35,11 +34,11 @@
             ]
           }
         ],
-        "orientation": "landscape",
+        "orientation": "unspecified",
         "name": "com.waylau.hmos.intentoperationwithaction.MainAbility",
         "icon": "$media:icon",
         "description": "$string:mainability_description",
-        "label": "IntentOperationWithAction",
+        "label": "$string:entry_MainAbility",
         "type": "page",
         "launchType": "standard"
       },
@@ -51,11 +50,11 @@
             ]
           }
         ],
-        "orientation": "landscape",
+        "orientation": "unspecified",
         "name": "com.waylau.hmos.intentoperationwithaction.WeatherAbility",
         "icon": "$media:icon",
         "description": "$string:weatherability_description",
-        "label": "entry",
+        "label": "$string:entry_WeatherAbility",
         "type": "page",
         "launchType": "standard"
       }

@@ -7,8 +7,9 @@ import ohos.hiviewdfx.HiLog;
 import ohos.hiviewdfx.HiLogLabel;
 
 public class WeatherAbility extends Ability {
+    private static final String TAG = WeatherAbility.class.getSimpleName();
     private static final HiLogLabel LABEL_LOG =
-            new HiLogLabel(HiLog.LOG_APP, 0x00001, "WeatherAbility");
+            new HiLogLabel(HiLog.LOG_APP, 0x00001, TAG);
     private final static int CODE = 1;
     private static final String TEMP_KEY = "temperature";
 

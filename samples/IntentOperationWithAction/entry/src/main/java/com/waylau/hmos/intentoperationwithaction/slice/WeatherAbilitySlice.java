@@ -3,8 +3,6 @@ package com.waylau.hmos.intentoperationwithaction.slice;
 import com.waylau.hmos.intentoperationwithaction.ResourceTable;
 import ohos.aafwk.ability.AbilitySlice;
 import ohos.aafwk.content.Intent;
-import ohos.hiviewdfx.HiLog;
-import ohos.hiviewdfx.HiLogLabel;
 
 public class WeatherAbilitySlice extends AbilitySlice {
     @Override
