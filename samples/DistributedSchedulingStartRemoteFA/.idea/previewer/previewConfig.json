@@ -1,7 +1,9 @@
 {
  "1.0.0": {
   "LastPreviewDevice": {
-   "D:\\workspaceGithub\\harmonyos-tutorial\\samples\\DistributedSchedulingStartRemoteFA\\entry": []
+   "D:\\workspaceGithub\\harmonyos-tutorial\\samples\\DistributedSchedulingStartRemoteFA\\entry": [
+    "phone"
+   ]
   }
  }
 }
