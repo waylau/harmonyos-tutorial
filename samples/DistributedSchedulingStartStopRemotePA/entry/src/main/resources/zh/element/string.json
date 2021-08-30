@@ -10,11 +10,7 @@
     },
     {
       "name": "mainability_HelloWorld",
-      "value": "Hello World"
-    },
-    {
-      "name": "timeserviceability_description",
-      "value": "hap sample empty service"
+      "value": "你好，世界"
     }
   ]
 }

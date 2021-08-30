@@ -47,8 +47,8 @@
 * [DataAbilityHelper访问文件](samples/DataAbilityHelperAccessFile)
 * [DataAbilityHelper访问数据库](samples/DataAbilityHelperAccessDatabase)
 * [多个Page之间的路由与导航](samples/IntentOperationWithAction)
-* [分布式任务调度启动远程FA](samples/DistributedSchedulingStartRemoteFA)
-* [分布式任务调度启动和关闭远程PA](samples/DistributedSchedulingStartStopRemotePA)
+* [分布式任务调度启动远程FA](samples/DistributedSchedulingStartRemoteFA)（test）
+* [分布式任务调度启动和关闭远程PA](samples/DistributedSchedulingStartStopRemotePA)（test）
 * [设备迁移及回迁](samples/ContinueRemoteFA)
 * [多设备协同](samples/ContinueRemoteFACollaboration)
 * [公共事件服务发布事件](samples/CommonEventPublisher)（test）

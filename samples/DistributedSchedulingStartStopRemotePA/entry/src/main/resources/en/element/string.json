@@ -11,10 +11,6 @@
     {
       "name": "mainability_HelloWorld",
       "value": "Hello World"
-    },
-    {
-      "name": "timeserviceability_description",
-      "value": "hap sample empty service"
     }
   ]
 }
