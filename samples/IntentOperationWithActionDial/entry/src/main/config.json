@@ -1,6 +1,6 @@
 {
   "app": {
-    "bundleName": "com.waylau.hmos.remotefa",
+    "bundleName": "com.waylau.hmos.intentoperationwithactiondial",
     "vendor": "waylau",
     "version": {
       "code": 1000000,
@@ -9,9 +9,9 @@
   },
   "deviceConfig": {},
   "module": {
-    "package": "com.waylau.hmos.remotefa",
+    "package": "com.waylau.hmos.intentoperationwithactiondial",
     "name": ".MyApplication",
-    "mainAbility": "com.waylau.hmos.remotefa.MainAbility",
+    "mainAbility": "com.waylau.hmos.intentoperationwithactiondial.MainAbility",
     "deviceType": [
       "phone",
       "car"
@@ -35,13 +35,12 @@
           }
         ],
         "orientation": "unspecified",
-        "name": "com.waylau.hmos.remotefa.MainAbility",
+        "name": "com.waylau.hmos.intentoperationwithactiondial.MainAbility",
         "icon": "$media:icon",
         "description": "$string:mainability_description",
         "label": "$string:entry_MainAbility",
         "type": "page",
-        "launchType": "standard",
-        "visible":true
+        "launchType": "standard"
       }
     ]
   }
