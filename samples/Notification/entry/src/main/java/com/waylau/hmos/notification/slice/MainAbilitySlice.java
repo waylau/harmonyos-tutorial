@@ -40,7 +40,8 @@ public class MainAbilitySlice extends AbilitySlice {
         NotificationSlot slot =
                 new NotificationSlot("slot_001", "slot_default", NotificationSlot.LEVEL_HIGH);
 
-        slot.setDescription("NotificationSlotDescription");
+        slot.setLevel(NotificationSlot.LEVEL_HIGH); // 设置提醒级别
+        slot.setDescription("NotificationSlotDescription"); // 设置提示内容
         slot.setEnableVibration(true); // 设置振动提醒
         slot.setLockscreenVisibleness(NotificationRequest.VISIBLENESS_TYPE_PUBLIC);//设置锁屏模式
         slot.setEnableLight(true); // 设置开启呼吸灯提醒
@@ -49,8 +50,16 @@ public class MainAbilitySlice extends AbilitySlice {
         try {
             NotificationHelper.addNotificationSlot(slot);
 
+            String title = "title";
+            String text = "There is a normal notification content.";
+            NotificationRequest.NotificationNormalContent content = new NotificationRequest.NotificationNormalContent();
+            content.setTitle(title)
+                    .setText(text);
             notificationId++;
             NotificationRequest request = new NotificationRequest(notificationId);
+
+            NotificationRequest.NotificationContent notificationContent = new NotificationRequest.NotificationContent(content);
+            request.setContent(notificationContent); // 设置通知的内容
             request.setSlotId(slot.getId());
 
             NotificationHelper.publishNotification(request);

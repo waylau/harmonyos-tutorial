@@ -53,9 +53,9 @@
 * [分布式任务调度启动和关闭远程PA](samples/DistributedSchedulingStartStopRemotePA)
 * [设备迁移及回迁](samples/ContinueRemoteFA)
 * [多设备协同](samples/ContinueRemoteFACollaboration)
-* [公共事件服务发布事件](samples/CommonEventPublisher)（test）
-* [公共事件服务订阅事件](samples/CommonEventSubscriber)（test）
-* [高级通知服务](samples/Notification)（test）
+* [公共事件服务发布事件](samples/CommonEventPublisher)
+* [公共事件服务订阅事件](samples/CommonEventSubscriber)
+* [高级通知服务](samples/Notification)
 * [剪切板数据的写入](samples/SystemPasteboardSetter)
 * [剪切板数据的读取](samples/SystemPasteboardGetter)
 * [创建服务卡片](samples/AbilityServiceWidget)

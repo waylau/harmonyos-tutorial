@@ -17,7 +17,7 @@ public class WelcomeCommonEventSubscriber extends CommonEventSubscriber {
 
     @Override
     public void onReceiveEvent(CommonEventData commonEventData) {
-        HiLog.info(LABEL_LOG, "receive event data %{public}s", commonEventData.getData());
+        HiLog.info(LABEL_LOG, "receive event data %{public}s", commonEventData);
     }
 
 }

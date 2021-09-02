@@ -38,15 +38,14 @@ public class MainAbilitySlice extends AbilitySlice {
     private void publishEvent() {
         HiLog.info(LABEL_LOG, "before publishEvent");
 
-        Intent intent = new Intent();
         Operation operation = new Intent.OperationBuilder()
                 .withAction(EVENT_NAME) // 设置事件名称
                 .build();
+
+        Intent intent = new Intent();
         intent.setOperation(operation);
 
-        index++;
-        CommonEventData eventData = new CommonEventData(intent, EVENT_CODE, EVENT_DATA
-                + " times " + index);
+        CommonEventData eventData = new CommonEventData(intent);
         CommonEventPublishInfo publishInfo = new CommonEventPublishInfo();
         String[] permissions = {EVENT_PERMISSION};
         publishInfo.setSubscriberPermissions(permissions); // 设置权限
@@ -56,7 +55,7 @@ public class MainAbilitySlice extends AbilitySlice {
             HiLog.info(LABEL_LOG, "publishCommonEvent occur exception.");
         }
 
-        HiLog.info(LABEL_LOG, "end publishEvent, event data %{public}s", eventData.getData());
+        HiLog.info(LABEL_LOG, "end publishEvent, event data %{public}s", eventData);
     }
 
     @Override

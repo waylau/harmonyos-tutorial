@@ -3,16 +3,17 @@
     xmlns:ohos="http://schemas.huawei.com/res/ohos"
     ohos:height="match_parent"
     ohos:width="match_parent"
+    ohos:alignment="center"
     ohos:orientation="vertical">
 
     <Text
         ohos:id="$+id:text_publish_event"
-        ohos:height="match_parent"
+        ohos:height="match_content"
         ohos:width="match_content"
         ohos:background_element="$graphic:background_ability_main"
         ohos:layout_alignment="horizontal_center"
         ohos:text="Publish Event"
-        ohos:text_size="50"
-    />
+        ohos:text_size="40vp"
+        />
 
 </DirectionalLayout>
