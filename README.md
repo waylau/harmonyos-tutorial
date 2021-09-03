@@ -37,6 +37,7 @@
 * [HarmonyOS实现跨设备迁移与回迁](https://developer.huawei.com/consumer/cn/forum/topic/0201628139884080274?fid=0101303901040230869)
 * [HarmonyOS实现多设备协同](https://developer.huawei.com/consumer/cn/forum/topic/0201628168180890276?fid=0101303901040230869)
 * [HarmonyOS跳转到系统应用拨号盘](https://developer.huawei.com/consumer/cn/forum/topic/0201659093603710707?fid=0101303901040230869)
+* [HarmonyOS跳转到应用管理](https://developer.huawei.com/consumer/cn/forum/topic/0202660722259570963?fid=0101591351254000314)
 * 未完待续...
 
 ## Samples 示例
@@ -49,6 +50,7 @@
 * [DataAbilityHelper访问数据库](samples/DataAbilityHelperAccessDatabase)
 * [多个Page之间的路由与导航](samples/IntentOperationWithAction)
 * [启动系统应用拨号盘](samples/IntentOperationWithActionDial)
+* [跳转到应用管理](samples/IntentOperationWithActionManageApplicationsSettings)
 * [分布式任务调度启动远程FA](samples/DistributedSchedulingStartRemoteFA)
 * [分布式任务调度启动和关闭远程PA](samples/DistributedSchedulingStartStopRemotePA)
 * [设备迁移及回迁](samples/ContinueRemoteFA)

@@ -6,7 +6,6 @@ import ohos.aafwk.content.Intent;
 import ohos.agp.components.Text;
 import ohos.hiviewdfx.HiLog;
 import ohos.hiviewdfx.HiLogLabel;
-import ohos.miscservices.pasteboard.IPasteDataChangedListener;
 import ohos.miscservices.pasteboard.PasteData;
 import ohos.miscservices.pasteboard.SystemPasteboard;
 
@@ -30,8 +29,7 @@ public class MainAbilitySlice extends AbilitySlice {
         HiLog.info(LABEL_LOG, "before getPasteData");
 
         // 获取系统剪贴板服务
-        SystemPasteboard pasteboard =
-                SystemPasteboard.getSystemPasteboard(this.getContext());
+        SystemPasteboard pasteboard = SystemPasteboard.getSystemPasteboard(this.getContext());
 
         // 从系统剪贴板中读取纯文本数据
         if (pasteboard != null) {
@@ -65,6 +63,7 @@ public class MainAbilitySlice extends AbilitySlice {
             } else {
                 HiLog.info(LABEL_LOG, "PasteData is null");
             }
+
 
         }
 
