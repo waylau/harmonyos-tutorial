@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:alignment="center"
+    ohos:orientation="vertical">
+
+    <Text
+        ohos:id="$+id:text_title"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:background_element="$graphic:background_ability_title_detail"
+        ohos:left_margin="15vp"
+        ohos:right_margin="15vp"
+        ohos:text="Title"
+        ohos:text_alignment="horizontal_center"
+        ohos:text_size="25fp"
+        ohos:text_weight="1000"
+        ohos:top_margin="15vp"/>
+
+    <Text
+        ohos:id="$+id:text_content"
+        ohos:height="100vp"
+        ohos:width="match_parent"
+        ohos:background_element="$graphic:background_ability_title_detail"
+        ohos:below="$id:text_title"
+        ohos:bottom_margin="15vp"
+        ohos:left_margin="15vp"
+        ohos:right_margin="15vp"
+        ohos:text="Content"
+        ohos:text_alignment="center"
+        ohos:text_font="serif"
+        ohos:text_size="25fp"
+        ohos:top_margin="15vp"/>
+
+    <Text
+        ohos:id="$+id:text_submit"
+        ohos:height="match_content"
+        ohos:width="75vp"
+        ohos:align_parent_end="true"
+        ohos:background_element="$graphic:background_ability_title_detail"
+        ohos:below="$id:text_content"
+        ohos:bottom_margin="15vp"
+        ohos:left_padding="5vp"
+        ohos:right_margin="15vp"
+        ohos:right_padding="5vp"
+        ohos:text="Submit"
+        ohos:text_font="serif"
+        ohos:text_size="15fp"/>
+</DirectionalLayout>

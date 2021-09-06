@@ -11,6 +11,90 @@
     {
       "name": "mainability_HelloWorld",
       "value": "Hello World"
+    },
+    {
+      "name": "colorsizeability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "colorsizeability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_ColorSizeAbility",
+      "value": "entry_ColorSizeAbility"
+    },
+    {
+      "name": "italicweightability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "italicweightability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_ItalicWeightAbility",
+      "value": "entry_ItalicWeightAbility"
+    },
+    {
+      "name": "alignmentability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "alignmentability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_AlignmentAbility",
+      "value": "entry_AlignmentAbility"
+    },
+    {
+      "name": "linesability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "linesability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_LinesAbility",
+      "value": "entry_LinesAbility"
+    },
+    {
+      "name": "autofontsizeability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "autofontsizeability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_AutoFontSizeAbility",
+      "value": "entry_AutoFontSizeAbility"
+    },
+    {
+      "name": "autoscrollingability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "autoscrollingability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_AutoScrollingAbility",
+      "value": "entry_AutoScrollingAbility"
+    },
+    {
+      "name": "titledetailability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "titledetailability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_TitleDetailAbility",
+      "value": "entry_TitleDetailAbility"
     }
   ]
 }
