@@ -21,6 +21,7 @@
 * [HarmonyOS初探06——使用DevEco Studio模拟器端口被占用无法启动](https://developer.huawei.com/consumer/cn/forum/topic/0204428887502690016?fid=0101303901040230869)
 * [HarmonyOS初探07——使用DevEco Studio预览器](https://developer.huawei.com/consumer/cn/forum/topic/0201442998449480482?fid=0101303901040230869)
 * [DevEco Studio 2.0.12.201使用报错“This device type does not match the module profile.”](https://developer.huawei.com/consumer/cn/forum/topic/0201435470610010153?fid=26)
+* [DevEco Studio 启用Java预览器](https://developer.huawei.com/consumer/cn/forum/topic/0201663534596920806?fid=0101591351254000314)
 * [HarmonyOS之Ability01——AbilitySlice间导航](https://developer.huawei.com/consumer/cn/forum/topic/0202443001580950502?fid=0101303901040230869)
 * [HarmonyOS之线程01——ParallelTaskDispatcher派发任务](https://developer.huawei.com/consumer/cn/forum/topic/0204460939630370009?fid=0101303901040230869)
 * [HarmonyOS之线程02——EventHandler处理线程间通信](https://developer.huawei.com/consumer/cn/forum/topic/0204461048552100015?fid=0101303901040230869)
