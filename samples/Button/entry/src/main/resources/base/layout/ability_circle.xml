@@ -3,6 +3,7 @@
     xmlns:ohos="http://schemas.huawei.com/res/ohos"
     ohos:height="match_parent"
     ohos:width="match_parent"
+    ohos:alignment="center"
     ohos:orientation="vertical">
 
     <Button
@@ -17,4 +18,5 @@
         ohos:left_padding="8vp"
         ohos:background_element="$graphic:background_ability_circle"
         />
+
 </DirectionalLayout>

@@ -1,0 +1,64 @@
+{
+  "string": [
+    {
+      "name": "entry_MainAbility",
+      "value": "entry_MainAbility"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "mainability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_ClickedListenerAbility",
+      "value": "entry_ClickedListenerAbility"
+    },
+    {
+      "name": "clickedlistenerability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "clickedlistenerability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_OvalAbility",
+      "value": "entry_OvalAbility"
+    },
+    {
+      "name": "ovalability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "ovalability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_CircleAbility",
+      "value": "entry_CircleAbility"
+    },
+    {
+      "name": "circleability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "circleability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_DailAbility",
+      "value": "entry_DailAbility"
+    },
+    {
+      "name": "dailability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "dailability_HelloWorld",
+      "value": "Hello World"
+    }
+  ]
+}
