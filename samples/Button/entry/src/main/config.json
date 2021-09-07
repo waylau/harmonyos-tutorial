@@ -3,25 +3,24 @@
     "bundleName": "com.waylau.hmos.button",
     "vendor": "waylau",
     "version": {
-      "code": 1,
-      "name": "1.0"
-    },
-    "apiVersion": {
-      "compatible": 3,
-      "target": 3
+      "code": 1000000,
+      "name": "1.0.0"
     }
   },
   "deviceConfig": {},
   "module": {
     "package": "com.waylau.hmos.button",
     "name": ".MyApplication",
+    "mainAbility": "com.waylau.hmos.button.MainAbility",
     "deviceType": [
+      "phone",
       "car"
     ],
     "distro": {
       "deliveryWithInstall": true,
       "moduleName": "entry",
-      "moduleType": "entry"
+      "moduleType": "entry",
+      "installationFree": false
     },
     "abilities": [
       {
@@ -35,47 +34,47 @@
             ]
           }
         ],
-        "orientation": "landscape",
+        "orientation": "unspecified",
         "name": "com.waylau.hmos.button.MainAbility",
         "icon": "$media:icon",
         "description": "$string:mainability_description",
-        "label": "Button",
+        "label": "$string:entry_MainAbility",
         "type": "page",
         "launchType": "standard"
       },
       {
-        "orientation": "landscape",
+        "orientation": "unspecified",
         "name": "com.waylau.hmos.button.ClickedListenerAbility",
         "icon": "$media:icon",
         "description": "$string:clickedlistenerability_description",
-        "label": "entry",
+        "label": "$string:entry_ClickedListenerAbility",
         "type": "page",
         "launchType": "standard"
       },
       {
-        "orientation": "landscape",
+        "orientation": "unspecified",
         "name": "com.waylau.hmos.button.OvalAbility",
         "icon": "$media:icon",
         "description": "$string:ovalability_description",
-        "label": "entry",
+        "label": "$string:entry_OvalAbility",
         "type": "page",
         "launchType": "standard"
       },
       {
-        "orientation": "landscape",
+        "orientation": "unspecified",
         "name": "com.waylau.hmos.button.CircleAbility",
         "icon": "$media:icon",
         "description": "$string:circleability_description",
-        "label": "entry",
+        "label": "$string:entry_CircleAbility",
         "type": "page",
         "launchType": "standard"
       },
       {
-        "orientation": "landscape",
+        "orientation": "unspecified",
         "name": "com.waylau.hmos.button.DailAbility",
         "icon": "$media:icon",
         "description": "$string:dailability_description",
-        "label": "entry",
+        "label": "$string:entry_DailAbility",
         "type": "page",
         "launchType": "standard"
       }

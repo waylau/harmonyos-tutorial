@@ -40,6 +40,7 @@
 * [HarmonyOS跳转到系统应用拨号盘](https://developer.huawei.com/consumer/cn/forum/topic/0201659093603710707?fid=0101303901040230869)
 * [HarmonyOS跳转到应用管理](https://developer.huawei.com/consumer/cn/forum/topic/0202660722259570963?fid=0101591351254000314)
 * [HarmonyOS跳转到搜索](https://developer.huawei.com/consumer/cn/forum/topic/0202663401260600008?fid=0101591351254000314)
+* [HarmonyOS的TextField的text_alignment属性值已经变更](https://developer.huawei.com/consumer/cn/blog/topic/03664410174460106)
 * 未完待续...
 
 ## Samples 示例

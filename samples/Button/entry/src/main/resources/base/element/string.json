@@ -1,28 +1,64 @@
 {
   "string": [
     {
-      "name": "app_name",
-      "value": "Button"
+      "name": "entry_MainAbility",
+      "value": "entry_MainAbility"
     },
     {
       "name": "mainability_description",
-      "value": "Java_Car_Empty Feature Ability"
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "mainability_HelloWorld",
+      "value": "Hello World"
     },
     {
       "name": "clickedlistenerability_description",
-      "value": "Java_Car_Empty Feature Ability"
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "clickedlistenerability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_ClickedListenerAbility",
+      "value": "entry_ClickedListenerAbility"
     },
     {
       "name": "ovalability_description",
-      "value": "Java_Car_Empty Feature Ability"
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "ovalability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_OvalAbility",
+      "value": "entry_OvalAbility"
     },
     {
       "name": "circleability_description",
-      "value": "Java_Car_Empty Feature Ability"
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "circleability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_CircleAbility",
+      "value": "entry_CircleAbility"
     },
     {
       "name": "dailability_description",
-      "value": "Java_Car_Empty Feature Ability"
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "dailability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_DailAbility",
+      "value": "entry_DailAbility"
     }
   ]
 }

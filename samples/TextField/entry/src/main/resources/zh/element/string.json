@@ -1,0 +1,40 @@
+{
+  "string": [
+    {
+      "name": "entry_MainAbility",
+      "value": "entry_MainAbility"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "mainability_HelloWorld",
+      "value": "你好，世界"
+    },
+    {
+      "name": "entry_MultipleLinesAbility",
+      "value": "entry_MultipleLinesAbility"
+    },
+    {
+      "name": "multiplelinesability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "multiplelinesability_HelloWorld",
+      "value": "你好，世界"
+    },
+    {
+      "name": "entry_LoginAbility",
+      "value": "entry_LoginAbility"
+    },
+    {
+      "name": "loginability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "loginability_HelloWorld",
+      "value": "你好，世界"
+    }
+  ]
+}

@@ -1,24 +1,52 @@
 {
   "string": [
     {
-      "name": "app_name",
-      "value": "ProgressBar"
+      "name": "entry_MainAbility",
+      "value": "entry_MainAbility"
     },
     {
       "name": "mainability_description",
-      "value": "Java_Car_Empty Feature Ability"
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "mainability_HelloWorld",
+      "value": "Hello World"
     },
     {
       "name": "orientationability_description",
-      "value": "Java_Car_Empty Feature Ability"
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "orientationability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_OrientationAbility",
+      "value": "entry_OrientationAbility"
     },
     {
       "name": "elementability_description",
-      "value": "Java_Car_Empty Feature Ability"
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "elementability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_ElementAbility",
+      "value": "entry_ElementAbility"
     },
     {
       "name": "hintability_description",
-      "value": "Java_Car_Empty Feature Ability"
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "hintability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_HintAbility",
+      "value": "entry_HintAbility"
     }
   ]
 }

@@ -1,24 +1,40 @@
 {
   "string": [
     {
-      "name": "app_name",
-      "value": "Image"
+      "name": "entry_MainAbility",
+      "value": "entry_MainAbility"
     },
     {
       "name": "mainability_description",
-      "value": "Java_Car_Empty Feature Ability"
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "mainability_HelloWorld",
+      "value": "Hello World"
     },
     {
       "name": "alphaability_description",
-      "value": "Java_Car_Empty Feature Ability"
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "alphaability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_AlphaAbility",
+      "value": "entry_AlphaAbility"
     },
     {
       "name": "scaleability_description",
-      "value": "Java_Car_Empty Feature Ability"
+      "value": "Java_Empty Ability"
     },
     {
-      "name": "clipalignmentability_description",
-      "value": "Java_Car_Empty Feature Ability"
+      "name": "scaleability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_ScaleAbility",
+      "value": "entry_ScaleAbility"
     }
   ]
 }
