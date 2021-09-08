@@ -1,0 +1,40 @@
+{
+  "string": [
+    {
+      "name": "entry_MainAbility",
+      "value": "entry_MainAbility"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "mainability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "datepickerability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "datepickerability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_DatePickerAbility",
+      "value": "entry_DatePickerAbility"
+    },
+    {
+      "name": "timepickerability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "timepickerability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_TimePickerAbility",
+      "value": "entry_TimePickerAbility"
+    }
+  ]
+}

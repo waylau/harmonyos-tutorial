@@ -1,20 +1,40 @@
 {
   "string": [
     {
-      "name": "app_name",
-      "value": "DirectionalLayout"
+      "name": "entry_MainAbility",
+      "value": "entry_MainAbility"
     },
     {
       "name": "mainability_description",
-      "value": "Java_Car_Empty Feature Ability"
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "mainability_HelloWorld",
+      "value": "Hello World"
     },
     {
       "name": "horizontalability_description",
-      "value": "Java_Car_Empty Feature Ability"
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "horizontalability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_HorizontalAbility",
+      "value": "entry_HorizontalAbility"
     },
     {
       "name": "weightability_description",
-      "value": "Java_Car_Empty Feature Ability"
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "weightability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_WeightAbility",
+      "value": "entry_WeightAbility"
     }
   ]
 }

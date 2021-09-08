@@ -62,8 +62,7 @@ public class MainAbilitySlice extends AbilitySlice {
                 // 当某个Tab已处于选中状态，再次被点击时的状态回调
                 HiLog.info(LABEL_LOG, "%{public}s, onReselected", tab.getText());
             }
-        });
-    }
+        });    }
 
     @Override
     public void onActive() {

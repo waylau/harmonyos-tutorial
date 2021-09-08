@@ -1,16 +1,28 @@
 {
   "string": [
     {
-      "name": "app_name",
-      "value": "RadioButtonRadioContainer"
+      "name": "entry_MainAbility",
+      "value": "entry_MainAbility"
     },
     {
       "name": "mainability_description",
-      "value": "Java_Car_Empty Feature Ability"
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "mainability_HelloWorld",
+      "value": "Hello World"
     },
     {
       "name": "markchangedability_description",
-      "value": "Java_Car_Empty Feature Ability"
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "markchangedability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_MarkChangedAbility",
+      "value": "entry_MarkChangedAbility"
     }
   ]
 }

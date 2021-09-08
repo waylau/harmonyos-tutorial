@@ -20,7 +20,7 @@
     <Text
         ohos:id="$+id:text2"
         ohos:width="match_content"
-        ohos:height="110vp"
+        ohos:height="680vp"
         ohos:text_size="10vp"
         ohos:background_element="#FDEDED"
         ohos:text="Catalog"
@@ -36,7 +36,7 @@
     <Text
         ohos:id="$+id:text3"
         ohos:width="match_parent"
-        ohos:height="110vp"
+        ohos:height="680vp"
         ohos:text_size="25fp"
         ohos:background_element="#FDEDED"
         ohos:text="Content"

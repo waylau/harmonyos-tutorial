@@ -1,16 +1,28 @@
 {
   "string": [
     {
-      "name": "app_name",
-      "value": "RoundProgressBar"
+      "name": "entry_MainAbility",
+      "value": "entry_MainAbility"
     },
     {
       "name": "mainability_description",
-      "value": "Java_Car_Empty Feature Ability"
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "mainability_HelloWorld",
+      "value": "Hello World"
     },
     {
       "name": "startmaxangleability_description",
-      "value": "Java_Car_Empty Feature Ability"
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "startmaxangleability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_StartMaxAngleAbility",
+      "value": "entry_StartMaxAngleAbility"
     }
   ]
 }

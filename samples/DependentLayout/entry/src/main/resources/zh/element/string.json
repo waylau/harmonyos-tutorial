@@ -1,0 +1,28 @@
+{
+  "string": [
+    {
+      "name": "entry_MainAbility",
+      "value": "entry_MainAbility"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "mainability_HelloWorld",
+      "value": "你好，世界"
+    },
+    {
+      "name": "entry_FullAbility",
+      "value": "entry_FullAbility"
+    },
+    {
+      "name": "fullability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "fullability_HelloWorld",
+      "value": "你好，世界"
+    }
+  ]
+}

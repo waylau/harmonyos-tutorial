@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DependentLayout
     xmlns:ohos="http://schemas.huawei.com/res/ohos"
-    ohos:width="match_content"
-    ohos:height="match_content"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
     ohos:background_element="#ADEDED">
     <Text
         ohos:id="$+id:text1"
@@ -26,4 +26,5 @@
         ohos:text_size="20fp"
         ohos:background_element="#FDEDED"
         ohos:end_of="$id:text1"/>
+
 </DependentLayout>

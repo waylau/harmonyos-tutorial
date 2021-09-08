@@ -3,27 +3,31 @@
     xmlns:ohos="http://schemas.huawei.com/res/ohos"
     ohos:height="match_parent"
     ohos:width="match_parent"
+    ohos:alignment="center"
     ohos:orientation="horizontal">
 
     <Button
-        ohos:width="120vp"
+        ohos:width="100vp"
         ohos:height="60vp"
         ohos:bottom_margin="3vp"
         ohos:left_margin="13vp"
+        ohos:text_size="16vp"
         ohos:background_element="$graphic:background_ability_main"
         ohos:text="I am Button1"/>
     <Button
-        ohos:width="120vp"
+        ohos:width="100vp"
         ohos:height="60vp"
         ohos:bottom_margin="3vp"
         ohos:left_margin="13vp"
+        ohos:text_size="16vp"
         ohos:background_element="$graphic:background_ability_main"
         ohos:text="I am Button2"/>
     <Button
-        ohos:width="120vp"
+        ohos:width="100vp"
         ohos:height="60vp"
         ohos:bottom_margin="3vp"
         ohos:left_margin="13vp"
+        ohos:text_size="16vp"
         ohos:background_element="$graphic:background_ability_main"
         ohos:text="I am Button3"/>
 

@@ -3,25 +3,24 @@
     "bundleName": "com.waylau.hmos.tablist",
     "vendor": "waylau",
     "version": {
-      "code": 1,
-      "name": "1.0"
-    },
-    "apiVersion": {
-      "compatible": 3,
-      "target": 3
+      "code": 1000000,
+      "name": "1.0.0"
     }
   },
   "deviceConfig": {},
   "module": {
     "package": "com.waylau.hmos.tablist",
     "name": ".MyApplication",
+    "mainAbility": "com.waylau.hmos.tablist.MainAbility",
     "deviceType": [
+      "phone",
       "car"
     ],
     "distro": {
       "deliveryWithInstall": true,
       "moduleName": "entry",
-      "moduleType": "entry"
+      "moduleType": "entry",
+      "installationFree": false
     },
     "abilities": [
       {
@@ -35,11 +34,11 @@
             ]
           }
         ],
-        "orientation": "landscape",
+        "orientation": "unspecified",
         "name": "com.waylau.hmos.tablist.MainAbility",
         "icon": "$media:icon",
         "description": "$string:mainability_description",
-        "label": "TabList",
+        "label": "$string:entry_MainAbility",
         "type": "page",
         "launchType": "standard"
       }

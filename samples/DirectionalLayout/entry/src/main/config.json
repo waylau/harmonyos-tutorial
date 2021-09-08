@@ -3,25 +3,24 @@
     "bundleName": "com.waylau.hmos.directionallayout",
     "vendor": "waylau",
     "version": {
-      "code": 1,
-      "name": "1.0"
-    },
-    "apiVersion": {
-      "compatible": 3,
-      "target": 3
+      "code": 1000000,
+      "name": "1.0.0"
     }
   },
   "deviceConfig": {},
   "module": {
     "package": "com.waylau.hmos.directionallayout",
     "name": ".MyApplication",
+    "mainAbility": "com.waylau.hmos.directionallayout.MainAbility",
     "deviceType": [
+      "phone",
       "car"
     ],
     "distro": {
       "deliveryWithInstall": true,
       "moduleName": "entry",
-      "moduleType": "entry"
+      "moduleType": "entry",
+      "installationFree": false
     },
     "abilities": [
       {
@@ -35,29 +34,29 @@
             ]
           }
         ],
-        "orientation": "landscape",
+        "orientation": "unspecified",
         "name": "com.waylau.hmos.directionallayout.MainAbility",
         "icon": "$media:icon",
         "description": "$string:mainability_description",
-        "label": "DirectionalLayout",
+        "label": "$string:entry_MainAbility",
         "type": "page",
         "launchType": "standard"
       },
       {
-        "orientation": "landscape",
+        "orientation": "unspecified",
         "name": "com.waylau.hmos.directionallayout.HorizontalAbility",
         "icon": "$media:icon",
         "description": "$string:horizontalability_description",
-        "label": "entry",
+        "label": "$string:entry_HorizontalAbility",
         "type": "page",
         "launchType": "standard"
       },
       {
-        "orientation": "landscape",
+        "orientation": "unspecified",
         "name": "com.waylau.hmos.directionallayout.WeightAbility",
         "icon": "$media:icon",
         "description": "$string:weightability_description",
-        "label": "entry",
+        "label": "$string:entry_WeightAbility",
         "type": "page",
         "launchType": "standard"
       }
