@@ -3,6 +3,7 @@
     xmlns:ohos="http://schemas.huawei.com/res/ohos"
     ohos:height="match_parent"
     ohos:width="match_parent"
+    ohos:alignment="center"
     ohos:orientation="vertical"
     ohos:background_element="#FFFCCCCC">
 
@@ -43,7 +44,7 @@
             ohos:text="4.《Cloud Native 分布式架构原理与实践》"
             ohos:text_size="14fp"/>
         <RadioButton
-            ohos:id="$+id:radio_button_4"
+            ohos:id="$+id:radio_button_5"
             ohos:height="30vp"
             ohos:width="match_content"
             ohos:text="5.《大型互联网应用轻量级架构实战》"
@@ -53,6 +54,12 @@
             ohos:height="30vp"
             ohos:width="match_content"
             ohos:text="6.《Node.js企业级应用开发实战》"
+            ohos:text_size="14fp"/>
+        <RadioButton
+            ohos:id="$+id:radio_button_7"
+            ohos:height="30vp"
+            ohos:width="match_content"
+            ohos:text="7.《Netty原理解析与开发实战》"
             ohos:text_size="14fp"/>
     </RadioContainer>
 </DirectionalLayout>

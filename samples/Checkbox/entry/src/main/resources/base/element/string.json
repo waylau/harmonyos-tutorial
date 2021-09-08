@@ -1,16 +1,28 @@
 {
   "string": [
     {
-      "name": "app_name",
-      "value": "Checkbox"
+      "name": "entry_MainAbility",
+      "value": "entry_MainAbility"
     },
     {
       "name": "mainability_description",
-      "value": "Java_Car_Empty Feature Ability"
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "mainability_HelloWorld",
+      "value": "Hello World"
     },
     {
       "name": "onoffability_description",
-      "value": "Java_Car_Empty Feature Ability"
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "onoffability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_OnOffAbility",
+      "value": "entry_OnOffAbility"
     }
   ]
 }

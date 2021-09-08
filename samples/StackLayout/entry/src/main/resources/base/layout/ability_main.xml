@@ -8,8 +8,8 @@
         ohos:text_alignment="bottom|horizontal_center"
         ohos:text_size="24fp"
         ohos:text="Layer 1"
-        ohos:height="200vp"
-        ohos:width="600vp"
+        ohos:height="match_parent"
+        ohos:width="match_parent"
         ohos:background_element="#3F56EA" />
 
     <Text

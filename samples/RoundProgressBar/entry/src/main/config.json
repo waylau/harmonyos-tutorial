@@ -3,25 +3,24 @@
     "bundleName": "com.waylau.hmos.roundprogressbar",
     "vendor": "waylau",
     "version": {
-      "code": 1,
-      "name": "1.0"
-    },
-    "apiVersion": {
-      "compatible": 3,
-      "target": 3
+      "code": 1000000,
+      "name": "1.0.0"
     }
   },
   "deviceConfig": {},
   "module": {
     "package": "com.waylau.hmos.roundprogressbar",
     "name": ".MyApplication",
+    "mainAbility": "com.waylau.hmos.roundprogressbar.MainAbility",
     "deviceType": [
+      "phone",
       "car"
     ],
     "distro": {
       "deliveryWithInstall": true,
       "moduleName": "entry",
-      "moduleType": "entry"
+      "moduleType": "entry",
+      "installationFree": false
     },
     "abilities": [
       {
@@ -35,20 +34,20 @@
             ]
           }
         ],
-        "orientation": "landscape",
+        "orientation": "unspecified",
         "name": "com.waylau.hmos.roundprogressbar.MainAbility",
         "icon": "$media:icon",
         "description": "$string:mainability_description",
-        "label": "RoundProgressBar",
+        "label": "$string:entry_MainAbility",
         "type": "page",
         "launchType": "standard"
       },
       {
-        "orientation": "landscape",
+        "orientation": "unspecified",
         "name": "com.waylau.hmos.roundprogressbar.StartMaxAngleAbility",
         "icon": "$media:icon",
         "description": "$string:startmaxangleability_description",
-        "label": "entry",
+        "label": "$string:entry_StartMaxAngleAbility",
         "type": "page",
         "launchType": "standard"
       }
