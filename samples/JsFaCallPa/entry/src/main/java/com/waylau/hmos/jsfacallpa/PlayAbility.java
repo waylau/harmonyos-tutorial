@@ -62,7 +62,8 @@ public class PlayAbility extends Ability {
         }
 
         @Override
-        public boolean onRemoteRequest(int code, MessageParcel data, MessageParcel reply, MessageOption option) throws RemoteException {
+        public boolean onRemoteRequest(int code, MessageParcel data,
+                                       MessageParcel reply, MessageOption option) throws RemoteException {
             switch (code) {
                 case PLUS: {
 

@@ -5,5 +5,40 @@
 }
 
 .title {
-    font-size: 100px;
+    font-size: 40px;
+    color: #000000;
+    opacity: 0.9;
+}
+
+@media screen and (device-type: tablet) and (orientation: landscape) {
+    .title {
+        font-size: 100px;
+    }
+}
+
+@media screen and (device-type: wearable) {
+    .title {
+        font-size: 28px;
+        color: #FFFFFF;
+    }
+}
+
+@media screen and (device-type: tv) {
+    .container {
+        background-image: url("../../common/images/Wallpaper.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .title {
+        font-size: 100px;
+        color: #FFFFFF;
+    }
+}
+
+@media screen and (device-type: phone) and (orientation: landscape) {
+    .title {
+        font-size: 60px;
+    }
 }

@@ -1,12 +1,12 @@
 {
   "string": [
     {
-      "name": "app_name",
-      "value": "JsFaCallPa"
+      "name": "entry_MainAbility",
+      "value": "entry_MainAbility"
     },
     {
       "name": "mainability_description",
-      "value": "JS_Tablet_Empty Feature Ability"
+      "value": "JS_Empty Ability"
     },
     {
       "name": "playability_description",
