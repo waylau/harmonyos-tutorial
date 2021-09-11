@@ -1,4 +1,3 @@
-
 const globalRef = Object.getPrototypeOf(global) || global
 globalRef.regeneratorRuntime = require('@babel/runtime/regenerator')
 

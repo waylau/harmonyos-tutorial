@@ -1,8 +1,8 @@
 {
  "1.0.0": {
   "LastPreviewDevice": {
-   "D:\\workspaceGithub\\harmonyos-tutorial\\samples\\GiveLike\\entry\\build\\intermediates\\res\\debug": [
-    "tablet"
+   "D:\\workspaceGithub\\harmonyos-tutorial\\samples\\GiveLike\\entry\\.preview\\intermediates\\res\\debug": [
+    "phone"
    ]
   }
  }
