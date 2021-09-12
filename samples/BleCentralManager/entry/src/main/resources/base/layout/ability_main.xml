@@ -7,26 +7,26 @@
 
     <Button
         ohos:id="$+id:button_scan"
-        ohos:height="40vp"
+        ohos:height="match_content"
         ohos:width="match_parent"
         ohos:background_element="#F76543"
         ohos:layout_alignment="horizontal_center"
         ohos:margin="10vp"
         ohos:padding="10vp"
         ohos:text="Scan"
-        ohos:text_size="50"
+        ohos:text_size="40vp"
         />
 
     <Button
         ohos:id="$+id:button_advertise"
-        ohos:height="40vp"
+        ohos:height="match_content"
         ohos:width="match_parent"
         ohos:background_element="#F76543"
         ohos:layout_alignment="horizontal_center"
         ohos:margin="10vp"
         ohos:padding="10vp"
         ohos:text="Advertise"
-        ohos:text_size="50"
+        ohos:text_size="40vp"
         />
 
     <Text
@@ -37,6 +37,7 @@
         ohos:layout_alignment="horizontal_center"
         ohos:multiple_lines="true"
         ohos:text=""
-        ohos:text_size="50"
+        ohos:text_size="40vp"
         />
+
 </DirectionalLayout>

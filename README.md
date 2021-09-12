@@ -113,7 +113,7 @@
 * [BLE扫描和广播](samples/BleCentralManager)（test）
 * [WLAN基础功能](samples/WifiDevice)
 * [不信任热点配置](samples/WifiDeviceUntrustedConfig)
-* [WLAN消息通知](samples/WifiEventSubscriber)
+* [WLAN消息通知](samples/WifiEventSubscriber)（test）
 * [使用当前网络打开一个URL链接](samples/NetManagerHandleURL)
 * [使用当前网络进行Socket数据传输](samples/NetManagerHandleSocket)
 * [流量统计](samples/DataFlowStatistics)

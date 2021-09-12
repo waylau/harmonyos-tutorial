@@ -8,19 +8,18 @@
     <Button
         ohos:id="$+id:button_get"
         ohos:height="match_content"
-        ohos:width="match_content"
+        ohos:width="match_parent"
         ohos:background_element="#F76543"
         ohos:margin="10vp"
         ohos:padding="10vp"
         ohos:text="Get"
-        ohos:text_size="50"
+        ohos:text_size="40vp"
         />
 
     <TableLayout
         ohos:id="$+id:layout_table"
         ohos:height="match_parent"
         ohos:width="match_content">
-
     </TableLayout>
 
 </DirectionalLayout>
