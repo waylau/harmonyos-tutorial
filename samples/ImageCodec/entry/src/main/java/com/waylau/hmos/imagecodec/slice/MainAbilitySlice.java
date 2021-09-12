@@ -153,6 +153,11 @@ public class MainAbilitySlice extends AbilitySlice {
             // 释放资源
             imageSource.release();
         }
+        if (pixelMap != null) {
+            // 释放资源
+            pixelMap.release();
+        }
+
     }
 
     @Override
