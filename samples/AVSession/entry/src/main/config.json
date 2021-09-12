@@ -3,26 +3,24 @@
     "bundleName": "com.waylau.hmos.avsession",
     "vendor": "waylau",
     "version": {
-      "code": 1,
-      "name": "1.0"
-    },
-    "apiVersion": {
-      "compatible": 4,
-      "target": 4,
-      "releaseType": "Beta1"
+      "code": 1000000,
+      "name": "1.0.0"
     }
   },
   "deviceConfig": {},
   "module": {
     "package": "com.waylau.hmos.avsession",
     "name": ".MyApplication",
+    "mainAbility": "com.waylau.hmos.avsession.MainAbility",
     "deviceType": [
+      "phone",
       "tv"
     ],
     "distro": {
       "deliveryWithInstall": true,
       "moduleName": "entry",
-      "moduleType": "entry"
+      "moduleType": "entry",
+      "installationFree": false
     },
     "abilities": [
       {
@@ -36,11 +34,11 @@
             ]
           }
         ],
-        "orientation": "landscape",
+        "orientation": "unspecified",
         "name": "com.waylau.hmos.avsession.MainAbility",
         "icon": "$media:icon",
         "description": "$string:mainability_description",
-        "label": "AVSession",
+        "label": "$string:entry_MainAbility",
         "type": "page",
         "launchType": "standard"
       },
