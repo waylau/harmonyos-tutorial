@@ -3,25 +3,24 @@
     "bundleName": "com.waylau.hmos.recorder",
     "vendor": "waylau",
     "version": {
-      "code": 1,
-      "name": "1.0"
-    },
-    "apiVersion": {
-      "compatible": 3,
-      "target": 3
+      "code": 1000000,
+      "name": "1.0.0"
     }
   },
   "deviceConfig": {},
   "module": {
     "package": "com.waylau.hmos.recorder",
     "name": ".MyApplication",
+    "mainAbility": "com.waylau.hmos.recorder.MainAbility",
     "deviceType": [
+      "phone",
       "car"
     ],
     "distro": {
       "deliveryWithInstall": true,
       "moduleName": "entry",
-      "moduleType": "entry"
+      "moduleType": "entry",
+      "installationFree": false
     },
     "abilities": [
       {
@@ -35,11 +34,11 @@
             ]
           }
         ],
-        "orientation": "landscape",
+        "orientation": "unspecified",
         "name": "com.waylau.hmos.recorder.MainAbility",
         "icon": "$media:icon",
         "description": "$string:mainability_description",
-        "label": "Recorder",
+        "label": "$string:entry_MainAbility",
         "type": "page",
         "launchType": "standard"
       }

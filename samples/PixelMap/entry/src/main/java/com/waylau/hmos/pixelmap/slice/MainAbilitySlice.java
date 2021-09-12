@@ -100,6 +100,19 @@ public class MainAbilitySlice extends AbilitySlice {
     }
 
     @Override
+    protected void onStop() {
+        super.onStop();
+        if (pixelMap1 != null) {
+            // 释放资源
+            pixelMap1.release();
+        }
+        if (pixelMap2 != null) {
+            // 释放资源
+            pixelMap2.release();
+        }
+    }
+
+    @Override
     public void onActive() {
         super.onActive();
     }

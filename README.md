@@ -54,7 +54,7 @@
 * [多个Page之间的路由与导航](samples/IntentOperationWithAction)
 * [启动系统应用拨号盘](samples/IntentOperationWithActionDial)
 * [跳转到应用管理](samples/IntentOperationWithActionManageApplicationsSettings)
-* [跳转到搜索(samples/IntentOperationWithActionSearch)
+* [跳转到搜索](samples/IntentOperationWithActionSearch)
 * [分布式任务调度启动远程FA](samples/DistributedSchedulingStartRemoteFA)
 * [分布式任务调度启动和关闭远程PA](samples/DistributedSchedulingStartStopRemotePA)
 * [设备迁移及回迁](samples/ContinueRemoteFA)
@@ -97,7 +97,7 @@
 * [图像编解码](samples/ImageCodec)
 * [位图操作](samples/PixelMap)
 * [图像属性解码](samples/ImageSourceExifUtils)
-* [相机设备创建、配置、帧捕获](samples/CameraKit)
+* [相机设备创建、配置、帧捕获](samples/CameraKit)（test）
 * [音频播放](samples/AudioRenderer)（test）
 * [音频采集](samples/AudioCapturer)（test）
 * [短音播放](samples/SoundPlayer)（test）

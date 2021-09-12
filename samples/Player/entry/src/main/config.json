@@ -3,27 +3,24 @@
     "bundleName": "com.waylau.hmos.player",
     "vendor": "waylau",
     "version": {
-      "code": 1,
-      "name": "1.0"
-    },
-    "apiVersion": {
-      "compatible": 3,
-      "target": 4,
-      "releaseType": "Beta1"
+      "code": 1000000,
+      "name": "1.0.0"
     }
   },
   "deviceConfig": {},
   "module": {
     "package": "com.waylau.hmos.player",
     "name": ".MyApplication",
+    "mainAbility": "com.waylau.hmos.player.MainAbility",
     "deviceType": [
-      "tablet",
-      "phone"
+      "phone",
+      "tablet"
     ],
     "distro": {
       "deliveryWithInstall": true,
       "moduleName": "entry",
-      "moduleType": "entry"
+      "moduleType": "entry",
+      "installationFree": false
     },
     "abilities": [
       {
@@ -37,11 +34,11 @@
             ]
           }
         ],
-        "orientation": "landscape",
+        "orientation": "unspecified",
         "name": "com.waylau.hmos.player.MainAbility",
         "icon": "$media:icon",
         "description": "$string:mainability_description",
-        "label": "Player",
+        "label": "$string:entry_MainAbility",
         "type": "page",
         "launchType": "standard"
       }

@@ -4,8 +4,7 @@
     ohos:id="$+id:layout"
     ohos:height="match_parent"
     ohos:width="match_parent"
-    ohos:orientation="vertical"
-    >
+    ohos:orientation="vertical">
 
     <Button
         ohos:id="$+id:button_create_camera"
@@ -14,7 +13,7 @@
         ohos:background_element="#F76543"
         ohos:layout_alignment="horizontal_center"
         ohos:text="Get Camera"
-        ohos:text_size="50"
+        ohos:text_size="40vp"
         />
 
     <Button
@@ -24,6 +23,7 @@
         ohos:background_element="#F76543"
         ohos:layout_alignment="horizontal_center"
         ohos:text="Single Capture"
-        ohos:text_size="50"
+        ohos:text_size="40vp"
         />
+
 </DirectionalLayout>
