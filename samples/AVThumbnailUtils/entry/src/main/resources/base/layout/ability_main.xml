@@ -7,13 +7,13 @@
 
     <Button
         ohos:id="$+id:button_image"
-        ohos:height="40vp"
+        ohos:height="match_content"
         ohos:width="match_parent"
         ohos:background_element="#F76543"
         ohos:margin="10vp"
         ohos:padding="10vp"
         ohos:text="Get Image"
-        ohos:text_size="50"
+        ohos:text_size="40vp"
         />
 
     <Image
@@ -23,17 +23,18 @@
 
     <Button
         ohos:id="$+id:button_video"
-        ohos:height="40vp"
+        ohos:height="match_content"
         ohos:width="match_parent"
         ohos:background_element="#F76543"
         ohos:margin="10vp"
         ohos:padding="10vp"
         ohos:text="Get Video"
-        ohos:text_size="50"
+        ohos:text_size="40vp"
         />
 
     <Image
         ohos:id="$+id:image_vedio"
         ohos:height="match_content"
         ohos:width="match_parent"/>
+
 </DirectionalLayout>

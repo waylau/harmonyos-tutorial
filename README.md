@@ -41,6 +41,7 @@
 * [HarmonyOS跳转到应用管理](https://developer.huawei.com/consumer/cn/forum/topic/0202660722259570963?fid=0101591351254000314)
 * [HarmonyOS跳转到搜索](https://developer.huawei.com/consumer/cn/forum/topic/0202663401260600008?fid=0101591351254000314)
 * [HarmonyOS的TextField的text_alignment属性值已经变更](https://developer.huawei.com/consumer/cn/blog/topic/03664410174460106)
+* [HarmonyOS的vp、fp与Android的dp、sp联系与区别](https://developer.huawei.com/consumer/cn/forum/topic/0202669455953940178?fid=0101303901040230869)
 * 未完待续...
 
 ## Samples 示例
@@ -113,7 +114,7 @@
 * [BLE扫描和广播](samples/BleCentralManager)（test）
 * [WLAN基础功能](samples/WifiDevice)
 * [不信任热点配置](samples/WifiDeviceUntrustedConfig)
-* [WLAN消息通知](samples/WifiEventSubscriber)
+* [WLAN消息通知](samples/WifiEventSubscriber)（test）
 * [使用当前网络打开一个URL链接](samples/NetManagerHandleURL)
 * [使用当前网络进行Socket数据传输](samples/NetManagerHandleSocket)
 * [流量统计](samples/DataFlowStatistics)
