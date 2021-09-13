@@ -7,26 +7,26 @@
 
     <Button
         ohos:id="$+id:button_start"
-        ohos:height="40vp"
+        ohos:height="match_content"
         ohos:width="match_parent"
         ohos:background_element="#F76543"
         ohos:layout_alignment="horizontal_center"
         ohos:margin="10vp"
         ohos:padding="10vp"
         ohos:text="Start Server"
-        ohos:text_size="50"
+        ohos:text_size="30fp"
         />
 
     <Button
         ohos:id="$+id:button_open"
-        ohos:height="40vp"
+        ohos:height="match_content"
         ohos:width="match_parent"
         ohos:background_element="#F76543"
         ohos:layout_alignment="horizontal_center"
         ohos:margin="10vp"
         ohos:padding="10vp"
         ohos:text="Open"
-        ohos:text_size="50"
+        ohos:text_size="30fp"
         />
 
 </DirectionalLayout>

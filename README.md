@@ -115,9 +115,9 @@
 * [WLAN基础功能](samples/WifiDevice)
 * [不信任热点配置](samples/WifiDeviceUntrustedConfig)
 * [WLAN消息通知](samples/WifiEventSubscriber)（test）
-* [使用当前网络打开一个URL链接](samples/NetManagerHandleURL)
+* [使用当前网络打开一个URL链接](samples/NetManagerHandleURL)（test）
 * [使用当前网络进行Socket数据传输](samples/NetManagerHandleSocket)
-* [流量统计](samples/DataFlowStatistics)
+* [流量统计](samples/DataFlowStatistics)（test）
 * [获取当前蜂窝网络信号信息](samples/RadioInfoManager)
 * [观察蜂窝网络状态变化](samples/RadioStateObserver)
 * [传感器示例](samples/CategoryOrientationAgent)

@@ -7,26 +7,26 @@
 
     <Button
         ohos:id="$+id:button_on"
-        ohos:height="40vp"
+        ohos:height="match_content"
         ohos:width="match_parent"
         ohos:background_element="#F76543"
         ohos:layout_alignment="horizontal_center"
         ohos:margin="10vp"
         ohos:padding="10vp"
         ohos:text="On"
-        ohos:text_size="50"
+        ohos:text_size="30fp"
         />
 
     <Button
         ohos:id="$+id:button_off"
-        ohos:height="40vp"
+        ohos:height="match_content"
         ohos:width="match_parent"
         ohos:background_element="#F76543"
         ohos:layout_alignment="horizontal_center"
         ohos:margin="10vp"
         ohos:padding="10vp"
         ohos:text="Off"
-        ohos:text_size="50"
+        ohos:text_size="30fp"
         />
 
 </DirectionalLayout>

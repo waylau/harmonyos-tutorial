@@ -1,15 +1,15 @@
 {
   "string": [
     {
-      "name": "app_name",
-      "value": "Preferences"
+      "name": "entry_MainAbility",
+      "value": "entry_MainAbility"
     },
     {
       "name": "mainability_description",
-      "value": "Java_Phone_Empty Feature Ability"
+      "value": "Java_Empty Ability"
     },
     {
-      "name": "HelloWorld",
+      "name": "mainability_HelloWorld",
       "value": "Hello World"
     }
   ]

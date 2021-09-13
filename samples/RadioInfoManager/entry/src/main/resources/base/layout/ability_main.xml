@@ -4,16 +4,17 @@
     ohos:height="match_parent"
     ohos:width="match_parent"
     ohos:orientation="vertical">
+
     <Button
         ohos:id="$+id:button_get"
-        ohos:height="40vp"
+        ohos:height="match_content"
         ohos:width="match_parent"
         ohos:background_element="#F76543"
         ohos:layout_alignment="horizontal_center"
         ohos:margin="10vp"
         ohos:padding="10vp"
         ohos:text="Get"
-        ohos:text_size="50"
+        ohos:text_size="30fp"
         />
 
     <Text
@@ -23,7 +24,7 @@
         ohos:background_element="$graphic:background_ability_main"
         ohos:layout_alignment="horizontal_center"
         ohos:text=""
-        ohos:text_size="50"
+        ohos:text_size="20fp"
         ohos:multiple_lines="true"
         />
 
