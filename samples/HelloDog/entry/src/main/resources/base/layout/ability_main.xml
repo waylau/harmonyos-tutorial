@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:alignment="center"
+    ohos:orientation="vertical">
+
+    <Image
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:image_src="$media:dog"
+        />
+
+    <Text
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:text="我的狗狗"
+        ohos:text_size="30fp"
+        />
+
+    <Text
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:text="狗狗撒娇！"
+        ohos:text_size="20fp"
+        />
+
+</DirectionalLayout>
