@@ -65,7 +65,6 @@
 * [高级通知服务](samples/Notification)
 * [剪切板数据的写入](samples/SystemPasteboardSetter)
 * [剪切板数据的读取](samples/SystemPasteboardGetter)
-* [创建服务卡片](samples/AbilityServiceWidget)
 * [XML创建布局](samples/DirectionalLayoutWithXml)
 * [Java创建布局](samples/DirectionalLayoutWithJava)
 * [常用显示类组件——Text](samples/Text)
@@ -127,6 +126,8 @@
 * [使用对象关系映射数据库](samples/DataAbilityHelperAccessORM)
 * [使用轻量级偏好数据库](samples/Preferences)
 * [使用数据存储管理](samples/DataUsage)
+* [原子化服务HelloDog](samples/HelloDog)
+* [创建服务卡片](samples/AbilityServiceWidget)
 * [ElectronicAlbum](samples/ElectronicAlbum)
 * [KlotskiJs](samples/KlotskiJs)
 * [AudioPlayer](samples/AudioPlayer)（TODO）
