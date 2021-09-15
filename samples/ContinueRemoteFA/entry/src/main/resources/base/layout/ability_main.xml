@@ -10,10 +10,10 @@
         ohos:id="$+id:button_continue_remote_fa"
         ohos:height="match_content"
         ohos:width="match_content"
-        ohos:background_element="$graphic:background_ability_main"
+        ohos:background_element="#F76543"
         ohos:layout_alignment="horizontal_center"
         ohos:text="迁移"
-        ohos:text_size="40vp"
+        ohos:text_size="40fp"
         />
 
 
@@ -21,11 +21,11 @@
         ohos:id="$+id:button_continue_eversibly"
         ohos:height="match_content"
         ohos:width="match_content"
-        ohos:top_margin="8vp"
-        ohos:background_element="$graphic:background_ability_main"
+        ohos:background_element="#F76543"
         ohos:layout_alignment="horizontal_center"
         ohos:text="回迁"
-        ohos:text_size="40vp"
+        ohos:text_size="40fp"
+        ohos:top_margin="8vp"
         />
 
 </DirectionalLayout>
