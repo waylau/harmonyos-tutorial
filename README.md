@@ -58,8 +58,6 @@
 * [跳转到搜索](samples/IntentOperationWithActionSearch)
 * [分布式任务调度启动远程FA](samples/DistributedSchedulingStartRemoteFA)
 * [分布式任务调度启动和关闭远程PA](samples/DistributedSchedulingStartStopRemotePA)
-* [设备迁移及回迁](samples/ContinueRemoteFA)
-* [多设备协同](samples/ContinueRemoteFACollaboration)
 * [公共事件服务发布事件](samples/CommonEventPublisher)
 * [公共事件服务订阅事件](samples/CommonEventSubscriber)
 * [高级通知服务](samples/Notification)
@@ -128,6 +126,8 @@
 * [使用数据存储管理](samples/DataUsage)
 * [原子化服务HelloDog](samples/HelloDog)
 * [创建服务卡片](samples/AbilityServiceWidget)
+* [设备迁移及回迁](samples/ContinueRemoteFA)
+* [多设备协同](samples/ContinueRemoteFACollaboration)
 * [ElectronicAlbum](samples/ElectronicAlbum)
 * [KlotskiJs](samples/KlotskiJs)
 * [AudioPlayer](samples/AudioPlayer)（TODO）
