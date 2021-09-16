@@ -21,7 +21,7 @@
             ohos:height="match_parent"
             ohos:width="80vp"
             ohos:text_color="#FFFFFF"
-            ohos:text_size="24vp"
+            ohos:text_size="24fp"
             ohos:text="Score:"/>
 
         <Text
@@ -29,14 +29,14 @@
             ohos:height="match_parent"
             ohos:width="100vp"
             ohos:text_color="#FFFFFF"
-            ohos:text_size="24vp"
+            ohos:text_size="24fp"
             ohos:text="0"/>
         <Text
             ohos:id="$+id:text_gameover"
             ohos:height="match_parent"
             ohos:width="match_content"
             ohos:text_color="#FFFFFF"
-            ohos:text_size="24vp"
+            ohos:text_size="24fp"
             ohos:text="Start!"/>
     </DirectionalLayout>
 
@@ -67,7 +67,7 @@
             ohos:margin="10vp"
             ohos:padding="10vp"
             ohos:text="←"
-            ohos:text_size="44"
+            ohos:text_size="30fp"
             ohos:weight="1"
             />
 
@@ -80,7 +80,7 @@
             ohos:margin="10vp"
             ohos:padding="10vp"
             ohos:text="→"
-            ohos:text_size="44"
+            ohos:text_size="30fp"
             ohos:weight="1"
             />
 
@@ -93,7 +93,7 @@
             ohos:margin="10vp"
             ohos:padding="10vp"
             ohos:text="∽"
-            ohos:text_size="44"
+            ohos:text_size="30fp"
             ohos:weight="1"
             />
         <Button
@@ -105,10 +105,9 @@
             ohos:margin="10vp"
             ohos:padding="10vp"
             ohos:text="R"
-            ohos:text_size="44"
+            ohos:text_size="30fp"
             ohos:weight="1"
             />
     </DirectionalLayout>
-
 
 </DirectionalLayout>

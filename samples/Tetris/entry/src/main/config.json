@@ -3,26 +3,23 @@
     "bundleName": "com.waylau.hmos.tetris",
     "vendor": "waylau",
     "version": {
-      "code": 1,
-      "name": "1.0"
-    },
-    "apiVersion": {
-      "compatible": 4,
-      "target": 4,
-      "releaseType": "Beta2"
+      "code": 1000000,
+      "name": "1.0.0"
     }
   },
   "deviceConfig": {},
   "module": {
     "package": "com.waylau.hmos.tetris",
     "name": ".MyApplication",
+    "mainAbility": "com.waylau.hmos.tetris.MainAbility",
     "deviceType": [
       "phone"
     ],
     "distro": {
       "deliveryWithInstall": true,
       "moduleName": "entry",
-      "moduleType": "entry"
+      "moduleType": "entry",
+      "installationFree": false
     },
     "abilities": [
       {
@@ -40,7 +37,7 @@
         "name": "com.waylau.hmos.tetris.MainAbility",
         "icon": "$media:icon",
         "description": "$string:mainability_description",
-        "label": "Tetris",
+        "label": "$string:entry_MainAbility",
         "type": "page",
         "launchType": "standard"
       }
