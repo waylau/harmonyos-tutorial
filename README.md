@@ -40,6 +40,7 @@
 * [HarmonyOS跳转到系统应用拨号盘](https://developer.huawei.com/consumer/cn/forum/topic/0201659093603710707?fid=0101303901040230869)
 * [HarmonyOS跳转到应用管理](https://developer.huawei.com/consumer/cn/forum/topic/0202660722259570963?fid=0101591351254000314)
 * [HarmonyOS跳转到搜索](https://developer.huawei.com/consumer/cn/forum/topic/0202663401260600008?fid=0101591351254000314)
+* [HarmonyOS跳转到指定URI进行访问](https://developer.huawei.com/consumer/cn/forum/topic/0201673625843820338?fid=0101591351254000314)
 * [HarmonyOS的TextField的text_alignment属性值已经变更](https://developer.huawei.com/consumer/cn/blog/topic/03664410174460106)
 * [HarmonyOS的vp、fp与Android的dp、sp联系与区别](https://developer.huawei.com/consumer/cn/forum/topic/0202669455953940178?fid=0101303901040230869)
 * 未完待续...
@@ -56,6 +57,7 @@
 * [启动系统应用拨号盘](samples/IntentOperationWithActionDial)
 * [跳转到应用管理](samples/IntentOperationWithActionManageApplicationsSettings)
 * [跳转到搜索](samples/IntentOperationWithActionSearch)
+* [跳转到指定URI进行访问](samples/IntentOperationWithUri)
 * [分布式任务调度启动远程FA](samples/DistributedSchedulingStartRemoteFA)
 * [分布式任务调度启动和关闭远程PA](samples/DistributedSchedulingStartStopRemotePA)
 * [公共事件服务发布事件](samples/CommonEventPublisher)
