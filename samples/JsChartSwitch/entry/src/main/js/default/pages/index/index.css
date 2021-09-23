@@ -1,0 +1,78 @@
+.container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (device-type: tv) {
+    .container {
+        background-image: url("../../common/images/Wallpaper.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+}
+
+.switch-block {
+    width: 98%;
+    height: 50px;
+}
+
+.switch {
+    text-padding: 10px;/* texton/textoff中最长文本两侧距离滑块边界的距离 */
+    font-size: 12px;
+    texton-color: #5F5F5F;/* 选中字体颜色 */
+    textoff-color: #707070;/* 未选中字体颜色 */
+}
+
+
+.chart-block, .gauge-block, .bar-block {
+    position: relative;
+    width: 98%;
+    border-radius: 5px;
+    background-color: #E3F8F9;
+}
+
+.text-speed {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 10px;
+    font-size: 10px;
+}
+
+.chart-data {
+    margin: 10px 5px 10px;
+    width: 100%;
+    height: 100px;
+}
+
+.text-time {
+    position: absolute;
+    font-size: 10px;
+    bottom: 2px;
+    right: 10px;
+}
+
+.gauge-block, .bar-block {
+    margin-top: 10px;
+}
+
+.data-gauge {
+    width: 200%;
+    height: 200px;
+    margin: 10px 0 10px;/* 刻度条的宽度 */
+    start-angle: 0;/* 起始角度 */
+    total-angle: 360;/* 最大角度 */
+    stroke-width: 20px;
+    colors: #CF0A2C, #8477DF, #17A98E;/* 颜色 */
+    weights: 3, 2, 1;/* 颜色占比权重 */
+}
+
+.data-bar {
+    width: 100%;
+    height: 200px;
+    margin: 10px 5px 10px;
+}
+

@@ -1,0 +1,28 @@
+<div class="container">
+    <!-- switch组件代码 -->
+    <div class="switch-block">
+        <switch class="switch"
+                showtext="{{ showText }}"
+                texton="{{ textOn }}"
+                textoff="{{ textOff }}"
+                allow-scale="{{ allowScale }}"
+                onchange="change">
+        </switch>
+    </div>
+
+    <!-- chart组件代码 -->
+    <div class="chart-block">
+        <text class="text-speed">利润</text>
+        <chart class="chart-data" type="line" ref="linechart" options="{{ lineOps }}" datasets="{{ lineData }}"></chart>
+        <text class="text-time">年份</text>
+    </div>
+    <div class="gauge-block">
+        <chart class="data-gauge" type="gauge" percent="{{ percent }}"></chart>
+    </div>
+    <div class="bar-block">
+        <text class="text-speed">销量</text>
+        <chart class="data-bar" type="bar" id="bar-chart" options="{{ barOps }}" datasets="{{ barData }}"></chart>
+        <text class="text-time">年份</text>
+    </div>
+
+</div>
