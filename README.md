@@ -43,6 +43,7 @@
 * [HarmonyOS跳转到指定URI进行访问](https://developer.huawei.com/consumer/cn/forum/topic/0201673625843820338?fid=0101591351254000314)
 * [HarmonyOS的TextField的text_alignment属性值已经变更](https://developer.huawei.com/consumer/cn/blog/topic/03664410174460106)
 * [HarmonyOS的vp、fp与Android的dp、sp联系与区别](https://developer.huawei.com/consumer/cn/forum/topic/0202669455953940178?fid=0101303901040230869)
+* [HarmonyOS JS UI之Chart、 Switch组件的组合使用](https://developer.huawei.com/consumer/cn/forum/topic/0202678203858060455?fid=0101591351254000314)
 * 未完待续...
 
 ## Samples 示例
@@ -87,6 +88,7 @@
 * [创建JS FA应用](samples/JsFa)
 * [点赞按钮](samples/GiveLike)
 * [JS FA调用PA](samples/JsFaCallPa)
+* [JS UI之Chart、 Switch组件的组合使用](samples/JsChartSwitch)
 * [多模输入事件](samples/MultimodalEvent)
 * [线程管理示例](samples/ParallelTaskDispatcher)
 * [线程间通信示例](samples/EventHandler)
