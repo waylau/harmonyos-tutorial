@@ -44,6 +44,7 @@
 * [HarmonyOS的TextField的text_alignment属性值已经变更](https://developer.huawei.com/consumer/cn/blog/topic/03664410174460106)
 * [HarmonyOS的vp、fp与Android的dp、sp联系与区别](https://developer.huawei.com/consumer/cn/forum/topic/0202669455953940178?fid=0101303901040230869)
 * [HarmonyOS JS UI之Chart、 Switch组件的组合使用](https://developer.huawei.com/consumer/cn/forum/topic/0202678203858060455?fid=0101591351254000314)
+* [HarmonyOS的Service、原子化服务、服务卡片的区别](https://developer.huawei.com/consumer/cn/forum/topic/0201681241634630549?fid=0101610563345550409)
 * 未完待续...
 
 ## Samples 示例
