@@ -1,0 +1,92 @@
+{
+  "float": [
+    {
+      "name": "default_image_size",
+      "value": "24vp"
+    },
+    {
+      "name": "default_margin",
+      "value": "24vp"
+    },
+    {
+      "name": "little_corner_radius_2",
+      "value": "2vp"
+    },
+    {
+      "name": "little_corner_radius_4",
+      "value": "4vp"
+    },
+    {
+      "name": "normal_corner_radius_8",
+      "value": "8vp"
+    },
+    {
+      "name": "large_corner_radius_16",
+      "value": "16vp"
+    },
+    {
+      "name": "little_margin_2",
+      "value": "2vp"
+    },
+    {
+      "name": "little_margin_4",
+      "value": "4vp"
+    },
+    {
+      "name": "little_margin_8",
+      "value": "8vp"
+    },
+    {
+      "name": "little_margin_12",
+      "value": "12vp"
+    },
+    {
+      "name": "normal_margin_16",
+      "value": "16vp"
+    },
+    {
+      "name": "normal_margin_24",
+      "value": "24vp"
+    },
+    {
+      "name": "large_margin_48",
+      "value": "48vp"
+    },
+    {
+      "name": "video_comp_dialog_width",
+      "value": "294vp"
+    },
+    {
+      "name": "item_playlist_width",
+      "value": "46vp"
+    },
+    {
+      "name": "item_playlist_height",
+      "value": "38vp"
+    },
+    {
+      "name": "item_resolution_selection_width",
+      "value": "132vp"
+    },
+    {
+      "name": "item_resolution_selection_height",
+      "value": "48vp"
+    },
+    {
+      "name": "divider_height",
+      "value": "1vp"
+    },
+    {
+      "name": "playlist_title_max_width",
+      "value": "200vp"
+    },
+    {
+      "name": "seek_bar_height",
+      "value": "42vp"
+    },
+    {
+      "name": "slide_thumb_size",
+      "value": "16vp"
+    }
+  ]
+}

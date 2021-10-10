@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="40vp"
+    ohos:width="150vp"
+    ohos:background_element="$graphic:background_setting_item"
+    ohos:end_margin="24vp"
+    ohos:focus_border_enable="true"
+    ohos:focus_border_radius="24vp"
+    ohos:focus_border_width="2vp"
+    ohos:focusable="focus_enable"
+    ohos:orientation="vertical"
+    ohos:top_margin="10vp">
+    <Button
+        ohos:id="$+id:video_setting_option_button"
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        ohos:text_alignment="center"
+        ohos:text_color="#E5FFFFFF"
+        ohos:text_size="18fp"/>
+</DirectionalLayout>

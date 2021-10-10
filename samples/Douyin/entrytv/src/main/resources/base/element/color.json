@@ -1,0 +1,32 @@
+{
+  "color": [
+    {
+      "name": "default_white_color",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "default_black_color",
+      "value": "#000000"
+    },
+    {
+      "name": "seek_bar_progress_color",
+      "value": "#F1F3F5"
+    },
+    {
+      "name": "seek_bar_vice_progress_color",
+      "value": "#33F1F3F5"
+    },
+    {
+      "name": "seek_bar_background_instruct_color",
+      "value": "#19F1F3F5"
+    },
+    {
+      "name": "tv_video_title_color",
+      "value": "#CCCCCC"
+    },
+    {
+      "name": "tv_more_setting_icon_color",
+      "value": "#A6AFB0"
+    }
+  ]
+}

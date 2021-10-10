@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:id="$+id:ability_main_root"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <DirectionalLayout
+        ohos:id="$+id:ability_main_titlebar"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:background_element="#B0B0B0"
+        ohos:orientation="horizontal"
+        ohos:padding="10vp">
+
+
+        <Text
+            ohos:id="$+id:tv_sample_play_list"
+            ohos:height="match_content"
+            ohos:width="0vp"
+            ohos:text="PlayList"
+            ohos:text_size="$float:normal_text_size_15"
+            ohos:weight="1"
+            />
+
+        <Text
+            ohos:id="$+id:tv_fullscreen_play"
+            ohos:height="match_content"
+            ohos:width="0vp"
+            ohos:text="FullscreenPlay"
+            ohos:text_size="$float:normal_text_size_15"
+            ohos:weight="1"
+            />
+    </DirectionalLayout>
+
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:background_element="#B0B0B0"
+        ohos:orientation="horizontal"
+        ohos:padding="10vp">
+
+
+        <Text
+            ohos:id="$+id:sample"
+            ohos:height="match_content"
+            ohos:width="0vp"
+            ohos:text="Sample"
+            ohos:text_size="$float:normal_text_size_15"
+            ohos:weight="1"/>
+
+    </DirectionalLayout>
+
+</DirectionalLayout>

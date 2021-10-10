@@ -1,0 +1,129 @@
+{
+  "app": {
+    "bundleName": "com.waylau.hmos.douyin",
+    "vendor": "waylau",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.waylau.hmos.douyin",
+    "name": ".MyApplication",
+    "mainAbility": "com.waylau.hmos.douyin.MainAbility",
+    "deviceType": [
+      "phone"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry",
+      "installationFree": false
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home",
+              "action.sample.slice"
+            ]
+          }
+        ],
+        "orientation": "unspecified",
+        "name": "com.waylau.hmos.douyin.MainAbility",
+        "icon": "$media:icon",
+        "configChanges": [
+          "orientation"
+        ],
+        "description": "$string:mainability_description",
+        "label": "$string:entry_MainAbility",
+        "resizeable": false,
+        "type": "page",
+        "launchType": "singleton"
+      },
+      {
+        "orientation": "portrait",
+        "name": "com.waylau.hmos.douyin.ability.DevicesSelectAbility",
+        "icon": "$media:icon",
+        "description": "$string:devicesselectability_description",
+        "label": "$string:entry_DevicesSelectAbility",
+        "type": "page",
+        "launchType": "singleton"
+      },
+      {
+        "icon": "$media:icon",
+        "name": "com.waylau.hmos.douyin.ability.SyncControlServiceAbility",
+        "description": "$string:synccontrolserviceability_description",
+        "label": "$string:entry_SyncControlServiceAbility",
+        "type": "service"
+      }
+    ],
+    "reqPermissions": [
+      {
+        "reason": "",
+        "usedScene": {
+          "ability": [
+            "VideoPlayAbilitySlice"
+          ],
+          "when": "inuse"
+        },
+        "name": "ohos.permission.INTERNET"
+      },
+      {
+        "reason": "",
+        "usedScene": {
+          "ability": [
+            "VideoPlayAbilitySlice"
+          ],
+          "when": "inuse"
+        },
+        "name": "ohos.permission.DISTRIBUTED_DATASYNC"
+      },
+      {
+        "reason": "",
+        "usedScene": {
+          "ability": [
+            "VideoPlayAbilitySlice"
+          ],
+          "when": "inuse"
+        },
+        "name": "ohos.permission.DISTRIBUTED_DEVICE_STATE_CHANGE"
+      },
+      {
+        "reason": "",
+        "usedScene": {
+          "ability": [
+            "VideoPlayAbilitySlice"
+          ],
+          "when": "inuse"
+        },
+        "name": "ohos.permission.GET_DISTRIBUTED_DEVICE_INFO"
+      },
+      {
+        "reason": "",
+        "usedScene": {
+          "ability": [
+            "VideoPlayAbilitySlice"
+          ],
+          "when": "inuse"
+        },
+        "name": "ohos.permission.GET_BUNDLE_INFO"
+      },
+      {
+        "reason": "",
+        "usedScene": {
+          "ability": [
+            "VideoPlayAbilitySlice"
+          ],
+          "when": "inuse"
+        },
+        "name": "ohos.permission.KEEP_BACKGROUND_RUNNING"
+      }
+    ]
+  }
+}

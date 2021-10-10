@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DependentLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:background_element="#7F000000"
+    ohos:orientation="vertical">
+    <ListContainer
+        ohos:id="$+id:video_setting_container"
+        ohos:height="300vp"
+        ohos:width="match_parent"
+        ohos:align_parent_bottom="true"
+        ohos:bottom_margin="10vp"
+        ohos:end_margin="48vp"
+        ohos:orientation="vertical"
+        ohos:start_margin="48vp"/>
+</DependentLayout>

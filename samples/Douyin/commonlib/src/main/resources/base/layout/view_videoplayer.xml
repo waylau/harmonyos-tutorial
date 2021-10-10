@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DependentLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:id="$+id:root_comp"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:background_element="black">
+
+    <!--add render view by code-->
+
+    <!--top area-->
+    <DirectionalLayout
+        ohos:id="$+id:top_area"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:align_parent_start="true"
+        ohos:align_parent_top="true"
+        ohos:alignment="vertical_center"
+        ohos:end_padding="$float:normal_margin_16"
+        ohos:orientation="horizontal"
+        ohos:start_padding="$float:normal_margin_16">
+
+    </DirectionalLayout>
+
+    <!--bottom area-->
+    <DirectionalLayout
+        ohos:id="$+id:bottom_area"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:align_parent_bottom="true"
+        ohos:alignment="vertical_center"
+        ohos:end_padding="$float:normal_margin_16"
+        ohos:orientation="horizontal"
+        ohos:start_padding="$float:normal_margin_16"/>
+
+    <!--above bottom area-->
+    <DirectionalLayout
+        ohos:id="$+id:above_bottom_area"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:above="$id:bottom_area"
+        ohos:alignment="vertical_center"
+        ohos:end_padding="$float:normal_margin_16"
+        ohos:orientation="horizontal"
+        ohos:start_padding="$float:normal_margin_16"/>
+
+    <DependentLayout
+        ohos:id="$+id:left_area_parent"
+        ohos:height="match_parent"
+        ohos:width="match_content"
+        ohos:above="$id:above_bottom_area"
+        ohos:align_parent_start="true"
+        ohos:below="$id:top_area"
+        ohos:end_padding="$float:normal_margin_16"
+        ohos:start_padding="$float:normal_margin_16">
+
+        <!--left area-->
+        <DirectionalLayout
+            ohos:id="$+id:left_area"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:alignment="horizontal_center"
+            ohos:center_in_parent="true"
+            ohos:orientation="vertical"/>
+
+    </DependentLayout>
+
+    <DependentLayout
+        ohos:id="$+id:right_area_parent"
+        ohos:height="match_parent"
+        ohos:width="match_content"
+        ohos:above="$id:above_bottom_area"
+        ohos:align_parent_end="true"
+        ohos:below="$id:top_area"
+        ohos:end_padding="$float:normal_margin_24"
+        ohos:start_padding="$float:normal_margin_24">
+
+        <!--right area-->
+        <DirectionalLayout
+            ohos:id="$+id:right_area"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:alignment="horizontal_center"
+            ohos:center_in_parent="true"
+            ohos:orientation="vertical"/>
+
+    </DependentLayout>
+
+    <com.waylau.hmos.douyin.player.view.LoadingComp
+        ohos:id="$+id:loading"
+        ohos:height="$float:loading_comp_width"
+        ohos:width="$float:loading_comp_width"
+        ohos:center_in_parent="true"
+        ohos:max="100"
+        ohos:progress="15"
+        ohos:progress_color="$color:seek_bar_progress_color"
+        ohos:progress_width="$float:loading_comp_progress_width"
+        ohos:visibility="hide"/>
+
+
+</DependentLayout>

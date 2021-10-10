@@ -1,0 +1,21 @@
+{
+  "strarray": [
+    {
+      "name": "playback_speed_array",
+      "value": [
+        {
+          "value": "0.75X"
+        },
+        {
+          "value": "1.0X"
+        },
+        {
+          "value": "1.25X"
+        },
+        {
+          "value": "1.5X"
+        }
+      ]
+    }
+  ]
+}

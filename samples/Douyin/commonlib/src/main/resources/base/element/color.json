@@ -1,0 +1,20 @@
+{
+  "color": [
+    {
+      "name": "default_white_color",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "default_black_color",
+      "value": "#000000"
+    },
+    {
+      "name": "bg_video_control_component_container",
+      "value": "#80000000"
+    },
+    {
+      "name": "seek_bar_progress_color",
+      "value": "#FFFF7500"
+    }
+  ]
+}

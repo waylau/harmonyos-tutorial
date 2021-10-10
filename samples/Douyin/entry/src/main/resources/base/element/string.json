@@ -1,0 +1,136 @@
+{
+  "string": [
+    {
+      "name": "entry_MainAbility",
+      "value": "entry_MainAbility"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_Phone_Video Player Ability"
+    },
+    {
+      "name": "entry_DevicesSelectAbility",
+      "value": "entry_DevicesSelectAbility"
+    },
+    {
+      "name": "entry_SyncControlServiceAbility",
+      "value": "entry_SyncControlServiceAbility"
+    },
+    {
+      "name": "devicesselectability_description",
+      "value": "DevicesSelect Feature Ability"
+    },
+    {
+      "name": "synccontrolserviceability_description",
+      "value": "SyncControlService Feature Ability"
+    },
+    {
+      "name": "local_machine",
+      "value": "Local Machine"
+    },
+    {
+      "name": "my_devices",
+      "value": "My Devices"
+    },
+    {
+      "name": "sound_channel",
+      "value": "Sound Channel"
+    },
+    {
+      "name": "control_play",
+      "value": "OK"
+    },
+    {
+      "name": "control_episodes",
+      "value": "Episodes"
+    },
+    {
+      "name": "control_all_episodes",
+      "value": "? episodes"
+    },
+    {
+      "name": "control_episodes_auto",
+      "value": "AUTO"
+    },
+    {
+      "name": "control_episodes_standard_quality",
+      "value": "SD 480P"
+    },
+    {
+      "name": "control_episodes_high_quality",
+      "value": "HD 720P"
+    },
+    {
+      "name": "control_episodes_full_high_quality",
+      "value": "FHD 1080P"
+    },
+    {
+      "name": "control_episodes_hdr",
+      "value": "HDR"
+    },
+    {
+      "name": "short_name_control_episodes_auto",
+      "value": "AUTO"
+    },
+    {
+      "name": "short_name_control_episodes_standard_quality",
+      "value": "SD"
+    },
+    {
+      "name": "short_name_control_episodes_high_quality",
+      "value": "HD"
+    },
+    {
+      "name": "short_name_control_episodes_full_high_quality",
+      "value": "FHD"
+    },
+    {
+      "name": "short_name_control_episodes_hdr",
+      "value": "HDR"
+    },
+    {
+      "name": "control_equipment_select",
+      "value": "Sound-Producing Equipment"
+    },
+    {
+      "name": "control_equipment_select_cancle",
+      "value": "Cancel"
+    },
+    {
+      "name": "control_trailer",
+      "value": "trailer"
+    },
+    {
+      "name": "playback_speed",
+      "value": "Playback Speed"
+    },
+    {
+      "name": "select_playlist",
+      "value": "Episodes"
+    },
+    {
+      "name": "select_resolution",
+      "value": "HD"
+    },
+    {
+      "name": "send_failed_tips",
+      "value": "Failed to send the message."
+    },
+    {
+      "name": "progress_start_time",
+      "value": "00:00"
+    },
+    {
+      "name": "media_file_loading_error",
+      "value": "Media file loading error"
+    },
+    {
+      "name": "invalid_operation",
+      "value": "Invalid_operation"
+    },
+    {
+      "name": "undefined_error_type",
+      "value": "Undefined error type"
+    }
+  ]
+}

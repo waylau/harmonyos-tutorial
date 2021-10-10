@@ -1,0 +1,48 @@
+{
+  "string": [
+    {
+      "name": "entrytv_MainAbility",
+      "value": "entrytv_MainAbility"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_TV_Video Player Ability"
+    },
+    {
+      "name": "HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "videobox_title_tips_pre",
+      "value": "Press the"
+    },
+    {
+      "name": "videobox_title_tips_after",
+      "value": "to enter more settings"
+    },
+    {
+      "name": "setting_option_episodes",
+      "value": "Episodes"
+    },
+    {
+      "name": "setting_option_speed",
+      "value": "Playing Speed"
+    },
+    {
+      "name": "setting_option_resolution",
+      "value": "Definition"
+    },
+    {
+      "name": "resolution_auto",
+      "value": "Auto"
+    },
+    {
+      "name": "resolution_bd",
+      "value": "Blu-Ray"
+    },
+    {
+      "name": "resolution_hd",
+      "value": "SD"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "string": [
+    {
+      "name": "entrytv_MainAbility",
+      "value": "entrytv_MainAbility"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_TV_Video Player Ability"
+    },
+    {
+      "name": "HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "videobox_title_tips_pre",
+      "value": "按"
+    },
+    {
+      "name": "videobox_title_tips_after",
+      "value": "键进入更多设置"
+    },
+    {
+      "name": "setting_option_episodes",
+      "value": "选集"
+    },
+    {
+      "name": "setting_option_speed",
+      "value": "倍速播放"
+    },
+    {
+      "name": "setting_option_resolution",
+      "value": "清晰度"
+    },
+    {
+      "name": "resolution_auto",
+      "value": "自动"
+    },
+    {
+      "name": "resolution_bd",
+      "value": "蓝光"
+    },
+    {
+      "name": "resolution_hd",
+      "value": "清晰"
+    },
+    {
+      "name": "media_file_loading_error",
+      "value": "视频文件加载失败"
+    },
+    {
+      "name": "invalid_operation",
+      "value": "无效操作"
+    },
+    {
+      "name": "undefined_error_type",
+      "value": "未知错误"
+    }
+  ]
+}

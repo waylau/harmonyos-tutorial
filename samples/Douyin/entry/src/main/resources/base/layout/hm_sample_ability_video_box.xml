@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:id="$+id:root_layout"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:background_element="#FFFFFFFF"
+    ohos:orientation="vertical">
+
+    <com.waylau.hmos.douyin.player.ui.widget.media.VideoPlayerView
+        ohos:id="$+id:video_view"
+        ohos:height="250vp"
+        ohos:width="match_parent"/>
+
+    <DirectionalLayout
+        ohos:id="$+id:comment_show_layout"
+        ohos:height="50vp"
+        ohos:width="match_parent"
+        ohos:align_parent_bottom="true"
+        ohos:alignment="vertical_center"
+        ohos:background_element="#ffffff"
+        ohos:left_padding="20vp"
+        ohos:orientation="horizontal"
+        ohos:right_padding="20vp"
+        >
+
+        <Text
+            ohos:id="$+id:text_auto_scrolling"
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:italic="true"
+            ohos:text="欢迎评论"
+            ohos:text_color="#0000FF"
+            ohos:text_font="serif"
+            ohos:text_size="28fp"
+            ohos:text_weight="700"
+            />
+    </DirectionalLayout>
+
+    <DirectionalLayout
+        ohos:id="$+id:comment_layout"
+        ohos:height="50vp"
+        ohos:width="match_parent"
+        ohos:align_parent_bottom="true"
+        ohos:alignment="vertical_center"
+        ohos:background_element="#ffffff"
+        ohos:left_padding="20vp"
+        ohos:orientation="horizontal"
+        ohos:right_padding="20vp"
+        >
+
+        <TextField
+            ohos:id="$+id:comment_text_field"
+            ohos:height="30vp"
+            ohos:width="270vp"
+            ohos:hint="输入评论内容"
+            ohos:left_padding="5vp"
+            ohos:right_padding="10vp"
+            ohos:text_alignment="vertical_center"
+            ohos:text_size="15vp"
+            />
+
+        <Button
+            ohos:id="$+id:comment_button"
+            ohos:height="30vp"
+            ohos:width="50vp"
+            ohos:background_element="#007CFD"
+            ohos:text="评论"
+            ohos:text_size="20fp"></Button>
+
+    </DirectionalLayout>
+
+</DirectionalLayout>

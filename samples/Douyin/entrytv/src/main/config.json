@@ -1,0 +1,116 @@
+{
+  "app": {
+    "bundleName": "com.waylau.hmos.douyin",
+    "vendor": "waylau",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    },
+    "type": "normal"
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.waylau.hmos.douyin",
+    "name": ".MyApplication",
+    "mainAbility": "com.waylau.hmos.douyin.MainAbility",
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.INTERNET",
+        "reason": "",
+        "usedScene": {
+          "ability": [
+            "VideoPlayAbilitySlice"
+          ],
+          "when": "inuse"
+        }
+      },
+      {
+        "name": "ohos.permission.DISTRIBUTED_DATASYNC",
+        "reason": "",
+        "usedScene": {
+          "ability": [
+            "VideoPlayAbilitySlice"
+          ],
+          "when": "inuse"
+        }
+      },
+      {
+        "name": "ohos.permission.DISTRIBUTED_DEVICE_STATE_CHANGE",
+        "reason": "",
+        "usedScene": {
+          "ability": [
+            "VideoPlayAbilitySlice"
+          ],
+          "when": "inuse"
+        }
+      },
+      {
+        "name": "ohos.permission.GET_DISTRIBUTED_DEVICE_INFO",
+        "reason": "",
+        "usedScene": {
+          "ability": [
+            "VideoPlayAbilitySlice"
+          ],
+          "when": "inuse"
+        }
+      },
+      {
+        "name": "ohos.permission.GET_BUNDLE_INFO",
+        "reason": "",
+        "usedScene": {
+          "ability": [
+            "VideoPlayAbilitySlice"
+          ],
+          "when": "inuse"
+        }
+      },
+      {
+        "name": "ohos.permission.KEEP_BACKGROUND_RUNNING",
+        "reason": "",
+        "usedScene": {
+          "ability": [
+            "VideoPlayAbilitySlice"
+          ],
+          "when": "inuse"
+        }
+      }
+    ],
+    "deviceType": [
+      "tv"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entrytv",
+      "moduleType": "entry",
+      "installationFree": false
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home",
+              "action.video.play"
+            ]
+          }
+        ],
+        "orientation": "landscape",
+        "visible": true,
+        "name": "com.waylau.hmos.douyin.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "$string:entrytv_MainAbility",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "visible": true,
+        "name": "com.waylau.hmos.douyin.VideoControlServiceAbility",
+        "type": "service"
+      }
+    ]
+  }
+}

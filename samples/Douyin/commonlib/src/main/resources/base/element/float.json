@@ -1,0 +1,112 @@
+{
+  "float": [
+    {
+      "name": "default_image_size",
+      "value": "24vp"
+    },
+    {
+      "name": "default_margin",
+      "value": "24vp"
+    },
+    {
+      "name": "little_corner_radius_2",
+      "value": "2vp"
+    },
+    {
+      "name": "little_corner_radius_4",
+      "value": "4vp"
+    },
+    {
+      "name": "normal_corner_radius_8",
+      "value": "8vp"
+    },
+    {
+      "name": "large_corner_radius_16",
+      "value": "16vp"
+    },
+    {
+      "name": "little_margin_2",
+      "value": "2vp"
+    },
+    {
+      "name": "little_margin_4",
+      "value": "4vp"
+    },
+    {
+      "name": "little_margin_8",
+      "value": "8vp"
+    },
+    {
+      "name": "little_margin_12",
+      "value": "12vp"
+    },
+    {
+      "name": "normal_margin_16",
+      "value": "16vp"
+    },
+    {
+      "name": "normal_margin_24",
+      "value": "24vp"
+    },
+    {
+      "name": "large_margin_48",
+      "value": "48vp"
+    },
+    {
+      "name": "little_text_size_8",
+      "value": "8fp"
+    },
+    {
+      "name": "little_text_size_10",
+      "value": "10fp"
+    },
+    {
+      "name": "little_text_size_12",
+      "value": "12fp"
+    },
+    {
+      "name": "normal_text_size_14",
+      "value": "14fp"
+    },
+    {
+      "name": "normal_text_size_15",
+      "value": "15fp"
+    },
+    {
+      "name": "normal_text_size_16",
+      "value": "16fp"
+    },
+    {
+      "name": "normal_text_size_18",
+      "value": "18fp"
+    },
+    {
+      "name": "normal_text_size_20",
+      "value": "20fp"
+    },
+    {
+      "name": "large_text_size_24",
+      "value": "24fp"
+    },
+    {
+      "name": "large_text_size_27",
+      "value": "27fp"
+    },
+    {
+      "name": "large_text_size_30",
+      "value": "30fp"
+    },
+    {
+      "name": "normal_text_step_2",
+      "value": "2fp"
+    },
+    {
+      "name": "loading_comp_width",
+      "value": "40vp"
+    },
+    {
+      "name": "loading_comp_progress_width",
+      "value": "5vp"
+    }
+  ]
+}

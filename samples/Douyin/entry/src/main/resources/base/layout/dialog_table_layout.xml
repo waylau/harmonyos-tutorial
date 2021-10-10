@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DependentLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:background_element="$color:bg_video_view_dialog">
+
+    <TableLayout
+        ohos:id="$+id:table"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:center_in_parent="true"
+        ohos:column_count="1"/>
+
+</DependentLayout>

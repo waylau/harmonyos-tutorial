@@ -1,0 +1,116 @@
+{
+  "string": [
+    {
+      "name": "local_machine",
+      "value": "本机"
+    },
+    {
+      "name": "my_devices",
+      "value": "我的设备"
+    },
+    {
+      "name": "sound_channel",
+      "value": "关密"
+    },
+    {
+      "name": "control_play",
+      "value": "OK"
+    },
+    {
+      "name": "control_playing_episodes",
+      "value": "第?集"
+    },
+    {
+      "name": "control_episodes",
+      "value": "剧集"
+    },
+    {
+      "name": "control_all_episodes",
+      "value": "?集全"
+    },
+    {
+      "name": "control_episodes_auto",
+      "value": "自动"
+    },
+    {
+      "name": "control_episodes_standard_quality",
+      "value": "标清480P"
+    },
+    {
+      "name": "control_episodes_high_quality",
+      "value": "高清720P"
+    },
+    {
+      "name": "control_episodes_full_high_quality",
+      "value": "蓝光1080P"
+    },
+    {
+      "name": "control_episodes_hdr",
+      "value": "HDR幻彩视界"
+    },
+    {
+      "name": "short_name_control_episodes_auto",
+      "value": "自动"
+    },
+    {
+      "name": "short_name_control_episodes_standard_quality",
+      "value": "标清"
+    },
+    {
+      "name": "short_name_control_episodes_high_quality",
+      "value": "高清"
+    },
+    {
+      "name": "short_name_control_episodes_full_high_quality",
+      "value": "蓝光"
+    },
+    {
+      "name": "short_name_control_episodes_hdr",
+      "value": "HDR"
+    },
+    {
+      "name": "control_equipment_select",
+      "value": "出声设备"
+    },
+    {
+      "name": "control_equipment_select_cancle",
+      "value": "取消"
+    },
+    {
+      "name": "control_trailer",
+      "value": "预告"
+    },
+    {
+      "name": "playback_speed",
+      "value": "倍速"
+    },
+    {
+      "name": "select_playlist",
+      "value": "选集"
+    },
+    {
+      "name": "select_resolution",
+      "value": "高清"
+    },
+    {
+      "name": "send_failed_tips",
+      "value": "消息发送失败"
+    },
+    {
+      "name": "progress_start_time",
+      "value": "00:00"
+    },
+    {
+      "name": "media_file_loading_error",
+      "value": "视频文件加载失败"
+    },
+    {
+      "name": "invalid_operation",
+      "value": "无效操作"
+    },
+    {
+      "name": "undefined_error_type",
+      "value": "未知错误"
+    }
+  ]
+}

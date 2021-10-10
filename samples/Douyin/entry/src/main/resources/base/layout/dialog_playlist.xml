@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="$float:video_comp_dialog_width"
+    ohos:background_element="$color:bg_video_view_dialog"
+    ohos:orientation="vertical">
+
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:alignment="vertical_center"
+        ohos:end_margin="$float:normal_margin_16"
+        ohos:orientation="horizontal"
+        ohos:start_margin="$float:normal_margin_16"
+        ohos:top_margin="$float:normal_margin_16">
+
+        <Text
+            ohos:id="$+id:video_name"
+            ohos:height="match_content"
+            ohos:width="0vp"
+            ohos:auto_font_size="true"
+            ohos:max_text_lines="1"
+            ohos:max_width="$float:playlist_title_max_width"
+            ohos:text_color="$color:default_white_color"
+            ohos:text_weight="700"
+            ohos:weight="1"/>
+
+        <Text
+            ohos:id="$+id:resolution_selection"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:element_padding="$float:little_margin_4"
+            ohos:element_right="$media:ic_white_down_arrow"
+            ohos:max_text_lines="1"
+            ohos:start_margin="$float:normal_margin_16"
+            ohos:text_color="$color:default_white_color"
+            ohos:text_size="$float:normal_text_size_16"/>
+
+    </DirectionalLayout>
+
+    <ScrollView
+        ohos:height="0vp"
+        ohos:width="match_parent"
+        ohos:margin="$float:normal_margin_16"
+        ohos:weight="1">
+
+        <TableLayout
+            ohos:id="$+id:play_set_table"
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:column_count="5"/>
+    </ScrollView>
+
+</DirectionalLayout>

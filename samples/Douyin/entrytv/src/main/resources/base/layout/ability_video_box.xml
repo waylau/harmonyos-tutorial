@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StackLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:id="$+id:root_layout"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:background_element="#FFFFFFFF"
+    ohos:orientation="vertical">
+
+    <com.waylau.hmos.douyin.player.ui.widget.media.VideoPlayerView
+        ohos:id="$+id:video_view"
+        ohos:height="match_parent"
+        ohos:width="match_parent"/>
+
+</StackLayout>

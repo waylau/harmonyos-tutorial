@@ -1,0 +1,24 @@
+{
+  "app": {
+    "bundleName": "com.waylau.hmos.douyin",
+    "vendor": "waylau",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {
+  },
+  "module": {
+    "package": "com.waylau.hmos.douyin",
+    "deviceType": [
+      "phone",
+      "tv"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "commonlib",
+      "moduleType": "har"
+    }
+  }
+}

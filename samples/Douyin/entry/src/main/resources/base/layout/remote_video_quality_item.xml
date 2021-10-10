@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="48vp"
+    ohos:width="match_parent"
+    ohos:alignment="center"
+    ohos:orientation="vertical">
+    <Text
+        ohos:id="$+id:video_quality_name"
+        ohos:height="47vp"
+        ohos:width="match_parent"
+        ohos:text=""
+        ohos:text_alignment="start|vertical_center"
+        ohos:text_size="14fp"
+        ohos:truncation_mode="ellipsis_at_end"/>
+    <Component
+        ohos:id="$+id:device_item_divider"
+        ohos:height="1vp"
+        ohos:width="match_parent"
+        ohos:background_element="$graphic:list_divider"
+        ohos:bottom_margin="1vp"/>
+</DirectionalLayout>

@@ -1,0 +1,44 @@
+{
+  "color": [
+    {
+      "name": "default_white_color",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "default_black_color",
+      "value": "#000000"
+    },
+    {
+      "name": "default_panel_background",
+      "value": "#33000000"
+    },
+    {
+      "name": "video_comp_selected_text_color",
+      "value": "#FFFF7500"
+    },
+    {
+      "name": "choose_playback_speed_dialog_bg",
+      "value": "#22000000"
+    },
+    {
+      "name": "bg_video_view_dialog",
+      "value": "#E61F1F26"
+    },
+    {
+      "name": "seek_bar_progress_color",
+      "value": "#FFFF7500"
+    },
+    {
+      "name": "seek_bar_vice_progress_color",
+      "value": "#33F1F3F5"
+    },
+    {
+      "name": "seek_bar_background_instruct_color",
+      "value": "#19F1F3F5"
+    },
+    {
+      "name": "slider_thumb_color",
+      "value": "#F1F3F5"
+    }
+  ]
+}

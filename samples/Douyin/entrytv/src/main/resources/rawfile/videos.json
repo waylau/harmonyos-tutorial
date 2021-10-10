@@ -1,0 +1,83 @@
+{
+  "name": "Huawei Consumer News",
+  "total_anthology": 7,
+  "anthology_detail": [
+    {
+      "current_anthology": 1,
+      "autoUrl": "entrytv/resources/base/media/hm_sample_pv.mp4",
+      "sdUrl": "entrytv/resources/base/media/hm_sample_pv.mp4",
+      "hdUrl": "entrytv/resources/base/media/hm_sample_pv.mp4",
+      "fhdUrl": "entrytv/resources/base/media/hm_sample_pv.mp4",
+      "ultraHdUrl": "entrytv/resources/base/media/hm_sample_pv.mp4",
+      "plot": "Leap further ahead with HUAWEI Mate 40",
+      "totalTime": "1:47",
+      "isTrailer": false
+    },
+    {
+      "current_anthology": 2,
+      "autoUrl": "entrytv/resources/base/media/hm_sample_pv2.mp4",
+      "sdUrl": "entrytv/resources/base/media/hm_sample_pv2.mp4",
+      "hdUrl": "entrytv/resources/base/media/hm_sample_pv2.mp4",
+      "fhdUrl": "entrytv/resources/base/media/hm_sample_pv2.mp4",
+      "ultraHdUrl": "entrytv/resources/base/media/hm_sample_pv2.mp4",
+      "plot": "Imagine What Unfolds: Huawei Announces HUAWEI Mate X2",
+      "totalTime": "00:47",
+      "isTrailer": false
+    },
+    {
+      "current_anthology": 3,
+      "autoUrl": "entrytv/resources/base/media/hm_sample_pv3.mp4",
+      "sdUrl": "entrytv/resources/base/media/hm_sample_pv3.mp4",
+      "hdUrl": "entrytv/resources/base/media/hm_sample_pv3.mp4",
+      "fhdUrl": "entrytv/resources/base/media/hm_sample_pv3.mp4",
+      "ultraHdUrl": "entrytv/resources/base/media/hm_sample_pv3.mp4",
+      "plot": "HUAWEI unveil porsche design HUAWEI WATCH GT2",
+      "totalTime": "00:41",
+      "isTrailer": false
+    },
+    {
+      "current_anthology": 4,
+      "autoUrl": "entrytv/resources/base/media/hm_sample_pv.mp4",
+      "sdUrl": "entrytv/resources/base/media/hm_sample_pv.mp4",
+      "hdUrl": "entrytv/resources/base/media/hm_sample_pv.mp4",
+      "fhdUrl": "entrytv/resources/base/media/hm_sample_pv.mp4",
+      "ultraHdUrl": "entrytv/resources/base/media/hm_sample_pv.mp4",
+      "plot": "Leap further ahead with HUAWEI Mate 40",
+      "totalTime": "1:47",
+      "isTrailer": false
+    },
+    {
+      "current_anthology": 5,
+      "autoUrl": "entrytv/resources/base/media/hm_sample_pv2.mp4",
+      "sdUrl": "entrytv/resources/base/media/hm_sample_pv2.mp4",
+      "hdUrl": "entrytv/resources/base/media/hm_sample_pv2.mp4",
+      "fhdUrl": "entrytv/resources/base/media/hm_sample_pv2.mp4",
+      "ultraHdUrl": "entrytv/resources/base/media/hm_sample_pv2.mp4",
+      "plot": "Imagine What Unfolds: Huawei Announces HUAWEI Mate X2",
+      "totalTime": "00:47",
+      "isTrailer": false
+    },
+    {
+      "current_anthology": 6,
+      "autoUrl": "entrytv/resources/base/media/hm_sample_pv3.mp4",
+      "sdUrl": "entrytv/resources/base/media/hm_sample_pv3.mp4",
+      "hdUrl": "entrytv/resources/base/media/hm_sample_pv3.mp4",
+      "fhdUrl": "entrytv/resources/base/media/hm_sample_pv3.mp4",
+      "ultraHdUrl": "entrytv/resources/base/media/hm_sample_pv3.mp4",
+      "plot": "HUAWEI unveil porsche design HUAWEI WATCH GT2",
+      "totalTime": "00:41",
+      "isTrailer": false
+    },
+    {
+      "current_anthology": 7,
+      "autoUrl": "entrytv/resources/base/media/hm_sample_pv.mp4",
+      "sdUrl": "entrytv/resources/base/media/hm_sample_pv.mp4",
+      "hdUrl": "entrytv/resources/base/media/hm_sample_pv.mp4",
+      "fhdUrl": "entrytv/resources/base/media/hm_sample_pv.mp4",
+      "ultraHdUrl": "entrytv/resources/base/media/hm_sample_pv.mp4",
+      "plot": "Leap further ahead with HUAWEI Mate 40",
+      "totalTime": "1:47",
+      "isTrailer": false
+    }
+  ]
+}

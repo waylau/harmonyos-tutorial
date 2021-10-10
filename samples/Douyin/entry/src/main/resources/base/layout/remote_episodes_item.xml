@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="48vp"
+    ohos:width="48vp"
+    ohos:alignment="center"
+    ohos:background_element="$graphic:background_episodes_item"
+    ohos:bottom_margin="8vp"
+    ohos:end_margin="8vp"
+    ohos:orientation="vertical">
+
+    <StackLayout
+        ohos:height="match_parent"
+        ohos:width="match_parent">
+
+        <StackLayout
+            ohos:height="match_parent"
+            ohos:width="match_parent">
+
+            <Text
+                ohos:id="$+id:episodes_item_num"
+                ohos:height="match_parent"
+                ohos:width="match_parent"
+                ohos:layout_alignment="center"
+                ohos:text=""
+                ohos:text_alignment="center"
+                ohos:text_color="$color:default_black_color"
+                ohos:text_size="$float:normal_text_size_16"/>
+
+            <!--Show the playback icon when playing the current vide-->
+            <Image
+                ohos:id="$+id:episodes_item_playing"
+                ohos:height="$float:default_image_size"
+                ohos:width="$float:default_image_size"
+                ohos:foreground_element="$media:ic_playing"
+                ohos:layout_alignment="center"
+                ohos:visibility="invisible"/>
+        </StackLayout>
+
+        <!--trailer icon-->
+        <DirectionalLayout
+            ohos:id="$+id:episodes_item_trailer"
+            ohos:height="16vp"
+            ohos:width="32vp"
+            ohos:background_element="$graphic:background_episodes_trailer"
+            ohos:visibility="invisible">
+
+            <Text
+                ohos:height="match_parent"
+                ohos:width="match_parent"
+                ohos:text="$string:control_trailer"
+                ohos:text_alignment="center"
+                ohos:text_color="$color:default_white_color"
+                ohos:text_size="$float:little_text_size_10"/>
+        </DirectionalLayout>
+
+    </StackLayout>
+
+</DirectionalLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Time is below the progress bar-->
+<DependentLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="$float:seek_bar_height"
+    ohos:width="match_parent">
+
+    <Text
+        ohos:id="$+id:current_time"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:align_parent_bottom="true"
+        ohos:align_parent_start="true"
+        ohos:start_margin="12vp"
+        ohos:text_color="white"
+        ohos:text_size="$float:little_text_size_10"/>
+
+    <Slider
+        ohos:id="$+id:seek_bar"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:background_instruct_element="$color:seek_bar_background_instruct_color"
+        ohos:center_in_parent="true"
+        ohos:progress_element="$color:seek_bar_progress_color"
+        ohos:thumb_element="$graphic:shape_slider_thumb"
+        ohos:vice_progress_element="$color:seek_bar_vice_progress_color"/>
+
+    <Text
+        ohos:id="$+id:end_time"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:align_parent_bottom="true"
+        ohos:align_parent_end="true"
+        ohos:end_margin="12vp"
+        ohos:text_color="white"
+        ohos:text_size="10fp"/>
+</DependentLayout>
