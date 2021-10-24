@@ -47,8 +47,11 @@
 * [HarmonyOS的Service、原子化服务、服务卡片的区别](https://developer.huawei.com/consumer/cn/forum/topic/0201681241634630549?fid=0101610563345550409)
 * [HarmonyOS 多entry下应用启动报错“The type of the target device does not match the deviceType configured in the config.json”的解决](
 https://developer.huawei.com/consumer/cn/forum/topic/0202692632918480755?fid=0101610563345550409)
+* [HarmonyOS获取系统内存大小、可用内存](https://developer.huawei.com/consumer/cn/forum/topic/0202700471997530007?fid=0101591351254000314)
 * [#HarmonyOS挑战赛第二期#仿抖音短视频应用](
 https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=0101303901040230869)
+* [DevEco Studio打开Codelabs示例报“Unknown host '不知道这样的主机。 (repo.ark.tools.huawei.com)'”错误的解决](https://developer.huawei.com/consumer/cn/forum/topic/0202700471997530007?fid=0101591351254000314)
+* [#HarmonyOS挑战赛第四期#使用ArkUI开发一个图片滑动播放功能HarmonyOS应用](https://developer.huawei.com/consumer/cn/forum/topic/0204705003425460081?fid=0101591351254000314)
 * 未完待续...
 
 ## Samples 示例
@@ -149,6 +152,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [LiuweiweiImageHandler](samples/LiuweiweiImageHandler)（TODO）
 * [LiuweiweiAiImageSearch](samples/LiuweiweiAiImageSearch)（TODO）
 * [仿抖音短视频应用](samples/Douyin)
+* [ArkUI开发一个图片滑动播放功能](samples/EtsUISwiper)
 * 未完待续...
 
 
