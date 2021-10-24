@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:alignment="center"
+    ohos:orientation="vertical">
+
+    <TextField
+        ohos:id="$+id:text_write"
+        ohos:height="40vp"
+        ohos:width="200vp"
+        ohos:hint="输入分享的内容"
+        ohos:multiple_lines="false"
+        ohos:text_size="24vp"
+        />
+
+    <Button
+        ohos:id="$+id:button_write"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:bottom_margin="15vp"
+        ohos:left_margin="15vp"
+        ohos:left_padding="8vp"
+        ohos:right_padding="8vp"
+        ohos:text="写入"
+        ohos:text_size="27fp"
+        />
+
+    <Button
+        ohos:id="$+id:button_read"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:bottom_margin="15vp"
+        ohos:left_margin="15vp"
+        ohos:left_padding="8vp"
+        ohos:right_padding="8vp"
+        ohos:text="读取"
+        ohos:text_size="27fp"
+        />
+
+    <Text
+        ohos:id="$+id:text_read"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:background_element="$graphic:background_ability_main"
+        ohos:layout_alignment="horizontal_center"
+        ohos:multiple_lines="true"
+        ohos:text_size="20vp"
+        />
+
+</DirectionalLayout>

@@ -50,7 +50,9 @@ https://developer.huawei.com/consumer/cn/forum/topic/0202692632918480755?fid=010
 * [HarmonyOS获取系统内存大小、可用内存](https://developer.huawei.com/consumer/cn/forum/topic/0202700471997530007?fid=0101591351254000314)
 * [#HarmonyOS挑战赛第二期#仿抖音短视频应用](
 https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=0101303901040230869)
+* [#HarmonyOS挑战赛第三期#“心目中的1024程序员节”爱“HarmonyOS”](https://developer.huawei.com/consumer/cn/forum/topic/0201697127022460928?fid=0101587866109860105)
 * [DevEco Studio打开Codelabs示例报“Unknown host '不知道这样的主机。 (repo.ark.tools.huawei.com)'”错误的解决](https://developer.huawei.com/consumer/cn/forum/topic/0202700471997530007?fid=0101591351254000314)
+* [#HarmonyOS技术训练营第三期#探探老婆在干嘛——通过HarmonyOS分布式文件获取对方手机内容](https://developer.huawei.com/consumer/cn/forum/topic/0203702299511520008?fid=0101591351254000314)
 * [#HarmonyOS挑战赛第四期#使用ArkUI开发一个图片滑动播放功能HarmonyOS应用](https://developer.huawei.com/consumer/cn/forum/topic/0204705003425460081?fid=0101591351254000314)
 * 未完待续...
 
@@ -153,6 +155,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [LiuweiweiAiImageSearch](samples/LiuweiweiAiImageSearch)（TODO）
 * [仿抖音短视频应用](samples/Douyin)
 * [ArkUI开发一个图片滑动播放功能](samples/EtsUISwiper)
+* [分布式文件共享](samples/DistributedFile)
 * 未完待续...
 
 
