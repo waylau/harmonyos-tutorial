@@ -54,6 +54,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [DevEco Studio打开Codelabs示例报“Unknown host '不知道这样的主机。 (repo.ark.tools.huawei.com)'”错误的解决](https://developer.huawei.com/consumer/cn/forum/topic/0202700471997530007?fid=0101591351254000314)
 * [#HarmonyOS技术训练营第三期#探探老婆在干嘛——通过HarmonyOS分布式文件获取对方手机内容](https://developer.huawei.com/consumer/cn/forum/topic/0203702299511520008?fid=0101591351254000314)
 * [#HarmonyOS挑战赛第四期#使用ArkUI开发一个图片滑动播放功能HarmonyOS应用](https://developer.huawei.com/consumer/cn/forum/topic/0204705003425460081?fid=0101591351254000314)
+* [#HarmonyOS征文#基于HarmonyOS ArkUI 3.0 框架，我成功开发了图片自动播放功能](https://developer.huawei.com/consumer/cn/forum/topic/0204705883233030129?fid=0101591351254000314)
 * 未完待续...
 
 ## Samples 示例
@@ -156,6 +157,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [仿抖音短视频应用](samples/Douyin)
 * [ArkUI开发一个图片滑动播放功能](samples/EtsUISwiper)
 * [分布式文件共享](samples/DistributedFile)
+* [ArkUI开发一个图片自动播放功能](samples/EtsUISwiperAutoPlay)
 * 未完待续...
 
 
