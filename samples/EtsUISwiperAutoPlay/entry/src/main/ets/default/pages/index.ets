@@ -19,9 +19,12 @@ struct Index {
 
 export function initializeImageData(): Array<ImageData> {
   let imageDataArray: Array<ImageData> = [
-    { "id": "0", "img": $r('app.media.pic01'), "name": '1024程序员节' },
-    { "id": "1", "img": $r('app.media.pic02'), "name": '程序员日常' },
-    { "id": "2", "img": $r('app.media.pic03'), "name": 'HDC2021' },
+    { "id": "0", "img": $r('app.media.pic01'), "name": '麻辣香锅' },
+    { "id": "1", "img": $r('app.media.pic02'), "name": '香辣毛血旺' },
+    { "id": "2", "img": $r('app.media.pic03'), "name": '关东煮' },
+    { "id": "3", "img": $r('app.media.pic04'), "name": '菠萝咕噜肉' },
+    { "id": "4", "img": $r('app.media.pic05'), "name": '可乐鸡翅' },
+    { "id": "5", "img": $r('app.media.pic06'), "name": '宫保鸡丁' }
   ]
   return imageDataArray
 }

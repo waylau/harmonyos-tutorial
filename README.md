@@ -26,7 +26,7 @@
 * [HarmonyOS之线程01——ParallelTaskDispatcher派发任务](https://developer.huawei.com/consumer/cn/forum/topic/0204460939630370009?fid=0101303901040230869)
 * [HarmonyOS之线程02——EventHandler处理线程间通信](https://developer.huawei.com/consumer/cn/forum/topic/0204461048552100015?fid=0101303901040230869)
 * [获取图像属性失败！java.lang.IllegalStateException: image data source invalid](https://developer.huawei.com/consumer/cn/forum/topic/0201481849198120096?fid=0101303901040230869&pid=0301492195334980932)
-* [只要5分钟开发一个HarmonyOS鸿蒙应用——HelloWorld](https://www.bilibili.com/video/BV1Qh411U7Go?share_source=copy_web)
+* [只要5分钟开发一个HarmonyOS鸿蒙应用——HelloWorld](https://www.bilibili.com/video/BV1Qh411U7Go?share_source=copy_web)（视频）
 * [HarmonyOS Page与AbilitySlice生命周期](https://developer.huawei.com/consumer/cn/forum/topic/0202573163094170174?fid=0101303901040230869)
 * [理解HarmonyOS Service Ability](https://developer.huawei.com/consumer/cn/forum/topic/0202578737701770050?fid=0101303901040230869)
 * [一个HarmonyOS Service Ability生命周期的例子](https://developer.huawei.com/consumer/cn/forum/topic/0201578738626200065?fid=0101303901040230869)
@@ -56,6 +56,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [#HarmonyOS挑战赛第四期#使用ArkUI开发一个图片滑动播放功能HarmonyOS应用](https://developer.huawei.com/consumer/cn/forum/topic/0204705003425460081?fid=0101591351254000314)
 * [#HarmonyOS征文#基于HarmonyOS ArkUI 3.0 框架，我成功开发了图片自动播放功能](https://developer.huawei.com/consumer/cn/forum/topic/0204705883233030129?fid=0101591351254000314)
 * [什么叫做HarmonyOS“1+8+N”](https://developer.huawei.com/consumer/cn/forum/topic/0203715060368250074?fid=0101610563345550409)
+* [基于HarmonyOS ArkUI 3.0 框架，开发了菜谱自动展播的应用](https://www.bilibili.com/video/BV1T34y1Z7X3/)（视频）
 * 未完待续...
 
 ## Samples 示例
