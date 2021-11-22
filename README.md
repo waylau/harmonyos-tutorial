@@ -57,6 +57,10 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [#HarmonyOS征文#基于HarmonyOS ArkUI 3.0 框架，我成功开发了图片自动播放功能](https://developer.huawei.com/consumer/cn/forum/topic/0204705883233030129?fid=0101591351254000314)
 * [什么叫做HarmonyOS“1+8+N”](https://developer.huawei.com/consumer/cn/forum/topic/0203715060368250074?fid=0101610563345550409)
 * [基于HarmonyOS ArkUI 3.0 框架，开发了菜谱自动展播的应用](https://www.bilibili.com/video/BV1T34y1Z7X3/)（视频）
+* [HarmonyOS离PC端有多远](https://developer.huawei.com/consumer/cn/forum/topic/0204726291294980583?fid=0101610563345550409)
+* [HarmonyOS编程之路是知易行难，贵在坚持](https://developer.huawei.com/consumer/cn/forum/topic/0203727168139000447?fid=0101610563345550409)
+* [15000积分兑换海思开发板Hi3518EV300 长啥样？！一起开箱看下，支持鸿蒙OS哦](https://developer.huawei.com/consumer/cn/forum/topic/0204729191116100676?fid=0103702273237500027)
+* [OpenHarmony支持的系统类型以及对应的内核](https://developer.huawei.com/consumer/cn/forum/topic/0204729778972140718?fid=0103702273237490025)
 * 未完待续...
 
 ## Samples 示例
