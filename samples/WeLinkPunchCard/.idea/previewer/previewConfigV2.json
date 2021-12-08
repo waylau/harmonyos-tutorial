@@ -1,0 +1,61 @@
+{
+ "1.0.0": {
+  "LastPreviewDevice": {}
+ },
+ "1.0.1": {
+  "profileList": [
+   {
+    "id": "P40",
+    "deviceType": "phone",
+    "width": 1080,
+    "height": 2340,
+    "shape": "rect",
+    "dpi": 480,
+    "orientation": "portrait",
+    "language": "zh_CN",
+    "colorMode": "light"
+   },
+   {
+    "id": "MateX2",
+    "deviceType": "phone",
+    "width": 2200,
+    "height": 2480,
+    "shape": "rect",
+    "dpi": 520,
+    "orientation": "portrait",
+    "language": "zh_CN",
+    "colorMode": "light"
+   },
+   {
+    "id": "MatePadPro",
+    "deviceType": "tablet",
+    "width": 2560,
+    "height": 1600,
+    "shape": "rect",
+    "dpi": 400,
+    "orientation": "landscape",
+    "language": "zh_CN",
+    "colorMode": "light"
+   },
+   {
+    "id": "Car",
+    "deviceType": "car",
+    "width": 1920,
+    "height": 1080,
+    "shape": "rect",
+    "dpi": 320,
+    "orientation": "landscape",
+    "language": "zh_CN",
+    "colorMode": "light"
+   }
+  ],
+  "runningProfileList": [
+   "P40"
+  ],
+  "availableProfileList": [
+   "MateX2",
+   "MatePadPro",
+   "Car"
+  ]
+ }
+}

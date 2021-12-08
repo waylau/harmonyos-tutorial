@@ -61,6 +61,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [HarmonyOS编程之路是知易行难，贵在坚持](https://developer.huawei.com/consumer/cn/forum/topic/0203727168139000447?fid=0101610563345550409)
 * [15000积分兑换海思开发板Hi3518EV300 长啥样？！一起开箱看下，支持鸿蒙OS哦](https://developer.huawei.com/consumer/cn/forum/topic/0204729191116100676?fid=0103702273237500027)
 * [OpenHarmony支持的系统类型以及对应的内核](https://developer.huawei.com/consumer/cn/forum/topic/0204729778972140718?fid=0103702273237490025)
+* [#HarmonyOS技术训练营第四期#使用ArkUI开发“仿WeLink打卡”HarmonyOS应用](https://developer.huawei.com/consumer/cn/forum/topic/0201742900461960432?fid=0101591351254000314)
 * 未完待续...
 
 ## Samples 示例
@@ -164,6 +165,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [ArkUI开发一个图片滑动播放功能](samples/EtsUISwiper)
 * [分布式文件共享](samples/DistributedFile)
 * [ArkUI开发一个图片自动播放功能](samples/EtsUISwiperAutoPlay)
+* [使用ArkUI开发“仿WeLink打卡”](samples/WeLinkPunchCard)
 * 未完待续...
 
 
