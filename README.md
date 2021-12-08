@@ -61,7 +61,9 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [HarmonyOS编程之路是知易行难，贵在坚持](https://developer.huawei.com/consumer/cn/forum/topic/0203727168139000447?fid=0101610563345550409)
 * [15000积分兑换海思开发板Hi3518EV300 长啥样？！一起开箱看下，支持鸿蒙OS哦](https://developer.huawei.com/consumer/cn/forum/topic/0204729191116100676?fid=0103702273237500027)
 * [OpenHarmony支持的系统类型以及对应的内核](https://developer.huawei.com/consumer/cn/forum/topic/0204729778972140718?fid=0103702273237490025)
+* [解决DevEco Studio安装Ets SDK失败的问题](https://developer.huawei.com/consumer/cn/forum/topic/0201742704622820325?fid=26)
 * [#HarmonyOS技术训练营第四期#使用ArkUI开发“仿WeLink打卡”HarmonyOS应用](https://developer.huawei.com/consumer/cn/forum/topic/0201742900461960432?fid=0101591351254000314)
+* [使用ArkUI只需20行代码搞定“仿WeLink打卡”HarmonyOS应用](https://www.bilibili.com/video/BV15M4y1A7Vt/)（视频）
 * 未完待续...
 
 ## Samples 示例
