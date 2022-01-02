@@ -6,7 +6,7 @@
 
 
 
-《跟老卫学HarmonyOS开发》是一本 HarmonyOS 应用开发的开源学习教程，主要介绍如何从0开始开发 HarmonyOS 应用。本书包括最新版本 HarmonyOS 2.0 中的新特性。图文并茂，并通过大量实例带你走近 HarmonyOS 的世界！
+《跟老卫学HarmonyOS开发》是一本 HarmonyOS 应用开发的开源学习教程，主要介绍如何从0开始开发 HarmonyOS 应用。本书包括最新版本 HarmonyOS 3.0 中的新特性。图文并茂，并通过大量实例带你走近 HarmonyOS 的世界！
 
 本书业余时间所著，水平有限、时间紧张，难免疏漏，欢迎指正，
 
@@ -64,6 +64,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [解决DevEco Studio安装Ets SDK失败的问题](https://developer.huawei.com/consumer/cn/forum/topic/0201742704622820325?fid=26)
 * [#HarmonyOS技术训练营第四期#使用ArkUI开发“仿WeLink打卡”HarmonyOS应用](https://developer.huawei.com/consumer/cn/forum/topic/0201742900461960432?fid=0101591351254000314)
 * [使用ArkUI只需20行代码搞定“仿WeLink打卡”HarmonyOS应用](https://www.bilibili.com/video/BV15M4y1A7Vt/)（视频）
+* [OpenHarmony HDC工具详解](https://developer.huawei.com/consumer/cn/forum/topic/0201763247640210925?fid=0103702273237520029)
 * 未完待续...
 
 ## Samples 示例
