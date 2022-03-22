@@ -85,10 +85,6 @@ public class MainAbilitySlice extends AbilitySlice {
     }
 
     private void doInsert(DataAbilityHelper helper, Uri uri, String[] columns) {
-        // 构造查询条件
-        DataAbilityPredicates predicates = new DataAbilityPredicates();
-        predicates.between("user_Id", 101, 103);
-
         // 构造插入数据
         ValuesBucket valuesBucket = new ValuesBucket();
         valuesBucket.putInteger(columns[0], 101);
