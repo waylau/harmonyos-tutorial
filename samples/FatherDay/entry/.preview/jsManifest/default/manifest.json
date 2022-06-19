@@ -1,0 +1,23 @@
+{
+    "appID": "com.waylau.hmos.fatherday.hmservice",
+    "appName": "$string:entry_MainAbility",
+    "versionName": "1.0.0",
+    "versionCode": 1000000,
+    "minPlatformVersion": 7,
+    "pages": [
+        "pages/index"
+    ],
+    "deviceType": [
+        "phone",
+        "tablet",
+        "car"
+    ],
+    "mode": {
+        "syntax": "ets",
+        "type": "pageAbility"
+    },
+    "window": {
+        "autoDesignWidth": false,
+        "designWidth": 720
+    }
+}

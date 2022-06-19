@@ -65,6 +65,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [#HarmonyOS技术训练营第四期#使用ArkUI开发“仿WeLink打卡”HarmonyOS应用](https://developer.huawei.com/consumer/cn/forum/topic/0201742900461960432?fid=0101591351254000314)
 * [使用ArkUI只需20行代码搞定“仿WeLink打卡”HarmonyOS应用](https://www.bilibili.com/video/BV15M4y1A7Vt/)（视频）
 * [OpenHarmony HDC工具详解](https://developer.huawei.com/consumer/cn/forum/topic/0201763247640210925?fid=0103702273237520029)
+* [以父之名·码力全开！写段HarmonyOS祝父亲节](https://developer.huawei.com/consumer/cn/forum/topic/0203909713809490254?fid=0101591351254000314)
 * 未完待续...
 
 ## Samples 示例
@@ -169,6 +170,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [分布式文件共享](samples/DistributedFile)
 * [ArkUI开发一个图片自动播放功能](samples/EtsUISwiperAutoPlay)
 * [使用ArkUI开发“仿WeLink打卡”](samples/WeLinkPunchCard)
+* [使用ArkUI开发“父亲节的祝福”](samples/FatherDay)
 * 未完待续...
 
 
