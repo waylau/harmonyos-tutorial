@@ -1,0 +1,12 @@
+{
+  "string": [
+    {
+      "name": "entry_MainAbility",
+      "value": "藏头诗应用"
+    },
+    {
+      "name": "mainability_description",
+      "value": "用于生成藏头诗或者继续完成诗的后面几句"
+    }
+  ]
+}

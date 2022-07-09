@@ -1,0 +1,23 @@
+<div class="container">
+
+    <text class="title">
+        {{ $t('strings.acrosticPoemKey') }}
+    </text>
+    <div class="item-textarea">
+        <textarea onchange="textChangeKey" placeholder="点击输入4个不重复的汉字" id="keyPoem">{{
+            $t('strings.acrosticPoemKeyContent') }}</textarea>
+    </div>
+    <div>
+        <input type="button" class="btn" onclick="genHeadPoem" value="生成藏头诗"/>
+    </div>
+    <div class="hr"></div>
+    <text class="title"> {{ $t('strings.acrosticPoemHead') }}</text>
+    <div class="item-textarea">
+        <textarea onchange="textChangeHead" placeholder="点击输入一两句诗词，逗号分隔" id="headPoem">{{
+            $t('strings.acrosticPoemHeadContent') }}</textarea>
+    </div>
+    <div>
+        <input type="button" class="btn" onclick="genPoem" value="生成整首诗"/>
+    </div>
+
+</div>
