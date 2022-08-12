@@ -227,6 +227,11 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * Twitter: [waylau521](https://twitter.com/waylau521)
 * Github : [waylau](https://github.com/waylau)
 
+## Certificate 作者荣誉
+
+![](images/openharmony-certificate.png)
+
+
 
 ## Support Me 请老卫喝一杯
 
