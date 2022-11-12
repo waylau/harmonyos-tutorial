@@ -67,6 +67,9 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [OpenHarmony HDC工具详解](https://developer.huawei.com/consumer/cn/forum/topic/0201763247640210925?fid=0103702273237520029)
 * [以父之名·码力全开！写段HarmonyOS祝父亲节](https://developer.huawei.com/consumer/cn/forum/topic/0203909713809490254?fid=0101591351254000314)
 * [#HarmonyOS技术训练营#AI来做HarmonyOS藏头诗应用](https://developer.huawei.com/consumer/cn/forum/topic/0204927609677810616?fid=0101591351254000314)
+* [《鸿蒙生态应用开发白皮书》读后感，还是那熟悉的配方](https://developer.huawei.com/consumer/cn/forum/topic/0201103202674567076?fid=0101610563345550409)
+* [#HarmonyOS体验官 玩转HarmonyOS 3必装DevEco Studio 3，注意避弹](https://developer.huawei.com/consumer/cn/forum/topic/0202103558349879153?fid=0101610563345550409)
+* [#HarmonyOS体验官 用HarmonyOS ArkUI抽个盲盒头像](https://developer.huawei.com/consumer/cn/forum/topic/0202103570335932166?fid=0101591351254000314)
 * 未完待续...
 
 ## Samples 示例
@@ -173,6 +176,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [使用ArkUI开发“仿WeLink打卡”](samples/WeLinkPunchCard)
 * [使用ArkUI开发“父亲节的祝福”](samples/FatherDay)
 * [AI来做HarmonyOS藏头诗](samples/WaylauAcrosticPoem)
+* [ArkUI抽个盲盒头像](samples/ArkUIExperience)
 * 未完待续...
 
 

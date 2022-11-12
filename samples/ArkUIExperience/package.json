@@ -1,0 +1,18 @@
+{
+  "name": "arkuiexperience",
+  "version": "1.0.0",
+  "ohos": {
+    "org": "huawei",
+    "buildTool": "hvigor",
+    "directoryLevel": "project"
+  },
+  "description": "example description",
+  "repository": {},
+  "license": "ISC",
+  "dependencies": {
+    "@ohos/axios": "^1.0.4",
+    "@ohos/hvigor": "1.3.1",
+    "@ohos/hvigor-ohos-plugin": "1.3.1",
+    "@ohos/hypium": "1.0.3"
+  }
+}

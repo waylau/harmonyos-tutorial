@@ -1,0 +1,100 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "模块描述"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "label"
+    },
+    {
+      "name": "entry_desc",
+      "value": "description"
+    },
+    {
+      "name": "MainAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "MainAbility_label",
+      "value": "NFT"
+    },
+    {
+      "name": "dialog_content_avatar",
+      "value": "每个HarmonyOS专属头像都是通过SDK调取华为云数字资产链服务铸造的，拥有唯一的资产所有者地址，就像身份证号码标识，是唯一存在的。"
+    },
+    {
+      "name": "dialog_title_avatar",
+      "value": "什么是HarmonyOS专属头像？"
+    },
+    {
+      "name": "text_nft_explain",
+      "value": "什么是HarmonyOS专属头像？"
+    },
+    {
+      "name": "button_start_Lottery",
+      "value": "开始抽奖"
+    },
+    {
+      "name": "dialog_title_code_fail",
+      "value": "代码未完善"
+    },
+    {
+      "name": "dialog_content_name",
+      "value": "文本输入框被隐藏起来或未输入名字，请调测代码将输入框显示出来并填入头像专属名字\n（提示：在index.ets内查看input组件是否正常显示，详见指导手册）"
+    },
+    {
+      "name": "dialog_content_quality",
+      "value": "R:普通头像，中奖率为70%\nSR:稀有头像，中奖率为29%!\nSSR:欧皇头像，中奖率为1%!!"
+    },
+    {
+      "name": "text_title_sorry",
+      "value": "非常抱歉！"
+    },
+    {
+      "name": "text_no_prize",
+      "value": "奖品已抢光，感谢参与"
+    },
+    {
+      "name": "text_title_congratulations",
+      "value": "恭喜您获得！"
+    },
+    {
+      "name": "text_title_avatar",
+      "value": "%s-HarmonyOS专属数字藏品头像"
+    },
+    {
+      "name": "text_serial_number",
+      "value": "序号"
+    },
+    {
+      "name": "text_quality",
+      "value": "品质"
+    },
+    {
+      "name": "text_content_qrcode",
+      "value": "扫描上方二维码，下载专属头像，获取数字资产链接，参与更多福利活动"
+    },
+    {
+      "name": "dialog_content_router_fail",
+      "value": "输入框文本内容无法传递到抽奖页面，请调测代码将内容传递给抽奖页面。\n（提示：在index.ets下startLottery方法中，补充params代码，详见指导手册）"
+    },
+    {
+      "name": "dialog_content_animation_fail",
+      "value": "抽奖动画未执行，请调测代码使抽奖动画成功播放。\n（提示：在nft.ets内查看aboutToApper组件，补充playAnimator代码，详见指导手册）"
+    },
+    {
+      "name": "button_text_confirm",
+      "value": "确认"
+    },
+    {
+      "name": "button_text_know",
+      "value": "我知道了"
+    }
+  ]
+}

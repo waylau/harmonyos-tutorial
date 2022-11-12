@@ -1,0 +1,60 @@
+{
+  "color": [
+    {
+      "name": "start_window_background",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "white",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "index_text_explain",
+      "value": "#FF8B00"
+    },
+    {
+      "name": "index_button_background",
+      "value": "#00FF8B00"
+    },
+    {
+      "name": "nft_animator_background",
+      "value": "#99000000"
+    },
+    {
+      "name": "nft_text_no_prize",
+      "value": "#666666"
+    },
+    {
+      "name": "nft_border",
+      "value": "#E4E5EB"
+    },
+    {
+      "name": "nft_subtitle",
+      "value": "#AEAEB0"
+    },
+    {
+      "name": "nft_orange",
+      "value": "#FFA100"
+    },
+    {
+      "name": "nft_text_quality",
+      "value": "#33FF9D00"
+    },
+    {
+      "name": "nft_main_background",
+      "value": "#E6FFFFFF"
+    },
+    {
+      "name": "nft_text_qrcode",
+      "value": "#999999"
+    },
+    {
+      "name": "dialog_button_confirm",
+      "value": "#FEA32E"
+    },
+    {
+      "name": "input_button_confirm",
+      "value": "#FFAB00"
+    }
+  ]
+}
