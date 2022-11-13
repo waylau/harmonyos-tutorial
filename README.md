@@ -70,6 +70,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [《鸿蒙生态应用开发白皮书》读后感，还是那熟悉的配方](https://developer.huawei.com/consumer/cn/forum/topic/0201103202674567076?fid=0101610563345550409)
 * [#HarmonyOS体验官 玩转HarmonyOS 3必装DevEco Studio 3，注意避弹](https://developer.huawei.com/consumer/cn/forum/topic/0202103558349879153?fid=0101610563345550409)
 * [#HarmonyOS体验官 用HarmonyOS ArkUI抽个盲盒头像](https://developer.huawei.com/consumer/cn/forum/topic/0202103570335932166?fid=0101591351254000314)
+* [#HarmonyOS体验官【挑战赛第一期】用HarmonyOS ArkUI来开发一个购物应用程序](https://developer.huawei.com/consumer/cn/forum/topic/0202103750705507189?fid=0101587866109860105)
 * 未完待续...
 
 ## Samples 示例
@@ -177,6 +178,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [使用ArkUI开发“父亲节的祝福”](samples/FatherDay)
 * [AI来做HarmonyOS藏头诗](samples/WaylauAcrosticPoem)
 * [ArkUI抽个盲盒头像](samples/ArkUIExperience)
+* [ArkUI购物应用](samples/ArkUIShopping)
 * 未完待续...
 
 
@@ -190,6 +192,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 
 ![俄罗斯方块](images/Tetris.png)
 
+![购物应用](images/ArkUIShopping.jpg)
 
 ## Get start 如何开始阅读
 
