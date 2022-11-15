@@ -1,0 +1,192 @@
+{
+  "string": [
+    {
+      "name": "healthy_diet",
+      "value": "Healthy Diet"
+    },
+    {
+      "name": "logo_description",
+      "value": "Healthy life comes from a balanced diet"
+    },
+    {
+      "name": "title_record",
+      "value": "Record"
+    },
+    {
+      "name": "no_record_content",
+      "value": "No record, please return Home page to add."
+    },
+    {
+      "name": "tab_bar_home",
+      "value": "Home"
+    },
+    {
+      "name": "tab_bar_record",
+      "value": "Records"
+    },
+    {
+      "name": "category_all",
+      "value": "All"
+    },
+    {
+      "name": "category_fruit",
+      "value": "Fruit"
+    },
+    {
+      "name": "category_vegetable",
+      "value": "Vegetable"
+    },
+    {
+      "name": "category_nut",
+      "value": "Nut"
+    },
+    {
+      "name": "category_seafood",
+      "value": "Seafood"
+    },
+    {
+      "name": "category_dessert",
+      "value": "Dessert"
+    },
+    {
+      "name": "diet_record_calorie",
+      "value": "Calories"
+    },
+    {
+      "name": "nutrition_element",
+      "value": "Nutrition Element"
+    },
+    {
+      "name": "high_calorie",
+      "value": "High"
+    },
+    {
+      "name": "medium_low_calories",
+      "value": "Medium-Low"
+    },
+    {
+      "name": "low_calorie",
+      "value": "Low-Calories"
+    },
+    {
+      "name": "low_calorie_food",
+      "value": "Low-Calories"
+    },
+    {
+      "name": "high_calorie_food",
+      "value": "High-Calories"
+    },
+    {
+      "name": "diet_record_fat",
+      "value": "Fat"
+    },
+    {
+      "name": "diet_record_protein",
+      "value": "Protein"
+    },
+    {
+      "name": "diet_record_vitaminC",
+      "value": "VitaminC"
+    },
+    {
+      "name": "diet_record_carbohydrates",
+      "value": "Carbohydrates"
+    },
+    {
+      "name": "title_food_detail",
+      "value": "Food Detail"
+    },
+    {
+      "name": "button_food_detail_complete",
+      "value": "Complete"
+    },
+    {
+      "name": "button_food_detail_record",
+      "value": "Record"
+    },
+    {
+      "name": "title_food_list",
+      "value": "Food List"
+    },
+    {
+      "name": "meal_time_breakfast",
+      "value": "Breakfast"
+    },
+    {
+      "name": "meal_time_lunch",
+      "value": "Lunch"
+    },
+    {
+      "name": "meal_time_dinner",
+      "value": "Dinner"
+    },
+    {
+      "name": "meal_time_supper",
+      "value": "Supper"
+    },
+    {
+      "name": "food_name_tomato",
+      "value": "Tomato"
+    },
+    {
+      "name": "food_name_walnut",
+      "value": "Walnut"
+    },
+    {
+      "name": "food_name_cucumber",
+      "value": "Cucumber"
+    },
+    {
+      "name": "food_name_blueberry",
+      "value": "Blueberry"
+    },
+    {
+      "name": "food_name_crab",
+      "value": "Crab"
+    },
+    {
+      "name": "food_name_ice_cream",
+      "value": "IceCream"
+    },
+    {
+      "name": "food_name_onion",
+      "value": "Onion"
+    },
+    {
+      "name": "food_name_mushroom",
+      "value": "Mushroom"
+    },
+    {
+      "name": "food_name_kiwi",
+      "value": "Kiwi"
+    },
+    {
+      "name": "food_name_pitaya",
+      "value": "Pitaya"
+    },
+    {
+      "name": "food_name_avocado",
+      "value": "Avocado"
+    },
+    {
+      "name": "food_name_strawberry",
+      "value": "Strawberry"
+    },
+    {
+      "name": "unit_weight",
+      "value": "per 100g"
+    },
+    {
+      "name": "weight_with_gram_unit",
+      "value": "%s g"
+    },
+    {
+      "name": "weight_with_milligram_unit",
+      "value": "%s mg"
+    },
+    {
+      "name": "calorie_with_kcal_unit",
+      "value": "%s kcal"
+    }
+  ]
+}

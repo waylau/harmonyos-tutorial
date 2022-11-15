@@ -1,0 +1,192 @@
+{
+  "string": [
+    {
+      "name": "healthy_diet",
+      "value": "健康饮食"
+    },
+    {
+      "name": "logo_description",
+      "value": "健康的生活来自均衡的饮食"
+    },
+    {
+      "name": "title_record",
+      "value": "记录"
+    },
+    {
+      "name": "no_record_content",
+      "value": "无记录，请返回首页添加."
+    },
+    {
+      "name": "tab_bar_home",
+      "value": "主页"
+    },
+    {
+      "name": "tab_bar_record",
+      "value": "记录"
+    },
+    {
+      "name": "category_all",
+      "value": "所有"
+    },
+    {
+      "name": "category_fruit",
+      "value": "水果"
+    },
+    {
+      "name": "category_vegetable",
+      "value": "蔬菜"
+    },
+    {
+      "name": "category_nut",
+      "value": "坚果"
+    },
+    {
+      "name": "category_seafood",
+      "value": "海鲜"
+    },
+    {
+      "name": "category_dessert",
+      "value": "甜点"
+    },
+    {
+      "name": "diet_record_calorie",
+      "value": "热量"
+    },
+    {
+      "name": "nutrition_element",
+      "value": "营养元素"
+    },
+    {
+      "name": "high_calorie",
+      "value": "高热量"
+    },
+    {
+      "name": "medium_low_calories",
+      "value": "中低热量"
+    },
+    {
+      "name": "low_calorie",
+      "value": "低热量"
+    },
+    {
+      "name": "low_calorie_food",
+      "value": "低热量食物"
+    },
+    {
+      "name": "high_calorie_food",
+      "value": "高热量食物"
+    },
+    {
+      "name": "diet_record_fat",
+      "value": "脂肪"
+    },
+    {
+      "name": "diet_record_protein",
+      "value": "蛋白质"
+    },
+    {
+      "name": "diet_record_vitaminC",
+      "value": "维他命C"
+    },
+    {
+      "name": "diet_record_carbohydrates",
+      "value": "碳水"
+    },
+    {
+      "name": "title_food_detail",
+      "value": "食物详情"
+    },
+    {
+      "name": "button_food_detail_complete",
+      "value": "完成"
+    },
+    {
+      "name": "button_food_detail_record",
+      "value": "记录"
+    },
+    {
+      "name": "title_food_list",
+      "value": "食物列表"
+    },
+    {
+      "name": "meal_time_breakfast",
+      "value": "早餐"
+    },
+    {
+      "name": "meal_time_lunch",
+      "value": "午餐"
+    },
+    {
+      "name": "meal_time_dinner",
+      "value": "晚餐"
+    },
+    {
+      "name": "meal_time_supper",
+      "value": "夜宵"
+    },
+    {
+      "name": "food_name_tomato",
+      "value": "番茄"
+    },
+    {
+      "name": "food_name_walnut",
+      "value": "核桃"
+    },
+    {
+      "name": "food_name_cucumber",
+      "value": "黄瓜"
+    },
+    {
+      "name": "food_name_blueberry",
+      "value": "蓝莓"
+    },
+    {
+      "name": "food_name_crab",
+      "value": "螃蟹"
+    },
+    {
+      "name": "food_name_ice_cream",
+      "value": "冰激凌"
+    },
+    {
+      "name": "food_name_onion",
+      "value": "洋葱"
+    },
+    {
+      "name": "food_name_mushroom",
+      "value": "蘑菇"
+    },
+    {
+      "name": "food_name_kiwi",
+      "value": "猕猴桃"
+    },
+    {
+      "name": "food_name_pitaya",
+      "value": "火龙果"
+    },
+    {
+      "name": "food_name_avocado",
+      "value": "牛油果"
+    },
+    {
+      "name": "food_name_strawberry",
+      "value": "草莓"
+    },
+    {
+      "name": "unit_weight",
+      "value": "每100克"
+    },
+    {
+      "name": "weight_with_gram_unit",
+      "value": "%s 克"
+    },
+    {
+      "name": "weight_with_milligram_unit",
+      "value": "%s 毫克"
+    },
+    {
+      "name": "calorie_with_kcal_unit",
+      "value": "%s 千卡"
+    }
+  ]
+}

@@ -72,6 +72,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [#HarmonyOS体验官 用HarmonyOS ArkUI抽个盲盒头像](https://developer.huawei.com/consumer/cn/forum/topic/0202103570335932166?fid=0101591351254000314)
 * [#HarmonyOS体验官【挑战赛第一期】用HarmonyOS ArkUI来开发一个购物应用程序](https://developer.huawei.com/consumer/cn/forum/topic/0202103750705507189?fid=0101587866109860105)、[视频](https://www.bilibili.com/video/BV1NG4y1o7rv/)
 * [#HarmonyOS体验官【挑战赛第二期】用HarmonyOS ArkUI调用三方库PhotoView实现图片的联播、缩放](https://developer.huawei.com/consumer/cn/forum/topic/0202103760075502191?fid=0101591351254000314)、[视频](https://www.bilibili.com/video/BV1Rg411i7y1/)
+* [#HarmonyOS体验官 【HarmonyOS ArkUI入门训练营】用HarmonyOS ArkUI来开发一个健康饮食应用](https://developer.huawei.com/consumer/cn/forum/topic/0202103820939502206?fid=0101591351254000314)
 * 未完待续...
 
 ## Samples 示例
@@ -181,6 +182,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [ArkUI抽个盲盒头像](samples/ArkUIExperience)
 * [ArkUI购物应用](samples/ArkUIShopping)
 * [ArkUI调用三方库PhotoView](samples/ArkUIThirdPartyLibrary)
+* [ArkUI健康饮食应用w](samples/ArkUIHealthyDiet)
 * 未完待续...
 
 
