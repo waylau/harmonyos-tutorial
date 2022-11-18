@@ -3,6 +3,7 @@
     "pages/Index",
     "pages/ShoppingCart",
     "pages/ShoppingDetail",
-    "pages/MyPage"
+    "pages/MyPage",
+    "pages/Index"
   ]
 }
