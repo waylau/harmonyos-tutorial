@@ -240,6 +240,8 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 
 ## Certificate 作者荣誉
 
+![](images/huawei-developer-niuren-certificate.png)
+
 ![](images/harmonyos-certificate.png)
 
 
