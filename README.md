@@ -240,6 +240,9 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 
 ## Certificate 作者荣誉
 
+![](images/harmonyos-certificate.png)
+
+
 ![](images/openharmony-certificate.png)
 
 
