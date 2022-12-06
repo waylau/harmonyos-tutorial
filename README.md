@@ -74,6 +74,8 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [#HarmonyOS体验官【挑战赛第二期】用HarmonyOS ArkUI调用三方库PhotoView实现图片的联播、缩放](https://developer.huawei.com/consumer/cn/forum/topic/0202103760075502191?fid=0101591351254000314)、[视频](https://www.bilibili.com/video/BV1Rg411i7y1/)
 * [#HarmonyOS体验官 【HarmonyOS ArkUI入门训练营】用HarmonyOS ArkUI来开发一个健康饮食应用](https://developer.huawei.com/consumer/cn/forum/topic/0202103820939502206?fid=0101591351254000314)
 * [#HarmonyOS体验官【挑战赛第三期】用HarmonyOS ArkUI实现点赞美女翻牌动效](https://developer.huawei.com/consumer/cn/forum/topic/0201105240170004491)
+* [#HarmonyOS体验官 HarmonyOS 3.1 Developer Preview新特性解读](https://developer.huawei.com/consumer/cn/forum/topic/0202105632577423558)
+* [虽有HarmonyOS 3.1 Developer Preview，但想用3.0 Release版本怎么办？](https://developer.huawei.com/consumer/cn/forum/topic/0202105699819621571)
 * 未完待续...
 
 ## Samples 示例
