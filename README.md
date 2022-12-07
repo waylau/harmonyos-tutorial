@@ -187,6 +187,8 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [ArkUI调用三方库PhotoView](samples/ArkUIThirdPartyLibrary)
 * [ArkUI健康饮食应用](samples/ArkUIHealthyDiet)
 * [ArkUI点赞美女翻牌](samples/GiveThumbsUp)
+* [ArkUI HelloWorld](samples/ArkUIHelloWorld)
+* [ArkUI 内页面的跳转和数据传递]](samples/ArkUIPagesRouter)
 * 未完待续...
 
 
