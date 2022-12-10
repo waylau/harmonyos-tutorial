@@ -190,7 +190,8 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [ArkUI HelloWorld](samples/ArkUIHelloWorld)
 * [ArkUI 内页面的跳转和数据传递](samples/ArkUIPagesRouter)
 * [ArkUI 显式Want启动Ability](samples/ArkUIWantStartAbility)
-* [ArkUI 隐式Want打开网址](samples/ArkUIWantOpenURI)
+* [ArkUI 隐式Want打开网址](samples/ArkUIWantOpenURI)（Test）
+* [ArkUI 隐式Want打开应用管理](samples/ArkUIWantOpenManageApplications)
 * 未完待续...
 
 
