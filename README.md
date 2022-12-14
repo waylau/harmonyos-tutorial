@@ -192,6 +192,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [ArkUI 显式Want启动Ability](samples/ArkUIWantStartAbility)
 * [ArkUI 隐式Want打开网址](samples/ArkUIWantOpenURI)（Test）
 * [ArkUI 隐式Want打开应用管理](samples/ArkUIWantOpenManageApplications)
+* [ArkUI 登录界面](samples/ArkUILogin)
 * 未完待续...
 
 
