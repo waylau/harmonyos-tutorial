@@ -10,6 +10,8 @@
 
 本书业余时间所著，水平有限、时间紧张，难免疏漏，欢迎指正，
 
+HarmonyOS配套练习题库，见“[HarmonyOS题库](https://github.com/waylau/harmonyos-exam)”。
+
 ## Summary 目录
 
 * [什么是鸿蒙、OpenHarmony、HarmonyOS](https://waylau.com/what-is-harmonyos/)
@@ -193,6 +195,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [ArkUI 隐式Want打开网址](samples/ArkUIWantOpenURI)（Test）
 * [ArkUI 隐式Want打开应用管理](samples/ArkUIWantOpenManageApplications)
 * [ArkUI 登录界面](samples/ArkUILogin)
+* [ArkTS 公共事件](samples/ArkTSCommonEventService)
 * 未完待续...
 
 
