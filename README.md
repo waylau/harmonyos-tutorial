@@ -196,6 +196,10 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [ArkUI 隐式Want打开应用管理](samples/ArkUIWantOpenManageApplications)
 * [ArkUI 登录界面](samples/ArkUILogin)
 * [ArkTS 公共事件](samples/ArkTSCommonEventService)
+* [ArkTS 图片编解码](samples/ArkTSImageCodec)（test）
+* [ArkTS 窗口开发](samples/ArkTSWindow)
+* [ArkTS HTTP请求数据](samples/ArkTSHttp)
+* [ArkTS Web组件](samples/ArkTSWebComponent)
 * 未完待续...
 
 
