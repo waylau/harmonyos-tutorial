@@ -200,6 +200,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [ArkTS 窗口开发](samples/ArkTSWindow)
 * [ArkTS HTTP请求数据](samples/ArkTSHttp)
 * [ArkTS Web组件](samples/ArkTSWebComponent)
+* [ArkTS 用户授权](samples/ArkTSUserGrant)
 * 未完待续...
 
 
