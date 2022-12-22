@@ -78,6 +78,9 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [#HarmonyOS体验官【挑战赛第三期】用HarmonyOS ArkUI实现点赞美女翻牌动效](https://developer.huawei.com/consumer/cn/forum/topic/0201105240170004491)
 * [#HarmonyOS体验官 HarmonyOS 3.1 Developer Preview新特性解读](https://developer.huawei.com/consumer/cn/forum/topic/0202105632577423558)
 * [虽有HarmonyOS 3.1 Developer Preview，但想用3.0 Release版本怎么办？](https://developer.huawei.com/consumer/cn/forum/topic/0202105699819621571)
+* [HarmonyOS ArkUI分布式数据服务开发](https://developer.huawei.com/consumer/cn/forum/topic/0201107105975570814)
+* [HarmonyOS ArkUI关系型数据库开发](https://developer.huawei.com/consumer/cn/forum/topic/0201107109777137818)
+* [HarmonyOS ArkUI首选项开发](https://developer.huawei.com/consumer/cn/forum/topic/0202107112558535813)
 * 未完待续...
 
 ## Samples 示例
@@ -201,6 +204,9 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [ArkTS HTTP请求数据](samples/ArkTSHttp)
 * [ArkTS Web组件](samples/ArkTSWebComponent)
 * [ArkTS 用户授权](samples/ArkTSUserGrant)
+* [ArkTS 分布式数据服务开发](samples/ArkTSDistributedData)（test）
+* [ArkTS 关系型数据库开发](samples/ArkTSRdb)（test）
+* [ArkTS 首选项开发](samples/ArkTSPreferences)（test）
 * 未完待续...
 
 
