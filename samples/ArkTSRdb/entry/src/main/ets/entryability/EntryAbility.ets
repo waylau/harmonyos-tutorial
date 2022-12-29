@@ -1,8 +1,7 @@
 import hilog from '@ohos.hilog';
 import Ability from '@ohos.application.Ability'
 import Window from '@ohos.window'
-// 导入RdbUtil
-import RdbUtil from '../common/RdbUtil';
+
 
 export default class EntryAbility extends Ability {
     onCreate(want, launchParam) {
@@ -32,8 +31,6 @@ export default class EntryAbility extends Ability {
             hilog.info(0x0000, 'testTag', 'Succeeded in loading the content. Data: %{public}s', JSON.stringify(data) ?? '');
         });
 
-        // 初始化数据库
-        RdbUtil.initStore(this.context);
     }
 
     onWindowStageDestroy() {

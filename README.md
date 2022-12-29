@@ -204,9 +204,9 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [ArkTS HTTP请求数据](samples/ArkTSHttp)
 * [ArkTS Web组件](samples/ArkTSWebComponent)
 * [ArkTS 用户授权](samples/ArkTSUserGrant)
-* [ArkTS 分布式数据服务开发](samples/ArkTSDistributedData)（test）
-* [ArkTS 关系型数据库开发](samples/ArkTSRdb)（test）
-* [ArkTS 首选项开发](samples/ArkTSPreferences)（test）
+* [ArkTS 分布式数据服务开发](samples/ArkTSDistributedData)（todo）
+* [ArkTS 关系型数据库开发](samples/ArkTSRdb)
+* [ArkTS 首选项开发](samples/ArkTSPreferences)
 * 未完待续...
 
 

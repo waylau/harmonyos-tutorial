@@ -1,10 +1,25 @@
 // 导入PreferencesUtil
 import PreferencesUtil from '../common/PreferencesUtil';
+// 导入AccountData
+import AccountData from '../database/AccountData';
+
+const PREFERENCES_KEY = 'fruit';
 
 @Entry
 @Component
 struct Index {
   @State message: string = 'Hello World'
+  private preferencesUtil = new PreferencesUtil();
+
+  async aboutToAppear() {
+    // 初始化首选项
+    await this.preferencesUtil.getPreferencesFromStorage();
+
+    // 获取结果
+    this.preferencesUtil.getPreference(PREFERENCES_KEY).then(resultData => {
+      this.message = resultData;
+    });
+  }
 
   build() {
     Row() {
@@ -20,7 +35,9 @@ struct Index {
           .fontWeight(FontWeight.Medium)
           .margin({ top: 20, bottom: 20 })
           .onClick(() => {
-            PreferencesUtil.addData()
+            // 保存数据
+            let newAccount: AccountData = { id: 0, accountType: 0, typeText: '苹果', amount: 0 };
+            this.preferencesUtil.putPreference(PREFERENCES_KEY, JSON.stringify(newAccount));
           })
 
         // 查询
@@ -30,7 +47,10 @@ struct Index {
           .fontWeight(FontWeight.Medium)
           .margin({ top: 20, bottom: 20 })
           .onClick(() => {
-            PreferencesUtil.queryData()
+            // 获取结果
+            this.preferencesUtil.getPreference(PREFERENCES_KEY).then(resultData => {
+              this.message = resultData;
+            });
           })
 
         // 修改
@@ -40,7 +60,9 @@ struct Index {
           .fontWeight(FontWeight.Medium)
           .margin({ top: 20, bottom: 20 })
           .onClick(() => {
-            PreferencesUtil.updateData()
+            // 修改数据
+            let newAccount: AccountData = { id: 1, accountType: 1, typeText: '栗子', amount: 1 };
+            this.preferencesUtil.putPreference(PREFERENCES_KEY, JSON.stringify(newAccount));
           })
 
         // 删除
@@ -50,12 +72,11 @@ struct Index {
           .fontWeight(FontWeight.Medium)
           .margin({ top: 20, bottom: 20 })
           .onClick(() => {
-            PreferencesUtil.deleteData()
+            this.preferencesUtil.deletePreferences();
           })
       }
       .width('100%')
     }
     .height('100%')
   }
-
 }
