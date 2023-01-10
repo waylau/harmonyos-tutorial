@@ -15,16 +15,20 @@
         ohos:text_size="18fp"
         ohos:text_color="#FFFFFF"/>
 
-    <Text
+
+    <TabList
+        ohos:id="$+id:tab_list"
         ohos:height="50vp"
-        ohos:width="match_content"
+        ohos:width="match_parent"
         ohos:horizontal_center="true"
         ohos:align_parent_bottom="true"
-        ohos:background_element="#228B22"
-        ohos:padding="8vp"
-        ohos:multiple_lines="true"
-        ohos:text="horizontal_center and align_parent_bottom"
-        ohos:text_size="18fp"
-        ohos:text_color="#FFFFFF"/>
+        ohos:layout_alignment="center"
+        ohos:orientation="horizontal"
+        ohos:text_alignment="center"
+        ohos:background_element="black"
+        ohos:normal_text_color="#999999"
+        ohos:selected_text_color="#FFFFFF"
+        ohos:selected_tab_indicator_color="#FFFFFF"
+        ohos:selected_tab_indicator_height="2vp"/>
 
 </DependentLayout>
