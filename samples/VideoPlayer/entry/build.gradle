@@ -1,10 +1,10 @@
 apply plugin: 'com.huawei.ohos.hap'
 ohos {
-    compileSdkVersion 4
+    compileSdkVersion 7
     defaultConfig {
-        compatibleSdkVersion 4
+        compatibleSdkVersion 5
     }
-    
+
 }
 
 dependencies {

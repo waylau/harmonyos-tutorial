@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StackLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:background_element="#000000">
+
+    <SurfaceProvider
+        ohos:id="$+id:surfaceProvider"
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        ohos:scale_mode="zoom_center"/>
+
+    <Image
+        ohos:id="$+id:image_cover"
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        ohos:image_src="$media:pic01"
+        ohos:scale_mode="zoom_center"/>
+
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:layout_alignment="bottom"
+        ohos:padding="12vp">
+
+        <Text
+            ohos:id="$+id:text_author"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text="@鸿蒙系统"
+            ohos:text_color="white"
+            ohos:text_size="15fp"
+            ohos:text_weight="700"/>
+
+        <Text
+            ohos:id="$+id:text_content"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:margin="3vp"
+            ohos:max_text_lines="2"
+            ohos:multiple_lines="true"
+            ohos:text="HarmonyOS是一款面向万物互联时代的、全新的分布式操作系统。"
+            ohos:text_color="white"
+            ohos:text_size="13fp"
+            ohos:top_margin="25vp"
+            ohos:truncation_mode="ellipsis_at_end"/>
+
+    </DirectionalLayout>
+
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:bottom_margin="80vp"
+        ohos:layout_alignment="right|bottom"
+        ohos:padding="15vp">
+
+        <Image
+            ohos:height="33vp"
+            ohos:width="33vp"
+            ohos:image_src="$media:icon_dianzan"
+            ohos:scale_mode="stretch"/>
+
+        <Image
+            ohos:id="$+id:image_comment"
+            ohos:height="33vp"
+            ohos:width="33vp"
+            ohos:image_src="$media:icon_comment"
+            ohos:scale_mode="stretch"
+            ohos:top_margin="17vp"/>
+
+        <Image
+            ohos:id="$+id:image_share"
+            ohos:height="31vp"
+            ohos:width="31vp"
+            ohos:image_src="$media:icon_share"
+            ohos:scale_mode="stretch"
+            ohos:top_margin="17vp"/>
+
+    </DirectionalLayout>
+</StackLayout>

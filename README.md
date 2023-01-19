@@ -273,6 +273,11 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 
 
 
+![](images/huawei-developer-niuren-certificate-2022.jpg)
+
+
+![](images/openharmony-certificate-2.jpg)
+
 ## Support Me 请老卫喝一杯
 
 ![开源捐赠](https://waylau.com/images/showmethemoney-sm.jpg)
