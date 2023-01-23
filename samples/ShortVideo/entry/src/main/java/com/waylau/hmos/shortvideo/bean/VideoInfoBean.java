@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) waylau.com, 2023. All rights reserved.
+ */
+
 package com.waylau.hmos.shortvideo.bean;
 
 import ohos.agp.graphics.Surface;
@@ -5,6 +9,9 @@ import ohos.agp.graphics.Surface;
 /**
  * 视频信息实体
  * 视频路径、作者、内容、评论
+ *
+ * @author <a href="https://waylau.com">Way Lau</a>
+ * @since 2023-01-23
  */
 public class VideoInfoBean {
     // 视频路径

@@ -4,12 +4,14 @@
     ohos:height="match_parent"
     ohos:width="match_parent">
 
+    <!--视频滑动播放-->
     <PageSlider
         ohos:id="$+id:page_slider"
         ohos:height="match_parent"
         ohos:width="match_parent"
-        ohos:background_element="black"
         ohos:orientation="vertical"
+        ohos:page_cache_size="0"
+        ohos:background_element="black"
         ohos:above="$id:tab_list"/>
 
     <!--导航栏-->

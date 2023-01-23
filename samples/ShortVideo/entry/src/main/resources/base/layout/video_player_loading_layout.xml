@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DependentLayout xmlns:ohos="http://schemas.huawei.com/res/ohos"
+                 ohos:width="match_parent"
+                 ohos:background_element="#00000000"
+                 ohos:height="match_parent">
+
+        <Image
+            ohos:id="$+id:image_loading"
+            ohos:height="50vp"
+            ohos:width="50vp"
+            ohos:center_in_parent="true"
+            ohos:image_src="$media:ic_loading"
+            ohos:scale_mode="stretch"/>
+
+</DependentLayout>

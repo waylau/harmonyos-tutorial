@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DependentLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:id="$+id:parent"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:background_element="#000000"
+    ohos:alignment="center">
+
+    <com.waylau.hmos.shortvideo.view.PlayerView
+        ohos:id="$+id:player_view"
+        ohos:height="match_parent"
+        ohos:width="match_parent"/>
+
+    <com.waylau.hmos.shortvideo.view.PlayerLoading
+        ohos:id="$+id:loading_view"
+        ohos:height="match_parent"
+        ohos:width="match_parent"/>
+
+    <com.waylau.hmos.shortvideo.view.PlayerController
+        ohos:id="$+id:controller_view"
+        ohos:height="match_parent"
+        ohos:width="match_parent"/>
+
+</DependentLayout>
