@@ -57,7 +57,7 @@ public class VideoPlayer implements IVideoPlayer {
         mPlayer = new Player(mBuilder.mContext);
         Source source = new SourceFactory(mBuilder.mContext, mBuilder.filePath).getSource();
         mPlayer.setSource(source);
-        mPlayer.setPlayerCallback(new HmPlayerCallback());
+        mPlayer.setPlayerCallback(new PlayerCallback());
     }
 
     /**
@@ -65,7 +65,7 @@ public class VideoPlayer implements IVideoPlayer {
      *
      * @since 2020-12-04
      */
-    private class HmPlayerCallback implements Player.IPlayerCallback {
+    private class PlayerCallback implements Player.IPlayerCallback {
         @Override
         public void onPrepared() {
             LogUtil.info(TAG, "onPrepared is called ");

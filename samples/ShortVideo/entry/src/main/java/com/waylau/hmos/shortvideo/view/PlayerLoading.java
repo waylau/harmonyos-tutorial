@@ -5,8 +5,9 @@
 package com.waylau.hmos.shortvideo.view;
 
 import com.waylau.hmos.shortvideo.ResourceTable;
-import com.waylau.hmos.shortvideo.api.IVideoPlayModule;
+import com.waylau.hmos.shortvideo.api.IVideoInfoBinding;
 import com.waylau.hmos.shortvideo.api.IVideoPlayer;
+import com.waylau.hmos.shortvideo.bean.VideoInfo;
 import ohos.agp.animation.AnimatorProperty;
 import ohos.agp.components.*;
 import ohos.agp.components.Component.TouchEventListener;
@@ -19,7 +20,7 @@ import ohos.multimodalinput.event.TouchEvent;
  * @author <a href="https://waylau.com">Way Lau</a>
  * @since 2023-01-23
  */
-public class PlayerLoading extends ComponentContainer implements IVideoPlayModule, TouchEventListener {
+public class PlayerLoading extends ComponentContainer implements IVideoInfoBinding, TouchEventListener {
     private static final int HALF_NUMBER = 2;
     private static final int ANIM_ROTATE = 360;
     private static final int ANIM_DURATION = 2000;
@@ -117,8 +118,8 @@ public class PlayerLoading extends ComponentContainer implements IVideoPlayModul
     }
 
     @Override
-    public void bind(IVideoPlayer player) {
-        mPlayer = player;
+    public void bind(VideoInfo VideoInfo) {
+        mPlayer = VideoInfo.getVideoPlayer();
         initListener();
     }
 

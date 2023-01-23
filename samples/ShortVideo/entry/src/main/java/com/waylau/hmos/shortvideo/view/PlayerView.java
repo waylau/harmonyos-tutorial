@@ -4,8 +4,9 @@
 
 package com.waylau.hmos.shortvideo.view;
 
-import com.waylau.hmos.shortvideo.api.IVideoPlayModule;
+import com.waylau.hmos.shortvideo.api.IVideoInfoBinding;
 import com.waylau.hmos.shortvideo.api.IVideoPlayer;
+import com.waylau.hmos.shortvideo.bean.VideoInfo;
 import com.waylau.hmos.shortvideo.constant.Constants;
 import com.waylau.hmos.shortvideo.manager.GestureDetector;
 import ohos.agp.components.*;
@@ -23,7 +24,7 @@ import java.util.Optional;
  * @author <a href="https://waylau.com">Way Lau</a>
  * @since 2023-01-23
  */
-public class PlayerView extends DependentLayout implements IVideoPlayModule, Component.LayoutRefreshedListener {
+public class PlayerView extends DependentLayout implements IVideoInfoBinding, Component.LayoutRefreshedListener {
     private IVideoPlayer player;
     private SurfaceProvider surfaceView;
     private Surface surface;
@@ -125,9 +126,9 @@ public class PlayerView extends DependentLayout implements IVideoPlayModule, Com
     }
 
     @Override
-    public void bind(IVideoPlayer IVideoPlayer) {
-        this.player = IVideoPlayer;
-        gestureView.bind(player);
+    public void bind(VideoInfo VideoInfo) {
+        this.player = VideoInfo.getVideoPlayer();
+        gestureView.bind(VideoInfo);
         this.player.addPlayerViewCallback((width, height) -> mContext.getUITaskDispatcher().asyncDispatch(() -> {
             if (width > 0) {
                 setWidth(width);

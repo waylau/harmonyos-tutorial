@@ -7,9 +7,11 @@ package com.waylau.hmos.shortvideo.util;
 import com.waylau.hmos.shortvideo.constant.Constants;
 import ohos.app.Context;
 import ohos.global.resource.NotExistException;
+import ohos.global.resource.Resource;
 import ohos.global.resource.WrongTypeException;
 
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 
 /**
  * Common util
@@ -37,5 +39,25 @@ public class CommonUtil {
             LogUtil.error(TAG, e.getMessage());
         }
         return Constants.NUMBER_NEGATIVE_1;
+    }
+
+    /**
+     * JSON文件转String
+     * @param context 上下文
+     * @param resourcePath 资源路径
+     * @return String
+     */
+    public static String getJsonFileToString(Context context, String resourcePath) {
+        try {
+            Resource resource = context.getResourceManager().getRawFileEntry(resourcePath).openRawFile();
+            byte[] tmp = new byte[1024 * 1024];
+            int reads = resource.read(tmp);
+            if (reads != -1) {
+                return new String(tmp, 0, reads, StandardCharsets.UTF_8);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return "";
     }
 }

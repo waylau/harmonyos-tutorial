@@ -8,19 +8,21 @@
 
 package com.waylau.hmos.shortvideo.api;
 
+import com.waylau.hmos.shortvideo.bean.VideoInfo;
+
 /**
- * 视频播放模块
+ * 绑定视频信息
  *
  * @author <a href="https://waylau.com">Way Lau</a>
  * @since 2023-01-23
  */
-public interface IVideoPlayModule {
+public interface IVideoInfoBinding {
     /**
      * bind
      *
-     * @param player player
+     * @param videoInfo videoInfo
      */
-    void bind(IVideoPlayer player);
+    void bind(VideoInfo videoInfo);
 
     /**
      * unbind
