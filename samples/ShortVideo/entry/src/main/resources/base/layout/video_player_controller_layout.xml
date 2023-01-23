@@ -19,6 +19,7 @@
             >
 
             <Image
+                ohos:id="$+id:image_user_portrait"
                 ohos:height="60vp"
                 ohos:width="60vp"
                 ohos:image_src="$media:ic_user_portrait"
@@ -34,6 +35,7 @@
                 ohos:text_weight="700"/>
 
             <Image
+                ohos:id="$+id:image_follow"
                 ohos:height="33vp"
                 ohos:width="33vp"
                 ohos:image_src="$media:ic_public_highlight"
@@ -66,43 +68,47 @@
         ohos:padding="15vp">
 
         <Image
-            ohos:height="33vp"
-            ohos:width="33vp"
+            ohos:id="$+id:image_thumbsup"
+            ohos:height="32vp"
+            ohos:width="32vp"
             ohos:image_src="$media:ic_public_thumbsup"
             ohos:scale_mode="stretch"/>
 
         <Text
+            ohos:id="$+id:text_thumbs_up_count"
             ohos:height="match_content"
             ohos:width="match_content"
-            ohos:text="10"
+            ohos:text="0"
             ohos:text_color="#ffffff"
             ohos:text_size="12vp"/>
 
         <Image
             ohos:id="$+id:image_comment"
-            ohos:height="33vp"
-            ohos:width="33vp"
+            ohos:height="32vp"
+            ohos:width="32vp"
             ohos:image_src="$media:ic_public_comments"
             ohos:scale_mode="stretch"/>
 
         <Text
+            ohos:id="$+id:text_comment_count"
             ohos:height="match_content"
             ohos:width="match_content"
-            ohos:text="1220"
+            ohos:text="0"
             ohos:text_color="#ffffff"
             ohos:text_size="12vp"/>
 
         <Image
-            ohos:id="$+id:image_share"
-            ohos:height="31vp"
-            ohos:width="31vp"
+            ohos:id="$+id:image_favorit"
+            ohos:height="32vp"
+            ohos:width="32vp"
             ohos:image_src="$media:ic_public_highlights"
             ohos:scale_mode="stretch"/>
 
         <Text
+            ohos:id="$+id:text_favorit_count"
             ohos:height="match_content"
             ohos:width="match_content"
-            ohos:text="231"
+            ohos:text="0"
             ohos:text_color="#ffffff"
             ohos:text_size="12vp"/>
 

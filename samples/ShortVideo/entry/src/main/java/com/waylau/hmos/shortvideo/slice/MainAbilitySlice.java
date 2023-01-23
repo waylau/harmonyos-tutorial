@@ -5,9 +5,11 @@
 package com.waylau.hmos.shortvideo.slice;
 
 import com.waylau.hmos.shortvideo.ResourceTable;
+import com.waylau.hmos.shortvideo.bean.VideoInfo;
 import com.waylau.hmos.shortvideo.player.VideoPlayer;
 import com.waylau.hmos.shortvideo.api.IVideoPlayer;
 import com.waylau.hmos.shortvideo.constant.Constants;
+import com.waylau.hmos.shortvideo.util.CommonUtil;
 import com.waylau.hmos.shortvideo.view.PlayerLoading;
 import com.waylau.hmos.shortvideo.view.PlayerView;
 import com.waylau.hmos.shortvideo.view.PlayerController;
@@ -19,8 +21,10 @@ import ohos.agp.components.PageSlider;
 import ohos.agp.components.TabList;
 import ohos.app.Context;
 import ohos.app.dispatcher.task.TaskPriority;
+import ohos.utils.zson.ZSONArray;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 主页面
@@ -30,15 +34,12 @@ import java.util.ArrayList;
  */
 public class MainAbilitySlice extends AbilitySlice {
     private static final String TAG = MainAbilitySlice.class.getSimpleName();
-    private IVideoPlayer[] players;
     private PlayerView playerView;
     private PlayerLoading loadingView;
     private PlayerController controllerView;
-    private String[] urls = new String[] {"entry/resources/base/media/01e3ac03579e7a31010370038557efd0c5_258.mp4",
-        "entry/resources/base/media/01e396fb6e9cef2e010370038505c76ef6_258.mp4",
-        "entry/resources/base/media/01e3a18bad9cf3d701037003852f0a6326_258.mp4",
-        "entry/resources/base/media/big_buck_bunny.mp4", "entry/resources/base/media/huawei_mate_40.mp4",
-        "entry/resources/base/media/trailer.mp4"};
+
+    // 视频信息列表
+    private final List<VideoInfo> videoInfoList = new ArrayList<>();
     int index = 0;
 
     @Override
@@ -46,8 +47,27 @@ public class MainAbilitySlice extends AbilitySlice {
         super.onStart(intent);
         super.setUIContent(ResourceTable.Layout_ability_main);
 
+        initData();
+
         // 初始化UI组件
         initUi();
+    }
+
+    private void initData() {
+        String resourcePath = "resources/rawfile/videoinfo.json";
+        String videosJson = CommonUtil.getJsonFileToString(this, resourcePath);
+
+        // json字符串转成对象集合
+        List<VideoInfo> videoInfos = ZSONArray.stringToClassList(videosJson, VideoInfo.class);
+        videoInfoList.clear();
+        videoInfoList.addAll(videoInfos);
+
+        // 处理视频对象
+        for (VideoInfo bean : videoInfos) {
+            IVideoPlayer player = new VideoPlayer.Builder(getContext()).setFilePath(bean.getVideoPath()).create();
+            player.getLifecycle().onStart();
+            bean.setVideoPlayer(player);
+        }
     }
 
     private void initUi() {
@@ -75,15 +95,10 @@ public class MainAbilitySlice extends AbilitySlice {
     }
 
     private void initPageSlider() {
-        int size = urls.length;
-        players = new IVideoPlayer[size];
-        for (int i = 0; i < size; i++) {
-            players[i] = new VideoPlayer.Builder(getContext()).setFilePath(urls[i]).create();
-            players[i].getLifecycle().onStart();
-        }
 
         PageSlider pageSlider = (PageSlider)findComponentById(ResourceTable.Id_page_slider);
-        VideoPlayerPageSliderProvider videoPlayerPageSliderProvider = new VideoPlayerPageSliderProvider(getData(), this, players);
+        VideoPlayerPageSliderProvider videoPlayerPageSliderProvider =
+            new VideoPlayerPageSliderProvider(videoInfoList, this);
         pageSlider.setProvider(videoPlayerPageSliderProvider);
         pageSlider.setReboundEffect(true);
         pageSlider.addPageChangedListener(new PageSlider.PageChangedListener() {
@@ -98,31 +113,30 @@ public class MainAbilitySlice extends AbilitySlice {
                 LogUtil.info(TAG, "onPageChosen itemPos:" + itemPos);
 
                 index = itemPos;
-                if (itemPos > 0) {
-                    players[itemPos - 1].getLifecycle().onBackground();
-                }
-                if (itemPos < players.length - 1) {
-                    players[itemPos + 1].getLifecycle().onBackground();
-                }
-                players[itemPos].getLifecycle().onForeground();
 
-                getGlobalTaskDispatcher(TaskPriority.DEFAULT).delayDispatch(() -> players[itemPos].play(),
-                    Constants.NUMBER_1000);
+                if (itemPos > 0) {
+                    getPlayer(itemPos - 1).getLifecycle().onBackground();
+                }
+                if (itemPos < videoInfoList.size() - 1) {
+                    getPlayer(itemPos + 1).getLifecycle().onBackground();
+                }
+
+                IVideoPlayer player = getPlayer(itemPos);
+                player.getLifecycle().onForeground();
+                getGlobalTaskDispatcher(TaskPriority.DEFAULT).delayDispatch(() -> player.play(), Constants.NUMBER_1000);
             }
         });
 
-        getGlobalTaskDispatcher(TaskPriority.DEFAULT).delayDispatch(() -> players[index].play(), Constants.NUMBER_1000);
+        // 启动播放
+        pageSlider.setCurrentPage(index);
+        getPlayer(index).getLifecycle().onForeground();
+        getGlobalTaskDispatcher(TaskPriority.DEFAULT).delayDispatch(() -> getPlayer(index).play(),
+            Constants.NUMBER_1000);
     }
 
-    private ArrayList<VideoPlayerPageSliderProvider.DataItem> getData() {
-        ArrayList<VideoPlayerPageSliderProvider.DataItem> dataItems = new ArrayList<>();
-        dataItems.add(new VideoPlayerPageSliderProvider.DataItem("Page A"));
-        dataItems.add(new VideoPlayerPageSliderProvider.DataItem("Page B"));
-        dataItems.add(new VideoPlayerPageSliderProvider.DataItem("Page C"));
-        dataItems.add(new VideoPlayerPageSliderProvider.DataItem("Page d"));
-        dataItems.add(new VideoPlayerPageSliderProvider.DataItem("Page e"));
-        dataItems.add(new VideoPlayerPageSliderProvider.DataItem("Page f"));
-        return dataItems;
+    private IVideoPlayer getPlayer(int itemPos) {
+        VideoInfo videoInfo = videoInfoList.get(itemPos);
+        return videoInfo.getVideoPlayer();
     }
 
     Context getMainContext() {
@@ -139,14 +153,14 @@ public class MainAbilitySlice extends AbilitySlice {
     @Override
     public void onForeground(Intent intent) {
         LogUtil.info(TAG, "onForeground is called");
-        players[index].getLifecycle().onForeground();
+        getPlayer(index).getLifecycle().onForeground();
         super.onForeground(intent);
     }
 
     @Override
     protected void onBackground() {
         LogUtil.info(TAG, "onBackground is called");
-        players[index].getLifecycle().onBackground();
+        getPlayer(index).getLifecycle().onBackground();
         super.onBackground();
     }
 
@@ -156,7 +170,8 @@ public class MainAbilitySlice extends AbilitySlice {
         loadingView.unbind();
         controllerView.unbind();
         playerView.unbind();
-        players[index].getLifecycle().onStop();
+        getPlayer(index).getLifecycle().onStop();
         super.onStop();
     }
+
 }

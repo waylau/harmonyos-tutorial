@@ -4,11 +4,11 @@
 
 package com.waylau.hmos.shortvideo.view;
 
-
 import com.waylau.hmos.shortvideo.ResourceTable;
-import com.waylau.hmos.shortvideo.api.IVideoPlayModule;
+import com.waylau.hmos.shortvideo.api.IVideoInfoBinding;
 import com.waylau.hmos.shortvideo.api.IVideoPlayer;
 import com.waylau.hmos.shortvideo.api.StatuChangeListener;
+import com.waylau.hmos.shortvideo.bean.VideoInfo;
 import com.waylau.hmos.shortvideo.constant.Constants;
 import com.waylau.hmos.shortvideo.constant.PlayerStatus;
 import com.waylau.hmos.shortvideo.util.DateUtil;
@@ -26,7 +26,7 @@ import ohos.eventhandler.InnerEvent;
  * @author <a href="https://waylau.com">Way Lau</a>
  * @since 2023-01-23
  */
-public class PlayerController extends ComponentContainer implements IVideoPlayModule {
+public class PlayerController extends ComponentContainer implements IVideoInfoBinding {
     private static final int THUMB_RED = 255;
     private static final int THUMB_GREEN = 255;
     private static final int THUMB_BLUE = 240;
@@ -37,11 +37,22 @@ public class PlayerController extends ComponentContainer implements IVideoPlayMo
     private static final int PROGRESS_RUNNING_TIME = 1000;
     private boolean mIsDragMode = false;
     private IVideoPlayer mPlayer;
+    private VideoInfo videoInfo;
     private DirectionalLayout bottomLayout;
     private Image mPlayToogle;
     private Slider mProgressBar;
     private Text mCurrentTime;
     private Text mTotleTime;
+    private Text textAuthor;
+    private Text textContent;
+    private Image imageFollow;
+    private Image imageThumbsup;
+    private Image imageComment;
+    private Image imageFavorit;
+    private Text textCommentCount;
+    private Text textThumbsUpCount;
+    private Text textFavoritCount;
+
     private ControllerHandler mHandler;
     private StatuChangeListener mStatuChangeListener = new StatuChangeListener() {
         @Override
@@ -121,35 +132,38 @@ public class PlayerController extends ComponentContainer implements IVideoPlayMo
 
     private void initView() {
         Component playerController =
-                LayoutScatter.getInstance(mContext)
-                        .parse(ResourceTable.Layout_video_player_controller_layout, null, false);
+            LayoutScatter.getInstance(mContext).parse(ResourceTable.Layout_video_player_controller_layout, null, false);
         addComponent(playerController);
-        if (playerController.findComponentById(ResourceTable.Id_controller_bottom_layout)
-                instanceof DirectionalLayout) {
-            bottomLayout = (DirectionalLayout) playerController
-                    .findComponentById(ResourceTable.Id_controller_bottom_layout);
-        }
-        if (playerController.findComponentById(ResourceTable.Id_play_controller) instanceof Image) {
-            mPlayToogle = (Image) playerController.findComponentById(ResourceTable.Id_play_controller);
-        }
-        if (playerController.findComponentById(ResourceTable.Id_progress) instanceof Slider) {
-            mProgressBar = (Slider) playerController.findComponentById(ResourceTable.Id_progress);
-        }
+
+        bottomLayout = (DirectionalLayout)playerController.findComponentById(ResourceTable.Id_controller_bottom_layout);
+
+        mPlayToogle = (Image)playerController.findComponentById(ResourceTable.Id_play_controller);
+
+        mProgressBar = (Slider)playerController.findComponentById(ResourceTable.Id_progress);
+
         ShapeElement shapeElement = new ShapeElement();
         shapeElement.setRgbColor(new RgbColor(THUMB_RED, THUMB_GREEN, THUMB_BLUE));
         shapeElement.setBounds(0, 0, THUMB_WIDTH, THUMB_HEIGHT);
         shapeElement.setCornerRadius(THUMB_RADIUS);
         mProgressBar.setThumbElement(shapeElement);
-        if (playerController.findComponentById(ResourceTable.Id_current_time) instanceof Text) {
-            mCurrentTime = (Text) playerController.findComponentById(ResourceTable.Id_current_time);
-        }
-        if (playerController.findComponentById(ResourceTable.Id_end_time) instanceof Text) {
-            mTotleTime = (Text) playerController.findComponentById(ResourceTable.Id_end_time);
-        }
+
+        mCurrentTime = (Text)playerController.findComponentById(ResourceTable.Id_current_time);
+        mTotleTime = (Text)playerController.findComponentById(ResourceTable.Id_end_time);
+
+        textAuthor = (Text)playerController.findComponentById(ResourceTable.Id_text_author);
+        textContent = (Text)playerController.findComponentById(ResourceTable.Id_text_content);
+        imageFollow = (Image)playerController.findComponentById(ResourceTable.Id_image_follow);
+        imageThumbsup = (Image)playerController.findComponentById(ResourceTable.Id_image_thumbsup);
+        imageComment = (Image)playerController.findComponentById(ResourceTable.Id_image_comment);
+        imageFavorit = (Image)playerController.findComponentById(ResourceTable.Id_image_favorit);
+        textThumbsUpCount = (Text)playerController.findComponentById(ResourceTable.Id_text_thumbs_up_count);
+        textCommentCount = (Text)playerController.findComponentById(ResourceTable.Id_text_comment_count);
+        textFavoritCount = (Text)playerController.findComponentById(ResourceTable.Id_text_favorit_count);
     }
 
     private void initListener() {
         bottomLayout.setTouchEventListener((component, touchEvent) -> true);
+
     }
 
     private void initPlayListener() {
@@ -165,30 +179,28 @@ public class PlayerController extends ComponentContainer implements IVideoPlayMo
                 }
             }
         });
-        mProgressBar.setValueChangedListener(
-                new Slider.ValueChangedListener() {
-                    @Override
-                    public void onProgressUpdated(Slider slider, int value, boolean isB) {
-                        mContext.getUITaskDispatcher().asyncDispatch(() ->
-                                mCurrentTime.setText(DateUtil.msToString(value)));
-                    }
+        mProgressBar.setValueChangedListener(new Slider.ValueChangedListener() {
+            @Override
+            public void onProgressUpdated(Slider slider, int value, boolean isB) {
+                mContext.getUITaskDispatcher().asyncDispatch(() -> mCurrentTime.setText(DateUtil.msToString(value)));
+            }
 
-                    @Override
-                    public void onTouchStart(Slider slider) {
-                        mIsDragMode = true;
-                        mHandler.removeEvent(Constants.PLAYER_PROGRESS_RUNNING, EventHandler.Priority.IMMEDIATE);
-                    }
+            @Override
+            public void onTouchStart(Slider slider) {
+                mIsDragMode = true;
+                mHandler.removeEvent(Constants.PLAYER_PROGRESS_RUNNING, EventHandler.Priority.IMMEDIATE);
+            }
 
-                    @Override
-                    public void onTouchEnd(Slider slider) {
-                        mIsDragMode = false;
-                        if (slider.getProgress() == mPlayer.getDuration()) {
-                            mPlayer.stop();
-                        } else {
-                            mPlayer.rewindTo(getBasicTransTime(slider.getProgress()));
-                        }
-                    }
-                });
+            @Override
+            public void onTouchEnd(Slider slider) {
+                mIsDragMode = false;
+                if (slider.getProgress() == mPlayer.getDuration()) {
+                    mPlayer.stop();
+                } else {
+                    mPlayer.rewindTo(getBasicTransTime(slider.getProgress()));
+                }
+            }
+        });
     }
 
     private int getBasicTransTime(int currentTime) {
@@ -220,9 +232,35 @@ public class PlayerController extends ComponentContainer implements IVideoPlayMo
     }
 
     @Override
-    public void bind(IVideoPlayer player) {
-        mPlayer = player;
+    public void bind(VideoInfo videoInfo) {
+        this.videoInfo = videoInfo;
+
+        mPlayer = videoInfo.getVideoPlayer();
+
         initPlayListener();
+
+        initData();
+    }
+
+    private void initData() {
+        // 更改显示
+        textAuthor.setText(videoInfo.getAuthor());
+        textContent.setText(videoInfo.getContent());
+        textThumbsUpCount.setText(videoInfo.getThumbsUpCount() + "");
+        textCommentCount.setText(videoInfo.getCommentCount() + "");
+        textFavoritCount.setText(videoInfo.getFavoriteCount() + "");
+
+        if (videoInfo.isThumbsUp()) {
+            imageThumbsup.setPixelMap(ResourceTable.Media_ic_public_thumbsup_filled);
+        }
+
+        if (videoInfo.isFavorite()) {
+            imageFavorit.setPixelMap(ResourceTable.Media_ic_public_highlightsed);
+        }
+
+        if (videoInfo.isFollow()) {
+            imageFollow.setPixelMap(ResourceTable.Media_ic_public_highlight_filled);
+        }
     }
 
     @Override
@@ -261,8 +299,7 @@ public class PlayerController extends ComponentContainer implements IVideoPlayMo
                             mProgressBar.setProgressValue(currentPosition);
                             mCurrentTime.setText(DateUtil.msToString(currentPosition));
                         });
-                        mHandler.sendEvent(
-                                Constants.PLAYER_PROGRESS_RUNNING, PROGRESS_RUNNING_TIME, Priority.HIGH);
+                        mHandler.sendEvent(Constants.PLAYER_PROGRESS_RUNNING, PROGRESS_RUNNING_TIME, Priority.HIGH);
                     }
                     break;
                 case Constants.PLAYER_CONTROLLER_HIDE:

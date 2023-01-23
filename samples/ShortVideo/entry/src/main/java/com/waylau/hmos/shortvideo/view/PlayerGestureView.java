@@ -5,8 +5,9 @@
 package com.waylau.hmos.shortvideo.view;
 
 import com.waylau.hmos.shortvideo.ResourceTable;
-import com.waylau.hmos.shortvideo.api.IVideoPlayModule;
+import com.waylau.hmos.shortvideo.api.IVideoInfoBinding;
 import com.waylau.hmos.shortvideo.api.IVideoPlayer;
+import com.waylau.hmos.shortvideo.bean.VideoInfo;
 import com.waylau.hmos.shortvideo.constant.Constants;
 import com.waylau.hmos.shortvideo.constant.PlayerStatus;
 import com.waylau.hmos.shortvideo.manager.GestureDetector;
@@ -28,7 +29,7 @@ import ohos.app.Context;
  * @author <a href="https://waylau.com">Way Lau</a>
  * @since 2023-01-23
  */
-public class PlayerGestureView extends DirectionalLayout implements IVideoPlayModule, GestureDetector.OnGestureListener {
+public class PlayerGestureView extends DirectionalLayout implements IVideoInfoBinding, GestureDetector.OnGestureListener {
     private static final int MOVING_TYPE_INIT = -1;
     private static final int VOLUME_TYPE = 0;
     private static final int PROGRESS_DOWN_TYPE = 1;
@@ -127,8 +128,8 @@ public class PlayerGestureView extends DirectionalLayout implements IVideoPlayMo
     }
 
     @Override
-    public void bind(IVideoPlayer IVideoPlayer) {
-        this.player = IVideoPlayer;
+    public void bind(VideoInfo videoInfo) {
+        this.player = videoInfo.getVideoPlayer();
         this.player.addPlayerStatuCallback(statu -> {
             mContext.getUITaskDispatcher().asyncDispatch(() -> {
                 if (statu == PlayerStatus.STOP || statu == PlayerStatus.COMPLETE) {
