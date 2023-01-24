@@ -5,7 +5,7 @@
 package com.waylau.hmos.shortvideo.api;
 
 
-import com.waylau.hmos.shortvideo.constant.PlayerStatus;
+import com.waylau.hmos.shortvideo.constant.PlayerStatusEnum;
 
 /**
  * StatuChangeListener interface
@@ -19,5 +19,5 @@ public interface StatuChangeListener {
      *
      * @param statu statu
      */
-    void statuCallback(PlayerStatus statu);
+    void statuCallback(PlayerStatusEnum statu);
 }

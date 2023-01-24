@@ -67,34 +67,6 @@ public class Constants {
      * hide
      */
     public static final int PLAYER_CONTROLLER_SHOW = 2;
-    /**
-     * 100
-     */
-    public static final int ONE_HUNDRED_PERCENT = 100;
-    /**
-     * rewind step
-     */
-    public static final int REWIND_STEP = 5000;
-    /**
-     * volume step
-     */
-    public static final int VOLUME_STEP = 5;
-    /**
-     * INTENT STARTTIME PARAM
-     */
-    public static final String INTENT_STARTTIME_PARAM = "intetn_starttime_param";
-    /**
-     * INTENT PLAYURL PARAM
-     */
-    public static final String INTENT_PLAYURL_PARAM = "intetn_playurl_param";
-    /**
-     * INTENT PLAYSTATU PARAM
-     */
-    public static final String INTENT_PLAYSTATU_PARAM = "intetn_playstatu_param";
-    /**
-     * INTENT LANDSCREEN REQUEST CODE
-     */
-    public static final int INTENT_LANDSCREEN_REQUEST_CODE = 1001;
 
     private Constants() {
     }

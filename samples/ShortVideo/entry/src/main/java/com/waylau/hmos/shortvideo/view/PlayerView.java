@@ -132,14 +132,6 @@ public class PlayerView extends DependentLayout implements IVideoInfoBinding, Co
     public void bind(VideoInfo VideoInfo) {
         this.videoPlayer = VideoInfo.getVideoPlayer();
         gestureView.bind(VideoInfo);
-        this.videoPlayer.addPlayerViewCallback((width, height) -> mContext.getUITaskDispatcher().asyncDispatch(() -> {
-            if (width > 0) {
-                setWidth(width);
-            }
-            if (height > 0) {
-                setHeight(height);
-            }
-        }));
     }
 
     @Override

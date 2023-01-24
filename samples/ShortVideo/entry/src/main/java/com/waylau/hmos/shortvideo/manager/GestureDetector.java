@@ -5,7 +5,6 @@
 package com.waylau.hmos.shortvideo.manager;
 
 import com.waylau.hmos.shortvideo.constant.Constants;
-import com.waylau.hmos.shortvideo.constant.GestureConstants;
 import ohos.agp.components.VelocityDetector;
 import ohos.multimodalinput.event.TouchEvent;
 
@@ -24,6 +23,9 @@ public class GestureDetector {
      * MOVING_VERTICAL
      */
     public static final int MOVING_VERTICAL = 1;
+
+    private static final int TOUCH_SLOP = 64;
+
     private int currentMoveType;
 
     /**
@@ -109,8 +111,8 @@ public class GestureDetector {
                 final int deltaY = (int)(focusY - mDownFocusY);
                 int distanceX = Math.abs(deltaX);
                 int distanceY = Math.abs(deltaY);
-                if (distanceX > GestureConstants.getScaledTouchSlop()
-                    || distanceY > GestureConstants.getScaledTouchSlop()) {
+                if (distanceX > TOUCH_SLOP
+                    || distanceY > TOUCH_SLOP) {
                     if (distanceX >= distanceY) {
                         currentMoveType = MOVING_HORIZONTAL;
                         float scrollX = mLastFocusX - focusX;

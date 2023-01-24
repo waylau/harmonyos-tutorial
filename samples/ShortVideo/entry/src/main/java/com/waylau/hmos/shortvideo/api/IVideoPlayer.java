@@ -5,7 +5,7 @@
 package com.waylau.hmos.shortvideo.api;
 
 import com.waylau.hmos.shortvideo.player.VideoPlayer;
-import com.waylau.hmos.shortvideo.constant.PlayerStatus;
+import com.waylau.hmos.shortvideo.constant.PlayerStatusEnum;
 import ohos.agp.graphics.Surface;
 
 
@@ -29,27 +29,6 @@ public interface IVideoPlayer {
      * @param callback callback
      */
     void addPlayerStatuCallback(StatuChangeListener callback);
-
-    /**
-     * removePlayerStatuCallback
-     *
-     * @param callback callback
-     */
-    void removePlayerStatuCallback(StatuChangeListener callback);
-
-    /**
-     * addPlayerViewCallback
-     *
-     * @param callback callback
-     */
-    void addPlayerViewCallback(ScreenChangeListener callback);
-
-    /**
-     * removePlayerViewCallback
-     *
-     * @param callback callback
-     */
-    void removePlayerViewCallback(ScreenChangeListener callback);
 
     /**
      * play
@@ -92,27 +71,6 @@ public interface IVideoPlayer {
      * @return duration
      */
     int getDuration();
-
-    /**
-     * getVolume
-     *
-     * @return float
-     */
-    float getVolume();
-
-    /**
-     * set play volume
-     *
-     * @param volume 0~1
-     */
-    void setVolume(float volume);
-
-    /**
-     * set play speed
-     *
-     * @param speed 0~12
-     */
-    void setPlaySpeed(float speed);
 
     /**
      * getVideoScale
@@ -160,26 +118,11 @@ public interface IVideoPlayer {
     VideoPlayer.Builder getBuilder();
 
     /**
-     * getPlayerStatu
+     * getPlayerStatus
      *
-     * @return PlayerStatu
+     * @return PlayerStatusEnum
      */
-    PlayerStatus getPlayerStatu();
-
-    /**
-     * resizeScreen
-     *
-     * @param width width
-     * @param height height
-     */
-    void resizeScreen(int width, int height);
-
-    /**
-     * openGesture
-     *
-     * @param isOpen isOpen
-     */
-    void openGesture(boolean isOpen);
+    PlayerStatusEnum getPlayerStatus();
 
     /**
      * openGesture

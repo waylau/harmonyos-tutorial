@@ -6,7 +6,7 @@ package com.waylau.hmos.shortvideo.manager;
 
 import com.waylau.hmos.shortvideo.api.IVideoPlayerLifecycle;
 import com.waylau.hmos.shortvideo.api.IVideoPlayer;
-import com.waylau.hmos.shortvideo.constant.PlayerStatus;
+import com.waylau.hmos.shortvideo.constant.PlayerStatusEnum;
 
 /**
  * VideoPlayer Lifecycle
@@ -39,7 +39,7 @@ public class VideoPlayerLifecycle implements IVideoPlayerLifecycle {
 
     @Override
     public void onBackground() {
-        videoPlayer.getBuilder().setPause(videoPlayer.getPlayerStatu() == PlayerStatus.PAUSE);
+        videoPlayer.getBuilder().setPause(videoPlayer.getPlayerStatus() == PlayerStatusEnum.PAUSE);
         videoPlayer.getBuilder().setStartMillisecond(videoPlayer.getCurrentPosition());
         videoPlayer.release();
     }

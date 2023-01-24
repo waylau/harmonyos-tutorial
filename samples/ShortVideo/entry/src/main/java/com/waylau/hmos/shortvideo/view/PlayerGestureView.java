@@ -9,7 +9,7 @@ import com.waylau.hmos.shortvideo.api.IVideoInfoBinding;
 import com.waylau.hmos.shortvideo.api.IVideoPlayer;
 import com.waylau.hmos.shortvideo.bean.VideoInfo;
 import com.waylau.hmos.shortvideo.constant.Constants;
-import com.waylau.hmos.shortvideo.constant.PlayerStatus;
+import com.waylau.hmos.shortvideo.constant.PlayerStatusEnum;
 import com.waylau.hmos.shortvideo.manager.GestureDetector;
 import com.waylau.hmos.shortvideo.util.CommonUtil;
 import com.waylau.hmos.shortvideo.util.DateUtil;
@@ -32,10 +32,8 @@ import ohos.app.Context;
 public class PlayerGestureView extends DirectionalLayout
     implements IVideoInfoBinding, GestureDetector.OnGestureListener {
     private static final int MOVING_TYPE_INIT = -1;
-    private static final int VOLUME_TYPE = 0;
     private static final int PROGRESS_DOWN_TYPE = 1;
     private static final int PROGRESS_UP_TYPE = 2;
-    private static final int LIGHT_BRIGHT_TYPE = 3;
     private IVideoPlayer videoPlayer;
     private int currentPercent;
     private int currentMoveType;
@@ -98,19 +96,13 @@ public class PlayerGestureView extends DirectionalLayout
     }
 
     private void show(int type, String content) {
-        int gestureImg = ResourceTable.Media_ic_horns;
+        int gestureImg = ResourceTable.Media_ic_forward;
         switch (type) {
-            case VOLUME_TYPE:
-                gestureImg = ResourceTable.Media_ic_horns;
-                break;
             case PROGRESS_DOWN_TYPE:
                 gestureImg = ResourceTable.Media_ic_backward;
                 break;
             case PROGRESS_UP_TYPE:
                 gestureImg = ResourceTable.Media_ic_forward;
-                break;
-            case LIGHT_BRIGHT_TYPE:
-                gestureImg = ResourceTable.Media_ic_bright;
                 break;
             default:
                 break;
@@ -133,7 +125,7 @@ public class PlayerGestureView extends DirectionalLayout
         videoPlayer = videoInfo.getVideoPlayer();
         videoPlayer.addPlayerStatuCallback(statu -> {
             mContext.getUITaskDispatcher().asyncDispatch(() -> {
-                if (statu == PlayerStatus.STOP || statu == PlayerStatus.COMPLETE) {
+                if (statu == PlayerStatusEnum.STOP || statu == PlayerStatusEnum.COMPLETE) {
                     hide();
                 }
             });
@@ -166,16 +158,6 @@ public class PlayerGestureView extends DirectionalLayout
                 int value = Math.abs(currentPercent);
                 String content = (currentPercent < 0 ? "- " : "+ ") + DateUtil.msToString(value);
                 show(type, content);
-            } else if (currentMoveType == GestureDetector.MOVING_VERTICAL) {
-                int interval = getHeight() / Constants.NUMBER_2;
-                if (focusX <= getWidth() / Constants.NUMBER_FLOAT_2) {
-                    show(PlayerGestureView.LIGHT_BRIGHT_TYPE, "100%");
-                } else {
-                    float volume = videoPlayer.getVolume() + distance / interval;
-                    volume = (volume < 0) ? 0 : Math.min(volume, 1);
-                    show(PlayerGestureView.VOLUME_TYPE, (int)(volume * Constants.NUMBER_100) + "%");
-                    videoPlayer.setVolume(volume);
-                }
             } else {
                 return false;
             }
