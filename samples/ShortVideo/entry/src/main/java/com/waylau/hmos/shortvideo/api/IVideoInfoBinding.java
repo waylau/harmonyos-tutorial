@@ -26,7 +26,6 @@ public interface IVideoInfoBinding {
 
     /**
      * unbind
-     *
      */
     void unbind();
 }

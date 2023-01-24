@@ -6,6 +6,7 @@ package com.waylau.hmos.shortvideo.provider;
 
 import com.waylau.hmos.shortvideo.ResourceTable;
 import com.waylau.hmos.shortvideo.bean.VideoInfo;
+import com.waylau.hmos.shortvideo.util.LogUtil;
 import com.waylau.hmos.shortvideo.view.PlayerLoading;
 import com.waylau.hmos.shortvideo.view.PlayerView;
 import com.waylau.hmos.shortvideo.view.PlayerController;
@@ -45,6 +46,8 @@ public class VideoPlayerPageSliderProvider extends PageSliderProvider {
     }
     @Override
     public Object createPageInContainer(ComponentContainer componentContainer, int i) {
+        LogUtil.info(TAG, "createPageInContainer, i:" + i);
+        
         VideoInfo videoInfo = list.get(i);
 
         Component videoPlayerViewLayout =
@@ -58,6 +61,12 @@ public class VideoPlayerPageSliderProvider extends PageSliderProvider {
         controllerView.bind(videoInfo);
 
         componentContainer.addComponent(videoPlayerViewLayout);
+
+        // 初始化就播放首页
+        if(i == 0) {
+            playerView.enablePlay();
+        }
+
         return videoPlayerViewLayout;
     }
     @Override
