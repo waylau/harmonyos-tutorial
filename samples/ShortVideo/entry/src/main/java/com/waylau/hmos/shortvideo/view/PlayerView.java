@@ -17,6 +17,7 @@ import ohos.agp.graphics.Surface;
 import ohos.agp.graphics.SurfaceOps;
 import ohos.agp.window.service.WindowManager;
 import ohos.app.Context;
+import ohos.app.dispatcher.task.TaskPriority;
 
 import java.util.Optional;
 
@@ -35,6 +36,7 @@ public class PlayerView extends DependentLayout implements IVideoInfoBinding, Co
     private GestureDetector gestureDetector;
     private int viewWidth;
     private int viewHeight;
+    private boolean isPlay = Boolean.FALSE;
 
     /**
      * constructor of PlayerView
@@ -100,6 +102,10 @@ public class PlayerView extends DependentLayout implements IVideoInfoBinding, Co
                 surface = surfaceOps.getSurface();
                 if (player != null) {
                     player.addSurface(surface);
+
+                    if(isPlay) {
+                        player.play();
+                    }
                 }
             }
 
@@ -156,5 +162,9 @@ public class PlayerView extends DependentLayout implements IVideoInfoBinding, Co
             viewHeight = newHeight;
             mContext.getUITaskDispatcher().asyncDispatch(() -> updateVideoSize(videoScale));
         }
+    }
+
+    public void enablePlay() {
+        isPlay = Boolean.TRUE;
     }
 }
