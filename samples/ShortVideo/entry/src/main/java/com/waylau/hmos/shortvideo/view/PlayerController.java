@@ -10,7 +10,7 @@ import com.waylau.hmos.shortvideo.api.IVideoPlayer;
 import com.waylau.hmos.shortvideo.api.StatuChangeListener;
 import com.waylau.hmos.shortvideo.bean.VideoInfo;
 import com.waylau.hmos.shortvideo.constant.Constants;
-import com.waylau.hmos.shortvideo.constant.PlayerStatus;
+import com.waylau.hmos.shortvideo.constant.PlayerStatusEnum;
 import com.waylau.hmos.shortvideo.util.CommonUtil;
 import com.waylau.hmos.shortvideo.util.DateUtil;
 import ohos.agp.colors.RgbColor;
@@ -59,7 +59,7 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
     private ControllerHandler controllerHandler;
     private StatuChangeListener mStatuChangeListener = new StatuChangeListener() {
         @Override
-        public void statuCallback(PlayerStatus statu) {
+        public void statuCallback(PlayerStatusEnum statu) {
             mContext.getUITaskDispatcher().asyncDispatch(() -> {
                 switch (statu) {
                     case PREPARING:
@@ -177,7 +177,7 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
             if (videoPlayer.isPlaying()) {
                 videoPlayer.pause();
             } else {
-                if (videoPlayer.getPlayerStatu() == PlayerStatus.STOP) {
+                if (videoPlayer.getPlayerStatus() == PlayerStatusEnum.STOP) {
                     videoPlayer.replay();
                 } else {
                     videoPlayer.resume();

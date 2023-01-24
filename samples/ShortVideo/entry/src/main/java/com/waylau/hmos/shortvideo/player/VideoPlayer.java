@@ -6,11 +6,10 @@ package com.waylau.hmos.shortvideo.player;
 
 import com.waylau.hmos.shortvideo.api.IVideoPlayerLifecycle;
 import com.waylau.hmos.shortvideo.api.IVideoPlayer;
-import com.waylau.hmos.shortvideo.api.ScreenChangeListener;
 import com.waylau.hmos.shortvideo.api.StatuChangeListener;
 import com.waylau.hmos.shortvideo.constant.Constants;
-import com.waylau.hmos.shortvideo.constant.PlayerStatus;
-import com.waylau.hmos.shortvideo.factory.SourceFactory;
+import com.waylau.hmos.shortvideo.constant.PlayerStatusEnum;
+import com.waylau.hmos.shortvideo.util.SourceUtil;
 import com.waylau.hmos.shortvideo.manager.VideoPlayerLifecycle;
 import com.waylau.hmos.shortvideo.util.LogUtil;
 import ohos.agp.graphics.Surface;
@@ -35,13 +34,11 @@ public class VideoPlayer implements IVideoPlayer {
     private Surface surface;
     private VideoPlayerLifecycle mLifecycle;
     private Builder mBuilder;
-    private PlayerStatus mStatu = PlayerStatus.IDEL;
+    private PlayerStatusEnum mStatu = PlayerStatusEnum.IDEL;
     private float currentVolume = 1;
     private double videoScale = Constants.NUMBER_NEGATIVE_1;
-    private boolean isGestureOpen;
 
     private List<StatuChangeListener> statuChangeCallbacks = new ArrayList<>(0);
-    private List<ScreenChangeListener> screenChangeCallbacks = new ArrayList<>(0);
 
     /**
      * constructor of HmPlayer
@@ -55,7 +52,7 @@ public class VideoPlayer implements IVideoPlayer {
 
     private void initBasePlayer() {
         mPlayer = new Player(mBuilder.mContext);
-        Source source = new SourceFactory(mBuilder.mContext, mBuilder.filePath).getSource();
+        Source source = SourceUtil.getSource(mBuilder.mContext, mBuilder.filePath);
         mPlayer.setSource(source);
         mPlayer.setPlayerCallback(new PlayerCallback());
     }
@@ -70,8 +67,8 @@ public class VideoPlayer implements IVideoPlayer {
         public void onPrepared() {
             LogUtil.info(TAG, "onPrepared is called ");
             for (StatuChangeListener callback : statuChangeCallbacks) {
-                mStatu = PlayerStatus.PREPARED;
-                callback.statuCallback(PlayerStatus.PREPARED);
+                mStatu = PlayerStatusEnum.PREPARED;
+                callback.statuCallback(PlayerStatusEnum.PREPARED);
             }
         }
 
@@ -82,8 +79,8 @@ public class VideoPlayer implements IVideoPlayer {
                 switch (info) {
                     case Player.PLAYER_INFO_VIDEO_RENDERING_START:
                         for (StatuChangeListener callback : statuChangeCallbacks) {
-                            mStatu = PlayerStatus.PLAY;
-                            callback.statuCallback(PlayerStatus.PLAY);
+                            mStatu = PlayerStatusEnum.PLAY;
+                            callback.statuCallback(PlayerStatusEnum.PLAY);
                         }
                         if (mBuilder.isPause) {
                             pause();
@@ -91,14 +88,14 @@ public class VideoPlayer implements IVideoPlayer {
                         break;
                     case Player.PLAYER_INFO_BUFFERING_START:
                         for (StatuChangeListener callback : statuChangeCallbacks) {
-                            mStatu = PlayerStatus.BUFFERING;
-                            callback.statuCallback(PlayerStatus.BUFFERING);
+                            mStatu = PlayerStatusEnum.BUFFERING;
+                            callback.statuCallback(PlayerStatusEnum.BUFFERING);
                         }
                         break;
                     case Player.PLAYER_INFO_BUFFERING_END:
                         for (StatuChangeListener callback : statuChangeCallbacks) {
-                            mStatu = PlayerStatus.PLAY;
-                            callback.statuCallback(PlayerStatus.PLAY);
+                            mStatu = PlayerStatusEnum.PLAY;
+                            callback.statuCallback(PlayerStatusEnum.PLAY);
                         }
                         break;
                     default:
@@ -111,8 +108,8 @@ public class VideoPlayer implements IVideoPlayer {
         public void onError(int type, int extra) {
             LogUtil.info(TAG, "onError is called ,i is " + type + ",i1 is " + extra);
             for (StatuChangeListener callback : statuChangeCallbacks) {
-                mStatu = PlayerStatus.ERROR;
-                callback.statuCallback(PlayerStatus.ERROR);
+                mStatu = PlayerStatusEnum.ERROR;
+                callback.statuCallback(PlayerStatusEnum.ERROR);
             }
             release();
         }
@@ -128,8 +125,8 @@ public class VideoPlayer implements IVideoPlayer {
         @Override
         public void onPlayBackComplete() {
             for (StatuChangeListener callback : statuChangeCallbacks) {
-                mStatu = PlayerStatus.COMPLETE;
-                callback.statuCallback(PlayerStatus.COMPLETE);
+                mStatu = PlayerStatusEnum.COMPLETE;
+                callback.statuCallback(PlayerStatusEnum.COMPLETE);
             }
         }
 
@@ -151,10 +148,10 @@ public class VideoPlayer implements IVideoPlayer {
             LogUtil.info(TAG, "onMediaTimeIncontinuity is called");
             for (Player.StreamInfo streanInfo : mPlayer.getStreamInfo()) {
                 int streamType = streanInfo.getStreamType();
-                if (streamType == Player.StreamInfo.MEDIA_STREAM_TYPE_AUDIO && mStatu == PlayerStatus.PREPARED) {
+                if (streamType == Player.StreamInfo.MEDIA_STREAM_TYPE_AUDIO && mStatu == PlayerStatusEnum.PREPARED) {
                     for (StatuChangeListener callback : statuChangeCallbacks) {
-                        mStatu = PlayerStatus.PLAY;
-                        callback.statuCallback(PlayerStatus.PLAY);
+                        mStatu = PlayerStatusEnum.PLAY;
+                        callback.statuCallback(PlayerStatusEnum.PLAY);
                     }
                     if (mBuilder.isPause) {
                         pause();
@@ -203,47 +200,18 @@ public class VideoPlayer implements IVideoPlayer {
     }
 
     @Override
-    public void removePlayerStatuCallback(StatuChangeListener callback) {
-        statuChangeCallbacks.remove(callback);
-    }
-
-    @Override
-    public void addPlayerViewCallback(ScreenChangeListener callback) {
-        if (callback != null) {
-            screenChangeCallbacks.add(callback);
-        }
-    }
-
-    @Override
-    public void removePlayerViewCallback(ScreenChangeListener callback) {
-        screenChangeCallbacks.remove(callback);
-    }
-
-    @Override
     public Builder getBuilder() {
         return mBuilder;
     }
 
     @Override
-    public PlayerStatus getPlayerStatu() {
+    public PlayerStatusEnum getPlayerStatus() {
         return mStatu;
     }
 
     @Override
-    public void resizeScreen(int width, int height) {
-        for (ScreenChangeListener screenChangeCallback : screenChangeCallbacks) {
-            screenChangeCallback.screenCallback(width, height);
-        }
-    }
-
-    @Override
-    public void openGesture(boolean isOpen) {
-        isGestureOpen = isOpen;
-    }
-
-    @Override
     public boolean isGestureOpen() {
-        return isPlaying() && isGestureOpen;
+        return isPlaying();
     }
 
     @Override
@@ -252,8 +220,8 @@ public class VideoPlayer implements IVideoPlayer {
             mPlayer.reset();
         }
         for (StatuChangeListener callback : statuChangeCallbacks) {
-            mStatu = PlayerStatus.PREPARING;
-            callback.statuCallback(PlayerStatus.PREPARING);
+            mStatu = PlayerStatusEnum.PREPARING;
+            callback.statuCallback(PlayerStatusEnum.PREPARING);
         }
         initBasePlayer();
         start();
@@ -282,8 +250,8 @@ public class VideoPlayer implements IVideoPlayer {
         }
         mPlayer.stop();
         for (StatuChangeListener callback : statuChangeCallbacks) {
-            mStatu = PlayerStatus.STOP;
-            callback.statuCallback(PlayerStatus.STOP);
+            mStatu = PlayerStatusEnum.STOP;
+            callback.statuCallback(PlayerStatusEnum.STOP);
         }
     }
 
@@ -292,12 +260,12 @@ public class VideoPlayer implements IVideoPlayer {
         if (mPlayer == null) {
             return;
         }
-        if (mStatu != PlayerStatus.IDEL) {
+        if (mStatu != PlayerStatusEnum.IDEL) {
             videoScale = Constants.NUMBER_NEGATIVE_1;
             mPlayer.release();
             for (StatuChangeListener callback : statuChangeCallbacks) {
-                mStatu = PlayerStatus.IDEL;
-                callback.statuCallback(PlayerStatus.IDEL);
+                mStatu = PlayerStatusEnum.IDEL;
+                callback.statuCallback(PlayerStatusEnum.IDEL);
             }
         }
     }
@@ -307,13 +275,13 @@ public class VideoPlayer implements IVideoPlayer {
         if (mPlayer == null) {
             return;
         }
-        if (mStatu != PlayerStatus.IDEL) {
+        if (mStatu != PlayerStatusEnum.IDEL) {
             if (!isPlaying()) {
                 mPlayer.play();
             }
             for (StatuChangeListener callback : statuChangeCallbacks) {
-                mStatu = PlayerStatus.PLAY;
-                callback.statuCallback(PlayerStatus.PLAY);
+                mStatu = PlayerStatusEnum.PLAY;
+                callback.statuCallback(PlayerStatusEnum.PLAY);
             }
         }
     }
@@ -326,8 +294,8 @@ public class VideoPlayer implements IVideoPlayer {
         if (isPlaying()) {
             mPlayer.pause();
             for (StatuChangeListener callback : statuChangeCallbacks) {
-                mStatu = PlayerStatus.PAUSE;
-                callback.statuCallback(PlayerStatus.PAUSE);
+                mStatu = PlayerStatusEnum.PAUSE;
+                callback.statuCallback(PlayerStatusEnum.PAUSE);
             }
         }
     }
@@ -349,30 +317,6 @@ public class VideoPlayer implements IVideoPlayer {
     }
 
     @Override
-    public float getVolume() {
-        return currentVolume;
-    }
-
-    @Override
-    public void setVolume(float volume) {
-        if (mPlayer != null) {
-            if (mPlayer.setVolume(volume)) {
-                currentVolume = volume;
-            }
-        }
-    }
-
-    @Override
-    public void setPlaySpeed(float speed) {
-        if (mPlayer == null) {
-            return;
-        }
-        if (mStatu != PlayerStatus.IDEL) {
-            mPlayer.setPlaybackSpeed(speed);
-        }
-    }
-
-    @Override
     public double getVideoScale() {
         return videoScale;
     }
@@ -390,10 +334,10 @@ public class VideoPlayer implements IVideoPlayer {
         if (mPlayer == null) {
             return;
         }
-        if (mStatu != PlayerStatus.IDEL) {
+        if (mStatu != PlayerStatusEnum.IDEL) {
             for (StatuChangeListener callback : statuChangeCallbacks) {
-                mStatu = PlayerStatus.BUFFERING;
-                callback.statuCallback(PlayerStatus.BUFFERING);
+                mStatu = PlayerStatusEnum.BUFFERING;
+                callback.statuCallback(PlayerStatusEnum.BUFFERING);
             }
             mPlayer.rewindTo(startMicrosecond * MICRO_MILLI_RATE);
         }
@@ -460,17 +404,6 @@ public class VideoPlayer implements IVideoPlayer {
          */
         public int getStartMillisecond() {
             return startMillisecond;
-        }
-
-        /**
-         * setStretch of Builder
-         *
-         * @param isS isStretch
-         * @return Builder
-         */
-        public Builder setStretch(boolean isS) {
-            this.isStretch = isS;
-            return this;
         }
 
         /**

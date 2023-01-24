@@ -10,7 +10,7 @@ package com.waylau.hmos.shortvideo.constant;
  * @author <a href="https://waylau.com">Way Lau</a>
  * @since 2023-01-23
  */
-public enum PlayerStatus {
+public enum PlayerStatusEnum {
     /**
      * idel
      *
