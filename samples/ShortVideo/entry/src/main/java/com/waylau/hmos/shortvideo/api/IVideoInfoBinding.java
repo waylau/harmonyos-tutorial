@@ -18,14 +18,14 @@ import com.waylau.hmos.shortvideo.bean.VideoInfo;
  */
 public interface IVideoInfoBinding {
     /**
-     * bind
+     * 绑定
      *
      * @param videoInfo videoInfo
      */
     void bind(VideoInfo videoInfo);
 
     /**
-     * unbind
+     * 解绑
      */
     void unbind();
 }

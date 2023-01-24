@@ -37,14 +37,14 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
     private static final int CONTROLLER_HIDE_DLEY_TIME = 5000;
     private static final int PROGRESS_RUNNING_TIME = 1000;
     private Context context;
-    private boolean mIsDragMode = false;
-    private IVideoPlayer mPlayer;
+    private boolean isDragMode = false;
+    private IVideoPlayer videoPlayer;
     private VideoInfo videoInfo;
     private DirectionalLayout bottomLayout;
-    private Image mPlayToogle;
-    private Slider mProgressBar;
-    private Text mCurrentTime;
-    private Text mTotleTime;
+    private Image imagePlayToogle;
+    private Slider sliderProgress;
+    private Text textCurrentTime;
+    private Text textTotleTime;
     private Image imagePortrait;
     private Text textAuthor;
     private Text textContent;
@@ -56,34 +56,34 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
     private Text textThumbsUpCount;
     private Text textFavoritCount;
 
-    private ControllerHandler mHandler;
+    private ControllerHandler controllerHandler;
     private StatuChangeListener mStatuChangeListener = new StatuChangeListener() {
         @Override
         public void statuCallback(PlayerStatus statu) {
             mContext.getUITaskDispatcher().asyncDispatch(() -> {
                 switch (statu) {
                     case PREPARING:
-                        mPlayToogle.setClickable(false);
-                        mProgressBar.setEnabled(false);
-                        mProgressBar.setProgressValue(0);
+                        imagePlayToogle.setClickable(false);
+                        sliderProgress.setEnabled(false);
+                        sliderProgress.setProgressValue(0);
                         break;
                     case PREPARED:
-                        mProgressBar.setMaxValue(mPlayer.getDuration());
-                        mTotleTime.setText(DateUtil.msToString(mPlayer.getDuration()));
+                        sliderProgress.setMaxValue(videoPlayer.getDuration());
+                        textTotleTime.setText(DateUtil.msToString(videoPlayer.getDuration()));
                         break;
                     case PLAY:
                         showController(false);
-                        mPlayToogle.setPixelMap(ResourceTable.Media_ic_public_pause_norm);
-                        mPlayToogle.setClickable(true);
-                        mProgressBar.setEnabled(true);
+                        imagePlayToogle.setPixelMap(ResourceTable.Media_ic_public_pause_norm);
+                        imagePlayToogle.setClickable(true);
+                        sliderProgress.setEnabled(true);
                         break;
                     case PAUSE:
-                        mPlayToogle.setPixelMap(ResourceTable.Media_ic_public_play);
+                        imagePlayToogle.setPixelMap(ResourceTable.Media_ic_public_play);
                         break;
                     case STOP:
                     case COMPLETE:
-                        mPlayToogle.setPixelMap(ResourceTable.Media_ic_public_refresh);
-                        mProgressBar.setEnabled(false);
+                        imagePlayToogle.setPixelMap(ResourceTable.Media_ic_public_refresh);
+                        sliderProgress.setEnabled(false);
                         break;
                     default:
                         break;
@@ -131,7 +131,7 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
         if (runner == null) {
             return;
         }
-        mHandler = new ControllerHandler(runner);
+        controllerHandler = new ControllerHandler(runner);
     }
 
     private void initView() {
@@ -141,18 +141,18 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
 
         bottomLayout = (DirectionalLayout)playerController.findComponentById(ResourceTable.Id_controller_bottom_layout);
 
-        mPlayToogle = (Image)playerController.findComponentById(ResourceTable.Id_play_controller);
+        imagePlayToogle = (Image)playerController.findComponentById(ResourceTable.Id_play_controller);
 
-        mProgressBar = (Slider)playerController.findComponentById(ResourceTable.Id_progress);
+        sliderProgress = (Slider)playerController.findComponentById(ResourceTable.Id_progress);
 
         ShapeElement shapeElement = new ShapeElement();
         shapeElement.setRgbColor(new RgbColor(THUMB_RED, THUMB_GREEN, THUMB_BLUE));
         shapeElement.setBounds(0, 0, THUMB_WIDTH, THUMB_HEIGHT);
         shapeElement.setCornerRadius(THUMB_RADIUS);
-        mProgressBar.setThumbElement(shapeElement);
+        sliderProgress.setThumbElement(shapeElement);
 
-        mCurrentTime = (Text)playerController.findComponentById(ResourceTable.Id_current_time);
-        mTotleTime = (Text)playerController.findComponentById(ResourceTable.Id_end_time);
+        textCurrentTime = (Text)playerController.findComponentById(ResourceTable.Id_current_time);
+        textTotleTime = (Text)playerController.findComponentById(ResourceTable.Id_end_time);
 
         imagePortrait = (Image)playerController.findComponentById(ResourceTable.Id_image_portrait);
         textAuthor = (Text)playerController.findComponentById(ResourceTable.Id_text_author);
@@ -167,42 +167,42 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
     }
 
     private void initListener() {
+        // 设置可拖动
         bottomLayout.setTouchEventListener((component, touchEvent) -> true);
-
     }
 
     private void initPlayListener() {
-        mPlayer.addPlayerStatuCallback(mStatuChangeListener);
-        mPlayToogle.setClickedListener(component -> {
-            if (mPlayer.isPlaying()) {
-                mPlayer.pause();
+        videoPlayer.addPlayerStatuCallback(mStatuChangeListener);
+        imagePlayToogle.setClickedListener(component -> {
+            if (videoPlayer.isPlaying()) {
+                videoPlayer.pause();
             } else {
-                if (mPlayer.getPlayerStatu() == PlayerStatus.STOP) {
-                    mPlayer.replay();
+                if (videoPlayer.getPlayerStatu() == PlayerStatus.STOP) {
+                    videoPlayer.replay();
                 } else {
-                    mPlayer.resume();
+                    videoPlayer.resume();
                 }
             }
         });
-        mProgressBar.setValueChangedListener(new Slider.ValueChangedListener() {
+        sliderProgress.setValueChangedListener(new Slider.ValueChangedListener() {
             @Override
             public void onProgressUpdated(Slider slider, int value, boolean isB) {
-                mContext.getUITaskDispatcher().asyncDispatch(() -> mCurrentTime.setText(DateUtil.msToString(value)));
+                mContext.getUITaskDispatcher().asyncDispatch(() -> textCurrentTime.setText(DateUtil.msToString(value)));
             }
 
             @Override
             public void onTouchStart(Slider slider) {
-                mIsDragMode = true;
-                mHandler.removeEvent(Constants.PLAYER_PROGRESS_RUNNING, EventHandler.Priority.IMMEDIATE);
+                isDragMode = true;
+                controllerHandler.removeEvent(Constants.PLAYER_PROGRESS_RUNNING, EventHandler.Priority.IMMEDIATE);
             }
 
             @Override
             public void onTouchEnd(Slider slider) {
-                mIsDragMode = false;
-                if (slider.getProgress() == mPlayer.getDuration()) {
-                    mPlayer.stop();
+                isDragMode = false;
+                if (slider.getProgress() == videoPlayer.getDuration()) {
+                    videoPlayer.stop();
                 } else {
-                    mPlayer.rewindTo(getBasicTransTime(slider.getProgress()));
+                    videoPlayer.rewindTo(getBasicTransTime(slider.getProgress()));
                 }
             }
         });
@@ -218,11 +218,11 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
      * @param isAutoHide isAutoHide
      */
     public void showController(boolean isAutoHide) {
-        mHandler.sendEvent(Constants.PLAYER_CONTROLLER_SHOW, EventHandler.Priority.HIGH);
+        controllerHandler.sendEvent(Constants.PLAYER_CONTROLLER_SHOW, EventHandler.Priority.HIGH);
         if (isAutoHide) {
             hideController(CONTROLLER_HIDE_DLEY_TIME);
         } else {
-            mHandler.removeEvent(Constants.PLAYER_CONTROLLER_HIDE);
+            controllerHandler.removeEvent(Constants.PLAYER_CONTROLLER_HIDE);
         }
     }
 
@@ -232,15 +232,15 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
      * @param delay delay
      */
     public void hideController(int delay) {
-        mHandler.removeEvent(Constants.PLAYER_CONTROLLER_HIDE);
-        mHandler.sendEvent(Constants.PLAYER_CONTROLLER_HIDE, delay, EventHandler.Priority.HIGH);
+        controllerHandler.removeEvent(Constants.PLAYER_CONTROLLER_HIDE);
+        controllerHandler.sendEvent(Constants.PLAYER_CONTROLLER_HIDE, delay, EventHandler.Priority.HIGH);
     }
 
     @Override
     public void bind(VideoInfo videoInfo) {
         this.videoInfo = videoInfo;
 
-        mPlayer = videoInfo.getVideoPlayer();
+        videoPlayer = videoInfo.getVideoPlayer();
 
         initPlayListener();
 
@@ -274,15 +274,12 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
 
     @Override
     public void unbind() {
-        mHandler.removeAllEvent();
-        mHandler = null;
+        controllerHandler.removeAllEvent();
+        controllerHandler = null;
     }
 
     /**
      * ControllerHandler
-     *
-     * @author chenweiquan
-     * @since 2020-12-04
      */
     private class ControllerHandler extends EventHandler {
         private int currentPosition;
@@ -299,25 +296,26 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
             }
             switch (event.eventId) {
                 case Constants.PLAYER_PROGRESS_RUNNING:
-                    if (mPlayer != null && mPlayer.isPlaying() && !mIsDragMode) {
-                        currentPosition = mPlayer.getCurrentPosition();
+                    if (videoPlayer != null && videoPlayer.isPlaying() && !isDragMode) {
+                        currentPosition = videoPlayer.getCurrentPosition();
                         while (currentPosition < PROGRESS_RUNNING_TIME) {
-                            currentPosition = mPlayer.getCurrentPosition();
+                            currentPosition = videoPlayer.getCurrentPosition();
                         }
                         mContext.getUITaskDispatcher().asyncDispatch(() -> {
-                            mProgressBar.setProgressValue(currentPosition);
-                            mCurrentTime.setText(DateUtil.msToString(currentPosition));
+                            sliderProgress.setProgressValue(currentPosition);
+                            textCurrentTime.setText(DateUtil.msToString(currentPosition));
                         });
-                        mHandler.sendEvent(Constants.PLAYER_PROGRESS_RUNNING, PROGRESS_RUNNING_TIME, Priority.HIGH);
+                        controllerHandler.sendEvent(Constants.PLAYER_PROGRESS_RUNNING, PROGRESS_RUNNING_TIME,
+                            Priority.HIGH);
                     }
                     break;
                 case Constants.PLAYER_CONTROLLER_HIDE:
                     mContext.getUITaskDispatcher().asyncDispatch(() -> setVisibility(INVISIBLE));
-                    mHandler.removeEvent(Constants.PLAYER_PROGRESS_RUNNING);
+                    controllerHandler.removeEvent(Constants.PLAYER_PROGRESS_RUNNING);
                     break;
                 case Constants.PLAYER_CONTROLLER_SHOW:
-                    mHandler.removeEvent(Constants.PLAYER_PROGRESS_RUNNING);
-                    mHandler.sendEvent(Constants.PLAYER_PROGRESS_RUNNING, Priority.IMMEDIATE);
+                    controllerHandler.removeEvent(Constants.PLAYER_PROGRESS_RUNNING);
+                    controllerHandler.sendEvent(Constants.PLAYER_PROGRESS_RUNNING, Priority.IMMEDIATE);
                     mContext.getUITaskDispatcher().asyncDispatch(() -> {
                         if (getVisibility() != VISIBLE) {
                             setVisibility(VISIBLE);

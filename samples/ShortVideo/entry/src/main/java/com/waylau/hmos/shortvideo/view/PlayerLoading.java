@@ -25,9 +25,9 @@ public class PlayerLoading extends ComponentContainer implements IVideoInfoBindi
     private static final int ANIM_ROTATE = 360;
     private static final int ANIM_DURATION = 2000;
     private static final int ANIM_LOOPED_COUNT = -1;
-    private IVideoPlayer mPlayer;
-    private Image mLoading;
-    private AnimatorProperty mLoadingAnim;
+    private IVideoPlayer videoPlayer;
+    private Image imageLoading;
+    private AnimatorProperty loadingAnimator;
 
     /**
      * constructor of PlayerLoading
@@ -62,9 +62,9 @@ public class PlayerLoading extends ComponentContainer implements IVideoInfoBindi
 
     private void initView(Context context) {
         Component loadingContainer =
-                LayoutScatter.getInstance(context).parse(ResourceTable.Layout_video_player_loading_layout, null, false);
+            LayoutScatter.getInstance(context).parse(ResourceTable.Layout_video_player_loading_layout, null, false);
         if (loadingContainer.findComponentById(ResourceTable.Id_image_loading) instanceof Image) {
-            mLoading = (Image) loadingContainer.findComponentById(ResourceTable.Id_image_loading);
+            imageLoading = (Image)loadingContainer.findComponentById(ResourceTable.Id_image_loading);
             initAnim();
         }
         addComponent(loadingContainer);
@@ -73,16 +73,16 @@ public class PlayerLoading extends ComponentContainer implements IVideoInfoBindi
     }
 
     private void initAnim() {
-        int with = mLoading.getWidth() / HALF_NUMBER;
-        int height = mLoading.getHeight() / HALF_NUMBER;
-        mLoading.setPivotX(with);
-        mLoading.setPivotY(height);
-        mLoadingAnim = mLoading.createAnimatorProperty();
-        mLoadingAnim.rotate(ANIM_ROTATE).setDuration(ANIM_DURATION).setLoopedCount(ANIM_LOOPED_COUNT);
+        int with = imageLoading.getWidth() / HALF_NUMBER;
+        int height = imageLoading.getHeight() / HALF_NUMBER;
+        imageLoading.setPivotX(with);
+        imageLoading.setPivotY(height);
+        loadingAnimator = imageLoading.createAnimatorProperty();
+        loadingAnimator.rotate(ANIM_ROTATE).setDuration(ANIM_DURATION).setLoopedCount(ANIM_LOOPED_COUNT);
     }
 
     private void initListener() {
-        mPlayer.addPlayerStatuCallback(statu -> mContext.getUITaskDispatcher().asyncDispatch(() -> {
+        videoPlayer.addPlayerStatuCallback(statu -> mContext.getUITaskDispatcher().asyncDispatch(() -> {
             switch (statu) {
                 case PREPARING:
                 case BUFFERING:
@@ -101,10 +101,10 @@ public class PlayerLoading extends ComponentContainer implements IVideoInfoBindi
      * show of PlayerLoading
      */
     public void show() {
-        if (mLoadingAnim.isPaused()) {
-            mLoadingAnim.resume();
+        if (loadingAnimator.isPaused()) {
+            loadingAnimator.resume();
         } else {
-            mLoadingAnim.start();
+            loadingAnimator.start();
         }
         setVisibility(VISIBLE);
     }
@@ -114,18 +114,18 @@ public class PlayerLoading extends ComponentContainer implements IVideoInfoBindi
      */
     public void hide() {
         setVisibility(INVISIBLE);
-        mLoadingAnim.pause();
+        loadingAnimator.pause();
     }
 
     @Override
     public void bind(VideoInfo VideoInfo) {
-        mPlayer = VideoInfo.getVideoPlayer();
+        videoPlayer = VideoInfo.getVideoPlayer();
         initListener();
     }
 
     @Override
     public void unbind() {
-        mLoadingAnim.release();
+        loadingAnimator.release();
     }
 
     @Override

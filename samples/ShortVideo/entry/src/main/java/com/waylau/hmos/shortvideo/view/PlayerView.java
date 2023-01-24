@@ -9,7 +9,6 @@ import com.waylau.hmos.shortvideo.api.IVideoPlayer;
 import com.waylau.hmos.shortvideo.bean.VideoInfo;
 import com.waylau.hmos.shortvideo.constant.Constants;
 import com.waylau.hmos.shortvideo.manager.GestureDetector;
-import com.waylau.hmos.shortvideo.slice.MainAbilitySlice;
 import com.waylau.hmos.shortvideo.util.LogUtil;
 import ohos.agp.components.*;
 import ohos.agp.components.surfaceprovider.SurfaceProvider;
@@ -17,9 +16,6 @@ import ohos.agp.graphics.Surface;
 import ohos.agp.graphics.SurfaceOps;
 import ohos.agp.window.service.WindowManager;
 import ohos.app.Context;
-import ohos.app.dispatcher.task.TaskPriority;
-
-import java.util.Optional;
 
 /**
  * PlayerView
@@ -29,8 +25,8 @@ import java.util.Optional;
  */
 public class PlayerView extends DependentLayout implements IVideoInfoBinding, Component.LayoutRefreshedListener {
     private static final String TAG = PlayerView.class.getSimpleName();
-    private IVideoPlayer player;
-    private SurfaceProvider surfaceView;
+    private IVideoPlayer videoPlayer;
+    private SurfaceProvider surfaceProvider;
     private Surface surface;
     private PlayerGestureView gestureView;
     private GestureDetector gestureDetector;
@@ -66,7 +62,7 @@ public class PlayerView extends DependentLayout implements IVideoInfoBinding, Co
     public PlayerView(Context context, AttrSet attrSet, String styleName) {
         super(context, attrSet, styleName);
 
-        // 不设置窗体透明会挡住播放内容，除非设置pinToZTop为true
+        // 设置窗体透明。否则会挡住播放内容，除非设置pinToZTop为true
         WindowManager.getInstance().getTopWindow().get().setTransparent(true);
         initView();
         initListener();
@@ -74,11 +70,11 @@ public class PlayerView extends DependentLayout implements IVideoInfoBinding, Co
     }
 
     private void initView() {
-        surfaceView = new SurfaceProvider(mContext);
+        surfaceProvider = new SurfaceProvider(mContext);
         LayoutConfig layoutConfig = new LayoutConfig();
         layoutConfig.addRule(LayoutConfig.CENTER_IN_PARENT);
-        surfaceView.setLayoutConfig(layoutConfig);
-        addComponent(surfaceView);
+        surfaceProvider.setLayoutConfig(layoutConfig);
+        addComponent(surfaceProvider);
         addGestureView();
     }
 
@@ -92,19 +88,20 @@ public class PlayerView extends DependentLayout implements IVideoInfoBinding, Co
 
     private void initListener() {
         gestureDetector = new GestureDetector(gestureView);
-        surfaceView
+        surfaceProvider
             .setTouchEventListener((component, touchEvent) -> canGesture() && gestureDetector.onTouchEvent(touchEvent));
-        surfaceView.getSurfaceOps().ifPresent(surfaceOps -> surfaceOps.addCallback(new SurfaceOps.Callback() {
+        surfaceProvider.getSurfaceOps().ifPresent(surfaceOps -> surfaceOps.addCallback(new SurfaceOps.Callback() {
             @Override
             public void surfaceCreated(SurfaceOps surfaceOps) {
                 LogUtil.info(TAG, "surfaceCreated surfaceOps:" + surfaceOps);
 
                 surface = surfaceOps.getSurface();
-                if (player != null) {
-                    player.addSurface(surface);
+                if (videoPlayer != null) {
+                    videoPlayer.addSurface(surface);
 
-                    if(isPlay) {
-                        player.play();
+                    // 判断是否需要立即播放
+                    if (isPlay) {
+                        videoPlayer.play();
                     }
                 }
             }
@@ -118,24 +115,24 @@ public class PlayerView extends DependentLayout implements IVideoInfoBinding, Co
     }
 
     private boolean canGesture() {
-        return gestureDetector != null && player != null && player.isGestureOpen();
+        return gestureDetector != null && videoPlayer != null && videoPlayer.isGestureOpen();
     }
 
     private void updateVideoSize(double videoScale) {
         if (videoScale > 1) {
-            surfaceView.setWidth(viewWidth);
-            surfaceView.setHeight((int)Math.min(viewWidth / videoScale, viewHeight));
+            surfaceProvider.setWidth(viewWidth);
+            surfaceProvider.setHeight((int)Math.min(viewWidth / videoScale, viewHeight));
         } else {
-            surfaceView.setHeight(viewHeight);
-            surfaceView.setWidth((int)Math.min(viewHeight * videoScale, viewWidth));
+            surfaceProvider.setHeight(viewHeight);
+            surfaceProvider.setWidth((int)Math.min(viewHeight * videoScale, viewWidth));
         }
     }
 
     @Override
     public void bind(VideoInfo VideoInfo) {
-        this.player = VideoInfo.getVideoPlayer();
+        this.videoPlayer = VideoInfo.getVideoPlayer();
         gestureView.bind(VideoInfo);
-        this.player.addPlayerViewCallback((width, height) -> mContext.getUITaskDispatcher().asyncDispatch(() -> {
+        this.videoPlayer.addPlayerViewCallback((width, height) -> mContext.getUITaskDispatcher().asyncDispatch(() -> {
             if (width > 0) {
                 setWidth(width);
             }
@@ -147,16 +144,19 @@ public class PlayerView extends DependentLayout implements IVideoInfoBinding, Co
 
     @Override
     public void unbind() {
-        surfaceView.removeFromWindow();
-        surfaceView = null;
+        surfaceProvider.removeFromWindow();
+        surfaceProvider = null;
         surface = null;
     }
 
+    /**
+     * 自适应屏幕大小
+     */
     @Override
     public void onRefreshed(Component component) {
         int newWidth = component.getWidth();
         int newHeight = component.getHeight();
-        double videoScale = player.getVideoScale();
+        double videoScale = videoPlayer.getVideoScale();
         if (videoScale != Constants.NUMBER_NEGATIVE_1 && (newWidth != viewWidth || newHeight != viewHeight)) {
             viewWidth = newWidth;
             viewHeight = newHeight;
@@ -164,6 +164,9 @@ public class PlayerView extends DependentLayout implements IVideoInfoBinding, Co
         }
     }
 
+    /**
+     * 启动播放
+     */
     public void enablePlay() {
         isPlay = Boolean.TRUE;
     }
