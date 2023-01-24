@@ -81,6 +81,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [HarmonyOS ArkUI分布式数据服务开发](https://developer.huawei.com/consumer/cn/forum/topic/0201107105975570814)
 * [HarmonyOS ArkUI关系型数据库开发](https://developer.huawei.com/consumer/cn/forum/topic/0201107109777137818)
 * [HarmonyOS ArkUI首选项开发](https://developer.huawei.com/consumer/cn/forum/topic/0202107112558535813)
+* [华为开发者联盟社区2022年牛人之星](https://developer.huawei.com/consumer/cn/forum/topic/0203109930647268095)
 * 未完待续...
 
 ## Samples 示例
