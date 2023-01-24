@@ -9,25 +9,25 @@
         ohos:id="$+id:page_slider"
         ohos:height="match_parent"
         ohos:width="match_parent"
-        ohos:orientation="vertical"
-        ohos:page_cache_size="0"
+        ohos:above="$id:tab_list"
         ohos:background_element="black"
-        ohos:above="$id:tab_list"/>
+        ohos:orientation="vertical"
+        ohos:page_cache_size="0"/>
 
     <!--导航栏-->
     <TabList
         ohos:id="$+id:tab_list"
         ohos:height="50vp"
         ohos:width="match_parent"
-        ohos:horizontal_center="true"
         ohos:align_parent_bottom="true"
-        ohos:layout_alignment="bottom"
-        ohos:orientation="horizontal"
-        ohos:text_alignment="center"
         ohos:background_element="black"
+        ohos:horizontal_center="true"
+        ohos:layout_alignment="bottom"
         ohos:normal_text_color="#999999"
-        ohos:selected_text_color="#FFFFFF"
+        ohos:orientation="horizontal"
         ohos:selected_tab_indicator_color="#FFFFFF"
-        ohos:selected_tab_indicator_height="2vp"/>
+        ohos:selected_tab_indicator_height="2vp"
+        ohos:selected_text_color="#FFFFFF"
+        ohos:text_alignment="center"/>
 
 </DependentLayout>

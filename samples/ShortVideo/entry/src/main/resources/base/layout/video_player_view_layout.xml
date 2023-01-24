@@ -4,8 +4,8 @@
     ohos:id="$+id:parent"
     ohos:height="match_parent"
     ohos:width="match_parent"
-    ohos:background_element="#000000"
-    ohos:alignment="center">
+    ohos:alignment="center"
+    ohos:background_element="#000000">
 
     <com.waylau.hmos.shortvideo.view.PlayerView
         ohos:id="$+id:player_view"

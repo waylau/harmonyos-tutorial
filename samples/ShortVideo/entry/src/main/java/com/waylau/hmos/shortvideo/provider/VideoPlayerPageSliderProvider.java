@@ -44,38 +44,40 @@ public class VideoPlayerPageSliderProvider extends PageSliderProvider {
     public int getCount() {
         return list.size();
     }
+
     @Override
     public Object createPageInContainer(ComponentContainer componentContainer, int i) {
         LogUtil.info(TAG, "createPageInContainer, i:" + i);
-        
-        VideoInfo videoInfo = list.get(i);
 
         Component videoPlayerViewLayout =
-                LayoutScatter.getInstance(mContext).parse(ResourceTable.Layout_video_player_view_layout, null, false);
-        playerView = (PlayerView) videoPlayerViewLayout.findComponentById(ResourceTable.Id_player_view);
-        loadingView = (PlayerLoading) videoPlayerViewLayout.findComponentById(ResourceTable.Id_loading_view);
-        controllerView = (PlayerController) videoPlayerViewLayout.findComponentById(ResourceTable.Id_controller_view);
+            LayoutScatter.getInstance(mContext).parse(ResourceTable.Layout_video_player_view_layout, null, false);
+        playerView = (PlayerView)videoPlayerViewLayout.findComponentById(ResourceTable.Id_player_view);
+        loadingView = (PlayerLoading)videoPlayerViewLayout.findComponentById(ResourceTable.Id_loading_view);
+        controllerView = (PlayerController)videoPlayerViewLayout.findComponentById(ResourceTable.Id_controller_view);
+        componentContainer.addComponent(videoPlayerViewLayout);
 
+        // 视图绑定数据
+        VideoInfo videoInfo = list.get(i);
         playerView.bind(videoInfo);
         loadingView.bind(videoInfo);
         controllerView.bind(videoInfo);
 
-        componentContainer.addComponent(videoPlayerViewLayout);
-
         // 初始化就播放首页
-        if(i == 0) {
+        if (i == 0) {
             playerView.enablePlay();
         }
 
         return videoPlayerViewLayout;
     }
+
     @Override
     public void destroyPageFromContainer(ComponentContainer componentContainer, int i, Object o) {
-        componentContainer.removeComponent((Component) o);
+        componentContainer.removeComponent((Component)o);
     }
+
     @Override
     public boolean isPageMatchToObject(Component component, Object o) {
-        //可添加具体处理逻辑
+        // 可添加具体处理逻辑
         return true;
     }
 }
