@@ -95,7 +95,7 @@ public class MainAbilitySlice extends AbilitySlice {
     }
 
     private void initPageSlider() {
-
+        LogUtil.info(TAG, "initPageSlider is called");
         PageSlider pageSlider = (PageSlider)findComponentById(ResourceTable.Id_page_slider);
         VideoPlayerPageSliderProvider videoPlayerPageSliderProvider =
             new VideoPlayerPageSliderProvider(videoInfoList, this);
@@ -127,11 +127,7 @@ public class MainAbilitySlice extends AbilitySlice {
             }
         });
 
-        // 启动播放
         pageSlider.setCurrentPage(index);
-        getPlayer(index).getLifecycle().onForeground();
-        getGlobalTaskDispatcher(TaskPriority.DEFAULT).delayDispatch(() -> getPlayer(index).play(),
-            Constants.NUMBER_1000);
     }
 
     private IVideoPlayer getPlayer(int itemPos) {
@@ -147,7 +143,6 @@ public class MainAbilitySlice extends AbilitySlice {
     public void onActive() {
         LogUtil.info(TAG, "onActive is called");
         super.onActive();
-
     }
 
     @Override
