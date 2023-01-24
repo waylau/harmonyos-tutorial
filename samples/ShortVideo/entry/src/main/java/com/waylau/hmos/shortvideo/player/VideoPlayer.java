@@ -35,7 +35,6 @@ public class VideoPlayer implements IVideoPlayer {
     private VideoPlayerLifecycle mLifecycle;
     private Builder mBuilder;
     private PlayerStatusEnum mStatu = PlayerStatusEnum.IDEL;
-    private float currentVolume = 1;
     private double videoScale = Constants.NUMBER_NEGATIVE_1;
 
     private List<StatuChangeListener> statuChangeCallbacks = new ArrayList<>(0);
@@ -117,7 +116,7 @@ public class VideoPlayer implements IVideoPlayer {
         @Override
         public void onResolutionChanged(int videoX, int videoY) {
             LogUtil.info(TAG, "onResolutionChanged videoX is " + videoX + ",videoY is " + videoY);
-            if (!mBuilder.isStretch && videoX != 0 && videoY != 0) {
+            if (videoX != 0 && videoY != 0) {
                 videoScale = (double)videoX / videoY;
             }
         }
@@ -207,11 +206,6 @@ public class VideoPlayer implements IVideoPlayer {
     @Override
     public PlayerStatusEnum getPlayerStatus() {
         return mStatu;
-    }
-
-    @Override
-    public boolean isGestureOpen() {
-        return isPlaying();
     }
 
     @Override
@@ -352,7 +346,6 @@ public class VideoPlayer implements IVideoPlayer {
         private Context mContext;
         private String filePath;
         private int startMillisecond;
-        private boolean isStretch;
         private boolean isPause;
 
         /**
