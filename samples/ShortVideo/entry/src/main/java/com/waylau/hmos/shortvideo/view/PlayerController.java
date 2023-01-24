@@ -11,6 +11,7 @@ import com.waylau.hmos.shortvideo.api.StatuChangeListener;
 import com.waylau.hmos.shortvideo.bean.VideoInfo;
 import com.waylau.hmos.shortvideo.constant.Constants;
 import com.waylau.hmos.shortvideo.constant.PlayerStatus;
+import com.waylau.hmos.shortvideo.util.CommonUtil;
 import com.waylau.hmos.shortvideo.util.DateUtil;
 import ohos.agp.colors.RgbColor;
 import ohos.agp.components.*;
@@ -35,6 +36,7 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
     private static final int THUMB_RADIUS = 20;
     private static final int CONTROLLER_HIDE_DLEY_TIME = 5000;
     private static final int PROGRESS_RUNNING_TIME = 1000;
+    private Context context;
     private boolean mIsDragMode = false;
     private IVideoPlayer mPlayer;
     private VideoInfo videoInfo;
@@ -43,6 +45,7 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
     private Slider mProgressBar;
     private Text mCurrentTime;
     private Text mTotleTime;
+    private Image imagePortrait;
     private Text textAuthor;
     private Text textContent;
     private Image imageFollow;
@@ -117,6 +120,7 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
      */
     public PlayerController(Context context, AttrSet attrSet, String styleName) {
         super(context, attrSet, styleName);
+        this.context = context;
         createHandler();
         initView();
         initListener();
@@ -150,6 +154,7 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
         mCurrentTime = (Text)playerController.findComponentById(ResourceTable.Id_current_time);
         mTotleTime = (Text)playerController.findComponentById(ResourceTable.Id_end_time);
 
+        imagePortrait = (Image)playerController.findComponentById(ResourceTable.Id_image_portrait);
         textAuthor = (Text)playerController.findComponentById(ResourceTable.Id_text_author);
         textContent = (Text)playerController.findComponentById(ResourceTable.Id_text_content);
         imageFollow = (Image)playerController.findComponentById(ResourceTable.Id_image_follow);
@@ -244,6 +249,10 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
 
     private void initData() {
         // 更改显示
+        imagePortrait.setPixelMap(CommonUtil.getImageSource(this.context, videoInfo.getPortrait()));
+        // 设置圆角
+        imagePortrait.setCornerRadius(100f);
+
         textAuthor.setText(videoInfo.getAuthor());
         textContent.setText(videoInfo.getContent());
         textThumbsUpCount.setText(videoInfo.getThumbsUpCount() + "");

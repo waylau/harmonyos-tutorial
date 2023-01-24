@@ -19,7 +19,7 @@
             >
 
             <Image
-                ohos:id="$+id:image_user_portrait"
+                ohos:id="$+id:image_portrait"
                 ohos:height="60vp"
                 ohos:width="60vp"
                 ohos:image_src="$media:ic_user_portrait"

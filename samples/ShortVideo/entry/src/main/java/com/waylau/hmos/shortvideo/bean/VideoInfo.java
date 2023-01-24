@@ -8,8 +8,7 @@ import com.waylau.hmos.shortvideo.api.IVideoPlayer;
 import ohos.agp.graphics.Surface;
 
 /**
- * 视频信息实体
- * 视频路径、作者、内容、评论
+ * 视频信息实体 视频路径、作者、内容、评论
  *
  * @author <a href="https://waylau.com">Way Lau</a>
  * @since 2023-01-23
@@ -20,6 +19,10 @@ public class VideoInfo {
 
     // 作者
     private String author;
+
+    // 头像
+    private String portrait;
+
     // 内容
     private String content;
 
@@ -58,6 +61,14 @@ public class VideoInfo {
 
     public void setAuthor(String author) {
         this.author = author;
+    }
+
+    public String getPortrait() {
+        return portrait;
+    }
+
+    public void setPortrait(String portrait) {
+        this.portrait = portrait;
     }
 
     public String getContent() {
@@ -123,6 +134,5 @@ public class VideoInfo {
     public void setVideoPlayer(IVideoPlayer videoPlayer) {
         VideoPlayer = videoPlayer;
     }
-
 
 }
