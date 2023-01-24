@@ -213,7 +213,7 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
     }
 
     /**
-     * showController of PlayerController
+     * 进度条跟随播放进度移动
      *
      * @param isAutoHide isAutoHide
      */

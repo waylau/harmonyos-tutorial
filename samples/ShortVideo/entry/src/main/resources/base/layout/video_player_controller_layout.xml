@@ -15,8 +15,7 @@
             ohos:height="match_content"
             ohos:width="match_content"
             ohos:alignment="vertical_center"
-            ohos:orientation="horizontal"
-            >
+            ohos:orientation="horizontal">
 
             <Image
                 ohos:id="$+id:image_portrait"

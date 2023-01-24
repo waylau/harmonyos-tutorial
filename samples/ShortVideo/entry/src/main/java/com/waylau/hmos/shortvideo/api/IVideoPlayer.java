@@ -123,11 +123,4 @@ public interface IVideoPlayer {
      * @return PlayerStatusEnum
      */
     PlayerStatusEnum getPlayerStatus();
-
-    /**
-     * openGesture
-     *
-     * @return isGestureOpen
-     */
-    boolean isGestureOpen();
 }

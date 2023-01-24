@@ -8,7 +8,6 @@ import com.waylau.hmos.shortvideo.api.IVideoInfoBinding;
 import com.waylau.hmos.shortvideo.api.IVideoPlayer;
 import com.waylau.hmos.shortvideo.bean.VideoInfo;
 import com.waylau.hmos.shortvideo.constant.Constants;
-import com.waylau.hmos.shortvideo.manager.GestureDetector;
 import com.waylau.hmos.shortvideo.util.LogUtil;
 import ohos.agp.components.*;
 import ohos.agp.components.surfaceprovider.SurfaceProvider;
@@ -28,8 +27,6 @@ public class PlayerView extends DependentLayout implements IVideoInfoBinding, Co
     private IVideoPlayer videoPlayer;
     private SurfaceProvider surfaceProvider;
     private Surface surface;
-    private PlayerGestureView gestureView;
-    private GestureDetector gestureDetector;
     private int viewWidth;
     private int viewHeight;
     private boolean isPlay = Boolean.FALSE;
@@ -75,21 +72,11 @@ public class PlayerView extends DependentLayout implements IVideoInfoBinding, Co
         layoutConfig.addRule(LayoutConfig.CENTER_IN_PARENT);
         surfaceProvider.setLayoutConfig(layoutConfig);
         addComponent(surfaceProvider);
-        addGestureView();
-    }
-
-    private void addGestureView() {
-        gestureView = new PlayerGestureView(mContext);
-        LayoutConfig config = new LayoutConfig(Constants.NUMBER_300, ComponentContainer.LayoutConfig.MATCH_CONTENT);
-        config.addRule(LayoutConfig.CENTER_IN_PARENT);
-        gestureView.setLayoutConfig(config);
-        addComponent(gestureView);
     }
 
     private void initListener() {
-        gestureDetector = new GestureDetector(gestureView);
         surfaceProvider
-            .setTouchEventListener((component, touchEvent) -> canGesture() && gestureDetector.onTouchEvent(touchEvent));
+                .setTouchEventListener((component, touchEvent) -> Boolean.TRUE);
         surfaceProvider.getSurfaceOps().ifPresent(surfaceOps -> surfaceOps.addCallback(new SurfaceOps.Callback() {
             @Override
             public void surfaceCreated(SurfaceOps surfaceOps) {
@@ -114,10 +101,6 @@ public class PlayerView extends DependentLayout implements IVideoInfoBinding, Co
         }));
     }
 
-    private boolean canGesture() {
-        return gestureDetector != null && videoPlayer != null && videoPlayer.isGestureOpen();
-    }
-
     private void updateVideoSize(double videoScale) {
         if (videoScale > 1) {
             surfaceProvider.setWidth(viewWidth);
@@ -131,7 +114,6 @@ public class PlayerView extends DependentLayout implements IVideoInfoBinding, Co
     @Override
     public void bind(VideoInfo VideoInfo) {
         this.videoPlayer = VideoInfo.getVideoPlayer();
-        gestureView.bind(VideoInfo);
     }
 
     @Override
