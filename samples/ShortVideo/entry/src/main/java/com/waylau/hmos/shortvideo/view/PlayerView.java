@@ -9,6 +9,8 @@ import com.waylau.hmos.shortvideo.api.IVideoPlayer;
 import com.waylau.hmos.shortvideo.bean.VideoInfo;
 import com.waylau.hmos.shortvideo.constant.Constants;
 import com.waylau.hmos.shortvideo.manager.GestureDetector;
+import com.waylau.hmos.shortvideo.slice.MainAbilitySlice;
+import com.waylau.hmos.shortvideo.util.LogUtil;
 import ohos.agp.components.*;
 import ohos.agp.components.surfaceprovider.SurfaceProvider;
 import ohos.agp.graphics.Surface;
@@ -25,12 +27,12 @@ import java.util.Optional;
  * @since 2023-01-23
  */
 public class PlayerView extends DependentLayout implements IVideoInfoBinding, Component.LayoutRefreshedListener {
+    private static final String TAG = PlayerView.class.getSimpleName();
     private IVideoPlayer player;
     private SurfaceProvider surfaceView;
     private Surface surface;
     private PlayerGestureView gestureView;
     private GestureDetector gestureDetector;
-    private boolean isTopPlay;
     private int viewWidth;
     private int viewHeight;
 
@@ -57,16 +59,13 @@ public class PlayerView extends DependentLayout implements IVideoInfoBinding, Co
      * constructor of PlayerView
      *
      * @param context context
-     * @param attrSet attSet
      * @param styleName styleName
      */
     public PlayerView(Context context, AttrSet attrSet, String styleName) {
         super(context, attrSet, styleName);
-        WindowManager.getInstance().getTopWindow().get().setTransparent(true); // 不设置窗体透明会挡住播放内容，除非设置pinToZTop为true
-        if (attrSet != null) {
-            Optional<Attr> optIsTopPlay = attrSet.getAttr("top_play");
-            optIsTopPlay.ifPresent(attr -> isTopPlay = "true".equals(attr.getStringValue()));
-        }
+
+        // 不设置窗体透明会挡住播放内容，除非设置pinToZTop为true
+        WindowManager.getInstance().getTopWindow().get().setTransparent(true);
         initView();
         initListener();
         setLayoutRefreshedListener(this);
@@ -77,7 +76,6 @@ public class PlayerView extends DependentLayout implements IVideoInfoBinding, Co
         LayoutConfig layoutConfig = new LayoutConfig();
         layoutConfig.addRule(LayoutConfig.CENTER_IN_PARENT);
         surfaceView.setLayoutConfig(layoutConfig);
-        surfaceView.pinToZTop(isTopPlay);
         addComponent(surfaceView);
         addGestureView();
     }
@@ -97,6 +95,8 @@ public class PlayerView extends DependentLayout implements IVideoInfoBinding, Co
         surfaceView.getSurfaceOps().ifPresent(surfaceOps -> surfaceOps.addCallback(new SurfaceOps.Callback() {
             @Override
             public void surfaceCreated(SurfaceOps surfaceOps) {
+                LogUtil.info(TAG, "surfaceCreated surfaceOps:" + surfaceOps);
+
                 surface = surfaceOps.getSurface();
                 if (player != null) {
                     player.addSurface(surface);
