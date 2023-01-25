@@ -16,41 +16,9 @@ public class Constants {
      */
     public static final int NUMBER_NEGATIVE_1 = -1;
     /**
-     * 2
-     */
-    public static final int NUMBER_2 = 2;
-    /**
      * 2.0
      */
-    public static final float NUMBER_FLOAT_2 = 2f;
-    /**
-     * 10
-     */
-    public static final int NUMBER_10 = 10;
-    /**
-     * 25
-     */
-    public static final int NUMBER_25 = 25;
-    /**
-     * 36
-     */
-    public static final int NUMBER_36 = 36;
-    /**
-     * 40
-     */
-    public static final int NUMBER_40 = 40;
-    /**
-     * 100
-     */
-    public static final int NUMBER_100 = 100;
-    /**
-     * 300
-     */
-    public static final int NUMBER_300 = 300;
-    /**
-     * 150
-     */
-    public static final int NUMBER_150 = 150;
+    public static final float NUMBER_FLOAT_100 = 100f;
     /**
      * 1000
      */

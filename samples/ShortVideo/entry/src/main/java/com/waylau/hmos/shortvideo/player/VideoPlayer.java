@@ -56,11 +56,6 @@ public class VideoPlayer implements IVideoPlayer {
         mPlayer.setPlayerCallback(new PlayerCallback());
     }
 
-    /**
-     * HmPlayer Callback
-     *
-     * @since 2020-12-04
-     */
     private class PlayerCallback implements Player.IPlayerCallback {
         @Override
         public void onPrepared() {
@@ -339,8 +334,6 @@ public class VideoPlayer implements IVideoPlayer {
 
     /**
      * Builder
-     *
-     * @since 2020-12-04
      */
     public static class Builder {
         private Context mContext;

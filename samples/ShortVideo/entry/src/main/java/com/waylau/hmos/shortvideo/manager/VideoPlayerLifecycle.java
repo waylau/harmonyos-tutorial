@@ -7,6 +7,7 @@ package com.waylau.hmos.shortvideo.manager;
 import com.waylau.hmos.shortvideo.api.IVideoPlayerLifecycle;
 import com.waylau.hmos.shortvideo.api.IVideoPlayer;
 import com.waylau.hmos.shortvideo.constant.PlayerStatusEnum;
+import com.waylau.hmos.shortvideo.util.LogUtil;
 
 /**
  * VideoPlayer Lifecycle
@@ -28,10 +29,8 @@ public class VideoPlayerLifecycle implements IVideoPlayerLifecycle {
     }
 
     @Override
-    public void onStart() {}
-
-    @Override
     public void onForeground() {
+        LogUtil.info(TAG, "onForeground");
         String url = videoPlayer.getBuilder().getFilePath();
         int startMillisecond = videoPlayer.getBuilder().getStartMillisecond();
         videoPlayer.reload(url, startMillisecond);
@@ -39,6 +38,7 @@ public class VideoPlayerLifecycle implements IVideoPlayerLifecycle {
 
     @Override
     public void onBackground() {
+        LogUtil.info(TAG, "onBackground");
         videoPlayer.getBuilder().setPause(videoPlayer.getPlayerStatus() == PlayerStatusEnum.PAUSE);
         videoPlayer.getBuilder().setStartMillisecond(videoPlayer.getCurrentPosition());
         videoPlayer.release();
@@ -46,6 +46,7 @@ public class VideoPlayerLifecycle implements IVideoPlayerLifecycle {
 
     @Override
     public void onStop() {
+        LogUtil.info(TAG, "onStop");
         videoPlayer.release();
     }
 }

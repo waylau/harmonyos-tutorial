@@ -8,11 +8,7 @@ import com.waylau.hmos.shortvideo.ResourceTable;
 import com.waylau.hmos.shortvideo.bean.VideoInfo;
 import com.waylau.hmos.shortvideo.player.VideoPlayer;
 import com.waylau.hmos.shortvideo.api.IVideoPlayer;
-import com.waylau.hmos.shortvideo.constant.Constants;
 import com.waylau.hmos.shortvideo.util.CommonUtil;
-import com.waylau.hmos.shortvideo.view.PlayerLoading;
-import com.waylau.hmos.shortvideo.view.PlayerView;
-import com.waylau.hmos.shortvideo.view.PlayerController;
 import com.waylau.hmos.shortvideo.provider.VideoPlayerPageSliderProvider;
 import com.waylau.hmos.shortvideo.util.LogUtil;
 import ohos.aafwk.ability.AbilitySlice;
@@ -20,7 +16,6 @@ import ohos.aafwk.content.Intent;
 import ohos.agp.components.PageSlider;
 import ohos.agp.components.TabList;
 import ohos.app.Context;
-import ohos.app.dispatcher.task.TaskPriority;
 import ohos.utils.zson.ZSONArray;
 
 import java.util.ArrayList;
@@ -34,9 +29,6 @@ import java.util.List;
  */
 public class MainAbilitySlice extends AbilitySlice {
     private static final String TAG = MainAbilitySlice.class.getSimpleName();
-    private PlayerView playerView;
-    private PlayerLoading loadingView;
-    private PlayerController controllerView;
 
     // 视频信息列表
     private final List<VideoInfo> videoInfoList = new ArrayList<>();
@@ -65,7 +57,6 @@ public class MainAbilitySlice extends AbilitySlice {
         // 处理视频对象
         for (VideoInfo bean : videoInfos) {
             IVideoPlayer player = new VideoPlayer.Builder(getContext()).setFilePath(bean.getVideoPath()).create();
-            player.getLifecycle().onStart();
             bean.setVideoPlayer(player);
         }
     }
@@ -123,7 +114,6 @@ public class MainAbilitySlice extends AbilitySlice {
 
                 IVideoPlayer player = getPlayer(itemPos);
                 player.getLifecycle().onForeground();
-                getGlobalTaskDispatcher(TaskPriority.DEFAULT).delayDispatch(() -> player.play(), Constants.NUMBER_1000);
             }
         });
 
@@ -162,9 +152,6 @@ public class MainAbilitySlice extends AbilitySlice {
     @Override
     protected void onStop() {
         LogUtil.info(TAG, "onStop is called");
-        loadingView.unbind();
-        controllerView.unbind();
-        playerView.unbind();
         getPlayer(index).getLifecycle().onStop();
         super.onStop();
     }
