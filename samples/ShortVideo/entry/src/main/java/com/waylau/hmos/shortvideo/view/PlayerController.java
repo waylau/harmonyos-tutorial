@@ -221,9 +221,9 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
 
             // 更新视图
             if (videoInfo.isFollow()) {
-                imageFollow.setPixelMap(ResourceTable.Media_ic_public_highlight_filled);
+                imageFollow.setPixelMap(ResourceTable.Media_ic_public_remove);
             } else {
-                imageFollow.setPixelMap(ResourceTable.Media_ic_public_highlight);
+                imageFollow.setPixelMap(ResourceTable.Media_ic_public_add_norm);
             }
         });
 
@@ -241,9 +241,9 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
 
             // 更新视图
             if (videoInfo.isThumbsUp()) {
-                imageThumbsup.setPixelMap(ResourceTable.Media_ic_public_thumbsup_filled);
+                imageThumbsup.setPixelMap(ResourceTable.Media_ic_public_favor_filled);
             } else {
-                imageThumbsup.setPixelMap(ResourceTable.Media_ic_public_thumbsup);
+                imageThumbsup.setPixelMap(ResourceTable.Media_ic_public_favor);
             }
 
             textThumbsUpCount.setText(videoInfo.getThumbsUpCount() + "");
@@ -324,7 +324,7 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
         textFavoriteCount.setText(videoInfo.getFavoriteCount() + "");
 
         if (videoInfo.isThumbsUp()) {
-            imageThumbsup.setPixelMap(ResourceTable.Media_ic_public_thumbsup_filled);
+            imageThumbsup.setPixelMap(ResourceTable.Media_ic_public_favor_filled);
         }
 
         if (videoInfo.isFavorite()) {
@@ -332,7 +332,7 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
         }
 
         if (videoInfo.isFollow()) {
-            imageFollow.setPixelMap(ResourceTable.Media_ic_public_highlight_filled);
+            imageFollow.setPixelMap(ResourceTable.Media_ic_public_remove);
         }
     }
 

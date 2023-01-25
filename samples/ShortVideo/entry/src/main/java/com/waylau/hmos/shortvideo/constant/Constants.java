@@ -20,10 +20,6 @@ public class Constants {
      */
     public static final float NUMBER_FLOAT_100 = 100f;
     /**
-     * 1000
-     */
-    public static final int NUMBER_1000 = 1000;
-    /**
      * running
      */
     public static final int PLAYER_PROGRESS_RUNNING = 0;

@@ -35,9 +35,9 @@
 
             <Image
                 ohos:id="$+id:image_follow"
-                ohos:height="33vp"
-                ohos:width="33vp"
-                ohos:image_src="$media:ic_public_highlight"
+                ohos:height="24vp"
+                ohos:width="24vp"
+                ohos:image_src="$media:ic_public_add_norm"
                 ohos:scale_mode="stretch"/>
 
         </DirectionalLayout>
@@ -70,7 +70,7 @@
             ohos:id="$+id:image_thumbsup"
             ohos:height="32vp"
             ohos:width="32vp"
-            ohos:image_src="$media:ic_public_thumbsup"
+            ohos:image_src="$media:ic_public_favor"
             ohos:scale_mode="stretch"/>
 
         <Text
