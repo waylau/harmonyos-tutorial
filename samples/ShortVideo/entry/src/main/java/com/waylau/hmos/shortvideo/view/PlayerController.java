@@ -251,7 +251,7 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
         // 更改显示
         imagePortrait.setPixelMap(CommonUtil.getImageSource(this.context, videoInfo.getPortrait()));
         // 设置圆角
-        imagePortrait.setCornerRadius(100f);
+        imagePortrait.setCornerRadius(Constants.NUMBER_FLOAT_100);
 
         textAuthor.setText(videoInfo.getAuthor());
         textContent.setText(videoInfo.getContent());

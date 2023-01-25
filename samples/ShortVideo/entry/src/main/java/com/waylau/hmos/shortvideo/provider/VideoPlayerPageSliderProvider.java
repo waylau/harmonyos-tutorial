@@ -72,6 +72,7 @@ public class VideoPlayerPageSliderProvider extends PageSliderProvider {
 
     @Override
     public void destroyPageFromContainer(ComponentContainer componentContainer, int i, Object o) {
+        LogUtil.info(TAG, "destroyPageFromContainer, i:" + i);
         componentContainer.removeComponent((Component)o);
     }
 

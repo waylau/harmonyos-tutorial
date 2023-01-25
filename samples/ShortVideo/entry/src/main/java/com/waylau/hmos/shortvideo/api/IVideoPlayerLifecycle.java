@@ -12,8 +12,6 @@ package com.waylau.hmos.shortvideo.api;
  */
 public interface IVideoPlayerLifecycle {
 
-    void onStart();
-
     void onForeground();
 
     void onBackground();
