@@ -13,6 +13,7 @@ import com.waylau.hmos.shortvideo.provider.VideoPlayerPageSliderProvider;
 import com.waylau.hmos.shortvideo.util.LogUtil;
 import ohos.aafwk.ability.AbilitySlice;
 import ohos.aafwk.content.Intent;
+import ohos.aafwk.content.Operation;
 import ohos.agp.components.PageSlider;
 import ohos.agp.components.TabList;
 import ohos.app.Context;
@@ -83,7 +84,34 @@ public class MainAbilitySlice extends AbilitySlice {
 
         // 各个Tab的宽度也会根据TabList的宽度而平均分配
         tabList.setFixedMode(true);
+
+        // 设置TabList选择事件
+        tabList.addTabSelectedListener(new TabList.TabSelectedListener() {
+            @Override
+            public void onSelected(TabList.Tab tab) {
+                // 当某个Tab从未选中状态变为选中状态时的回调
+                LogUtil.info(TAG, "TabList onSelected, position:" + tab.getPosition());
+
+                // 视频上传界面
+                if (tab.getPosition() == 1) {
+
+                }
+            }
+
+            @Override
+            public void onUnselected(TabList.Tab tab) {
+                // 当某个Tab从选中状态变为未选中状态时的回调
+                LogUtil.info(TAG, "TabList onUnselected, position:" + tab.getPosition());
+            }
+
+            @Override
+            public void onReselected(TabList.Tab tab) {
+                // 当某个Tab已处于选中状态，再次被点击时的状态回调
+                LogUtil.info(TAG, "TabList onReselected, position:" + tab.getPosition());
+            }
+        });
     }
+
 
     private void initPageSlider() {
         LogUtil.info(TAG, "initPageSlider is called");
