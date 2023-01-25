@@ -4,7 +4,9 @@
 
 package com.waylau.hmos.shortvideo.slice;
 
+import com.waylau.hmos.shortvideo.MePageAbility;
 import com.waylau.hmos.shortvideo.ResourceTable;
+import com.waylau.hmos.shortvideo.VideoUploadPageAbility;
 import com.waylau.hmos.shortvideo.bean.VideoInfo;
 import com.waylau.hmos.shortvideo.player.VideoPlayer;
 import com.waylau.hmos.shortvideo.api.IVideoPlayer;
@@ -33,7 +35,9 @@ public class MainAbilitySlice extends AbilitySlice {
 
     // 视频信息列表
     private final List<VideoInfo> videoInfoList = new ArrayList<>();
-    int index = 0;
+    private int index = 0;
+    private TabList tabList;
+    private TabList.Tab tabMain;
 
     @Override
     public void onStart(Intent intent) {
@@ -71,10 +75,10 @@ public class MainAbilitySlice extends AbilitySlice {
     }
 
     private void initTabList() {
-        TabList tabList = (TabList)findComponentById(ResourceTable.Id_tab_list);
-        TabList.Tab tab = tabList.new Tab(getContext());
-        tab.setText("首页");
-        tabList.addTab(tab, true); // 默认选中
+        tabList = (TabList)findComponentById(ResourceTable.Id_tab_list);
+        tabMain = tabList.new Tab(getContext());
+        tabMain.setText("首页");
+        tabList.addTab(tabMain, true); // 默认选中
         TabList.Tab tab2 = tabList.new Tab(getContext());
         tab2.setText("✚");
         tabList.addTab(tab2);
@@ -89,12 +93,16 @@ public class MainAbilitySlice extends AbilitySlice {
         tabList.addTabSelectedListener(new TabList.TabSelectedListener() {
             @Override
             public void onSelected(TabList.Tab tab) {
+                int position = tab.getPosition();
                 // 当某个Tab从未选中状态变为选中状态时的回调
-                LogUtil.info(TAG, "TabList onSelected, position:" + tab.getPosition());
+                LogUtil.info(TAG, "TabList onSelected, position: " + position);
 
-                // 视频上传界面
-                if (tab.getPosition() == 1) {
-
+                if (position == 1) {
+                    // 视频上传界面
+                    startVideoUploadAbility();
+                } else if (position == 2) {
+                    // “我”界面
+                    startMeAbility();
                 }
             }
 
@@ -112,6 +120,33 @@ public class MainAbilitySlice extends AbilitySlice {
         });
     }
 
+    private void startVideoUploadAbility() {
+        LogUtil.info(TAG, "before doCall");
+        Intent intent = new Intent();
+        Operation operation = new Intent.OperationBuilder()
+            .withAbilityName(VideoUploadPageAbility.class)
+            .withBundleName("com.waylau.hmos.shortvideo")
+            .build();
+
+        intent.setOperation(operation);
+
+        // 启动Ability
+        startAbility(intent);
+    }
+
+    private void startMeAbility() {
+        LogUtil.info(TAG, "before doCall");
+        Intent intent = new Intent();
+        Operation operation = new Intent.OperationBuilder()
+                .withAbilityName(MePageAbility.class)
+                .withBundleName("com.waylau.hmos.shortvideo")
+                .build();
+
+        intent.setOperation(operation);
+
+        // 启动Ability
+        startAbility(intent);
+    }
 
     private void initPageSlider() {
         LogUtil.info(TAG, "initPageSlider is called");
@@ -167,6 +202,9 @@ public class MainAbilitySlice extends AbilitySlice {
     public void onForeground(Intent intent) {
         LogUtil.info(TAG, "onForeground is called");
         getPlayer(index).getLifecycle().onForeground();
+
+        // 首页选中
+        tabList.selectTab(tabMain);
         super.onForeground(intent);
     }
 
