@@ -46,6 +46,26 @@
         "label": "$string:app_name",
         "type": "page",
         "launchType": "standard"
+      },
+      {
+        "name": "com.waylau.hmos.shortvideo.VideoUploadPageAbility",
+        "description": "$string:videouploadpageability_description",
+        "icon": "$media:icon",
+        "label": "$string:entry_VideoUploadPageAbility",
+        "launchType": "standard",
+        "orientation": "unspecified",
+        "visible": true,
+        "type": "page"
+      },
+      {
+        "name": "com.waylau.hmos.shortvideo.MePageAbility",
+        "description": "$string:mepageability_description",
+        "icon": "$media:icon",
+        "label": "$string:entry_MePageAbility",
+        "launchType": "standard",
+        "orientation": "unspecified",
+        "visible": true,
+        "type": "page"
       }
     ],
     "reqPermissions": [
