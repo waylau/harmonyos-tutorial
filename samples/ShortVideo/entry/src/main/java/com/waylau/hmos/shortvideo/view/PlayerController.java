@@ -13,6 +13,7 @@ import com.waylau.hmos.shortvideo.constant.Constants;
 import com.waylau.hmos.shortvideo.constant.PlayerStatusEnum;
 import com.waylau.hmos.shortvideo.util.CommonUtil;
 import com.waylau.hmos.shortvideo.util.DateUtil;
+import com.waylau.hmos.shortvideo.util.LogUtil;
 import ohos.agp.colors.RgbColor;
 import ohos.agp.components.*;
 import ohos.agp.components.element.ShapeElement;
@@ -28,6 +29,7 @@ import ohos.eventhandler.InnerEvent;
  * @since 2023-01-23
  */
 public class PlayerController extends ComponentContainer implements IVideoInfoBinding {
+    private static final String TAG = PlayerController.class.getSimpleName();
     private static final int THUMB_RED = 255;
     private static final int THUMB_GREEN = 255;
     private static final int THUMB_BLUE = 240;
@@ -51,10 +53,10 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
     private Image imageFollow;
     private Image imageThumbsup;
     private Image imageComment;
-    private Image imageFavorit;
+    private Image imageFavorite;
     private Text textCommentCount;
     private Text textThumbsUpCount;
-    private Text textFavoritCount;
+    private Text textFavoriteCount;
 
     private ControllerHandler controllerHandler;
     private StatuChangeListener mStatuChangeListener = new StatuChangeListener() {
@@ -160,10 +162,10 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
         imageFollow = (Image)playerController.findComponentById(ResourceTable.Id_image_follow);
         imageThumbsup = (Image)playerController.findComponentById(ResourceTable.Id_image_thumbsup);
         imageComment = (Image)playerController.findComponentById(ResourceTable.Id_image_comment);
-        imageFavorit = (Image)playerController.findComponentById(ResourceTable.Id_image_favorit);
+        imageFavorite = (Image)playerController.findComponentById(ResourceTable.Id_image_favorit);
         textThumbsUpCount = (Text)playerController.findComponentById(ResourceTable.Id_text_thumbs_up_count);
         textCommentCount = (Text)playerController.findComponentById(ResourceTable.Id_text_comment_count);
-        textFavoritCount = (Text)playerController.findComponentById(ResourceTable.Id_text_favorit_count);
+        textFavoriteCount = (Text)playerController.findComponentById(ResourceTable.Id_text_favorit_count);
     }
 
     private void initListener() {
@@ -205,6 +207,68 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
                     videoPlayer.rewindTo(getBasicTransTime(slider.getProgress()));
                 }
             }
+        });
+
+        imageFollow.setClickedListener(component -> {
+            LogUtil.info(TAG, "imageFollow Clicked");
+
+            // 更新值
+            if (videoInfo.isFollow()) {
+                videoInfo.setFollow(Boolean.FALSE);
+            } else {
+                videoInfo.setFollow(Boolean.TRUE);
+            }
+
+            // 更新视图
+            if (videoInfo.isFollow()) {
+                imageFollow.setPixelMap(ResourceTable.Media_ic_public_highlight_filled);
+            } else {
+                imageFollow.setPixelMap(ResourceTable.Media_ic_public_highlight);
+            }
+        });
+
+        imageThumbsup.setClickedListener(component -> {
+            LogUtil.info(TAG, "imageThumbsup Clicked");
+
+            // 更新值
+            if (videoInfo.isThumbsUp()) {
+                videoInfo.setThumbsUp(Boolean.FALSE);
+                videoInfo.setThumbsUpCount(videoInfo.getThumbsUpCount() - 1);
+            } else {
+                videoInfo.setThumbsUp(Boolean.TRUE);
+                videoInfo.setThumbsUpCount(videoInfo.getThumbsUpCount() + 1);
+            }
+
+            // 更新视图
+            if (videoInfo.isThumbsUp()) {
+                imageThumbsup.setPixelMap(ResourceTable.Media_ic_public_thumbsup_filled);
+            } else {
+                imageThumbsup.setPixelMap(ResourceTable.Media_ic_public_thumbsup);
+            }
+
+            textThumbsUpCount.setText(videoInfo.getThumbsUpCount() + "");
+        });
+
+        imageFavorite.setClickedListener(component -> {
+            LogUtil.info(TAG, "imageFavorit Clicked");
+
+            // 更新值
+            if (videoInfo.isFavorite()) {
+                videoInfo.setFavorite(Boolean.FALSE);
+                videoInfo.setFavoriteCount(videoInfo.getFavoriteCount() - 1);
+            } else {
+                videoInfo.setFavorite(Boolean.TRUE);
+                videoInfo.setFavoriteCount(videoInfo.getFavoriteCount() + 1);
+            }
+
+            // 更新视图
+            if (videoInfo.isFavorite()) {
+                imageFavorite.setPixelMap(ResourceTable.Media_ic_public_highlightsed);
+            } else {
+                imageFavorite.setPixelMap(ResourceTable.Media_ic_public_highlights);
+            }
+
+            textFavoriteCount.setText(videoInfo.getFavoriteCount() + "");
         });
     }
 
@@ -257,14 +321,14 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
         textContent.setText(videoInfo.getContent());
         textThumbsUpCount.setText(videoInfo.getThumbsUpCount() + "");
         textCommentCount.setText(videoInfo.getCommentCount() + "");
-        textFavoritCount.setText(videoInfo.getFavoriteCount() + "");
+        textFavoriteCount.setText(videoInfo.getFavoriteCount() + "");
 
         if (videoInfo.isThumbsUp()) {
             imageThumbsup.setPixelMap(ResourceTable.Media_ic_public_thumbsup_filled);
         }
 
         if (videoInfo.isFavorite()) {
-            imageFavorit.setPixelMap(ResourceTable.Media_ic_public_highlightsed);
+            imageFavorite.setPixelMap(ResourceTable.Media_ic_public_highlightsed);
         }
 
         if (videoInfo.isFollow()) {
