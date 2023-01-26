@@ -10,7 +10,6 @@
         ohos:id="$+id:text_helloworld"
         ohos:height="match_content"
         ohos:width="match_content"
-        ohos:background_element="$graphic:background_ability_video_upload_layout"
         ohos:layout_alignment="horizontal_center"
         ohos:text="视频上传"
         ohos:text_size="40vp"

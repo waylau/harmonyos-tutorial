@@ -18,7 +18,6 @@ import ohos.aafwk.content.Intent;
 import ohos.aafwk.content.Operation;
 import ohos.agp.components.PageSlider;
 import ohos.agp.components.TabList;
-import ohos.app.Context;
 import ohos.utils.zson.ZSONArray;
 
 import java.util.ArrayList;
@@ -44,6 +43,7 @@ public class MainAbilitySlice extends AbilitySlice {
         super.onStart(intent);
         super.setUIContent(ResourceTable.Layout_ability_main);
 
+        // 初始化数据
         initData();
 
         // 初始化UI组件
@@ -121,7 +121,7 @@ public class MainAbilitySlice extends AbilitySlice {
     }
 
     private void startVideoUploadAbility() {
-        LogUtil.info(TAG, "before doCall");
+        LogUtil.info(TAG, "before startVideoUploadAbility");
         Intent intent = new Intent();
         Operation operation = new Intent.OperationBuilder()
             .withAbilityName(VideoUploadPageAbility.class)
@@ -135,7 +135,7 @@ public class MainAbilitySlice extends AbilitySlice {
     }
 
     private void startMeAbility() {
-        LogUtil.info(TAG, "before doCall");
+        LogUtil.info(TAG, "before startMeAbility");
         Intent intent = new Intent();
         Operation operation = new Intent.OperationBuilder()
                 .withAbilityName(MePageAbility.class)
@@ -186,10 +186,6 @@ public class MainAbilitySlice extends AbilitySlice {
     private IVideoPlayer getPlayer(int itemPos) {
         VideoInfo videoInfo = videoInfoList.get(itemPos);
         return videoInfo.getVideoPlayer();
-    }
-
-    Context getMainContext() {
-        return this;
     }
 
     @Override

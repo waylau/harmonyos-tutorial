@@ -1,19 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<DirectionalLayout
+<DependentLayout
     xmlns:ohos="http://schemas.huawei.com/res/ohos"
     ohos:height="match_parent"
     ohos:width="match_parent"
-    ohos:alignment="center"
-    ohos:orientation="vertical">
+    ohos:margin="2vp">
 
-    <Text
-        ohos:id="$+id:text_helloworld"
+    <!--个人信息展示区-->
+    <DirectionalLayout
+        ohos:id="$+id:layout_me_info"
         ohos:height="match_content"
-        ohos:width="match_content"
-        ohos:background_element="$graphic:background_ability_me_layout"
-        ohos:layout_alignment="horizontal_center"
-        ohos:text="Me"
-        ohos:text_size="40vp"
-        />
+        ohos:width="match_parent"
+        ohos:orientation="vertical">
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:alignment="vertical_center"
+            ohos:orientation="horizontal">
 
-</DirectionalLayout>
+            <Image
+                ohos:id="$+id:image_me_portrait"
+                ohos:height="60vp"
+                ohos:width="60vp"
+                ohos:image_src="$media:ic_user_portrait"
+                ohos:scale_mode="stretch"/>
+
+            <Text
+                ohos:id="$+id:text_me_author"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text="未登录"
+                ohos:text_size="25fp"
+                ohos:text_weight="700"/>
+
+        </DirectionalLayout>
+        <TabList
+            ohos:id="$+id:tab_me_video_list"
+            ohos:height="40vp"
+            ohos:width="match_parent"
+            ohos:normal_text_color="#999999"
+            ohos:orientation="horizontal"
+            ohos:tab_margin="2vp"
+            ohos:selected_tab_indicator_color="#000000"
+            ohos:selected_tab_indicator_height="2vp"
+            ohos:selected_text_color="#000000"
+            ohos:text_size="25fp"
+            ohos:text_alignment="center"/>
+
+    </DirectionalLayout>
+
+    <!--视频列表-->
+    <ListContainer
+        ohos:id="$+id:list_container_video_list"
+        ohos:below="$id:layout_me_info"
+        ohos:above="$id:tab_list_me"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:background_element="#FFEEECEC"/>
+
+    <!--导航栏-->
+    <TabList
+        ohos:id="$+id:tab_list_me"
+        ohos:height="50vp"
+        ohos:width="match_parent"
+        ohos:align_parent_bottom="true"
+        ohos:horizontal_center="true"
+        ohos:layout_alignment="bottom"
+        ohos:normal_text_color="#999999"
+        ohos:orientation="horizontal"
+        ohos:selected_tab_indicator_color="#000000"
+        ohos:selected_tab_indicator_height="2vp"
+        ohos:selected_text_color="#000000"
+        ohos:text_alignment="center"/>
+
+</DependentLayout>
