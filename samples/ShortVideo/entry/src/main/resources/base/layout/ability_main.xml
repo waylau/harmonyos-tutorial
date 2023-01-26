@@ -2,7 +2,8 @@
 <DependentLayout
     xmlns:ohos="http://schemas.huawei.com/res/ohos"
     ohos:height="match_parent"
-    ohos:width="match_parent">
+    ohos:width="match_parent"
+    ohos:margin="2vp">
 
     <!--视频滑动播放-->
     <PageSlider

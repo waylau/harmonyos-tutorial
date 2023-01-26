@@ -33,16 +33,16 @@ public class VideoPlayerPageSliderProvider extends PageSliderProvider {
 
     // 数据源，每个页面对应list中的一项
     private List<VideoInfo> list;
-    private Context mContext;
+    private Context context;
 
     public VideoPlayerPageSliderProvider(List<VideoInfo> list, Context context) {
         this.list = list;
-        this.mContext = context;
+        this.context = context;
     }
 
     @Override
     public int getCount() {
-        return list.size();
+        return list == null ? 0 : list.size();
     }
 
     @Override
@@ -50,7 +50,7 @@ public class VideoPlayerPageSliderProvider extends PageSliderProvider {
         LogUtil.info(TAG, "createPageInContainer, i:" + i);
 
         Component videoPlayerViewLayout =
-            LayoutScatter.getInstance(mContext).parse(ResourceTable.Layout_video_player_view_layout, null, false);
+            LayoutScatter.getInstance(context).parse(ResourceTable.Layout_video_player_view_layout, null, false);
         playerView = (PlayerView)videoPlayerViewLayout.findComponentById(ResourceTable.Id_player_view);
         loadingView = (PlayerLoading)videoPlayerViewLayout.findComponentById(ResourceTable.Id_loading_view);
         controllerView = (PlayerController)videoPlayerViewLayout.findComponentById(ResourceTable.Id_controller_view);

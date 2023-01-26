@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="108vp"
+    ohos:width="match_parent"
+    ohos:orientation="horizontal"
+    ohos:margin="2vp"
+    >
+
+    <Image
+        ohos:id="$+id:image_item_video_cover"
+        ohos:height="108vp"
+        ohos:width="80vp"
+        ohos:image_src="$media:ic_user_portrait"
+        ohos:scale_mode="stretch"/>
+
+    <Text
+        ohos:id="$+id:text_item_video_content"
+        ohos:height="match_content"
+        ohos:width="240vp"
+        ohos:max_text_lines="2"
+        ohos:multiple_lines="true"
+        ohos:text="HarmonyOS是一款面向万物互联时代的、全新的分布式操作系统。"
+        ohos:text_size="16fp"
+        ohos:margin="2vp"/>
+
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:orientation="vertical"
+        ohos:margin="2vp">
+
+        <Button
+            ohos:width="50vp"
+            ohos:height="24vp"
+            ohos:text_size="16fp"
+            ohos:text="编辑"
+            ohos:margin="2vp"
+            ohos:text_color="#FFFFFF"
+            ohos:background_element="$graphic:background_button_blue"
+            />
+
+        <Button
+            ohos:width="50vp"
+            ohos:height="24vp"
+            ohos:text_size="16fp"
+            ohos:text="删除"
+            ohos:margin="2vp"
+            ohos:text_color="#FFFFFF"
+            ohos:background_element="$graphic:background_button_red"
+            />
+    </DirectionalLayout>
+</DirectionalLayout>

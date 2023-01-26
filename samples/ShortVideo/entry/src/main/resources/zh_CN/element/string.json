@@ -1,28 +1,4 @@
 {
   "string": [
-    {
-      "name": "videouploadpageability_description",
-      "value": "Java_Empty Ability"
-    },
-    {
-      "name": "videouploadpageability_HelloWorld",
-      "value": "你好，世界"
-    },
-    {
-      "name": "entry_VideoUploadPageAbility",
-      "value": "entry_VideoUploadPageAbility"
-    },
-    {
-      "name": "mepageability_description",
-      "value": "Java_Empty Ability"
-    },
-    {
-      "name": "mepageability_HelloWorld",
-      "value": "你好，世界"
-    },
-    {
-      "name": "entry_MePageAbility",
-      "value": "entry_MePageAbility"
-    }
   ]
 }

@@ -5,7 +5,6 @@
 package com.waylau.hmos.shortvideo.bean;
 
 import com.waylau.hmos.shortvideo.api.IVideoPlayer;
-import ohos.agp.graphics.Surface;
 
 /**
  * 视频信息实体 视频路径、作者、内容、评论
@@ -22,6 +21,9 @@ public class VideoInfo {
 
     // 头像
     private String portrait;
+
+    // 封面
+    private String coverPath;
 
     // 内容
     private String content;
@@ -135,4 +137,11 @@ public class VideoInfo {
         VideoPlayer = videoPlayer;
     }
 
+    public String getCoverPath() {
+        return coverPath;
+    }
+
+    public void setCoverPath(String coverPath) {
+        this.coverPath = coverPath;
+    }
 }

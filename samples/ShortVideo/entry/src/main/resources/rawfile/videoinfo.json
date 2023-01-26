@@ -1,6 +1,7 @@
 [
   {
     "id": 0,
+    "coverPath": "entry/resources/rawfile/video_cover_00.jpg",
     "videoPath": "entry/resources/rawfile/video_00.mp4",
     "author": "好物推荐",
     "portrait": "entry/resources/rawfile/portrait_00.jpeg",
@@ -14,6 +15,7 @@
   },
   {
     "id": 1,
+    "coverPath": "entry/resources/rawfile/video_cover_01.jpg",
     "videoPath": "entry/resources/rawfile/video_01.mp4",
     "author": "科技速递",
     "portrait": "entry/resources/rawfile/portrait_01.jpeg",
@@ -26,7 +28,36 @@
     "isFavorite": true
   },
   {
+    "id": 2,
+    "coverPath": "entry/resources/rawfile/video_cover_02.jpg",
+    "videoPath": "entry/resources/rawfile/video_02.mp4",
+    "author": "小和尚",
+    "portrait": "entry/resources/rawfile/portrait_01.jpeg",
+    "content": "小和尚讲经，领悟人生就是这两个字",
+    "thumbsUpCount": 1,
+    "commentCount": 2,
+    "favoriteCount": 3,
+    "isFollow": true,
+    "isThumbsUp": true,
+    "isFavorite": true
+  },
+  {
+    "id": 3,
+    "coverPath": "entry/resources/rawfile/video_cover_03.jpg",
+    "videoPath": "entry/resources/rawfile/video_03.mp4",
+    "author": "志在",
+    "portrait": "entry/resources/rawfile/portrait_03.jpeg",
+    "content": "把不能咽下的气咽下，也是一种修为和能力！",
+    "thumbsUpCount": 1,
+    "commentCount": 2,
+    "favoriteCount": 3,
+    "isFollow": true,
+    "isThumbsUp": true,
+    "isFavorite": true
+  },
+  {
     "id": 4,
+    "coverPath": "entry/resources/rawfile/video_cover_04.jpg",
     "videoPath": "entry/resources/rawfile/video_04.mp4",
     "author": "真爱生活",
     "portrait": "entry/resources/rawfile/portrait_04.jpeg",
@@ -40,6 +71,7 @@
   },
   {
     "id": 5,
+    "coverPath": "entry/resources/rawfile/video_cover_05.jpg",
     "videoPath": "entry/resources/rawfile/video_05.mp4",
     "author": "夏琳",
     "portrait": "entry/resources/rawfile/portrait_05.jpeg",
@@ -53,6 +85,7 @@
   },
   {
     "id": 6,
+    "coverPath": "entry/resources/rawfile/video_cover_06.jpg",
     "videoPath": "entry/resources/rawfile/video_06.mp4",
     "author": "加油男人",
     "portrait": "entry/resources/rawfile/portrait_06.jpeg",
@@ -66,6 +99,7 @@
   },
   {
     "id": 7,
+    "coverPath": "entry/resources/rawfile/video_cover_07.jpg",
     "videoPath": "entry/resources/rawfile/video_07.mp4",
     "author": "料理王",
     "portrait": "entry/resources/rawfile/portrait_07.jpeg",
