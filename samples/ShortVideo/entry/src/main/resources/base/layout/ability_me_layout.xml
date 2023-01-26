@@ -33,6 +33,7 @@
                 ohos:text_weight="700"/>
 
         </DirectionalLayout>
+
         <TabList
             ohos:id="$+id:tab_me_video_list"
             ohos:height="40vp"

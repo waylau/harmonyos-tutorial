@@ -32,6 +32,11 @@ public class Constants {
      */
     public static final int PLAYER_CONTROLLER_SHOW = 2;
 
+    /**
+     * 用户名
+     */
+    public static final String LOGIN_USERNAME = "LOGIN_USERNAME";
+
     private Constants() {
     }
 }
