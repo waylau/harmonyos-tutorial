@@ -7,6 +7,7 @@ package com.waylau.hmos.shortvideo.slice;
 import com.waylau.hmos.shortvideo.MePageAbility;
 import com.waylau.hmos.shortvideo.ResourceTable;
 import com.waylau.hmos.shortvideo.VideoUploadPageAbility;
+import com.waylau.hmos.shortvideo.bean.UserInfo;
 import com.waylau.hmos.shortvideo.bean.VideoInfo;
 import com.waylau.hmos.shortvideo.player.VideoPlayer;
 import com.waylau.hmos.shortvideo.api.IVideoPlayer;
@@ -31,7 +32,7 @@ import java.util.List;
  */
 public class MainAbilitySlice extends AbilitySlice {
     private static final String TAG = MainAbilitySlice.class.getSimpleName();
-
+    private UserInfo userInfo = new UserInfo();
     // 视频信息列表
     private final List<VideoInfo> videoInfoList = new ArrayList<>();
     private int index = 0;
@@ -123,10 +124,8 @@ public class MainAbilitySlice extends AbilitySlice {
     private void startVideoUploadAbility() {
         LogUtil.info(TAG, "before startVideoUploadAbility");
         Intent intent = new Intent();
-        Operation operation = new Intent.OperationBuilder()
-            .withAbilityName(VideoUploadPageAbility.class)
-            .withBundleName("com.waylau.hmos.shortvideo")
-            .build();
+        Operation operation = new Intent.OperationBuilder().withAbilityName(VideoUploadPageAbility.class)
+            .withBundleName("com.waylau.hmos.shortvideo").build();
 
         intent.setOperation(operation);
 
@@ -137,10 +136,8 @@ public class MainAbilitySlice extends AbilitySlice {
     private void startMeAbility() {
         LogUtil.info(TAG, "before startMeAbility");
         Intent intent = new Intent();
-        Operation operation = new Intent.OperationBuilder()
-                .withAbilityName(MePageAbility.class)
-                .withBundleName("com.waylau.hmos.shortvideo")
-                .build();
+        Operation operation = new Intent.OperationBuilder().withAbilityName(MePageAbility.class)
+            .withBundleName("com.waylau.hmos.shortvideo").build();
 
         intent.setOperation(operation);
 

@@ -21,6 +21,12 @@ import ohos.utils.zson.ZSONArray;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * “我”页面
+ *
+ * @author <a href="https://waylau.com">Way Lau</a>
+ * @since 2023-01-26
+ */
 public class MePageAbilitySlice extends AbilitySlice {
     private static final String TAG = MePageAbilitySlice.class.getSimpleName();
 
