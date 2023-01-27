@@ -20,7 +20,7 @@ public class VideoInfo {
     private String author;
 
     // 头像
-    private String portrait;
+    private String portraitPath;
 
     // 封面
     private String coverPath;
@@ -65,12 +65,12 @@ public class VideoInfo {
         this.author = author;
     }
 
-    public String getPortrait() {
-        return portrait;
+    public String getPortraitPath() {
+        return portraitPath;
     }
 
-    public void setPortrait(String portrait) {
-        this.portrait = portrait;
+    public void setPortraitPath(String portraitPath) {
+        this.portraitPath = portraitPath;
     }
 
     public String getContent() {

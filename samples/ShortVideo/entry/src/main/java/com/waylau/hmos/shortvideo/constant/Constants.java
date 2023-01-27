@@ -37,6 +37,11 @@ public class Constants {
      */
     public static final String LOGIN_USERNAME = "LOGIN_USERNAME";
 
+    /**
+     * 图片选择
+     */
+    public static final String IMAGE_SELECTION = "IMAGE_SELECTION";
+
     private Constants() {
     }
 }

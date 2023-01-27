@@ -32,9 +32,8 @@ public class WelcomeAbilitySlice extends AbilitySlice {
         if (userInfo.getUsername() == null) {
             presentForResult(new RegisterAbilitySlice(), new Intent(), 0);
         } else {
-
+            // 展示主页
             present(new MainAbilitySlice(), new Intent());
-
         }
     }
 
@@ -53,7 +52,7 @@ public class WelcomeAbilitySlice extends AbilitySlice {
         LogUtil.info(TAG, "onResult requestCode:" + requestCode + "; resultIntent:" + resultIntent);
         if (requestCode == 0) {
             userInfo.setUsername(resultIntent.getStringParam(Constants.LOGIN_USERNAME));
-
+            userInfo.setPortraitPath(resultIntent.getStringParam(Constants.IMAGE_SELECTION));
             // 再次检查登陆
             checkForUse(userInfo);
         } else {
