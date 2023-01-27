@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <Text
+        ohos:id="$+id:text_no_image_tip"
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        ohos:text="Opening..."
+        ohos:text_alignment="center"
+        ohos:text_size="45fp"></Text>
+
+    <TableLayout
+        ohos:id="$+id:tablelayout_image_list"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:column_count="4">
+
+
+    </TableLayout>
+
+</DirectionalLayout>

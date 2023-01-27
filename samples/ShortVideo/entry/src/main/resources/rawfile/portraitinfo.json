@@ -1,0 +1,34 @@
+[
+  {
+    "id": 0,
+    "portraitPath": "entry/resources/rawfile/portrait_00.jpeg"
+  },
+  {
+    "id": 1,
+    "portraitPath": "entry/resources/rawfile/portrait_01.jpeg"
+  },
+  {
+    "id": 2,
+    "portraitPath": "entry/resources/rawfile/portrait_02.jpeg"
+  },
+  {
+    "id": 3,
+    "portraitPath": "entry/resources/rawfile/portrait_03.jpeg"
+  },
+  {
+    "id": 4,
+    "portraitPath": "entry/resources/rawfile/portrait_04.jpeg"
+  },
+  {
+    "id": 5,
+    "portraitPath": "entry/resources/rawfile/portrait_05.jpeg"
+  },
+  {
+    "id": 6,
+    "portraitPath": "entry/resources/rawfile/portrait_06.jpeg"
+  },
+  {
+    "id": 7,
+    "portraitPath": "entry/resources/rawfile/portrait_07.jpeg"
+  }
+]
