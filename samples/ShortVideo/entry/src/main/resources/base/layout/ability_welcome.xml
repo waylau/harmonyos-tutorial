@@ -6,11 +6,17 @@
     ohos:alignment="center"
     ohos:orientation="vertical">
 
+    <Text
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        ohos:text="Short Video"
+        ohos:text_alignment="center"
+        ohos:text_size="45fp"></Text>
+
     <Image
         ohos:id="$+id:image"
-        ohos:width="match_content"
         ohos:height="match_content"
-        ohos:layout_alignment="center"
+        ohos:width="match_content"
         ohos:image_src="$media:icon"/>
 
 </DirectionalLayout>

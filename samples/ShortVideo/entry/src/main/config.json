@@ -48,7 +48,7 @@
         "launchType": "standard"
       },
       {
-        "name": "com.waylau.hmos.shortvideo.VideoUploadPageAbility",
+        "name": "com.waylau.hmos.shortvideo.VideoPublishPageAbility",
         "description": "$string:videouploadpageability_description",
         "icon": "$media:icon",
         "label": "$string:entry_VideoUploadPageAbility",

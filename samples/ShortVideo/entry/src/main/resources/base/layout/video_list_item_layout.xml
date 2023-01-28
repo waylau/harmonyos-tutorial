@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DirectionalLayout
     xmlns:ohos="http://schemas.huawei.com/res/ohos"
-    ohos:height="108vp"
+    ohos:height="180vp"
     ohos:width="match_parent"
     ohos:orientation="horizontal"
     ohos:margin="2vp"
@@ -9,15 +9,15 @@
 
     <Image
         ohos:id="$+id:image_item_video_cover"
-        ohos:height="108vp"
-        ohos:width="80vp"
+        ohos:height="180vp"
+        ohos:width="136vp"
         ohos:image_src="$media:ic_user_portrait"
         ohos:scale_mode="stretch"/>
 
     <Text
         ohos:id="$+id:text_item_video_content"
         ohos:height="match_content"
-        ohos:width="240vp"
+        ohos:width="160vp"
         ohos:max_text_lines="2"
         ohos:multiple_lines="true"
         ohos:text="HarmonyOS是一款面向万物互联时代的、全新的分布式操作系统。"

@@ -10,7 +10,7 @@
         ohos:id="$+id:image_register_user_portrait"
         ohos:height="108vp"
         ohos:width="108vp"
-        ohos:image_src="$media:ic_user_portrait"
+        ohos:image_src="$media:ic_portraitmaleplus"
         ohos:layout_alignment="horizontal_center"
         ohos:scale_mode="stretch"
         ohos:top_margin="100vp"/>
@@ -18,7 +18,7 @@
     <TextField
         ohos:id="$+id:textfield_username"
         ohos:height="50vp"
-        ohos:width="319vp"
+        ohos:width="320vp"
         ohos:background_element="#FFFFFF"
         ohos:hint="请输入账号"
         ohos:hint_color="#999999"
@@ -31,7 +31,7 @@
     <TextField
         ohos:id="$+id:textfield_password"
         ohos:height="50vp"
-        ohos:width="319vp"
+        ohos:width="320vp"
         ohos:background_element="#FFFFFF"
         ohos:hint="请输入密码"
         ohos:hint_color="#999999"
@@ -45,10 +45,10 @@
     <Button
         ohos:id="$+id:button_login"
         ohos:height="50vp"
-        ohos:width="319vp"
+        ohos:width="320vp"
         ohos:background_element="$graphic:background_button_blue"
         ohos:layout_alignment="horizontal_center"
-        ohos:text="登录/注册"
+        ohos:text="注册/登录"
         ohos:text_alignment="center"
         ohos:text_color="#fefefe"
         ohos:text_size="24vp"

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:background_element="#DDDDDD"
+    ohos:orientation="vertical">
+
+    <Image
+        ohos:id="$+id:image_video_cover"
+        ohos:height="180vp"
+        ohos:width="136vp"
+        ohos:image_src="$media:ic_video_upload"
+        ohos:layout_alignment="horizontal_center"
+        ohos:scale_mode="stretch"
+        ohos:top_margin="100vp"/>
+
+    <TextField
+        ohos:id="$+id:textfield_video_content"
+        ohos:height="100vp"
+        ohos:width="320vp"
+        ohos:multiple_lines="true"
+        ohos:max_text_lines="3"
+        ohos:background_element="#FFFFFF"
+        ohos:hint="请输入视频内容"
+        ohos:hint_color="#999999"
+        ohos:layout_alignment="horizontal_center"
+        ohos:text_alignment="start"
+        ohos:text_size="24fp"
+        ohos:top_margin="28vp"
+        />
+
+    <Button
+        ohos:id="$+id:button_video_publish"
+        ohos:height="50vp"
+        ohos:width="320vp"
+        ohos:background_element="$graphic:background_button_blue"
+        ohos:layout_alignment="horizontal_center"
+        ohos:text="发布"
+        ohos:text_alignment="center"
+        ohos:text_color="#fefefe"
+        ohos:text_size="24vp"
+        ohos:top_margin="28vp"
+        />
+
+</DirectionalLayout>
