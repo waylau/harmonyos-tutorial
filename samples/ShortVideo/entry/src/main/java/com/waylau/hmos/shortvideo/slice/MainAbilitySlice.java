@@ -9,6 +9,7 @@ import com.waylau.hmos.shortvideo.ResourceTable;
 import com.waylau.hmos.shortvideo.VideoUploadPageAbility;
 import com.waylau.hmos.shortvideo.bean.UserInfo;
 import com.waylau.hmos.shortvideo.bean.VideoInfo;
+import com.waylau.hmos.shortvideo.constant.Constants;
 import com.waylau.hmos.shortvideo.player.VideoPlayer;
 import com.waylau.hmos.shortvideo.api.IVideoPlayer;
 import com.waylau.hmos.shortvideo.util.CommonUtil;
@@ -44,11 +45,14 @@ public class MainAbilitySlice extends AbilitySlice {
         super.onStart(intent);
         super.setUIContent(ResourceTable.Layout_ability_main);
 
+        userInfo.setUsername(intent.getStringParam(Constants.LOGIN_USERNAME));
+        userInfo.setPortraitPath(intent.getStringParam(Constants.IMAGE_SELECTION));
+
         // 初始化数据
         initData();
 
         // 初始化UI组件
-        initUi();
+        initUi(intent);
     }
 
     private void initData() {
@@ -67,15 +71,15 @@ public class MainAbilitySlice extends AbilitySlice {
         }
     }
 
-    private void initUi() {
+    private void initUi(Intent intent) {
         // 初始化TabList标签栏
-        initTabList();
+        initTabList(intent);
 
         // 初始化PageSlider
         initPageSlider();
     }
 
-    private void initTabList() {
+    private void initTabList(Intent intent) {
         tabList = (TabList)findComponentById(ResourceTable.Id_tab_list);
         tabMain = tabList.new Tab(getContext());
         tabMain.setText("首页");
@@ -103,7 +107,7 @@ public class MainAbilitySlice extends AbilitySlice {
                     startVideoUploadAbility();
                 } else if (position == 2) {
                     // “我”界面
-                    startMeAbility();
+                    startMeAbility(intent);
                 }
             }
 
@@ -133,9 +137,9 @@ public class MainAbilitySlice extends AbilitySlice {
         startAbility(intent);
     }
 
-    private void startMeAbility() {
+    private void startMeAbility(Intent intent) {
         LogUtil.info(TAG, "before startMeAbility");
-        Intent intent = new Intent();
+
         Operation operation = new Intent.OperationBuilder().withAbilityName(MePageAbility.class)
             .withBundleName("com.waylau.hmos.shortvideo").build();
 

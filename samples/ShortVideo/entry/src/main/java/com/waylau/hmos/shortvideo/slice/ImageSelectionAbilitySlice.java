@@ -67,7 +67,7 @@ public class ImageSelectionAbilitySlice extends AbilitySlice {
         for (PortraitInfo portraitInfo : portraitList) {
             Image img = new Image(this);
             img.setId(portraitInfo.getId());
-            img.setHeight(108);
+            img.setHeight(300);
             img.setWidth(300);
             img.setMarginTop(20);
             img.setMarginLeft(20);

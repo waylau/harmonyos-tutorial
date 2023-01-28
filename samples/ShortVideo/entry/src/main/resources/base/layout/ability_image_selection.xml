@@ -13,13 +13,18 @@
         ohos:text_alignment="center"
         ohos:text_size="45fp"></Text>
 
-    <TableLayout
-        ohos:id="$+id:tablelayout_image_list"
-        ohos:height="match_content"
-        ohos:width="match_parent"
-        ohos:column_count="4">
+    <ScrollView
+        ohos:height="match_parent"
+        ohos:width="match_parent">
+
+        <TableLayout
+            ohos:id="$+id:tablelayout_image_list"
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:column_count="4"
+            ohos:margin="20vp">
 
 
-    </TableLayout>
-
+        </TableLayout>
+    </ScrollView>
 </DirectionalLayout>

@@ -33,7 +33,10 @@ public class WelcomeAbilitySlice extends AbilitySlice {
             presentForResult(new RegisterAbilitySlice(), new Intent(), 0);
         } else {
             // 展示主页
-            present(new MainAbilitySlice(), new Intent());
+            Intent intent = new Intent();
+            intent.setParam(Constants.LOGIN_USERNAME, userInfo.getUsername());
+            intent.setParam(Constants.IMAGE_SELECTION, userInfo.getPortraitPath());
+            present(new MainAbilitySlice(), intent);
         }
     }
 
