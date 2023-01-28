@@ -69,6 +69,10 @@ public class RegisterAbilitySlice extends AbilitySlice {
 
     private void checkLogin(UserInfo userInfo) {
         LogUtil.info(TAG, "checkLogin");
+        if (userInfo.getPortraitPath() == null || userInfo.getPortraitPath().isEmpty()){
+            new ToastDialog(getContext()).setText("请选择要发布的视频！").setAlignment(LayoutAlignment.CENTER).show();
+        }
+
         if (userInfo.getUsername() != null && !userInfo.getUsername().isEmpty() && userInfo.getPassword() != null
             && !userInfo.getPassword().isEmpty()) {
 

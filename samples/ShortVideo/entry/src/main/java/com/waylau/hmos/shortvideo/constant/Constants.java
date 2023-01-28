@@ -42,6 +42,11 @@ public class Constants {
      */
     public static final String IMAGE_SELECTION = "IMAGE_SELECTION";
 
+    /**
+     * 视频选择
+     */
+    public static final String VIDEO_SELECTION = "VIDEO_SELECTION";
+
     private Constants() {
     }
 }

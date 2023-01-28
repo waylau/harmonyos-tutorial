@@ -6,7 +6,7 @@ package com.waylau.hmos.shortvideo.slice;
 
 import com.waylau.hmos.shortvideo.MePageAbility;
 import com.waylau.hmos.shortvideo.ResourceTable;
-import com.waylau.hmos.shortvideo.VideoUploadPageAbility;
+import com.waylau.hmos.shortvideo.VideoPublishPageAbility;
 import com.waylau.hmos.shortvideo.bean.UserInfo;
 import com.waylau.hmos.shortvideo.bean.VideoInfo;
 import com.waylau.hmos.shortvideo.constant.Constants;
@@ -128,7 +128,7 @@ public class MainAbilitySlice extends AbilitySlice {
     private void startVideoUploadAbility() {
         LogUtil.info(TAG, "before startVideoUploadAbility");
         Intent intent = new Intent();
-        Operation operation = new Intent.OperationBuilder().withAbilityName(VideoUploadPageAbility.class)
+        Operation operation = new Intent.OperationBuilder().withAbilityName(VideoPublishPageAbility.class)
             .withBundleName("com.waylau.hmos.shortvideo").build();
 
         intent.setOperation(operation);

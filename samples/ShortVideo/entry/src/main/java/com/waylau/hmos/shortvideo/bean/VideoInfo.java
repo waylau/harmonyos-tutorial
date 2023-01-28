@@ -13,6 +13,7 @@ import com.waylau.hmos.shortvideo.api.IVideoPlayer;
  * @since 2023-01-23
  */
 public class VideoInfo {
+    private int id;
     // 视频路径
     private String videoPath;
 
@@ -143,5 +144,13 @@ public class VideoInfo {
 
     public void setCoverPath(String coverPath) {
         this.coverPath = coverPath;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

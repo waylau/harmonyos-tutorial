@@ -20,8 +20,8 @@
 
             <Image
                 ohos:id="$+id:image_me_portrait"
-                ohos:height="60vp"
-                ohos:width="60vp"
+                ohos:height="100vp"
+                ohos:width="100vp"
                 ohos:image_src="$media:ic_user_portrait"
                 ohos:scale_mode="stretch"/>
 
