@@ -4,7 +4,9 @@ import com.waylau.hmos.shortvideo.MainAbility;
 import com.waylau.hmos.shortvideo.ResourceTable;
 import com.waylau.hmos.shortvideo.VideoUploadPageAbility;
 import com.waylau.hmos.shortvideo.api.IVideoPlayer;
+import com.waylau.hmos.shortvideo.bean.UserInfo;
 import com.waylau.hmos.shortvideo.bean.VideoInfo;
+import com.waylau.hmos.shortvideo.constant.Constants;
 import com.waylau.hmos.shortvideo.player.VideoPlayer;
 import com.waylau.hmos.shortvideo.provider.VideoListFavoriteItemProvider;
 import com.waylau.hmos.shortvideo.provider.VideoListItemProvider;
@@ -14,8 +16,10 @@ import com.waylau.hmos.shortvideo.util.LogUtil;
 import ohos.aafwk.ability.AbilitySlice;
 import ohos.aafwk.content.Intent;
 import ohos.aafwk.content.Operation;
+import ohos.agp.components.Image;
 import ohos.agp.components.ListContainer;
 import ohos.agp.components.TabList;
+import ohos.agp.components.Text;
 import ohos.utils.zson.ZSONArray;
 
 import java.util.ArrayList;
@@ -33,6 +37,8 @@ public class MePageAbilitySlice extends AbilitySlice {
     // 视频信息列表
     private final List<VideoInfo> videoInfoList = new ArrayList<>();
 
+    private UserInfo userInfo = new UserInfo();
+
     private TabList tabListMe;
     private TabList tabListMeVideo;
     private TabList.Tab tabMe;
@@ -43,6 +49,9 @@ public class MePageAbilitySlice extends AbilitySlice {
     public void onStart(Intent intent) {
         super.onStart(intent);
         super.setUIContent(ResourceTable.Layout_ability_me_layout);
+
+        userInfo.setUsername(intent.getStringParam(Constants.LOGIN_USERNAME));
+        userInfo.setPortraitPath(intent.getStringParam(Constants.IMAGE_SELECTION));
 
         // 初始化数据
         initData();
@@ -68,12 +77,23 @@ public class MePageAbilitySlice extends AbilitySlice {
     }
 
     private void initUi() {
+        // 初始化用户资料
+        initUserInfo();
+
         // 初始化TabList标签栏
         initMeTabList();
         initMeVideoTabList();
 
         // 初始化ListContainer
         initListContainerForVideoListItemProvider();
+    }
+
+    private void initUserInfo() {
+        Image imageMePortrait = (Image)findComponentById(ResourceTable.Id_image_me_portrait);
+        Text textMeAuthor = (Text)findComponentById(ResourceTable.Id_text_me_author);
+
+        imageMePortrait.setPixelMap(CommonUtil.getImageSource(this.getContext(), userInfo.getPortraitPath()));
+        textMeAuthor.setText(userInfo.getUsername());
     }
 
     private void initMeTabList() {
