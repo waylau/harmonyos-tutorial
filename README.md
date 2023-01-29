@@ -85,6 +85,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [HarmonyOS ArkUI首选项开发](https://developer.huawei.com/consumer/cn/forum/topic/0202107112558535813)
 * [华为开发者联盟社区2022年牛人之星](https://developer.huawei.com/consumer/cn/forum/topic/0203109930647268095)
 * [华为开发者联盟社区2022年度战码先锋2期开源贡献之星](https://developer.huawei.com/consumer/cn/forum/topic/0203110017942177099)
+* [HarmonyOS应用在本地模拟器中运行](https://www.bilibili.com/video/BV1kG4y1Q765/)（视频）
 * 未完待续...
 
 ## Samples 示例
