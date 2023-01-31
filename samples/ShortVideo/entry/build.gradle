@@ -14,6 +14,11 @@ ohos {
             }
         }
     }
+
+    // 添加compileOptions相关的配置
+    compileOptions {
+        annotationEnabled true
+    }
 }
 
 dependencies {
