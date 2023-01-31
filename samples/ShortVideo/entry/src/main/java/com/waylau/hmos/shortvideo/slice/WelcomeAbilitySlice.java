@@ -1,9 +1,14 @@
+/*
+ * Copyright (c) waylau.com, 2023. All rights reserved.
+ */
+
 package com.waylau.hmos.shortvideo.slice;
 
 import com.waylau.hmos.shortvideo.ResourceTable;
 
 import com.waylau.hmos.shortvideo.bean.UserInfo;
 import com.waylau.hmos.shortvideo.constant.Constants;
+import com.waylau.hmos.shortvideo.store.UserInfoRepository;
 import com.waylau.hmos.shortvideo.util.LogUtil;
 import ohos.aafwk.ability.AbilitySlice;
 import ohos.aafwk.content.Intent;
@@ -24,11 +29,14 @@ public class WelcomeAbilitySlice extends AbilitySlice {
         super.onStart(intent);
         super.setUIContent(ResourceTable.Layout_ability_welcome);
 
+        // 初始化数据存储
+        //DatabaseUtil.initStore(this);
+        userInfo = UserInfoRepository.query(userInfo.getUsername());
         // 检查登陆
-        checkForUse(userInfo);
+        checkForUse();
     }
 
-    private void checkForUse(UserInfo userInfo) {
+    private void checkForUse() {
         if (userInfo.getUsername() == null) {
             presentForResult(new RegisterAbilitySlice(), new Intent(), 0);
         } else {
@@ -36,7 +44,13 @@ public class WelcomeAbilitySlice extends AbilitySlice {
             Intent intent = new Intent();
             intent.setParam(Constants.LOGIN_USERNAME, userInfo.getUsername());
             intent.setParam(Constants.IMAGE_SELECTION, userInfo.getPortraitPath());
+
+            // 更新到存储
+            UserInfoRepository.insert(userInfo);
+
             present(new MainAbilitySlice(), intent);
+
+            terminate();
         }
     }
 
@@ -57,7 +71,7 @@ public class WelcomeAbilitySlice extends AbilitySlice {
             userInfo.setUsername(resultIntent.getStringParam(Constants.LOGIN_USERNAME));
             userInfo.setPortraitPath(resultIntent.getStringParam(Constants.IMAGE_SELECTION));
             // 再次检查登陆
-            checkForUse(userInfo);
+            checkForUse();
         } else {
             terminate();
         }
