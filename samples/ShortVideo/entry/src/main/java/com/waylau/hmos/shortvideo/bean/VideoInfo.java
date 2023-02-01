@@ -52,9 +52,6 @@ public class VideoInfo extends OrmObject {
     // 是否收藏
     private boolean favorite;
 
-    // 播放器
-    //private IVideoPlayer VideoPlayer;
-
     public String getVideoPath() {
         return videoPath;
     }
@@ -135,15 +132,6 @@ public class VideoInfo extends OrmObject {
         this.favorite = favorite;
     }
 
-    /*
-    public IVideoPlayer getVideoPlayer() {
-        return VideoPlayer;
-    }
-
-    public void setVideoPlayer(IVideoPlayer videoPlayer) {
-        VideoPlayer = videoPlayer;
-    }
-*/
     public String getCoverPath() {
         return coverPath;
     }

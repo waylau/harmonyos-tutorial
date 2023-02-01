@@ -130,16 +130,26 @@ public class MainAbilitySlice extends AbilitySlice {
                 // 刷新首页
                 // todo
                 videoInfoList.clear();
-                for (VideoInfo bean : VideoInfoRepository.queryAll()) {
+                List<VideoInfo>  videoInfos = VideoInfoRepository.queryAll();
+                LogUtil.info(TAG, "videoInfos size:" + videoInfos.size());
+
+                for (VideoInfo bean : videoInfos) {
                     IVideoPlayer player = new VideoPlayer.Builder(getContext()).setFilePath(bean.getVideoPath()).create();
-                    VideoInfoRepository.insert(bean);
                     ViderPlayerInfo viderPlayerInfo = new ViderPlayerInfo(bean, player);
 
                     videoInfoList.add(viderPlayerInfo);
                 }
-                initPageSlider();
+
+                resetPageSlider();
             }
         });
+    }
+
+    private void resetPageSlider() {
+        // TODO清理历史player
+        VideoPlayerPageSliderProvider videoPlayerPageSliderProvider =
+                new VideoPlayerPageSliderProvider(videoInfoList, this);
+        pageSlider.setProvider(videoPlayerPageSliderProvider);
     }
 
     private void startVideoUploadAbility() {
