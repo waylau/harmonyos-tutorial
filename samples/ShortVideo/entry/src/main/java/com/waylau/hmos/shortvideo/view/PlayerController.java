@@ -9,6 +9,7 @@ import com.waylau.hmos.shortvideo.api.IVideoInfoBinding;
 import com.waylau.hmos.shortvideo.api.IVideoPlayer;
 import com.waylau.hmos.shortvideo.api.StatuChangeListener;
 import com.waylau.hmos.shortvideo.bean.VideoInfo;
+import com.waylau.hmos.shortvideo.bean.ViderPlayerInfo;
 import com.waylau.hmos.shortvideo.constant.Constants;
 import com.waylau.hmos.shortvideo.constant.PlayerStatusEnum;
 import com.waylau.hmos.shortvideo.util.CommonUtil;
@@ -301,10 +302,9 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
     }
 
     @Override
-    public void bind(VideoInfo videoInfo) {
-        this.videoInfo = videoInfo;
-
-        videoPlayer = videoInfo.getVideoPlayer();
+    public void bind(ViderPlayerInfo viderPlayerInfo) {
+        videoInfo = viderPlayerInfo.getVideoInfo();
+        videoPlayer = viderPlayerInfo.getVideoPlayer();
 
         initPlayListener();
 

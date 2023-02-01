@@ -8,6 +8,7 @@ import com.waylau.hmos.shortvideo.ResourceTable;
 import com.waylau.hmos.shortvideo.api.IVideoInfoBinding;
 import com.waylau.hmos.shortvideo.api.IVideoPlayer;
 import com.waylau.hmos.shortvideo.bean.VideoInfo;
+import com.waylau.hmos.shortvideo.bean.ViderPlayerInfo;
 import ohos.agp.animation.AnimatorProperty;
 import ohos.agp.components.*;
 import ohos.agp.components.Component.TouchEventListener;
@@ -118,8 +119,8 @@ public class PlayerLoading extends ComponentContainer implements IVideoInfoBindi
     }
 
     @Override
-    public void bind(VideoInfo VideoInfo) {
-        videoPlayer = VideoInfo.getVideoPlayer();
+    public void bind(ViderPlayerInfo viderPlayerInfo) {
+        videoPlayer = viderPlayerInfo.getVideoPlayer();
         initListener();
     }
 

@@ -5,6 +5,7 @@ import com.waylau.hmos.shortvideo.api.IVideoPlayer;
 import com.waylau.hmos.shortvideo.bean.VideoInfo;
 import com.waylau.hmos.shortvideo.constant.Constants;
 import com.waylau.hmos.shortvideo.player.VideoPlayer;
+import com.waylau.hmos.shortvideo.store.VideoInfoRepository;
 import com.waylau.hmos.shortvideo.util.CommonUtil;
 import com.waylau.hmos.shortvideo.util.LogUtil;
 import ohos.aafwk.ability.AbilitySlice;
@@ -36,11 +37,14 @@ public class VideoPublishPageAbilitySlice extends AbilitySlice {
     private Image imageVideoCover = null; // 封面
     private TextField textVideoContent = null; // 视频内容
     private Button buttonPublish = null; // 发布
+    private String author;
 
     @Override
     public void onStart(Intent intent) {
         super.onStart(intent);
         super.setUIContent(ResourceTable.Layout_ability_video_publish_layout);
+
+        author = intent.getStringParam(intent.getStringParam(Constants.LOGIN_USERNAME));
         // 初始化数据
         initData();
 
@@ -59,12 +63,6 @@ public class VideoPublishPageAbilitySlice extends AbilitySlice {
         List<VideoInfo> videoInfos = ZSONArray.stringToClassList(videosJson, VideoInfo.class);
         videoInfoList.clear();
         videoInfoList.addAll(videoInfos);
-
-        // 处理视频对象
-        for (VideoInfo bean : videoInfos) {
-            IVideoPlayer player = new VideoPlayer.Builder(getContext()).setFilePath(bean.getVideoPath()).create();
-            bean.setVideoPlayer(player);
-        }
     }
 
     private void initUi() {
@@ -82,6 +80,7 @@ public class VideoPublishPageAbilitySlice extends AbilitySlice {
         buttonPublish.setClickedListener(component -> {
             String videoContent = textVideoContent.getText();
             videoInfo.setContent(videoContent);
+            videoInfo.setAuthor(author);
 
             checkPublish(videoInfo);
         });
@@ -97,7 +96,11 @@ public class VideoPublishPageAbilitySlice extends AbilitySlice {
 
         }
 
-        // TODO 发布
+        // 发布
+        VideoInfoRepository.insert(video);
+
+        // 返回
+        onBackPressed();
     }
 
     @Override
@@ -123,5 +126,11 @@ public class VideoPublishPageAbilitySlice extends AbilitySlice {
         } else {
             terminate();
         }
+    }
+
+    // 返回
+    @Override
+    protected void onBackPressed() {
+        super.onBackPressed();
     }
 }

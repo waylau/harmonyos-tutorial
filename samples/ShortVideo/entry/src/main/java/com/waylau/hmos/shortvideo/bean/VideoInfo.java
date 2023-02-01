@@ -4,7 +4,9 @@
 
 package com.waylau.hmos.shortvideo.bean;
 
-import com.waylau.hmos.shortvideo.api.IVideoPlayer;
+import ohos.data.orm.OrmObject;
+import ohos.data.orm.annotation.Entity;
+import ohos.data.orm.annotation.PrimaryKey;
 
 /**
  * 视频信息实体 视频路径、作者、内容、评论
@@ -12,8 +14,11 @@ import com.waylau.hmos.shortvideo.api.IVideoPlayer;
  * @author <a href="https://waylau.com">Way Lau</a>
  * @since 2023-01-23
  */
-public class VideoInfo {
-    private int id;
+@Entity(tableName = "video_info_t")
+public class VideoInfo extends OrmObject {
+    // 此处为了自增的主键
+    @PrimaryKey(autoGenerate = true)
+    private Integer id;
     // 视频路径
     private String videoPath;
 
@@ -39,16 +44,16 @@ public class VideoInfo {
     private int favoriteCount;
 
     // 是否关注
-    private boolean isFollow;
+    private boolean follow;
 
     // 是否点赞
-    private boolean isThumbsUp;
+    private boolean thumbsUp;
 
     // 是否收藏
-    private boolean isFavorite;
+    private boolean favorite;
 
     // 播放器
-    private IVideoPlayer VideoPlayer;
+    //private IVideoPlayer VideoPlayer;
 
     public String getVideoPath() {
         return videoPath;
@@ -107,29 +112,30 @@ public class VideoInfo {
     }
 
     public boolean isFollow() {
-        return isFollow;
+        return follow;
     }
 
     public void setFollow(boolean follow) {
-        isFollow = follow;
+        this.follow = follow;
     }
 
     public boolean isThumbsUp() {
-        return isThumbsUp;
+        return thumbsUp;
     }
 
     public void setThumbsUp(boolean thumbsUp) {
-        isThumbsUp = thumbsUp;
+        this.thumbsUp = thumbsUp;
     }
 
     public boolean isFavorite() {
-        return isFavorite;
+        return favorite;
     }
 
     public void setFavorite(boolean favorite) {
-        isFavorite = favorite;
+        this.favorite = favorite;
     }
 
+    /*
     public IVideoPlayer getVideoPlayer() {
         return VideoPlayer;
     }
@@ -137,7 +143,7 @@ public class VideoInfo {
     public void setVideoPlayer(IVideoPlayer videoPlayer) {
         VideoPlayer = videoPlayer;
     }
-
+*/
     public String getCoverPath() {
         return coverPath;
     }
@@ -146,11 +152,11 @@ public class VideoInfo {
         this.coverPath = coverPath;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 }
