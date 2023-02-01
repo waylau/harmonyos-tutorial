@@ -9,9 +9,11 @@ import com.waylau.hmos.shortvideo.ResourceTable;
 import com.waylau.hmos.shortvideo.VideoPublishPageAbility;
 import com.waylau.hmos.shortvideo.bean.UserInfo;
 import com.waylau.hmos.shortvideo.bean.VideoInfo;
+import com.waylau.hmos.shortvideo.bean.ViderPlayerInfo;
 import com.waylau.hmos.shortvideo.constant.Constants;
 import com.waylau.hmos.shortvideo.player.VideoPlayer;
 import com.waylau.hmos.shortvideo.api.IVideoPlayer;
+import com.waylau.hmos.shortvideo.store.VideoInfoRepository;
 import com.waylau.hmos.shortvideo.util.CommonUtil;
 import com.waylau.hmos.shortvideo.provider.VideoPlayerPageSliderProvider;
 import com.waylau.hmos.shortvideo.util.LogUtil;
@@ -35,10 +37,11 @@ public class MainAbilitySlice extends AbilitySlice {
     private static final String TAG = MainAbilitySlice.class.getSimpleName();
     private UserInfo userInfo = new UserInfo();
     // 视频信息列表
-    private final List<VideoInfo> videoInfoList = new ArrayList<>();
+    private final List<ViderPlayerInfo> videoInfoList = new ArrayList<>();
     private int index = 0;
     private TabList tabList;
     private TabList.Tab tabMain;
+    private PageSlider pageSlider;
 
     @Override
     public void onStart(Intent intent) {
@@ -62,12 +65,14 @@ public class MainAbilitySlice extends AbilitySlice {
         // json字符串转成对象集合
         List<VideoInfo> videoInfos = ZSONArray.stringToClassList(videosJson, VideoInfo.class);
         videoInfoList.clear();
-        videoInfoList.addAll(videoInfos);
 
         // 处理视频对象
         for (VideoInfo bean : videoInfos) {
             IVideoPlayer player = new VideoPlayer.Builder(getContext()).setFilePath(bean.getVideoPath()).create();
-            bean.setVideoPlayer(player);
+            VideoInfoRepository.insert(bean);
+            ViderPlayerInfo viderPlayerInfo = new ViderPlayerInfo(bean, player);
+
+            videoInfoList.add(viderPlayerInfo);
         }
     }
 
@@ -121,6 +126,18 @@ public class MainAbilitySlice extends AbilitySlice {
             public void onReselected(TabList.Tab tab) {
                 // 当某个Tab已处于选中状态，再次被点击时的状态回调
                 LogUtil.info(TAG, "TabList onReselected, position:" + tab.getPosition());
+
+                // 刷新首页
+                // todo
+                videoInfoList.clear();
+                for (VideoInfo bean : VideoInfoRepository.queryAll()) {
+                    IVideoPlayer player = new VideoPlayer.Builder(getContext()).setFilePath(bean.getVideoPath()).create();
+                    VideoInfoRepository.insert(bean);
+                    ViderPlayerInfo viderPlayerInfo = new ViderPlayerInfo(bean, player);
+
+                    videoInfoList.add(viderPlayerInfo);
+                }
+                initPageSlider();
             }
         });
     }
@@ -128,6 +145,7 @@ public class MainAbilitySlice extends AbilitySlice {
     private void startVideoUploadAbility() {
         LogUtil.info(TAG, "before startVideoUploadAbility");
         Intent intent = new Intent();
+        intent.setParam(Constants.LOGIN_USERNAME, userInfo.getUsername());
         Operation operation = new Intent.OperationBuilder().withAbilityName(VideoPublishPageAbility.class)
             .withBundleName("com.waylau.hmos.shortvideo").build();
 
@@ -151,7 +169,7 @@ public class MainAbilitySlice extends AbilitySlice {
 
     private void initPageSlider() {
         LogUtil.info(TAG, "initPageSlider is called");
-        PageSlider pageSlider = (PageSlider)findComponentById(ResourceTable.Id_page_slider);
+        pageSlider = (PageSlider)findComponentById(ResourceTable.Id_page_slider);
         VideoPlayerPageSliderProvider videoPlayerPageSliderProvider =
             new VideoPlayerPageSliderProvider(videoInfoList, this);
         pageSlider.setProvider(videoPlayerPageSliderProvider);
@@ -185,7 +203,7 @@ public class MainAbilitySlice extends AbilitySlice {
     }
 
     private IVideoPlayer getPlayer(int itemPos) {
-        VideoInfo videoInfo = videoInfoList.get(itemPos);
+        ViderPlayerInfo videoInfo = videoInfoList.get(itemPos);
         return videoInfo.getVideoPlayer();
     }
 

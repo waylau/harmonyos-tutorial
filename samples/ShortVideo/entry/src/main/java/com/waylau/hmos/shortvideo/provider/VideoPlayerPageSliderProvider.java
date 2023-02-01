@@ -6,6 +6,7 @@ package com.waylau.hmos.shortvideo.provider;
 
 import com.waylau.hmos.shortvideo.ResourceTable;
 import com.waylau.hmos.shortvideo.bean.VideoInfo;
+import com.waylau.hmos.shortvideo.bean.ViderPlayerInfo;
 import com.waylau.hmos.shortvideo.util.LogUtil;
 import com.waylau.hmos.shortvideo.view.PlayerLoading;
 import com.waylau.hmos.shortvideo.view.PlayerView;
@@ -32,10 +33,10 @@ public class VideoPlayerPageSliderProvider extends PageSliderProvider {
     private PlayerController controllerView;
 
     // 数据源，每个页面对应list中的一项
-    private List<VideoInfo> list;
+    private List<ViderPlayerInfo> list;
     private Context context;
 
-    public VideoPlayerPageSliderProvider(List<VideoInfo> list, Context context) {
+    public VideoPlayerPageSliderProvider(List<ViderPlayerInfo> list, Context context) {
         this.list = list;
         this.context = context;
     }
@@ -57,7 +58,7 @@ public class VideoPlayerPageSliderProvider extends PageSliderProvider {
         componentContainer.addComponent(videoPlayerViewLayout);
 
         // 视图绑定数据
-        VideoInfo videoInfo = list.get(i);
+        ViderPlayerInfo videoInfo = list.get(i);
         playerView.bind(videoInfo);
         loadingView.bind(videoInfo);
         controllerView.bind(videoInfo);

@@ -3,11 +3,9 @@ package com.waylau.hmos.shortvideo.slice;
 import com.waylau.hmos.shortvideo.MainAbility;
 import com.waylau.hmos.shortvideo.ResourceTable;
 import com.waylau.hmos.shortvideo.VideoPublishPageAbility;
-import com.waylau.hmos.shortvideo.api.IVideoPlayer;
 import com.waylau.hmos.shortvideo.bean.UserInfo;
 import com.waylau.hmos.shortvideo.bean.VideoInfo;
 import com.waylau.hmos.shortvideo.constant.Constants;
-import com.waylau.hmos.shortvideo.player.VideoPlayer;
 import com.waylau.hmos.shortvideo.provider.VideoListFavoriteItemProvider;
 import com.waylau.hmos.shortvideo.provider.VideoListItemProvider;
 import com.waylau.hmos.shortvideo.provider.VideoListThumbsUpItemProvider;
@@ -68,12 +66,6 @@ public class MePageAbilitySlice extends AbilitySlice {
         List<VideoInfo> videoInfos = ZSONArray.stringToClassList(videosJson, VideoInfo.class);
         videoInfoList.clear();
         videoInfoList.addAll(videoInfos);
-
-        // 处理视频对象
-        for (VideoInfo bean : videoInfos) {
-            IVideoPlayer player = new VideoPlayer.Builder(getContext()).setFilePath(bean.getVideoPath()).create();
-            bean.setVideoPlayer(player);
-        }
     }
 
     private void initUi() {

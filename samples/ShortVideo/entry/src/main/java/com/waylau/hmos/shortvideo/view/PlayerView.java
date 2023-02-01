@@ -7,6 +7,7 @@ package com.waylau.hmos.shortvideo.view;
 import com.waylau.hmos.shortvideo.api.IVideoInfoBinding;
 import com.waylau.hmos.shortvideo.api.IVideoPlayer;
 import com.waylau.hmos.shortvideo.bean.VideoInfo;
+import com.waylau.hmos.shortvideo.bean.ViderPlayerInfo;
 import com.waylau.hmos.shortvideo.constant.Constants;
 import com.waylau.hmos.shortvideo.util.LogUtil;
 import ohos.agp.components.*;
@@ -112,8 +113,8 @@ public class PlayerView extends DependentLayout implements IVideoInfoBinding, Co
     }
 
     @Override
-    public void bind(VideoInfo VideoInfo) {
-        this.videoPlayer = VideoInfo.getVideoPlayer();
+    public void bind(ViderPlayerInfo viderPlayerInfo) {
+        this.videoPlayer = viderPlayerInfo.getVideoPlayer();
     }
 
     @Override

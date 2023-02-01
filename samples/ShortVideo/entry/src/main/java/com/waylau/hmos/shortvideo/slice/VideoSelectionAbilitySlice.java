@@ -46,7 +46,7 @@ public class VideoSelectionAbilitySlice extends AbilitySlice {
     }
 
     private void initData() {
-        String resourcePath = "resources/rawfile/videoinfo.json";
+        String resourcePath = "resources/rawfile/videoinfo2.json";
         String jsonString = CommonUtil.getJsonFileToString(this, resourcePath);
 
         // json字符串转成对象集合

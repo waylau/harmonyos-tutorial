@@ -9,6 +9,7 @@
 package com.waylau.hmos.shortvideo.api;
 
 import com.waylau.hmos.shortvideo.bean.VideoInfo;
+import com.waylau.hmos.shortvideo.bean.ViderPlayerInfo;
 
 /**
  * 绑定视频信息
@@ -20,9 +21,9 @@ public interface IVideoInfoBinding {
     /**
      * 绑定
      *
-     * @param videoInfo videoInfo
+     * @param viderPlayerInfo viderPlayerInfo
      */
-    void bind(VideoInfo videoInfo);
+    void bind(ViderPlayerInfo viderPlayerInfo);
 
     /**
      * 解绑
