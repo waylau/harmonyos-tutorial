@@ -1,5 +1,6 @@
 package com.waylau.hmos.shortvideo.slice;
 
+import com.waylau.hmos.shortvideo.MainAbility;
 import com.waylau.hmos.shortvideo.ResourceTable;
 import com.waylau.hmos.shortvideo.api.IVideoPlayer;
 import com.waylau.hmos.shortvideo.bean.VideoInfo;
@@ -10,6 +11,7 @@ import com.waylau.hmos.shortvideo.util.CommonUtil;
 import com.waylau.hmos.shortvideo.util.LogUtil;
 import ohos.aafwk.ability.AbilitySlice;
 import ohos.aafwk.content.Intent;
+import ohos.aafwk.content.Operation;
 import ohos.agp.components.Button;
 import ohos.agp.components.Image;
 import ohos.agp.components.TextField;
@@ -99,8 +101,8 @@ public class VideoPublishPageAbilitySlice extends AbilitySlice {
         // 发布
         VideoInfoRepository.insert(video);
 
-        // 返回
-        onBackPressed();
+        // 返回首页
+        terminate();
     }
 
     @Override
