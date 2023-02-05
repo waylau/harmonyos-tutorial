@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StackLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:id="$+id:layout_stack"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:background_element="#000000">
+
+    <DirectionalLayout
+        ohos:id="$+id:layout_video_player"
+        ohos:height="match_parent"
+        ohos:width="match_parent"/>
+
+    <Image
+        ohos:id="$+id:image_video_cover"
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        ohos:image_src="$media:ic_public_favor"
+        ohos:scale_mode="stretch"/>
+
+</StackLayout>

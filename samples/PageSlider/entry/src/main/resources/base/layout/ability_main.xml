@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DependentLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent">
+
+    <!--视频滑动播放-->
+    <PageSlider
+        ohos:id="$+id:page_slider"
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        ohos:background_element="black"
+        ohos:orientation="vertical"
+        ohos:page_cache_size="0"/>
+
+</DependentLayout>

@@ -124,6 +124,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [常用交互类组件——Picker](samples/Picker)
 * [常用交互类组件——ListContainer](samples/ListContainer)
 * [常用交互类组件——RoundProgressBar](samples/RoundProgressBar)
+* [常用交互类组件——PageSlider](samples/PageSlider)
 * [常用布局——DirectionalLayout](samples/DirectionalLayout)
 * [常用布局——DependentLayout](samples/DependentLayout)
 * [常用布局——StackLayout](samples/StackLayout)
