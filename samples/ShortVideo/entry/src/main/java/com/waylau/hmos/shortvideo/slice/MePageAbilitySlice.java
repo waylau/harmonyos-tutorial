@@ -41,7 +41,7 @@ public class MePageAbilitySlice extends AbilitySlice {
     private TabList tabListMe;
     private TabList tabListMeVideo;
     private TabList.Tab tabMe;
-
+    private  VideoListItemProvider videoListItemProvider;
 
 
     @Override
@@ -56,21 +56,21 @@ public class MePageAbilitySlice extends AbilitySlice {
         initData();
 
         // 初始化UI组件
-        initUi();
+        initUi(intent);
     }
 
     private void initData() {
-        List<VideoInfo> videoInfos = VideoInfoRepository.queryAll();
+        List<VideoInfo> videoInfos = VideoInfoRepository.queryByUsername(userInfo.getUsername());
         videoInfoList.clear();
         videoInfoList.addAll(videoInfos);
     }
 
-    private void initUi() {
+    private void initUi(Intent intent) {
         // 初始化用户资料
         initUserInfo();
 
         // 初始化TabList标签栏
-        initMeTabList();
+        initMeTabList(intent);
         initMeVideoTabList();
 
         // 初始化ListContainer
@@ -85,7 +85,7 @@ public class MePageAbilitySlice extends AbilitySlice {
         textMeAuthor.setText(userInfo.getUsername());
     }
 
-    private void initMeTabList() {
+    private void initMeTabList(Intent intent) {
         tabListMe = (TabList)findComponentById(ResourceTable.Id_tab_list_me);
         TabList.Tab tab = tabListMe.new Tab(getContext());
         tab.setText("首页");
@@ -110,10 +110,10 @@ public class MePageAbilitySlice extends AbilitySlice {
 
                 if (position == 1) {
                     // 视频上传界面
-                    startVideoUploadAbility();
+                    startVideoUploadAbility(intent);
                 } else if (position == 0) {
                     // “首页”界面
-                    startMainAbility();
+                    startMainAbility(intent);
                 }
             }
 
@@ -176,8 +176,10 @@ public class MePageAbilitySlice extends AbilitySlice {
 
     private void initListContainerForVideoListItemProvider() {
         ListContainer listContainer = (ListContainer) findComponentById(ResourceTable.Id_list_container_video_list);
-        VideoListItemProvider itemProvider = new VideoListItemProvider(videoInfoList, this);
-        listContainer.setItemProvider(itemProvider);
+        videoListItemProvider = new VideoListItemProvider(videoInfoList, this, ()-> {
+            videoListItemProvider.notifyDataChanged();
+        });
+        listContainer.setItemProvider(videoListItemProvider);
     }
 
     private void initListContainerForVideoListFavoriteItemProvider() {
@@ -192,11 +194,8 @@ public class MePageAbilitySlice extends AbilitySlice {
         listContainer.setItemProvider(itemProvider);
     }
 
-    private void startVideoUploadAbility() {
+    private void startVideoUploadAbility(Intent intent) {
         LogUtil.info(TAG, "before startVideoUploadAbility");
-        Intent intent = new Intent();
-        intent.setParam(Constants.LOGIN_USERNAME, userInfo.getUsername());
-        intent.setParam(Constants.IMAGE_SELECTION, userInfo.getPortraitPath());
 
         Operation operation = new Intent.OperationBuilder()
                 .withAbilityName(VideoPublishPageAbility.class)
@@ -207,20 +206,12 @@ public class MePageAbilitySlice extends AbilitySlice {
 
         // 启动Ability
         startAbility(intent);
-        /*
-        present(
-                new VideoPublishPageAbilitySlice(),intent
-        );
-        */
+
         terminate();
     }
 
-    private void startMainAbility() {
+    private void startMainAbility(Intent intent) {
         LogUtil.info(TAG, "before startMainAbility");
-
-        Intent intent = new Intent();
-        intent.setParam(Constants.LOGIN_USERNAME, userInfo.getUsername());
-        intent.setParam(Constants.IMAGE_SELECTION, userInfo.getPortraitPath());
 
         Operation operation = new Intent.OperationBuilder()
                 .withAbilityName(MainAbility.class)
@@ -231,11 +222,6 @@ public class MePageAbilitySlice extends AbilitySlice {
 
         // 启动Ability
         startAbility(intent);
-                /*
-        present(
-                new MainAbilitySlice(),intent
-        );
-        */
         terminate();
     }
 
