@@ -21,8 +21,7 @@
             ohos:id="$+id:tablelayout_image_list"
             ohos:height="match_content"
             ohos:width="match_parent"
-            ohos:column_count="4"
-            ohos:margin="20vp">
+            ohos:column_count="4">
 
 
         </TableLayout>

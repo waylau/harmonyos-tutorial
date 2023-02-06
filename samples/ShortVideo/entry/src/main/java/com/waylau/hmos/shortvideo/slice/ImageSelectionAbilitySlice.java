@@ -1,11 +1,15 @@
 package com.waylau.hmos.shortvideo.slice;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import com.waylau.hmos.shortvideo.ResourceTable;
 import com.waylau.hmos.shortvideo.bean.PortraitInfo;
 import com.waylau.hmos.shortvideo.constant.Constants;
 import com.waylau.hmos.shortvideo.util.CommonUtil;
-
 import com.waylau.hmos.shortvideo.util.LogUtil;
+import com.waylau.hmos.shortvideo.util.ScreenUtil;
+
 import ohos.aafwk.ability.AbilitySlice;
 import ohos.aafwk.content.Intent;
 import ohos.agp.components.Component;
@@ -13,9 +17,6 @@ import ohos.agp.components.Image;
 import ohos.agp.components.TableLayout;
 import ohos.agp.components.Text;
 import ohos.utils.zson.ZSONArray;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * 图片选择页面
@@ -64,13 +65,18 @@ public class ImageSelectionAbilitySlice extends AbilitySlice {
             textNoImageTip.setVisibility(Component.HIDE);
         }
 
+        int screenWidth = ScreenUtil.getScreenWidth(this);
+        int imageWidth = (screenWidth - 20 * 4) / 4;
+
         for (PortraitInfo portraitInfo : portraitList) {
+
             Image img = new Image(this);
             img.setId(portraitInfo.getId());
-            img.setHeight(300);
-            img.setWidth(300);
-            img.setMarginTop(20);
-            img.setMarginLeft(20);
+            img.setHeight(imageWidth);
+            img.setWidth(imageWidth);
+            img.setMarginTop(10);
+            img.setMarginLeft(10);
+            img.setMarginRight(10);
             img.setPixelMap(CommonUtil.getImageSource(this.getContext(), portraitInfo.getPortraitPath()));
             img.setScaleMode(Image.ScaleMode.ZOOM_CENTER);
 

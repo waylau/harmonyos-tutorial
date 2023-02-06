@@ -8,6 +8,7 @@ import com.waylau.hmos.shortvideo.bean.VideoInfo;
 import com.waylau.hmos.shortvideo.constant.Constants;
 import com.waylau.hmos.shortvideo.util.CommonUtil;
 import com.waylau.hmos.shortvideo.util.LogUtil;
+import com.waylau.hmos.shortvideo.util.ScreenUtil;
 
 import ohos.aafwk.ability.AbilitySlice;
 import ohos.aafwk.content.Intent;
@@ -64,13 +65,18 @@ public class VideoSelectionAbilitySlice extends AbilitySlice {
             textNoVideoTip.setVisibility(Component.HIDE);
         }
 
+        int screenWidth = ScreenUtil.getScreenWidth(this);
+        int imageWidth = (screenWidth - 20 * 3) / 3;
+        int imageHeight = (imageWidth * 540) / 408;
+
         for (VideoInfo videoInfo : videoList) {
             Image img = new Image(this);
             img.setId(videoInfo.getId());
-            img.setHeight(540);
-            img.setWidth(408);
-            img.setMarginTop(20);
-            img.setMarginLeft(20);
+            img.setHeight(imageHeight);
+            img.setWidth(imageWidth);
+            img.setMarginTop(10);
+            img.setMarginLeft(10);
+            img.setMarginRight(10);
             img.setPixelMap(CommonUtil.getImageSource(this.getContext(), videoInfo.getCoverPath()));
             img.setScaleMode(Image.ScaleMode.ZOOM_CENTER);
 
