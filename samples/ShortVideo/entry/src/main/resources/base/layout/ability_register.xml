@@ -51,7 +51,7 @@
         ohos:text="注册/登录"
         ohos:text_alignment="center"
         ohos:text_color="#fefefe"
-        ohos:text_size="24vp"
+        ohos:text_size="24fp"
         ohos:top_margin="76vp"
         />
 

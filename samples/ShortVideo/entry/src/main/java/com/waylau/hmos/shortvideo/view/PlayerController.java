@@ -15,6 +15,7 @@ import com.waylau.hmos.shortvideo.constant.PlayerStatusEnum;
 import com.waylau.hmos.shortvideo.util.CommonUtil;
 import com.waylau.hmos.shortvideo.util.DateUtil;
 import com.waylau.hmos.shortvideo.util.LogUtil;
+
 import ohos.agp.colors.RgbColor;
 import ohos.agp.components.*;
 import ohos.agp.components.element.ShapeElement;
@@ -51,7 +52,7 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
     private Image imagePortrait;
     private Text textAuthor;
     private Text textContent;
-    private Image imageFollow;
+    private Button buttonFollow;
     private Image imageThumbsup;
     private Image imageComment;
     private Image imageFavorite;
@@ -160,7 +161,7 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
         imagePortrait = (Image)playerController.findComponentById(ResourceTable.Id_image_portrait);
         textAuthor = (Text)playerController.findComponentById(ResourceTable.Id_text_author);
         textContent = (Text)playerController.findComponentById(ResourceTable.Id_text_content);
-        imageFollow = (Image)playerController.findComponentById(ResourceTable.Id_image_follow);
+        buttonFollow = (Button) playerController.findComponentById(ResourceTable.Id_button_follow);
         imageThumbsup = (Image)playerController.findComponentById(ResourceTable.Id_image_thumbsup);
         imageComment = (Image)playerController.findComponentById(ResourceTable.Id_image_comment);
         imageFavorite = (Image)playerController.findComponentById(ResourceTable.Id_image_favorit);
@@ -210,7 +211,7 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
             }
         });
 
-        imageFollow.setClickedListener(component -> {
+        buttonFollow.setClickedListener(component -> {
             LogUtil.info(TAG, "imageFollow Clicked");
 
             // 更新值
@@ -219,13 +220,9 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
             } else {
                 videoInfo.setFollow(Boolean.TRUE);
             }
-
-            // 更新视图
-            if (videoInfo.isFollow()) {
-                imageFollow.setPixelMap(ResourceTable.Media_ic_public_remove);
-            } else {
-                imageFollow.setPixelMap(ResourceTable.Media_ic_public_add_norm);
-            }
+            
+            // 更新"关注"视图
+            setFollowButtonStyle(buttonFollow, videoInfo.isFollow());
         });
 
         imageThumbsup.setClickedListener(component -> {
@@ -241,11 +238,7 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
             }
 
             // 更新视图
-            if (videoInfo.isThumbsUp()) {
-                imageThumbsup.setPixelMap(ResourceTable.Media_ic_public_favor_filled);
-            } else {
-                imageThumbsup.setPixelMap(ResourceTable.Media_ic_public_favor);
-            }
+            setThumbsupImageStyle(imageThumbsup, videoInfo.isThumbsUp());
 
             textThumbsUpCount.setText(videoInfo.getThumbsUpCount() + "");
         });
@@ -263,14 +256,36 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
             }
 
             // 更新视图
-            if (videoInfo.isFavorite()) {
-                imageFavorite.setPixelMap(ResourceTable.Media_ic_public_highlightsed);
-            } else {
-                imageFavorite.setPixelMap(ResourceTable.Media_ic_public_highlights);
-            }
+            setFavoriteImageStyle(imageFavorite, videoInfo.isFavorite());
 
             textFavoriteCount.setText(videoInfo.getFavoriteCount() + "");
         });
+    }
+
+    private void setFollowButtonStyle(Button button, boolean isFollow) {
+        if (isFollow) {
+            buttonFollow.setText("取关");
+            buttonFollow.setBackground(new ShapeElement(mContext, ResourceTable.Graphic_background_button_gray));
+        } else {
+            buttonFollow.setText("关注");
+            buttonFollow.setBackground(new ShapeElement(mContext, ResourceTable.Graphic_background_button_red));
+        }
+    }
+
+    private void setFavoriteImageStyle(Image image, boolean isFavorite) {
+        if (isFavorite) {
+            image.setPixelMap(ResourceTable.Media_ic_public_highlightsed);
+        } else {
+            image.setPixelMap(ResourceTable.Media_ic_public_highlights);
+        }
+    }
+
+    private void setThumbsupImageStyle(Image image, boolean isThumbsUp) {
+        if (isThumbsUp) {
+            image.setPixelMap(ResourceTable.Media_ic_public_favor_filled);
+        } else {
+            image.setPixelMap(ResourceTable.Media_ic_public_favor);
+        }
     }
 
     private int getBasicTransTime(int currentTime) {
@@ -323,17 +338,14 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
         textCommentCount.setText(videoInfo.getCommentCount() + "");
         textFavoriteCount.setText(videoInfo.getFavoriteCount() + "");
 
-        if (videoInfo.isThumbsUp()) {
-            imageThumbsup.setPixelMap(ResourceTable.Media_ic_public_favor_filled);
-        }
+        // 更新视图
+        setThumbsupImageStyle(imageThumbsup, videoInfo.isThumbsUp());
 
-        if (videoInfo.isFavorite()) {
-            imageFavorite.setPixelMap(ResourceTable.Media_ic_public_highlightsed);
-        }
+        // 更新视图
+        setFavoriteImageStyle(imageFavorite, videoInfo.isFavorite());
 
-        if (videoInfo.isFollow()) {
-            imageFollow.setPixelMap(ResourceTable.Media_ic_public_remove);
-        }
+        // 更新"关注"视图
+        setFollowButtonStyle(buttonFollow, videoInfo.isFollow());
     }
 
     @Override

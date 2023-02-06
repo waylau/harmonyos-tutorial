@@ -30,7 +30,6 @@ public class WelcomeAbilitySlice extends AbilitySlice {
         super.setUIContent(ResourceTable.Layout_ability_welcome);
 
         // 初始化数据存储
-        //DatabaseUtil.initStore(this);
         userInfo = UserInfoRepository.query(userInfo.getUsername());
         // 检查登陆
         checkForUse();

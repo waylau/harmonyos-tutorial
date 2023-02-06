@@ -4,20 +4,20 @@
 
 package com.waylau.hmos.shortvideo.provider;
 
+import java.util.List;
+
 import com.waylau.hmos.shortvideo.ResourceTable;
-import com.waylau.hmos.shortvideo.bean.VideoInfo;
 import com.waylau.hmos.shortvideo.bean.ViderPlayerInfo;
 import com.waylau.hmos.shortvideo.util.LogUtil;
+import com.waylau.hmos.shortvideo.view.PlayerController;
 import com.waylau.hmos.shortvideo.view.PlayerLoading;
 import com.waylau.hmos.shortvideo.view.PlayerView;
-import com.waylau.hmos.shortvideo.view.PlayerController;
+
 import ohos.agp.components.Component;
 import ohos.agp.components.ComponentContainer;
 import ohos.agp.components.LayoutScatter;
 import ohos.agp.components.PageSliderProvider;
 import ohos.app.Context;
-
-import java.util.List;
 
 /**
  * VideoPlayer PageSliderProvider
@@ -52,6 +52,7 @@ public class VideoPlayerPageSliderProvider extends PageSliderProvider {
 
         Component videoPlayerViewLayout =
             LayoutScatter.getInstance(context).parse(ResourceTable.Layout_video_player_view_layout, null, false);
+
         playerView = (PlayerView)videoPlayerViewLayout.findComponentById(ResourceTable.Id_player_view);
         loadingView = (PlayerLoading)videoPlayerViewLayout.findComponentById(ResourceTable.Id_loading_view);
         controllerView = (PlayerController)videoPlayerViewLayout.findComponentById(ResourceTable.Id_controller_view);

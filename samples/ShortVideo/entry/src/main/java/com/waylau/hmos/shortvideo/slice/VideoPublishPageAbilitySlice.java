@@ -1,14 +1,17 @@
 package com.waylau.hmos.shortvideo.slice;
 
-import com.waylau.hmos.shortvideo.MainAbility;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.waylau.hmos.shortvideo.MePageAbility;
 import com.waylau.hmos.shortvideo.ResourceTable;
-import com.waylau.hmos.shortvideo.api.IVideoPlayer;
+import com.waylau.hmos.shortvideo.bean.UserInfo;
 import com.waylau.hmos.shortvideo.bean.VideoInfo;
 import com.waylau.hmos.shortvideo.constant.Constants;
-import com.waylau.hmos.shortvideo.player.VideoPlayer;
 import com.waylau.hmos.shortvideo.store.VideoInfoRepository;
 import com.waylau.hmos.shortvideo.util.CommonUtil;
 import com.waylau.hmos.shortvideo.util.LogUtil;
+
 import ohos.aafwk.ability.AbilitySlice;
 import ohos.aafwk.content.Intent;
 import ohos.aafwk.content.Operation;
@@ -18,9 +21,6 @@ import ohos.agp.components.TextField;
 import ohos.agp.utils.LayoutAlignment;
 import ohos.agp.window.dialog.ToastDialog;
 import ohos.utils.zson.ZSONArray;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * 视频发布页面
@@ -39,14 +39,16 @@ public class VideoPublishPageAbilitySlice extends AbilitySlice {
     private Image imageVideoCover = null; // 封面
     private TextField textVideoContent = null; // 视频内容
     private Button buttonPublish = null; // 发布
-    private String author;
+    private UserInfo userInfo = new UserInfo();
 
     @Override
     public void onStart(Intent intent) {
         super.onStart(intent);
         super.setUIContent(ResourceTable.Layout_ability_video_publish_layout);
 
-        author = intent.getStringParam(intent.getStringParam(Constants.LOGIN_USERNAME));
+        userInfo.setUsername(intent.getStringParam(Constants.LOGIN_USERNAME));
+        userInfo.setPortraitPath(intent.getStringParam(Constants.IMAGE_SELECTION));
+
         // 初始化数据
         initData();
 
@@ -82,7 +84,7 @@ public class VideoPublishPageAbilitySlice extends AbilitySlice {
         buttonPublish.setClickedListener(component -> {
             String videoContent = textVideoContent.getText();
             videoInfo.setContent(videoContent);
-            videoInfo.setAuthor(author);
+            videoInfo.setAuthor(userInfo.getUsername());
 
             checkPublish(videoInfo);
         });
@@ -95,13 +97,23 @@ public class VideoPublishPageAbilitySlice extends AbilitySlice {
             new ToastDialog(getContext()).setText("请选择要发布的视频！").setAlignment(LayoutAlignment.CENTER).show();
         } else if (video.getContent() == null || video.getContent().isEmpty()) {
             new ToastDialog(getContext()).setText("请输入视频的内容！").setAlignment(LayoutAlignment.CENTER).show();
-
         }
 
         // 发布
         VideoInfoRepository.insert(video);
 
-        // 返回首页
+        Intent intent = new Intent();
+        intent.setParam(Constants.LOGIN_USERNAME, userInfo.getUsername());
+        intent.setParam(Constants.IMAGE_SELECTION, userInfo.getPortraitPath());
+
+        Operation operation = new Intent.OperationBuilder().withAbilityName(MePageAbility.class)
+                .withBundleName("com.waylau.hmos.shortvideo").build();
+
+        intent.setOperation(operation);
+
+        // 启动Ability
+        startAbility(intent);
+
         terminate();
     }
 
@@ -121,6 +133,7 @@ public class VideoPublishPageAbilitySlice extends AbilitySlice {
         if (requestCode == 0) {
             videoInfo.setCoverPath(resultIntent.getStringParam(Constants.IMAGE_SELECTION));
             videoInfo.setVideoPath(resultIntent.getStringParam(Constants.VIDEO_SELECTION));
+            videoInfo.setPortraitPath(userInfo.getPortraitPath());
 
             // 刷新视频封面
             imageVideoCover.setPixelMap(CommonUtil.getImageSource(this.getContext(), videoInfo.getCoverPath()));
