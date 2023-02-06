@@ -32,23 +32,16 @@
                 ohos:text_color="#ffffff"
                 ohos:text_size="25fp"
                 ohos:text_weight="700"/>
-
-            <Image
-                ohos:id="$+id:image_follow"
-                ohos:height="24vp"
-                ohos:width="24vp"
-                ohos:image_src="$media:ic_public_add_norm"
-                ohos:scale_mode="stretch"/>
             <Button
                 ohos:id="$+id:button_follow"
-                ohos:height="24vp"
-                ohos:width="50vp"
+                ohos:height="20vp"
+                ohos:width="match_content"
                 ohos:background_element="$graphic:background_button_red"
                 ohos:layout_alignment="horizontal_center"
                 ohos:text="关注"
                 ohos:text_alignment="center"
                 ohos:text_color="#fefefe"
-                ohos:text_size="24fp"
+                ohos:text_size="20fp"
                 />
         </DirectionalLayout>
 
