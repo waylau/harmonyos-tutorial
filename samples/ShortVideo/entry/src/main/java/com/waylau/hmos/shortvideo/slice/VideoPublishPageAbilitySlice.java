@@ -60,7 +60,7 @@ public class VideoPublishPageAbilitySlice extends AbilitySlice {
     }
 
     private void initData() {
-        String resourcePath = "resources/rawfile/videoinfo.json";
+        String resourcePath = "resources/rawfile/videoinfo2.json";
         String videosJson = CommonUtil.getJsonFileToString(this, resourcePath);
 
         // json字符串转成对象集合

@@ -30,6 +30,14 @@ public class VideoInfoRepository {
         return videoInfos;
     }
 
+    public static List<VideoInfo> queryByUsername(String author) {
+        OrmPredicates predicates = ormContext.where(VideoInfo.class);
+        predicates.equalTo("author", author);
+        List<VideoInfo> videoInfos = ormContext.query(predicates);
+
+        return videoInfos;
+    }
+
     public static int insert(VideoInfo videoInfo) {
         LogUtil.info(TAG, "before insert");
 
@@ -40,7 +48,7 @@ public class VideoInfoRepository {
         // 获取userId
         int videoInfoId = videoInfo.getId();
 
-        LogUtil.info(TAG, "end insert: " + videoInfoId);
+        LogUtil.info(TAG, "end insert: " + videoInfoId + ", isSuccessed: " + isSuccessed);
         return videoInfoId;
     }
 
@@ -52,6 +60,17 @@ public class VideoInfoRepository {
         boolean isSuccessed = ormContext.flush();
 
         LogUtil.info(TAG, "end update, isSuccessed: " + isSuccessed);
+        return 1;
+    }
+
+    public static int delete(VideoInfo videoInfo) {
+        LogUtil.info(TAG, "before update");
+
+        ormContext.delete(videoInfo);
+
+        boolean isSuccessed = ormContext.flush();
+
+        LogUtil.info(TAG, "end delete, isSuccessed: " + isSuccessed);
         return 1;
     }
 }
