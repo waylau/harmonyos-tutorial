@@ -39,7 +39,17 @@
                 ohos:width="24vp"
                 ohos:image_src="$media:ic_public_add_norm"
                 ohos:scale_mode="stretch"/>
-
+            <Button
+                ohos:id="$+id:button_follow"
+                ohos:height="24vp"
+                ohos:width="50vp"
+                ohos:background_element="$graphic:background_button_red"
+                ohos:layout_alignment="horizontal_center"
+                ohos:text="关注"
+                ohos:text_alignment="center"
+                ohos:text_color="#fefefe"
+                ohos:text_size="24fp"
+                />
         </DirectionalLayout>
 
         <Text

@@ -4,28 +4,27 @@
 
 package com.waylau.hmos.shortvideo.slice;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import com.waylau.hmos.shortvideo.MePageAbility;
 import com.waylau.hmos.shortvideo.ResourceTable;
 import com.waylau.hmos.shortvideo.VideoPublishPageAbility;
+import com.waylau.hmos.shortvideo.api.IVideoPlayer;
 import com.waylau.hmos.shortvideo.bean.UserInfo;
 import com.waylau.hmos.shortvideo.bean.VideoInfo;
 import com.waylau.hmos.shortvideo.bean.ViderPlayerInfo;
 import com.waylau.hmos.shortvideo.constant.Constants;
 import com.waylau.hmos.shortvideo.player.VideoPlayer;
-import com.waylau.hmos.shortvideo.api.IVideoPlayer;
-import com.waylau.hmos.shortvideo.store.VideoInfoRepository;
-import com.waylau.hmos.shortvideo.util.CommonUtil;
 import com.waylau.hmos.shortvideo.provider.VideoPlayerPageSliderProvider;
+import com.waylau.hmos.shortvideo.store.VideoInfoRepository;
 import com.waylau.hmos.shortvideo.util.LogUtil;
+
 import ohos.aafwk.ability.AbilitySlice;
 import ohos.aafwk.content.Intent;
 import ohos.aafwk.content.Operation;
 import ohos.agp.components.PageSlider;
 import ohos.agp.components.TabList;
-import ohos.utils.zson.ZSONArray;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * 主页面
@@ -42,6 +41,7 @@ public class MainAbilitySlice extends AbilitySlice {
     private TabList tabList;
     private TabList.Tab tabMain;
     private PageSlider pageSlider;
+    VideoPlayerPageSliderProvider videoPlayerPageSliderProvider;
 
     @Override
     public void onStart(Intent intent) {
@@ -59,17 +59,19 @@ public class MainAbilitySlice extends AbilitySlice {
     }
 
     private void initData() {
-        String resourcePath = "resources/rawfile/videoinfo.json";
-        String videosJson = CommonUtil.getJsonFileToString(this, resourcePath);
+        LogUtil.info(TAG, "initData");
 
-        // json字符串转成对象集合
-        List<VideoInfo> videoInfos = ZSONArray.stringToClassList(videosJson, VideoInfo.class);
+        index = 0;
+
+        // 获取视频列表
+        List<VideoInfo> videoInfos = VideoInfoRepository.queryAll();
         videoInfoList.clear();
 
         // 处理视频对象
         for (VideoInfo bean : videoInfos) {
+            LogUtil.info(TAG, "VideoInfo : " + bean.toString());
+
             IVideoPlayer player = new VideoPlayer.Builder(getContext()).setFilePath(bean.getVideoPath()).create();
-            VideoInfoRepository.insert(bean);
             ViderPlayerInfo viderPlayerInfo = new ViderPlayerInfo(bean, player);
 
             videoInfoList.add(viderPlayerInfo);
@@ -86,6 +88,7 @@ public class MainAbilitySlice extends AbilitySlice {
 
     private void initTabList(Intent intent) {
         tabList = (TabList)findComponentById(ResourceTable.Id_tab_list);
+        tabList.removeAllComponents();
         tabMain = tabList.new Tab(getContext());
         tabMain.setText("首页");
         tabList.addTab(tabMain, true); // 默认选中
@@ -109,7 +112,7 @@ public class MainAbilitySlice extends AbilitySlice {
 
                 if (position == 1) {
                     // 视频上传界面
-                    startVideoUploadAbility();
+                    startVideoUploadAbility(intent);
                 } else if (position == 2) {
                     // “我”界面
                     startMeAbility(intent);
@@ -126,36 +129,13 @@ public class MainAbilitySlice extends AbilitySlice {
             public void onReselected(TabList.Tab tab) {
                 // 当某个Tab已处于选中状态，再次被点击时的状态回调
                 LogUtil.info(TAG, "TabList onReselected, position:" + tab.getPosition());
-
-                // 刷新首页
-                // todo
-                videoInfoList.clear();
-                List<VideoInfo>  videoInfos = VideoInfoRepository.queryAll();
-                LogUtil.info(TAG, "videoInfos size:" + videoInfos.size());
-
-                for (VideoInfo bean : videoInfos) {
-                    IVideoPlayer player = new VideoPlayer.Builder(getContext()).setFilePath(bean.getVideoPath()).create();
-                    ViderPlayerInfo viderPlayerInfo = new ViderPlayerInfo(bean, player);
-
-                    videoInfoList.add(viderPlayerInfo);
-                }
-
-                resetPageSlider();
             }
         });
     }
 
-    private void resetPageSlider() {
-        // TODO清理历史player
-        VideoPlayerPageSliderProvider videoPlayerPageSliderProvider =
-                new VideoPlayerPageSliderProvider(videoInfoList, this);
-        pageSlider.setProvider(videoPlayerPageSliderProvider);
-    }
-
-    private void startVideoUploadAbility() {
+    private void startVideoUploadAbility(Intent intent) {
         LogUtil.info(TAG, "before startVideoUploadAbility");
-        Intent intent = new Intent();
-        intent.setParam(Constants.LOGIN_USERNAME, userInfo.getUsername());
+
         Operation operation = new Intent.OperationBuilder().withAbilityName(VideoPublishPageAbility.class)
             .withBundleName("com.waylau.hmos.shortvideo").build();
 
@@ -163,6 +143,8 @@ public class MainAbilitySlice extends AbilitySlice {
 
         // 启动Ability
         startAbility(intent);
+
+        terminate();
     }
 
     private void startMeAbility(Intent intent) {
@@ -175,13 +157,16 @@ public class MainAbilitySlice extends AbilitySlice {
 
         // 启动Ability
         startAbility(intent);
+
+        terminate();
     }
 
     private void initPageSlider() {
         LogUtil.info(TAG, "initPageSlider is called");
         pageSlider = (PageSlider)findComponentById(ResourceTable.Id_page_slider);
-        VideoPlayerPageSliderProvider videoPlayerPageSliderProvider =
-            new VideoPlayerPageSliderProvider(videoInfoList, this);
+
+        videoPlayerPageSliderProvider = new VideoPlayerPageSliderProvider(videoInfoList, this);
+
         pageSlider.setProvider(videoPlayerPageSliderProvider);
         pageSlider.setReboundEffect(true);
         pageSlider.addPageChangedListener(new PageSlider.PageChangedListener() {
@@ -243,7 +228,7 @@ public class MainAbilitySlice extends AbilitySlice {
     @Override
     protected void onStop() {
         LogUtil.info(TAG, "onStop is called");
-        getPlayer(index).getLifecycle().onStop();
+        getPlayer(index).getLifecycle().onBackground();
         super.onStop();
     }
 

@@ -147,4 +147,22 @@ public class VideoInfo extends OrmObject {
     public void setId(Integer id) {
         this.id = id;
     }
+
+    @Override
+    public String toString() {
+        return "VideoInfo{" +
+                "id=" + id +
+                ", videoPath='" + videoPath + '\'' +
+                ", author='" + author + '\'' +
+                ", portraitPath='" + portraitPath + '\'' +
+                ", coverPath='" + coverPath + '\'' +
+                ", content='" + content + '\'' +
+                ", thumbsUpCount=" + thumbsUpCount +
+                ", commentCount=" + commentCount +
+                ", favoriteCount=" + favoriteCount +
+                ", follow=" + follow +
+                ", thumbsUp=" + thumbsUp +
+                ", favorite=" + favorite +
+                '}';
+    }
 }

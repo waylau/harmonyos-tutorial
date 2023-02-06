@@ -1,5 +1,8 @@
 package com.waylau.hmos.shortvideo.slice;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import com.waylau.hmos.shortvideo.MainAbility;
 import com.waylau.hmos.shortvideo.ResourceTable;
 import com.waylau.hmos.shortvideo.VideoPublishPageAbility;
@@ -9,8 +12,10 @@ import com.waylau.hmos.shortvideo.constant.Constants;
 import com.waylau.hmos.shortvideo.provider.VideoListFavoriteItemProvider;
 import com.waylau.hmos.shortvideo.provider.VideoListItemProvider;
 import com.waylau.hmos.shortvideo.provider.VideoListThumbsUpItemProvider;
+import com.waylau.hmos.shortvideo.store.VideoInfoRepository;
 import com.waylau.hmos.shortvideo.util.CommonUtil;
 import com.waylau.hmos.shortvideo.util.LogUtil;
+
 import ohos.aafwk.ability.AbilitySlice;
 import ohos.aafwk.content.Intent;
 import ohos.aafwk.content.Operation;
@@ -18,10 +23,6 @@ import ohos.agp.components.Image;
 import ohos.agp.components.ListContainer;
 import ohos.agp.components.TabList;
 import ohos.agp.components.Text;
-import ohos.utils.zson.ZSONArray;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * “我”页面
@@ -59,11 +60,7 @@ public class MePageAbilitySlice extends AbilitySlice {
     }
 
     private void initData() {
-        String resourcePath = "resources/rawfile/videoinfo.json";
-        String videosJson = CommonUtil.getJsonFileToString(this, resourcePath);
-
-        // json字符串转成对象集合
-        List<VideoInfo> videoInfos = ZSONArray.stringToClassList(videosJson, VideoInfo.class);
+        List<VideoInfo> videoInfos = VideoInfoRepository.queryAll();
         videoInfoList.clear();
         videoInfoList.addAll(videoInfos);
     }
@@ -198,6 +195,9 @@ public class MePageAbilitySlice extends AbilitySlice {
     private void startVideoUploadAbility() {
         LogUtil.info(TAG, "before startVideoUploadAbility");
         Intent intent = new Intent();
+        intent.setParam(Constants.LOGIN_USERNAME, userInfo.getUsername());
+        intent.setParam(Constants.IMAGE_SELECTION, userInfo.getPortraitPath());
+
         Operation operation = new Intent.OperationBuilder()
                 .withAbilityName(VideoPublishPageAbility.class)
                 .withBundleName("com.waylau.hmos.shortvideo")
@@ -207,11 +207,21 @@ public class MePageAbilitySlice extends AbilitySlice {
 
         // 启动Ability
         startAbility(intent);
+        /*
+        present(
+                new VideoPublishPageAbilitySlice(),intent
+        );
+        */
+        terminate();
     }
 
     private void startMainAbility() {
         LogUtil.info(TAG, "before startMainAbility");
+
         Intent intent = new Intent();
+        intent.setParam(Constants.LOGIN_USERNAME, userInfo.getUsername());
+        intent.setParam(Constants.IMAGE_SELECTION, userInfo.getPortraitPath());
+
         Operation operation = new Intent.OperationBuilder()
                 .withAbilityName(MainAbility.class)
                 .withBundleName("com.waylau.hmos.shortvideo")
@@ -221,6 +231,12 @@ public class MePageAbilitySlice extends AbilitySlice {
 
         // 启动Ability
         startAbility(intent);
+                /*
+        present(
+                new MainAbilitySlice(),intent
+        );
+        */
+        terminate();
     }
 
     @Override
