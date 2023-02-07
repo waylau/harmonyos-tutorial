@@ -8,6 +8,12 @@ import ohos.data.orm.OrmObject;
 import ohos.data.orm.annotation.Entity;
 import ohos.data.orm.annotation.PrimaryKey;
 
+/**
+ * UserFollowInfo
+ *
+ * @author <a href="https://waylau.com">Way Lau</a>
+ * @since 2023-02-07
+ */
 @Entity(tableName = "user_follow_t")
 public class UserFollowInfo extends OrmObject {
     // 此处将userId设为了自增的主键。注意只有在数据类型为包装类型时，自增主键才能生效。

@@ -4,6 +4,12 @@
 
 package com.waylau.hmos.shortvideo.bean;
 
+/**
+ * PortraitInfo
+ *
+ * @author <a href="https://waylau.com">Way Lau</a>
+ * @since 2023-02-07
+ */
 public class PortraitInfo {
     private int id;
     // 头像

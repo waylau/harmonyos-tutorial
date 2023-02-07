@@ -9,6 +9,12 @@ import ohos.data.orm.annotation.Entity;
 import ohos.data.orm.annotation.Index;
 import ohos.data.orm.annotation.PrimaryKey;
 
+/**
+ * UserInfo
+ *
+ * @author <a href="https://waylau.com">Way Lau</a>
+ * @since 2023-01-23
+ */
 @Entity(tableName = "user_info_t",
         indices = {@Index(value = {"username"}, name = "name_index", unique = true)})
 public class UserInfo extends OrmObject {
