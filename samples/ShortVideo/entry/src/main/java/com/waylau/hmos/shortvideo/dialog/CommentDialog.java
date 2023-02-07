@@ -55,7 +55,7 @@ public class CommentDialog extends CommonDialog {
         // 更新
         VideoInfoRepository.update(video);
 
-        destroy();
+        remove();
     }
     /**
      * 设置数据

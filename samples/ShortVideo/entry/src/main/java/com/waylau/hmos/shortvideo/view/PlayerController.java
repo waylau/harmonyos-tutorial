@@ -8,10 +8,11 @@ import com.waylau.hmos.shortvideo.ResourceTable;
 import com.waylau.hmos.shortvideo.api.IVideoInfoBinding;
 import com.waylau.hmos.shortvideo.api.IVideoPlayer;
 import com.waylau.hmos.shortvideo.api.StatuChangeListener;
-import com.waylau.hmos.shortvideo.bean.VideoInfo;
-import com.waylau.hmos.shortvideo.bean.ViderPlayerInfo;
+import com.waylau.hmos.shortvideo.bean.*;
 import com.waylau.hmos.shortvideo.constant.Constants;
 import com.waylau.hmos.shortvideo.constant.PlayerStatusEnum;
+import com.waylau.hmos.shortvideo.store.MeFavoriteVideoInfoRepository;
+import com.waylau.hmos.shortvideo.store.MeThumbsupVideoInfoRepository;
 import com.waylau.hmos.shortvideo.util.CommonUtil;
 import com.waylau.hmos.shortvideo.util.DateUtil;
 import com.waylau.hmos.shortvideo.util.LogUtil;
@@ -44,6 +45,7 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
     private boolean isDragMode = false;
     private IVideoPlayer videoPlayer;
     private VideoInfo videoInfo;
+    private UserInfo userInfo;
     private DirectionalLayout bottomLayout;
     private Image imagePlayToogle;
     private Slider sliderProgress;
@@ -241,6 +243,9 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
             setThumbsupImageStyle(imageThumbsup, videoInfo.isThumbsUp());
 
             textThumbsUpCount.setText(videoInfo.getThumbsUpCount() + "");
+
+            // 更新存储
+            setThumbsupRepository(videoInfo, videoInfo.isThumbsUp());
         });
 
         imageFavorite.setClickedListener(component -> {
@@ -259,16 +264,19 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
             setFavoriteImageStyle(imageFavorite, videoInfo.isFavorite());
 
             textFavoriteCount.setText(videoInfo.getFavoriteCount() + "");
+
+            // 更新存储
+            setFavoriteRepository(videoInfo, videoInfo.isThumbsUp());
         });
     }
 
     private void setFollowButtonStyle(Button button, boolean isFollow) {
         if (isFollow) {
-            buttonFollow.setText("取关");
-            buttonFollow.setBackground(new ShapeElement(mContext, ResourceTable.Graphic_background_button_gray));
+            button.setText("取关");
+            button.setBackground(new ShapeElement(mContext, ResourceTable.Graphic_background_button_gray));
         } else {
-            buttonFollow.setText("关注");
-            buttonFollow.setBackground(new ShapeElement(mContext, ResourceTable.Graphic_background_button_red));
+            button.setText("关注");
+            button.setBackground(new ShapeElement(mContext, ResourceTable.Graphic_background_button_red));
         }
     }
 
@@ -285,6 +293,30 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
             image.setPixelMap(ResourceTable.Media_ic_public_favor_filled);
         } else {
             image.setPixelMap(ResourceTable.Media_ic_public_favor);
+        }
+    }
+
+    private void setThumbsupRepository(VideoInfo videoInfo, boolean isThumbsUp) {
+        MeThumbsupVideoInfo meThumbsupVideoInfo = new MeThumbsupVideoInfo();
+        meThumbsupVideoInfo.copy(videoInfo);
+        meThumbsupVideoInfo.setUsername(userInfo.getUsername());
+
+        if (isThumbsUp) {
+            MeThumbsupVideoInfoRepository.insert(meThumbsupVideoInfo);
+        } else {
+            MeThumbsupVideoInfoRepository.delete(meThumbsupVideoInfo);
+        }
+    }
+
+    private void setFavoriteRepository(VideoInfo videoInfo, boolean isFavorite) {
+        MeFavoriteVideoInfo meFavoriteVideoInfo = new MeFavoriteVideoInfo();
+        meFavoriteVideoInfo.copy(videoInfo);
+        meFavoriteVideoInfo.setUsername(userInfo.getUsername());
+
+        if (isFavorite) {
+            MeFavoriteVideoInfoRepository.insert(meFavoriteVideoInfo);
+        } else {
+            MeFavoriteVideoInfoRepository.delete(meFavoriteVideoInfo);
         }
     }
 
@@ -320,6 +352,7 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
     public void bind(ViderPlayerInfo viderPlayerInfo) {
         videoInfo = viderPlayerInfo.getVideoInfo();
         videoPlayer = viderPlayerInfo.getVideoPlayer();
+        userInfo = viderPlayerInfo.getUserInfo();
 
         initPlayListener();
 

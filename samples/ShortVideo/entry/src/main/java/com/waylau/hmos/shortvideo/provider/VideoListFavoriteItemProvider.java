@@ -7,7 +7,9 @@ package com.waylau.hmos.shortvideo.provider;
 import java.util.List;
 
 import com.waylau.hmos.shortvideo.ResourceTable;
-import com.waylau.hmos.shortvideo.bean.VideoInfo;
+import com.waylau.hmos.shortvideo.bean.MeFavoriteVideoInfo;
+import com.waylau.hmos.shortvideo.listener.OperateResultListener;
+import com.waylau.hmos.shortvideo.store.MeFavoriteVideoInfoRepository;
 import com.waylau.hmos.shortvideo.util.CommonUtil;
 
 import ohos.agp.components.*;
@@ -22,13 +24,16 @@ import ohos.app.Context;
 public class VideoListFavoriteItemProvider extends BaseItemProvider {
     private static final String TAG = VideoListFavoriteItemProvider.class.getSimpleName();
 
-    // 数据源，每个页面对应list中的一项
-    private List<VideoInfo> list;
+    // 数据源
+    private List<MeFavoriteVideoInfo> list;
     private Context context;
+    private Button buttonDelete;
+    private final OperateResultListener listener;
 
-    public VideoListFavoriteItemProvider(List<VideoInfo> list, Context context) {
+    public VideoListFavoriteItemProvider(List<MeFavoriteVideoInfo> list, Context context,OperateResultListener listener) {
         this.list = list;
         this.context = context;
+        this.listener = listener;
     }
 
     @Override
@@ -54,11 +59,19 @@ public class VideoListFavoriteItemProvider extends BaseItemProvider {
         final Component videoListItemLayout =
             LayoutScatter.getInstance(context).parse(ResourceTable.Layout_video_list_item_favorite_layout, null, false);
 
-        VideoInfo videoInfo = list.get(i);
+        MeFavoriteVideoInfo videoInfo = list.get(i);
         Text textItemVideoContent = (Text)videoListItemLayout.findComponentById(ResourceTable.Id_text_item_video_content);
         textItemVideoContent.setText(videoInfo.getContent());
         Image imagevideoCover = (Image)videoListItemLayout.findComponentById(ResourceTable.Id_image_item_video_cover);
         imagevideoCover.setPixelMap(CommonUtil.getImageSource(context, videoInfo.getCoverPath()));
+
+        buttonDelete = (Button)videoListItemLayout.findComponentById(ResourceTable.Id_button_item_delete);
+        buttonDelete.setClickedListener(c -> {
+            MeFavoriteVideoInfoRepository.delete(videoInfo);
+
+            list.remove(i);
+            listener.callBack();
+        });
 
         return videoListItemLayout;
     }

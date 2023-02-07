@@ -24,9 +24,11 @@
         ohos:text="HarmonyOS是一款面向万物互联时代的、全新的分布式操作系统。"
         ohos:text_size="24fp"
         ohos:margin="2vp"
-        ohos:right_of="$id:image_item_video_cover"/>
+        ohos:right_of="$id:image_item_video_cover"
+        ohos:left_of="$id:layout_operate"/>
 
     <DirectionalLayout
+        ohos:id="$+id:layout_operate"
         ohos:height="match_content"
         ohos:width="50vp"
         ohos:orientation="vertical"

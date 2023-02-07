@@ -18,7 +18,7 @@ import ohos.data.orm.annotation.PrimaryKey;
 public class VideoInfo extends OrmObject {
     // 此处为了自增的主键
     @PrimaryKey(autoGenerate = true)
-    private Integer id;
+    private Integer videoId;
     // 视频路径
     private String videoPath;
 
@@ -51,6 +51,9 @@ public class VideoInfo extends OrmObject {
 
     // 是否收藏
     private boolean favorite;
+
+    public VideoInfo () {
+    }
 
     public String getVideoPath() {
         return videoPath;
@@ -140,29 +143,12 @@ public class VideoInfo extends OrmObject {
         this.coverPath = coverPath;
     }
 
-    public Integer getId() {
-        return id;
+    public Integer getVideoId() {
+        return videoId;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setVideoId(Integer videoId) {
+        this.videoId = videoId;
     }
 
-    @Override
-    public String toString() {
-        return "VideoInfo{" +
-                "id=" + id +
-                ", videoPath='" + videoPath + '\'' +
-                ", author='" + author + '\'' +
-                ", portraitPath='" + portraitPath + '\'' +
-                ", coverPath='" + coverPath + '\'' +
-                ", content='" + content + '\'' +
-                ", thumbsUpCount=" + thumbsUpCount +
-                ", commentCount=" + commentCount +
-                ", favoriteCount=" + favoriteCount +
-                ", follow=" + follow +
-                ", thumbsUp=" + thumbsUp +
-                ", favorite=" + favorite +
-                '}';
-    }
 }

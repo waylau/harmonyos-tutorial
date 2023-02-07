@@ -1,6 +1,6 @@
 [
   {
-    "id": 0,
+    "videoId": 0,
     "coverPath": "entry/resources/rawfile/video_cover_00.jpg",
     "videoPath": "entry/resources/rawfile/video_00.mp4",
     "author": "梅花小改锥",
@@ -14,7 +14,7 @@
     "isFavorite": false
   },
   {
-    "id": 1,
+    "videoId": 1,
     "coverPath": "entry/resources/rawfile/video_cover_01.jpg",
     "videoPath": "entry/resources/rawfile/video_01.mp4",
     "author": "科技速递",
@@ -28,7 +28,7 @@
     "isFavorite": true
   },
   {
-    "id": 2,
+    "videoId": 2,
     "coverPath": "entry/resources/rawfile/video_cover_02.jpg",
     "videoPath": "entry/resources/rawfile/video_02.mp4",
     "author": "小媛儿女装",
@@ -42,7 +42,7 @@
     "isFavorite": true
   },
   {
-    "id": 3,
+    "videoId": 3,
     "coverPath": "entry/resources/rawfile/video_cover_03.jpg",
     "videoPath": "entry/resources/rawfile/video_03.mp4",
     "author": "志儿",
@@ -56,7 +56,7 @@
     "isFavorite": true
   },
   {
-    "id": 4,
+    "videoId": 4,
     "coverPath": "entry/resources/rawfile/video_cover_04.jpg",
     "videoPath": "entry/resources/rawfile/video_04.mp4",
     "author": "真爱生活",
@@ -70,7 +70,7 @@
     "isFavorite": true
   },
   {
-    "id": 5,
+    "videoId": 5,
     "coverPath": "entry/resources/rawfile/video_cover_05.jpg",
     "videoPath": "entry/resources/rawfile/video_05.mp4",
     "author": "夏琳",

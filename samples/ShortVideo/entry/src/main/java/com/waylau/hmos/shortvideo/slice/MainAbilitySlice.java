@@ -72,7 +72,7 @@ public class MainAbilitySlice extends AbilitySlice {
             LogUtil.info(TAG, "VideoInfo : " + bean.toString());
 
             IVideoPlayer player = new VideoPlayer.Builder(getContext()).setFilePath(bean.getVideoPath()).create();
-            ViderPlayerInfo viderPlayerInfo = new ViderPlayerInfo(bean, player);
+            ViderPlayerInfo viderPlayerInfo = new ViderPlayerInfo(bean, player, userInfo);
 
             videoInfoList.add(viderPlayerInfo);
         }

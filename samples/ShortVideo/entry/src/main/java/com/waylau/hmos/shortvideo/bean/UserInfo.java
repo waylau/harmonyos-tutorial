@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) waylau.com, 2023. All rights reserved.
+ */
+
 package com.waylau.hmos.shortvideo.bean;
 
 import ohos.data.orm.OrmObject;
