@@ -13,6 +13,7 @@ import com.waylau.hmos.shortvideo.constant.Constants;
 import com.waylau.hmos.shortvideo.constant.PlayerStatusEnum;
 import com.waylau.hmos.shortvideo.store.MeFavoriteVideoInfoRepository;
 import com.waylau.hmos.shortvideo.store.MeThumbsupVideoInfoRepository;
+import com.waylau.hmos.shortvideo.store.UserFollowInfoRepository;
 import com.waylau.hmos.shortvideo.util.CommonUtil;
 import com.waylau.hmos.shortvideo.util.DateUtil;
 import com.waylau.hmos.shortvideo.util.LogUtil;
@@ -225,6 +226,9 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
             
             // 更新"关注"视图
             setFollowButtonStyle(buttonFollow, videoInfo.isFollow());
+
+            // 更新存储
+            setFollowRepository(videoInfo, videoInfo.isFollow());
         });
 
         imageThumbsup.setClickedListener(component -> {
@@ -317,6 +321,18 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
             MeFavoriteVideoInfoRepository.insert(meFavoriteVideoInfo);
         } else {
             MeFavoriteVideoInfoRepository.delete(meFavoriteVideoInfo);
+        }
+    }
+
+    private void setFollowRepository(VideoInfo videoInfo, boolean isFollow) {
+        UserFollowInfo userFollowInfo = new  UserFollowInfo();
+        userFollowInfo.copy(videoInfo);
+        userFollowInfo.setUsername(userInfo.getUsername());
+
+        if (isFollow) {
+            UserFollowInfoRepository.insert(userFollowInfo);
+        } else {
+            UserFollowInfoRepository.delete(userFollowInfo);
         }
     }
 
