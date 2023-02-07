@@ -71,7 +71,6 @@ public class MePageAbilitySlice extends AbilitySlice {
         videoInfoList.clear();
         videoInfoList.addAll(videoInfos);
 
-
         List<MeThumbsupVideoInfo> meThumbsupVideoInfos =  MeThumbsupVideoInfoRepository.queryByUsername(userInfo.getUsername());
         meThumbsupVideoInfoList.clear();
         meThumbsupVideoInfoList.addAll(meThumbsupVideoInfos);

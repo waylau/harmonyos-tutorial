@@ -45,4 +45,10 @@ public class WelcomePageAbility extends Ability {
             VideoInfoRepository.insert(bean);
         }
     }
+
+    @Override
+    protected void onStop() {
+        DatabaseUtil.deleteStore();
+        super.onStop();
+    }
 }

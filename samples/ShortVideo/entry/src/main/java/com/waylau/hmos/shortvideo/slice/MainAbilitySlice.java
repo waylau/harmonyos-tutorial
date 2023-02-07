@@ -11,12 +11,13 @@ import com.waylau.hmos.shortvideo.MePageAbility;
 import com.waylau.hmos.shortvideo.ResourceTable;
 import com.waylau.hmos.shortvideo.VideoPublishPageAbility;
 import com.waylau.hmos.shortvideo.api.IVideoPlayer;
-import com.waylau.hmos.shortvideo.bean.UserInfo;
-import com.waylau.hmos.shortvideo.bean.VideoInfo;
-import com.waylau.hmos.shortvideo.bean.ViderPlayerInfo;
+import com.waylau.hmos.shortvideo.bean.*;
 import com.waylau.hmos.shortvideo.constant.Constants;
 import com.waylau.hmos.shortvideo.player.VideoPlayer;
 import com.waylau.hmos.shortvideo.provider.VideoPlayerPageSliderProvider;
+import com.waylau.hmos.shortvideo.store.MeFavoriteVideoInfoRepository;
+import com.waylau.hmos.shortvideo.store.MeThumbsupVideoInfoRepository;
+import com.waylau.hmos.shortvideo.store.UserFollowInfoRepository;
 import com.waylau.hmos.shortvideo.store.VideoInfoRepository;
 import com.waylau.hmos.shortvideo.util.LogUtil;
 
@@ -67,15 +68,47 @@ public class MainAbilitySlice extends AbilitySlice {
         List<VideoInfo> videoInfos = VideoInfoRepository.queryAll();
         videoInfoList.clear();
 
-        // 处理视频对象
-        for (VideoInfo bean : videoInfos) {
-            LogUtil.info(TAG, "VideoInfo : " + bean.toString());
+        // 获取关注列表
+        List<UserFollowInfo> userFollowInfos =  UserFollowInfoRepository.queryByUsername(userInfo.getUsername());
 
-            IVideoPlayer player = new VideoPlayer.Builder(getContext()).setFilePath(bean.getVideoPath()).create();
-            ViderPlayerInfo viderPlayerInfo = new ViderPlayerInfo(bean, player, userInfo);
+        // 获取点赞列表
+        List<MeThumbsupVideoInfo> meThumbsupVideoInfos =  MeThumbsupVideoInfoRepository.queryByUsername(userInfo.getUsername());
+
+        // 获取收藏列表
+        List<MeFavoriteVideoInfo> meFavoriteVideoInfos =  MeFavoriteVideoInfoRepository.queryByUsername(userInfo.getUsername());
+
+        // 处理视频对象
+        for (VideoInfo videoInfo : videoInfos) {
+            LogUtil.info(TAG, "VideoInfo : " + videoInfo.toString());
+
+            IVideoPlayer player = new VideoPlayer.Builder(getContext()).setFilePath(videoInfo.getVideoPath()).create();
+            ViderPlayerInfo viderPlayerInfo = new ViderPlayerInfo(videoInfo, player, userInfo);
+
+            // 处理关注
+            for (UserFollowInfo followInfo: userFollowInfos) {
+                if (followInfo.getAuthor().equals(videoInfo.getAuthor())) {
+                    videoInfo.setFollow(Boolean.TRUE);
+                }
+            }
+
+            // 处理点赞
+            for (MeThumbsupVideoInfo thumbsupVideoInfo : meThumbsupVideoInfos) {
+                if (thumbsupVideoInfo.getVideoId().equals(videoInfo.getVideoId())) {
+                    videoInfo.setThumbsUp(Boolean.TRUE);
+                }
+            }
+
+            // 处理收藏
+            for (MeFavoriteVideoInfo favoriteVideoInfo: meFavoriteVideoInfos) {
+                if (favoriteVideoInfo.getVideoId().equals(videoInfo.getVideoId())) {
+                    videoInfo.setFavorite(Boolean.TRUE);
+                }
+            }
 
             videoInfoList.add(viderPlayerInfo);
         }
+
+
     }
 
     private void initUi(Intent intent) {
