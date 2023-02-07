@@ -7,7 +7,9 @@ package com.waylau.hmos.shortvideo.provider;
 import java.util.List;
 
 import com.waylau.hmos.shortvideo.ResourceTable;
-import com.waylau.hmos.shortvideo.bean.VideoInfo;
+import com.waylau.hmos.shortvideo.bean.MeThumbsupVideoInfo;
+import com.waylau.hmos.shortvideo.listener.OperateResultListener;
+import com.waylau.hmos.shortvideo.store.MeThumbsupVideoInfoRepository;
 import com.waylau.hmos.shortvideo.util.CommonUtil;
 
 import ohos.agp.components.*;
@@ -22,13 +24,16 @@ import ohos.app.Context;
 public class VideoListThumbsUpItemProvider extends BaseItemProvider {
     private static final String TAG = VideoListThumbsUpItemProvider.class.getSimpleName();
 
-    // 数据源，每个页面对应list中的一项
-    private List<VideoInfo> list;
+    // 数据源
+    private List<MeThumbsupVideoInfo> list;
     private Context context;
+    private Button buttonDelete;
+    private final OperateResultListener listener;
 
-    public VideoListThumbsUpItemProvider(List<VideoInfo> list, Context context) {
+    public VideoListThumbsUpItemProvider(List<MeThumbsupVideoInfo> list, Context context, OperateResultListener listener) {
         this.list = list;
         this.context = context;
+        this.listener = listener;
     }
 
     @Override
@@ -54,11 +59,19 @@ public class VideoListThumbsUpItemProvider extends BaseItemProvider {
         final Component videoListItemLayout =
             LayoutScatter.getInstance(context).parse(ResourceTable.Layout_video_list_item_thumbs_up_layout, null, false);
 
-        VideoInfo videoInfo = list.get(i);
+        MeThumbsupVideoInfo videoInfo = list.get(i);
         Text textItemVideoContent = (Text)videoListItemLayout.findComponentById(ResourceTable.Id_text_item_video_content);
         textItemVideoContent.setText(videoInfo.getContent());
         Image imagevideoCover = (Image)videoListItemLayout.findComponentById(ResourceTable.Id_image_item_video_cover);
         imagevideoCover.setPixelMap(CommonUtil.getImageSource(context, videoInfo.getCoverPath()));
+
+        buttonDelete = (Button)videoListItemLayout.findComponentById(ResourceTable.Id_button_item_delete);
+        buttonDelete.setClickedListener(c -> {
+            MeThumbsupVideoInfoRepository.delete(videoInfo);
+
+            list.remove(i);
+            listener.callBack();
+        });
 
         return videoListItemLayout;
     }

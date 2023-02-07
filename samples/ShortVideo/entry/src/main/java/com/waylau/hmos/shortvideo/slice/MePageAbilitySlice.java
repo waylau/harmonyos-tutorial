@@ -6,12 +6,16 @@ import java.util.List;
 import com.waylau.hmos.shortvideo.MainAbility;
 import com.waylau.hmos.shortvideo.ResourceTable;
 import com.waylau.hmos.shortvideo.VideoPublishPageAbility;
+import com.waylau.hmos.shortvideo.bean.MeFavoriteVideoInfo;
+import com.waylau.hmos.shortvideo.bean.MeThumbsupVideoInfo;
 import com.waylau.hmos.shortvideo.bean.UserInfo;
 import com.waylau.hmos.shortvideo.bean.VideoInfo;
 import com.waylau.hmos.shortvideo.constant.Constants;
 import com.waylau.hmos.shortvideo.provider.VideoListFavoriteItemProvider;
 import com.waylau.hmos.shortvideo.provider.VideoListItemProvider;
 import com.waylau.hmos.shortvideo.provider.VideoListThumbsUpItemProvider;
+import com.waylau.hmos.shortvideo.store.MeFavoriteVideoInfoRepository;
+import com.waylau.hmos.shortvideo.store.MeThumbsupVideoInfoRepository;
 import com.waylau.hmos.shortvideo.store.VideoInfoRepository;
 import com.waylau.hmos.shortvideo.util.CommonUtil;
 import com.waylau.hmos.shortvideo.util.LogUtil;
@@ -35,6 +39,8 @@ public class MePageAbilitySlice extends AbilitySlice {
 
     // 视频信息列表
     private final List<VideoInfo> videoInfoList = new ArrayList<>();
+    private final List<MeThumbsupVideoInfo> meThumbsupVideoInfoList = new ArrayList<>();
+    private final List<MeFavoriteVideoInfo> meFavoriteVideoInfoList  = new ArrayList<>();
 
     private UserInfo userInfo = new UserInfo();
 
@@ -42,7 +48,8 @@ public class MePageAbilitySlice extends AbilitySlice {
     private TabList tabListMeVideo;
     private TabList.Tab tabMe;
     private  VideoListItemProvider videoListItemProvider;
-
+    private VideoListThumbsUpItemProvider videoListThumbsUpItemProvider;
+    private VideoListFavoriteItemProvider videoListFavoriteItemProvider;
 
     @Override
     public void onStart(Intent intent) {
@@ -63,6 +70,15 @@ public class MePageAbilitySlice extends AbilitySlice {
         List<VideoInfo> videoInfos = VideoInfoRepository.queryByUsername(userInfo.getUsername());
         videoInfoList.clear();
         videoInfoList.addAll(videoInfos);
+
+
+        List<MeThumbsupVideoInfo> meThumbsupVideoInfos =  MeThumbsupVideoInfoRepository.queryByUsername(userInfo.getUsername());
+        meThumbsupVideoInfoList.clear();
+        meThumbsupVideoInfoList.addAll(meThumbsupVideoInfos);
+
+        List<MeFavoriteVideoInfo> meFavoriteVideoInfos =  MeFavoriteVideoInfoRepository.queryByUsername(userInfo.getUsername());
+        meFavoriteVideoInfoList.clear();
+        meFavoriteVideoInfoList.addAll(meFavoriteVideoInfos);
     }
 
     private void initUi(Intent intent) {
@@ -183,15 +199,20 @@ public class MePageAbilitySlice extends AbilitySlice {
     }
 
     private void initListContainerForVideoListFavoriteItemProvider() {
+
         ListContainer listContainer = (ListContainer) findComponentById(ResourceTable.Id_list_container_video_list);
-        VideoListFavoriteItemProvider itemProvider = new VideoListFavoriteItemProvider(videoInfoList, this);
-        listContainer.setItemProvider(itemProvider);
+        videoListFavoriteItemProvider = new VideoListFavoriteItemProvider(meFavoriteVideoInfoList,this, ()-> {
+            videoListFavoriteItemProvider.notifyDataChanged();
+        });
+        listContainer.setItemProvider(videoListFavoriteItemProvider);
     }
 
     private void initListContainerForVideoListThumbsUpItemProvider() {
         ListContainer listContainer = (ListContainer) findComponentById(ResourceTable.Id_list_container_video_list);
-        VideoListThumbsUpItemProvider itemProvider = new VideoListThumbsUpItemProvider(videoInfoList, this);
-        listContainer.setItemProvider(itemProvider);
+        videoListThumbsUpItemProvider = new VideoListThumbsUpItemProvider(meThumbsupVideoInfoList, this, ()-> {
+            videoListThumbsUpItemProvider.notifyDataChanged();
+        });
+        listContainer.setItemProvider(videoListThumbsUpItemProvider);
     }
 
     private void startVideoUploadAbility(Intent intent) {

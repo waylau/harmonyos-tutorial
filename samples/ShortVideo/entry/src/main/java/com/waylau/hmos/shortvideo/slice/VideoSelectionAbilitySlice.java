@@ -71,7 +71,7 @@ public class VideoSelectionAbilitySlice extends AbilitySlice {
 
         for (VideoInfo videoInfo : videoList) {
             Image img = new Image(this);
-            img.setId(videoInfo.getId());
+            img.setId(videoInfo.getVideoId());
             img.setHeight(imageHeight);
             img.setWidth(imageWidth);
             img.setMarginTop(10);
@@ -102,7 +102,7 @@ public class VideoSelectionAbilitySlice extends AbilitySlice {
 
     private VideoInfo findVideoInfoById(int videoId) {
         for (VideoInfo videoInfo : videoList) {
-            if (videoId == videoInfo.getId()) {
+            if (videoId == videoInfo.getVideoId()) {
                 return videoInfo;
             }
         }

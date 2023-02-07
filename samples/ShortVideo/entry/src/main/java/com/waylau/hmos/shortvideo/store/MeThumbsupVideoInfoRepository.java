@@ -6,7 +6,7 @@ package com.waylau.hmos.shortvideo.store;
 
 import java.util.List;
 
-import com.waylau.hmos.shortvideo.bean.VideoInfo;
+import com.waylau.hmos.shortvideo.bean.MeThumbsupVideoInfo;
 import com.waylau.hmos.shortvideo.util.DatabaseUtil;
 import com.waylau.hmos.shortvideo.util.LogUtil;
 
@@ -14,45 +14,45 @@ import ohos.data.orm.OrmContext;
 import ohos.data.orm.OrmPredicates;
 
 /**
- * 用户信息存储
+ * 点赞信息存储
  *
  * @author <a href="https://waylau.com">Way Lau</a>
- * @since 2023-01-30
+ * @since 2023-02-07
  */
-public class VideoInfoRepository {
-    private static final String TAG = VideoInfoRepository.class.getSimpleName();
+public class MeThumbsupVideoInfoRepository {
+    private static final String TAG = MeThumbsupVideoInfoRepository.class.getSimpleName();
     private static OrmContext ormContext = DatabaseUtil.getOrmContext();
 
-    public static List<VideoInfo> queryAll() {
-        OrmPredicates predicates = ormContext.where(VideoInfo.class);
-        List<VideoInfo> videoInfos = ormContext.query(predicates);
+    public static List<MeThumbsupVideoInfo> queryAll() {
+        OrmPredicates predicates = ormContext.where(MeThumbsupVideoInfo.class);
+        List<MeThumbsupVideoInfo> videoInfos = ormContext.query(predicates);
 
         return videoInfos;
     }
 
-    public static List<VideoInfo> queryByUsername(String author) {
-        OrmPredicates predicates = ormContext.where(VideoInfo.class);
-        predicates.equalTo("author", author);
-        List<VideoInfo> videoInfos = ormContext.query(predicates);
+    public static List<MeThumbsupVideoInfo> queryByUsername(String username) {
+        OrmPredicates predicates = ormContext.where(MeThumbsupVideoInfo.class);
+        predicates.equalTo("username", username);
+        List<MeThumbsupVideoInfo> videoInfos = ormContext.query(predicates);
 
         return videoInfos;
     }
 
-    public static int insert(VideoInfo videoInfo) {
+    public static int insert(MeThumbsupVideoInfo videoInfo) {
         LogUtil.info(TAG, "before insert");
 
         // 插入数据库
         ormContext.insert(videoInfo);
         boolean isSuccessed = ormContext.flush();
 
-        // 获取userId
-        int videoInfoId = videoInfo.getVideoId();
+        // 获取Id
+        int id = videoInfo.getMeThumbsupId();
 
-        LogUtil.info(TAG, "end insert: " + videoInfoId + ", isSuccessed: " + isSuccessed);
-        return videoInfoId;
+        LogUtil.info(TAG, "end insert: " + id + ", isSuccessed: " + isSuccessed);
+        return id;
     }
 
-    public static int update(VideoInfo videoInfo) {
+    public static int update(MeThumbsupVideoInfo videoInfo) {
         LogUtil.info(TAG, "before update");
 
         ormContext.update(videoInfo);
@@ -63,7 +63,7 @@ public class VideoInfoRepository {
         return 1;
     }
 
-    public static int delete(VideoInfo videoInfo) {
+    public static int delete(MeThumbsupVideoInfo videoInfo) {
         LogUtil.info(TAG, "before update");
 
         ormContext.delete(videoInfo);

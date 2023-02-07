@@ -12,6 +12,7 @@ import com.waylau.hmos.shortvideo.dialog.CommentDialog;
 import com.waylau.hmos.shortvideo.listener.OperateResultListener;
 import com.waylau.hmos.shortvideo.store.VideoInfoRepository;
 import com.waylau.hmos.shortvideo.util.CommonUtil;
+import com.waylau.hmos.shortvideo.util.LogUtil;
 
 import ohos.agp.components.*;
 import ohos.agp.utils.LayoutAlignment;
@@ -78,17 +79,19 @@ public class VideoListItemProvider extends BaseItemProvider {
             CommentDialog commentDialog = new CommentDialog(context);
             commentDialog.setAlignment(LayoutAlignment.BOTTOM);
             commentDialog.setData(videoInfo);
-
-            // 显示弹框
-            commentDialog.show();
             commentDialog.registerRemoveCallback(new BaseDialog.RemoveCallback() {
                 @Override
                 public void onRemove(IDialog iDialog) {
+                    LogUtil.info(TAG, "commentDialog onRemove");
+
                     textItemVideoContent.setText(videoInfo.getContent());
 
                     listener.callBack();
                 }
             });
+
+            // 显示弹框
+            commentDialog.show();
 
         });
 

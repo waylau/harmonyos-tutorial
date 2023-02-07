@@ -9,16 +9,16 @@ import ohos.data.orm.annotation.Entity;
 import ohos.data.orm.annotation.PrimaryKey;
 
 /**
- * MeThumbsupVideoInfo
+ * MeFavoriteVideoInfo
  *
  * @author <a href="https://waylau.com">Way Lau</a>
  * @since 2023-02-07
  */
-@Entity(tableName = "me_thumbsup_video_info_t")
-public class MeThumbsupVideoInfo extends OrmObject {
+@Entity(tableName = "me_favorite_video_info_t")
+public class MeFavoriteVideoInfo extends OrmObject {
     // 此处为了自增的主键
     @PrimaryKey(autoGenerate = true)
-    private Integer meThumbsupId;
+    private Integer meFavoriteId;
 
     private String username;
 
@@ -30,12 +30,12 @@ public class MeThumbsupVideoInfo extends OrmObject {
     // 内容
     private String content;
 
-    public Integer getMeThumbsupId() {
-        return meThumbsupId;
+    public Integer getMeFavoriteId() {
+        return meFavoriteId;
     }
 
-    public void setMeThumbsupId(Integer meThumbsupId) {
-        this.meThumbsupId = meThumbsupId;
+    public void setMeFavoriteId(Integer meFavoriteId) {
+        this.meFavoriteId = meFavoriteId;
     }
 
     public String getUsername() {
