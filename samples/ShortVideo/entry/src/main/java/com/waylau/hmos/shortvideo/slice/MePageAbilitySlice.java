@@ -6,16 +6,15 @@ import java.util.List;
 import com.waylau.hmos.shortvideo.MainAbility;
 import com.waylau.hmos.shortvideo.ResourceTable;
 import com.waylau.hmos.shortvideo.VideoPublishPageAbility;
-import com.waylau.hmos.shortvideo.bean.MeFavoriteVideoInfo;
-import com.waylau.hmos.shortvideo.bean.MeThumbsupVideoInfo;
-import com.waylau.hmos.shortvideo.bean.UserInfo;
-import com.waylau.hmos.shortvideo.bean.VideoInfo;
+import com.waylau.hmos.shortvideo.bean.*;
 import com.waylau.hmos.shortvideo.constant.Constants;
+import com.waylau.hmos.shortvideo.provider.UserFollowItemProvider;
 import com.waylau.hmos.shortvideo.provider.VideoListFavoriteItemProvider;
 import com.waylau.hmos.shortvideo.provider.VideoListItemProvider;
 import com.waylau.hmos.shortvideo.provider.VideoListThumbsUpItemProvider;
 import com.waylau.hmos.shortvideo.store.MeFavoriteVideoInfoRepository;
 import com.waylau.hmos.shortvideo.store.MeThumbsupVideoInfoRepository;
+import com.waylau.hmos.shortvideo.store.UserFollowInfoRepository;
 import com.waylau.hmos.shortvideo.store.VideoInfoRepository;
 import com.waylau.hmos.shortvideo.util.CommonUtil;
 import com.waylau.hmos.shortvideo.util.LogUtil;
@@ -41,7 +40,7 @@ public class MePageAbilitySlice extends AbilitySlice {
     private final List<VideoInfo> videoInfoList = new ArrayList<>();
     private final List<MeThumbsupVideoInfo> meThumbsupVideoInfoList = new ArrayList<>();
     private final List<MeFavoriteVideoInfo> meFavoriteVideoInfoList  = new ArrayList<>();
-
+    private final List<UserFollowInfo> userFollowInfoList = new ArrayList<>();
     private UserInfo userInfo = new UserInfo();
 
     private TabList tabListMe;
@@ -50,6 +49,7 @@ public class MePageAbilitySlice extends AbilitySlice {
     private  VideoListItemProvider videoListItemProvider;
     private VideoListThumbsUpItemProvider videoListThumbsUpItemProvider;
     private VideoListFavoriteItemProvider videoListFavoriteItemProvider;
+    private UserFollowItemProvider userFollowItemProvider;
 
     @Override
     public void onStart(Intent intent) {
@@ -79,6 +79,10 @@ public class MePageAbilitySlice extends AbilitySlice {
         List<MeFavoriteVideoInfo> meFavoriteVideoInfos =  MeFavoriteVideoInfoRepository.queryByUsername(userInfo.getUsername());
         meFavoriteVideoInfoList.clear();
         meFavoriteVideoInfoList.addAll(meFavoriteVideoInfos);
+
+        List< UserFollowInfo> userFollowInfos =  UserFollowInfoRepository.queryByUsername(userInfo.getUsername());
+        userFollowInfoList.clear();
+        userFollowInfoList.addAll(userFollowInfos);
     }
 
     private void initUi(Intent intent) {
@@ -158,6 +162,9 @@ public class MePageAbilitySlice extends AbilitySlice {
         TabList.Tab tab3 = tabListMeVideo.new Tab(getContext());
         tab3.setText("收藏");
         tabListMeVideo.addTab(tab3);
+        TabList.Tab tab4 = tabListMeVideo.new Tab(getContext());
+        tab4.setText("关注");
+        tabListMeVideo.addTab(tab4);
 
         // 设置TabList选择事件
         tabListMeVideo.addTabSelectedListener(new TabList.TabSelectedListener() {
@@ -167,12 +174,14 @@ public class MePageAbilitySlice extends AbilitySlice {
                 // 当某个Tab从未选中状态变为选中状态时的回调
                 LogUtil.info(TAG, "TabList onSelected, position: " + position);
 
-                if (position == 1) {
+                if (position == 0) {
+                    initListContainerForVideoListItemProvider();
+                } else if (position == 1) {
                     initListContainerForVideoListThumbsUpItemProvider();
                 } else  if (position == 2) {
                     initListContainerForVideoListFavoriteItemProvider();
                 } else {
-                    initListContainerForVideoListItemProvider();
+                    initListContainerForFollowItemProvider();
                 }
             }
 
@@ -214,6 +223,15 @@ public class MePageAbilitySlice extends AbilitySlice {
         });
         listContainer.setItemProvider(videoListThumbsUpItemProvider);
     }
+
+    private void initListContainerForFollowItemProvider() {
+        ListContainer listContainer = (ListContainer) findComponentById(ResourceTable.Id_list_container_video_list);
+        userFollowItemProvider = new UserFollowItemProvider(userFollowInfoList, this, ()-> {
+            userFollowItemProvider.notifyDataChanged();
+        });
+        listContainer.setItemProvider(userFollowItemProvider);
+    }
+
 
     private void startVideoUploadAbility(Intent intent) {
         LogUtil.info(TAG, "before startVideoUploadAbility");
