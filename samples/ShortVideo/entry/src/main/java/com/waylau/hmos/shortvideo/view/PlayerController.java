@@ -59,9 +59,11 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
     private Image imageThumbsup;
     private Image imageComment;
     private Image imageFavorite;
+    private Image imageShare;
     private Text textCommentCount;
     private Text textThumbsUpCount;
     private Text textFavoriteCount;
+    private Text textShareCount;
 
     private ControllerHandler controllerHandler;
     private StatuChangeListener mStatuChangeListener = new StatuChangeListener() {
@@ -168,9 +170,11 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
         imageThumbsup = (Image)playerController.findComponentById(ResourceTable.Id_image_thumbsup);
         imageComment = (Image)playerController.findComponentById(ResourceTable.Id_image_comment);
         imageFavorite = (Image)playerController.findComponentById(ResourceTable.Id_image_favorit);
+        imageShare = (Image)playerController.findComponentById(ResourceTable.Id_image_share);
         textThumbsUpCount = (Text)playerController.findComponentById(ResourceTable.Id_text_thumbs_up_count);
         textCommentCount = (Text)playerController.findComponentById(ResourceTable.Id_text_comment_count);
         textFavoriteCount = (Text)playerController.findComponentById(ResourceTable.Id_text_favorit_count);
+        textShareCount = (Text)playerController.findComponentById(ResourceTable.Id_text_share_count);
     }
 
     private void initListener() {
@@ -286,17 +290,17 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
 
     private void setFavoriteImageStyle(Image image, boolean isFavorite) {
         if (isFavorite) {
-            image.setPixelMap(ResourceTable.Media_ic_public_highlightsed);
+            image.setPixelMap(ResourceTable.Media_ic_star_red);
         } else {
-            image.setPixelMap(ResourceTable.Media_ic_public_highlights);
+            image.setPixelMap(ResourceTable.Media_ic_star);
         }
     }
 
     private void setThumbsupImageStyle(Image image, boolean isThumbsUp) {
         if (isThumbsUp) {
-            image.setPixelMap(ResourceTable.Media_ic_public_favor_filled);
+            image.setPixelMap(ResourceTable.Media_ic_like_red);
         } else {
-            image.setPixelMap(ResourceTable.Media_ic_public_favor);
+            image.setPixelMap(ResourceTable.Media_ic_like);
         }
     }
 
@@ -386,6 +390,7 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
         textThumbsUpCount.setText(videoInfo.getThumbsUpCount() + "");
         textCommentCount.setText(videoInfo.getCommentCount() + "");
         textFavoriteCount.setText(videoInfo.getFavoriteCount() + "");
+        textShareCount.setText(videoInfo.getShareCount() + "");
 
         // 更新视图
         setThumbsupImageStyle(imageThumbsup, videoInfo.isThumbsUp());

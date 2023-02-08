@@ -43,6 +43,9 @@ public class VideoInfo extends OrmObject {
     // 收藏数量
     private int favoriteCount;
 
+    // 分享数
+    private int shareCount;
+
     // 是否关注
     private boolean follow;
 
@@ -109,6 +112,14 @@ public class VideoInfo extends OrmObject {
 
     public void setFavoriteCount(int favoriteCount) {
         this.favoriteCount = favoriteCount;
+    }
+
+    public int getShareCount() {
+        return shareCount;
+    }
+
+    public void setShareCount(int shareCount) {
+        this.shareCount = shareCount;
     }
 
     public boolean isFollow() {

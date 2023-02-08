@@ -24,8 +24,9 @@ import com.waylau.hmos.shortvideo.util.LogUtil;
 import ohos.aafwk.ability.AbilitySlice;
 import ohos.aafwk.content.Intent;
 import ohos.aafwk.content.Operation;
+import ohos.agp.components.Button;
 import ohos.agp.components.PageSlider;
-import ohos.agp.components.TabList;
+import ohos.agp.text.Font;
 
 /**
  * 主页面
@@ -39,10 +40,9 @@ public class MainAbilitySlice extends AbilitySlice {
     // 视频信息列表
     private final List<ViderPlayerInfo> videoInfoList = new ArrayList<>();
     private int index = 0;
-    private TabList tabList;
-    private TabList.Tab tabMain;
     private PageSlider pageSlider;
-    VideoPlayerPageSliderProvider videoPlayerPageSliderProvider;
+    private VideoPlayerPageSliderProvider videoPlayerPageSliderProvider;
+    private Button buttonMain;
 
     @Override
     public void onStart(Intent intent) {
@@ -120,50 +120,26 @@ public class MainAbilitySlice extends AbilitySlice {
     }
 
     private void initTabList(Intent intent) {
-        tabList = (TabList)findComponentById(ResourceTable.Id_tab_list);
-        tabList.removeAllComponents();
-        tabMain = tabList.new Tab(getContext());
-        tabMain.setText("首页");
-        tabList.addTab(tabMain, true); // 默认选中
-        TabList.Tab tab2 = tabList.new Tab(getContext());
-        tab2.setText("✚");
-        tabList.addTab(tab2);
-        TabList.Tab tab3 = tabList.new Tab(getContext());
-        tab3.setText("我");
-        tabList.addTab(tab3);
+        buttonMain = (Button) findComponentById(ResourceTable.Id_button_main);
+        Button buttonFriend = (Button) findComponentById(ResourceTable.Id_button_friend);
+        Button iamgeAdd = (Button) findComponentById(ResourceTable.Id_button_add);
+        Button buttonMsg = (Button) findComponentById(ResourceTable.Id_button_msg);
+        Button buttonMe = (Button) findComponentById(ResourceTable.Id_button_me);
 
-        // 各个Tab的宽度也会根据TabList的宽度而平均分配
-        tabList.setFixedMode(true);
+        iamgeAdd.setClickedListener(component -> {
+            LogUtil.info(TAG, "buttonAdd Clicked");
 
-        // 设置TabList选择事件
-        tabList.addTabSelectedListener(new TabList.TabSelectedListener() {
-            @Override
-            public void onSelected(TabList.Tab tab) {
-                int position = tab.getPosition();
-                // 当某个Tab从未选中状态变为选中状态时的回调
-                LogUtil.info(TAG, "TabList onSelected, position: " + position);
-
-                if (position == 1) {
-                    // 视频上传界面
-                    startVideoUploadAbility(intent);
-                } else if (position == 2) {
-                    // “我”界面
-                    startMeAbility(intent);
-                }
-            }
-
-            @Override
-            public void onUnselected(TabList.Tab tab) {
-                // 当某个Tab从选中状态变为未选中状态时的回调
-                LogUtil.info(TAG, "TabList onUnselected, position:" + tab.getPosition());
-            }
-
-            @Override
-            public void onReselected(TabList.Tab tab) {
-                // 当某个Tab已处于选中状态，再次被点击时的状态回调
-                LogUtil.info(TAG, "TabList onReselected, position:" + tab.getPosition());
-            }
+            // 视频上传界面
+            startVideoUploadAbility(intent);
         });
+
+        buttonMe.setClickedListener(component -> {
+            LogUtil.info(TAG, "buttonMe Clicked");
+
+            // “我”界面
+            startMeAbility(intent);
+        });
+
     }
 
     private void startVideoUploadAbility(Intent intent) {
@@ -247,7 +223,8 @@ public class MainAbilitySlice extends AbilitySlice {
         getPlayer(index).getLifecycle().onForeground();
 
         // 首页选中
-        tabList.selectTab(tabMain);
+        //进入首页默认按钮加粗
+        buttonMain.setFont(Font.DEFAULT_BOLD);
         super.onForeground(intent);
     }
 
