@@ -6,7 +6,7 @@ package com.waylau.hmos.shortvideo.player;
 
 import com.waylau.hmos.shortvideo.api.IVideoPlayerLifecycle;
 import com.waylau.hmos.shortvideo.api.IVideoPlayer;
-import com.waylau.hmos.shortvideo.api.StatuChangeListener;
+import com.waylau.hmos.shortvideo.listener.StatuChangeListener;
 import com.waylau.hmos.shortvideo.constant.Constants;
 import com.waylau.hmos.shortvideo.constant.PlayerStatusEnum;
 import com.waylau.hmos.shortvideo.util.SourceUtil;

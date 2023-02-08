@@ -7,7 +7,7 @@ package com.waylau.hmos.shortvideo.view;
 import com.waylau.hmos.shortvideo.ResourceTable;
 import com.waylau.hmos.shortvideo.api.IVideoInfoBinding;
 import com.waylau.hmos.shortvideo.api.IVideoPlayer;
-import com.waylau.hmos.shortvideo.api.StatuChangeListener;
+import com.waylau.hmos.shortvideo.listener.StatuChangeListener;
 import com.waylau.hmos.shortvideo.bean.*;
 import com.waylau.hmos.shortvideo.constant.Constants;
 import com.waylau.hmos.shortvideo.constant.PlayerStatusEnum;

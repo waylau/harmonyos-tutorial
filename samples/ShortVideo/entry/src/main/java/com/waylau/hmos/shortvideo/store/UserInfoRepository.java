@@ -22,13 +22,6 @@ public class UserInfoRepository {
     private static final String TAG = UserInfoRepository.class.getSimpleName();
     private static OrmContext ormContext = DatabaseUtil.getOrmContext();
 
-    public static List<UserInfo> queryAll() {
-        OrmPredicates predicates = ormContext.where(UserInfo.class);
-        List<UserInfo> userInfos = ormContext.query(predicates);
-
-        return userInfos;
-    }
-
     public static UserInfo query(String username) {
         if(username == null) {
             return new UserInfo();
@@ -57,31 +50,4 @@ public class UserInfoRepository {
         return userId;
     }
 
-    public static int deleteAll() {
-        LogUtil.info(TAG, "before delete");
-        OrmPredicates predicates = ormContext.where(UserInfo.class);
-        List<UserInfo> userInfos = ormContext.query(predicates);
-
-        userInfos.forEach(userInfo -> {
-            boolean isSuccessed = ormContext.delete(userInfo);
-            LogUtil.info(TAG, "delete userInfo:" + userInfo.getUserId() + ",isSuccessed：" + isSuccessed);
-        });
-
-        boolean isSuccessed = ormContext.flush();
-
-        LogUtil.info(TAG, "end delete, isSuccessed:" + isSuccessed);
-
-        return userInfos.size();
-    }
-
-    public static int update(UserInfo UserInfo) {
-        LogUtil.info(TAG, "before update");
-
-        ormContext.update(UserInfo);
-
-        boolean isSuccessed = ormContext.flush();
-
-        LogUtil.info(TAG, "end update, isSuccessed: " + isSuccessed);
-        return 1;
-    }
 }
