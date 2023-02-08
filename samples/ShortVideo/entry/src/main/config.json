@@ -82,6 +82,15 @@
       {
         "name": "ohos.permission.INTERNET"
       }
-    ]
+    ],
+    "metaData":{
+      "customizeData":[
+        {
+          "name": "hwc-theme",
+          "value": "androidhwext:style/Theme.Emui.NoTitleBar",
+          "extra":""
+        }
+      ]
+    }
   }
 }

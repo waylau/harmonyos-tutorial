@@ -10,7 +10,7 @@
     "commentCount": 222,
     "favoriteCount": 12,
     "isFollow": false,
-    "isThumbsUp": true,
+    "isThumbsUp": false,
     "isFavorite": false
   },
   {
@@ -23,23 +23,23 @@
     "thumbsUpCount": 1,
     "commentCount": 2,
     "favoriteCount": 3,
-    "isFollow": true,
-    "isThumbsUp": true,
-    "isFavorite": true
+    "isFollow": false,
+    "isThumbsUp": false,
+    "isFavorite": false
   },
   {
     "videoId": 2,
     "coverPath": "entry/resources/rawfile/video_cover_02.jpg",
     "videoPath": "entry/resources/rawfile/video_02.mp4",
     "author": "小媛儿女装",
-    "portraitPath": "entry/resources/rawfile/portrait_01.jpg",
+    "portraitPath": "entry/resources/rawfile/portrait_02.jpg",
     "content": "已经开始期待春天了，感谢！我要上热门日常穿搭",
     "thumbsUpCount": 1,
     "commentCount": 2,
     "favoriteCount": 3,
-    "isFollow": true,
-    "isThumbsUp": true,
-    "isFavorite": true
+    "isFollow": false,
+    "isThumbsUp": false,
+    "isFavorite": false
   },
   {
     "videoId": 3,
@@ -51,9 +51,9 @@
     "thumbsUpCount": 1,
     "commentCount": 2,
     "favoriteCount": 3,
-    "isFollow": true,
-    "isThumbsUp": true,
-    "isFavorite": true
+    "isFollow": false,
+    "isThumbsUp": false,
+    "isFavorite": false
   },
   {
     "videoId": 4,
@@ -65,9 +65,9 @@
     "thumbsUpCount": 511,
     "commentCount": 21,
     "favoriteCount": 13,
-    "isFollow": true,
+    "isFollow": false,
     "isThumbsUp": false,
-    "isFavorite": true
+    "isFavorite": false
   },
   {
     "videoId": 5,
@@ -79,8 +79,8 @@
     "thumbsUpCount": 511,
     "commentCount": 21,
     "favoriteCount": 13,
-    "isFollow": true,
+    "isFollow": false,
     "isThumbsUp": false,
-    "isFavorite": true
+    "isFavorite": false
   }
 ]

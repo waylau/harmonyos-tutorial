@@ -4,6 +4,7 @@
 
 package com.waylau.hmos.shortvideo.api;
 
+import com.waylau.hmos.shortvideo.listener.StatuChangeListener;
 import com.waylau.hmos.shortvideo.player.VideoPlayer;
 import com.waylau.hmos.shortvideo.constant.PlayerStatusEnum;
 import ohos.agp.graphics.Surface;

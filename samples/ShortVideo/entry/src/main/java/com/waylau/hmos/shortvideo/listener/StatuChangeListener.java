@@ -2,7 +2,7 @@
  * Copyright (c) waylau.com, 2023. All rights reserved.
  */
 
-package com.waylau.hmos.shortvideo.api;
+package com.waylau.hmos.shortvideo.listener;
 
 
 import com.waylau.hmos.shortvideo.constant.PlayerStatusEnum;
