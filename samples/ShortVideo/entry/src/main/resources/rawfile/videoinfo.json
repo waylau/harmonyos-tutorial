@@ -9,6 +9,7 @@
     "thumbsUpCount": 2,
     "commentCount": 222,
     "favoriteCount": 12,
+    "shareCount": 11,
     "isFollow": false,
     "isThumbsUp": false,
     "isFavorite": false
@@ -23,6 +24,7 @@
     "thumbsUpCount": 1,
     "commentCount": 2,
     "favoriteCount": 3,
+    "shareCount": 31,
     "isFollow": false,
     "isThumbsUp": false,
     "isFavorite": false
@@ -37,6 +39,7 @@
     "thumbsUpCount": 1,
     "commentCount": 2,
     "favoriteCount": 3,
+    "shareCount": 3,
     "isFollow": false,
     "isThumbsUp": false,
     "isFavorite": false
@@ -51,6 +54,7 @@
     "thumbsUpCount": 1,
     "commentCount": 2,
     "favoriteCount": 3,
+    "shareCount": 53,
     "isFollow": false,
     "isThumbsUp": false,
     "isFavorite": false
@@ -65,6 +69,7 @@
     "thumbsUpCount": 511,
     "commentCount": 21,
     "favoriteCount": 13,
+    "shareCount": 432,
     "isFollow": false,
     "isThumbsUp": false,
     "isFavorite": false
@@ -79,6 +84,7 @@
     "thumbsUpCount": 511,
     "commentCount": 21,
     "favoriteCount": 13,
+    "shareCount": 55,
     "isFollow": false,
     "isThumbsUp": false,
     "isFavorite": false

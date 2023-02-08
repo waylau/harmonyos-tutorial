@@ -9,25 +9,68 @@
         ohos:id="$+id:page_slider"
         ohos:height="match_parent"
         ohos:width="match_parent"
-        ohos:above="$id:tab_list"
+        ohos:above="$id:layout_navigation_bar"
         ohos:background_element="black"
         ohos:orientation="vertical"
         ohos:page_cache_size="0"/>
 
     <!--导航栏-->
-    <TabList
-        ohos:id="$+id:tab_list"
+    <DirectionalLayout
+        ohos:id="$+id:layout_navigation_bar"
         ohos:height="50vp"
         ohos:width="match_parent"
         ohos:align_parent_bottom="true"
-        ohos:background_element="black"
-        ohos:horizontal_center="true"
-        ohos:layout_alignment="bottom"
-        ohos:normal_text_color="#999999"
-        ohos:orientation="horizontal"
-        ohos:selected_tab_indicator_color="#FFFFFF"
-        ohos:selected_tab_indicator_height="2vp"
-        ohos:selected_text_color="#FFFFFF"
-        ohos:text_alignment="center"/>
+        ohos:orientation="horizontal">
+
+        <Button
+            ohos:id="$+id:button_main"
+            ohos:height="match_parent"
+            ohos:width="0vp"
+            ohos:text="首页"
+            ohos:text_color="#e6e6e6"
+            ohos:text_size="20fp"
+            ohos:weight="1">
+        </Button>
+
+        <Button
+            ohos:id="$+id:button_friend"
+            ohos:height="match_parent"
+            ohos:width="0vp"
+            ohos:text="朋友"
+            ohos:text_color="#e6e6e6"
+            ohos:text_size="20fp"
+            ohos:weight="1">
+        </Button>
+
+        <Button
+            ohos:id="$+id:button_add"
+            ohos:height="match_parent"
+            ohos:width="0vp"
+            ohos:text="✚"
+            ohos:text_color="#e6e6e6"
+            ohos:text_size="20fp"
+            ohos:weight="1">
+        </Button>
+
+        <Button
+            ohos:id="$+id:button_msg"
+            ohos:height="match_parent"
+            ohos:width="0vp"
+            ohos:text="消息"
+            ohos:text_color="#e6e6e6"
+            ohos:text_size="20fp"
+            ohos:weight="1">
+        </Button>
+
+        <Button
+            ohos:id="$+id:button_me"
+            ohos:height="match_parent"
+            ohos:width="0vp"
+            ohos:text="我"
+            ohos:text_color="#e6e6e6"
+            ohos:text_size="20fp"
+            ohos:weight="1">
+        </Button>
+    </DirectionalLayout>
 
 </DependentLayout>
