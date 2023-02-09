@@ -27,6 +27,7 @@ import ohos.aafwk.content.Operation;
 import ohos.agp.components.Button;
 import ohos.agp.components.PageSlider;
 import ohos.agp.text.Font;
+import ohos.agp.utils.Color;
 
 /**
  * 主页面
@@ -225,6 +226,7 @@ public class MainAbilitySlice extends AbilitySlice {
         // 首页选中
         //进入首页默认按钮加粗
         buttonMain.setFont(Font.DEFAULT_BOLD);
+        buttonMain.setTextColor(Color.WHITE);
         super.onForeground(intent);
     }
 

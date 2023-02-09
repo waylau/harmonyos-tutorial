@@ -6,6 +6,61 @@
 
     <DirectionalLayout
         ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal"
+        ohos:align_parent_top="true">
+
+        <Button
+            ohos:height="28vp"
+            ohos:width="0vp"
+            ohos:left_margin="50"
+            ohos:text="直播"
+            ohos:text_color="#fefefe"
+            ohos:text_size="18fp"
+            ohos:weight="1"/>
+
+        <Button
+            ohos:height="28vp"
+            ohos:width="0vp"
+            ohos:left_margin="200"
+            ohos:right_margin="20"
+            ohos:text="同城"
+            ohos:text_color="#fefefe"
+            ohos:text_size="18fp"
+            ohos:weight="1"/>
+
+        <Button
+            ohos:height="28vp"
+            ohos:width="0vp"
+            ohos:left_margin="20"
+            ohos:right_margin="20"
+            ohos:text="关注"
+            ohos:text_color="#fefefe"
+            ohos:text_size="18fp"
+            ohos:weight="1"/>
+
+        <Button
+            ohos:height="28vp"
+            ohos:width="0vp"
+            ohos:left_margin="50"
+            ohos:right_margin="200"
+            ohos:text="推荐"
+            ohos:text_color="#FFFFFF"
+            ohos:text_size="18fp"
+            ohos:weight="1"/>
+
+        <Button
+            ohos:height="28vp"
+            ohos:width="0vp"
+            ohos:right_margin="50"
+            ohos:text="搜索"
+            ohos:text_color="#fefefe"
+            ohos:text_size="18fp"
+            ohos:weight="1"/>
+    </DirectionalLayout>
+
+    <DirectionalLayout
+        ohos:height="match_content"
         ohos:width="match_content"
         ohos:align_parent_bottom="true"
         ohos:layout_alignment="bottom"
