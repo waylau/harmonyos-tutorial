@@ -26,8 +26,6 @@ import ohos.aafwk.content.Intent;
 import ohos.aafwk.content.Operation;
 import ohos.agp.components.Button;
 import ohos.agp.components.PageSlider;
-import ohos.agp.text.Font;
-import ohos.agp.utils.Color;
 
 /**
  * 主页面
@@ -43,7 +41,6 @@ public class MainAbilitySlice extends AbilitySlice {
     private int index = 0;
     private PageSlider pageSlider;
     private VideoPlayerPageSliderProvider videoPlayerPageSliderProvider;
-    private Button buttonMain;
 
     @Override
     public void onStart(Intent intent) {
@@ -121,10 +118,7 @@ public class MainAbilitySlice extends AbilitySlice {
     }
 
     private void initTabList(Intent intent) {
-        buttonMain = (Button) findComponentById(ResourceTable.Id_button_main);
-        Button buttonFriend = (Button) findComponentById(ResourceTable.Id_button_friend);
         Button iamgeAdd = (Button) findComponentById(ResourceTable.Id_button_add);
-        Button buttonMsg = (Button) findComponentById(ResourceTable.Id_button_msg);
         Button buttonMe = (Button) findComponentById(ResourceTable.Id_button_me);
 
         iamgeAdd.setClickedListener(component -> {
@@ -223,10 +217,6 @@ public class MainAbilitySlice extends AbilitySlice {
         LogUtil.info(TAG, "onForeground is called");
         getPlayer(index).getLifecycle().onForeground();
 
-        // 首页选中
-        //进入首页默认按钮加粗
-        buttonMain.setFont(Font.DEFAULT_BOLD);
-        buttonMain.setTextColor(Color.WHITE);
         super.onForeground(intent);
     }
 

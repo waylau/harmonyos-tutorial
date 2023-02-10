@@ -27,8 +27,8 @@
             ohos:height="match_parent"
             ohos:width="0vp"
             ohos:text="首页"
-            ohos:text_color="#e6e6e6"
-            ohos:text_size="20fp"
+            ohos:text_color="#ffffff"
+            ohos:text_size="18fp"
             ohos:weight="1">
         </Button>
 
@@ -38,7 +38,7 @@
             ohos:width="0vp"
             ohos:text="朋友"
             ohos:text_color="#e6e6e6"
-            ohos:text_size="20fp"
+            ohos:text_size="18fp"
             ohos:weight="1">
         </Button>
 
@@ -47,7 +47,7 @@
             ohos:height="match_parent"
             ohos:width="0vp"
             ohos:text="✚"
-            ohos:text_color="#e6e6e6"
+            ohos:text_color="#ffffff"
             ohos:text_size="20fp"
             ohos:weight="1">
         </Button>
@@ -58,7 +58,7 @@
             ohos:width="0vp"
             ohos:text="消息"
             ohos:text_color="#e6e6e6"
-            ohos:text_size="20fp"
+            ohos:text_size="18fp"
             ohos:weight="1">
         </Button>
 
@@ -68,7 +68,7 @@
             ohos:width="0vp"
             ohos:text="我"
             ohos:text_color="#e6e6e6"
-            ohos:text_size="20fp"
+            ohos:text_size="18fp"
             ohos:weight="1">
         </Button>
     </DirectionalLayout>

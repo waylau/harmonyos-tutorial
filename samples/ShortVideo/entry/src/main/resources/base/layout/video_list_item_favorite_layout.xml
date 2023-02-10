@@ -22,24 +22,25 @@
         ohos:max_text_lines="5"
         ohos:multiple_lines="true"
         ohos:text="HarmonyOS是一款面向万物互联时代的、全新的分布式操作系统。"
-        ohos:text_size="24fp"
+        ohos:text_size="18fp"
         ohos:margin="2vp"
         ohos:right_of="$id:image_item_video_cover"
         ohos:left_of="$id:layout_operate"/>
 
     <DirectionalLayout
         ohos:id="$+id:layout_operate"
-        ohos:height="match_content"
+        ohos:height="180vp"
         ohos:width="50vp"
         ohos:orientation="vertical"
+        ohos:alignment="vertical_center"
         ohos:margin="2vp"
         ohos:align_parent_right="true">
 
         <Button
             ohos:id="$+id:button_item_delete"
             ohos:width="50vp"
-            ohos:height="24vp"
-            ohos:text_size="24fp"
+            ohos:height="match_content"
+            ohos:text_size="18fp"
             ohos:text="删除"
             ohos:margin="2vp"
             ohos:text_color="#FFFFFF"
