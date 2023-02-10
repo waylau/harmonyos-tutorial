@@ -8,6 +8,7 @@ import java.util.List;
 
 import com.waylau.hmos.shortvideo.ResourceTable;
 import com.waylau.hmos.shortvideo.bean.UserFollowInfo;
+import com.waylau.hmos.shortvideo.constant.Constants;
 import com.waylau.hmos.shortvideo.listener.OperateResultListener;
 import com.waylau.hmos.shortvideo.store.UserFollowInfoRepository;
 import com.waylau.hmos.shortvideo.util.CommonUtil;
@@ -66,6 +67,8 @@ public class UserFollowItemProvider extends BaseItemProvider {
         Image imageItemeFollowPortrait =
             (Image)videoListItemLayout.findComponentById(ResourceTable.Id_image_item_follow_portrait);
         imageItemeFollowPortrait.setPixelMap(CommonUtil.getImageSource(context, userFollowInfo.getPortraitPath()));
+        // 设置圆角
+        imageItemeFollowPortrait.setCornerRadius(Constants.NUMBER_FLOAT_100);
 
         buttonDelete = (Button)videoListItemLayout.findComponentById(ResourceTable.Id_button_item_delete);
         buttonDelete.setClickedListener(c -> {

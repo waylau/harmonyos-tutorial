@@ -1,5 +1,6 @@
 package com.waylau.hmos.shortvideo.slice;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,10 +23,9 @@ import com.waylau.hmos.shortvideo.util.LogUtil;
 import ohos.aafwk.ability.AbilitySlice;
 import ohos.aafwk.content.Intent;
 import ohos.aafwk.content.Operation;
-import ohos.agp.components.Image;
-import ohos.agp.components.ListContainer;
-import ohos.agp.components.TabList;
-import ohos.agp.components.Text;
+import ohos.agp.components.*;
+import ohos.agp.components.element.PixelMapElement;
+import ohos.global.resource.NotExistException;
 
 /**
  * “我”页面
@@ -43,13 +43,12 @@ public class MePageAbilitySlice extends AbilitySlice {
     private final List<UserFollowInfo> userFollowInfoList = new ArrayList<>();
     private UserInfo userInfo = new UserInfo();
 
-    private TabList tabListMe;
-    private TabList tabListMeVideo;
-    private TabList.Tab tabMe;
     private  VideoListItemProvider videoListItemProvider;
     private VideoListThumbsUpItemProvider videoListThumbsUpItemProvider;
     private VideoListFavoriteItemProvider videoListFavoriteItemProvider;
     private UserFollowItemProvider userFollowItemProvider;
+
+    private TabList tabListMeVideo;
 
     @Override
     public void onStart(Intent intent) {
@@ -85,15 +84,34 @@ public class MePageAbilitySlice extends AbilitySlice {
     }
 
     private void initUi(Intent intent) {
+        // 初始化背景图
+        initBackground();
+
         // 初始化用户资料
         initUserInfo();
 
-        // 初始化TabList标签栏
-        initMeTabList(intent);
+        // 初始化导航栏
+        initMeNavigation(intent);
+
         initMeVideoTabList();
 
         // 初始化ListContainer
         initListContainerForVideoListItemProvider();
+    }
+
+    private void initBackground() {
+        //根据资源生成PixelMapElement实例
+        PixelMapElement pixBg= null;
+        try {
+            pixBg = new PixelMapElement(getResourceManager().getResource(ResourceTable.Media_background));
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (NotExistException e) {
+            e.printStackTrace();
+        }
+        DependentLayout directLayout=(DependentLayout) findComponentById(ResourceTable.Id_layout_me);
+        //设置DependentLayout背景
+        directLayout.setBackground(pixBg);
     }
 
     private void initUserInfo() {
@@ -101,52 +119,27 @@ public class MePageAbilitySlice extends AbilitySlice {
         Text textMeAuthor = (Text)findComponentById(ResourceTable.Id_text_me_author);
 
         imageMePortrait.setPixelMap(CommonUtil.getImageSource(this.getContext(), userInfo.getPortraitPath()));
+        // 设置圆角
+        imageMePortrait.setCornerRadius(Constants.NUMBER_FLOAT_100);
         textMeAuthor.setText(userInfo.getUsername());
     }
 
-    private void initMeTabList(Intent intent) {
-        tabListMe = (TabList)findComponentById(ResourceTable.Id_tab_list_me);
-        TabList.Tab tab = tabListMe.new Tab(getContext());
-        tab.setText("首页");
-        tabListMe.addTab(tab);
-        TabList.Tab tab2 = tabListMe.new Tab(getContext());
-        tab2.setText("✚");
-        tabListMe.addTab(tab2);
-        tabMe = tabListMe.new Tab(getContext());
-        tabMe.setText("我");
-        tabListMe.addTab(tabMe, true); // 默认选中
+    private void initMeNavigation(Intent intent) {
+        Button buttonMain = (Button) findComponentById(ResourceTable.Id_button_main);
+        Button iamgeAdd = (Button) findComponentById(ResourceTable.Id_button_add);
 
-        // 各个Tab的宽度也会根据TabList的宽度而平均分配
-        tabListMe.setFixedMode(true);
+        buttonMain.setClickedListener(component -> {
+            LogUtil.info(TAG, "buttonMain Clicked");
 
-        // 设置TabList选择事件
-        tabListMe.addTabSelectedListener(new TabList.TabSelectedListener() {
-            @Override
-            public void onSelected(TabList.Tab tab) {
-                int position = tab.getPosition();
-                // 当某个Tab从未选中状态变为选中状态时的回调
-                LogUtil.info(TAG, "TabList onSelected, position: " + position);
+            // “首页”界面
+            startMainAbility(intent);
+        });
 
-                if (position == 1) {
-                    // 视频上传界面
-                    startVideoUploadAbility(intent);
-                } else if (position == 0) {
-                    // “首页”界面
-                    startMainAbility(intent);
-                }
-            }
+        iamgeAdd.setClickedListener(component -> {
+            LogUtil.info(TAG, "buttonAdd Clicked");
 
-            @Override
-            public void onUnselected(TabList.Tab tab) {
-                // 当某个Tab从选中状态变为未选中状态时的回调
-                LogUtil.info(TAG, "TabList onUnselected, position:" + tab.getPosition());
-            }
-
-            @Override
-            public void onReselected(TabList.Tab tab) {
-                // 当某个Tab已处于选中状态，再次被点击时的状态回调
-                LogUtil.info(TAG, "TabList onReselected, position:" + tab.getPosition());
-            }
+            // 视频上传界面
+            startVideoUploadAbility(intent);
         });
     }
 
@@ -270,8 +263,6 @@ public class MePageAbilitySlice extends AbilitySlice {
 
     @Override
     public void onForeground(Intent intent) {
-        // 首页选中
-        tabListMe.selectTab(tabMe);
         super.onForeground(intent);
     }
 }

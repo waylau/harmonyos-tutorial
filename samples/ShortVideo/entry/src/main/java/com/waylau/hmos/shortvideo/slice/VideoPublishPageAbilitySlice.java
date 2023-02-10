@@ -97,24 +97,25 @@ public class VideoPublishPageAbilitySlice extends AbilitySlice {
             new ToastDialog(getContext()).setText("请选择要发布的视频！").setAlignment(LayoutAlignment.CENTER).show();
         } else if (video.getContent() == null || video.getContent().isEmpty()) {
             new ToastDialog(getContext()).setText("请输入视频的内容！").setAlignment(LayoutAlignment.CENTER).show();
+        } else {
+
+            // 发布
+            VideoInfoRepository.insert(video);
+
+            Intent intent = new Intent();
+            intent.setParam(Constants.LOGIN_USERNAME, userInfo.getUsername());
+            intent.setParam(Constants.IMAGE_SELECTION, userInfo.getPortraitPath());
+
+            Operation operation = new Intent.OperationBuilder().withAbilityName(MePageAbility.class)
+                    .withBundleName("com.waylau.hmos.shortvideo").build();
+
+            intent.setOperation(operation);
+
+            // 启动Ability
+            startAbility(intent);
+
+            terminate();
         }
-
-        // 发布
-        VideoInfoRepository.insert(video);
-
-        Intent intent = new Intent();
-        intent.setParam(Constants.LOGIN_USERNAME, userInfo.getUsername());
-        intent.setParam(Constants.IMAGE_SELECTION, userInfo.getPortraitPath());
-
-        Operation operation = new Intent.OperationBuilder().withAbilityName(MePageAbility.class)
-                .withBundleName("com.waylau.hmos.shortvideo").build();
-
-        intent.setOperation(operation);
-
-        // 启动Ability
-        startAbility(intent);
-
-        terminate();
     }
 
     @Override

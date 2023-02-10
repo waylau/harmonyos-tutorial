@@ -3,7 +3,35 @@
     xmlns:ohos="http://schemas.huawei.com/res/ohos"
     ohos:height="match_parent"
     ohos:width="match_parent"
+    ohos:id="$+id:layout_me"
     >
+
+    <DependentLayout
+        ohos:id="$+id:layout_backgroud_image"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal"
+        ohos:align_parent_top="true"
+        ohos:top_margin="10vp"
+        >
+
+        <Image
+            ohos:width="22vp"
+            ohos:height="22vp"
+            ohos:image_src="$media:ic_public_search"
+            ohos:scale_mode="stretch"
+            ohos:right_margin="16vp"
+            ohos:left_of="$id:image_menu"/>
+
+        <Image
+            ohos:id="$+id:image_menu"
+            ohos:width="20vp"
+            ohos:height="20vp"
+            ohos:image_src="$media:ic_public_view_list"
+            ohos:scale_mode="stretch"
+            ohos:right_margin="16vp"
+            ohos:align_parent_right="true"/>
+    </DependentLayout>
 
     <!--个人信息展示区-->
     <DirectionalLayout
@@ -11,7 +39,9 @@
         ohos:height="match_content"
         ohos:width="match_parent"
         ohos:orientation="vertical"
-        ohos:margin="10vp">
+        ohos:below="$id:layout_backgroud_image"
+        ohos:top_margin="70vp"
+        ohos:left_margin="16vp">
         <DirectionalLayout
             ohos:height="match_content"
             ohos:width="match_content"
@@ -20,8 +50,8 @@
 
             <Image
                 ohos:id="$+id:image_me_portrait"
-                ohos:height="100vp"
-                ohos:width="100vp"
+                ohos:height="80vp"
+                ohos:width="80vp"
                 ohos:image_src="$media:ic_user_portrait"
                 ohos:scale_mode="stretch"/>
 
@@ -30,8 +60,9 @@
                 ohos:height="match_content"
                 ohos:width="match_content"
                 ohos:text="未登录"
-                ohos:text_size="25fp"
-                ohos:text_weight="700"/>
+                ohos:text_size="20fp"
+                ohos:left_margin="10vp"
+                ohos:text_color="#ffffff"/>
 
         </DirectionalLayout>
 
@@ -39,14 +70,15 @@
             ohos:id="$+id:tab_me_video_list"
             ohos:height="40vp"
             ohos:width="match_parent"
-            ohos:normal_text_color="#999999"
+            ohos:normal_text_color="#e6e6e6"
             ohos:orientation="horizontal"
             ohos:tab_margin="2vp"
-            ohos:selected_tab_indicator_color="#000000"
+            ohos:selected_tab_indicator_color="#ffffff"
             ohos:selected_tab_indicator_height="2vp"
-            ohos:selected_text_color="#000000"
-            ohos:text_size="25fp"
-            ohos:text_alignment="center"/>
+            ohos:selected_text_color="#ffffff"
+            ohos:text_size="18fp"
+            ohos:text_alignment="center"
+            ohos:fixed_mode="true"/>
 
     </DirectionalLayout>
 
@@ -54,25 +86,69 @@
     <ListContainer
         ohos:id="$+id:list_container_video_list"
         ohos:below="$id:layout_me_info"
-        ohos:above="$id:tab_list_me"
+        ohos:above="$id:layout_navigation_bar"
         ohos:height="match_content"
         ohos:width="match_parent"
-        ohos:background_element="#FFEEECEC"
-        ohos:margin="10vp"/>
+        ohos:background_element="#e6e6e6"
+        ohos:top_margin="10vp"/>
 
-    <!--导航栏-->
-    <TabList
-        ohos:id="$+id:tab_list_me"
+    <DirectionalLayout
+        ohos:id="$+id:layout_navigation_bar"
         ohos:height="50vp"
         ohos:width="match_parent"
         ohos:align_parent_bottom="true"
-        ohos:horizontal_center="true"
-        ohos:layout_alignment="bottom"
-        ohos:normal_text_color="#999999"
         ohos:orientation="horizontal"
-        ohos:selected_tab_indicator_color="#000000"
-        ohos:selected_tab_indicator_height="2vp"
-        ohos:selected_text_color="#000000"
-        ohos:text_alignment="center"/>
+        ohos:background_element="#ffffff">
+
+        <Button
+            ohos:id="$+id:button_main"
+            ohos:height="match_parent"
+            ohos:width="0vp"
+            ohos:text="首页"
+            ohos:text_color="#737479"
+            ohos:text_size="18fp"
+            ohos:weight="1">
+        </Button>
+
+        <Button
+            ohos:id="$+id:button_friend"
+            ohos:height="match_parent"
+            ohos:width="0vp"
+            ohos:text="朋友"
+            ohos:text_color="#737479"
+            ohos:text_size="18fp"
+            ohos:weight="1">
+        </Button>
+
+        <Button
+            ohos:id="$+id:button_add"
+            ohos:height="match_parent"
+            ohos:width="0vp"
+            ohos:text="✚"
+            ohos:text_color="#000000"
+            ohos:text_size="20fp"
+            ohos:weight="1">
+        </Button>
+
+        <Button
+            ohos:id="$+id:button_msg"
+            ohos:height="match_parent"
+            ohos:width="0vp"
+            ohos:text="消息"
+            ohos:text_color="#737479"
+            ohos:text_size="18fp"
+            ohos:weight="1">
+        </Button>
+
+        <Button
+            ohos:id="$+id:button_me"
+            ohos:height="match_parent"
+            ohos:width="0vp"
+            ohos:text="我"
+            ohos:text_color="#000000"
+            ohos:text_size="18fp"
+            ohos:weight="1">
+        </Button>
+    </DirectionalLayout>
 
 </DependentLayout>
