@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_content"
+    ohos:width="match_parent"
+    ohos:orientation="horizontal"
+    ohos:margin="10vp">
+
+    <Image
+        ohos:id="$+id:image_item_comment_user_portrait"
+        ohos:height="40vp"
+        ohos:width="40vp"
+        ohos:scale_mode="stretch"
+        ohos:image_src="$media:ic_user_portrait"/>
+
+    <DirectionalLayout
+        ohos:height="40vp"
+        ohos:width="match_parent"
+        ohos:alignment="vertical_center"
+        ohos:orientation="vertical">
+
+        <Text
+            ohos:id="$+id:text_item_comment_user_name"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text="用户名"
+            ohos:text_color="#737479"
+            ohos:text_size="16fp"/>
+
+        <Text
+            ohos:id="$+id:text_item_comment_content"
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:text="评论内容"
+            ohos:text_color="#000000"
+            ohos:text_size="16fp"
+            ohos:top_margin="5vp"/>
+
+    </DirectionalLayout>
+
+
+</DirectionalLayout>

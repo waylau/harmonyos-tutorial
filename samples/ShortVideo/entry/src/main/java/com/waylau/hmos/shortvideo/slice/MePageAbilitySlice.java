@@ -39,11 +39,11 @@ public class MePageAbilitySlice extends AbilitySlice {
     // 视频信息列表
     private final List<VideoInfo> videoInfoList = new ArrayList<>();
     private final List<MeThumbsupVideoInfo> meThumbsupVideoInfoList = new ArrayList<>();
-    private final List<MeFavoriteVideoInfo> meFavoriteVideoInfoList  = new ArrayList<>();
+    private final List<MeFavoriteVideoInfo> meFavoriteVideoInfoList = new ArrayList<>();
     private final List<UserFollowInfo> userFollowInfoList = new ArrayList<>();
     private UserInfo userInfo = new UserInfo();
 
-    private  VideoListItemProvider videoListItemProvider;
+    private VideoListItemProvider videoListItemProvider;
     private VideoListThumbsUpItemProvider videoListThumbsUpItemProvider;
     private VideoListFavoriteItemProvider videoListFavoriteItemProvider;
     private UserFollowItemProvider userFollowItemProvider;
@@ -70,15 +70,17 @@ public class MePageAbilitySlice extends AbilitySlice {
         videoInfoList.clear();
         videoInfoList.addAll(videoInfos);
 
-        List<MeThumbsupVideoInfo> meThumbsupVideoInfos =  MeThumbsupVideoInfoRepository.queryByUsername(userInfo.getUsername());
+        List<MeThumbsupVideoInfo> meThumbsupVideoInfos =
+            MeThumbsupVideoInfoRepository.queryByUsername(userInfo.getUsername());
         meThumbsupVideoInfoList.clear();
         meThumbsupVideoInfoList.addAll(meThumbsupVideoInfos);
 
-        List<MeFavoriteVideoInfo> meFavoriteVideoInfos =  MeFavoriteVideoInfoRepository.queryByUsername(userInfo.getUsername());
+        List<MeFavoriteVideoInfo> meFavoriteVideoInfos =
+            MeFavoriteVideoInfoRepository.queryByUsername(userInfo.getUsername());
         meFavoriteVideoInfoList.clear();
         meFavoriteVideoInfoList.addAll(meFavoriteVideoInfos);
 
-        List< UserFollowInfo> userFollowInfos =  UserFollowInfoRepository.queryByUsername(userInfo.getUsername());
+        List<UserFollowInfo> userFollowInfos = UserFollowInfoRepository.queryByUsername(userInfo.getUsername());
         userFollowInfoList.clear();
         userFollowInfoList.addAll(userFollowInfos);
     }
@@ -100,8 +102,8 @@ public class MePageAbilitySlice extends AbilitySlice {
     }
 
     private void initBackground() {
-        //根据资源生成PixelMapElement实例
-        PixelMapElement pixBg= null;
+        // 根据资源生成PixelMapElement实例
+        PixelMapElement pixBg = null;
         try {
             pixBg = new PixelMapElement(getResourceManager().getResource(ResourceTable.Media_background));
         } catch (IOException e) {
@@ -109,8 +111,8 @@ public class MePageAbilitySlice extends AbilitySlice {
         } catch (NotExistException e) {
             e.printStackTrace();
         }
-        DependentLayout directLayout=(DependentLayout) findComponentById(ResourceTable.Id_layout_me);
-        //设置DependentLayout背景
+        DependentLayout directLayout = (DependentLayout)findComponentById(ResourceTable.Id_layout_me);
+        // 设置DependentLayout背景
         directLayout.setBackground(pixBg);
     }
 
@@ -125,8 +127,8 @@ public class MePageAbilitySlice extends AbilitySlice {
     }
 
     private void initMeNavigation(Intent intent) {
-        Button buttonMain = (Button) findComponentById(ResourceTable.Id_button_main);
-        Button iamgeAdd = (Button) findComponentById(ResourceTable.Id_button_add);
+        Button buttonMain = (Button)findComponentById(ResourceTable.Id_button_main);
+        Button iamgeAdd = (Button)findComponentById(ResourceTable.Id_button_add);
 
         buttonMain.setClickedListener(component -> {
             LogUtil.info(TAG, "buttonMain Clicked");
@@ -170,7 +172,7 @@ public class MePageAbilitySlice extends AbilitySlice {
                     initListContainerForVideoListItemProvider();
                 } else if (position == 1) {
                     initListContainerForVideoListThumbsUpItemProvider();
-                } else  if (position == 2) {
+                } else if (position == 2) {
                     initListContainerForVideoListFavoriteItemProvider();
                 } else {
                     initListContainerForFollowItemProvider();
@@ -192,8 +194,8 @@ public class MePageAbilitySlice extends AbilitySlice {
     }
 
     private void initListContainerForVideoListItemProvider() {
-        ListContainer listContainer = (ListContainer) findComponentById(ResourceTable.Id_list_container_video_list);
-        videoListItemProvider = new VideoListItemProvider(videoInfoList, this, ()-> {
+        ListContainer listContainer = (ListContainer)findComponentById(ResourceTable.Id_list_container_video_list);
+        videoListItemProvider = new VideoListItemProvider(videoInfoList, this, () -> {
             videoListItemProvider.notifyDataChanged();
         });
         listContainer.setItemProvider(videoListItemProvider);
@@ -201,37 +203,34 @@ public class MePageAbilitySlice extends AbilitySlice {
 
     private void initListContainerForVideoListFavoriteItemProvider() {
 
-        ListContainer listContainer = (ListContainer) findComponentById(ResourceTable.Id_list_container_video_list);
-        videoListFavoriteItemProvider = new VideoListFavoriteItemProvider(meFavoriteVideoInfoList,this, ()-> {
+        ListContainer listContainer = (ListContainer)findComponentById(ResourceTable.Id_list_container_video_list);
+        videoListFavoriteItemProvider = new VideoListFavoriteItemProvider(meFavoriteVideoInfoList, this, () -> {
             videoListFavoriteItemProvider.notifyDataChanged();
         });
         listContainer.setItemProvider(videoListFavoriteItemProvider);
     }
 
     private void initListContainerForVideoListThumbsUpItemProvider() {
-        ListContainer listContainer = (ListContainer) findComponentById(ResourceTable.Id_list_container_video_list);
-        videoListThumbsUpItemProvider = new VideoListThumbsUpItemProvider(meThumbsupVideoInfoList, this, ()-> {
+        ListContainer listContainer = (ListContainer)findComponentById(ResourceTable.Id_list_container_video_list);
+        videoListThumbsUpItemProvider = new VideoListThumbsUpItemProvider(meThumbsupVideoInfoList, this, () -> {
             videoListThumbsUpItemProvider.notifyDataChanged();
         });
         listContainer.setItemProvider(videoListThumbsUpItemProvider);
     }
 
     private void initListContainerForFollowItemProvider() {
-        ListContainer listContainer = (ListContainer) findComponentById(ResourceTable.Id_list_container_video_list);
-        userFollowItemProvider = new UserFollowItemProvider(userFollowInfoList, this, ()-> {
+        ListContainer listContainer = (ListContainer)findComponentById(ResourceTable.Id_list_container_video_list);
+        userFollowItemProvider = new UserFollowItemProvider(userFollowInfoList, this, () -> {
             userFollowItemProvider.notifyDataChanged();
         });
         listContainer.setItemProvider(userFollowItemProvider);
     }
 
-
     private void startVideoUploadAbility(Intent intent) {
         LogUtil.info(TAG, "before startVideoUploadAbility");
 
-        Operation operation = new Intent.OperationBuilder()
-                .withAbilityName(VideoPublishPageAbility.class)
-                .withBundleName("com.waylau.hmos.shortvideo")
-                .build();
+        Operation operation = new Intent.OperationBuilder().withAbilityName(VideoPublishPageAbility.class)
+            .withBundleName("com.waylau.hmos.shortvideo").build();
 
         intent.setOperation(operation);
 
@@ -244,10 +243,8 @@ public class MePageAbilitySlice extends AbilitySlice {
     private void startMainAbility(Intent intent) {
         LogUtil.info(TAG, "before startMainAbility");
 
-        Operation operation = new Intent.OperationBuilder()
-                .withAbilityName(MainAbility.class)
-                .withBundleName("com.waylau.hmos.shortvideo")
-                .build();
+        Operation operation = new Intent.OperationBuilder().withAbilityName(MainAbility.class)
+            .withBundleName("com.waylau.hmos.shortvideo").build();
 
         intent.setOperation(operation);
 

@@ -8,7 +8,7 @@ import java.util.List;
 
 import com.waylau.hmos.shortvideo.ResourceTable;
 import com.waylau.hmos.shortvideo.bean.VideoInfo;
-import com.waylau.hmos.shortvideo.dialog.CommentDialog;
+import com.waylau.hmos.shortvideo.dialog.VideoInfoEditDialog;
 import com.waylau.hmos.shortvideo.listener.OperateResultListener;
 import com.waylau.hmos.shortvideo.store.VideoInfoRepository;
 import com.waylau.hmos.shortvideo.util.CommonUtil;
@@ -76,10 +76,10 @@ public class VideoListItemProvider extends BaseItemProvider {
 
         buttonEdit.setClickedListener(c -> {
             // 创建弹框
-            CommentDialog commentDialog = new CommentDialog(context);
-            commentDialog.setAlignment(LayoutAlignment.BOTTOM);
-            commentDialog.setData(videoInfo);
-            commentDialog.registerRemoveCallback(new BaseDialog.RemoveCallback() {
+            VideoInfoEditDialog editDialog = new VideoInfoEditDialog(context);
+            editDialog.setAlignment(LayoutAlignment.BOTTOM);
+            editDialog.setData(videoInfo);
+            editDialog.registerRemoveCallback(new BaseDialog.RemoveCallback() {
                 @Override
                 public void onRemove(IDialog iDialog) {
                     LogUtil.info(TAG, "commentDialog onRemove");
@@ -91,7 +91,7 @@ public class VideoListItemProvider extends BaseItemProvider {
             });
 
             // 显示弹框
-            commentDialog.show();
+            editDialog.show();
 
         });
 

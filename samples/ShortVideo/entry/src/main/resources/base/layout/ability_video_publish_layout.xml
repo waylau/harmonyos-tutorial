@@ -3,7 +3,7 @@
     xmlns:ohos="http://schemas.huawei.com/res/ohos"
     ohos:height="match_parent"
     ohos:width="match_parent"
-    ohos:background_element="#DDDDDD"
+    ohos:background_element="#151823"
     ohos:orientation="vertical">
 
     <Image
@@ -21,13 +21,18 @@
         ohos:width="320vp"
         ohos:multiple_lines="true"
         ohos:max_text_lines="3"
-        ohos:background_element="#FFFFFF"
+        ohos:background_element="$graphic:background_textfiled_content"
         ohos:hint="请输入视频内容"
-        ohos:hint_color="#999999"
+        ohos:hint_color="#a3966b"
+        ohos:text_color="#fefefe"
         ohos:layout_alignment="horizontal_center"
         ohos:text_alignment="start"
-        ohos:text_size="24fp"
+        ohos:text_size="20fp"
         ohos:top_margin="28vp"
+        ohos:left_padding="10vp"
+        ohos:right_padding="10vp"
+        ohos:top_padding="10vp"
+        ohos:bottom_padding="10vp"
         />
 
     <Button
