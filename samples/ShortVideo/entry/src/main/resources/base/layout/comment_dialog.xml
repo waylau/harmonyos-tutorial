@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <StackLayout
+        ohos:height="0vp"
+        ohos:width="match_parent"
+        ohos:weight="1">
+
+        <ListContainer
+            ohos:id="$+id:lc_comment_list"
+            ohos:height="match_parent"
+            ohos:width="match_parent"/>
+
+        <Text
+            ohos:id="$+id:text_comment_dataEmpty"
+            ohos:text_color="#FFC9C9CB"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:layout_alignment="center"
+            ohos:text="暂无评论~"
+            ohos:text_size="17fp"/>
+    </StackLayout>
+
+
+    <Component
+        ohos:height="1vp"
+        ohos:width="match_parent"
+        ohos:background_element="#f3f3f3"/>
+
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:alignment="vertical_center"
+        ohos:orientation="horizontal">
+
+        <TextField
+            ohos:id="$+id:textfield_comment"
+            ohos:height="match_parent"
+            ohos:width="0vp"
+            ohos:hint="请输入评论"
+            ohos:hint_color="#6f7075"
+            ohos:margin="5vp"
+            ohos:padding="8vp"
+            ohos:text_alignment="vertical_center"
+            ohos:text_size="15fp"
+            ohos:weight="1"/>
+
+        <Button
+            ohos:id="$+id:button_comment_send"
+            ohos:height="match_content"
+            ohos:width="80vp"
+            ohos:background_element="$graphic:background_button_blue"
+            ohos:margin="5vp"
+            ohos:padding="8vp"
+            ohos:text="发送"
+            ohos:text_size="15fp"/>
+
+    </DirectionalLayout>
+
+</DirectionalLayout>

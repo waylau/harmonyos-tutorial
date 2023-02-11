@@ -4,13 +4,17 @@
 
 package com.waylau.hmos.shortvideo.view;
 
+import java.util.List;
+
 import com.waylau.hmos.shortvideo.ResourceTable;
 import com.waylau.hmos.shortvideo.api.IVideoInfoBinding;
 import com.waylau.hmos.shortvideo.api.IVideoPlayer;
-import com.waylau.hmos.shortvideo.listener.StatuChangeListener;
 import com.waylau.hmos.shortvideo.bean.*;
 import com.waylau.hmos.shortvideo.constant.Constants;
 import com.waylau.hmos.shortvideo.constant.PlayerStatusEnum;
+import com.waylau.hmos.shortvideo.dialog.CommentDialog;
+import com.waylau.hmos.shortvideo.listener.StatuChangeListener;
+import com.waylau.hmos.shortvideo.store.CommentInfoRepository;
 import com.waylau.hmos.shortvideo.store.MeFavoriteVideoInfoRepository;
 import com.waylau.hmos.shortvideo.store.MeThumbsupVideoInfoRepository;
 import com.waylau.hmos.shortvideo.store.UserFollowInfoRepository;
@@ -21,6 +25,7 @@ import com.waylau.hmos.shortvideo.util.LogUtil;
 import ohos.agp.colors.RgbColor;
 import ohos.agp.components.*;
 import ohos.agp.components.element.ShapeElement;
+import ohos.agp.utils.LayoutAlignment;
 import ohos.app.Context;
 import ohos.eventhandler.EventHandler;
 import ohos.eventhandler.EventRunner;
@@ -64,6 +69,7 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
     private Text textThumbsUpCount;
     private Text textFavoriteCount;
     private Text textShareCount;
+    private List<CommentInfo> commentList;
 
     private ControllerHandler controllerHandler;
     private StatuChangeListener mStatuChangeListener = new StatuChangeListener() {
@@ -227,7 +233,7 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
             } else {
                 videoInfo.setFollow(Boolean.TRUE);
             }
-            
+
             // 更新"关注"视图
             setFollowButtonStyle(buttonFollow, videoInfo.isFollow());
 
@@ -276,6 +282,25 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
             // 更新存储
             setFavoriteRepository(videoInfo, videoInfo.isThumbsUp());
         });
+
+        // 点击评论
+        imageComment.setClickedListener(component -> {
+            // 创建评论弹框
+            CommentDialog commentDialog = new CommentDialog(mContext, userInfo, videoInfo, commentList);
+            commentDialog.setAlignment(LayoutAlignment.BOTTOM);
+            commentDialog.setDestroyedListener(() -> {
+                int commentListSize = commentList.size();
+                LogUtil.info(TAG, "commentDialog onRemove:" + commentListSize);
+
+                // 重刷评论数
+                videoInfo.setCommentCount(commentListSize);
+                textCommentCount.setText(commentListSize + "");
+            });
+
+            // 显示弹框
+            commentDialog.show();
+        });
+
     }
 
     private void setFollowButtonStyle(Button button, boolean isFollow) {
@@ -380,6 +405,9 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
     }
 
     private void initData() {
+        // 获取评论数据
+        commentList = CommentInfoRepository.queryByUsernameAndVideoId(userInfo.getUsername(), videoInfo.getVideoId());
+
         // 更改显示
         imagePortrait.setPixelMap(CommonUtil.getImageSource(this.context, videoInfo.getPortraitPath()));
         // 设置圆角
@@ -388,7 +416,7 @@ public class PlayerController extends ComponentContainer implements IVideoInfoBi
         textAuthor.setText(videoInfo.getAuthor());
         textContent.setText(videoInfo.getContent());
         textThumbsUpCount.setText(videoInfo.getThumbsUpCount() + "");
-        textCommentCount.setText(videoInfo.getCommentCount() + "");
+        textCommentCount.setText(commentList.size() + ""); // 延迟计算评论数
         textFavoriteCount.setText(videoInfo.getFavoriteCount() + "");
         textShareCount.setText(videoInfo.getShareCount() + "");
 
