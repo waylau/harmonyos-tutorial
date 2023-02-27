@@ -6,7 +6,7 @@
 
 
 
-《跟老卫学HarmonyOS开发》是一本 HarmonyOS 应用开发的开源学习教程，主要介绍如何从0开始开发 HarmonyOS 应用。本书包括最新版本 HarmonyOS 3.0 中的新特性。图文并茂，并通过大量实例带你走近 HarmonyOS 的世界！
+《跟老卫学HarmonyOS开发》是一本 HarmonyOS 应用开发的开源学习教程，主要介绍如何从0开始开发 HarmonyOS 应用。本书包括最新版本 HarmonyOS 3.1 中的新特性。图文并茂，并通过大量实例带你走近 HarmonyOS 的世界！
 
 本书业余时间所著，水平有限、时间紧张，难免疏漏，欢迎指正，
 
@@ -87,6 +87,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [华为开发者联盟社区2022年度战码先锋2期开源贡献之星](https://developer.huawei.com/consumer/cn/forum/topic/0203110017942177099)
 * [HarmonyOS应用在本地模拟器中运行](https://www.bilibili.com/video/BV1kG4y1Q765/)（视频）
 * [HarmonyOS本地模拟器的使用](https://www.bilibili.com/video/BV1R84y1L783/)（视频）
+* [HarmonyOS 3.1 Beta 1初体验，我在本地模拟器里面刷短视频](https://developer.huawei.com/consumer/cn/forum/topic/0204112795355581487)
 * 未完待续...
 
 ## Samples 示例
@@ -214,6 +215,9 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [ArkTS 分布式数据服务开发](samples/ArkTSDistributedData)（todo）
 * [ArkTS 关系型数据库开发](samples/ArkTSRdb)
 * [ArkTS 首选项开发](samples/ArkTSPreferences)
+* [ArkUI 基础组件开发](samples/ArkUIBasicComponents)
+* [ArkUI 容器组件开发](samples/ArkUIContainerComponents)
+* [ArkUI 媒体组件开发](samples/ArkUIMediaComponents)
 * 未完待续...
 
 
