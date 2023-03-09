@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PositionLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent">
+
+    <Text
+        ohos:height="50vp"
+        ohos:width="200vp"
+        ohos:background_element="#9987CEFA"
+        ohos:position_x="50vp"
+        ohos:position_y="8vp"
+        ohos:text="Title"
+        ohos:text_alignment="center"
+        ohos:text_size="20fp"/>
+
+    <Text
+        ohos:height="200vp"
+        ohos:width="200vp"
+        ohos:background_element="#9987CEFA"
+        ohos:position_x="8vp"
+        ohos:position_y="64vp"
+        ohos:text="Content1"
+        ohos:text_alignment="center"
+        ohos:text_size="20fp"/>
+
+    <!--允许组件相互重叠-->
+    <Text
+        ohos:height="200vp"
+        ohos:width="200vp"
+        ohos:background_element="#9987CEFA"
+        ohos:position_x="92vp"
+        ohos:position_y="188vp"
+        ohos:text="Content2"
+        ohos:text_alignment="center"
+        ohos:text_size="20fp"/>
+
+    <!--对于超过布局本身大小的组件，超出部分将不显示-->
+    <Text
+        ohos:height="200vp"
+        ohos:width="200vp"
+        ohos:background_element="#9987CEFA"
+        ohos:position_x="192vp"
+        ohos:position_y="288vp"
+        ohos:text="Content3"
+        ohos:text_alignment="center"
+        ohos:text_size="20fp"/>
+</PositionLayout>

@@ -1,0 +1,14 @@
+*.iml
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+/entry/.preview
+.cxx
+/node_modules
+/.clangd
+/.clang-format
+/.clang-tidy

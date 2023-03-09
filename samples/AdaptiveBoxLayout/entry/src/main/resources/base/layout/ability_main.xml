@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <!--添加AdaptiveBoxLayout布局-->
+    <AdaptiveBoxLayout
+        ohos:id="$+id:adaptive_box_layout"
+        ohos:height="0vp"
+        ohos:width="match_parent"
+        ohos:weight="1">
+
+        <Text
+            ohos:height="40vp"
+            ohos:width="100vp"
+            ohos:background_element="#EC9DAA"
+            ohos:margin="10vp"
+            ohos:padding="10vp"
+            ohos:text="Content1"
+            ohos:text_size="18fp"/>
+
+        <Text
+            ohos:height="40vp"
+            ohos:width="100vp"
+            ohos:background_element="#EC9DAA"
+            ohos:margin="10vp"
+            ohos:padding="10vp"
+            ohos:text="Content2"
+            ohos:text_size="18fp"/>
+
+        <Text
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:background_element="#EC9DAA"
+            ohos:margin="10vp"
+            ohos:multiple_lines="true"
+            ohos:padding="10vp"
+            ohos:text="AdaptiveBoxLayout是自适应盒子布局，该布局提供了在不同屏幕尺寸设备上的自适应布局能力，主要用于相同级别的多个组件需要在不同屏幕尺寸设备上自动调整列数的场景。"
+            ohos:text_size="18fp"/>
+
+        <Text
+            ohos:height="40vp"
+            ohos:width="100vp"
+            ohos:background_element="#EC9DAA"
+            ohos:margin="10vp"
+            ohos:padding="10vp"
+            ohos:text="Content4"
+            ohos:text_size="18fp"/>
+
+        <Text
+            ohos:height="40vp"
+            ohos:width="match_parent"
+            ohos:background_element="#EC9DAA"
+            ohos:margin="10vp"
+            ohos:padding="10vp"
+            ohos:text="Add"
+            ohos:text_size="18fp"/>
+
+
+        <Text
+            ohos:height="40vp"
+            ohos:width="100vp"
+            ohos:background_element="#EC9DAA"
+            ohos:margin="10vp"
+            ohos:padding="10vp"
+            ohos:text="Content5"
+            ohos:text_size="18fp"/>
+
+        <Text
+            ohos:height="160vp"
+            ohos:width="100vp"
+            ohos:background_element="#EC9DAA"
+            ohos:margin="10vp"
+            ohos:padding="10vp"
+            ohos:text="Content6"
+            ohos:text_size="18fp"/>
+    </AdaptiveBoxLayout>
+
+    <Button
+        ohos:id="$+id:add_rule_btn"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:background_element="#A9CFF0"
+        ohos:layout_alignment="horizontal_center"
+        ohos:padding="10vp"
+        ohos:text="添加规则(100, 2000, 3);"
+        ohos:text_size="22fp"
+        ohos:top_margin="10vp"/>
+
+    <Button
+        ohos:id="$+id:remove_rule_btn"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:background_element="#D5D5D5"
+        ohos:bottom_margin="10vp"
+        ohos:layout_alignment="horizontal_center"
+        ohos:padding="10vp"
+        ohos:text="移除规则(100, 2000, 3);"
+        ohos:text_size="22fp"
+        ohos:top_margin="10vp"/>
+
+</DirectionalLayout>

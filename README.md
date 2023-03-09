@@ -130,6 +130,8 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [常用布局——DependentLayout](samples/DependentLayout)
 * [常用布局——StackLayout](samples/StackLayout)
 * [常用布局——TableLayout](samples/TableLayout)
+* [常用布局——PositionLayout](samples/PositionLayout)
+* [常用布局——AdaptiveBoxLayout](samples/AdaptiveBoxLayout)
 * [创建JS FA应用](samples/JsFa)
 * [点赞按钮](samples/GiveLike)
 * [JS FA调用PA](samples/JsFaCallPa)
@@ -218,6 +220,9 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [ArkUI 基础组件开发](samples/ArkUIBasicComponents)
 * [ArkUI 容器组件开发](samples/ArkUIContainerComponents)
 * [ArkUI 媒体组件开发](samples/ArkUIMediaComponents)
+* [ArkUI Canvas组件开发](samples/ArkUICanvasComponents)
+* [ArkUI 计算器](samples/ArkUICalculator)
+* [ArkTS 音频开发](samples/ArkTSAudioPlayer)
 * 未完待续...
 
 
