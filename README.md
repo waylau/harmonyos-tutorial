@@ -88,6 +88,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [HarmonyOS应用在本地模拟器中运行](https://www.bilibili.com/video/BV1kG4y1Q765/)（视频）
 * [HarmonyOS本地模拟器的使用](https://www.bilibili.com/video/BV1R84y1L783/)（视频）
 * [HarmonyOS 3.1 Beta 1初体验，我在本地模拟器里面刷短视频](https://developer.huawei.com/consumer/cn/forum/topic/0204112795355581487)
+* [HarmonyOS常用UI组件ToastDialog全面介绍及实操](https://developer.huawei.com/consumer/cn/forum/topic/0202115661867151329)
 * 未完待续...
 
 ## Samples 示例
