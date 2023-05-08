@@ -255,7 +255,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 书中所有示例源码，移步至<https://github.com/waylau/harmonyos-tutorial>的 `samples` 目录下，代码遵循《[Java 编码规范](<http://waylau.com/java-code-conventions>)》
 
 
-## Book 配套书籍
+## Book 配套书籍、课程
 
 如果你喜欢本开源书，也欢迎支持下该书的正式出版物，实体店及各大网店有售。
 
@@ -265,8 +265,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [《鸿蒙HarmonyOS应用开发从入门到精通战》](https://waylau.com/about-harmonyos-application-development-from-zero-to-hero-book/)（北京大学出版社）
     * [京东](https://item.jd.com/13696724.html)
     * [当当](http://product.dangdang.com/29386650.html)
-
-
+* [鸿蒙系统实战短视频App 从0到1掌握HarmonyOS](https://coding.imooc.com/class/674.html)（视频）
 
 
 
