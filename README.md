@@ -91,6 +91,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [HarmonyOS常用UI组件ToastDialog全面介绍及实操](https://developer.huawei.com/consumer/cn/forum/topic/0202115661867151329)
 * [开发鸿蒙HarmonyOS版仿“抖音”App！](https://www.bilibili.com/video/BV1Fc411K7Uw/)（视频）
 * [HarmonyOS版的“抖音”长啥样？有图有真相](https://developer.huawei.com/consumer/cn/forum/topic/0202118947187967814)
+* [“鸿蒙系统实战短视频App 从0到1掌握HarmonyOS”实战课程已上线](https://developer.huawei.com/consumer/cn/blog/topic/03119094258031087)
 * 未完待续...
 
 ## Samples 示例
