@@ -92,6 +92,9 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [开发鸿蒙HarmonyOS版仿“抖音”App！](https://www.bilibili.com/video/BV1Fc411K7Uw/)（视频）
 * [HarmonyOS版的“抖音”长啥样？有图有真相](https://developer.huawei.com/consumer/cn/forum/topic/0202118947187967814)
 * [“鸿蒙系统实战短视频App 从0到1掌握HarmonyOS”实战课程已上线](https://developer.huawei.com/consumer/cn/blog/topic/03119094258031087)
+* [开发鸿蒙HarmonyOS版仿“抖音”App-为什么学](https://www.bilibili.com/video/BV1gz4y1B744/)（视频）
+* [开发鸿蒙HarmonyOS版仿“抖音”App-学什么](https://www.bilibili.com/video/BV1Do4y1g7Bm)（视频）
+* [开发鸿蒙HarmonyOS版仿“抖音”App-怎么学](https://www.xiaohongshu.com/explore/647171c7000000001300d36c)（视频）
 * 未完待续...
 
 ## Samples 示例
