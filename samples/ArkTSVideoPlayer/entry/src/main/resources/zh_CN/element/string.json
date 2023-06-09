@@ -1,0 +1,92 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "模块描述"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "描述"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "视频播放器"
+    },
+    {
+      "name": "index_tab_local_video",
+      "value": "本地视频列表"
+    },
+    {
+      "name": "index_tab_internet_video",
+      "value": "网络视频资源"
+    },
+    {
+      "name": "scan_local_video",
+      "value": "扫描本地视频"
+    },
+    {
+      "name": "add_internet_video",
+      "value": "添加网络视频"
+    },
+    {
+      "name": "link_check",
+      "value": "链接校验"
+    },
+    {
+      "name": "link_checking",
+      "value": "校验中..."
+    },
+    {
+      "name": "confirm_add",
+      "value": "确认添加"
+    },
+    {
+      "name": "link_placeholder",
+      "value": "链接"
+    },
+    {
+      "name": "name_placeholder",
+      "value": "文件名称"
+    },
+    {
+      "name": "speed_play",
+      "value": "倍速播放"
+    },
+    {
+      "name": "monolithic_cycle",
+      "value": "单片循环"
+    },
+    {
+      "name": "continuous_playback",
+      "value": "连续播放"
+    },
+    {
+      "name": "video_playback",
+      "value": "视频播放"
+    },
+    {
+      "name": "cancel",
+      "value": "取消"
+    },
+    {
+      "name": "link_check_success",
+      "value": "链接校验成功"
+    },
+    {
+      "name": "link_check_fail",
+      "value": "链接校验失败"
+    },
+    {
+      "name": "link_check_address_internet",
+      "value": "请检查地址输入正确且网络正常"
+    },
+    {
+      "name": "place_holder_src",
+      "value": "请输入链接"
+    },
+    {
+      "name": "place_holder_name",
+      "value": "请输入文件名称"
+    }
+  ]
+}

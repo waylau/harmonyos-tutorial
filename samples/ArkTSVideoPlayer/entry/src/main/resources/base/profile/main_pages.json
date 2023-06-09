@@ -1,0 +1,6 @@
+{
+  "src": [
+    "pages/HomePage",
+    "pages/PlayPage"
+  ]
+}

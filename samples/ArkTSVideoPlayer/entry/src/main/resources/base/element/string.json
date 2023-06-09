@@ -1,0 +1,92 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "label"
+    },
+    {
+      "name": "index_tab_local_video",
+      "value": "Local video list"
+    },
+    {
+      "name": "index_tab_internet_video",
+      "value": "Network video resources"
+    },
+    {
+      "name": "scan_local_video",
+      "value": "Network video resources"
+    },
+    {
+      "name": "add_internet_video",
+      "value": "Add Network Video"
+    },
+    {
+      "name": "link_check",
+      "value": "Link verification"
+    },
+    {
+      "name": "link_checking",
+      "value": "Verifying..."
+    },
+    {
+      "name": "confirm_add",
+      "value": "Confirm Addition"
+    },
+    {
+      "name": "link_placeholder",
+      "value": "links"
+    },
+    {
+      "name": "name_placeholder",
+      "value": "File Name"
+    },
+    {
+      "name": "speed_play",
+      "value": "Playing at double speed"
+    },
+    {
+      "name": "monolithic_cycle",
+      "value": "monolithic cycle"
+    },
+    {
+      "name": "continuous_playback",
+      "value": "Continuous playback"
+    },
+    {
+      "name": "video_playback",
+      "value": "Video playback"
+    },
+    {
+      "name": "cancel",
+      "value": "To cancel"
+    },
+    {
+      "name": "link_check_success",
+      "value": "Link verification succeeded"
+    },
+    {
+      "name": "link_check_fail",
+      "value": "Failed to verify the link"
+    },
+    {
+      "name": "link_check_address_internet",
+      "value": "Ensure that the IP address is correct and the network is normal"
+    },
+    {
+      "name": "place_holder_src",
+      "value": "Please enter a link"
+    },
+    {
+      "name": "place_holder_name",
+      "value": "Please enter a file name"
+    }
+  ]
+}

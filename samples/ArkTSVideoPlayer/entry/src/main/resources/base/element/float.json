@@ -1,0 +1,124 @@
+{
+  "float": [
+    {
+      "name": "home_page_font_size",
+      "value": "16fp"
+    },
+    {
+      "name": "button_font_size",
+      "value": "16fp"
+    },
+    {
+      "name": "dialog_font_size",
+      "value": "16fp"
+    },
+    {
+      "name": "dialog_divider_margin_left",
+      "value": "8vp"
+    },
+    {
+      "name": "dialog_divider_margin_right",
+      "value": "8vp"
+    },
+    {
+      "name": "dialog_column_margin_top",
+      "value": "20vp"
+    },
+    {
+      "name": "dialog_column_margin_bottom",
+      "value": "20vp"
+    },
+    {
+      "name": "list_border_radius",
+      "value": "20vp"
+    },
+    {
+      "name": "item_image_margin_left",
+      "value": "20vp"
+    },
+    {
+      "name": "image_border_radius",
+      "value": "10vp"
+    },
+    {
+      "name": "item_font_size",
+      "value": "16fp"
+    },
+    {
+      "name": "item_text_margin_left",
+      "value": "10vp"
+    },
+    {
+      "name": "item_text_margin_right",
+      "value": "20vp"
+    },
+    {
+      "name": "item_divider_margin_left",
+      "value": "10vp"
+    },
+    {
+      "name": "item_divider_margin_right",
+      "value": "40vp"
+    },
+    {
+      "name": "control_image_width",
+      "value": "24vp"
+    },
+    {
+      "name": "slider_font_size",
+      "value": "14fp"
+    },
+    {
+      "name": "title_popup_image_size",
+      "value": "24vp"
+    },
+    {
+      "name": "title_popup_image_left",
+      "value": "16vp"
+    },
+    {
+      "name": "title_popup_text_left",
+      "value": "8vp"
+    },
+    {
+      "name": "title_popup_divider_left",
+      "value": "47vp"
+    },
+    {
+      "name": "title_popup_font_size",
+      "value": "16fp"
+    },
+    {
+      "name": "title_font_size",
+      "value": "20fp"
+    },
+    {
+      "name": "title_image_size",
+      "value": "24vp"
+    },
+    {
+      "name": "title_dialog_font_size",
+      "value": "16fp"
+    },
+    {
+      "name": "text_border_radius",
+      "value": "8vp"
+    },
+    {
+      "name": "home_tab_margin_top",
+      "value": "5vp"
+    },
+    {
+      "name": "tab_border_radius",
+      "value": "20vp"
+    },
+    {
+      "name": "tab_dialog_divider_height",
+      "value": "22vp"
+    },
+    {
+      "name": "tab_dialog_divider_opacity",
+      "value": "1vp"
+    }
+  ]
+}
