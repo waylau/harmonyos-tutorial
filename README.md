@@ -233,6 +233,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [ArkUI Canvas组件开发](samples/ArkUICanvasComponents)
 * [ArkUI 计算器](samples/ArkUICalculator)
 * [ArkTS 视频播放器](samples/ArkTSVideoPlayer)
+* [ArkUIS 仿微信应用](samples/ArkUIWeChat)
 * 未完待续...
 
 
