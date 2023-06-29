@@ -95,6 +95,8 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [开发鸿蒙HarmonyOS版仿“抖音”App-为什么学](https://www.bilibili.com/video/BV1gz4y1B744/)（视频）
 * [开发鸿蒙HarmonyOS版仿“抖音”App-学什么](https://www.bilibili.com/video/BV1Do4y1g7Bm)（视频）
 * [开发鸿蒙HarmonyOS版仿“抖音”App-怎么学](https://www.xiaohongshu.com/explore/647171c7000000001300d36c)（视频）
+* [使用HarmonyOS  ArkTS创建元服务（上）](https://developer.huawei.com/consumer/cn/forum/topic/0209123429587384205)
+* [使用HarmonyOS  ArkTS创建元服务（下）](https://developer.huawei.com/consumer/cn/forum/topic/0210123429701706203)
 * 未完待续...
 
 ## Samples 示例
@@ -234,6 +236,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [ArkUI 计算器](samples/ArkUICalculator)
 * [ArkTS 视频播放器](samples/ArkTSVideoPlayer)
 * [ArkUIS 仿微信应用](samples/ArkUIWeChat)
+* [ArkTS 元服务](samples/ArkTSAtomicService)
 * 未完待续...
 
 

@@ -1,0 +1,44 @@
+{
+  "app": {
+    "signingConfigs": [],
+    "compileSdkVersion": 9,
+    "compatibleSdkVersion": 9,
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        //"buildOption": {
+        //  "packOptions": {
+        //    /**
+        //     * If the size of the HAP file of the atomic service's entry module
+        //     * is equal to or greater than the mainPackageLimitSize value, packaging will fail.
+        //     * If the HAP file is equal to or greater than 2 MB, it will fail to be released to AppGallery.
+        //     */
+        //    "mainPackageLimitSize": 2,
+        //
+        //    /**
+        //     * If the size of the HAP file of the atomic service's non-entry modules
+        //     * is equal to or greater than the normalPackageLimitSize value, packaging will fail.
+        //     * If the HAP file is equal to or greater than 2 MB, it will fail to be released to AppGallery.
+        //     */
+        //    "normalPackageLimitSize": 2
+        //  }
+        //}
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}

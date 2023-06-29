@@ -1,0 +1,15 @@
+{
+  "apiType": 'stageMode',
+  "showInServiceCenter": true,
+  "buildOption": {
+  },
+  "targets": [
+    {
+      "name": "default",
+      "runtimeOS": "HarmonyOS"
+    },
+    {
+      "name": "ohosTest",
+    }
+  ]
+}
