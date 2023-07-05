@@ -97,6 +97,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [开发鸿蒙HarmonyOS版仿“抖音”App-怎么学](https://www.xiaohongshu.com/explore/647171c7000000001300d36c)（视频）
 * [使用HarmonyOS  ArkTS创建元服务（上）](https://developer.huawei.com/consumer/cn/forum/topic/0209123429587384205)
 * [使用HarmonyOS  ArkTS创建元服务（下）](https://developer.huawei.com/consumer/cn/forum/topic/0210123429701706203)
+* [【以梦筑码 · 不负韶华】我伴随HarmonyOS一起成长](https://developer.huawei.com/consumer/cn/forum/topic/0208123985089505317?fid=0101587866109860105)
 * 未完待续...
 
 ## Samples 示例
