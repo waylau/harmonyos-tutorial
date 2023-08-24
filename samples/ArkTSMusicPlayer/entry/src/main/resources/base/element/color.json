@@ -1,0 +1,43 @@
+{
+  "color": [
+    {
+      "name": "start_window_background",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "page_background_sm",
+      "value": "#e4ecf7"
+    },
+    {
+      "name": "page_background_other",
+      "value": "#f6f9fc"
+    },
+    {
+      "name": "title_color",
+      "value": "#556B89"
+    },    {
+      "name": "album_background",
+      "value": "#e4ecf7"
+    },
+    {
+      "name": "album_name_introduction",
+      "value": "#556B89"
+    },
+    {
+      "name": "list_divider",
+      "value": "#1a182431"
+    },
+    {
+      "name": "song_name",
+      "value": "#000000"
+    },
+    {
+      "name": "singer",
+      "value": "#000000"
+    },
+    {
+      "name": "player_background",
+      "value": "#F6F9FC"
+    }
+  ]
+}

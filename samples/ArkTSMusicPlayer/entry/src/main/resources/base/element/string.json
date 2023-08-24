@@ -1,0 +1,52 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "label"
+    },
+    {
+      "name": "play_list",
+      "value": "歌单"
+    },
+    {
+      "name": "collection_num",
+      "value": "125000"
+    },
+    {
+      "name": "list_name",
+      "value": "独立民谣"
+    },
+    {
+      "name": "playlist_Introduction",
+      "value": "歌单选取了一些比较受关注的民谣歌曲。"
+    },
+    {
+      "name": "play_all",
+      "value": "播放全部(%d)"
+    },
+    {
+      "name": "collect",
+      "value": "收藏"
+    },
+    {
+      "name": "download",
+      "value": "下载"
+    },
+    {
+      "name": "comment",
+      "value": "评论"
+    },
+    {
+      "name": "share",
+      "value": "分享"
+    }
+  ]
+}

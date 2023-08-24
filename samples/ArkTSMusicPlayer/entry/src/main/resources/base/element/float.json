@@ -1,0 +1,348 @@
+{
+  "float": [
+    {
+      "name": "playlist_border_radius",
+      "value": "40vp"
+    },
+    {
+      "name": "play_all_icon_size",
+      "value": "23vp"
+    },
+    {
+      "name": "play_all_text_padding",
+      "value": "10vp"
+    },
+    {
+      "name": "order_icon_size",
+      "value": "24vp"
+    },
+    {
+      "name": "order_icon_margin",
+      "value": "16vp"
+    },
+    {
+      "name": "play_all_area_height",
+      "value": "60vp"
+    },
+    {
+      "name": "play_all_area_padding",
+      "value": "12vp"
+    },
+    {
+      "name": "play_all_border_radius",
+      "value": "20vp"
+    },
+    {
+      "name": "list_item_title_margin",
+      "value": "4vp"
+    },
+    {
+      "name": "list_item_image_size",
+      "value": "16vp"
+    },
+    {
+      "name": "list_item_image_margin",
+      "value": "4vp"
+    },
+    {
+      "name": "list_item_height",
+      "value": "60vp"
+    },
+    {
+      "name": "list_item_padding",
+      "value": "14vp"
+    },
+    {
+      "name": "list_area_margin_top",
+      "value": "60vp"
+    },
+    {
+      "name": "singer_opacity",
+      "value": "0.38"
+    },
+    {
+      "name": "divider_opacity",
+      "value": "0.1"
+    },
+    {
+      "name": "list_area_padding_top",
+      "value": "50vp"
+    },
+    {
+      "name": "list_area_padding_bottom",
+      "value": "48vp"
+    },
+    {
+      "name": "album_cover_border_radius",
+      "value": "8vp"
+    },
+    {
+      "name": "album_name_opacity",
+      "value": "0.9"
+    },
+    {
+      "name": "album_name_margin",
+      "value": "10vp"
+    },
+    {
+      "name": "introduction_opacity",
+      "value": "0.6"
+    },
+    {
+      "name": "introduction_height",
+      "value": "70vp"
+    },
+    {
+      "name": "introduction_padding",
+      "value": "20vp"
+    },
+    {
+      "name": "introduction_margin_top",
+      "value": "30vp"
+    },
+    {
+      "name": "introduction_margin_bottom",
+      "value": "20vp"
+    },
+    {
+      "name": "option_image_size",
+      "value": "30vp"
+    },
+    {
+      "name": "option_area_height",
+      "value": "70vp"
+    },
+    {
+      "name": "option_margin",
+      "value": "15vp"
+    },
+    {
+      "name": "cover_padding_top_sm",
+      "value": "50vp"
+    },
+    {
+      "name": "cover_padding_top_other",
+      "value": "70vp"
+    },
+    {
+      "name": "icon_width",
+      "value": "20vp"
+    },
+    {
+      "name": "icon_height",
+      "value": "20vp"
+    },
+    {
+      "name": "icon_margin",
+      "value": "16vp"
+    },
+    {
+      "name": "title_opacity",
+      "value": "0.9"
+    },
+    {
+      "name": "title_padding_left",
+      "value": "10vp"
+    },
+    {
+      "name": "title_bar_height",
+      "value": "50vp"
+    },
+    {
+      "name": "cover_width",
+      "value": "32vp"
+    },
+    {
+      "name": "cover_height",
+      "value": "32vp"
+    },
+    {
+      "name": "label_border_radius",
+      "value": "16vp"
+    },
+    {
+      "name": "cover_margin",
+      "value": "12vp"
+    },
+    {
+      "name": "vip_icon_width",
+      "value": "16vp"
+    },
+    {
+      "name": "vip_icon_height",
+      "value": "16vp"
+    },
+    {
+      "name": "vip_icon_margin",
+      "value": "4vp"
+    },
+    {
+      "name": "control_icon_width",
+      "value": "24vp"
+    },
+    {
+      "name": "control_icon_height",
+      "value": "24vp"
+    },
+    {
+      "name": "control_icon_margin",
+      "value": "16vp"
+    },
+    {
+      "name": "player_area_height",
+      "value": "48vp"
+    },
+    {
+      "name": "player_padding",
+      "value": "16vp"
+    },
+    {
+      "name": "play_width_sm",
+      "value": "120vp"
+    },
+    {
+      "name": "play_width_lg",
+      "value": "150vp"
+    },
+    {
+      "name": "stroke_width",
+      "value": "0.5vp"
+    },
+    {
+      "name": "header_font_sm",
+      "value": "18fp"
+    },
+    {
+      "name": "header_font_md",
+      "value": "20fp"
+    },
+    {
+      "name": "header_font_lg",
+      "value": "22fp"
+    },
+    {
+      "name": "song_title_sm",
+      "value": "14fp"
+    },
+    {
+      "name": "song_title_md",
+      "value": "16fp"
+    },
+    {
+      "name": "song_title_lg",
+      "value": "18fp"
+    },
+    {
+      "name": "singer_title_sm",
+      "value": "10fp"
+    },
+    {
+      "name": "singer_title_md",
+      "value": "12fp"
+    },
+    {
+      "name": "singer_title_lg",
+      "value": "14fp"
+    },
+    {
+      "name": "collection_font_sm",
+      "value": "10fp"
+    },
+    {
+      "name": "collection_font_md",
+      "value": "12fp"
+    },
+    {
+      "name": "collection_font_lg",
+      "value": "14fp"
+    },
+    {
+      "name": "list_font_sm",
+      "value": "16fp"
+    },
+    {
+      "name": "list_font_md",
+      "value": "18fp"
+    },
+    {
+      "name": "list_font_lg",
+      "value": "20fp"
+    },
+    {
+      "name": "introduction_font_sm",
+      "value": "12fp"
+    },
+    {
+      "name": "introduction_font_md",
+      "value": "14fp"
+    },
+    {
+      "name": "introduction_font_lg",
+      "value": "16fp"
+    },
+    {
+      "name": "option_font_sm",
+      "value": "13fp"
+    },
+    {
+      "name": "option_font_md",
+      "value": "15fp"
+    },
+    {
+      "name": "option_font_lg",
+      "value": "17fp"
+    },
+    {
+      "name": "cover_margin_sm",
+      "value": "10vp"
+    },
+    {
+      "name": "cover_margin_md",
+      "value": "30vp"
+    },
+    {
+      "name": "cover_margin_lg",
+      "value": "40vp"
+    },
+    {
+      "name": "play_font_sm",
+      "value": "14fp"
+    },
+    {
+      "name": "play_font_md",
+      "value": "16fp"
+    },
+    {
+      "name": "play_font_lg",
+      "value": "18fp"
+    },
+    {
+      "name": "item_font_sm",
+      "value": "14fp"
+    },
+    {
+      "name": "item_font_md",
+      "value": "16fp"
+    },
+    {
+      "name": "item_font_lg",
+      "value": "18fp"
+    },
+    {
+      "name": "album_padding_sm",
+      "value": "0vp"
+    },
+    {
+      "name": "album_padding_md",
+      "value": "10vp"
+    },
+    {
+      "name": "album_padding_lg",
+      "value": "20vp"
+    },
+    {
+      "name": "options_padding",
+      "value": "10vp"
+    }
+  ]
+}
