@@ -98,6 +98,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [使用HarmonyOS  ArkTS创建元服务（上）](https://developer.huawei.com/consumer/cn/forum/topic/0209123429587384205)
 * [使用HarmonyOS  ArkTS创建元服务（下）](https://developer.huawei.com/consumer/cn/forum/topic/0210123429701706203)
 * [【以梦筑码 · 不负韶华】我伴随HarmonyOS一起成长](https://developer.huawei.com/consumer/cn/forum/topic/0208123985089505317?fid=0101587866109860105)
+* [基于HarmonyOS ArkUI实现音乐列表功能](https://developer.huawei.com/consumer/cn/forum/topic/0207128282721917372?fid=0101562279236410779)
 * 未完待续...
 
 ## Samples 示例
@@ -238,6 +239,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [ArkTS 视频播放器](samples/ArkTSVideoPlayer)
 * [ArkUIS 仿微信应用](samples/ArkUIWeChat)
 * [ArkTS 元服务](samples/ArkTSAtomicService)
+* [ArkTS 音乐播放器](samples/ArkTSMusicPlayer)
 * 未完待续...
 
 
