@@ -98,7 +98,9 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [使用HarmonyOS  ArkTS创建元服务（上）](https://developer.huawei.com/consumer/cn/forum/topic/0209123429587384205)
 * [使用HarmonyOS  ArkTS创建元服务（下）](https://developer.huawei.com/consumer/cn/forum/topic/0210123429701706203)
 * [【以梦筑码 · 不负韶华】我伴随HarmonyOS一起成长](https://developer.huawei.com/consumer/cn/forum/topic/0208123985089505317?fid=0101587866109860105)
+* [#HDC2023 心得分享#HarmonyOS应用开发的新机遇与挑战](https://developer.huawei.com/consumer/cn/forum/topic/0202126611589549374?fid=0101610563345550409)
 * [基于HarmonyOS ArkUI实现音乐列表功能](https://developer.huawei.com/consumer/cn/forum/topic/0207128282721917372?fid=0101562279236410779)
+* [基于HarmonyOS ArkUI实现七夕壁纸轮播](https://developer.huawei.com/consumer/cn/forum/topic/0209128602919619570?fid=0101591351254000314)
 * 未完待续...
 
 ## Samples 示例
@@ -237,9 +239,10 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [ArkUI Canvas组件开发](samples/ArkUICanvasComponents)
 * [ArkUI 计算器](samples/ArkUICalculator)
 * [ArkTS 视频播放器](samples/ArkTSVideoPlayer)
-* [ArkUIS 仿微信应用](samples/ArkUIWeChat)
+* [ArkUI 仿微信应用](samples/ArkUIWeChat)
 * [ArkTS 元服务](samples/ArkTSAtomicService)
 * [ArkTS 音乐播放器](samples/ArkTSMusicPlayer)
+* [ArkUI 七夕壁纸轮播](samples/ArkUIExpressingLove)
 * 未完待续...
 
 
