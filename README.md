@@ -299,19 +299,32 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 
 ## Certificate 作者荣誉
 
+华为开发者联盟社区2021牛人之星
+
 ![](images/huawei-developer-niuren-certificate.png)
+
+HarmonyOS技术达人、博客内测体验官、博客之星
 
 ![](images/harmonyos-certificate.png)
 
+2022年度战码先锋1期开源贡献之星
 
 ![](images/openharmony-certificate.png)
 
 
+华为开发者联盟社区2022牛人之星
 
 ![](images/huawei-developer-niuren-certificate-2022.jpg)
 
 
+2022年度战码先锋2期开源贡献之星
+
 ![](images/openharmony-certificate-2.jpg)
+
+
+HarmonyOS应用开发者高级认证
+
+![](images/harmonyos-application-developer-advanced-certification.png)
 
 ## Support Me 请老卫喝一杯
 
