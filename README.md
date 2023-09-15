@@ -101,6 +101,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [#HDC2023 心得分享#HarmonyOS应用开发的新机遇与挑战](https://developer.huawei.com/consumer/cn/forum/topic/0202126611589549374?fid=0101610563345550409)
 * [基于HarmonyOS ArkUI实现音乐列表功能](https://developer.huawei.com/consumer/cn/forum/topic/0207128282721917372?fid=0101562279236410779)
 * [基于HarmonyOS ArkUI实现七夕壁纸轮播](https://developer.huawei.com/consumer/cn/forum/topic/0209128602919619570?fid=0101591351254000314)
+* [基于HarmonyOS低代码开发实现CPI图表](https://developer.huawei.com/consumer/cn/forum/topic/0207130176151650057?fid=0101591351254000314)
 * 未完待续...
 
 ## Samples 示例
@@ -243,6 +244,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [ArkTS 元服务](samples/ArkTSAtomicService)
 * [ArkTS 音乐播放器](samples/ArkTSMusicPlayer)
 * [ArkUI 七夕壁纸轮播](samples/ArkUIExpressingLove)
+* [ArkTS 低代码开发实现CPI图表](samples/ArkTSCPIChart)
 * 未完待续...
 
 
