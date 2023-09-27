@@ -102,6 +102,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [基于HarmonyOS ArkUI实现音乐列表功能](https://developer.huawei.com/consumer/cn/forum/topic/0207128282721917372?fid=0101562279236410779)
 * [基于HarmonyOS ArkUI实现七夕壁纸轮播](https://developer.huawei.com/consumer/cn/forum/topic/0209128602919619570?fid=0101591351254000314)
 * [基于HarmonyOS低代码开发实现CPI图表](https://developer.huawei.com/consumer/cn/forum/topic/0207130176151650057?fid=0101591351254000314)
+* [基于HarmonyOS ArkTS中秋国庆祝福程序](https://developer.huawei.com/consumer/cn/forum/topic/0201131193862897018?fid=0101591351254000314)
 * 未完待续...
 
 ## Samples 示例
@@ -245,6 +246,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [ArkTS 音乐播放器](samples/ArkTSMusicPlayer)
 * [ArkUI 七夕壁纸轮播](samples/ArkUIExpressingLove)
 * [ArkTS 低代码开发实现CPI图表](samples/ArkTSCPIChart)
+* [ArkUI 中秋国庆祝福程序](samples/ArkUIMidAutumnFestival)
 * 未完待续...
 
 

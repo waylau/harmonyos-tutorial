@@ -58,13 +58,8 @@
                         "property": {
                             "dataType": "Map",
                             "value": {
-                                "width": "333.63vp",
-                                "height": "742.99vp",
-                                "left": "-0.16vp",
-                                "top": "16.82vp",
-                                "item": "item1",
-                                "idx": "idx1",
-                                "if": "true"
+                                "width": "335.76vp",
+                                "height": "60vp"
                             }
                         },
                         "dynamicProperty": {
@@ -95,7 +90,7 @@
                                         "dataType": "Map",
                                         "value": {
                                             "width": "100%",
-                                            "height": "47.72vp",
+                                            "height": "53.32vp",
                                             "item": "item1",
                                             "idx": "idx1"
                                         }
@@ -128,10 +123,7 @@
                                                 },
                                                 "property": {
                                                     "dataType": "Map",
-                                                    "value": {
-                                                        "width": "300.96vp",
-                                                        "height": "30.3vp"
-                                                    }
+                                                    "value": {}
                                                 },
                                                 "dynamicProperty": {
                                                     "dataType": "Map",
@@ -143,9 +135,7 @@
                                                         "value": {
                                                             "propertyStorage": {
                                                                 "dataType": "Map",
-                                                                "value": {
-                                                                    "content": "123"
-                                                                }
+                                                                "value": {}
                                                             },
                                                             "dynamicPropertyStorage": {
                                                                 "dataType": "Map",
@@ -162,10 +152,8 @@
                                                             "property": {
                                                                 "dataType": "Map",
                                                                 "value": {
-                                                                    "height": "30.3vp",
-                                                                    "width": "120.81vp",
-                                                                    "left": "3.59vp",
-                                                                    "top": "0vp"
+                                                                    "height": "60vp",
+                                                                    "width": "159.27vp"
                                                                 }
                                                             },
                                                             "dynamicProperty": {
@@ -175,7 +163,7 @@
                                                                 }
                                                             },
                                                             "children": [],
-                                                            "id": "text6",
+                                                            "id": "text8",
                                                             "type": "text"
                                                         }
                                                     },
@@ -184,9 +172,7 @@
                                                         "value": {
                                                             "propertyStorage": {
                                                                 "dataType": "Map",
-                                                                "value": {
-                                                                    "content": "item1.data"
-                                                                }
+                                                                "value": {}
                                                             },
                                                             "dynamicPropertyStorage": {
                                                                 "dataType": "Map",
@@ -203,16 +189,14 @@
                                                             "property": {
                                                                 "dataType": "Map",
                                                                 "value": {
-                                                                    "height": "25.35vp",
-                                                                    "width": "116.85vp",
-                                                                    "left": "42.76vp",
-                                                                    "top": "-2.19vp"
+                                                                    "height": "60vp",
+                                                                    "width": "175.32vp"
                                                                 }
                                                             },
                                                             "dynamicProperty": {
                                                                 "dataType": "Map",
                                                                 "value": {
-                                                                    "content": "item1.data"
+                                                                    "content": "item1. data"
                                                                 }
                                                             },
                                                             "children": [],
@@ -226,12 +210,12 @@
                                             }
                                         }
                                     ],
-                                    "id": "list-item2",
+                                    "id": "list-item1",
                                     "type": "list-item"
                                 }
                             }
                         ],
-                        "id": "list2",
+                        "id": "list1",
                         "type": "list"
                     }
                 }
