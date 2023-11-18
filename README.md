@@ -103,6 +103,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [基于HarmonyOS ArkUI实现七夕壁纸轮播](https://developer.huawei.com/consumer/cn/forum/topic/0209128602919619570?fid=0101591351254000314)
 * [基于HarmonyOS低代码开发实现CPI图表](https://developer.huawei.com/consumer/cn/forum/topic/0207130176151650057?fid=0101591351254000314)
 * [基于HarmonyOS ArkTS中秋国庆祝福程序](https://developer.huawei.com/consumer/cn/forum/topic/0201131193862897018?fid=0101591351254000314)
+* [HarmonyOS 开发 Java 与 ArkTS 如何抉择](https://developer.huawei.com/consumer/cn/forum/topic/0203135735995709211?fid=0101610563345550409)
 * 未完待续...
 
 ## Samples 示例
