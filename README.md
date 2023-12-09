@@ -104,6 +104,17 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [基于HarmonyOS低代码开发实现CPI图表](https://developer.huawei.com/consumer/cn/forum/topic/0207130176151650057?fid=0101591351254000314)
 * [基于HarmonyOS ArkTS中秋国庆祝福程序](https://developer.huawei.com/consumer/cn/forum/topic/0201131193862897018?fid=0101591351254000314)
 * [HarmonyOS 开发 Java 与 ArkTS 如何抉择](https://developer.huawei.com/consumer/cn/forum/topic/0203135735995709211?fid=0101610563345550409)
+* [阿里入局鸿蒙！鸿蒙原生应用再添两员新丁](https://developer.huawei.com/consumer/cn/forum/topic/0203136159793226383?fid=0101610563345550409)
+* [鸿蒙HarmonyOS应用新设备能跑老API开发的应用吗？](https://developer.huawei.com/consumer/cn/forum/topic/0204136335226928311?fid=0101610563345550409)
+* [小红书已完成#鸿蒙原生应用#Beta版本开发](https://developer.huawei.com/consumer/cn/forum/topic/0204136336646227312?fid=0101610563345550409)
+* [鸿蒙原生应用再添两员新丁！​B站、58入局鸿蒙](https://developer.huawei.com/consumer/cn/forum/topic/0203136806231462640?fid=0101610563345550409)
+* [鸿蒙原生应用再添新丁！高德地图入局鸿蒙](https://developer.huawei.com/consumer/cn/forum/topic/0204136892240995558?fid=0101610563345550409)
+* [鸿蒙原生应用再添新丁！麦当劳中国入局鸿蒙](https://developer.huawei.com/consumer/cn/forum/topic/0204137287597648714?fid=0101610563345550409)
+* [轻松掌握ArkTS！鸿蒙新作《鸿蒙HarmonyOS应用开发入门》简介](https://developer.huawei.com/consumer/cn/forum/topic/0204137371596828763?fid=0101610563345550409)
+*［鸿蒙原生应用再添新丁！支付宝入局鸿蒙](https://developer.huawei.com/consumer/cn/forum/topic/0201137460532479009?fid=0101610563345550409)
+* [轻松掌握ArkTS！鸿蒙新作《鸿蒙HarmonyOS应用开发入门》开箱](https://www.bilibili.com/video/BV1ee411o7XE)（视频）
+
+
 * 未完待续...
 
 ## Samples 示例
@@ -287,7 +298,8 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
     * [京东](https://item.jd.com/13696724.html)
     * [当当](http://product.dangdang.com/29386650.html)
 * [鸿蒙系统实战短视频App 从0到1掌握HarmonyOS](https://coding.imooc.com/class/674.html)（视频）
-
+    * [当当](http://search.dangdang.com/?key=%C1%F8%CE%B0%CE%C0%20%BA%E8%C3%C9HarmonyOS%CA%D6%BB%FA%D3%A6%D3%C3%BF%AA%B7%A2%CA%B5%D5%BD&act=input)
+* [《鸿蒙HarmonyOS应用开发入门》](https://waylau.com/about-harmonyos-3-tutorial-book/)（清华大学出版社）
 
 
 ## Issue 意见、建议
