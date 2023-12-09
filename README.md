@@ -111,7 +111,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [鸿蒙原生应用再添新丁！高德地图入局鸿蒙](https://developer.huawei.com/consumer/cn/forum/topic/0204136892240995558?fid=0101610563345550409)
 * [鸿蒙原生应用再添新丁！麦当劳中国入局鸿蒙](https://developer.huawei.com/consumer/cn/forum/topic/0204137287597648714?fid=0101610563345550409)
 * [轻松掌握ArkTS！鸿蒙新作《鸿蒙HarmonyOS应用开发入门》简介](https://developer.huawei.com/consumer/cn/forum/topic/0204137371596828763?fid=0101610563345550409)
-*［鸿蒙原生应用再添新丁！支付宝入局鸿蒙](https://developer.huawei.com/consumer/cn/forum/topic/0201137460532479009?fid=0101610563345550409)
+* [鸿蒙原生应用再添新丁！支付宝入局鸿蒙](https://developer.huawei.com/consumer/cn/forum/topic/0201137460532479009?fid=0101610563345550409)
 * [轻松掌握ArkTS！鸿蒙新作《鸿蒙HarmonyOS应用开发入门》开箱](https://www.bilibili.com/video/BV1ee411o7XE)（视频）
 
 
