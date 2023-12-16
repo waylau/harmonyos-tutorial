@@ -6,11 +6,9 @@
 
 
 
-《跟老卫学HarmonyOS开发》是一本 HarmonyOS 应用开发的开源学习教程，主要介绍如何从0开始开发 HarmonyOS 应用。本书包括最新版本 HarmonyOS 3.1 中的新特性。图文并茂，并通过大量实例带你走近 HarmonyOS 的世界！
+《跟老卫学HarmonyOS开发》是一本 HarmonyOS 应用开发的开源学习教程，主要介绍如何从0开始开发 HarmonyOS 应用。本书包括最新版本 HarmonyOS 4 中的新特性。图文并茂，并通过大量实例带你走近 HarmonyOS 的世界！
 
-本书业余时间所著，水平有限、时间紧张，难免疏漏，欢迎指正，
-
-HarmonyOS配套练习题库，见“[HarmonyOS题库](https://github.com/waylau/harmonyos-exam)”。
+本书业余时间所著，由于笔者能力有限、时间仓促，书中难免有疏漏之处，欢迎读者批评指正。
 
 ## Summary 目录
 
@@ -113,8 +111,8 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [轻松掌握ArkTS！鸿蒙新作《鸿蒙HarmonyOS应用开发入门》简介](https://developer.huawei.com/consumer/cn/forum/topic/0204137371596828763?fid=0101610563345550409)
 * [鸿蒙原生应用再添新丁！支付宝入局鸿蒙](https://developer.huawei.com/consumer/cn/forum/topic/0201137460532479009?fid=0101610563345550409)
 * [轻松掌握ArkTS！鸿蒙新作《鸿蒙HarmonyOS应用开发入门》开箱](https://www.bilibili.com/video/BV1ee411o7XE)（视频）
-
-
+* [鸿蒙原生应用再添新丁！同花顺入局鸿蒙](https://developer.huawei.com/consumer/cn/forum/topic/0201137715493130041?fid=0101610563345550409)
+* [鸿蒙原生应用再添新丁！网易游戏入局鸿蒙](https://developer.huawei.com/consumer/cn/forum/topic/0204138063180278909?fid=0101610563345550409)
 * 未完待续...
 
 ## Samples 示例
@@ -289,6 +287,8 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 
 ## Book 配套书籍、课程
 
+HarmonyOS配套练习题库，见“[HarmonyOS题库](https://github.com/waylau/harmonyos-exam)”。
+
 如果你喜欢本开源书，也欢迎支持下该书的正式出版物，实体店及各大网店有售。
 
 * [《鸿蒙HarmonyOS手机应用开发实战》](https://waylau.com/about-harmonyos-mobile-application-development-book)（清华大学出版社）
@@ -298,9 +298,8 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
     * [京东](https://item.jd.com/13696724.html)
     * [当当](http://product.dangdang.com/29386650.html)
 * [鸿蒙系统实战短视频App 从0到1掌握HarmonyOS](https://coding.imooc.com/class/674.html)（视频）
-    * [当当](http://search.dangdang.com/?key=%C1%F8%CE%B0%CE%C0%20%BA%E8%C3%C9HarmonyOS%CA%D6%BB%FA%D3%A6%D3%C3%BF%AA%B7%A2%CA%B5%D5%BD&act=input)
 * [《鸿蒙HarmonyOS应用开发入门》](https://waylau.com/about-harmonyos-3-tutorial-book/)（清华大学出版社）
-
+    * [京东](https://item.jd.com/13963157.html)
 
 ## Issue 意见、建议
 
