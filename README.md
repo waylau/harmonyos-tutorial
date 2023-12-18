@@ -113,6 +113,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [轻松掌握ArkTS！鸿蒙新作《鸿蒙HarmonyOS应用开发入门》开箱](https://www.bilibili.com/video/BV1ee411o7XE)（视频）
 * [鸿蒙原生应用再添新丁！同花顺入局鸿蒙](https://developer.huawei.com/consumer/cn/forum/topic/0201137715493130041?fid=0101610563345550409)
 * [鸿蒙原生应用再添新丁！网易游戏入局鸿蒙](https://developer.huawei.com/consumer/cn/forum/topic/0204138063180278909?fid=0101610563345550409)
+* [鸿蒙原生应用再添新丁！米哈游入局鸿蒙](https://developer.huawei.com/consumer/cn/forum/topic/0202138316368453170)
 * 未完待续...
 
 ## Samples 示例
