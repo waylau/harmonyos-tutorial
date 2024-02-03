@@ -301,6 +301,7 @@ HarmonyOS配套练习题库，见“[HarmonyOS题库](https://github.com/waylau/
 * [鸿蒙系统实战短视频App 从0到1掌握HarmonyOS](https://coding.imooc.com/class/674.html)（视频）
 * [《鸿蒙HarmonyOS应用开发入门》](https://waylau.com/about-harmonyos-3-tutorial-book/)（清华大学出版社）
     * [京东](https://item.jd.com/13963157.html)
+    * [当当](https://product.dangdang.com/29664217.html)
 
 ## Issue 意见、建议
 
