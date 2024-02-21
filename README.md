@@ -114,6 +114,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [鸿蒙原生应用再添新丁！同花顺入局鸿蒙](https://developer.huawei.com/consumer/cn/forum/topic/0201137715493130041?fid=0101610563345550409)
 * [鸿蒙原生应用再添新丁！网易游戏入局鸿蒙](https://developer.huawei.com/consumer/cn/forum/topic/0204138063180278909?fid=0101610563345550409)
 * [鸿蒙原生应用再添新丁！米哈游入局鸿蒙](https://developer.huawei.com/consumer/cn/forum/topic/0202138316368453170)
+* [【画龙迎春】纯血鸿蒙来画龙！基于HarmonyOS ArkTS来操作SVG图片](https://developer.huawei.com/consumer/cn/forum/topic/0203143920386713714)
 * 未完待续...
 
 ## Samples 示例
@@ -258,6 +259,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [ArkUI 七夕壁纸轮播](samples/ArkUIExpressingLove)
 * [ArkTS 低代码开发实现CPI图表](samples/ArkTSCPIChart)
 * [ArkUI 中秋国庆祝福程序](samples/ArkUIMidAutumnFestival)
+* [基于HarmonyOS ArkTS来操作SVG图片](samples/ArkTSSVGChineseLoong)
 * 未完待续...
 
 
