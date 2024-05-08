@@ -116,6 +116,9 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [鸿蒙原生应用再添新丁！米哈游入局鸿蒙](https://developer.huawei.com/consumer/cn/forum/topic/0202138316368453170)
 * [【画龙迎春】纯血鸿蒙来画龙！基于HarmonyOS ArkTS来操作SVG图片](https://developer.huawei.com/consumer/cn/forum/topic/0203143920386713714)
 * [当新版DevEco Studio打开老版HarmonyOS应用报错解决](https://www.bilibili.com/video/BV1bC411n7Lr/)（视频）
+* [“2024鸿蒙零基础快速实战-仿抖音App开发（ArkTS版）”实战课程已上线](https://waylau.com/harmonyos-short-video-arkts/)
+* [ArkTS开发原生鸿蒙HarmonyOS短视频应用](https://www.bilibili.com/video/BV1KD421M7a8/)（视频）
+* [2024鸿蒙零基础快速实战-仿抖音App开发(ArkTS版)-课程导学](https://www.bilibili.com/video/BV11D421K7Cd/)（视频）
 * 未完待续...
 
 ## Samples 示例
