@@ -10,38 +10,38 @@
     ohos:column_count="2">
 
     <Text
-        ohos:height="60vp"
-        ohos:width="60vp"
+        ohos:height="100vp"
+        ohos:width="100vp"
         ohos:background_element="$graphic:background_ability_main"
         ohos:margin="8vp"
-        ohos:text="1"
         ohos:text_alignment="center"
-        ohos:text_size="20fp"/>
+        ohos:text_size="40vp"
+        ohos:text="1"/>
 
     <Text
-        ohos:height="60vp"
-        ohos:width="60vp"
+        ohos:height="100vp"
+        ohos:width="100vp"
         ohos:background_element="$graphic:background_ability_main"
         ohos:margin="8vp"
-        ohos:text="2"
         ohos:text_alignment="center"
-        ohos:text_size="20fp"/>
+        ohos:text_size="40vp"
+        ohos:text="2"/>
 
     <Text
-        ohos:height="60vp"
-        ohos:width="60vp"
+        ohos:height="100vp"
+        ohos:width="100vp"
         ohos:background_element="$graphic:background_ability_main"
         ohos:margin="8vp"
-        ohos:text="3"
         ohos:text_alignment="center"
-        ohos:text_size="20fp"/>
+        ohos:text_size="40vp"
+        ohos:text="3"/>
 
     <Text
-        ohos:height="60vp"
-        ohos:width="60vp"
+        ohos:height="100vp"
+        ohos:width="100vp"
         ohos:background_element="$graphic:background_ability_main"
         ohos:margin="8vp"
-        ohos:text="4"
         ohos:text_alignment="center"
-        ohos:text_size="20fp"/>
+        ohos:text_size="40vp"
+        ohos:text="4"/>
 </TableLayout>

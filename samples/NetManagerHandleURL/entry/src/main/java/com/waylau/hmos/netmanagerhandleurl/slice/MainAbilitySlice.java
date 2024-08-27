@@ -22,7 +22,6 @@ public class MainAbilitySlice extends AbilitySlice {
     private static final HiLogLabel LABEL_LOG =
             new HiLogLabel(HiLog.LOG_APP, 0x00001, TAG);
 
-    private TaskDispatcher dispatcher;
     private Image image;
 
     @Override
@@ -37,15 +36,13 @@ public class MainAbilitySlice extends AbilitySlice {
 
         image =
                 (Image) findComponentById(ResourceTable.Id_image);
-
-        dispatcher = getGlobalTaskDispatcher(TaskPriority.DEFAULT);
     }
 
     private void open() {
         HiLog.info(LABEL_LOG, "before open");
 
         // 启动线程任务
-        dispatcher.syncDispatch(() -> {
+        getUITaskDispatcher().syncDispatch(() -> {
             NetManager netManager = NetManager.getInstance(getContext());
 
             if (!netManager.hasDefaultNet()) {
@@ -84,6 +81,7 @@ public class MainAbilitySlice extends AbilitySlice {
                     decodingOptions.desiredPixelFormat = PixelFormat.ARGB_8888;
                     PixelMap pixelMap = imageSource.createPixelmap(decodingOptions);
 
+                    // 使用UI线程来更新UI
                     image.setPixelMap(pixelMap);
                     pixelMap.release();
                 }

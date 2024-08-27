@@ -8,6 +8,14 @@
         "name": "default",
         "signingConfig": "default",
       }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
     ]
   },
   "modules": [

@@ -12,7 +12,7 @@
         ohos:width="match_content"
         ohos:background_element="#F76543"
         ohos:text="Get"
-        ohos:text_size="27fp"
+        ohos:text_size="40vp"
         />
 
     <Text
@@ -23,7 +23,7 @@
         ohos:layout_alignment="horizontal_center"
         ohos:multiple_lines="true"
         ohos:text="Hello World"
-        ohos:text_size="20vp"
+        ohos:text_size="30vp"
         />
 
 </DirectionalLayout>

@@ -7,9 +7,9 @@
 
     <Text
         ohos:id="$+id:item_index"
-        ohos:height="match_content"
+        ohos:height="40vp"
         ohos:width="match_content"
         ohos:text="Item0"
-        ohos:text_size="20fp"
+        ohos:text_size="40vp"
         ohos:layout_alignment="center"/>
 </DirectionalLayout>

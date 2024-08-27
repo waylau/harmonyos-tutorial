@@ -8,8 +8,9 @@
 
     <Switch
         ohos:id="$+id:btn_switch"
-        ohos:height="30vp"
-        ohos:width="60vp"
+        ohos:height="60vp"
+        ohos:width="160vp"
+        ohos:text_size="40vp"
         ohos:text_state_off="OFF"
         ohos:text_state_on="ON"
         />

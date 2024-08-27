@@ -3,6 +3,7 @@
     xmlns:ohos="http://schemas.huawei.com/res/ohos"
     ohos:height="match_parent"
     ohos:width="match_parent"
+    ohos:alignment="center"
     ohos:orientation="vertical">
 
     <Button
@@ -14,7 +15,7 @@
         ohos:margin="10vp"
         ohos:padding="10vp"
         ohos:text="On"
-        ohos:text_size="30fp"
+        ohos:text_size="40vp"
         />
 
     <Button
@@ -26,7 +27,7 @@
         ohos:margin="10vp"
         ohos:padding="10vp"
         ohos:text="Off"
-        ohos:text_size="30fp"
+        ohos:text_size="40vp"
         />
 
 </DirectionalLayout>

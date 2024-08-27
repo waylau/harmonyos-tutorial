@@ -8,7 +8,7 @@
 
     <Switch
         ohos:id="$+id:btn_switch"
-        ohos:height="30vp"
-        ohos:width="60vp"/>
+        ohos:height="60vp"
+        ohos:width="160vp"/>
 
 </DirectionalLayout>

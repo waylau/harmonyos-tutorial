@@ -13,7 +13,7 @@
         ohos:background_element="#F76543"
         ohos:left_padding="10vp"
         ohos:text="Get Info"
-        ohos:text_size="27fp"
+        ohos:text_size="40vp"
         />
 
 </DirectionalLayout>

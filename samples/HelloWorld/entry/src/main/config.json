@@ -1,20 +1,20 @@
 {
   "app": {
-    "bundleName": "com.waylau.hmos.helloworld",
-    "vendor": "waylau",
+    "bundleName": "com.ohms.helloworld",
+    "vendor": "example",
     "version": {
       "code": 1000000,
       "name": "1.0.0"
     }
   },
-  "deviceConfig": {},
+  "deviceConfig": {
+  },
   "module": {
-    "package": "com.waylau.hmos.helloworld",
+    "package": "com.ohms.helloworld",
     "name": ".MyApplication",
-    "mainAbility": "com.waylau.hmos.helloworld.MainAbility",
+    "mainAbility": "com.ohms.helloworld.MainAbility",
     "deviceType": [
-      "phone",
-      "car"
+      "phone"
     ],
     "distro": {
       "deliveryWithInstall": true,
@@ -34,13 +34,14 @@
             ]
           }
         ],
-        "orientation": "unspecified",
-        "name": "com.waylau.hmos.helloworld.MainAbility",
-        "icon": "$media:icon",
+        "name": "com.ohms.helloworld.MainAbility",
         "description": "$string:mainability_description",
+        "icon": "$media:icon",
         "label": "$string:entry_MainAbility",
-        "type": "page",
-        "launchType": "standard"
+        "launchType": "standard",
+        "orientation": "unspecified",
+        "visible": true,
+        "type": "page"
       }
     ]
   }

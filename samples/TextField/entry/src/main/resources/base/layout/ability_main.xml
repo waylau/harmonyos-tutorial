@@ -9,10 +9,11 @@
 
     <TextField
         ohos:id="$+id:textfiled"
-        ohos:height="40vp"
-        ohos:width="260vp"
+        ohos:height="50vp"
+        ohos:width="320vp"
         ohos:left_padding="40vp"
         ohos:hint="Enter your name"
+        ohos:text_size="30vp"
         ohos:text_alignment="vertical_center"
         ohos:background_element="$graphic:background_ability_main"
         />

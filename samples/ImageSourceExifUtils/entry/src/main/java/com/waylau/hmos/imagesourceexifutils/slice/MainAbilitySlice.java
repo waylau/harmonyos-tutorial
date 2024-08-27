@@ -21,8 +21,6 @@ public class MainAbilitySlice extends AbilitySlice {
             new HiLogLabel(HiLog.LOG_APP, 0x00001, TAG);
 
     private ImageSource imageSource;
-    private PixelMap pixelMap;
-
     @Override
     public void onStart(Intent intent) {
         super.onStart(intent);

@@ -1,0 +1,64 @@
+{
+  "app": {
+    "bundleName": "com.waylau.hmos.javaintentoperationwithaction",
+    "vendor": "example",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {
+  },
+  "module": {
+    "package": "com.waylau.hmos.javaintentoperationwithaction",
+    "name": ".MyApplication",
+    "mainAbility": "com.waylau.hmos.javaintentoperationwithaction.MainAbility",
+    "deviceType": [
+      "phone"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry",
+      "installationFree": false
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "name": "com.waylau.hmos.javaintentoperationwithaction.MainAbility",
+        "description": "$string:mainability_description",
+        "icon": "$media:icon",
+        "label": "$string:entry_MainAbility",
+        "launchType": "standard",
+        "orientation": "unspecified",
+        "visible": true,
+        "type": "page"
+      },
+      {
+        "skills": [
+          {
+            "actions": [
+              "action.weather"
+            ]
+          }
+        ],
+        "name": "com.waylau.hmos.javaintentoperationwithaction.WeatherAbility",
+        "description": "$string:weatherability_description",
+        "icon": "$media:icon",
+        "label": "$string:entry_WeatherAbility",
+        "launchType": "standard",
+        "orientation": "unspecified",
+        "type": "page"
+      }
+    ]
+  }
+}

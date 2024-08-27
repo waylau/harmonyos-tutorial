@@ -10,7 +10,7 @@
         ohos:id="$+id:time_picker"
         ohos:height="match_content"
         ohos:width="match_parent"
-        ohos:normal_text_size="16fp"
-        ohos:selected_text_size="16fp"/>
+        ohos:normal_text_size="38vp"
+        ohos:selected_text_size="40vp"/>
 
 </DirectionalLayout>

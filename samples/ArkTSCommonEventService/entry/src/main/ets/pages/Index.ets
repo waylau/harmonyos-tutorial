@@ -1,5 +1,5 @@
-// 导入公共事件
-import commonEvent from '@ohos.commonEvent';
+// 导入公共事件管理器
+import commonEventManager from '@ohos.commonEventManager';
 
 @Entry
 @Component
@@ -8,13 +8,13 @@ struct Index {
   //用于接收事件数据
   @State eventData: string = ''
   //用于保存创建成功的订阅者对象，后续使用其完成订阅及退订的动作
-  private subscriber = null
+  private subscriber ;
 
   build() {
     Row() {
       Column() {
         Text(this.message)
-          .fontSize(50)
+          .fontSize(25)
           .fontWeight(FontWeight.Bold)
 
         // 创建订阅者
@@ -55,7 +55,7 @@ struct Index {
 
         // 接收到的事件数据
         Text(this.eventData)
-          .fontSize(50)
+          .fontSize(25)
           .fontWeight(FontWeight.Bold)
       }
       .width('100%')
@@ -67,7 +67,7 @@ struct Index {
     if (this.subscriber) {
       this.message = "subscriber already created";
     } else {
-      commonEvent.createSubscriber({ // 创建订阅者
+      commonEventManager.createSubscriber({ // 创建订阅者
         events: ["testEvent"] // 指定订阅的事件名称
       }, (err, subscriber) => { // 创建结果的回调
         if (err) {
@@ -83,7 +83,7 @@ struct Index {
   private subscriberCommonEvent() {
     if (this.subscriber) {
       // 根据创建的subscriber开始订阅事件
-      commonEvent.subscribe(this.subscriber, (err, data) => {
+      commonEventManager.subscribe(this.subscriber, (err, data) => {
         if (err) {
           // 异常处理
           this.eventData = "subscribe event failure: " + err;
@@ -99,7 +99,7 @@ struct Index {
 
   private publishCommonEvent() {
     //发布公共事件
-    commonEvent.publish("testEvent", (err) => { // 结果回调
+    commonEventManager.publish("testEvent", (err) => { // 结果回调
       if (err) {
         this.message = "publish event error: " + err;
       } else {
@@ -110,7 +110,7 @@ struct Index {
 
   private unsubscribeCommonEvent() {
     if (this.subscriber) {
-      commonEvent.unsubscribe(this.subscriber, (err) => { // 取消订阅事件
+      commonEventManager.unsubscribe(this.subscriber, (err) => { // 取消订阅事件
         if (err) {
           this.message = "unsubscribe event failure: " + err;
         } else {

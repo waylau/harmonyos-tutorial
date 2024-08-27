@@ -14,7 +14,7 @@
         ohos:margin="10vp"
         ohos:padding="10vp"
         ohos:text="Open"
-        ohos:text_size="30fp"
+        ohos:text_size="40vp"
         />
 
     <Image

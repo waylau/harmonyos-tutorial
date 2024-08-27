@@ -1,38 +1,54 @@
 @Entry
 @Component
 struct Index {
+  @State message: string = 'Hello World'
+
   build() {
-    // 子组件都按照垂直方向排列
-    Column() {
-      // 页面的标志是图片
-      Image($r('app.media.waylau_181_181'))
-        .width(181)
-        .height(181)
-        .margin({ top: 80, bottom: 80 })
+    Row() {
+      // 子组件都按照垂直方向排列
+      Column() {
+        // 头像
+        Image($r('app.media.waylau_181_181'))
+          .height(108)
+          .width(108)
 
-      // 账号
-      TextInput({ placeholder: '请输入账号' })
-        .maxLength(80)
-        .type(InputType.Number)
+        // 账号输入框
+        TextInput({ placeholder: '请输入账号' })
+          .width(320)
+          .height(50)
+          .borderRadius(8)
+          .backgroundColor('#f9f9f9')
+          .margin({ top: '10' })
+          .fontSize(27)
+          .type(InputType.Normal) // 输入框类型：平常
 
-      // 密码
-      TextInput({ placeholder: '请输入密码' })
-        .maxLength(80)
-        .type(InputType.Password)
+        // 密码输入框
+        TextInput({ placeholder: '请输入密码' })
+          .width(320)
+          .height(50)
+          .borderRadius(8)
+          .backgroundColor('#f9f9f9')
+          .margin({ top: '10' })
+          .fontSize(27)
+          .type(InputType.Password) // 输入框类型：密码
 
-      // 登录
-      Button(('登录'), { type: ButtonType.Capsule })
-        .width(140)
-        .fontSize(40)
-        .fontWeight(FontWeight.Medium)
-        .margin({ top: 80, bottom: 20 })
+        // 登录按钮
+        Button('登录', { type: ButtonType.Normal })
+          .width('320')
+          .height('50')
+          .borderRadius(8)
+          .backgroundColor('#ffd0da')
+          .margin({ top: '10' })
+          .fontSize(24)
 
-      // 注册
-      Text('注册')
-        .fontColor(Color.Blue)
-        .fontSize(40)
-        .fontWeight(FontWeight.Medium)
+        // 注册按钮
+        Text('注册')
+          .fontColor(Color.Black)
+          .margin({ top: '10' })
+          .fontSize(24)
+      }
+      .width('100%')
     }
-    .width('100%')
+    .height('100%')
   }
 }

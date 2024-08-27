@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JavaCommonEventPublisher.iml" filepath="$PROJECT_DIR$/.idea/modules/JavaCommonEventPublisher.iml" group="JavaCommonEventPublisher" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/entry/entry.iml" filepath="$PROJECT_DIR$/.idea/modules/entry/entry.iml" group="JavaCommonEventPublisher/entry" />
+    </modules>
+  </component>
+</project>

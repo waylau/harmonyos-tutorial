@@ -15,7 +15,7 @@
         ohos:right_margin="15vp"
         ohos:text="Title"
         ohos:text_alignment="horizontal_center"
-        ohos:text_size="25fp"
+        ohos:text_size="40vp"
         ohos:text_weight="1000"
         ohos:top_margin="15vp"/>
 
@@ -31,13 +31,13 @@
         ohos:text="Content"
         ohos:text_alignment="center"
         ohos:text_font="serif"
-        ohos:text_size="25fp"
+        ohos:text_size="40vp"
         ohos:top_margin="15vp"/>
 
     <Text
         ohos:id="$+id:text_submit"
         ohos:height="match_content"
-        ohos:width="75vp"
+        ohos:width="500"
         ohos:align_parent_end="true"
         ohos:background_element="$graphic:background_ability_title_detail"
         ohos:below="$id:text_content"
@@ -47,5 +47,5 @@
         ohos:right_padding="5vp"
         ohos:text="Submit"
         ohos:text_font="serif"
-        ohos:text_size="15fp"/>
+        ohos:text_size="40vp"/>
 </DirectionalLayout>

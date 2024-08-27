@@ -12,7 +12,7 @@
         ohos:text="Hello World"
         ohos:width="300vp"
         ohos:height="100vp"
-        ohos:text_size="28fp"
+        ohos:text_size="40vp"
         ohos:italic="true"
         ohos:text_weight="700"
         ohos:text_font="serif"

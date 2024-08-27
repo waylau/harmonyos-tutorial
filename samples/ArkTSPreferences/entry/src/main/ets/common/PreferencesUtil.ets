@@ -1,9 +1,10 @@
 // 导入preferences模块。
 import dataPreferences from '@ohos.data.preferences';
-// 导入ctx模块。
-import ctx from '@ohos.application.context';
+// 导入common
+import common from '@ohos.app.ability.common';
 
-let context = getContext(this) as ctx.AbilityContext;
+
+let context = getContext(this) as common.UIAbilityContext;
 const PREFERENCES_NAME = 'fruit.db';
 
 export default class PreferencesUtil {

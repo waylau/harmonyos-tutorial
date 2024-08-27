@@ -1,4 +1,5 @@
 /node_modules
+/oh_modules
 /local.properties
 /.idea
 **/build
@@ -7,3 +8,4 @@
 /.clangd
 /.clang-format
 /.clang-tidy
+**/.test

@@ -8,7 +8,7 @@
 
     <ListContainer
         ohos:id="$+id:list_container"
-        ohos:height="400vp"
-        ohos:width="200vp"
+        ohos:height="match_content"
+        ohos:width="match_content"
         ohos:layout_alignment="horizontal_center"/>
 </DirectionalLayout>

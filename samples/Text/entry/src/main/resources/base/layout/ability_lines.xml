@@ -11,9 +11,9 @@
         ohos:background_element="$graphic:background_ability_lines"
         ohos:layout_alignment="horizontal_center"
         ohos:text="Hello World"
-        ohos:width="75vp"
+        ohos:width="300"
         ohos:height="match_content"
-        ohos:text_size="28fp"
+        ohos:text_size="40vp"
         ohos:multiple_lines="true"
         ohos:max_text_lines="2"
         />

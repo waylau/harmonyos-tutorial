@@ -12,7 +12,7 @@
         ohos:width="match_content"
         ohos:background_element="#F76543"
         ohos:text="Encode"
-        ohos:text_size="27fp"
+        ohos:text_size="40vp"
         />
 
     <Button
@@ -21,7 +21,7 @@
         ohos:width="match_content"
         ohos:background_element="#F76543"
         ohos:text="Decode"
-        ohos:text_size="27fp"
+        ohos:text_size="40vp"
         />
 
 </DirectionalLayout>

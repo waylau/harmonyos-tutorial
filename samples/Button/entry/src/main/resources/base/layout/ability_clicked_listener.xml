@@ -10,7 +10,7 @@
         ohos:id="$+id:button_clicked_listener"
         ohos:width="match_content"
         ohos:height="match_content"
-        ohos:text_size="27fp"
+        ohos:text_size="38vp"
         ohos:text="I am Button"
         ohos:left_margin="15vp"
         ohos:bottom_margin="15vp"
