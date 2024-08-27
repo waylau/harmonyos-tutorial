@@ -8,8 +8,9 @@
 
     <TextField
         ohos:id="$+id:textfiled_multiple_lines"
-        ohos:height="40vp"
-        ohos:width="200vp"
+        ohos:height="120vp"
+        ohos:width="320vp"
+        ohos:text_size="30vp"
         ohos:left_padding="40vp"
         ohos:hint="Enter your name, your age and your country!"
         ohos:text_alignment="vertical_center"

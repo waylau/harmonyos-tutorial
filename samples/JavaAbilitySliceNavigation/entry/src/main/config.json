@@ -1,0 +1,58 @@
+{
+  "app": {
+    "bundleName": "com.waylau.ohms.javaabilityslicenavigation",
+    "vendor": "example",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {
+  },
+  "module": {
+    "package": "com.waylau.ohms.javaabilityslicenavigation",
+    "name": ".MyApplication",
+    "mainAbility": "com.waylau.ohms.javaabilityslicenavigation.MainAbility",
+    "deviceType": [
+      "phone"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry",
+      "installationFree": false
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home",
+              "action.pay"
+            ]
+          }
+        ],
+        "name": "com.waylau.ohms.javaabilityslicenavigation.MainAbility",
+        "description": "$string:mainability_description",
+        "icon": "$media:icon",
+        "label": "$string:entry_MainAbility",
+        "launchType": "standard",
+        "orientation": "unspecified",
+        "visible": true,
+        "type": "page"
+      },
+      {
+        "name": "com.waylau.ohms.javaabilityslicenavigation.PayAbility",
+        "description": "$string:payability_description",
+        "icon": "$media:icon",
+        "label": "$string:entry_PayAbility",
+        "launchType": "standard",
+        "orientation": "unspecified",
+        "type": "page"
+      }
+    ]
+  }
+}

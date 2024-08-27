@@ -9,7 +9,7 @@
     <TextField
         ohos:id="$+id:textfield_name"
         ohos:height="match_content"
-        ohos:width="260vp"
+        ohos:width="320vp"
         ohos:background_element="$graphic:background_ability_login"
         ohos:bottom_padding="8vp"
         ohos:hint="Enter phone number"
@@ -17,14 +17,14 @@
         ohos:min_height="44vp"
         ohos:multiple_lines="false"
         ohos:text_alignment="vertical_center"
-        ohos:text_size="18fp"
+        ohos:text_size="30vp"
         ohos:top_margin="10vp"
         ohos:top_padding="8vp"/>
 
     <TextField
         ohos:id="$+id:textfield_password"
         ohos:height="match_content"
-        ohos:width="260vp"
+        ohos:width="320vp"
         ohos:background_element="$graphic:background_ability_login"
         ohos:bottom_padding="8vp"
         ohos:hint="Enter password"
@@ -32,18 +32,18 @@
         ohos:min_height="44vp"
         ohos:multiple_lines="false"
         ohos:text_alignment="vertical_center"
-        ohos:text_size="18fp"
+        ohos:text_size="30vp"
         ohos:top_margin="30vp"
         ohos:top_padding="8vp"/>
 
     <Button
         ohos:id="$+id:ensure_button"
-        ohos:height="35vp"
+        ohos:height="40vp"
         ohos:width="120vp"
         ohos:background_element="$graphic:background_ability_login"
         ohos:layout_alignment="horizontal_center"
         ohos:text="Log in"
-        ohos:text_size="20fp"
+        ohos:text_size="30vp"
         ohos:top_margin="40vp"/>
 
 </DirectionalLayout>

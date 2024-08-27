@@ -18,7 +18,7 @@
         ohos:tab_length="140vp"
         ohos:tab_margin="24vp"
         ohos:text_alignment="center"
-        ohos:text_size="20fp"
+        ohos:text_size="30vp"
         ohos:top_margin="10vp"/>
 
 </DirectionalLayout>

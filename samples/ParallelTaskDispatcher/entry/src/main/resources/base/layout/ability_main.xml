@@ -13,7 +13,7 @@
         ohos:background_element="$graphic:background_ability_main"
         ohos:layout_alignment="horizontal_center"
         ohos:text="Start ParallelTaskDispatcher"
-        ohos:text_size="20vp"
+        ohos:text_size="28vp"
         />
 
 </DirectionalLayout>

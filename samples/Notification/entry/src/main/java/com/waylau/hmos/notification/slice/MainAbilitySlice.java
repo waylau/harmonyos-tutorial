@@ -52,13 +52,15 @@ public class MainAbilitySlice extends AbilitySlice {
 
             String title = "title";
             String text = "There is a normal notification content.";
-            NotificationRequest.NotificationNormalContent content = new NotificationRequest.NotificationNormalContent();
+            NotificationRequest.NotificationNormalContent content =
+                    new NotificationRequest.NotificationNormalContent();
             content.setTitle(title)
                     .setText(text);
             notificationId++;
             NotificationRequest request = new NotificationRequest(notificationId);
 
-            NotificationRequest.NotificationContent notificationContent = new NotificationRequest.NotificationContent(content);
+            NotificationRequest.NotificationContent notificationContent =
+                    new NotificationRequest.NotificationContent(content);
             request.setContent(notificationContent); // 设置通知的内容
             request.setSlotId(slot.getId());
 

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" package="com.waylau.hmos.javacommoneventpublisher" android:versionCode="1000000" android:versionName="1.0.0">
+    
+  <uses-feature android:name="zidane.software.ability" android:required="false"/>
+    
+  <uses-sdk android:minSdkVersion="26" android:targetSdkVersion="29"/>
+    
+  <application android:usesCleartextTraffic="false" android:icon="@drawable/icon" android:directBootAware="false" android:allowBackup="false" android:label="@string/entry_MainAbility" android:name="com.waylau.hmos.javacommoneventpublisher.ShellMyApplication" android:persistent="false">
+        
+    <meta-data android:value="true" android:name="permZA"/>
+        
+    <activity android:icon="@drawable/icon" android:label="@string/entry_MainAbility" android:screenOrientation="unspecified" android:name="com.waylau.hmos.javacommoneventpublisher.MainAbilityShellActivity" android:launchMode="standard" android:exported="true">
+            
+      <intent-filter>
+                
+        <action android:name="android.intent.action.MAIN"/>
+                
+        <category android:name="android.intent.category.LAUNCHER"/>
+              
+      </intent-filter>
+          
+    </activity>
+      
+  </application>
+  
+</manifest>

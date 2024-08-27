@@ -13,7 +13,7 @@
         ohos:background_element="$graphic:background_ability_italic_weight"
         ohos:layout_alignment="horizontal_center"
         ohos:text="Hello World"
-        ohos:text_size="28fp"
+        ohos:text_size="40vp"
         ohos:text_color="#0000FF"
         ohos:italic="true"
         ohos:text_weight="700"

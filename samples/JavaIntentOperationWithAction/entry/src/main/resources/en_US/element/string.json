@@ -1,0 +1,28 @@
+{
+  "string": [
+    {
+      "name": "entry_MainAbility",
+      "value": "entry_MainAbility"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "mainability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "weatherability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "weatherability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_WeatherAbility",
+      "value": "entry_WeatherAbility"
+    }
+  ]
+}

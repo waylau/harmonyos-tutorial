@@ -1,0 +1,7 @@
+graphic background_ability_main 0x1000004
+id text_event_subscriber 0x1000006
+layout ability_main 0x1000005
+media icon 0x1000003
+string entry_MainAbility 0x1000000
+string mainability_HelloWorld 0x1000001
+string mainability_description 0x1000002

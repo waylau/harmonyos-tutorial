@@ -1,0 +1,28 @@
+{
+  "string": [
+    {
+      "name": "entry_MainAbility",
+      "value": "entry_MainAbility"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "mainability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "payability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "payability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_PayAbility",
+      "value": "entry_PayAbility"
+    }
+  ]
+}

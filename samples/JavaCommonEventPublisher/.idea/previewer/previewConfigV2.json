@@ -1,0 +1,37 @@
+{
+ "1.0.0": {
+  "LastPreviewDevice": {}
+ },
+ "1.0.1": {
+  "profileList": [
+   {
+    "id": "Phone",
+    "deviceType": "phone",
+    "width": 1080,
+    "height": 2340,
+    "shape": "rect",
+    "dpi": 480,
+    "orientation": "portrait",
+    "language": "zh_CN",
+    "colorMode": "light"
+   },
+   {
+    "id": "Foldable",
+    "deviceType": "phone",
+    "width": 2200,
+    "height": 2480,
+    "shape": "rect",
+    "dpi": 520,
+    "orientation": "portrait",
+    "language": "zh_CN",
+    "colorMode": "light"
+   }
+  ],
+  "runningProfileList": [
+   "Phone"
+  ],
+  "availableProfileList": [
+   "Foldable"
+  ]
+ }
+}

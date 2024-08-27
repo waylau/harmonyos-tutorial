@@ -1,9 +1,9 @@
 // 导入rdb模块。
 import data_rdb from '@ohos.data.rdb'
-// 导入context模块。
-import context from '@ohos.application.context';
+// 导入common
+import common from '@ohos.app.ability.common';
 
-type Context = context.Context;
+type Context = common.UIAbilityContext;
 const STORE_CONFIG = { name: "rdbstore.db" }
 
 export default class RdbUtil {

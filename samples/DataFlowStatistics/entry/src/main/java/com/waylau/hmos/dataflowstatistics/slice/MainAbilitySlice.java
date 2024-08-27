@@ -37,9 +37,6 @@ public class MainAbilitySlice extends AbilitySlice {
                 (Button) findComponentById(ResourceTable.Id_button_open);
         buttonOpen.setClickedListener(listener -> open());
 
-        image =
-                (Image) findComponentById(ResourceTable.Id_image);
-
         dispatcher = getGlobalTaskDispatcher(TaskPriority.DEFAULT);
     }
 
@@ -83,18 +80,6 @@ public class MainAbilitySlice extends AbilitySlice {
                 // 之后可进行url的其他操作
                 int code = connection.getResponseCode();
                 HiLog.info(LABEL_LOG, "ResponseCode：%{public}s", code);
-
-                if (code == HttpURLConnection.HTTP_OK) {
-                    // 得到服务器返回过来的图片流对象在界面显示出来
-                    InputStream inputStream = urlConnection.getInputStream();
-                    ImageSource imageSource = ImageSource.create(inputStream, new ImageSource.SourceOptions());
-                    ImageSource.DecodingOptions decodingOptions = new ImageSource.DecodingOptions();
-                    decodingOptions.desiredPixelFormat = PixelFormat.ARGB_8888;
-                    PixelMap pixelMap = imageSource.createPixelmap(decodingOptions);
-
-                    image.setPixelMap(pixelMap);
-                    pixelMap.release();
-                }
             } catch (Exception e) {
                 e.printStackTrace();
             } finally {

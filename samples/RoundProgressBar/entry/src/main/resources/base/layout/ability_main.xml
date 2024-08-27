@@ -8,9 +8,9 @@
 
     <RoundProgressBar
         ohos:id="$+id:round_progress_bar"
-        ohos:height="200vp"
-        ohos:width="200vp"
-        ohos:progress_width="10vp"
+        ohos:height="300vp"
+        ohos:width="300vp"
+        ohos:progress_width="30vp"
         ohos:progress="20"
         ohos:progress_color="#47CC47"/>
 

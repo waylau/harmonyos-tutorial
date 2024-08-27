@@ -15,6 +15,6 @@
         ohos:text="$string:text_lines_content"
         ohos:text_color="#0000FF"
         ohos:text_font="serif"
-        ohos:text_size="28fp"
+        ohos:text_size="40vp"
         ohos:text_weight="700"/>
 </ScrollView>

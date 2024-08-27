@@ -1,0 +1,47 @@
+{
+    "summary": {
+        "app": {
+            "bundleName": "com.waylau.hmos.javacommoneventsubscriber",
+            "version": {
+                "code": 1000000,
+                "name": "1.0.0"
+            }
+        },
+        "modules": [
+            {
+                "mainAbility": "com.waylau.hmos.javacommoneventsubscriber.MainAbility",
+                "deviceType": [
+                    "phone"
+                ],
+                "abilities": [
+                    {
+                        "visible": true,
+                        "name": "com.waylau.hmos.javacommoneventsubscriber.MainAbility",
+                        "label": "$string:entry_MainAbility"
+                    }
+                ],
+                "distro": {
+                    "moduleType": "entry",
+                    "installationFree": false,
+                    "deliveryWithInstall": true,
+                    "moduleName": "entry"
+                },
+                "apiVersion": {
+                    "compatible": 7,
+                    "releaseType": "Release",
+                    "target": 7
+                }
+            }
+        ]
+    },
+    "packages": [
+        {
+            "deviceType": [
+                "phone"
+            ],
+            "moduleType": "entry",
+            "deliveryWithInstall": true,
+            "name": "entry-debug-rich-unsigned"
+        }
+    ]
+}

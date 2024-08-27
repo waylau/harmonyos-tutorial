@@ -8,9 +8,9 @@
 
     <Button
         ohos:id="$+id:button_oval"
-        ohos:width="200vp"
-        ohos:height="200vp"
-        ohos:text_size="27fp"
+        ohos:width="300vp"
+        ohos:height="300vp"
+        ohos:text_size="40vp"
         ohos:text="I am Button"
         ohos:left_margin="15vp"
         ohos:bottom_margin="15vp"

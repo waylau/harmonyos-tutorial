@@ -1,0 +1,58 @@
+{
+    "app": {
+        "apiVersion": {
+            "compatible": 7,
+            "releaseType": "Release",
+            "target": 7
+        },
+        "vendor": "example",
+        "bundleName": "com.waylau.hmos.javacommoneventpublisher",
+        "version": {
+            "code": 1000000,
+            "name": "1.0.0"
+        }
+    },
+    "deviceConfig": {
+        
+    },
+    "module": {
+        "abilities": [
+            {
+                "iconId": 16777219,
+                "orientation": "unspecified",
+                "visible": true,
+                "icon": "$media:icon",
+                "description": "$string:mainability_description",
+                "label": "$string:entry_MainAbility",
+                "type": "page",
+                "homeAbility": true,
+                "skills": [
+                    {
+                        "entities": [
+                            "entity.system.home"
+                        ],
+                        "actions": [
+                            "action.system.home"
+                        ]
+                    }
+                ],
+                "descriptionId": 16777218,
+                "labelId": 16777216,
+                "name": "com.waylau.hmos.javacommoneventpublisher.MainAbility",
+                "launchType": "standard"
+            }
+        ],
+        "deviceType": [
+            "phone"
+        ],
+        "mainAbility": "com.waylau.hmos.javacommoneventpublisher.MainAbility",
+        "distro": {
+            "moduleType": "entry",
+            "installationFree": false,
+            "deliveryWithInstall": true,
+            "moduleName": "entry"
+        },
+        "package": "com.waylau.hmos.javacommoneventpublisher",
+        "name": ".MyApplication"
+    }
+}

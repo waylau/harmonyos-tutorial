@@ -24,6 +24,7 @@ public class PayAbilitySlice extends AbilitySlice {
 
         // 设置布局属性
         directionalLayout.setOrientation(Component.VERTICAL);
+        directionalLayout.setAlignment(LayoutAlignment.CENTER);
 
         // 将布局添加到组件树中
         setUIContent(directionalLayout);
@@ -31,7 +32,7 @@ public class PayAbilitySlice extends AbilitySlice {
         // 声明Text组件
         Text textPay = new Text(getContext());
         textPay.setText("Show me the money");
-        textPay.setTextSize(25, Text.TextSizeType.VP);
+        textPay.setTextSize(38, Text.TextSizeType.VP);
         textPay.setId(1);
 
         // 设置组件的属性
