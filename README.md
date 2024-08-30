@@ -6,7 +6,7 @@
 
 
 
-《跟老卫学HarmonyOS开发》是一本 HarmonyOS 应用开发的开源学习教程，主要介绍如何从0开始开发 HarmonyOS 应用。本书包括最新版本 HarmonyOS 4 中的新特性。图文并茂，并通过大量实例带你走近 HarmonyOS 的世界！
+《跟老卫学HarmonyOS开发》是一本 HarmonyOS 应用开发的开源学习教程，主要介绍如何从0开始开发 HarmonyOS 应用。本书包括最新版本 HarmonyOS NEXT中的新特性。图文并茂，并通过大量实例带你走近 HarmonyOS 的世界！
 
 本书业余时间所著，由于笔者能力有限、时间仓促，书中难免有疏漏之处，欢迎读者批评指正。
 
@@ -236,7 +236,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [ArkUI调用三方库PhotoView](samples/ArkUIThirdPartyLibrary)
 * [ArkUI健康饮食应用](samples/ArkUIHealthyDiet)
 * [ArkUI点赞美女翻牌](samples/GiveThumbsUp)
-* [ArkUI HelloWorld](samples/ArkUIHelloWorld)
+* [ArkUI HelloWorld](samples/ArkUIHelloWorld)（HarmonyOS NEXT Developer Beta5（API 12 Beta5））
 * [ArkUI 内页面的跳转和数据传递](samples/ArkUIPagesRouter)
 * [ArkUI 显式Want启动Ability](samples/ArkUIWantStartAbility)
 * [ArkUI 隐式Want打开网址](samples/ArkUIWantOpenURI)（Test）
@@ -264,6 +264,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [ArkTS 低代码开发实现CPI图表](samples/ArkTSCPIChart)
 * [ArkUI 中秋国庆祝福程序](samples/ArkUIMidAutumnFestival)
 * [基于HarmonyOS ArkTS来操作SVG图片](samples/ArkTSSVGChineseLoong)
+* [统计字符串的字符数](samples/CountTheNumberOfCharacters)（HarmonyOS NEXT Developer Beta5（API 12 Beta5））
 * 未完待续...
 
 
