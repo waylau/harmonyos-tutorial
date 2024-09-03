@@ -119,6 +119,8 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [“2024鸿蒙零基础快速实战-仿抖音App开发（ArkTS版）”实战课程已上线](https://waylau.com/harmonyos-short-video-arkts/)
 * [ArkTS开发原生鸿蒙HarmonyOS短视频应用](https://www.bilibili.com/video/BV1KD421M7a8/)（视频）
 * [2024鸿蒙零基础快速实战-仿抖音App开发(ArkTS版)-课程导学](https://www.bilibili.com/video/BV11D421K7Cd/)（视频）
+* [HarmonyOS 3.1/4.0应用升级到HarmonyOS NEXT改动点](https://waylau.com/changes-upgrade-from-3-1-4-0-to-harmonyos-next-developer-preview2)
+* [DevEco Studio NEXT Developer Beta3打开NEXT Developer Preview2应用报错问题解决](https://waylau.com/upgrade-from-harmonyos-next-developer-preview2-to-next-developer-beta3/)
 * 未完待续...
 
 ## Samples 示例
