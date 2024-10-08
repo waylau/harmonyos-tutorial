@@ -123,6 +123,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [DevEco Studio NEXT Developer Beta3打开NEXT Developer Preview2应用报错问题解决](https://waylau.com/upgrade-from-harmonyos-next-developer-preview2-to-next-developer-beta3/)
 * [HarmonyOS NEXT仓颉编程语言开发环境搭建（安装DevEco Studio Cangjie Plugin）](https://waylau.com/install-deveco-studio-cangjie-plugin/)
 * [HarmonyOS ArkTS用户首选项的开发及测试](https://developer.huawei.com/consumer/cn/forum/topic/0212162121584279891?fid=0109140870620153026)
+* [HarmonyOS NEXT Release版本发布](https://developer.huawei.com/consumer/cn/forum/topic/0202163790773265911?fid=0109140870620153026)
 * 未完待续...
 
 ## Samples 示例
