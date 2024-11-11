@@ -1,4 +1,4 @@
-# HarmonyOS Tutorial. 《跟老卫学HarmonyOS开发》/《鸿蒙HarmonyOS手机应用开发实战》/《鸿蒙HarmonyOS应用开发从入门到精通》/《鸿蒙HarmonyOS应用开发入门》源码
+# HarmonyOS Tutorial. 《跟老卫学HarmonyOS开发》《鸿蒙HarmonyOS手机应用开发实战》《鸿蒙HarmonyOS应用开发从入门到精通》《鸿蒙HarmonyOS应用开发入门》源码
 
 ![](images/harmonyOS_logo.png)
 
