@@ -6,7 +6,7 @@
 
 
 
-《跟老卫学HarmonyOS开发》是一本 HarmonyOS 应用开发的开源学习教程，主要介绍如何从0开始开发 HarmonyOS 应用。本书包括最新版本 HarmonyOS NEXT中的新特性。图文并茂，并通过大量实例带你走近 HarmonyOS 的世界！
+《跟老卫学HarmonyOS开发》是一本 HarmonyOS 应用开发的开源学习教程，主要介绍如何从0开始开发 HarmonyOS 应用。本书包括最新版本HarmonyOS NEXT（HarmonyOS 5）中的新特性。图文并茂，并通过大量实例带你走近 HarmonyOS 的世界！
 
 本书业余时间所著，由于笔者能力有限、时间仓促，书中难免有疏漏之处，欢迎读者批评指正。
 
@@ -125,6 +125,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [HarmonyOS ArkTS用户首选项的开发及测试](https://developer.huawei.com/consumer/cn/forum/topic/0212162121584279891?fid=0109140870620153026)
 * [HarmonyOS NEXT Release版本发布](https://developer.huawei.com/consumer/cn/forum/topic/0202163790773265911?fid=0109140870620153026)
 * [原生鸿蒙操作系统HarmonyOS NEXT（HarmonyOS 5）正式发布](https://developer.huawei.com/consumer/cn/forum/topic/0201165020167549746?fid=0109140870620153026)
+* [DevEco Studio 5.0.1 Beta3安装及配置](https://developer.huawei.com/consumer/cn/forum/topic/0201167060557489345)
 * 未完待续...
 
 ## Samples 示例
