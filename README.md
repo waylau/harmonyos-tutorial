@@ -126,6 +126,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [HarmonyOS NEXT Release版本发布](https://developer.huawei.com/consumer/cn/forum/topic/0202163790773265911?fid=0109140870620153026)
 * [原生鸿蒙操作系统HarmonyOS NEXT（HarmonyOS 5）正式发布](https://developer.huawei.com/consumer/cn/forum/topic/0201165020167549746?fid=0109140870620153026)
 * [DevEco Studio 5.0.1 Beta3安装及配置](https://developer.huawei.com/consumer/cn/forum/topic/0201167060557489345)
+* [HarmonyOS 3.1/4项目在DevEco Studio 5.0（HarmonyOS NEXT）版本下使用的问题](https://waylau.com/deveco-studio-5-develop-harmonyos-3/)
 * 未完待续...
 
 ## Samples 示例
