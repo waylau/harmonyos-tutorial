@@ -310,7 +310,7 @@ HarmonyOS配套练习题库，见“[HarmonyOS题库](https://github.com/waylau/
 * [《鸿蒙HarmonyOS手机应用开发实战》](https://waylau.com/about-harmonyos-mobile-application-development-book)（清华大学出版社）
   * [京东](https://search.jd.com/Search?keyword=%E6%9F%B3%E4%BC%9F%E5%8D%AB%20%E9%B8%BF%E8%92%99HarmonyOS%E6%89%8B%E6%9C%BA%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E5%AE%9E%E6%88%98&enc=utf-8&wq=%E6%9F%B3%E4%BC%9F%E5%8D%AB%20%E9%B8%BF%E8%92%99HarmonyOS%E6%89%8B%E6%9C%BA%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E5%AE%9E%E6%88%98&pvid=0a1bb438769f490f9795b135278138ea)
   * [当当](http://search.dangdang.com/?key=%C1%F8%CE%B0%CE%C0%20%BA%E8%C3%C9HarmonyOS%CA%D6%BB%FA%D3%A6%D3%C3%BF%AA%B7%A2%CA%B5%D5%BD&act=input)
-* [《鸿蒙HarmonyOS应用开发从入门到精通战》](https://waylau.com/about-harmonyos-application-development-from-zero-to-hero-book/)（北京大学出版社）
+* [《鸿蒙HarmonyOS应用开发从入门到精通》](https://waylau.com/about-harmonyos-application-development-from-zero-to-hero-book/)（北京大学出版社）
   * [京东](https://item.jd.com/13696724.html)
   * [当当](http://product.dangdang.com/29386650.html)
 * [鸿蒙系统实战短视频App 从0到1掌握HarmonyOS](https://coding.imooc.com/class/674.html)（视频）
@@ -318,6 +318,10 @@ HarmonyOS配套练习题库，见“[HarmonyOS题库](https://github.com/waylau/
   * [京东](https://item.jd.com/13963157.html)
   * [当当](https://product.dangdang.com/29664217.html)
 * [2024鸿蒙零基础快速实战-仿抖音App开发（ArkTS版）](https://coding.imooc.com/class/843.html)（视频）
+* [《鸿蒙HarmonyOS应用开发从入门到精通（第2版）》](https://waylau.com/about-harmonyos-application-development-from-zero-to-hero-book/)（北京大学出版社）
+  * [京东](https://item.jd.com/14349963.html)
+  * [当当](http://product.dangdang.com/29821274.html)
+
 
 ## Issue 意见、建议
 
