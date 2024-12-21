@@ -319,7 +319,7 @@ HarmonyOS配套练习题库，见“[HarmonyOS题库](https://github.com/waylau/
   * [京东](https://item.jd.com/13963157.html)
   * [当当](https://product.dangdang.com/29664217.html)
 * [2024鸿蒙零基础快速实战-仿抖音App开发（ArkTS版）](https://coding.imooc.com/class/843.html)（视频）
-* [《鸿蒙HarmonyOS应用开发从入门到精通（第2版）》](https://waylau.com/about-harmonyos-application-development-from-zero-to-hero-book/)（北京大学出版社）
+* [《鸿蒙HarmonyOS应用开发从入门到精通（第2版）》](https://waylau.com/about-harmonyos-application-development-from-zero-to-hero-2nd-edition-book/)（北京大学出版社）
   * [京东](https://item.jd.com/14349963.html)
   * [当当](http://product.dangdang.com/29821274.html)
 
