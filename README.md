@@ -128,6 +128,11 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [DevEco Studio 5.0.1 Beta3安装及配置](https://developer.huawei.com/consumer/cn/forum/topic/0201167060557489345)
 * [HarmonyOS 3.1/4项目在DevEco Studio 5.0（HarmonyOS NEXT）版本下使用的问题](https://waylau.com/deveco-studio-5-develop-harmonyos-3/)
 * [《鸿蒙HarmonyOS应用开发从入门到精通（第2版）》简介](https://waylau.com/about-harmonyos-application-development-from-zero-to-hero-2nd-edition-book/)
+* [仓颉开发HarmonyOS，报错error: undeclared identifier 'ViewStackProcessor'](https://developer.huawei.com/consumer/cn/forum/topic/0203168734455974805)
+* [仓颉开发HarmonyOS，@Builder 和@Component的区别？](https://developer.huawei.com/consumer/cn/forum/topic/0201168738273407796)
+* [仓颉开发HarmonyOS，internal import 和import 有什么区别？	](https://developer.huawei.com/consumer/cn/forum/topic/0201168738630513798)
+* [市面上最厚的鸿蒙著作！《鸿蒙HarmonyOS应用开发从入门到精通（第2版）》](https://www.bilibili.com/video/BV1N2ktYeEBd/)（视频）
+
 * 未完待续...
 
 ## Samples 示例
