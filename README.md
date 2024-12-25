@@ -132,6 +132,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [仓颉开发HarmonyOS，@Builder 和@Component的区别？](https://developer.huawei.com/consumer/cn/forum/topic/0201168738273407796)
 * [仓颉开发HarmonyOS，internal import 和import 有什么区别？	](https://developer.huawei.com/consumer/cn/forum/topic/0201168738630513798)
 * [市面上最厚的鸿蒙著作！《鸿蒙HarmonyOS应用开发从入门到精通（第2版）》](https://www.bilibili.com/video/BV1N2ktYeEBd/)（视频）
+* [HarmonyOS产生的背景](https://developer.huawei.com/consumer/cn/forum/topic/0203170498345755621?fid=0109140870620153026)
 
 * 未完待续...
 
