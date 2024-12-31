@@ -134,6 +134,8 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [市面上最厚的鸿蒙著作！《鸿蒙HarmonyOS应用开发从入门到精通（第2版）》](https://www.bilibili.com/video/BV1N2ktYeEBd/)（视频）
 * [HarmonyOS产生的背景](https://developer.huawei.com/consumer/cn/forum/topic/0203170498345755621?fid=0109140870620153026)
 * [HarmonyOS技术理念](https://developer.huawei.com/consumer/cn/forum/topic/0202170671991846041?fid=0109140870620153026)
+* [《鸿蒙之光HarmonyOS NEXT原生应用开发入门》简介](https://waylau.com/about-harmonyos-next-tutorial-book/)
+* [HarmonyOS架构介绍](https://developer.huawei.com/consumer/cn/forum/topic/0202171014436926490)
 * 未完待续...
 
 ## Samples 示例
