@@ -25,6 +25,7 @@ struct Index {
     Row() {
       Column() {
         Text(this.message)
+          .id('text_result')
           .fontSize(50)
           .fontWeight(FontWeight.Bold)
 
@@ -36,7 +37,7 @@ struct Index {
           .margin({ top: 20, bottom: 20 })
           .onClick(() => {
             // 保存数据
-            let newAccount: AccountData = { id: 0, accountType: 0, typeText: '苹果', amount: 0 };
+            let newAccount: AccountData = { id: 1, accountType: 0, typeText: '苹果', amount: 0 };
             this.preferencesUtil.putPreference(PREFERENCES_KEY, JSON.stringify(newAccount));
           })
 

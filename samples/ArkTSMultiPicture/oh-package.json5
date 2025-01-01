@@ -1,0 +1,12 @@
+{
+  "modelVersion": "5.0.0",
+  "license": "",
+  "devDependencies": {
+  },
+  "author": "",
+  "name": "arktsmultipicture",
+  "description": "一多图片预览器.",
+  "main": "",
+  "version": "1.0.0",
+  "dependencies": {}
+}

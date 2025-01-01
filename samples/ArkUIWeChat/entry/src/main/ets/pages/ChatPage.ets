@@ -1,11 +1,9 @@
 import {ChatItemStyle, WeChatTitle} from '../model/CommonStyle'
-import {getContactInfo} from '../model/WeChatData'
+import { CONTACTS} from '../model/WeChatData'
 import {Person} from '../model/Person'
 
 @Component
 export struct ChatPage {
-  private contactList: Person[] = getContactInfo()
-
   build() {
     Column() {
       // 标题
@@ -13,16 +11,16 @@ export struct ChatPage {
 
       // 列表
       List() {
-        ForEach(this.contactList, item => {
+        ForEach(CONTACTS, (item: Person) => {
           ListItem() {
             ChatItemStyle({
-              WeChatImage: item.WeChatImage,
-              WeChatName: item.WeChatName,
-              ChatInfo: item.ChatInfo,
+              weChatImage: item.weChatImage,
+              weChatName: item.weChatName,
+              chatInfo: item.chatInfo,
               time: item.time
             })
           }
-        }, item => item.id.toString())
+        }, (item: Person) => item.id.toString())
       }
       .height('100%')
       .width('100%')

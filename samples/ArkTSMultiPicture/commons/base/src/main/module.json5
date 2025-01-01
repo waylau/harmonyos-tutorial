@@ -1,0 +1,11 @@
+{
+  "module": {
+    "name": "base",
+    "type": "har",
+    "deviceTypes": [
+      "phone",
+      "tablet",
+      "2in1"
+    ]
+  }
+}

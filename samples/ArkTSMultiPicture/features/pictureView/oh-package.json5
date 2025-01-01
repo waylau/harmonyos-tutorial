@@ -1,0 +1,12 @@
+{
+  "license": "",
+  "devDependencies": {},
+  "author": "",
+  "name": "pictureview",
+  "description": "图片查看功能.",
+  "main": "Index.ets",
+  "version": "1.0.0",
+  "dependencies": {
+    "@ohos/commons": "file:../../commons/base"
+  }
+}

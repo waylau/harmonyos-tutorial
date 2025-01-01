@@ -6,9 +6,11 @@
 
 
 
-《跟老卫学HarmonyOS开发》是一本 HarmonyOS 应用开发的开源学习教程，主要介绍如何从0开始开发 HarmonyOS 应用。本书包括最新版本HarmonyOS NEXT（HarmonyOS 5）中的新特性。图文并茂，并通过大量实例带你走近 HarmonyOS 的世界！
+《跟老卫学HarmonyOS开发》是一本 HarmonyOS 应用开发的开源学习教程，主要介绍如何从0开始开发 HarmonyOS 应用。本书包括最新版本HarmonyOS NEXT（HarmonyOS 5）中的新特性。图文并茂，并通过大量实例带你走进 HarmonyOS 的世界！
 
-本书业余时间所著，由于笔者能力有限、时间仓促，书中难免有疏漏之处，欢迎读者批评指正。
+本书业余时间所著，书中如有错漏之处，敬请斧正，欢迎读者与笔者联系。
+
+
 
 ## Summary 目录
 
@@ -250,11 +252,11 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [使用ArkUI开发“父亲节的祝福”](samples/FatherDay)
 * [AI来做HarmonyOS藏头诗](samples/WaylauAcrosticPoem)
 * [ArkUI抽个盲盒头像](samples/ArkUIExperience)
-* [ArkUI购物应用](samples/ArkUIShopping)
+* [ArkUI 购物应用](samples/ArkUIShopping)
 * [ArkUI调用三方库PhotoView](samples/ArkUIThirdPartyLibrary)
 * [ArkUI健康饮食应用](samples/ArkUIHealthyDiet)
 * [ArkUI点赞美女翻牌](samples/GiveThumbsUp)
-* [ArkUI HelloWorld](samples/ArkUIHelloWorld)（HarmonyOS NEXT Developer Beta5（API 12 Beta5））
+* [ArkUI HelloWorld](samples/ArkUIHelloWorld)
 * [ArkUI 内页面的跳转和数据传递](samples/ArkUIPagesRouter)
 * [ArkUI 显式Want启动Ability](samples/ArkUIWantStartAbility)
 * [ArkUI 隐式Want打开网址](samples/ArkUIWantOpenURI)（Test）
@@ -266,7 +268,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [ArkTS HTTP请求数据](samples/ArkTSHttp)
 * [ArkTS Web组件](samples/ArkTSWebComponent)
 * [ArkTS 用户授权](samples/ArkTSUserGrant)
-* [ArkTS 分布式数据服务开发](samples/ArkTSDistributedData)（todo）
+* [ArkTS 分布式数据服务开发](samples/ArkTSDistributedData)
 * [ArkTS 关系型数据库开发](samples/ArkTSRdb)
 * [ArkTS 首选项开发](samples/ArkTSPreferences)
 * [ArkUI 基础组件开发](samples/ArkUIBasicComponents)
@@ -282,13 +284,30 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [ArkTS 低代码开发实现CPI图表](samples/ArkTSCPIChart)
 * [ArkUI 中秋国庆祝福程序](samples/ArkUIMidAutumnFestival)
 * [基于HarmonyOS ArkTS来操作SVG图片](samples/ArkTSSVGChineseLoong)
-* [统计字符串的字符数](samples/CountTheNumberOfCharacters)（HarmonyOS NEXT Developer Beta5（API 12 Beta5））
+* [ArkTS 统计字符串的字符数](samples/CountTheNumberOfCharacters)
+* [ArkTS 录音机](samples/ArkTSAudioCapturer)
+* [ArkTS 音乐播放器](samples/ArkTSAVPlayer)
+* [ArkTS 使用Emitter进行线程间通信](samples/ArkTSEmitter)
+* [ArkTS 实现图片查看器UI原型](samples/ArkTSMultiPictureUI)
+* [ArkTS 图片查看器](samples/ArkTSMultiPicture)
+* [ArkTS 购物车](samples/ArkTSShoppingCart)
+* [ArkTS 创建子窗口](samples/ArkTSSubWindow)
+* [ArkTS 使用麦克风](samples/ArkTSUserGrantMicrophone)
+* [ArkTS 启动系统设置](samples/ArkTSWantOpenSetting)
+* [ArkTS 显式Want启动Ability](samples/ArkTSWantStartAbility)
+* [ArkTS Web组件展示HTML页面](samples/ArkTSWebComponentHTML)
+* [ArkTS 实现窗口沉浸式效果](samples/ArkTSWindowLayoutFullScreen)
+* [ArkUI 绘制组件](samples/ArkUIDrawingComponents)
+* [ArkUI 图片轮播播放器](samples/ArkUISwiper)
 * 未完待续...
 
 
 以下是部分示例运行界面。
 
-![服务卡片](images/AbilityServiceWidget.png)
+![ArkTS 音乐播放器](images/ArkTSAVPlayer.png)
+
+
+![ArkTS 仿微信应用](images/ArkUIWeChat.png)
 
 
 ![视频播放器](images/VedioPlayer.png)
@@ -296,7 +315,9 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 
 ![俄罗斯方块](images/Tetris.png)
 
-![购物应用](images/ArkUIShopping.jpg)
+![购物应用](images/ArkUIShopping.png)
+
+![ArkTS 图片查看器](images/ArkTSMultiPicture.png)
 
 ## Get start 如何开始阅读
 
@@ -331,6 +352,9 @@ HarmonyOS配套练习题库，见“[HarmonyOS题库](https://github.com/waylau/
 * [《鸿蒙HarmonyOS应用开发从入门到精通（第2版）》](https://waylau.com/about-harmonyos-application-development-from-zero-to-hero-2nd-edition-book/)（北京大学出版社）
   * [京东](https://item.jd.com/14349963.html)
   * [当当](http://product.dangdang.com/29821274.html)
+* [《鸿蒙之光HarmonyOS NEXT原生应用开发入门》](https://waylau.com/about-harmonyos-next-tutorial-book/)（清华大学出版社）
+  * [京东](https://item.jd.com/14905890.html)
+  * [当当](https://product.dangdang.com/29832721.html)
 
 
 ## Issue 意见、建议

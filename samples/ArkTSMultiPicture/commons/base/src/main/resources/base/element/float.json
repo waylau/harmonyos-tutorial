@@ -1,0 +1,120 @@
+{
+  "float": [
+    {
+      "name": "micro_font_size",
+      "value": "10fp"
+    },
+    {
+      "name": "smaller_mini_font_size",
+      "value": "11fp"
+    },
+    {
+      "name": "icon_height_one",
+      "value": "24vp"
+    },
+    {
+      "name": "icon_width_one",
+      "value": "24vp"
+    },
+    {
+      "name": "icon_margin_one",
+      "value": "12vp"
+    },
+    {
+      "name": "icon_margin_two",
+      "value": "24vp"
+    },
+    {
+      "name": "main_image_size",
+      "value": "22vp"
+    },
+    {
+      "name": "main_image_size_lg",
+      "value": "24vp"
+    },
+    {
+      "name": "avatar_image_size",
+      "value": "40vp"
+    },
+    {
+      "name": "bar_width",
+      "value": "96vp"
+    },
+    {
+      "name": "text_line_height_one",
+      "value": "19vp"
+    },
+    {
+      "name": "text_line_height_three",
+      "value": "14vp"
+    },
+    {
+      "name": "text_line_height_two",
+      "value": "22vp"
+    },
+    {
+      "name": "text_line_height_five",
+      "value": "21vp"
+    },
+    {
+      "name": "background_color_grey",
+      "value": "#111111"
+    },
+    {
+      "name": "input_raduis_one",
+      "value": "20vp"
+    },
+    {
+      "name": "font_family_normal",
+      "value": "HarmonyHeiTi"
+    },
+    {
+      "name": "font_family_medium",
+      "value": "HarmonyHeiTi-Medium"
+    },
+    {
+      "name": "font_family_bold",
+      "value": "HarmonyHeiTi-Bold"
+    },
+    {
+      "name": "font_family_semi_bold",
+      "value": "HarmonyHeiTi-SemiBold"
+    },
+    {
+      "name": "font_size_ten",
+      "value": "10fp"
+    },
+    {
+      "name": "font_size_eleven",
+      "value": "11fp"
+    },
+    {
+      "name": "font_size_twelve",
+      "value": "12fp"
+    },
+    {
+      "name": "font_size_fourteen",
+      "value": "14fp"
+    },
+    {
+      "name": "font_size_sixteen",
+      "value": "16fp"
+    },
+    {
+      "name": "font_size_eighteen",
+      "value": "18fp"
+    },
+    {
+      "name": "font_size_twenty",
+      "value": "20fp"
+    },
+    {
+      "name": "font_size_twenty_four",
+      "value": "24fp"
+    },
+    {
+      "name": "font_size_thirty_two",
+      "value": "32fp"
+    }
+  ]
+}

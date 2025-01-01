@@ -1,10 +1,14 @@
+class Timetable {
+  title: string = '';
+  projects: String[] = [];
+}
 
 @Entry
 @Component
 struct Index {
   private numberArray: String[] = ['0', '1', '2', '3', '4'];
   private bgColors: Color[] = [Color.Red, Color.Orange, Color.Yellow, Color.Green, Color.Pink, Color.Grey, Color.Blue, Color.Brown];
-  private timetableListItemGroup: any = [
+  private timetableListItemGroup: Timetable[] = [
     {
       title:'星期一',
       projects:['语文', '数学', '英语']
@@ -23,10 +27,20 @@ struct Index {
     }
   ]
 
+  private alphabetIndexerArrayA: string[] = ['安']
+  private alphabetIndexerArrayB: string[] = ['卜', '白', '包', '毕', '丙']
+  private alphabetIndexerArrayC: string[] = ['曹', '成', '陈', '催']
+  private alphabetIndexerArrayL: string[] = ['刘', '李', '楼', '梁', '雷', '吕', '柳', '卢']
+  private alphabetIndexerArrayValue: string[] = ['#', 'A', 'B', 'C', 'D', 'E', 'F', 'G',
+    'H', 'I', 'J', 'K', 'L', 'M', 'N',
+    'O', 'P', 'Q', 'R', 'S', 'T', 'U',
+    'V', 'W', 'X', 'Y', 'Z']
+  @State counterValue: number = 0;
+
   build() {
     Column() {
-      /*** 以下为 Column和Row 示例 ***//*
-      Column() {
+      /*** 以下为 Column和Row 示例 ***/
+      /*Column() {
         // 设置子组件水平方向的间距为5
         Row({ space: 5 }) {
           Row().width('30%').height(50).backgroundColor(0xAFEEEE)
@@ -106,9 +120,9 @@ struct Index {
       .backgroundColor(0xAFEEEE)
       */
 
-      /*** 以下为 Grid和GridItem 示例 ***//*
+      /*** 以下为 Grid和GridItem 示例 ***/
       // 主轴方向为FlexDirection.Row
-      Grid() {
+      /*Grid() {
         ForEach(this.numberArray, (day: string) => {
           ForEach(this.numberArray, (day: string) => {
             GridItem() {
@@ -119,8 +133,8 @@ struct Index {
                 .height('100%')
                 .textAlign(TextAlign.Center)
             }
-          }, day => day)
-        }, day => day)
+          }, (day:number) => day + '')
+        }, (day:number) => day + '')
       }
       .columnsTemplate('1fr 1fr 1fr 1fr 1fr') // 设置当前网格布局列的数量
       .rowsTemplate('1fr 1fr 1fr 1fr 1fr') // 设置当前网格布局行的数量
@@ -128,48 +142,45 @@ struct Index {
       .rowsGap(10) // 设置行与行的间距
       .width('90%')
       .backgroundColor(0xFAEEE0)
-      .height(300)
-      */
+      .height(300)*/
 
-      /*** 以下为 ridRow和GridCol 示例 ***//*
-      GridRow({
+      /*** 以下为 ridRow和GridCol 示例 ***/
+      /*GridRow({
         columns: 5, // 设置布局列数
         gutter: { x: 5, y: 20 }, // 栅格布局间距，x代表水平方向，y代表垂直方向
         breakpoints: { value: ["400vp", "600vp", "800vp"], // 断点发生变化时触发回调
           reference: BreakpointsReference.WindowSize },
         direction: GridRowDirection.Row // 	栅格布局排列方向
       }) {
-        ForEach(this.bgColors, (color) => {
+        ForEach(this.bgColors, (color: Color) => {
           GridCol({ span: { xs: 1, sm: 2, md: 3, lg: 4 } }) {
             Row().width("100%").height("80vp")
           }.borderColor(color).borderWidth(2)
         })
-      }.width("100%").height("100%")
-      */
+      }.width("100%").height("100%")*/
 
-      /*** 以下为 List、ListItem和ListItemGroup 示例 ***//*
-      List({ space: 2 }) {
-        ForEach(this.timetableListItemGroup, (item) => {
+      /*** 以下为 List、ListItem和ListItemGroup 示例 ***/
+      /*List({ space: 2 }) {
+        ForEach(this.timetableListItemGroup, (item: Timetable) => {
           ListItemGroup() {
-            ForEach(item.projects, (project) => {
+            ForEach(item.projects, (project: string) => {
               ListItem() {
                 Text(project)
                   .width("100%").height(30).fontSize(20)
                   .textAlign(TextAlign.Center)
               }
-            }, item => item)
+            }, (item: Timetable) => JSON.stringify(item))
           }
           .borderRadius(20)
           .divider({ strokeWidth: 2, color: 0xDCDCDC }) // 每行之间的分界线
         })
       }
-      .width('100%')
-      */
+      .width('100%')*/
 
-      /*** 以下为 AlphabetIndexer 示例 ***//*
-      Row() {
+      /*** 以下为 AlphabetIndexer 示例 ***/
+      /*Row() {
         List({ space: 10, initialIndex: 0 }) {
-          ForEach(this.alphabetIndexerArrayA, (item) => {
+          ForEach(this.alphabetIndexerArrayA, (item: string) => {
             ListItem() {
               Text(item)
                 .width('80%')
@@ -177,9 +188,9 @@ struct Index {
                 .fontSize(20)
                 .textAlign(TextAlign.Center)
             }
-          }, item => item)
+          }, (item: string) => item)
 
-          ForEach(this.alphabetIndexerArrayB, (item) => {
+          ForEach(this.alphabetIndexerArrayB, (item: string) => {
             ListItem() {
               Text(item)
                 .width('80%')
@@ -187,9 +198,9 @@ struct Index {
                 .fontSize(20)
                 .textAlign(TextAlign.Center)
             }
-          }, item => item)
+          }, (item: string) => item)
 
-          ForEach(this.alphabetIndexerArrayC, (item) => {
+          ForEach(this.alphabetIndexerArrayC, (item: string) => {
             ListItem() {
               Text(item)
                 .width('80%')
@@ -197,9 +208,9 @@ struct Index {
                 .fontSize(20)
                 .textAlign(TextAlign.Center)
             }
-          }, item => item)
+          }, (item: string) => item)
 
-          ForEach(this.alphabetIndexerArrayL, (item) => {
+          ForEach(this.alphabetIndexerArrayL, (item: string) => {
             ListItem() {
               Text(item)
                 .width('80%')
@@ -207,7 +218,7 @@ struct Index {
                 .fontSize(20)
                 .textAlign(TextAlign.Center)
             }
-          }, item => item)
+          }, (item: string) => item)
         }
         .width('50%')
         .height('100%')
@@ -235,17 +246,16 @@ struct Index {
               return [] // 选中其余子母项时，提示文本列表为空
             }
           })
-        }
-      */
+        }*/
 
 
-      /*** 以下为 Badge 示例 ***//*
+      /*** 以下为 Badge 示例 ***/
       // 如果不设置position，默认是在右上显示红点
-      Badge({
+      /*Badge({
         value: '',
         style: { badgeSize: 16, badgeColor: '#FA2A2D' }
       }) {
-        Image($r('app.media.ic_user_portrait'))
+        Image($r('app.media.portrait'))
           .width(40)
           .height(40)
       }
@@ -268,11 +278,10 @@ struct Index {
         style: { badgeSize: 16, badgeColor: '#FA2A2D' }
       }) {
         Text('我的消息').width(170).height(40).fontSize(40).fontColor('#182431')
-      }.width(170).height(40)
-      */
+      }.width(170).height(40)*/
 
-      /*** 以下为 Counter 示例 ***//*
-      Counter() {
+      /*** 以下为 Counter 示例 ***/
+      /*Counter() {
         Text(this.counterValue.toString())
       }.margin(100)
       // 监听数值增加事件
@@ -282,38 +291,20 @@ struct Index {
       // 监听数值减少事件。
       .onDec(() => {
         this.counterValue--
-      })
-      */
+      })*/
 
-      /*** 以下为 Panel 示例 ***//*
-      Panel(true) { // 展示日程
-        Column() {
-          Text('今日历程').fontSize(20)
 
-          Text('1、Java核心编程').fontSize(20)
-          Text('2、轻量级Java EE企业应用开发实战').fontSize(20)
-          Text('3、鸿蒙HarmonyOS手机应用开发实战').fontSize(20)
-          Text('4、Node.js+Express+MongoDB+Vue.js全栈开发实战').fontSize(20)
-        }
-      }
-      .type(PanelType.Foldable).mode(PanelMode.Half)
-      .dragBar(true) // 默认开启
-      .halfHeight(500) // 默认一半
-      */
-
-      /*** 以下为 Refresh 示例 ***//*
-      Refresh({ refreshing: true, //当前组件是否正在刷新
+      /*** 以下为 Refresh 示例 ***/
+      /*Refresh({ refreshing: true, //当前组件是否正在刷新
         offset: 120, // 新组件静止时距离父组件顶部的距离
         friction: 100 }) { //下拉摩擦系数，取值范围为0到100。默认值是62
         Text('下拉刷新 ')
           .fontSize(30)
           .margin(10)
-      }
-      */
+      }*/
 
       /*** 以下为 RelativeContainer 示例 ***/
-      /*
-      RelativeContainer() {
+      /*RelativeContainer() {
         Row()
           .width(100)
           .height(100)
@@ -325,7 +316,7 @@ struct Index {
           .id('row1')  //设置锚点为row1
 
         Row() {
-          Image($r('app.media.icon'))
+          Image($r('app.media.startIcon'))
         }
         .height(100).width(100)
         .alignRules({
@@ -364,15 +355,13 @@ struct Index {
           .id('row5')  //设置锚点为row5
       }
       .width(300).height(300)
-      .border({ width: 2, color: '#6699FF' })
-      */
+      .border({ width: 2, color: '#6699FF' })*/
 
       /*** 以下为 Scroll 示例 ***/
-      /*
       // 与Scroller绑定
-      Scroll(new Scroller()) {
+      /*Scroll(new Scroller()) {
         Column() {
-          ForEach(this.numberArray, (item) => {
+          ForEach(this.numberArray, (item: string) => {
             Text(item.toString())
               .width('90%')
               .height(250)
@@ -381,7 +370,7 @@ struct Index {
               .fontSize(26)
               .textAlign(TextAlign.Center)
               .margin({ top: 10 })
-          }, item => item)
+          }, (item: string) => item)
         }.width('100%')
       }
       .scrollable(ScrollDirection.Vertical)  // 滚动方向纵向
@@ -389,20 +378,18 @@ struct Index {
       .scrollBarColor(Color.Gray)  // 滚动条颜色
       .scrollBarWidth(40) // 滚动条宽度
       .edgeEffect(EdgeEffect.None)
-      .onScroll((xOffset: number, yOffset: number) => {
+      .onWillScroll((xOffset: number, yOffset: number) => {
         console.info(xOffset + ' ' + yOffset)
       })
       .onScrollEdge((side: Edge) => {
         console.info('To the edge')
       })
-      .onScrollEnd(() => {
+      .onScrollStop(() => {
         console.info('Scroll Stop')
-      }).backgroundColor(0xDCDCDC)
-      */
+      }).backgroundColor(0xDCDCDC)*/
 
       /*** 以下为 SideBarContainer 示例 ***/
-      /*
-      SideBarContainer(SideBarContainerType.Embed) {
+      /*SideBarContainer(SideBarContainerType.Embed) {
         Column() {
           Text('菜单1').fontSize(25)
           Text('菜单2').fontSize(25)
@@ -414,33 +401,30 @@ struct Index {
           Text('内容1').fontSize(25)
           Text('内容2').fontSize(25)
         }
-      }
-      */
+      }*/
 
       /*** 以下为 Text 示例 ***/
-      /*
-      // 第一层组件
-      Text('第一层')
-        .width('90%')
-        .height('100%')
-        .backgroundColor(Color.Grey)
-        .align(Alignment.Top)
-        .fontSize(40)
+      /*Stack({ alignContent: Alignment.Bottom }) {
+        // 第一层组件
+        Text('第一层')
+          .width('90%')
+          .height('100%')
+          .backgroundColor(Color.Grey)
+          .align(Alignment.Top)
+          .fontSize(40)
 
-      // 第二层组件
-      Text('第二层')
-        .width('70%')
-        .height('60%')
-        .backgroundColor(Color.Orange)
-        .align(Alignment.Top)
-        .fontSize(40)
-      }.width('100%').height(400).margin({ top: 5 })
-      */
+        // 第二层组件
+        Text('第二层')
+          .width('70%')
+          .height('60%')
+          .backgroundColor(Color.Orange)
+          .align(Alignment.Top)
+          .fontSize(40)
+      }.width('100%').height(400).margin({ top: 5 })*/
 
 
       /*** 以下为 Swiper 示例 ***/
-      /*
-      Swiper() {
+      /*Swiper() {
         Image($r('app.media.book01'))
           .width(280).height(380)
         Image($r('app.media.book02'))
@@ -458,8 +442,7 @@ struct Index {
       .loop(true)//是否开启循环。
       .duration(1000)//子组件切换的动画时长，单位为毫秒。
       .itemSpace(0) //设置子组件与子组件之间间隙。
-      .curve(Curve.Linear) // 设置Swiper的动画曲线
-      */
+      .curve(Curve.Linear) // 设置Swiper的动画曲线*/
 
       /*** 以下为 Tabs和TabContent 示例 ***/
       Tabs({ barPosition: BarPosition.Start, //设置Tabs的页签位置。

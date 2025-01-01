@@ -1,5 +1,6 @@
-// 导入http模块。
-import http from '@ohos.net.http';
+// 导入http模块
+import { http } from '@kit.NetworkKit';
+import { BusinessError } from '@kit.BasicServicesKit';
 
 @Entry
 @Component
@@ -56,7 +57,7 @@ struct Index {
         console.info('code:' + data.responseCode);
         this.message = JSON.stringify(data.result);
       }
-    }).catch((err) => {
+    }).catch((err:BusinessError) => {
       console.info('error:' + JSON.stringify(err));
     });
   }

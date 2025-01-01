@@ -1,6 +1,7 @@
 // HTTP请求网络图片需要导入的包
 import http from '@ohos.net.http';
-import imageModule from '@ohos.multimedia.image'
+
+import image from '@ohos.multimedia.image';
 
 // Web组件控制器需要导入的包
 import web_webview from '@ohos.web.webview'
@@ -11,7 +12,7 @@ struct Index {
   private dataPanelValues: number[] = [11, 3, 10, 2, 36, 4, 7, 22, 5]
 
   // 先创建一个PixelMap状态变量用于接收网络图片
-  @State imagePixelMap: PixelMap = undefined
+  @State imagePixelMap: image.PixelMap = null!;
 
   // 初始动画状态
   @State animationStatus: AnimationStatus = AnimationStatus.Initial
@@ -25,6 +26,20 @@ struct Index {
 
   // TextTimer组件的控制器
   private textTimerController: TextTimerController = new TextTimerController()
+
+  private tooTmpOne: ToolbarItem = {'value': "首页",
+    'icon': $r('app.media.house'),
+    'action': ()=> {}
+  }
+  private tooTmpTwo: ToolbarItem = {'value': "好友",
+    'icon': $r('app.media.person_2'),
+    'action': ()=> {}
+  }
+  private tooTmpThree: ToolbarItem = {'value': "我的",
+    'icon': $r('app.media.gearshape'),
+    'action': ()=> {}
+  }
+  private toolbarConfig: ToolbarItem[] = [this.tooTmpOne, this.tooTmpTwo, this.tooTmpThree];
 
   build() {
     Column() {
@@ -76,13 +91,7 @@ struct Index {
         Button('05', { type: ButtonType.Normal}).width(90)
       }
 
-
       Row() {
-        // 可以包含子组件。但是文字就不会显示了
-        Button('06', { type: ButtonType.Normal }){
-            LoadingProgress().width(20).height(20).color(0xFFFFFF)
-        }.width(90)
-
         // 可以包含子组件。文字就用Text组件来显示
         Button({ type: ButtonType.Capsule, stateEffect: true }) {
           Row() {
@@ -92,6 +101,7 @@ struct Index {
         }.backgroundColor(0x317aff)
       }
       */
+
 
       /*** 以下为 Checkbox 示例 ***/
       /*
@@ -131,17 +141,21 @@ struct Index {
       */
 
       /*** 以下为 DataPanel 示例 ***/
-      /*
       // 环形数据面板
-      DataPanel({ values: this.dataPanelValues, max: 100, type: DataPanelType.Circle }).width(350).height(350)
+      /*
+      DataPanel({ values: this.dataPanelValues, max: 100, type: DataPanelType.Circle })
+
+        .width(350)
+        .height(350)
 
       // 线型数据面板
-      DataPanel({ values: this.dataPanelValues, max: 100, type: DataPanelType.Line }).width(350).height(50)
-      */
+      DataPanel({ values: this.dataPanelValues, max: 100, type: DataPanelType.Line })
+        .width(350)
+        .height(50)
+       */
 
       /*** 以下为 DatePicker 示例 ***/
-      /*
-      // 不设置参数就取默认值
+      /*// 不设置参数就取默认值
       DatePicker()
 
       // 三个构造参数
@@ -157,10 +171,9 @@ struct Index {
         end: new Date('2100-1-1'), // 指定选择器的结束日期。 默认值：Date('2100-12-31')
         selected: new Date('2023-02-15'), // 设置选中项的日期。默认值：当前系统日期
       }).lunar(true) // 设置农历
-        .onChange((value: DatePickerResult) => { //选择日期时触发该事件
-          console.info('select current date is: ' + JSON.stringify(value))
-        })
-      */
+        .onDateChange((value: Date) => { //选择日期时触发该事件
+          console.info('select current date is: ' + value)
+        })*/
 
       /*** 以下为 Divider 示例 ***/
 
@@ -185,7 +198,7 @@ struct Index {
       /*** 以下为 Gauge 示例 ***/
 
       // value值的设置，是使用默认的min和max为0-100，角度范围默认0-360
-	  // 参数中设置当前值为75	
+      // 参数中设置当前值为75
       /*Gauge({ value: 75 })
         .width(200).height(200)
         // 设置量规图的颜色，支持分段颜色设置。
@@ -221,8 +234,8 @@ struct Index {
       Image(this.imagePixelMap).width(207).height(281)*/
 
       /*** 以下为 ImageAnimator 示例 ***/
-      // 按钮控制动画的播放和暂停
-      /*Button('播放').width(100).padding(5).onClick(() => {
+      /*// 按钮控制动画的播放和暂停
+      Button('播放').width(100).padding(5).onClick(() => {
         this.animationStatus = AnimationStatus.Running
       }).margin(5)
       Button('暂停').width(100).padding(5).onClick(() => {
@@ -269,7 +282,6 @@ struct Index {
         .state(this.animationStatus)
         .reverse(false) //是否逆序播放
         .fixedSize(false) //是否固定大小
-        .preDecode(2) //是否启用预解码
         .iterations(-1) //循环播放次数
         .width(240)
         .height(350)
@@ -305,7 +317,7 @@ struct Index {
         Flex() {
         }
       }
-      .toolBar(this.NavigationToolbar) // 使用自定义一个Toolbar组件*/
+      .toolbarConfiguration(this.toolbarConfig); // 使用自定义属性*/
 
       /*** 以下为 PatternLock 示例 ***/
       /*PatternLock()
@@ -319,11 +331,16 @@ struct Index {
         .autoReset(true)//设置在完成密码输入后再次在组件区域按下时是否重置组件状态。*/
 
       /*** 以下为 Progress 示例 ***/
-      /*Progress({ value: 20, total: 100, type: ProgressType.Linear }).width(150).margin({ top: 10 })
-      Progress({ value: 20, total: 100, type: ProgressType.Ring }).width(150).margin({ top: 10 })
-      Progress({ value: 20, total: 100, type: ProgressType.Eclipse }).width(150).margin({ top: 10 })
-      Progress({ value: 20, total: 100, type: ProgressType.ScaleRing }).width(150).margin({ top: 10 })
-      Progress({ value: 20, total: 100, type: ProgressType.Capsule }).width(40).margin({ top: 10 })*/
+      /*Progress({ value: 20, total: 100, type: ProgressType.Linear })
+        .width(150).margin({ top: 10 })
+      Progress({ value: 20, total: 100, type: ProgressType.Ring })
+        .width(150).margin({ top: 10 })
+      Progress({ value: 20, total: 100, type: ProgressType.Eclipse })
+        .width(150).margin({ top: 10 })
+      Progress({ value: 20, total: 100, type: ProgressType.ScaleRing })
+        .width(150).margin({ top: 10 })
+      Progress({ value: 20, total: 100, type: ProgressType.Capsule })
+        .width(40).margin({ top: 10 })*/
 
       /*** 以下为 QRCode 示例 ***/
       /*QRCode("https://waylau.comn")
@@ -364,16 +381,18 @@ struct Index {
       '<h3 style="text-align: center;">h3标题</h3>' +
       '<p style="text-align: center;">p常规</p><hr/>' +
       '<div style="width: 500px;height: 500px;border: 1px solid;margin: 0auto;">' +
-      '<p style="font-size: 35px;text-align: center;font-weight: bold; color: rgb(24,78,228)">字体大小35px,行高45px</p>' +
+      '<p style="font-size: 35px;text-align: center;font-weight: bold; color: rgb(24,78,228)">' +
+        '字体大小35px,行高45px' +
+        '</p>' +
       '<p style="background-color: #e5e5e5;line-height: 45px;font-size: 35px;text-indent: 2em;">' +
-      '<p>这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字</p>')*/
-
+      '<p>这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字</p>')
+      */
       /*** 以下为 Stack 示例 ***/
       /*Stack({ alignContent: Alignment.End }) {
         // 定义了可滚动组件Scroll
         Scroll(this.scroller) {
           Flex({ direction: FlexDirection.Column }) {
-            ForEach(this.dataScroller, (item) => {
+            ForEach(this.dataScroller, (item: number) => {
               Row() {
                 Text(item.toString())
                   .width('90%')
@@ -384,14 +403,16 @@ struct Index {
                   .textAlign(TextAlign.Center)
                   .margin({ top: 5 })
               }
-            }, item => item)
+            })
           }.margin({ left: 52 })
         }
         .scrollBar(BarState.Off)
         .scrollable(ScrollDirection.Vertical)
 
         // 定义了滚动条组件ScrollBar
-        ScrollBar({ scroller: this.scroller, direction: ScrollBarDirection.Vertical, state: BarState.Auto }) {
+        ScrollBar({ scroller: this.scroller,
+          direction: ScrollBarDirection.Vertical,
+          state: BarState.Auto }) {
           // 定义Text作为滚动条的样式
           Text()
             .width(30)
@@ -671,7 +692,80 @@ struct Index {
         .selectedColor('#007DFF') // 设置组件打开状态的背景颜色*/
 
       /*** 以下为 Web 示例 ***/
-      Web({ src: 'https://waylau.com', controller: this.webviewController })
+      //Web({ src: 'https://waylau.com', controller: this.webviewController })
+
+      /*** 以下为 SymbolGlyph 示例 ***/
+      Row() {
+        Column() {
+          Text("Light")
+          SymbolGlyph($r('sys.symbol.ohos_trash'))
+            .fontWeight(FontWeight.Lighter)
+            .fontSize(96)
+        }
+
+        Column() {
+          Text("Normal")
+          SymbolGlyph($r('sys.symbol.ohos_trash'))
+            .fontWeight(FontWeight.Normal)
+            .fontSize(96)
+        }
+
+        Column() {
+          Text("Bold")
+          SymbolGlyph($r('sys.symbol.ohos_trash'))
+            .fontWeight(FontWeight.Bold)
+            .fontSize(96)
+        }
+      }
+
+      Row() {
+        Column() {
+          Text("单色")
+          SymbolGlyph($r('sys.symbol.ohos_folder_badge_plus'))
+            .fontSize(96)
+            .renderingStrategy(SymbolRenderingStrategy.SINGLE)
+            .fontColor([Color.Black, Color.Green, Color.White])
+        }
+
+        Column() {
+          Text("多色")
+          SymbolGlyph($r('sys.symbol.ohos_folder_badge_plus'))
+            .fontSize(96)
+            .renderingStrategy(SymbolRenderingStrategy.MULTIPLE_COLOR)
+            .fontColor([Color.Black, Color.Green, Color.White])
+        }
+
+        Column() {
+          Text("分层")
+          SymbolGlyph($r('sys.symbol.ohos_folder_badge_plus'))
+            .fontSize(96)
+            .renderingStrategy(SymbolRenderingStrategy.MULTIPLE_OPACITY)
+            .fontColor([Color.Black, Color.Green, Color.White])
+        }
+      }
+
+      Row() {
+        Column() {
+          Text("无动效")
+          SymbolGlyph($r('sys.symbol.ohos_wifi'))
+            .fontSize(96)
+            .effectStrategy(SymbolEffectStrategy.NONE)
+        }
+
+        Column() {
+          Text("整体缩放动效")
+          SymbolGlyph($r('sys.symbol.ohos_wifi'))
+            .fontSize(96)
+            .effectStrategy(1)
+        }
+
+        Column() {
+          Text("层级动效")
+          SymbolGlyph($r('sys.symbol.ohos_wifi'))
+            .fontSize(96)
+            .effectStrategy(2)
+        }
+      }
     }
     .height('100%')
   }
@@ -697,15 +791,17 @@ struct Index {
         } else {
           let code = data.responseCode
           if (http.ResponseCode.OK == code) {
-            // @ts-ignore
-            let imageSource = imageModule.createImageSource(data.result)
-            let options = {
-              alphaType: 0, // 透明度
-              editable: false, // 是否可编辑
-              pixelFormat: 3, // 像素格式
-              scaleMode: 1, // 缩略值
-              size: { height: 281, width: 207 }
-            } // 创建图片大小
+            let resultArrayBuffer = data.result as ArrayBuffer
+
+            let imageSource = image.createImageSource(resultArrayBuffer);
+            let options: image.InitializationOptions =
+              { editable: true,
+                pixelFormat: 3,
+                size:
+                { height: 281,
+                  width: 207
+                }
+              }
             imageSource.createPixelMap(options).then((pixelMap) => {
               this.imagePixelMap = pixelMap
             })

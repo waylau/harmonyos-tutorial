@@ -2,23 +2,33 @@
 @Component
 struct NavigatorExample {
   @State active: boolean = false
-  @State Text: object = {name: 'news'}
+  @State name: NameObject = { name: 'news' }
 
   build() {
     Flex({ direction: FlexDirection.Column, alignItems: ItemAlign.Start, justifyContent: FlexAlign.SpaceBetween }) {
-      Navigator({ target: 'pages/DetailExample', type: NavigationType.Push }) {
-        Text('Go to ' + this.Text['name'] + ' page')
+      Navigator({ target: 'pages/container/navigator/Detail', type: NavigationType.Push }) {
+        Text('Go to ' + this.name.name + ' page')
           .width('100%').textAlign(TextAlign.Center)
-          .fontSize(30)
-      }.params({ text: this.Text }) // 传参数到Detail页面
+      }.params(new TextObject(this.name)) // 传参数到Detail页面
 
       Navigator() {
         Text('Back to previous page').width('100%').textAlign(TextAlign.Center)
-          .fontSize(26)
       }.active(this.active)
       .onClick(() => {
         this.active = true
       })
-    }.height(250).width('100%').padding(35)
+    }.height(150).width(350).padding(35)
+  }
+}
+
+interface NameObject {
+  name: string;
+}
+
+class TextObject {
+  text: NameObject;
+
+  constructor(text: NameObject) {
+    this.text = text;
   }
 }

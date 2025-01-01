@@ -1,9 +1,6 @@
 {
   "src": [
     "pages/Index",
-    "pages/ShoppingCart",
-    "pages/ShoppingDetail",
-    "pages/MyPage",
-    "pages/Index"
+    "pages/ShoppingDetail"
   ]
 }

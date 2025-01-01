@@ -1,8 +1,6 @@
 @Entry
 @Component
 struct Index {
-  @State message: string = 'Hello World'
-
   private renderingContextSettings: RenderingContextSettings = new RenderingContextSettings(true)
 
   //使用RenderingContext在Canvas组件上进行绘制，绘制对象可以是矩形、文本、图片等。
@@ -14,19 +12,19 @@ struct Index {
         Canvas(this.canvasRenderingContext2D)
           .width('100%')
           .height('100%')
-          // onReady是Canvas组件初始化完成时的事件回调，该事件之后Canvas组件宽高确定且可获取
+            // onReady是Canvas组件初始化完成时的事件回调，该事件之后Canvas组件宽高确定且可获取
           .onReady(() => {
-            /*// 绘制矩形。
-            this.canvasRenderingContext2D.fillRect(0, 30, 100, 100)*/
+            // 绘制矩形。
+            this.canvasRenderingContext2D.fillRect(0, 30, 100, 100)
 
-            /*// 绘制贝赛尔曲线。
+            // 绘制贝赛尔曲线。
             this.canvasRenderingContext2D.beginPath()
             this.canvasRenderingContext2D.moveTo(170, 10)
             this.canvasRenderingContext2D.bezierCurveTo(20, 100, 200, 100, 200, 20)
-            this.canvasRenderingContext2D.stroke()*/
+            this.canvasRenderingContext2D.stroke()
 
             // 绘制渐变对象。
-            var grad = this.canvasRenderingContext2D.createLinearGradient(150, 0, 300, 100)
+            let grad = this.canvasRenderingContext2D.createLinearGradient(150, 0, 300, 100)
             grad.addColorStop(0.0, 'red')
             grad.addColorStop(0.5, 'white')
             grad.addColorStop(1.0, 'green')
