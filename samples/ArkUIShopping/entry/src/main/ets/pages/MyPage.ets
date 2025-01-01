@@ -1,28 +1,30 @@
-import {getMenu,getTrans,getMore} from '../model/GoodsDataModels'
-import {Menu, ImageItem} from '../model/Menu'
+import { getMenu, getTrans, getMore } from '../model/GoodsDataModels'
+import { Menu, ImageItem } from '../model/Menu'
+
 @Entry
 @Component
 export struct MyInfo {
-
   build() {
     Column() {
-      Row(){
-        Image($rawfile('nav/icon-user.png'))
-          .margin({left:20})
+      Row() {
+        Image($rawfile('nav/waylau_181_181.jpg'))
+          .margin({ left: 20 })
           .objectFit(ImageFit.Cover)
           .height(50)
           .width(50)
           .renderMode(ImageRenderMode.Original)
-          .margin({left:40,right:40})
-        Column(){
-          Text('John Doe')
+          .margin({ left: 40, right: 40 })
+
+        Column() {
+          Text('Way Lau')
             .fontSize(15)
-          Text('Member Name : John Doe                     >')
+          Text('Member Name : Way Lau                     >')
         }
         .height(60)
-        .margin({left:40,top:10})
+        .margin({ left: 40, top: 10 })
         .alignItems(HorizontalAlign.Start)
       }
+
       TopList()
       MyTransList()
       MoreGrid()
@@ -31,7 +33,7 @@ export struct MyInfo {
     .alignItems(HorizontalAlign.Start)
     .width('100%')
     .flexGrow(1)
- }
+  }
 }
 
 
@@ -42,15 +44,15 @@ struct TopList {
   build() {
     Row() {
       List() {
-        ForEach(this.menus, item => {
+        ForEach(this.menus, (item: Menu) => {
           ListItem() {
-            MenuItem({ menu: item })
+            MenuItemView({ menu: item })
           }
-        }, item => item.id.toString())
+        }, (item: Menu) => item.id.toString())
       }
       .height('100%')
       .width('100%')
-      .margin({top: 5})
+      .margin({ top: 5 })
       .edgeEffect(EdgeEffect.None)
       .listDirection(Axis.Horizontal)
     }
@@ -62,6 +64,7 @@ struct TopList {
 @Component
 struct MyTransList {
   private imageItems: ImageItem[] = getTrans()
+
   build() {
     Column() {
       Text('My Transaction')
@@ -71,16 +74,16 @@ struct MyTransList {
         .height(30)
       Row() {
         List() {
-          ForEach(this.imageItems, item => {
+          ForEach(this.imageItems, (item: ImageItem) => {
             ListItem() {
               DataItem({ imageItem: item })
             }
-          }, item => item.id.toString())
+          }, (item: ImageItem) => item.id.toString())
         }
         .height(70)
         .width('100%')
         .align(Alignment.Top)
-        .margin({ top: 5})
+        .margin({ top: 5 })
         .listDirection(Axis.Horizontal)
       }
     }
@@ -92,12 +95,12 @@ struct MyTransList {
 struct MoreGrid {
   private gridRowTemplate: string = ''
   private imageItems: ImageItem[] = getMore()
-  private heightValue: number
+  private heightValue: number = 0;
 
   aboutToAppear() {
-    var rows = Math.round(this.imageItems.length / 3);
+    let rows = Math.round(this.imageItems.length / 3);
     this.gridRowTemplate = '1fr '.repeat(rows);
-    this.heightValue = rows * 75 ;
+    this.heightValue = rows * 75;
   }
 
   build() {
@@ -130,42 +133,42 @@ struct MoreGrid {
 
 @Component
 struct DataItem {
-  private imageItem: ImageItem
+  private imageItem: ImageItem = new ImageItem();
 
   build() {
     Column() {
-      Image(this.imageItem.imageSrc)
+      Image($rawfile(this.imageItem.imageSrc))
         .objectFit(ImageFit.Contain)
         .height(50)
         .width(50)
         .renderMode(ImageRenderMode.Original)
-        Text(this.imageItem.title)
-          .fontSize(15)
+      Text(this.imageItem.title)
+        .fontSize(15)
 
 
     }
     .height(70)
     .width(80)
-    .margin({left: 15,right:15})
+    .margin({ left: 15, right: 15 })
     .backgroundColor(Color.White)
   }
 }
 
 @Component
-struct MenuItem {
-  private menu: Menu
+struct MenuItemView {
+  private menu: Menu = new Menu();
 
   build() {
     Column() {
       Text(this.menu.title)
         .fontSize(15)
-      Text(this.menu.num+'')
+      Text(this.menu.num + '')
         .fontSize(13)
 
     }
     .height(50)
     .width(80)
-    .margin({left: 8,right:8})
+    .margin({ left: 8, right: 8 })
     .alignItems(HorizontalAlign.Start)
     .backgroundColor(Color.White)
   }

@@ -1,0 +1,11 @@
+{
+  "module": {
+    "name": "pictureView",
+    "type": "har",
+    "deviceTypes": [
+      "phone",
+      "tablet",
+      "2in1"
+    ]
+  }
+}

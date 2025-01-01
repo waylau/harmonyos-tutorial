@@ -2,17 +2,20 @@
 @Component
 struct Second {
   // 修改变量值为Second
-  @State message: string = 'Second'
+  @State message: string = 'Second';
 
   build() {
-    Row() {
-      Column() {
-        Text(this.message)
-          .fontSize(50)
-          .fontWeight(FontWeight.Bold)
-      }
-      .width('100%')
+    RelativeContainer() {
+      Text(this.message)
+        .id('SecondHelloWorld')
+        .fontSize(50)
+        .fontWeight(FontWeight.Bold)
+        .alignRules({
+          center: { anchor: '__container__', align: VerticalAlign.Center },
+          middle: { anchor: '__container__', align: HorizontalAlign.Center }
+        })
     }
     .height('100%')
+    .width('100%')
   }
 }

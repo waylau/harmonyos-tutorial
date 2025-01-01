@@ -1,39 +1,42 @@
-// 导入common
-import common from '@ohos.app.ability.common';
+// 导入common、Want
+import { common, Want } from '@kit.AbilityKit';
 
 @Entry
 @Component
 struct Index {
-  @State message: string = 'Hello World'
+  @State message: string = 'Hello World';
 
   build() {
-    Row() {
-      Column() {
-        Text(this.message)
-          .fontSize(50)
-          .fontWeight(FontWeight.Bold)
-
-        // 添加按钮，启动Ability
-        Button('启动')
-          .fontSize(40)
-          .onClick(this.explicitStartAbility) // 显示启动Ability
-      }
-      .width('100%')
+    RelativeContainer() {
+      Text(this.message)
+        .id('HelloWorld')
+        .fontSize(50)
+        .fontWeight(FontWeight.Bold)
+        .alignRules({
+          center: { anchor: '__container__', align: VerticalAlign.Center },
+          middle: { anchor: '__container__', align: HorizontalAlign.Center }
+        })
+        .onClick(this.explicitStartAbility) // 设置点击事件，显示启动Ability
     }
     .height('100%')
+    .width('100%')
   }
 
   // 显示启动Ability
-  async explicitStartAbility() {
+  explicitStartAbility() {
     try {
       // 在启动Ability时指定了abilityName和bundleName
-      let want = {
+      let want: Want  = {
         deviceId: "",
-        bundleName: "com.waylau.hmos.arktswantstartability",
+        bundleName: "com.waylau.hmos.arkuiwantstartability",
         abilityName: "SecondAbility"
       };
-      let context = getContext(this) as common.UIAbilityContext;;
-      await context.startAbility(want);
+
+      // 获取UIAbility的上下文信息
+      let context = getContext(this) as common.UIAbilityContext;
+
+      // 启动UIAbility实例
+      context.startAbility(want);
       console.info(`explicit start ability succeed`);
     } catch (error) {
       console.info(`explicit start ability failed with ${error.code}`);

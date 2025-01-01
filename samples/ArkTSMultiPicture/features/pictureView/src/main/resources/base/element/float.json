@@ -1,0 +1,76 @@
+{
+  "float": [
+    {
+      "name": "detail_image_left",
+      "value": "24vp"
+    },
+    {
+      "name": "top_bar_height",
+      "value": "52vp"
+    },
+    {
+      "name": "top_bar_left",
+      "value": "24vp"
+    },
+    {
+      "name": "top_bar_bottom",
+      "value": "3vp"
+    },
+    {
+      "name": "top_bar_top",
+      "value": "3vp"
+    },
+    {
+      "name": "top_bar_right",
+      "value": "24vp"
+    },
+    {
+      "name": "center_blank_height_lg",
+      "value": "24vp"
+    },
+    {
+      "name": "center_margin_top",
+      "value": "4vp"
+    },
+    {
+      "name": "center_margin_bottom",
+      "value": "1vp"
+    },
+    {
+      "name": "list_image_height",
+      "value": "47vp"
+    },
+    {
+      "name": "list_image_margin_left",
+      "value": "1vp"
+    },
+    {
+      "name": "list_margin_top",
+      "value": "1vp"
+    },
+    {
+      "name": "list_margin_bottom",
+      "value": "10vp"
+    },
+    {
+      "name": "icon_padding_top",
+      "value": "4.5vp"
+    },
+    {
+      "name": "icon_list_height",
+      "value": "56vp"
+    },
+    {
+      "name": "zero",
+      "value": "0vp"
+    },
+    {
+      "name": "tab_content_pb",
+      "value": "28vp"
+    },
+    {
+      "name": "device_padding_top",
+      "value": "36vp"
+    }
+  ]
+}

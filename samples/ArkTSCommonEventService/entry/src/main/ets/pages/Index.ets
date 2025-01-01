@@ -7,8 +7,8 @@ struct Index {
   @State message: string = 'Hello World'
   //用于接收事件数据
   @State eventData: string = ''
-  //用于保存创建成功的订阅者对象，后续使用其完成订阅及退订的动作
-  private subscriber ;
+  // 用于保存创建成功的订阅者对象，后续使用其完成订阅及退订的动作
+  private subscriber: commonEventManager.CommonEventSubscriber | null = null;
 
   build() {
     Row() {

@@ -1,106 +1,112 @@
-import {Person} from './Person'
+import { Person } from './Person'
 
-const ContactInfo: any[] = [
+export const CONTACTS: Person[] = [
   {
-    "WeChatImage": "person (1).jpg",
-    "WeChatName": "枫",
-    "ChatInfo": "缓缓飘落的枫叶像思念，我点燃烛光温暖岁末的秋天",
-    "time": "18:30"
+    id: 1,
+    weChatImage: "person (1).jpg",
+    weChatName: "苏轼",
+    chatInfo: "大江东去，浪淘尽，千古风流人物。",
+    time: "18:30"
   },
   {
-    "WeChatImage": "person (2).jpg",
-    "WeChatName": "珊瑚海",
-    "ChatInfo": "转身离开，分手说不出来",
-    "time": "17:29"
+    id: 2,
+    weChatImage: "person (2).jpg",
+    weChatName: "子由",
+    chatInfo: "丙辰中秋，欢饮达旦，大醉，作此篇，兼怀子由。",
+    time: "17:29"
   },
   {
-    "WeChatImage": "person (3).jpg",
-    "WeChatName": "听妈妈的话",
-    "ChatInfo": "听妈妈的话别让她受伤，想快快长大才能保护她",
-    "time": "17:28"
+    id: 3,
+    weChatImage: "person (3).jpg",
+    weChatName: "擎苍",
+    chatInfo: "老夫聊发少年狂，左牵黄，右擎苍，锦帽貂裘，千骑卷平冈。",
+    time: "17:28"
   },
   {
-    "WeChatImage": "person (4).jpg",
-    "WeChatName": "给我一首歌的时间",
-    "ChatInfo": "能不能给我一首歌的时间，紧紧的把那拥抱变成永远",
-    "time": "16:27"
+    id: 4,
+    weChatImage: "person (4).jpg",
+    weChatName: "春水",
+    chatInfo: "春未老，风细柳斜斜。试上超然台上望，半壕春水一城花。",
+    time: "16:27"
   },
   {
-    "WeChatImage": "person (5).jpg",
-    "WeChatName": "夜曲",
-    "ChatInfo": "为你弹奏萧邦的夜曲，纪念我死去的爱情",
-    "time": "15:26"
+    id: 5,
+    weChatImage: "person (5).jpg",
+    weChatName: "夜曲",
+    chatInfo: "为你弹奏萧邦的夜曲，纪念我死去的爱情",
+    time: "15:26"
   },
   {
-    "WeChatImage": "person (6).jpg",
-    "WeChatName": "不能说的秘密",
-    "ChatInfo": "最美的不是下雨天，是曾与你躲过雨的屋檐",
-    "time": "14:25"
+    id: 6,
+    weChatImage: "person (6).jpg",
+    weChatName: "不思量",
+    chatInfo: "十年生死两茫茫，不思量，自难忘。千里孤坟，无处话凄凉",
+    time: "14:25"
   },
   {
-    "WeChatImage": "person (7).jpg",
-    "WeChatName": "千里之外",
-    "ChatInfo": "我送你离开千里之外你无声黑白",
-    "time": "13:24"
+    id: 7,
+    weChatImage: "person (7).jpg",
+    weChatName: "千里之外",
+    chatInfo: "我送你离开千里之外你无声黑白",
+    time: "13:24"
   },
   {
-    "WeChatImage": "person (8).jpg",
-    "WeChatName": "世界末日",
-    "ChatInfo": "天灰灰会不会，让我忘了你是谁",
-    "time": "11:23"
+    id: 8,
+    weChatImage: "person (8).jpg",
+    weChatName: "思量",
+    chatInfo: "似花还似非花，也无人惜从教坠。抛家傍路，思量却是，无情有思。",
+    time: "11:23"
   },
   {
-    "WeChatImage": "person (9).jpg",
-    "WeChatName": "园游会",
-    "ChatInfo": "我顶着大太阳，只想为你撑伞",
-    "time": "10:22"
+    id: 9,
+    weChatImage: "person (9).jpg",
+    weChatName: "园游会",
+    chatInfo: "我顶着大太阳，只想为你撑伞",
+    time: "10:22"
   },
   {
-    "WeChatImage": "person (10).jpg",
-    "WeChatName": "简单爱",
-    "ChatInfo": "我想就这样牵着你的手不放开",
-    "time": "10:21"
+    id: 10,
+    weChatImage: "person (10).jpg",
+    weChatName: "沙湖",
+    chatInfo: "三月七日，沙湖道中遇雨。",
+    time: "10:21"
   },
   {
-    "WeChatImage": "person (11).jpg",
-    "WeChatName": "回到过去",
-    "ChatInfo": "想回到过去，试着让故事继续",
-    "time": "10:20"
+    id: 11,
+    weChatImage: "person (11).jpg",
+    weChatName: "燕子",
+    chatInfo: "花褪残红青杏小。燕子飞时，绿水人家绕。枝上柳绵吹又少。",
+    time: "10:20"
   },
   {
-    "WeChatImage": "person (12).jpg",
-    "WeChatName": "彩虹",
-    "ChatInfo": "哪里有彩虹告诉我",
-    "time": "10:19"
+    id: 12,
+    weChatImage: "person (12).jpg",
+    weChatName: "衣巾落枣",
+    chatInfo: "簌簌衣巾落枣花，村南村北响缲车。牛衣古柳卖黄瓜。",
+    time: "10:19"
   },
   {
-    "WeChatImage": "person (13).jpg",
-    "WeChatName": "七里香",
-    "ChatInfo": "雨下整夜我的爱溢出就像雨水",
+    id: 13,
+    weChatImage: "person (13).jpg",
+    weChatName: "七里香",
+    chatInfo: "雨下整夜我的爱溢出就像雨水",
 
-    "time": "10:18"
+    time: "10:18"
   },
   {
-    "WeChatImage": "person (14).jpg",
-    "WeChatName": "告白气球",
-    "ChatInfo": "亲爱的爱上你从那天起，甜蜜的很轻易",
-    "time": "10:17"
+    id: 14,
+    weChatImage: "person (14).jpg",
+    weChatName: "淡烟",
+    chatInfo: "细雨斜风作晓寒，淡烟疏柳媚晴滩。",
+    time: "10:17"
   },
   {
-    "WeChatImage": "person (15).jpg",
-    "WeChatName": "一路向北",
-    "ChatInfo": "我一路向北，离开有你的季节",
-    "time": "10:16"
+    id: 15,
+    weChatImage: "person (15).jpg",
+    weChatName: "大梦",
+    chatInfo: "世事一场大梦，人生几度秋凉。",
+    time: "10:16"
   }
 ]
 
-export function getContactInfo(): Array<Person> {
-  let contactList: Array<Person> = []
-  ContactInfo.forEach(item => {
-    contactList.push(new Person(item.WeChatImage, item.WeChatName, item.ChatInfo, item.time))
-  })
-
-  return contactList;
-}
-
-export const WeChatColor:string = "#ededed"
+export const WE_CHAT_COLOR: string = "#ededed"

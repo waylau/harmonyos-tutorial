@@ -63,7 +63,6 @@ struct Index {
         .fontColor(btnInfo.textColor) // 字体颜色
         .backgroundColor(btnInfo.bgColor) // 背景颜色
     }
-    .forceRebuild(false)
     .onClick(() => this.onClickBtn(btnInfo.text))
     .rowStart(btnInfo.text == '=' ? 4 : null)
     .rowEnd(btnInfo.text == '=' ? 5 : null) // 等于按钮占两格，其他按钮默认
@@ -79,7 +78,7 @@ struct Index {
           .fontSize(46)
         Grid() {
           // 遍历生成按钮
-          ForEach(this.BTN_INFO_ARRAY, btnInfo => this.CalculatorButton(btnInfo))
+          ForEach(this.BTN_INFO_ARRAY, (btnInfo:CalculatorButtonInfo) => this.CalculatorButton(btnInfo))
         }
         .columnsTemplate('1fr 1fr 1fr 1fr') // 按钮比重分配
         .rowsTemplate('1fr 1fr 1fr 1fr 1fr')

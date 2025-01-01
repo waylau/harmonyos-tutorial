@@ -1,23 +1,11 @@
-// 导入AccountData
-import AccountData from '../database/AccountData';
-// 导入AccountTable
-import AccountTable from '../database/AccountTable';
+import AccountTable from '../common/database/tables/AccountTable';
+import AccountData from '../viewmodel/AccountData';
 
 @Entry
 @Component
 struct Index {
   @State message: string = 'Hello World'
   private accountTable = new AccountTable();
-
-  aboutToAppear() {
-
-    // 初始化数据库
-    this.accountTable.getRdbStore(() => {
-      this.accountTable.query(0, (result) => {
-        this.message = result;
-      }, true);
-    });
-  }
 
   build() {
     Row() {
@@ -33,7 +21,7 @@ struct Index {
           .fontWeight(FontWeight.Medium)
           .margin({ top: 20, bottom: 20 })
           .onClick(() => {
-            let newAccount: AccountData = { id: 0, accountType: 0, typeText: '苹果', amount: 0 };
+            let newAccount: AccountData = { id: 1, accountType: 0, typeText: '苹果', amount: 0 };
             this.accountTable.insertData(newAccount, () => {
             })
           })
@@ -45,7 +33,7 @@ struct Index {
           .fontWeight(FontWeight.Medium)
           .margin({ top: 20, bottom: 20 })
           .onClick(() => {
-            this.accountTable.query(0, (result) => {
+            this.accountTable.query(0, (result: AccountData[]) => {
               this.message = JSON.stringify(result);
             }, true);
           })
@@ -69,7 +57,7 @@ struct Index {
           .fontWeight(FontWeight.Medium)
           .margin({ top: 20, bottom: 20 })
           .onClick(() => {
-            let newAccount: AccountData = { id: 2, accountType: 1, typeText: '栗子', amount: 1 };
+            let newAccount: AccountData = { id: 1, accountType: 1, typeText: '栗子', amount: 1 };
             this.accountTable.deleteData(newAccount, () => {
             })
           })

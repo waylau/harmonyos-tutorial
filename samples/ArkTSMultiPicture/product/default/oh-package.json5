@@ -1,0 +1,13 @@
+{
+  "license": "",
+  "devDependencies": {},
+  "author": "",
+  "name": "default",
+  "description": "图片查看器.",
+  "main": "",
+  "version": "1.0.0",
+  "dependencies": {
+    "@ohos/commons": "file:../../commons/base",
+    "@ohos/view": "file:../../features/pictureView"
+  }
+}

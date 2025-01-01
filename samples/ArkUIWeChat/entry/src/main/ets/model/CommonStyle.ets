@@ -1,10 +1,86 @@
-import {WeChatColor} from './WeChatData'
+import {WE_CHAT_COLOR} from './WeChatData'
 import router from '@system.router';
 
 @Component
+export struct WeChatTitle {
+  private text: string = "";
+
+  build() {
+    Flex({ alignItems: ItemAlign.Center, justifyContent: FlexAlign.Center }) {
+      Text(this.text).fontSize('18fp').padding('20px')
+    }.height('120px').backgroundColor(WE_CHAT_COLOR)
+  }
+}
+
+@Component
+export struct ChatItemStyle {
+  weChatImage: string = "";
+  weChatName: string = "";
+  chatInfo: string = "";
+  time: string = "";
+
+  build() {
+    Column() {
+      Flex({ alignItems: ItemAlign.Center, justifyContent: FlexAlign.Start }) {
+        Image($rawfile(this.weChatImage)).width('120px').height('120px').margin({ left: '50px', right: "50px" })
+
+        Column() {
+          Text(this.weChatName).fontSize('16fp')
+          Text(this.chatInfo).fontSize('12fp').width('620px').fontColor("#c2bec2").maxLines(1)
+        }.alignItems(HorizontalAlign.Start).flexGrow(1)
+
+        Text(this.time).fontSize('12fp')
+          .margin({ right: "50px" }).fontColor("#c2bec2")
+
+      }
+      .height('180px')
+      .width('100%')
+
+      Row() {
+        Text().width('190px').height('3px')
+        Divider()
+          .vertical(false)
+          .color(WE_CHAT_COLOR)
+          .strokeWidth('3px')
+      }
+      .height('3px')
+      .width('100%')
+    }
+
+  }
+}
+
+@Component
+export struct ContactItemStyle {
+  private imageSrc: string = "";
+  private text: string = "";
+
+  build() {
+    Column() {
+      Flex({ alignItems: ItemAlign.Center, justifyContent: FlexAlign.Center }) {
+        Image($rawfile(this.imageSrc)).width('100px').height('100px').margin({ left: '50px' })
+        Text(this.text).fontSize('15vp').margin({ left: '40px' }).flexGrow(1)
+      }
+      .height('150px')
+      .width('100%')
+
+      Row() {
+        Text().width('190px').height('3px')
+        Divider()
+          .vertical(false)
+          .color(WE_CHAT_COLOR)
+          .strokeWidth('3px')
+      }
+      .height('3px')
+      .width('100%')
+    }
+  }
+}
+
+@Component
 export struct WeChatItemStyle {
-  private imageSrc: string
-  private text: string
+  private imageSrc: string = "";
+  private text: string = "";
   private arrow: string = "arrow.png"
 
   build() {
@@ -27,85 +103,6 @@ export struct WeChatItemStyle {
   }
 }
 
-
-@Component
-export struct WeChatTitle {
-  private text: string
-
-  build() {
-    Flex({ alignItems: ItemAlign.Center, justifyContent: FlexAlign.Center }) {
-      Text(this.text).fontSize('18fp').padding('20px')
-    }.height('120px').backgroundColor(WeChatColor)
-  }
-}
-
-
-@Component
-export struct ContactItemStyle {
-  private imageSrc: string
-  private text: string
-
-  build() {
-    Column() {
-      Flex({ alignItems: ItemAlign.Center, justifyContent: FlexAlign.Center }) {
-        Image($rawfile(this.imageSrc)).width('100px').height('100px').margin({ left: '50px' })
-        Text(this.text).fontSize('15vp').margin({ left: '40px' }).flexGrow(1)
-      }
-      .height('150px')
-      .width('100%')
-
-      Row() {
-        Text().width('190px').height('3px')
-        Divider()
-          .vertical(false)
-          .color(WeChatColor)
-          .strokeWidth('3px')
-      }
-      .height('3px')
-      .width('100%')
-    }
-  }
-}
-
-@Component
-export struct ChatItemStyle {
-  WeChatImage: string;
-  WeChatName: string;
-  ChatInfo: string;
-  time: string;
-
-  build() {
-    Column() {
-      Flex({ alignItems: ItemAlign.Center, justifyContent: FlexAlign.Start }) {
-        Image($rawfile(this.WeChatImage)).width('120px').height('120px').margin({ left: '50px', right: "50px" })
-
-        Column() {
-          Text(this.WeChatName).fontSize('16fp')
-          Text(this.ChatInfo).fontSize('12fp').width('620px').fontColor("#c2bec2").maxLines(1)
-        }.alignItems(HorizontalAlign.Start).flexGrow(1)
-
-        Text(this.time).fontSize('12fp')
-          .margin({ right: "50px" }).fontColor("#c2bec2")
-
-      }
-      .height('180px')
-      .width('100%')
-
-      Row() {
-        Text().width('190px').height('3px')
-        Divider()
-          .vertical(false)
-          .color(WeChatColor)
-          .strokeWidth('3px')
-      }
-      .height('3px')
-      .width('100%')
-    }
-
-  }
-}
-
-
 @Component
 export struct MyDivider {
   private style: string = ""
@@ -114,7 +111,7 @@ export struct MyDivider {
     Row() {
       Divider()
         .vertical(false)
-        .color(WeChatColor)
+        .color(WE_CHAT_COLOR)
         .strokeWidth(this.style == "1" ? '3px' : '23px')
     }
     .height(this.style == "1" ? '3px' : '23px')

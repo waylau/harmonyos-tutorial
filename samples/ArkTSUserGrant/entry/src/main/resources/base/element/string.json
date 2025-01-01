@@ -11,6 +11,10 @@
     {
       "name": "EntryAbility_label",
       "value": "label"
+    },
+    {
+      "name": "reason",
+      "value": "使用Camera示例."
     }
   ]
 }

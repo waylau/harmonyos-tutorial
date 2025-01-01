@@ -1,10 +1,15 @@
 // 导入DistributedDataUtil
-import DistributedDataUtil from '../common/DistributedDataUtil';
+import DistributedDataUtil from '../common/DistributedDataUtil'
 
 @Entry
 @Component
 struct Index {
   @State message: string = 'Hello World'
+
+  aboutToAppear() {
+    DistributedDataUtil.initKVManager();
+    DistributedDataUtil.initKVStore();
+  }
 
   build() {
     Row() {
@@ -30,7 +35,10 @@ struct Index {
           .fontWeight(FontWeight.Medium)
           .margin({ top: 20, bottom: 20 })
           .onClick(() => {
-            DistributedDataUtil.queryData()
+            // 获取结果
+            DistributedDataUtil.queryData().then((resultData: string) => {
+              this.message = resultData;
+            });
           })
 
         // 修改

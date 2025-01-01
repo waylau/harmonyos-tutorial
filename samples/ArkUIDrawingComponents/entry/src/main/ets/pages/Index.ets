@@ -112,14 +112,14 @@ struct Index {
 
         /*** 以下为 Path 示例***/
         // 绘制一条长900px，宽3vp的直线
-        Path()
+        /*Path()
           .height(10)
           .commands('M0 0 L600 0')
           .stroke(Color.Black)
           .strokeWidth(3)
 
         // 绘制直线图形
-        /*Path()
+        Path()
           .commands('M100 0 L200 240 L0 240 Z')
           .fillOpacity(0)
           .stroke(Color.Black)
@@ -187,7 +187,7 @@ struct Index {
           .stroke(Color.Transparent)*/
 
         // 在Shape的(-2, 118)点绘制一个 300 * 10 直线路径,颜色0x317AF7,边框颜色黑色,宽度4,间隙20,向左偏移10,线条两端样式为半圆,拐角样式圆角,抗锯齿(默认开启)
-        Shape() {
+        /*Shape() {
           Rect().width(300).height(50)
           Ellipse().width(300).height(50).offset({ x: 0, y: 60 })
           Path().width(300).height(10).commands('M0 0 L900 0').offset({ x: 0, y: 120 })
@@ -258,7 +258,7 @@ struct Index {
         .stroke(0xEE8443)
         .strokeWidth(10)
         .strokeLineJoin(LineJoinStyle.Miter)
-        .strokeMiterLimit(5)
+        .strokeMiterLimit(5)*/
       }
       .width('100%')
     }

@@ -1,0 +1,10 @@
+{
+  "license": "",
+  "devDependencies": {},
+  "author": "",
+  "name": "base",
+  "description": "基础公共代码.",
+  "main": "Index.ets",
+  "version": "1.0.0",
+  "dependencies": {}
+}

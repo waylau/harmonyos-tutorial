@@ -1,5 +1,5 @@
-import exampleJsunit from "../test/ExampleJsunit.test.ets"
+import abilityTest from './Ability.test';
 
 export default function testsuite() {
-  exampleJsunit()
+  abilityTest();
 }
