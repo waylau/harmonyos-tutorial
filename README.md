@@ -139,6 +139,8 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [《鸿蒙之光HarmonyOS NEXT原生应用开发入门》简介](https://waylau.com/about-harmonyos-next-tutorial-book/)
 * [HarmonyOS架构介绍](https://developer.huawei.com/consumer/cn/forum/topic/0202171014436926490)
 * 纯血鸿蒙！《鸿蒙之光HarmonyOS NEXT原生应用开发入门》](https://www.bilibili.com/video/BV11cCpYXEyL/)（视频）
+* [HarmonyOS纯血鸿蒙新特性](https://developer.huawei.com/consumer/cn/forum/topic/0204171533399971963?fid=0109140870620153026)
+* [HarmonyOS环境搭建之注册华为开发者联盟帐号](https://developer.huawei.com/consumer/cn/forum/topic/0202172141875455029?fid=0109140870620153026)
 * 未完待续...
 
 ## Samples 示例
