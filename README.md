@@ -401,6 +401,14 @@ HarmonyOS应用开发者高级认证
 
 ![](images/harmonyos-application-developer-advanced-certification.png)
 
+2024年度卓越贡献著译者
+
+![](images/2024-outstanding-contribution-author.png)
+
+2024计算机类畅销新书奖
+
+![](images/2024-computer-bestselling-new-book-award.png)
+
 ## Support Me 请老卫喝一杯
 
 ![开源捐赠](https://waylau.com/images/showmethemoney-sm.jpg)
