@@ -142,6 +142,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [HarmonyOS纯血鸿蒙新特性](https://developer.huawei.com/consumer/cn/forum/topic/0204171533399971963?fid=0109140870620153026)
 * [HarmonyOS环境搭建之注册华为开发者联盟帐号](https://developer.huawei.com/consumer/cn/forum/topic/0202172141875455029?fid=0109140870620153026)
 * [DevEco Studio 3.1/4 下载安装](https://developer.huawei.com/consumer/cn/forum/topic/0202172750026769021)
+* [DeepSeek火出圈，国货当自强！HarmonyOS就是原生智能系统](https://developer.huawei.com/consumer/cn/forum/topic/0203174136422203503?fid=0109140870620153026)
 * 未完待续...
 
 ## Samples 示例
