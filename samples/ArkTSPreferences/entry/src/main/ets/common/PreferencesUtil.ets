@@ -26,16 +26,16 @@ export default class PreferencesUtil {
   async putPreference(key: string, data: string) {
     if (this.dataPreferences === null) {
       await this.getPreferencesFromStorage();
-    } else {
-      await this.dataPreferences.put(key, data).then(() => {
-        console.info(`Succeeded in putting value`);
-      }).catch((err: BusinessError) => {
-        console.error(`Failed to get preferences, Cause:` + err);
-      });
-
-      // 将Preference实例存储到首选项持久化文件中
-      await this.dataPreferences.flush();
     }
+	
+	await this.dataPreferences.put(key, data).then(() => {
+	  console.info(`Succeeded in putting value`);
+	}).catch((err: BusinessError) => {
+	  console.error(`Failed to get preferences, Cause:` + err);
+	});
+
+	// 将Preference实例存储到首选项持久化文件中
+	await this.dataPreferences.flush();
   }
 
   // 使用Preferences的get方法读取数据
