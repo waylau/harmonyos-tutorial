@@ -146,6 +146,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [原生鸿蒙版小艺APP接入DeepSeek-R1，为HarmonyOS应用开发注入新活力](https://www.imooc.com/article/378306)
 * [鸿蒙原生应用再添新丁！北京广电、充电管家、有我帮 入局鸿蒙](https://developer.huawei.com/consumer/cn/forum/topic/0203175158162669774?fid=0109140870620153026)
 * [HarmonyOS使用系统图标](https://www.imooc.com/article/378837)
+* [HarmonayOS通过应用链接拉起指定应用](https://waylau.com/harmonyos-open-app-with-deep-linking/)
 * 未完待续...
 
 ## Samples 示例
