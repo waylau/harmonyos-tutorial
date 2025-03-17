@@ -328,6 +328,8 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 
 ![ArkTS 图片查看器](images/ArkTSMultiPicture.png)
 
+![ArkTS 短视频应用](images/harmonyos-short-video-arkts.png)
+
 ## Get start 如何开始阅读
 
 选择下面入口之一：
