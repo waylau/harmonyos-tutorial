@@ -417,6 +417,10 @@ HarmonyOS应用开发者高级认证
 
 ![](images/2024-computer-bestselling-new-book-award.png)
 
+HUAWEI Developer Experts(HDE)
+
+![](images/huawei-developer-experts.png)
+
 ## Support Me 请老卫喝一杯
 
 ![开源捐赠](https://waylau.com/images/showmethemoney-sm.jpg)
