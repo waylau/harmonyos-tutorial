@@ -148,6 +148,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [HarmonyOS使用系统图标](https://www.imooc.com/article/378837)
 * [HarmonayOS通过应用链接拉起指定应用](https://waylau.com/harmonyos-open-app-with-deep-linking/)
 * [华为鸿蒙PC要来了？](https://developer.huawei.com/consumer/cn/blog/topic/03177612448714040)
+* [“AI智能助手APP全流程开发实战”实战课程简介](https://developer.huawei.com/consumer/cn/forum/topic/0207177697979523118)
 * 未完待续...
 
 ## Samples 示例
@@ -330,6 +331,8 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 
 ![ArkTS 短视频应用](images/harmonyos-short-video-arkts.png)
 
+![仓颉智能AI助手](images/cangjie-harmonyos-ai.png)
+
 ## Get start 如何开始阅读
 
 选择下面入口之一：
@@ -366,7 +369,7 @@ HarmonyOS配套练习题库，见“[HarmonyOS题库](https://github.com/waylau/
 * [《鸿蒙之光HarmonyOS NEXT原生应用开发入门》](https://waylau.com/about-harmonyos-next-tutorial-book/)（清华大学出版社）
   * [京东](https://item.jd.com/14905890.html)
   * [当当](https://product.dangdang.com/29832721.html)
-
+* [AI智能助手APP全流程开发实战](ttps://coding.imooc.com/class/927.html)（视频）
 
 ## Issue 意见、建议
 
