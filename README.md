@@ -10,6 +10,7 @@
 
 本书业余时间所著，书中如有错漏之处，敬请斧正，欢迎读者与笔者联系。
 
+对于仓颉应用开发，请参阅《[跟老卫学仓颉编程语言开发](https://github.com/waylau/cangjie-programming-language-tutorial)》。
 
 
 ## Summary 目录
