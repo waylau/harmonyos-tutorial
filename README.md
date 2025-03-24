@@ -151,7 +151,8 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [华为鸿蒙PC要来了？](https://developer.huawei.com/consumer/cn/blog/topic/03177612448714040)
 * [“AI智能助手APP全流程开发实战”实战课程简介](https://waylau.com/develop-native-harmonyos-ai-assistant-with-cangjie-video/)
 * [HarmonyOS 5 时代已来！华为首款阔折叠屏 Pura X 发布，开发者如何抢占未来生态红利？](https://developer.huawei.com/consumer/cn/forum/topic/0207177872217215165?fid=0109140870620153026)
-* [如何亲手打造AI智能助手APP？项目效果演示](https://www.bilibili.com/video/BV15zXeYfEdY)
+* [如何亲手打造AI智能助手APP？项目效果演示](https://www.bilibili.com/video/BV15zXeYfEdY)（视频）
+* [仓颉编程语言还能这么玩？HarmonyOS NEXT+AI大模型打造智能助手APP](https://developer.huawei.com/consumer/cn/forum/topic/0204178189326184176?fid=0109140870620153026)
 * 未完待续...
 
 ## Samples 示例
