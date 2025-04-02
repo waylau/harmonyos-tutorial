@@ -154,6 +154,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [如何亲手打造AI智能助手APP？项目效果演示](https://www.bilibili.com/video/BV15zXeYfEdY)（视频）
 * [仓颉编程语言还能这么玩？HarmonyOS NEXT+AI大模型打造智能助手APP](https://developer.huawei.com/consumer/cn/forum/topic/0204178189326184176?fid=0109140870620153026)
 * [谷歌将 Android OS 转为 “内部开发”，对鸿蒙系统来说是否是个机会？](https://developer.huawei.com/consumer/cn/forum/topic/0204178542373267294?fid=0109140870620153026)
+* [人民日报批安卓假开源真垄断，鸿蒙系统或转正](https://developer.huawei.com/consumer/cn/forum/topic/0202178624935508322?fid=0109140870620153026)
 * 未完待续...
 
 ## Samples 示例
@@ -428,6 +429,11 @@ HarmonyOS应用开发者高级认证
 HUAWEI Developer Experts(HDE)
 
 ![](images/huawei-developer-experts.png)
+
+
+HarmonyOS学习资源创作达人
+
+![](images/harmonyos-learning-resource-creator.jpg)
 
 ## Support Me 请老卫喝一杯
 
