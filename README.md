@@ -155,6 +155,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [仓颉编程语言还能这么玩？HarmonyOS NEXT+AI大模型打造智能助手APP](https://developer.huawei.com/consumer/cn/forum/topic/0204178189326184176?fid=0109140870620153026)
 * [谷歌将 Android OS 转为 “内部开发”，对鸿蒙系统来说是否是个机会？](https://developer.huawei.com/consumer/cn/forum/topic/0204178542373267294?fid=0109140870620153026)
 * [人民日报批安卓假开源真垄断，鸿蒙系统或转正](https://developer.huawei.com/consumer/cn/forum/topic/0202178624935508322?fid=0109140870620153026)
+* [鸿蒙生态日日新：“郑好办”鸿蒙版上线，今日头条、人民日报等更新](https://developer.huawei.com/consumer/cn/blog/topic/03179484239808023)
 * 未完待续...
 
 ## Samples 示例
