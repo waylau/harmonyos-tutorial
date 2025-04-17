@@ -156,6 +156,10 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [谷歌将 Android OS 转为 “内部开发”，对鸿蒙系统来说是否是个机会？](https://developer.huawei.com/consumer/cn/forum/topic/0204178542373267294?fid=0109140870620153026)
 * [人民日报批安卓假开源真垄断，鸿蒙系统或转正](https://developer.huawei.com/consumer/cn/forum/topic/0202178624935508322?fid=0109140870620153026)
 * [鸿蒙生态日日新：“郑好办”鸿蒙版上线，今日头条、人民日报等更新](https://developer.huawei.com/consumer/cn/blog/topic/03179484239808023)
+* [【HarmonyOS NEXT+AI】问答01：课程里用的什么大模型？能用DeepSeek吗？](https://developer.huawei.com/consumer/cn/forum/topic/0202179567792367460?fid=0109140870620153026)
+* [科技巨头加倍押注生成式 AI](https://developer.huawei.com/consumer/cn/forum/topic/0207179667509011509?fid=23)
+* [【HarmonyOS NEXT+AI】问答02：有一点编程基础，可以学不？](https://developer.huawei.com/consumer/cn/forum/topic/0207179750550660521?fid=0109140870620153026)
+* [【HarmonyOS NEXT+AI】问答03：找不到DevEco Studio Cangjie Plugin下载链接？](https://developer.huawei.com/consumer/cn/forum/topic/0207180264471291591?fid=0109140870620153026)
 * 未完待续...
 
 ## Samples 示例
