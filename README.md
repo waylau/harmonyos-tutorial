@@ -163,6 +163,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [【HarmonyOS NEXT+AI】问答04：仓颉编程语言适合毕业设计吗？
 ](https://developer.huawei.com/consumer/cn/forum/topic/0201181154070287038?fid=0109140870620153026)
 * [#我的鸿蒙开发手记#从0到1如何踏上HarmonyOS之旅](https://ost.51cto.com/posts/33218)
+* [华为首款鸿蒙电脑正式亮相](https://developer.huawei.com/consumer/cn/forum/topic/0202182086290078559?fid=0109140870620153026)
 * 未完待续...
 
 ## Samples 示例
