@@ -164,6 +164,8 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 ](https://developer.huawei.com/consumer/cn/forum/topic/0201181154070287038?fid=0109140870620153026)
 * [#我的鸿蒙开发手记#从0到1如何踏上HarmonyOS之旅](https://ost.51cto.com/posts/33218)
 * [华为首款鸿蒙电脑正式亮相](https://developer.huawei.com/consumer/cn/forum/topic/0202182086290078559?fid=0109140870620153026)
+* [【HarmonyOS NEXT+AI】问答05：ArkTS和仓颉编程语言怎么选？](https://developer.huawei.com/consumer/cn/forum/topic/0204182208074587445?fid=0109140870620153026)
+* [HarmonyOS NEXT+AI打造智能助手APP（适配DeepSeek）](https://developer.huawei.com/consumer/cn/forum/topic/0201182544745864038?fid=0109140870620153026)
 * 未完待续...
 
 ## Samples 示例
