@@ -168,6 +168,9 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [【HarmonyOS NEXT+AI】问答05：ArkTS和仓颉编程语言怎么选？](https://developer.huawei.com/consumer/cn/forum/topic/0204182208074587445?fid=0109140870620153026)
 * [HarmonyOS NEXT+AI打造智能助手APP（适配DeepSeek）](https://developer.huawei.com/consumer/cn/forum/topic/0201182544745864038?fid=0109140870620153026)
 * [鸿蒙电脑的诞生是国产操作系统的破壁之战](https://developer.huawei.com/consumer/cn/forum/topic/0202183593464049037?fid=0109140870620153026)
+* [给鸿蒙PC和胖折叠Pura X写程序是什么体验](https://www.bilibili.com/video/BV1AE76z5Ei8/)（视频）
+* [API 15实战案例：新晋导航点组件Indicator详解](https://harmonyosdev.csdn.net/683c14e3965a29319f248ec0.html)
+* [Swiper动效模式SwiperAnimationMode应用展示](https://harmonyosdev.csdn.net/683c33757e10b149bf1e25e2.html)
 * 未完待续...
 
 ## Samples 示例
@@ -328,6 +331,8 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [ArkTS 实现窗口沉浸式效果](samples/ArkTSWindowLayoutFullScreen)
 * [ArkUI 绘制组件](samples/ArkUIDrawingComponents)
 * [ArkUI 图片轮播播放器](samples/ArkUISwiper)
+* [ArkTS Swiper动效模式SwiperAnimationMode](samples/ArkTSSwiperAnimationMode)
+* [ArkTS 导航点组件](samples/ArkTSIndicator)
 * 未完待续...
 
 
