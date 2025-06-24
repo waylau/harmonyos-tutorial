@@ -170,7 +170,8 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [鸿蒙电脑的诞生是国产操作系统的破壁之战](https://developer.huawei.com/consumer/cn/forum/topic/0202183593464049037?fid=0109140870620153026)
 * [给鸿蒙PC和胖折叠Pura X写程序是什么体验](https://www.bilibili.com/video/BV1AE76z5Ei8/)（视频）
 * [API 15实战案例：新晋导航点组件Indicator详解](https://harmonyosdev.csdn.net/683c14e3965a29319f248ec0.html)
-* [Swiper动效模式SwiperAnimationMode应用展示](https://harmonyosdev.csdn.net/683c33757e10b149bf1e25e2.html)
+* [HarmonyOS API 15 Swiper动效模式SwiperAnimationMode应用展示](https://developer.huawei.com/consumer/cn/forum/topic/0207186048437968004?fid=0109140870620153026)
+* [H华为自研仓颉编程语言将开源，未来与ArkTS同等地位](https://developer.huawei.com/consumer/cn/forum/topic/0210186139141263055?fid=0109140870620153026)
 * 未完待续...
 
 ## Samples 示例
