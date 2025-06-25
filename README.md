@@ -450,9 +450,13 @@ HUAWEI Developer Experts(HDE)
 ![](images/huawei-developer-experts.png)
 
 
-HarmonyOS学习资源创作达人
+HarmonyOS学习资源创作达人（第一期）
 
 ![](images/harmonyos-learning-resource-creator.jpg)
+
+HarmonyOS学习资源创作达人（第二期）
+
+![](images/harmonyos-learning-resource-creator-2nd.jpg)
 
 ## Support Me 请老卫喝一杯
 
