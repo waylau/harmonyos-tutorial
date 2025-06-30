@@ -172,6 +172,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [API 15实战案例：新晋导航点组件Indicator详解](https://harmonyosdev.csdn.net/683c14e3965a29319f248ec0.html)
 * [HarmonyOS API 15 Swiper动效模式SwiperAnimationMode应用展示](https://developer.huawei.com/consumer/cn/forum/topic/0207186048437968004?fid=0109140870620153026)
 * [华为自研仓颉编程语言将开源，未来与ArkTS同等地位](https://developer.huawei.com/consumer/cn/forum/topic/0210186139141263055?fid=0109140870620153026)
+* [【HarmonyOS NEXT+AI】问答06：仓颉编程语言的仓颉工具链和DevEco Studio Cangjie Plugin是什么关系？](https://www.imooc.com/article/382914)
 * 未完待续...
 
 ## Samples 示例
