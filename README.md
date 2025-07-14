@@ -176,6 +176,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [仓颉编程语言（Cangjie）正式发布1.0.0 LTS版本，附安装配置教程](https://developer.huawei.com/consumer/cn/forum/topic/0202187267416126149?fid=0109140870620153026)
 * [仓颉编程语言（Cangjie）正式发布1.0.0 LTS版本，附安装配置教程](https://www.bilibili.com/video/BV1mz36zMEdz/)（视频）
 * [安装仓颉编程语言（Cangjie）1.0.0版本VS Code插件](https://www.bilibili.com/video/BV1DGGszeEK2/)（视频）
+* [HarmonyOS ArkTS关系型数据库开发](https://www.imooc.com/article/383246)
 * 未完待续...
 
 ## Samples 示例

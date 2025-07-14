@@ -1,5 +1,4 @@
 import { relationalStore } from '@kit.ArkData';
-import { AccountTable } from '../../viewmodel/ConstantsInterface';
 
 export default class CommonConstants {
   /**
@@ -12,11 +11,16 @@ export default class CommonConstants {
   /**
    * Account table config.
    */
-  static readonly ACCOUNT_TABLE: AccountTable = {
+  static readonly ACCOUNT_TABLE: TableConfig = {
     tableName: 'accountTable',
     sqlCreate: 'CREATE TABLE IF NOT EXISTS accountTable(id INTEGER PRIMARY KEY AUTOINCREMENT, accountType INTEGER, ' +
       'typeText TEXT, amount INTEGER)',
     columns: ['id', 'accountType', 'typeText', 'amount']
   };
+}
 
+interface TableConfig {
+  tableName: string;
+  sqlCreate: string;
+  columns: Array<string>;
 }
