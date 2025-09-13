@@ -6,7 +6,7 @@
 
 
 
-《跟老卫学HarmonyOS开发》是一本 HarmonyOS 应用开发的开源学习教程，主要介绍如何从0开始开发 HarmonyOS 应用。本书包括最新版本HarmonyOS NEXT（HarmonyOS 5）中的新特性。图文并茂，并通过大量实例带你走进 HarmonyOS 的世界！
+《跟老卫学HarmonyOS开发》是一本 HarmonyOS 应用开发的开源学习教程，主要介绍如何从0开始开发 HarmonyOS 应用。本书包括最新版本HarmonyOS（HarmonyOS 6）中的新特性。图文并茂，并通过大量实例带你走进 HarmonyOS 的世界！
 
 本书业余时间所著，书中如有错漏之处，敬请斧正，欢迎读者与笔者联系。
 
@@ -341,6 +341,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [ArkTS Swiper动效模式SwiperAnimationMode](samples/ArkTSSwiperAnimationMode)
 * [ArkTS 导航点组件](samples/ArkTSIndicator)
 * [ArkTS 获取位置服务](samples/ArkTSGeoLocationManager)
+* [ArkTS 组件导航Navigation](samples/ArkTSNavigation)（6.0.0(20)）（test）
 * 未完待续...
 
 
