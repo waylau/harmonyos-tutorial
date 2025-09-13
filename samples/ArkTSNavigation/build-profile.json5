@@ -1,6 +1,20 @@
 {
   "app": {
-    "signingConfigs": [],
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "C:\\Users\\wayla\\.ohos\\config\\default_ArkTSNavigation_gYkbDfgDCBKXurMCjfXoHuY9wylGybrujoAeTTNgQ6s=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B01DA721C7A4D55A361677FDB33895EBF1590F559067B8B41A9AB36EF7F32EABA9AA26B50A43B50",
+          "profile": "C:\\Users\\wayla\\.ohos\\config\\default_ArkTSNavigation_gYkbDfgDCBKXurMCjfXoHuY9wylGybrujoAeTTNgQ6s=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\wayla\\.ohos\\config\\default_ArkTSNavigation_gYkbDfgDCBKXurMCjfXoHuY9wylGybrujoAeTTNgQ6s=.p12",
+          "storePassword": "0000001B729AAD0CB3798D1762B6B4D880842D9D70CAB274A37BB432076DE4F84594599CE564F582075995"
+        }
+      }
+    ],
     "products": [
       {
         "name": "default",
