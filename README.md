@@ -177,7 +177,8 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [仓颉编程语言（Cangjie）正式发布1.0.0 LTS版本，附安装配置教程](https://www.bilibili.com/video/BV1mz36zMEdz/)（视频）
 * [安装仓颉编程语言（Cangjie）1.0.0版本VS Code插件](https://www.bilibili.com/video/BV1DGGszeEK2/)（视频）
 * [HarmonyOS ArkTS关系型数据库开发](https://www.imooc.com/article/383246)
-* [HarmonyOS ArkTS 获取位置服务](https://waylau.com/2025-07-21-harmonyos-arkts-geo-location-manager)
+* [HarmonyOS ArkTS 获取位置服务](https://waylau.com/harmonyos-arkts-geo-location-manager)
+* [HarmonyOS Navigation实现导航与路由切换](https://waylau.com/harmonyos-navigation/)
 * 未完待续...
 
 ## Samples 示例
@@ -341,7 +342,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [ArkTS Swiper动效模式SwiperAnimationMode](samples/ArkTSSwiperAnimationMode)
 * [ArkTS 导航点组件](samples/ArkTSIndicator)
 * [ArkTS 获取位置服务](samples/ArkTSGeoLocationManager)
-* [ArkTS 组件导航Navigation](samples/ArkTSNavigation)（6.0.0(20)）（test）
+* [ArkTS 组件导航Navigation](samples/ArkTSNavigation)（API 6.0.0(20)）
 * 未完待续...
 
 
