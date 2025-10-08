@@ -181,6 +181,10 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [HarmonyOS Navigation实现导航与路由切换](https://waylau.com/harmonyos-navigation/)
 * [鸿蒙HamonyOS应用上架手动签名与发布](https://developer.huawei.com/consumer/cn/forum/topic/0201193916382361313?fid=0109140870620153026)
 * [如何将HarmonyOS 5应用升级到HarmonyOS 6](https://waylau.com/upgrade-harmonyos-app-version-from-5-to-6/)
+* [如何将HarmonyOS 5应用升级到HarmonyOS 6](https://www.bilibili.com/video/BV1yBHwzDEkK/)（视频）
+* [幕连实现手机无线投屏到电脑](https://www.bilibili.com/video/BV1bXH5zfEiw/)（视频）
+* [华为电脑管家助力华为手机与PC多屏协同](https://www.bilibili.com/video/BV1MM4FzwEBS/)（视频）
+* [非华为电脑安装华为电脑管家](https://www.bilibili.com/video/BV1YnxBzCEmL/)（视频）
 * [【HarmonyOS NEXT+AI】问答07：DevEco Studio Cangjie Plugin在哪里下载？为什么看不到？](https://developer.huawei.com/consumer/cn/forum/topic/0201195374935980891?fid=0109140870620153026)
 * 未完待续...
 
