@@ -179,6 +179,9 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [HarmonyOS ArkTS关系型数据库开发](https://www.imooc.com/article/383246)
 * [HarmonyOS ArkTS 获取位置服务](https://waylau.com/harmonyos-arkts-geo-location-manager)
 * [HarmonyOS Navigation实现导航与路由切换](https://waylau.com/harmonyos-navigation/)
+* [鸿蒙HamonyOS应用上架手动签名与发布](https://developer.huawei.com/consumer/cn/forum/topic/0201193916382361313?fid=0109140870620153026)
+* [如何将HarmonyOS 5应用升级到HarmonyOS 6](https://waylau.com/upgrade-harmonyos-app-version-from-5-to-6/)
+* [【HarmonyOS NEXT+AI】问答07：DevEco Studio Cangjie Plugin在哪里下载？为什么看不到？](https://developer.huawei.com/consumer/cn/forum/topic/0201195374935980891?fid=0109140870620153026)
 * 未完待续...
 
 ## Samples 示例
