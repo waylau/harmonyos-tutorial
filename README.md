@@ -411,6 +411,7 @@ HarmonyOS配套练习题库，见“[HarmonyOS题库](https://github.com/waylau/
   * [京东](https://item.jd.com/14905890.html)
   * [当当](https://product.dangdang.com/29832721.html)
 * [HarmonyOS NEXT+AI大模型打造智能助手APP(仓颉版)](https://coding.imooc.com/class/927.html)（视频）
+* [鸿蒙HarmonyOS 6 AI应用开发](https://edu.51cto.com/course/39601.html)（视频）
 
 ## Issue 意见、建议
 
