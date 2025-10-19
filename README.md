@@ -186,6 +186,8 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [华为电脑管家助力华为手机与PC多屏协同](https://www.bilibili.com/video/BV1MM4FzwEBS/)（视频）
 * [非华为电脑安装华为电脑管家](https://www.bilibili.com/video/BV1YnxBzCEmL/)（视频）
 * [【HarmonyOS NEXT+AI】问答07：DevEco Studio Cangjie Plugin在哪里下载？为什么看不到？](https://developer.huawei.com/consumer/cn/forum/topic/0201195374935980891?fid=0109140870620153026)
+* [鸿蒙6要来了，全网首发HarmonyOS 6 AI开发教程上线啦！](https://www.bilibili.com/video/BV1wCWxzpEsq/)（视频）
+* [全网首发鸿蒙6 AI教程“鸿蒙HarmonyOS 6 AI应用开发”上线啦！](https://waylau.com/the-first-harmonyos-6-ai-tutorial-is-now-available-online/)
 * 未完待续...
 
 ## Samples 示例
@@ -403,7 +405,7 @@ HarmonyOS配套练习题库，见“[HarmonyOS题库](https://github.com/waylau/
 * [《鸿蒙HarmonyOS应用开发入门》](https://waylau.com/about-harmonyos-3-tutorial-book/)（清华大学出版社）
   * [京东](https://item.jd.com/13963157.html)
   * [当当](https://product.dangdang.com/29664217.html)
-* [2024鸿蒙零基础快速实战-仿抖音App开发（ArkTS版）](https://coding.imooc.com/class/843.html)（视频）
+* [鸿蒙零基础快速实战-仿抖音App开发（ArkTS版）](https://coding.imooc.com/class/843.html)（视频）
 * [《鸿蒙HarmonyOS应用开发从入门到精通（第2版）》](https://waylau.com/about-harmonyos-application-development-from-zero-to-hero-2nd-edition-book/)（北京大学出版社）
   * [京东](https://item.jd.com/14349963.html)
   * [当当](http://product.dangdang.com/29821274.html)
