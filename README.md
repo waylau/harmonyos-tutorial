@@ -187,7 +187,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [非华为电脑安装华为电脑管家](https://www.bilibili.com/video/BV1YnxBzCEmL/)（视频）
 * [【HarmonyOS NEXT+AI】问答07：DevEco Studio Cangjie Plugin在哪里下载？为什么看不到？](https://developer.huawei.com/consumer/cn/forum/topic/0201195374935980891?fid=0109140870620153026)
 * [鸿蒙6要来了，全网首发HarmonyOS 6 AI开发教程上线啦！](https://www.bilibili.com/video/BV1wCWxzpEsq/)（视频）
-* [全网首发鸿蒙6 AI教程“鸿蒙HarmonyOS 6 AI应用开发”上线啦！](https://waylau.com/the-first-harmonyos-6-ai-tutorial-is-now-available-online/)
+* [全网首发鸿蒙6 AI教程“HarmonyOS 6 AI应用开发”上线啦！](https://waylau.com/the-first-harmonyos-6-ai-tutorial-is-now-available-online/)
 * 未完待续...
 
 ## Samples 示例
@@ -413,7 +413,7 @@ HarmonyOS配套练习题库，见“[HarmonyOS题库](https://github.com/waylau/
   * [京东](https://item.jd.com/14905890.html)
   * [当当](https://product.dangdang.com/29832721.html)
 * [HarmonyOS NEXT+AI大模型打造智能助手APP(仓颉版)](https://coding.imooc.com/class/927.html)（视频）
-* [鸿蒙HarmonyOS 6 AI应用开发](https://edu.51cto.com/course/39601.html)（视频）
+* [HarmonyOS 6 AI应用开发](https://edu.51cto.com/course/39601.html)（视频）
 
 ## Issue 意见、建议
 
