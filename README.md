@@ -188,6 +188,8 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [【HarmonyOS NEXT+AI】问答07：DevEco Studio Cangjie Plugin在哪里下载？为什么看不到？](https://developer.huawei.com/consumer/cn/forum/topic/0201195374935980891?fid=0109140870620153026)
 * [鸿蒙6要来了，全网首发HarmonyOS 6 AI开发教程上线啦！](https://www.bilibili.com/video/BV1wCWxzpEsq/)（视频）
 * [全网首发鸿蒙6 AI教程“HarmonyOS 6 AI应用开发”上线啦！](https://waylau.com/the-first-harmonyos-6-ai-tutorial-is-now-available-online/)
+* [鸿蒙操作系统6特别发布，HarmonyOS 5终端设备数量突破2300万！](https://www.bilibili.com/video/BV1qMs8zdESm/)（视频）
+* [鸿蒙操作系统6特别发布，HarmonyOS 5终端设备数量突破2300万！](https://ost.51cto.com/posts/36792)
 * 未完待续...
 
 ## Samples 示例
