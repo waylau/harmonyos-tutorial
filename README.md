@@ -13,7 +13,7 @@
 对于仓颉应用开发，请参阅《[跟老卫学仓颉编程语言开发](https://github.com/waylau/cangjie-programming-language-tutorial)》。
 
 
-## Summary 目录
+## Summary 目录（按发表时间升序排序）
 
 * [什么是鸿蒙、OpenHarmony、HarmonyOS](https://waylau.com/what-is-harmonyos/)
 * [HarmonyOS初探01——下载安装DevEco Studio](https://developer.huawei.com/consumer/cn/forum/topic/0201427672244370691?fid=0101303901040230869)
@@ -190,9 +190,10 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [全网首发鸿蒙6 AI教程“HarmonyOS 6 AI应用开发”上线啦！](https://waylau.com/the-first-harmonyos-6-ai-tutorial-is-now-available-online/)
 * [鸿蒙操作系统6特别发布，HarmonyOS 5终端设备数量突破2300万！](https://www.bilibili.com/video/BV1qMs8zdESm/)（视频）
 * [鸿蒙操作系统6特别发布，HarmonyOS 5终端设备数量突破2300万！](https://ost.51cto.com/posts/36792)
+* [HarmonyOS Navigation嵌套Tabs导致Tabs布局异常问题解决](https://waylau.com/nested-tabs-in-harmonyos-navigation/)
 * 未完待续...
 
-## Samples 示例
+## Samples 示例（按发表时间升序排序）
 
 * [Hello World](samples/HelloWorld)
 * [多个AbilitySlice之间的路由与导航](samples/AbilitySliceNavigation)
