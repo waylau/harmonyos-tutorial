@@ -1,0 +1,56 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "C:\\Users\\wayla\\.ohos\\config\\default_ArkTSWifiManagerConnectToWifi_WBFsYdLiAIXo_Z8rbLB6qBVVwaTEdYnxg7BqZ0hfvjg=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001BD382351FA282CB13C98E14AED14EC4650489FEB8F95FD5238BF018B4380E07C41616E5B5180452",
+          "profile": "C:\\Users\\wayla\\.ohos\\config\\default_ArkTSWifiManagerConnectToWifi_WBFsYdLiAIXo_Z8rbLB6qBVVwaTEdYnxg7BqZ0hfvjg=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\wayla\\.ohos\\config\\default_ArkTSWifiManagerConnectToWifi_WBFsYdLiAIXo_Z8rbLB6qBVVwaTEdYnxg7BqZ0hfvjg=.p12",
+          "storePassword": "0000001B9FB328A78975835023592393901434B55B1F9F0CE4E81FAB6201F302FDB1EC1C52494C79AB3EA3"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "targetSdkVersion": "6.0.0(20)",
+        "compatibleSdkVersion": "6.0.0(20)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}

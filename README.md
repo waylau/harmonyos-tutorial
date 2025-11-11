@@ -192,6 +192,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [鸿蒙操作系统6特别发布，HarmonyOS 5终端设备数量突破2300万！](https://ost.51cto.com/posts/36792)
 * [HarmonyOS Navigation嵌套Tabs导致Tabs布局异常问题解决](https://waylau.com/nested-tabs-in-harmonyos-navigation/)
 * [HarmonyOS通过openLink拉起浏览器打开链接](https://waylau.com/harmonyos-launches-a-browser-to-open-a-link-through-openlink)
+* [HarmonyOS通过wifiManager来连接Wi-Fi](https://waylau.com/harmonyos-wifi-manager-connect-to-wifi/)
 * 未完待续...
 
 ## Samples 示例（按发表时间升序排序）
@@ -356,7 +357,8 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [ArkTS 导航点组件](samples/ArkTSIndicator)
 * [ArkTS 获取位置服务](samples/ArkTSGeoLocationManager)
 * [ArkTS 组件导航Navigation](samples/ArkTSNavigation)（API 6.0.0(20)）
-* [ArkTS openLink打开网址](samples/AArkTSOpenLink)（API 6.0.0(20)）
+* [ArkTS openLink打开网址](samples/ArkTSOpenLink)（API 6.0.0(20)）
+* [ArkTS 连接Wi-Fi](samples/ArkTSWifiManagerConnectToWifi)（API 6.0.0(20)）
 * 未完待续...
 
 
