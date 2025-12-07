@@ -195,6 +195,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [HarmonyOS通过wifiManager来连接Wi-Fi](https://waylau.com/harmonyos-wifi-manager-connect-to-wifi/)
 * [拥抱鸿蒙生态：从入门到精通的优质学习资料合集](https://developer.huawei.com/consumer/cn/forum/topic/0202200313895279180?fid=0109140870620153026)
 * [拥抱鸿蒙生态，优质学习资料合集](https://www.bilibili.com/video/BV18s2VBiEfM/)（视频）
+* [华为鸿蒙极客2025证书开箱](https://www.bilibili.com/video/BV1pNmcBREYP/)（视频）
 * 未完待续...
 
 ## Samples 示例（按发表时间升序排序）
