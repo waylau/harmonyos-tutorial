@@ -424,7 +424,10 @@ HarmonyOS配套练习题库，见“[HarmonyOS题库](https://github.com/waylau/
   * [当当](https://product.dangdang.com/29832721.html)
 * [HarmonyOS NEXT+AI大模型打造智能助手APP(仓颉版)](https://coding.imooc.com/class/927.html)（视频）
 * [HarmonyOS 6 AI应用开发](https://edu.51cto.com/course/39601.html)（视频）
-
+* [鸿蒙之光HarmonyOS 6应用开发入门](https://waylau.com/about-harmonyos-6-tutorial-book/)（清华大学出版社）
+  * [京东](https://item.jd.com/10208282739020.html)
+  * [当当](https://search.dangdang.com/?key=%BA%E8%C3%C9%D6%AE%B9%E2HarmonyOS%206%D3%A6%D3%C3%BF%AA%B7%A2%C8%EB%C3%C5&act=input)
+  
 ## Issue 意见、建议
 
 如有勘误、意见或建议欢迎拍砖 <https://github.com/waylau/harmonyos-tutorial/issues>
