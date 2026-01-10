@@ -695,7 +695,7 @@ struct Index {
       //Web({ src: 'https://waylau.com', controller: this.webviewController })
 
       /*** 以下为 SymbolGlyph 示例 ***/
-      Row() {
+      /*Row() {
         Column() {
           Text("Light")
           SymbolGlyph($r('sys.symbol.ohos_trash'))
@@ -765,7 +765,7 @@ struct Index {
             .fontSize(96)
             .effectStrategy(2)
         }
-      }
+      }*/
     }
     .height('100%')
   }

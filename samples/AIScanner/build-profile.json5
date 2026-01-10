@@ -1,0 +1,56 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "C:\\Users\\wayla\\.ohos\\config\\default_AIScanner_Q0QHRVeb3QQyhu-thrRaeUDo99vz2sFnyS_Wg-pSoS0=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B6DA69037926C7D89FB9E3C8ED182EFE48805B4B2289EC069A302989F99777B7DE4C980B10C4950",
+          "profile": "C:\\Users\\wayla\\.ohos\\config\\default_AIScanner_Q0QHRVeb3QQyhu-thrRaeUDo99vz2sFnyS_Wg-pSoS0=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\wayla\\.ohos\\config\\default_AIScanner_Q0QHRVeb3QQyhu-thrRaeUDo99vz2sFnyS_Wg-pSoS0=.p12",
+          "storePassword": "0000001B252C03F99D859F3FAB89415655C4780D2B0BD165EADCB698DEB21914ED0B7921356AB265B63309"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "targetSdkVersion": "6.0.0(20)",
+        "compatibleSdkVersion": "6.0.0(20)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}

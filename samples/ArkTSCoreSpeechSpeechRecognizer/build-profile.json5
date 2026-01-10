@@ -1,0 +1,56 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "C:\\Users\\wayla\\.ohos\\config\\default_ArkTSCoreSpeechSpeechRecognizer_mVyOQJYNx8hwokCSd5tWsLdkV4EZygnACu_yNslJSMA=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B475490EA3EB6E7158FD8FA0D11EB249BBE796A3612B2FA4FC7DB3B6DBF7097DD822976523E0813",
+          "profile": "C:\\Users\\wayla\\.ohos\\config\\default_ArkTSCoreSpeechSpeechRecognizer_mVyOQJYNx8hwokCSd5tWsLdkV4EZygnACu_yNslJSMA=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\wayla\\.ohos\\config\\default_ArkTSCoreSpeechSpeechRecognizer_mVyOQJYNx8hwokCSd5tWsLdkV4EZygnACu_yNslJSMA=.p12",
+          "storePassword": "0000001BF1F137CD4F0569E0682EBCFD6E8466AB7E2E99EB0A9A54D5DDF329E380FDDDE657E45796F11F98"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "targetSdkVersion": "6.0.0(20)",
+        "compatibleSdkVersion": "6.0.0(20)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
