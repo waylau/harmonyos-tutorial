@@ -1,5 +1,5 @@
 // 导入common、Want
-import { common, Want } from '@kit.AbilityKit';
+import { Want, common } from '@kit.AbilityKit';
 
 @Entry
 @Component
@@ -10,36 +10,40 @@ struct Index {
     RelativeContainer() {
       Text(this.message)
         .id('HelloWorld')
-        .fontSize(50)
+        .fontSize($r('app.float.page_text_font_size'))
         .fontWeight(FontWeight.Bold)
         .alignRules({
           center: { anchor: '__container__', align: VerticalAlign.Center },
           middle: { anchor: '__container__', align: HorizontalAlign.Center }
         })
-        .onClick(this.explicitStartAbility) // 设置点击事件，显示启动Ability
+        .onClick(() => {
+          // 显示启动Ability
+          this.explicitStartAbility()
+        })
     }
     .height('100%')
     .width('100%')
   }
 
   // 显示启动Ability
-  explicitStartAbility() {
+  private explicitStartAbility() {
     try {
-      // 在启动Ability时指定了abilityName和bundleName
-      let want: Want  = {
+      // 在启动Ability时指定bundleName和abilityName
+      let want: Want = {
         deviceId: "",
-        bundleName: "com.waylau.hmos.arkuiwantstartability",
+        bundleName: "com.waylau.hmos.arktswantstartability",
         abilityName: "SecondAbility"
-      };
+      }
 
       // 获取UIAbility的上下文信息
-      let context = getContext(this) as common.UIAbilityContext;
+      let context = this.getUIContext().getHostContext() as common.UIAbilityContext;
 
       // 启动UIAbility实例
       context.startAbility(want);
-      console.info(`explicit start ability succeed`);
+
+      console.info("explicitStartAbility succeed")
     } catch (error) {
-      console.info(`explicit start ability failed with ${error.code}`);
+      console.error(`explicitStartAbility failed: ${error.code}`)
     }
   }
 }

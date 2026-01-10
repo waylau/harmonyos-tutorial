@@ -44,7 +44,12 @@ export default class EntryAbility extends UIAbility {
 
   // 变更设备类型
   private updateBreakpoint(windowWidth: number) :void{
-    let windowWidthVp = windowWidth / display.getDefaultDisplaySync().densityPixels;
+    let windowWidthVp = 0;
+    try {
+      windowWidthVp = windowWidth / display.getDefaultDisplaySync().densityPixels;
+    } catch (error) {
+      hilog.error(0x0000, 'testTag', 'Cause: %{public}s', JSON.stringify(error) ?? '');
+    }
     let curBp: string = '';
     if (windowWidthVp < BreakpointConstants.BREAKPOINT_SCOPE[2]) {
       curBp = BreakpointConstants.BREAKPOINT_SM;

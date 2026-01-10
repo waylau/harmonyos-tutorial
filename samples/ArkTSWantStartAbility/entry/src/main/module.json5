@@ -5,9 +5,7 @@
     "description": "$string:module_desc",
     "mainElement": "EntryAbility",
     "deviceTypes": [
-      "phone",
-      "tablet",
-      "2in1"
+      "phone"
     ],
     "deliveryWithInstall": true,
     "installationFree": false,
@@ -28,7 +26,7 @@
               "entity.system.home"
             ],
             "actions": [
-              "action.system.home"
+              "ohos.want.action.home"
             ]
           }
         ]

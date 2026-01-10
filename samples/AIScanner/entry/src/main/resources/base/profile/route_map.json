@@ -1,0 +1,17 @@
+{
+  "routerMap": [
+    {
+      "name": "PageIdCard",
+      "pageSourceFile": "src/main/ets/pages/PageIdCard.ets",
+      "buildFunction": "PageIdCardBuilder"
+    },{
+      "name": "PageBankCard",
+      "pageSourceFile": "src/main/ets/pages/PageBankCard.ets",
+      "buildFunction": "PageBankCardBuilder"
+    },{
+      "name": "PageDocScan",
+      "pageSourceFile": "src/main/ets/pages/PageDocScan.ets",
+      "buildFunction": "PageDocScanBuilder"
+    }
+  ]
+}

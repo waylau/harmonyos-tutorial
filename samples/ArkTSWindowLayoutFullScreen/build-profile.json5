@@ -11,7 +11,8 @@
           "strictMode": {
             "caseSensitiveCheck": true
           }
-        }
+        },
+        "targetSdkVersion": "6.0.0(20)"
       }
     ],
     "buildModeSet": [

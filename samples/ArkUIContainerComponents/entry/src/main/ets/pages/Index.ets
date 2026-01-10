@@ -445,7 +445,7 @@ struct Index {
       .curve(Curve.Linear) // 设置Swiper的动画曲线*/
 
       /*** 以下为 Tabs和TabContent 示例 ***/
-      Tabs({ barPosition: BarPosition.Start, //设置Tabs的页签位置。
+      /*Tabs({ barPosition: BarPosition.Start, //设置Tabs的页签位置。
         controller: new TabsController() //设置Tabs控制器。
       }) {
         TabContent() {
@@ -467,7 +467,7 @@ struct Index {
       .animationDuration(400) //TabContent滑动动画时长
       .width(360)
       .height(296)
-      .margin({ top: 52 })
+      .margin({ top: 52 })*/
 
     }
     .height('100%')
