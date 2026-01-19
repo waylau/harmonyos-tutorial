@@ -1,4 +1,4 @@
-# HarmonyOS Tutorial. 《跟老卫学HarmonyOS开发》《鸿蒙HarmonyOS手机应用开发实战》《鸿蒙HarmonyOS应用开发从入门到精通》《鸿蒙HarmonyOS应用开发入门》《鸿蒙之光HarmonyOS NEXT原生应用开发入门》源码
+# HarmonyOS Tutorial. 《跟老卫学HarmonyOS开发》《鸿蒙HarmonyOS手机应用开发实战》《鸿蒙HarmonyOS应用开发从入门到精通》《鸿蒙HarmonyOS应用开发入门》《鸿蒙之光HarmonyOS NEXT原生应用开发入门》《鸿蒙之光HarmonyOS 6应用开发入门》源码
 
 ![](images/harmonyOS_logo.png)
 
@@ -306,7 +306,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [ArkUI开发一个图片滑动播放功能](samples/EtsUISwiper)
 * [分布式文件共享](samples/DistributedFile)
 * [ArkUI开发一个图片自动播放功能](samples/EtsUISwiperAutoPlay)
-* [使用ArkUI开发“仿WeLink打卡”](samples/WeLinkPunchCard)
+* [使用ArkUI开发“仿WeLink打卡”](samples/WeLinkPunchCard)（API 6.0.0(20)）
 * [使用ArkUI开发“父亲节的祝福”](samples/FatherDay)
 * [AI来做HarmonyOS藏头诗](samples/WaylauAcrosticPoem)
 * [ArkUI抽个盲盒头像](samples/ArkUIExperience)
@@ -319,21 +319,21 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [ArkUI 显式Want启动Ability](samples/ArkUIWantStartAbility)
 * [ArkUI 隐式Want打开网址](samples/ArkUIWantOpenURI)（Test）
 * [ArkUI 隐式Want打开应用管理](samples/ArkUIWantOpenManageApplications)
-* [ArkUI 登录界面](samples/ArkUILogin)
-* [ArkTS 公共事件](samples/ArkTSCommonEventService)
+* [ArkUI 登录界面](samples/ArkUILogin)（API 6.0.0(20)）
+* [ArkTS 公共事件](samples/ArkTSCommonEventService)（API 6.0.0(20)）
 * [ArkTS 图片编解码](samples/ArkTSImageCodec)（test）
 * [ArkTS 窗口开发](samples/ArkTSWindow)
-* [ArkTS HTTP请求数据](samples/ArkTSHttp)
-* [ArkTS Web组件](samples/ArkTSWebComponent)
-* [ArkTS 用户授权](samples/ArkTSUserGrant)
-* [ArkTS 分布式数据服务开发](samples/ArkTSDistributedData)
-* [ArkTS 关系型数据库开发](samples/ArkTSRdb)
-* [ArkTS 首选项开发](samples/ArkTSPreferences)
-* [ArkUI 基础组件开发](samples/ArkUIBasicComponents)
-* [ArkUI 容器组件开发](samples/ArkUIContainerComponents)
-* [ArkUI 媒体组件开发](samples/ArkUIMediaComponents)
-* [ArkUI Canvas组件开发](samples/ArkUICanvasComponents)
-* [ArkUI 计算器](samples/ArkUICalculator)
+* [ArkTS HTTP请求数据](samples/ArkTSHttp)（API 6.0.0(20)）
+* [ArkTS Web组件](samples/ArkTSWebComponent)（API 6.0.0(20)）
+* [ArkTS 用户授权](samples/ArkTSUserGrant)（API 6.0.0(20)）
+* [ArkTS 分布式数据服务开发](samples/ArkTSDistributedData)（API 6.0.0(20)）
+* [ArkTS 关系型数据库开发](samples/ArkTSRdb)（API 6.0.0(20)）
+* [ArkTS 首选项开发](samples/ArkTSPreferences)（API 6.0.0(20)）
+* [ArkUI 基础组件开发](samples/ArkUIBasicComponents)（API 6.0.0(20)）
+* [ArkUI 容器组件开发](samples/ArkUIContainerComponents)（API 6.0.0(20)）
+* [ArkUI 媒体组件开发](samples/ArkUIMediaComponents)（API 6.0.0(20)）
+* [ArkUI Canvas组件开发](samples/ArkUICanvasComponents)（API 6.0.0(20)）
+* [ArkUI 计算器](samples/ArkUICalculator)（API 6.0.0(20)）
 * [ArkTS 视频播放器](samples/ArkTSVideoPlayer)
 * [ArkUI 仿微信应用](samples/ArkUIWeChat)
 * [ArkTS 元服务](samples/ArkTSAtomicService)
@@ -342,27 +342,31 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [ArkTS 低代码开发实现CPI图表](samples/ArkTSCPIChart)
 * [ArkUI 中秋国庆祝福程序](samples/ArkUIMidAutumnFestival)
 * [基于HarmonyOS ArkTS来操作SVG图片](samples/ArkTSSVGChineseLoong)
-* [ArkTS 统计字符串的字符数](samples/CountTheNumberOfCharacters)
+* [ArkTS 统计字符串的字符数](samples/CountTheNumberOfCharacters)（API 6.0.0(20)）
 * [ArkTS 录音机](samples/ArkTSAudioCapturer)
-* [ArkTS 音乐播放器](samples/ArkTSAVPlayer)
-* [ArkTS 使用Emitter进行线程间通信](samples/ArkTSEmitter)
-* [ArkTS 实现图片查看器UI原型](samples/ArkTSMultiPictureUI)
+* [ArkTS 音乐播放器](samples/ArkTSAVPlayer)（API 6.0.0(20)）
+* [ArkTS 使用Emitter进行线程间通信](samples/ArkTSEmitter)（API 6.0.0(20)）
+* [ArkTS 实现图片查看器UI原型](samples/ArkTSMultiPictureUI)（API 6.0.0(20)）
 * [ArkTS 图片查看器](samples/ArkTSMultiPicture)
-* [ArkTS 购物车](samples/ArkTSShoppingCart)
-* [ArkTS 创建子窗口](samples/ArkTSSubWindow)
-* [ArkTS 使用麦克风](samples/ArkTSUserGrantMicrophone)
-* [ArkTS 启动系统设置](samples/ArkTSWantOpenSetting)
-* [ArkTS 显式Want启动Ability](samples/ArkTSWantStartAbility)
-* [ArkTS Web组件展示HTML页面](samples/ArkTSWebComponentHTML)
-* [ArkTS 实现窗口沉浸式效果](samples/ArkTSWindowLayoutFullScreen)
-* [ArkUI 绘制组件](samples/ArkUIDrawingComponents)
-* [ArkUI 图片轮播播放器](samples/ArkUISwiper)
+* [ArkTS 购物车](samples/ArkTSShoppingCart)（API 6.0.0(20)）
+* [ArkTS 创建子窗口](samples/ArkTSSubWindow)（API 6.0.0(20)）
+* [ArkTS 使用麦克风](samples/ArkTSUserGrantMicrophone)（API 6.0.0(20)）
+* [ArkTS 启动系统设置](samples/ArkTSWantOpenSetting)（API 6.0.0(20)）
+* [ArkTS 显式Want启动Ability](samples/ArkTSWantStartAbility)（API 6.0.0(20)）
+* [ArkTS Web组件展示HTML页面](samples/ArkTSWebComponentHTML)（API 6.0.0(20)）
+* [ArkTS 实现窗口沉浸式效果](samples/ArkTSWindowLayoutFullScreen)（API 6.0.0(20)）
+* [ArkUI 绘制组件](samples/ArkUIDrawingComponents)（API 6.0.0(20)）
+* [ArkUI 图片轮播播放器](samples/ArkUISwiper)（API 6.0.0(20)）
 * [ArkTS Swiper动效模式SwiperAnimationMode](samples/ArkTSSwiperAnimationMode)
 * [ArkTS 导航点组件](samples/ArkTSIndicator)
 * [ArkTS 获取位置服务](samples/ArkTSGeoLocationManager)
 * [ArkTS 组件导航Navigation](samples/ArkTSNavigation)（API 6.0.0(20)）
 * [ArkTS openLink打开网址](samples/ArkTSOpenLink)（API 6.0.0(20)）
 * [ArkTS 连接Wi-Fi](samples/ArkTSWifiManagerConnectToWifi)（API 6.0.0(20)）
+* [ArkTS Hello World](samples/ArkTSHelloWorld)（API 6.0.0(20)）
+* [ArkTS AI扫描](samples/AIScanner)（API 6.0.0(20)）
+* [ArkTS 语音识别](samples/ArkTSCoreSpeechSpeechRecognizer)（API 6.0.0(20)）
+* [ArkTS 视频AI字幕](samples/ArkTSSpeechAICaption)（API 6.0.0(20)）
 * 未完待续...
 
 
