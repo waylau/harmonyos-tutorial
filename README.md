@@ -500,6 +500,11 @@ HarmonyOS学习资源创作达人（第二期）
 
 ![](images/harmonyos-geek-2025.jpg)
 
+
+清华大学出版社2025年度星选荐书人 
+
+![](images/tsinghua-university-press-2025-star-book-recommender.jpg)
+
 ## Support Me 请老卫喝一杯
 
 ![开源捐赠](https://waylau.com/images/showmethemoney-sm.jpg)
