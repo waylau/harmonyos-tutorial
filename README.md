@@ -367,6 +367,19 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [ArkTS AI扫描](samples/AIScanner)（API 6.0.0(20)）
 * [ArkTS 语音识别](samples/ArkTSCoreSpeechSpeechRecognizer)（API 6.0.0(20)）
 * [ArkTS 视频AI字幕](samples/ArkTSSpeechAICaption)（API 6.0.0(20)）
+* [仓颉 Hello World](samples/CangjieHelloWorld)（API 5.0.2(14)）
+* [ArkUI 使用系统图标](samples/ArkUISymbolGlyphSymbolSpan)（API 5.0.2(14)）
+* [ArkTS 通过应用链接拉起指定应用](samples/ArkTSDeepLinkingStartup)（API 5.0.2(14)）
+* [ArkTS 通过应用链接拉起指定应用](samples/ArkTSDeepLinkingTarget)（API 5.0.2(14)）
+* [ArkTS 使用EventHub进行线程内通信](samples/ArkTSEventHub)（API 5.0.2(14)）
+* [ArkTS 异步并发](samples/ArkTSPromise)（API 5.0.2(14)）
+* [ArkTS 使用TaskPool](samples/ArkTSTaskPool)（API 5.0.2(14)）
+* [ArkTS 使用Worker](samples/ArkTSWorker)（API 5.0.2(14)）
+* [ArkTS TaskPool任务与宿主线程通信](samples/ArkTSInterThreadCommunicationTaskPool)（API 5.0.2(14)）
+* [ArkTS HiLog开发示例](samples/ArkTSHiLog)（API 5.0.2(14)）
+* [ArkTS HiAppEvent使用示例](samples/ArkTSHiAppEvent)（API 5.0.2(14)）
+* [ArkTS HiTraceMeter使用示例](samples/ArkTSHiTraceMeter)（API 5.0.2(14)）
+* [ArkTS HiTraceChain使用示例](samples/ArkTSHiTraceChain)（API 5.0.2(14)）
 * 未完待续...
 
 
