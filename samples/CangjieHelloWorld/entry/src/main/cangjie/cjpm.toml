@@ -1,0 +1,41 @@
+[target]
+  [target.aarch64-linux-ohos]
+    compile-option = "-B \"${DEVECO_CANGJIE_HOME}/compiler/third_party/llvm/bin\" -B \"${DEVECO_CANGJIE_HOME}/musl/usr/lib/aarch64-linux-ohos\" -L \"${DEVECO_CANGJIE_HOME}/musl/usr/lib/aarch64-linux-ohos\" -L \"${DEVECO_CANGJIE_HOME}/build/linux_ohos_aarch64_llvm/openssl\" --sysroot \"${DEVECO_CANGJIE_HOME}/musl\""
+    [target.aarch64-linux-ohos.bin-dependencies]
+      path-option = [ "${AARCH64_LIBS}", "${AARCH64_MACRO_LIBS}" ]
+      [target.aarch64-linux-ohos.bin-dependencies.package-option]
+  [target.x86_64-linux-ohos]
+    compile-option = "-B \"${DEVECO_CANGJIE_HOME}/compiler/third_party/llvm/bin\" -B \"${DEVECO_CANGJIE_HOME}/musl/usr/lib/x86_64-linux-ohos\" -L \"${DEVECO_CANGJIE_HOME}/musl/usr/lib/x86_64-linux-ohos\" -L \"${DEVECO_CANGJIE_HOME}/build/linux_ohos_x86_64_llvm/openssl\" --sysroot \"${DEVECO_CANGJIE_HOME}/musl\""
+    [target.x86_64-linux-ohos.bin-dependencies]
+      path-option = [ "${X86_64_OHOS_LIBS}", "${X86_64_OHOS_MACRO_LIBS}" ]
+  [target.x86_64-unknown-windows-gnu]
+    [target.x86_64-unknown-windows-gnu.bin-dependencies]
+      path-option = [ "${X86_64_LIBS}", "${X86_64_MACRO_LIBS}" ]
+      [target.x86_64-unknown-windows-gnu.bin-dependencies.package-option]
+
+[dependencies]
+  [dependencies.cj_res_entry]
+    path = "./cj_res"
+    version = "1.0.0"
+
+[package]
+  cjc-version = "0.48.2"
+  compile-option = ""
+  description = "CangjieUI Application"
+  link-option = ""
+  name = "ohos_app_cangjie_entry"
+  output-type = "dynamic"
+  src-dir = "."
+  target-dir = ""
+  version = "1.0.0"
+  [package.package-configuration]
+  [package.scripts]
+
+[profile]
+  [profile.build]
+    incremental = true
+    lto = ""
+  [profile.customized-option]
+    debug = "-g -Woff all"
+    release = "--fast-math -O2 -s -Woff all"
+  [profile.test]
