@@ -197,6 +197,9 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [拥抱鸿蒙生态，优质学习资料合集](https://www.bilibili.com/video/BV18s2VBiEfM/)（视频）
 * [华为鸿蒙极客2025证书开箱](https://www.bilibili.com/video/BV1pNmcBREYP/)（视频）
 * [《鸿蒙之光HarmonyOS 6应用开发入门》开箱](https://www.bilibili.com/video/BV1b1rwBREbk/)（视频）
+* [2026新年首发《鸿蒙之光HarmonyOS 6应用开发入门》简介](https://waylau.com/about-harmonyos-6-tutorial-book/)
+* [首本鸿蒙架构师培养手册《鸿蒙架构师修炼之道》开箱](https://www.bilibili.com/video/BV1hw6TBiEgQ)（视频）
+* [首本鸿蒙架构师培养手册《鸿蒙架构师修炼之道》简介](https://waylau.com/about-the-cultivation-of-harmonyos-architect-book/)
 * 未完待续...
 
 ## Samples 示例（按发表时间升序排序）
