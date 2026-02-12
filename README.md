@@ -201,6 +201,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [首本鸿蒙架构师培养手册《鸿蒙架构师修炼之道》开箱](https://www.bilibili.com/video/BV1hw6TBiEgQ)（视频）
 * [首本鸿蒙架构师培养手册《鸿蒙架构师修炼之道》简介](https://waylau.com/about-the-cultivation-of-harmonyos-architect-book/)
 * [鸿蒙架构师修炼之道-架构师的职责是什么？](https://developer.huawei.com/consumer/cn/forum/topic/0201205677415918678?fid=0109140870620153026)
+* [鸿蒙架构师修炼之道-如何成为团队的架构师](https://developer.huawei.com/consumer/cn/forum/topic/0201206293717762965?fid=0109140870620153026)
 * 未完待续...
 
 ## Samples 示例（按发表时间升序排序）
