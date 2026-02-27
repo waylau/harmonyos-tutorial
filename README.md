@@ -452,7 +452,7 @@ HarmonyOS配套练习题库，见“[HarmonyOS题库](https://github.com/waylau/
   * [京东](https://item.jd.com/10208282739020.html)
   * [当当](https://search.dangdang.com/?key=%BA%E8%C3%C9%D6%AE%B9%E2HarmonyOS%206%D3%A6%D3%C3%BF%AA%B7%A2%C8%EB%C3%C5&act=input)
 * [鸿蒙架构师修炼之道](https://waylau.com/about-the-cultivation-of-harmonyos-architect-book/)（北京大学出版社）  
-  * [京东](https://search.jd.com/Search?keyword=%E9%B8%BF%E8%92%99%E6%9E%B6%E6%9E%84%E5%B8%88%E4%BF%AE%E7%82%BC%E4%B9%8B%E9%81%93&enc=utf-8&wq=%E9%B8%BF%E8%92%99%E6%9E%B6%E6%9E%84%E5%B8%88%E4%BF%AE%E7%82%BC%E4%B9%8B%E9%81%93)
+  * [京东](https://item.jd.com/15299684.html)
   * [当当](https://product.dangdang.com/30005979.html)
 ## Issue 意见、建议
 
