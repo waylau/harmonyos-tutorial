@@ -203,7 +203,10 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [鸿蒙架构师修炼之道-架构师的职责是什么？](https://developer.huawei.com/consumer/cn/forum/topic/0201205677415918678?fid=0109140870620153026)
 * [鸿蒙架构师修炼之道-如何成为团队的架构师](https://developer.huawei.com/consumer/cn/forum/topic/0201206293717762965?fid=0109140870620153026)
 * [鸿蒙架构师修炼之道-架构师设计思维特点](https://www.imooc.com/article/389036)
-* [2026 年鸿蒙生态的几本好书分享](https://developer.huawei.com/consumer/cn/forum/topic/0203207492082552137?fid=0109140870620153026)
+* [2026 年鸿蒙生态的几本好书分享](https://developer.huawei.com/consumer/cn/forum/topic/0203207492082552137?fid=0109140870620153026
+* [从开发者到架构师：一本打通鸿蒙全栈的成长地图](https://www.imooc.com/article/389333)
+* [鸿蒙架构师修炼之道-架构师核心思维方式](https://www.imooc.com/article/389543)
+* [鸿蒙架构师修炼之道-关键要素](https://www.imooc.com/article/389863)
 * 未完待续...
 
 ## Samples 示例（按发表时间升序排序）
