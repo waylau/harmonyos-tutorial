@@ -208,6 +208,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201692989697260758?fid=010
 * [鸿蒙架构师修炼之道-架构师核心思维方式](https://www.imooc.com/article/389543)
 * [鸿蒙架构师修炼之道-关键要素](https://www.imooc.com/article/389863)
 * [鸿蒙架构师修炼之道-实践应用](https://www.imooc.com/article/390159)
+* [鸿蒙架构师修炼之道-什么是软件架构](https://developer.huawei.com/consumer/cn/forum/topic/0203210415927615786?fid=0109140870620153026)
 * 未完待续...
 
 ## Samples 示例（按发表时间升序排序）
